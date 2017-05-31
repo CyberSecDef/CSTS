@@ -1,0 +1,21 @@
+<form name="form1" text="Cyber Security Tool Suite - Update Hosts Settings" clientSizeX="315" clientSizeY="120" FormBorderStyle="fixedDialog">
+	<controls>
+		<control type="label" id="lblTime" name="lblTime" text="Select the restart date and time" locationX="5" locationY="5" sizeX="250" sizeY="20" />
+		
+		<control type="DateTimePicker" id="dtpDate" name="dtpDate" locationX="5" locationY="25" sizeX="200" sizeY="20" showTime="false"/>
+		<control type="DateTimePicker" id="dtpTime" name="dtpTime" locationX="210" locationY="25" sizeX="100" sizeY="20" showTime="true"/>
+		
+		<control type="comboBox" id="cboType" name="cboType" locationX="5" locationY="50" sizeX="200" sizeY="25">
+			<item>LogOff</item>
+			<item>Shutdown</item>
+			<item>Reboot</item>
+			<item>ForcedLogOff</item>
+			<item>ForcedShutdown</item>
+			<item>ForcedReboot</item>
+			<item>PowerOff</item>
+			<item>ForcedPowerOff</item>
+		</control>
+		
+		<control type="button" id="btnExecute" name="btnExecute" text="Execute" locationX="5" locationY="75" sizeX="305" sizeY="40" backColor="#FFCCCCCC"/>
+	</controls>
+</form>

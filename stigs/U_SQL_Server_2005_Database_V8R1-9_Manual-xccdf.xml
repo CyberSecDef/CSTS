@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" id="Database_SQL_Server_9" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2015-06-16">accepted</status><title>Microsoft SQL Server 2005 Database Security Technical Implementation Guide</title><description>The Microsoft SQL Server 2005 Database Security Technical Implementation Guide (STIG) is published as a tool to improve the security of Department of Defense (DoD) information systems. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA, Field Security Operations</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1.9 Benchmark Date: 24 Jul 2015</plain-text><version>8</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-2451" selected="true" /><select idref="V-2457" selected="true" /><select idref="V-2458" selected="true" /><select idref="V-2463" selected="true" /><select idref="V-2498" selected="true" /><select idref="V-3727" selected="true" /><select idref="V-3817" selected="true" /><select idref="V-3823" selected="true" /><select idref="V-5683" selected="true" /><select idref="V-15128" selected="true" /><select idref="V-15142" selected="true" /><select idref="V-15151" selected="true" /><select idref="V-15159" selected="true" /><select idref="V-15161" selected="true" /><select idref="V-15162" selected="true" /><select idref="V-15164" selected="true" /><select idref="V-15168" selected="true" /><select idref="V-15172" selected="true" /><select idref="V-15177" selected="true" /><select idref="V-15185" selected="true" /><select idref="V-15607" selected="true" /><select idref="V-15629" selected="true" /><select idref="V-15630" selected="true" /><select idref="V-15642" selected="true" /><select idref="V-15654" selected="true" /><select idref="V-15657" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-2451" selected="true" /><select idref="V-2457" selected="true" /><select idref="V-2458" selected="true" /><select idref="V-2463" selected="true" /><select idref="V-2498" selected="true" /><select idref="V-3727" selected="true" /><select idref="V-3823" selected="true" /><select idref="V-5683" selected="true" /><select idref="V-15128" selected="true" /><select idref="V-15142" selected="true" /><select idref="V-15151" selected="true" /><select idref="V-15159" selected="true" /><select idref="V-15161" selected="true" /><select idref="V-15162" selected="true" /><select idref="V-15164" selected="true" /><select idref="V-15168" selected="true" /><select idref="V-15172" selected="true" /><select idref="V-15177" selected="true" /><select idref="V-15185" selected="true" /><select idref="V-15607" selected="true" /><select idref="V-15629" selected="true" /><select idref="V-15654" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-2451" selected="true" /><select idref="V-2457" selected="true" /><select idref="V-2458" selected="true" /><select idref="V-2463" selected="true" /><select idref="V-2498" selected="true" /><select idref="V-3727" selected="true" /><select idref="V-3817" selected="true" /><select idref="V-3823" selected="true" /><select idref="V-5683" selected="true" /><select idref="V-15128" selected="true" /><select idref="V-15142" selected="true" /><select idref="V-15151" selected="true" /><select idref="V-15159" selected="true" /><select idref="V-15161" selected="true" /><select idref="V-15162" selected="true" /><select idref="V-15164" selected="true" /><select idref="V-15168" selected="true" /><select idref="V-15172" selected="true" /><select idref="V-15177" selected="true" /><select idref="V-15185" selected="true" /><select idref="V-15607" selected="true" /><select idref="V-15629" selected="true" /><select idref="V-15630" selected="true" /><select idref="V-15642" selected="true" /><select idref="V-15654" selected="true" /><select idref="V-15657" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-2451" selected="true" /><select idref="V-2457" selected="true" /><select idref="V-2458" selected="true" /><select idref="V-2463" selected="true" /><select idref="V-2498" selected="true" /><select idref="V-3727" selected="true" /><select idref="V-3817" selected="true" /><select idref="V-3823" selected="true" /><select idref="V-5683" selected="true" /><select idref="V-15128" selected="true" /><select idref="V-15142" selected="true" /><select idref="V-15151" selected="true" /><select idref="V-15159" selected="true" /><select idref="V-15161" selected="true" /><select idref="V-15162" selected="true" /><select idref="V-15164" selected="true" /><select idref="V-15168" selected="true" /><select idref="V-15172" selected="true" /><select idref="V-15177" selected="true" /><select idref="V-15185" selected="true" /><select idref="V-15607" selected="true" /><select idref="V-15629" selected="true" /><select idref="V-15630" selected="true" /><select idref="V-15642" selected="true" /><select idref="V-15654" selected="true" /><select idref="V-15657" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-2451" selected="true" /><select idref="V-2457" selected="true" /><select idref="V-2458" selected="true" /><select idref="V-2463" selected="true" /><select idref="V-2498" selected="true" /><select idref="V-3727" selected="true" /><select idref="V-3823" selected="true" /><select idref="V-5683" selected="true" /><select idref="V-15128" selected="true" /><select idref="V-15142" selected="true" /><select idref="V-15151" selected="true" /><select idref="V-15159" selected="true" /><select idref="V-15161" selected="true" /><select idref="V-15162" selected="true" /><select idref="V-15164" selected="true" /><select idref="V-15168" selected="true" /><select idref="V-15172" selected="true" /><select idref="V-15177" selected="true" /><select idref="V-15185" selected="true" /><select idref="V-15607" selected="true" /><select idref="V-15629" selected="true" /><select idref="V-15654" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-2451" selected="true" /><select idref="V-2457" selected="true" /><select idref="V-2458" selected="true" /><select idref="V-2463" selected="true" /><select idref="V-2498" selected="true" /><select idref="V-3727" selected="true" /><select idref="V-3817" selected="true" /><select idref="V-3823" selected="true" /><select idref="V-5683" selected="true" /><select idref="V-15128" selected="true" /><select idref="V-15142" selected="true" /><select idref="V-15151" selected="true" /><select idref="V-15159" selected="true" /><select idref="V-15161" selected="true" /><select idref="V-15162" selected="true" /><select idref="V-15164" selected="true" /><select idref="V-15168" selected="true" /><select idref="V-15172" selected="true" /><select idref="V-15177" selected="true" /><select idref="V-15185" selected="true" /><select idref="V-15607" selected="true" /><select idref="V-15629" selected="true" /><select idref="V-15630" selected="true" /><select idref="V-15642" selected="true" /><select idref="V-15654" selected="true" /><select idref="V-15657" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-2451" selected="true" /><select idref="V-2457" selected="true" /><select idref="V-2458" selected="true" /><select idref="V-2463" selected="true" /><select idref="V-2498" selected="true" /><select idref="V-3727" selected="true" /><select idref="V-3817" selected="true" /><select idref="V-3823" selected="true" /><select idref="V-5683" selected="true" /><select idref="V-15128" selected="true" /><select idref="V-15142" selected="true" /><select idref="V-15151" selected="true" /><select idref="V-15159" selected="true" /><select idref="V-15161" selected="true" /><select idref="V-15162" selected="true" /><select idref="V-15164" selected="true" /><select idref="V-15168" selected="true" /><select idref="V-15172" selected="true" /><select idref="V-15177" selected="true" /><select idref="V-15185" selected="true" /><select idref="V-15607" selected="true" /><select idref="V-15629" selected="true" /><select idref="V-15630" selected="true" /><select idref="V-15642" selected="true" /><select idref="V-15654" selected="true" /><select idref="V-15657" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-2451" selected="true" /><select idref="V-2457" selected="true" /><select idref="V-2458" selected="true" /><select idref="V-2463" selected="true" /><select idref="V-2498" selected="true" /><select idref="V-3727" selected="true" /><select idref="V-3823" selected="true" /><select idref="V-5683" selected="true" /><select idref="V-15128" selected="true" /><select idref="V-15142" selected="true" /><select idref="V-15151" selected="true" /><select idref="V-15159" selected="true" /><select idref="V-15161" selected="true" /><select idref="V-15162" selected="true" /><select idref="V-15164" selected="true" /><select idref="V-15168" selected="true" /><select idref="V-15172" selected="true" /><select idref="V-15177" selected="true" /><select idref="V-15185" selected="true" /><select idref="V-15607" selected="true" /><select idref="V-15629" selected="true" /><select idref="V-15654" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-2451" selected="true" /><select idref="V-2457" selected="true" /><select idref="V-2458" selected="true" /><select idref="V-2463" selected="true" /><select idref="V-2498" selected="true" /><select idref="V-3727" selected="true" /><select idref="V-3817" selected="true" /><select idref="V-3823" selected="true" /><select idref="V-5683" selected="true" /><select idref="V-15128" selected="true" /><select idref="V-15142" selected="true" /><select idref="V-15151" selected="true" /><select idref="V-15159" selected="true" /><select idref="V-15161" selected="true" /><select idref="V-15162" selected="true" /><select idref="V-15164" selected="true" /><select idref="V-15168" selected="true" /><select idref="V-15172" selected="true" /><select idref="V-15177" selected="true" /><select idref="V-15185" selected="true" /><select idref="V-15607" selected="true" /><select idref="V-15629" selected="true" /><select idref="V-15630" selected="true" /><select idref="V-15642" selected="true" /><select idref="V-15654" selected="true" /><select idref="V-15657" selected="true" /></Profile><Group id="V-2451"><title>Guest user</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23779r2_rule" severity="medium" weight="10.0"><version>DM1709-SQLServer9</version><title>The guest user account should be disabled.</title><description>&lt;VulnDiscussion&gt;The guest user ID in a database allows access by all Windows login IDs without requiring an individual database account. This allows unauthorized access to the database.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;IAAC-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-19706r1_fix">Revoke connect permission from all databases except master and tempdb.
+
+From the query prompt:
+
+SELECT name
+FROM [master].sys.databases
+WHERE name NOT IN ('master', 'tempdb')
+AND state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [database name]
+REVOKE CONNECT FROM 'guest'</fixtext><fix id="F-19706r1_fix" /><check system="C-22789r3_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name
+FROM [master].sys.databases
+WHERE name NOT IN ('master', 'tempdb')
+AND state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [database name]
+SELECT COUNT(grantee_principal_id)
+FROM sys.database_permissions
+WHERE grantee_principal_id = 2
+AND state = 'G'
+AND permission_name = 'CONNECT'
+
+If any value other than a 0 is returned, this is a Finding.</check-content></check></Rule></Group><Group id="V-2457"><title>Unauthorized object permission grants</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23785r2_rule" severity="medium" weight="10.0"><version>DM1715-SQLServer9</version><title>Object permission assignments should be authorized.</title><description>&lt;VulnDiscussion&gt;Securely designed applications require only that database application user accounts have permissions to access and manipulate only the application data assigned to them in accordance with the their job function. Restrictions may be further restricted by granting data access to users only through execution of database procedures. Excess privileges can lead to unauthorized data access and can compromise data integrity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECLP-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-20259r1_fix">Revoke unauthorized permissions assigned to application user roles where supported by the DBMS vendor.
+
+From the query prompt:
+
+USE [database name]
+REVOKE [permission] ON [object] FROM [group name]
+
+Document assigned role permissions in the System Security Plan and authorize with the IAO.</fixtext><fix id="F-20259r1_fix" /><check system="C-22833r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name AS [Database Name]
+FROM [master].sys.databases
+WHERE name NOT IN ('tempdb', 'ReportServerTempDB')
+AND state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [Database Name]
+SELECT u.name AS [Principal]', o.name AS [Object], p.permission_name AS [Type]
+FROM sys.all_objects o, sys.database_principals u, sys.database_permissions p
+WHERE o.object_id = p.major_id
+AND p.grantee_principal_id = u.principal_id
+AND p.state IN ('G', 'W')
+AND (p.type NOT IN ('DL', 'EX', 'IN', 'SL', 'UP')
+ OR u.name IN ('public', 'guest'))
+ORDER BY u.name, o.name, p.permission_name
+
+Review results listed.
+
+If any results listed are not documented in the System Security Plan and authorized by the IAO, this is a Finding.
+
+Note: Some permissions assigned to PUBLIC within the master database may require the 'Allow modifications to be made directly to the system catalogs' database setting be
+temporarily enabled.</check-content></check></Rule></Group><Group id="V-2458"><title>System table permissions</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23790r2_rule" severity="medium" weight="10.0"><version>DM1749-SQLServer9</version><title>Permissions on system tables should be restricted to authorized accounts.</title><description>&lt;VulnDiscussion&gt;Microsoft SQL Server defaults to allow all users to view the majority of the system tables. The system tables contain information such as login IDs, permissions, objects and even the text of all stored procedures. In a secure environment, any direct access granted to these tables by users bypasses security controls defined within the associated system procedures and views. The bypass of these controls can lead to unauthorized viewing of sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECLP-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-24604r1_fix">Revoke permissions granted to system tables where supported by the DBMS vendor.
+
+From the query prompt:
+
+ USE [database name]
+ REVOKE [permission] ON [object name] FROM [user name]
+
+Document permission grants in the System Security Plan and authorize with the IAO.</fixtext><fix id="F-24604r1_fix" /><check system="C-22796r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name AS [Database Name]
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [Database Name]
+SELECT u.name AS [Principal], t.name AS [Table], p.permission_name AS [Permission], p.state_desc AS [State]
+FROM sys.database_principals u
+ JOIN sys.database_permissions p ON u.principal_id = p.grantee_principal_id
+ JOIN sys.tables t ON p.major_id = t.object_id
+WHERE p.state_desc &lt;&gt; 'DENY'
+AND t.is_ms_shipped = 1
+ORDER BY u.name, t.name
+
+Review the list of permissions assigned to system tables.
+
+If any results listed are not documented in the System Security Plan and authorized by the IAO, this is a Finding.
+
+Note: By default, SELECT permission is granted to the PUBLIC role for system tables in all databases. Even though permission is set by default, it is still a Finding.</check-content></check></Rule></Group><Group id="V-2463"><title>DDL permission assignments</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23804r2_rule" severity="medium" weight="10.0"><version>DM1760-SQLServer9</version><title>DDL permissions should be granted only to authorized accounts.</title><description>&lt;VulnDiscussion&gt;Data Definition Language (DDL) commands include CREATE, ALTER, and DROP object actions. These actions cause changes to the structure, definition and configuration of the DBMS as well as to the objects themselves that can affect any or all operations of the database. Such privileged actions, when not restricted to authorized persons and activities, can lead to a compromise of data and DBMS availability.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECLP-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-14854r1_fix">Revoke DDL permissions from unauthorized accounts with the REVOKE command:
+
+From the query prompt:
+
+USE [database name]
+REVOKE [permission] FROM [user name]
+
+Document required DDL permission grants in the System Security Plan and authorize with the IAO.</fixtext><fix id="F-14854r1_fix" /><check system="C-22835r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name AS [Database Name]
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [Database Name]
+SELECT u.name AS [Principal], o.name AS [Object], p.permission_name AS [Permission], p.state_desc AS [State]
+FROM sys.database_principals u
+ JOIN sys.database_permissions p ON u.principal_id = p.grantee_principal_id
+ LEFT JOIN sys.all_objects o ON p.major_id = o.object_id AND p.class IN (1, 8)
+ LEFT JOIN sys.schemas s ON p.major_id = s.schema_id AND p.class = 3
+WHERE p.state_desc &lt;&gt; 'DENY'
+AND p.state IN ('G', 'W')
+AND (p.type LIKE 'CR%' OR p.type LIKE 'AL%')
+ORDER BY u.name, o.name, p.permission_name
+
+Compare the results listed to those documented in the System Security Plan. If any accounts listed are:
+
+1. Application users
+2. Application user roles
+3. Application administrator roles
+4. PUBLIC role
+5. GUEST user
+
+this is a Finding.
+
+If any application developer accounts are listed with DDL privileges to production databases, this is a Finding.
+
+If results are not documented in the System Security Plan or authorized by the IAO, this is a Finding.</check-content></check></Rule></Group><Group id="V-2498"><title>WITH GRANT privilege assignments</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23833r2_rule" severity="medium" weight="10.0"><version>DM5144-SQLServer9</version><title>Permissions using the WITH GRANT OPTION should be granted only to DBA or application administrator accounts.</title><description>&lt;VulnDiscussion&gt;The WITH GRANT option assigned with privileges, allows the grantee of the privilege to re-grant the privilege to other accounts. Unauthorized or unmanaged assignment of privileges may result in a compromise of data confidentiality and database operation. Privilege assignment should be restricted to DBA, application object owner accounts and application administration accounts.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECLP-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-2479r1_fix">Revoke unauthorized permissions granted with the WITH GRANT option.
+
+From the query prompt:
+
+USE [Database Name]
+REVOKE GRANT OPTION FOR [object] FROM [Principal]
+
+You may re-grant the object permissions to the Principal as shown below.
+
+From the query prompt:
+
+USE [Database Name]
+GRANT [permission] ON [object] TO [Principal]
+
+Document required object permission grants with Grant Option in the System Security Plan and authorize with the IAO.</fixtext><fix id="F-2479r1_fix" /><check system="C-22837r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name AS [Database Name]
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [Database Name]
+SELECT u.name AS [Principal], o.name AS [Object], p.permission_name AS [Permission], p.state_desc AS [State]
+FROM sys.database_principals u
+ JOIN sys.database_permissions p ON u.principal_id = p.grantee_principal_id
+ LEFT JOIN sys.all_objects o ON p.major_id = o.object_id AND p.class IN (1, 8)
+ LEFT JOIN sys.schemas s ON p.major_id = s.schema_id AND p.class = 3
+WHERE p.state_desc &lt;&gt; 'DENY'
+AND p.state IN ('W')
+ORDER BY u.name, o.name, p.permission_name
+
+Review listed object grants. Compare with the list documented in the System Security Plan and authorized by the IAO.
+
+If any object grants listed are not documented in the System Security Plan and authorized by the IAO, this is a Finding.</check-content></check></Rule></Group><Group id="V-3727"><title>Database applications use DDL statements to modify</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24072r2_rule" severity="low" weight="10.0"><version>DG0015-SQLServer9</version><title>Database applications should be restricted from using static DDL statements to modify the application schema.</title><description>&lt;VulnDiscussion&gt;Application users by definition and job function require only the permissions to manipulate data within database objects and execute procedures within the database. The statements used to define objects in the database are referred to as Data Definition Language (DDL) statements and include the CREATE, DROP, and ALTER object statements (DDL statements do not include CREATE USER, DROP USER, or ALTER USER actions). This requirement is included here as a production system would by definition not support changes to the data definitions. Where object creation is an indirect result of DBMS operation or dynamic object structures are required by the application function as is found in some object-oriented DBMS applications, this restriction does not apply. Re-use of static data structures to recreate temporary data objects are not exempted.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSD-1, ECSD-2&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-22643r1_fix">Coordinate with the application designer to modify the application to use static objects with temporary data rather than creating and using temporary objects.
+
+Document in the System Security Plan all known object creation that supports dynamic object usage.</fixtext><fix id="F-22643r1_fix" /><check system="C-23847r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name AS [Database Name]
+FROM [master].sys.databases
+WHERE name NOT IN ('tempdb', 'ReportServerTempDB')
+AND state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [Database Name]
+SELECT s.name AS [Schema], o.name AS [Object], u.type_desc AS [TYPE], o.create_date AS [Create Date]
+FROM sys.schemas s
+ JOIN sys.database_principals u ON s.principal_id = u.principal_id
+ JOIN sys.all_objects o ON s.schema_id = o.schema_id
+WHERE u.name NOT IN ('dbo', 'INFORMATION_SCHEMA', 'sys')
+AND o.is_ms_shipped = 0
+ORDER BY s.name, o.name, o.create_date
+
+View the list of objects listed by the queries above. If any object creation dates do not coincide with the software maintenance and upgrade logs or are not objects documented as supporting dynamic object creation functions, investigate the circumstances under which the object was created. If the object is created using static definitions to store temporary data or indicates that the application uses unauthorized DDL statements, this is a Finding.
+
+The results of these queries will just give an indication of what objects were created since the database installation or its most recent upgrade. It should not be used as a complete result. For example, using the queries listed above, application objects created with the database installation will not be reported as well as objects owned by default application owner accounts.
+
+If the creation dates are more recent than the installation or latest upgrade of the application, the application may be using DDL statements.
+
+If the listed objects are not documented in the System Security Plan, this is a Finding.</check-content></check></Rule></Group><Group id="V-3817"><title>DBMS failed login account lock</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-25285r1_rule" severity="medium" weight="10.0"><version>DG0073-SQLServer9</version><title>Database accounts should not specify account lock times less than the site-approved minimum.</title><description>&lt;VulnDiscussion&gt;Unauthorized access to database accounts may be thwarted by instituting a lock on the target account after the specified number of unsuccessful logins. If allowed to continue an attack unimpeded, the attempt could eventually become successful and compromise the database and data integrity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECLO-1, ECLO-2&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-20069r1_fix">Set the failed login attempt count to 3 to trigger an account lockout or to the number specified in the System Security Plan where supported by the DBMS.
+
+Where this requirement is not compatible with the operation of a front-end application, the unsuccessful logon count and time will be specified and the operational need documented in the System Security Plan.</fixtext><fix id="F-20069r1_fix" /><check system="C-13830r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>If no DBMS accounts authenticate using passwords, this check is Not a Finding.
+
+If DBMS uses Host Authentication only, this check is Not a Finding.
+
+If the DBMS does not natively support this functionality, this check is Not a Finding.
+
+If the DBMS is not configured to lock database accounts after three or an IAO-specified number of consecutive unsuccessful connection attempts within a 60 minute period, this is a Finding.
+
+Note: The counter may be reset to 0 if a third failed logon attempt does not occur before reset. Ensure password policy enforcement is enabled for SQL Server accounts per Check DG0079.</check-content></check></Rule></Group><Group id="V-3823"><title>DBMS source code encoding or encryption</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24094r2_rule" severity="low" weight="10.0"><version>DG0091-SQLServer9</version><title>Custom and GOTS application source code stored in the database should be protected with encryption or encoding.</title><description>&lt;VulnDiscussion&gt;Source code may include information on data relationships, locations of sensitive data that are otherwise obscured, or other processing information that could aid a malicious user. Encoding or encryption of the custom source code objects within the database helps protect against this type of disclosure.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;DCSL-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-19555r1_fix">Recreate stored procedures and specify encryption using the ALTER PROCEDURE command.
+
+Example:
+ALTER PROCEDURE [MyProc] WITH ENCRYPTION
+AS
+SELECT [mycol1], [mycol2] FROM [mytable]...
+
+Replace objects specified between the "[]" characters with custom/GOTS procedure references.
+
+Document all exceptions to this requirement in the System Security Plan and authorize with the IAO.</fixtext><fix id="F-19555r1_fix" /><check system="C-23683r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>If this is not a production database, this check is Not a Finding.
+
+From the query prompt:
+
+SELECT name AS [Database Name]
+FROM [master].sys.databases
+WHERE name NOT IN ('tempdb', 'reportserver', 'reportservertempdb')
+AND state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [Database Name]
+SELECT USER_NAME(o.schema_id) AS [Schema], o.name AS [Object], o.type_desc AS [Type], o.create_date AS [Create Date]
+FROM sys.all_objects o, sys.sql_modules s
+WHERE o.object_id = s.object_id
+AND s.definition IS NOT NULL
+AND o.is_ms_shipped = 0
+ORDER BY USER_NAME(o.schema_id), o.name
+
+Review the listed results.
+
+If any results listed are not documented in the System Security Plan and authorized by the IAO, this is a Finding.</check-content></check></Rule></Group><Group id="V-5683"><title>DBMS application object owner accounts</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24066r2_rule" severity="medium" weight="10.0"><version>DG0004-SQLServer9</version><title>Application object owner accounts should be disabled when not performing installation or maintenance actions.</title><description>&lt;VulnDiscussion&gt;Object ownership provides all database object permissions to the owned object. Access to the application object owner accounts requires special protection to prevent unauthorized access and use of the object ownership privileges. In addition to the high privileges to application objects assigned to this account, it is also an account that, by definition, is not accessed interactively except for application installation and maintenance. This reduced access to the account means that unauthorized access to the account could go undetected. To help protect the account, it should be enabled only when access is required.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECLP-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-20174r1_fix">Disable logins for all application object owner accounts or members of database roles that own objects:
+
+ALTER LOGIN [name] DISABLE
+
+Document application object owner accounts that are not disabled in the System Security Plan and authorize with the IAO.</fixtext><fix id="F-20174r1_fix" /><check system="C-23668r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>Review list of non-default, non-DBA and non-developer object owners:
+
+From the query prompt:
+
+SELECT name AS [Database Name]
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [Database Name]
+SELECT DISTINCT s.name AS [Schema], l.name AS [User]
+FROM sys.all_objects o
+ JOIN sys.schemas s ON o.schema_id = s.schema_id
+ JOIN sys.database_principals u ON s.principal_id = u.principal_id
+ JOIN master.sys.sql_logins l ON u.sid = l.sid
+WHERE o.is_ms_shipped = 0
+AND l.is_disabled = 0
+
+If any login names are returned (not disabled) from the last part of the query, this is a Finding.
+
+Note: The 'sa' account is not exempt from this requirement and should be disabled. DBA and developer accounts authorized to own objects in the database may be permitted, but must be documented.</check-content></check></Rule></Group><Group id="V-15128"><title>DBMS application user role privilege assignment</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24098r2_rule" severity="medium" weight="10.0"><version>DG0105-SQLServer9</version><title>DBMS application user roles should not be assigned unauthorized privileges.</title><description>&lt;VulnDiscussion&gt;Unauthorized access to the data can lead to loss of confidentiality and integrity of the data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;DCFA-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-23528r1_fix">Use the grant and revoke commands to assign the authorized privileges as listed in the System Security Plan to custom database application or application user roles.</fixtext><fix id="F-23528r1_fix" /><check system="C-23688r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>Compare privileges assigned to database application user roles to those defined in the System Security Plan.
+
+From the query prompt:
+
+SELECT name
+FROM [master].sys.databases
+WHERE name NOT IN ('tempdb', 'ReportServerTempDB')
+AND state = 0
+
+Repeat for each database:
+
+USE [database name]
+SELECT r.name, o.name, p.permission_name
+FROM sys.database_principals r, sys.database_permissions p, sys.all_objects o
+WHERE p.grantee_principal_id = r.principal_id
+AND p.major_id = o.object_id
+AND r.principal_id NOT IN (0, 2)
+AND r.type IN ('A', 'R')
+AND r.is_fixed_role = 0
+ORDER BY r.name, o.name, p.permission_name
+
+If the assigned privileges do not match the authorized list of privileges, this is a Finding.
+
+Note: Default privileges assigned to fixed data roles are considered authorized by default.</check-content></check></Rule></Group><Group id="V-15142"><title>DBMS asymmetric key management</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-19465r2_rule" severity="medium" weight="10.0"><version>DG0166-SQLServer9</version><title>Asymmetric keys used by the DBMS for encryption of sensitive data should use DoD PKI Certificates. Private keys used by the DBMS should be protected in accordance with NIST (unclassified data) or NSA (classified data) approved key management and processes.</title><description>&lt;VulnDiscussion&gt;Encryption is only effective if the encryption method is robust and the keys used to provide the encryption are not easily discovered. Without effective encryption, sensitive data is vulnerable to unauthorized access.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;IAKM-1, IAKM-2, IAKM-3&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-18431r1_fix">Use DOD code-signing certificates to create asymmetric keys stored in the database and used to encrypt sensitive data stored in the database.
+
+Assign the application object owner account as the owner of the asymmetric key.
+
+Create audit events for access to the key by other than the application owner account or approved application objects.
+
+Revoke any privileges assigned to the asymmetric key to other than the application object owner account and authorized users.
+
+Protect the private key by encrypting it with the database or service master key.</fixtext><fix id="F-18431r1_fix" /><check system="C-20481r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>If no data is identified as being sensitive or classified by the Information Owner, in the System Security Plan or in the AIS Functional Architecture documentation, this check is Not a Finding.
+
+If no identified sensitive or classified data requires encryption by the Information Owner in the System Security Plan and/or AIS Functional Architecture documentation, this check is Not a Finding.
+
+Note: Protection of DBMS system data is reviewed in other checks.
+
+From the query prompt:
+
+SELECT name
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [database name]
+SELECT k.name, SUSER_SNAME(u.sid), k.pvt_key_encryption_type
+FROM sys.asymmetric_keys k, sys.database_principals u
+WHERE k.principal_id = u.principal_id
+ORDER BY k.name, SUSER_SNAME(u.sid), k.pvt_key_encryption_type
+
+If the total number of records returned for all databases is 0, this is Not a Finding.
+
+Note: Compliance will be measured as part of the security review of the application.
+
+For each asymmetric key identified as being used to encrypt sensitive date, verify the key owner is not a SYSADMIN:
+
+From the query prompt:
+
+USE [database name]
+SELECT o.name, USER_NAME(p.grantee_principal_id), p.permission_name
+FROM sys.database_permissions p, sys.objects o
+WHERE p.major_id = o.object_id
+AND p.class_desc = 'ASYMMETRIC KEY'
+ORDER BY o.name, USER_NAME(p.grantee_principal_id), p.permission_name
+
+If the key owner listed from the previous query is listed as a sysadmin member, this is a Finding.
+
+If any key owner of a key listed above is not the application object owner account or an account specific to the application as documented in the System Security Plan, this is a Finding.
+  
+Review any asymmetric keys whose private key is not encrypted:
+
+From the query prompt:
+
+SELECT name
+FROM [master].sys.asymmetric_keys
+WHERE pvt_key_encryption_type = 'NA'
+ORDER BY name
+
+If any records are returned, this is a Finding.
+
+Examine evidence that an audit record is created whenever the asymmetric key is accessed by other than authorized users. In particular, view evidence that access by a SYSADMIN or other system privileged account results in the generation of an audit record. This is required because system privileges allow access to encryption keys and can use them to access sensitive data where they do not have a need to know.
+
+If an audit record is not generated for unauthorized access to the asymmetric key, this is a Finding.
+
+Note: SQL Server does not provide use of encryption keys stored outside of the instance except to create keys stored within the instance. Therefore, protection of externally stored keys is not addressed for SQL Server in this check.</check-content></check></Rule></Group><Group id="V-15151"><title>Fixed database role members</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23769r2_rule" severity="medium" weight="10.0"><version>DM0531-SQLServer9</version><title>Fixed Database roles should have only authorized users or groups as members.</title><description>&lt;VulnDiscussion&gt;Fixed database roles provide a mechanism to grant groups of privileges to users. These privilege groupings are defined by the installation or upgrade of the SQL Server software at the discretion of Microsoft. Memberships in these roles granted to users should be strictly controlled and monitored. Privileges assigned to these roles should be reviewed for change after software upgrade or maintenance to ensure that the privileges continue to be appropriate to the assigned members.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECLP-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-19750r1_fix">Grant fixed database roles only to authorized accounts. 
+
+Revoke unauthorized accounts from fixed database roles.
+
+From the SQL Server Management Studio GUI:
+
+To deassign roles:
+  1. Expand [instance name]
+  2. Expand Databases
+  3. Expand [database type]
+  4. Expand [database name]
+  5. Expand Security
+  6. Expand Roles
+  7. Expand Database Roles
+  8. Double-click the role to be removed from the assigned user
+  9. Select the user's account under Role Members
+  10. Click on the Remove button
+
+Document fixed database role grants in the System Security Plan and authorize with the IAO.</fixtext><fix id="F-19750r1_fix" /><check system="C-22831r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name AS [Database Name]
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [Database Name]
+SELECT u.name AS [Principal], g.name AS [Role]
+FROM sys.database_role_members r, sys.database_principals u, sys.database_principals g
+WHERE r.role_principal_id = g.principal_id
+AND r.member_principal_id = u.principal_id
+AND g.is_fixed_role = 1
+ORDER BY u.name, g.name
+
+The DBO membership in the db_owner fixed database role does not require explicit authorization and is Not a Finding.
+
+Verify fixed database role assignments for each Principal listed in the System Security Plan. If any Principals are not authorized, this is a Finding.
+
+Any fixed database role assignments to the Guest Principal is a finding.</check-content></check></Rule></Group><Group id="V-15159"><title>Database Master key encryption password</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23860r2_rule" severity="medium" weight="10.0"><version>DM6175-SQLServer9</version><title>The Database Master key encryption password should meet DoD password complexity requirements.</title><description>&lt;VulnDiscussion&gt;Weak passwords may be easily guessed. When passwords used to encrypt keys used for encryption of sensitive data, then the confidentiality of all data encrypted using that key is at risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;IAKM-1, IAKM-2, IAKM-3&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-14843r1_fix">Assign an encryption password to the Database Master Key that is a minimum of 15 characters, contains at least 2 uppercase characters, 2 lowercase characters, 2 special characters, 2 numeric characters and has no repeating characters.
+
+To change the Database Master Key encryption password:
+
+USE [database name]
+ALTER MASTER KEY REGENERATE WITH ENCRYPTION BY PASSWORD = '[new password]'
+
+Note: The database master key encryption method should not be changed until the effects are thoroughly reviewed. Changing the master key encryption causes all encryption using the database master key to be decrypted and re-encrypted. This action should not be taken during a high-demand time. Please see the MS SQL Server documentation prior to re-encrypting the database master key for detailed information.</fixtext><fix id="F-14843r1_fix" /><check system="C-13822r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [database name]
+SELECT COUNT(name)
+FROM sys.symmetric_keys s, sys.key_encryptions k
+WHERE s.name = '##MS_DatabaseMasterKey##'
+AND s.symmetric_key_id = k.key_id
+AND k.crypt_type = 'ESKP'
+
+If the value returned is greater than 0, a Database Master key exists and is encrypted with a password.
+
+Review procedures and evidence of password requirements used to encrypt Database Master Keys. If the passwords are not required to meet DOD password standards, currently 15 characters, 2 uppercase characters, 2 lowercase characters, 2 special characters, and 2 numeric characters and no repeating characters, this is a Finding.
+
+Interview the IAO or DBA to determine the method to retrieve the password to use the Database Master Key. If storage of the password occurs unencrypted in application code or other database tables or files, this is a Finding.</check-content></check></Rule></Group><Group id="V-15161"><title>Database Master key encrypted by server</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23861r2_rule" severity="medium" weight="10.0"><version>DM6179-SQLServer9</version><title>The Database Master Key should be encrypted by the Service Master Key where required.</title><description>&lt;VulnDiscussion&gt;Protection of the Database Master Key is necessary to protect the confidentiality of sensitive data. When encrypted by the Service Master Key, SYSADMINs may access and use the key to view sensitive data that they are not authorized to view. Where alternate encryption means are not feasible, encryption by the Service Master Key may be necessary. To help protect sensitive data from unauthorized access by DBA's, mitigations may be in order. Mitigations may include automatic alerts or other audit events when the database master key is accessed outside of the application or by a DBA account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;IAKM-1, IAKM-2, IAKM-3&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-14856r1_fix">Where possible, encrypt the Database Master Key with a password known only to the application administrator.
+
+Where not possible, configure additional audit events or alerts to detect unauthorized access to the database master key by users not authorized to view sensitive data.</fixtext><fix id="F-14856r1_fix" /><check system="C-13835r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name
+FROM [master].sys.databases
+WHERE is_master_key_encrypted_by_server = 1
+AND owner_sid &lt;&gt; 1
+AND state = 0
+
+If no databases are returned, this is Not a Finding.
+
+For any databases returned, verify in the System Security Plan that encryption of the Database Master Key using the Service Master Key is acceptable and approved by the Information Owner and the encrypted data does not require additional protections to deter or detect DBA access. If not approved, this is a Finding.
+
+If approved and additional protections are required, then verify that the additional requirements are in place in accordance with the System Security Plan. These may include additional auditing on access of the Database Master Key with alerts or other automated monitoring.
+
+If the additional requirements are not in place, this is a Finding.</check-content></check></Rule></Group><Group id="V-15162"><title>Database Master key password storage</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-25497r1_rule" severity="medium" weight="10.0"><version>DM6180-SQLServer9</version><title>Database Master Key passwords shoud not be stored in credentials within the database.</title><description>&lt;VulnDiscussion&gt;Storage of the database master key password in a database credential allows decryption of sensitive data by privileged users who may not have a need-to-know requirement to access the data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;IAKM-1, IAKM-2, IAKM-3&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-14844r1_fix">Use the stored procedure sp_control_dbmasterkey_password to remove any credentials that store database master key passwords.
+
+From the query prompt:
+
+EXEC SP_CONTROL_DBMASTERKEY_PASSWORD @db_name = '[database name]', @action = N'drop'</fixtext><fix id="F-14844r1_fix" /><check system="C-22863r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT COUNT(credential_id)
+FROM [master].sys.master_key_passwords
+
+If count is not 0, this is a Finding.</check-content></check></Rule></Group><Group id="V-15164"><title>Asymmetric keys specify DoD PKI</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23863r2_rule" severity="medium" weight="10.0"><version>DM6184-SQLServer9</version><title>Asymmetric keys should be derived from DoD PKI certificates.</title><description>&lt;VulnDiscussion&gt;Asymmetric keys derived from self-signed certificates or self-generated by other means do not meet the security requirements of DOD that require validation by DOD trusted certificate authorities.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;IAKM-1, IAKM-2, IAKM-3&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-14859r1_fix">Where asymmetric key use is required, the asymmetric should be generated using a code-signing certificate or using the database master key to encrypt the private key. Use of the asymmetric key is expected in DOD installations to be used to support symmetric keys that are in turn used to encrypt sensitive data.
+
+In a DOD environment, asymmetric keys generated and stored within the SQL Server database are not expected to be used for storage of DOD PKI certificates associated with DOD personnel and used to authenticate them for any database access.
+
+CREATE ASYMMETRIC KEY [key name]
+
+OR
+
+CREATE ASYMMETRIC KEY [key name] FROM [asymmetric key source]
+
+[asymmetric key source] may be FILE = [strong file name] or EXECUTABLE FILE = 'executable file' or ASSEMBLY [assembly name]
+
+Each of the asymmetric key sources is expected in a DOD environment to files signed with code-signing certificates issued by the DOD PKMO. Use of the database master key to encrypt is acceptable, especially where the key is generated using the service master key which in turn is generated from the server certificate. In cases where the DBAs are not trusted, use of external key sources is required.</fixtext><fix id="F-14859r1_fix" /><check system="C-13838r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [database name]
+SELECT name, SUSER_SNAME(sid)
+FROM sys.asymmetric_keys
+ORDER BY name, SUSER_SNAME(sid)
+
+If no keys are defined for any database, this check is Not a Finding.
+
+If keys are returned, verify the key is associated with a DOD PKI Certificate.
+
+Evidence may include review of the certificate of a signed file used to read the key into the database.
+
+If the key is not from a DOD PKI certificate or evidence cannot be determined or presented, this is a Finding.</check-content></check></Rule></Group><Group id="V-15168"><title>Symmetric keys encrypting mechanism</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23862r2_rule" severity="medium" weight="10.0"><version>DM6183-SQLServer9</version><title>Symmetric keys should use a master key, certificate, or asymmetric key to encrypt the key.</title><description>&lt;VulnDiscussion&gt;Symmetric keys are vulnerable if the symmetric key encryption is not protected from disclosure. Symmetric keys are well protected by use of either the database or the service master key. Where access by DBA's is not acceptable, use of the application code-signing certificate can be used to provide protection.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;IAKM-1, IAKM-2, IAKM-3&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-14858r1_fix">Configure or alter symmetric keys to encrypt keys with certificates or authorized asymmetric keys:
+
+From the query prompt:
+
+ALTER SYMMETRIC KEY [key name] ADD ENCRYPTION BY CERTIFICATE [certificate name]
+ALTER SYMMETRIC KEY [key name] DROP ENCRYPTION BY [password, symmetric key or asymmetric key]
+
+The symmetric key must specify a certificate or asymmetric key for encryption.
+
+The certificate may be the code-signing certificate used by the application.</fixtext><fix id="F-14858r1_fix" /><check system="C-13837r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [database name]
+SELECT s.name, k.crypt_type_desc
+FROM sys.symmetric_keys s, sys.key_encryptions k
+WHERE s.symmetric_key_id = k.key_id
+AND k.crypt_type IN ('KSKP', 'ESKS')
+AND s.principal_id &lt;&gt; 1
+ORDER BY s.name, k.crypt_type_desc
+
+Review any symmetric keys that have been defined against the System Security Plan.
+
+If any keys are defined that are not documented in the System Security Plan, this is a Finding.
+
+Review the System Security Plan to review the encryption mechanism specified for each symmetric key. If the method does not indicate use of certificates, this is a Finding.
+
+If the certificate specified is not a DOD PKI certificate, this is a Finding.</check-content></check></Rule></Group><Group id="V-15172"><title>DBMS object permission grants to PUBLIC or Guest</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23871r2_rule" severity="medium" weight="10.0"><version>DM6196-SQLServer9</version><title>Object permissions should not be assigned to PUBLIC or GUEST.</title><description>&lt;VulnDiscussion&gt;The guest account is available to users that do not have authorized accounts on the database. The PUBLIC role is granted to all users of the database regardless of assigned job function. Assignment of object privileges to unauthorized users can compromise data integrity and/or confidentiality.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECLP-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-19722r1_fix">Revoke any unauthorized object privileges assigned to PUBLIC or GUEST where supported by the DBMS vendor.
+
+Document all remaining object privileges assigned to PUBLIC in the System Security Plan and authorize with the IAO.
+
+From the query prompt:
+
+SELECT name
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [database name]
+REVOKE [privilege] ON [object name] FROM '[public or guest]'
+
+Repeat for each object privilege assigned to public or guest:
+
+From the query prompt:
+
+USE [database name]
+REVOKE [permission] ON [schema name].[object name] TO PUBLIC
+
+To determine correct schema name for the object, use:
+
+SELECT SCHEMA_NAME(schema_id)
+FROM [master].sys.all_objects
+WHERE name = '[object name]'</fixtext><fix id="F-19722r1_fix" /><check system="C-22798r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name AS [Database Name]
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [Database Name]
+SELECT u.name AS [Principal], o.name AS [Object], p.permission_name AS [Permission], p.state_desc AS [State]
+FROM sys.database_principals u
+ JOIN sys.database_permissions p ON u.principal_id = p.grantee_principal_id
+ JOIN sys.all_objects o ON p.major_id = o.object_id
+WHERE p.state_desc &lt;&gt; 'DENY' 
+AND u.name IN ('guest', 'public')
+ORDER BY u.name, o.name, p.permission_name
+
+If any results listed are unauthorized, this is a Finding.
+
+If any results listed are not documented in the System Security Plan and authorized by the IAO, this is a Finding.
+
+Note: Some permissions assigned to PUBLIC within the master database may require the 'Allow modifications to be made directly to the system catalogs' database setting be
+temporarily be enabled.</check-content></check></Rule></Group><Group id="V-15177"><title>Service Master Key backup and offline storage</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-25498r1_rule" severity="medium" weight="10.0"><version>DM6188-SQLServer9</version><title>The Service Master Key should be backed up, stored offline and off site.</title><description>&lt;VulnDiscussion&gt;Backup and recovery of the Service Master Key may be critical to the complete recovery of the database.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;IAKM-1, IAKM-2, IAKM-3&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-14845r1_fix">Document and implement procedures to safely backup and store the service master key.
+
+Include in the procedures methods to establish evidence of backup and storage and careful, restricted access and restoration of the service master key.
+
+Also, include provisions to store the key offsite.
+
+BACKUP SERVICE MASTER KEY TO FILE = 'path_to_file' 
+ ENCRYPTION BY PASSWORD = 'password'</fixtext><fix id="F-14845r1_fix" /><check system="C-13824r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>Review procedures for and evidence of backup of the SQL Server Service Master Key in the System Security Plan. 
+
+If the procedures or evidence does not exist, this is a Finding.
+
+If the procedures do not indicate offline and off-site storage of the Service Master Key, this is a Finding.
+
+If procedures do not indicate access restrictions to the Service Master Key backup, this is a Finding.</check-content></check></Rule></Group><Group id="V-15185"><title>Asymmetric keys private key encryption type</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23864r2_rule" severity="medium" weight="10.0"><version>DM6185-SQLServer9</version><title>Asymmetric private key encryption should use an authorized encryption type.</title><description>&lt;VulnDiscussion&gt;Asymmetric keys stored in the database that also include storage of the private key require protection from any unauthorized user. To protect unauthorized access and use of any asymmetric key by DBA's or users with SYSADMIN privileges, a password must be used to encrypt the private key. Use of the Database Master Key or Service Master Key allows access by the DBA. Consider the protection requirements for asymmetric key usage and document this in the System Security Plan. Avoid storage of static asymmetric private keys that is keys not generated and maintained for temporary session or other temporary usage, in the database.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;IAKM-1, IAKM-2, IAKM-3&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-14860r1_fix">If stored with a private key, the private key is always encrypted either by a specified password, or by the database or service master key.
+
+Create or alter the asymmetric key with the approved encryption type specified in the System Security Plan.
+
+Document the approved encryption method after considering whether the DBA should be trusted to access the asymmetric key.</fixtext><fix id="F-14860r1_fix" /><check system="C-13839r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [database name]
+SELECT name, pvt_key_encryption_type_desc
+FROM sys.asymmetric_keys
+WHERE pvt_key_encryption_type = 'PW'
+ORDER BY name, pvt_key_encryption_type_desc
+
+If no records are returned, this is Not a Finding.
+
+Review any records returned and the encryption type listed. If any do not match the documented approved encryption method as specified in the System Security Plan, this is a Finding.</check-content></check></Rule></Group><Group id="V-15607"><title>DBMS application object ownership</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24068r2_rule" severity="medium" weight="10.0"><version>DG0008-SQLServer9</version><title>Application objects should be owned by accounts authorized for ownership.</title><description>&lt;VulnDiscussion&gt;Database object ownership implies full privileges to the owned object including the privilege to assign access to the owned objects to other subjects. Unmanaged or uncontrolled ownership of objects can lead to unauthorized object grants and alterations.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECLP-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-17828r1_fix">Create database accounts dedicated for application object ownership.
+
+To simplify access authorizations, use a single account for each application to avoid cross chaining of ownership, which makes security configuration more complex and degrades system performance.
+
+Document all application object ownership in the System Security Plan and authorize with the IAO.</fixtext><fix id="F-17828r1_fix" /><check system="C-23671r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name AS [Database Name]
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [Database Name]
+SELECT DISTINCT s.name AS [Schema Name], u.name AS [Principal], u.type_desc AS [Type]
+FROM sys.schemas s
+ JOIN sys.database_principals u ON s.principal_id = u.principal_id
+ JOIN sys.all_objects o ON s.schema_id = o.schema_id
+WHERE u.name NOT IN ('dbo', 'INFORMATION_SCHEMA', 'sys')
+ORDER BY s.name, u.name
+
+Review the object ownerships listed.  Verify any listed accounts are authorized application installation accounts and documented in the System Security Plan.
+
+If any accounts are not authorized, this is a Finding.
+
+If any authorized accounts listed are not documented in the System Security Plan, this is a Finding.</check-content></check></Rule></Group><Group id="V-15629"><title>DBMS application user privilege assignment</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24106r2_rule" severity="medium" weight="10.0"><version>DG0121-SQLServer9</version><title>Application users privileges should be restricted to assignment using application user roles.</title><description>&lt;VulnDiscussion&gt;Privileges granted outside the role of the application user job function are more likely to go unmanaged or without oversight for authorization. Maintenance of privileges using roles defined for discrete job functions offers improved oversight of application user privilege assignments and helps to protect against unauthorized privilege assignment.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECLP-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-23530r1_fix">Revoke permissions assigned directly to user accounts and grant them instead to the appropriate group account.
+
+From the query prompt:
+
+REVOKE [permission] ON [object] FROM [user name]
+GRANT [permission] ON [object] TO [group name]
+
+Document any exceptions to privileges that cannot be assigned via database roles in the System Security Plan.</fixtext><fix id="F-23530r1_fix" /><check system="C-23691r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [database name]
+SELECT u.name, o.name, p.permission_name
+FROM sys.all_objects o, sys.database_principals u, sys.database_permissions p
+WHERE o.object_id = p.major_id
+AND p.grantee_principal_id = u.principal_id
+AND p.state IN ('G', 'W')
+AND u.type IN ('S', 'U')
+ORDER BY u.name, o.name, p.permission_name
+
+If any names are listed, this is a Finding.</check-content></check></Rule></Group><Group id="V-15630"><title>Sensitive data access</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24307r1_rule" severity="medium" weight="10.0"><version>DG0122-SQLServer9</version><title>Access to sensitive data should be restricted to authorized users identified by the Information Owner.</title><description>&lt;VulnDiscussion&gt;Unauthorized access to sensitive data can lead to unauthorized disclosure, modification or accountability. Access to sensitive data that is granted that is not restricted at all levels based on job function may be exploited regardless of attempts to control. An example of this is a web application that serves general users, but that access sensitive data in a backend database using an account with elevated privileges. This provides a means for the web application user to exploit the application to gain unauthorized access to data in the database. Where the user never has access to a path with excess privileges, unauthorized access is more difficult to gain.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECAN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-23498r1_fix">Have the Information Owner identify all sensitive data stored in the database specified in the System Security Plan.
+
+Define job functions and sensitive data access requirements for the job functions and included them in the System Security Plan.
+
+Assign only authorized users for job functions.</fixtext><fix id="F-23498r1_fix" /><check system="C-13833r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>If no data is identified as being sensitive or classified by the Information Owner, in the System Security Plan or in the AIS Functional Architecture documentation, this check is Not a Finding.
+
+If no identified sensitive or classified data requires encryption by the Information Owner in the System Security Plan and/or AIS Functional Architecture documentation, this check is Not a Finding.
+
+Review privilege assignments to sensitive data stored in the database.
+
+Compare assigned privileges to those that are authorized in the System Security Plan.
+
+If unauthorized access is granted or sensitive data access requirements are not documented, this is a Finding.</check-content></check></Rule></Group><Group id="V-15642"><title>DBMS access to sensitive data</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-25369r1_rule" severity="medium" weight="10.0"><version>DG0138-SQLServer9</version><title>Access grants to sensitive data should be restricted to authorized user roles.</title><description>&lt;VulnDiscussion&gt;Unauthorized access to sensitive data may compromise the confidentiality of personnel privacy, threaten national security or compromise a variety of other sensitive operations. Access controls are best managed by defining requirements based on distinct job functions and assigning access based on the job function assigned to the individual user.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECAN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-23502r1_fix">Define, document and implement all sensitive data access controls based on job function in the System Security Plan.</fixtext><fix id="F-23502r1_fix" /><check system="C-13841r1_chk"><check-content-ref name="I" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>If no data is identified as being sensitive or classified by the Information Owner, in the System Security Plan or in the AIS Functional Architecture documentation, this check is Not a Finding.
+
+If no identified sensitive or classified data requires encryption by the Information Owner in the System Security Plan and/or AIS Functional Architecture documentation, this check is Not a Finding.
+
+Review data access requirements for sensitive data as identified and assigned by the Information Owner in the System Security Plan.
+
+Review the access controls for sensitive data configured in the database.
+
+If the configured access controls do not match those defined in the System Security Plan, this is a Finding.</check-content></check></Rule></Group><Group id="V-15654"><title>DBMS symmetric key management</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-21488r2_rule" severity="medium" weight="10.0"><version>DG0165-SQLServer9</version><title>DBMS symmetric keys should be protected in accordance with NSA or NIST-approved key management technology or processes.</title><description>&lt;VulnDiscussion&gt;Symmetric keys used for encryption protect data from unauthorized access. However, if not protected in accordance with acceptable standards, the keys themselves may be compromised and used for unauthorized data access.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;true&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;IAKM-1, IAKM-2, IAKM-3&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-20181r1_fix">Document all users authorized to access the database master key in the System Security Plan.
+
+Restrict authorized users to the application, database owner and SYSADMINs.
+
+For each unauthorized user:
+
+From the query prompt:
+
+REVOKE CONTROL FROM [user name]
+</fixtext><fix id="F-20181r1_fix" /><check system="C-23695r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>From the query prompt:
+
+SELECT name
+FROM [master].sys.databases
+WHERE state = 0
+
+Repeat for each database:
+
+From the query prompt:
+
+USE [database name]
+SELECT USER_NAME(grantee_principal_id)
+FROM sys.database_permissions
+WHERE class = 0
+AND state IN ('G', 'W')
+AND type = 'CL'
+ORDER BY USER_NAME(grantee_principal_id)
+
+If no records are returned, this is Not a Finding.
+
+If any records are returned, verify they are authorized to have access to manage the Database Master Key. If any do not, this is a Finding.</check-content></check></Rule></Group><Group id="V-15657"><title>DBMS classification level audit</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-21490r1_rule" severity="medium" weight="10.0"><version>DG0172-SQLServer9</version><title>Changes to DBMS security labels should be audited.</title><description>&lt;VulnDiscussion&gt;Some DBMS systems provide the feature to assign security labels to data elements. The confidentiality and integrity of the data depends upon the security label assignment where this feature is in use. Changes to security label assignment may indicate suspicious activity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Database Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECLC-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2005</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2005</dc:subject><dc:identifier>986</dc:identifier></reference><fixtext fixref="F-20183r1_fix">Define the policy for auditing changes to security labels defined for the data. Document the audit requirements in the System Security Plan and configure database auditing in accordance with the policy.</fixtext><fix id="F-20183r1_fix" /><check system="C-23697r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Database SQL Server 9.xml" /><check-content>If no data is identified as being sensitive or classified by the Information Owner, in the System Security Plan or in the AIS Functional Architecture documentation, this check is Not a Finding.
+
+If no identified sensitive or classified data requires encryption by the Information Owner in the System Security Plan and/or AIS Functional Architecture documentation, this check is Not a Finding.
+
+If the DBMS does not provide the capability to display sensitivity marking of data, this check is Not a Finding.
+
+For SQL Server 2005:
+
+  Review the DBMS configuration for marking and labeling of sensitive data.
+   http://www.microsoft.com/technet/prodtechnol/sql/2005/multisec.mspx
+
+If security label assignment is not audited for changes, this is a Finding.
+</check-content></check></Rule></Group></Benchmark>

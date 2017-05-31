@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" id="Apple_iOS_9_ISCG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2015-10-08">accepted</status><title>Apple iOS 9 Interim Security Configuration Guide</title><description>This Interim Security Configuration Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 05 Oct 2015</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-61567" selected="true" /><select idref="V-61889" selected="true" /><select idref="V-61891" selected="true" /><select idref="V-61893" selected="true" /><select idref="V-61895" selected="true" /><select idref="V-61897" selected="true" /><select idref="V-61899" selected="true" /><select idref="V-61901" selected="true" /><select idref="V-61903" selected="true" /><select idref="V-61905" selected="true" /><select idref="V-61907" selected="true" /><select idref="V-61909" selected="true" /><select idref="V-61911" selected="true" /><select idref="V-61913" selected="true" /><select idref="V-61915" selected="true" /><select idref="V-61917" selected="true" /><select idref="V-61919" selected="true" /><select idref="V-61921" selected="true" /><select idref="V-61923" selected="true" /><select idref="V-61925" selected="true" /><select idref="V-61927" selected="true" /><select idref="V-61929" selected="true" /><select idref="V-61931" selected="true" /><select idref="V-61933" selected="true" /><select idref="V-61935" selected="true" /><select idref="V-61937" selected="true" /><select idref="V-61939" selected="true" /><select idref="V-61941" selected="true" /><select idref="V-61943" selected="true" /><select idref="V-61945" selected="true" /><select idref="V-61947" selected="true" /><select idref="V-61949" selected="true" /><select idref="V-61951" selected="true" /><select idref="V-61953" selected="true" /><select idref="V-61955" selected="true" /><select idref="V-61957" selected="true" /><select idref="V-61959" selected="true" /><select idref="V-61961" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-61567" selected="true" /><select idref="V-61889" selected="true" /><select idref="V-61891" selected="true" /><select idref="V-61893" selected="true" /><select idref="V-61895" selected="true" /><select idref="V-61897" selected="true" /><select idref="V-61899" selected="true" /><select idref="V-61901" selected="true" /><select idref="V-61903" selected="true" /><select idref="V-61905" selected="true" /><select idref="V-61907" selected="true" /><select idref="V-61909" selected="true" /><select idref="V-61911" selected="true" /><select idref="V-61913" selected="true" /><select idref="V-61915" selected="true" /><select idref="V-61917" selected="true" /><select idref="V-61919" selected="true" /><select idref="V-61921" selected="true" /><select idref="V-61923" selected="true" /><select idref="V-61925" selected="true" /><select idref="V-61927" selected="true" /><select idref="V-61929" selected="true" /><select idref="V-61931" selected="true" /><select idref="V-61933" selected="true" /><select idref="V-61935" selected="true" /><select idref="V-61937" selected="true" /><select idref="V-61939" selected="true" /><select idref="V-61941" selected="true" /><select idref="V-61943" selected="true" /><select idref="V-61945" selected="true" /><select idref="V-61947" selected="true" /><select idref="V-61949" selected="true" /><select idref="V-61951" selected="true" /><select idref="V-61953" selected="true" /><select idref="V-61955" selected="true" /><select idref="V-61957" selected="true" /><select idref="V-61959" selected="true" /><select idref="V-61961" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-61567" selected="true" /><select idref="V-61889" selected="true" /><select idref="V-61891" selected="true" /><select idref="V-61893" selected="true" /><select idref="V-61895" selected="true" /><select idref="V-61897" selected="true" /><select idref="V-61899" selected="true" /><select idref="V-61901" selected="true" /><select idref="V-61903" selected="true" /><select idref="V-61905" selected="true" /><select idref="V-61907" selected="true" /><select idref="V-61909" selected="true" /><select idref="V-61911" selected="true" /><select idref="V-61913" selected="true" /><select idref="V-61915" selected="true" /><select idref="V-61917" selected="true" /><select idref="V-61919" selected="true" /><select idref="V-61921" selected="true" /><select idref="V-61923" selected="true" /><select idref="V-61925" selected="true" /><select idref="V-61927" selected="true" /><select idref="V-61929" selected="true" /><select idref="V-61931" selected="true" /><select idref="V-61933" selected="true" /><select idref="V-61935" selected="true" /><select idref="V-61937" selected="true" /><select idref="V-61939" selected="true" /><select idref="V-61941" selected="true" /><select idref="V-61943" selected="true" /><select idref="V-61945" selected="true" /><select idref="V-61947" selected="true" /><select idref="V-61949" selected="true" /><select idref="V-61951" selected="true" /><select idref="V-61953" selected="true" /><select idref="V-61955" selected="true" /><select idref="V-61957" selected="true" /><select idref="V-61959" selected="true" /><select idref="V-61961" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-61567" selected="true" /><select idref="V-61889" selected="true" /><select idref="V-61891" selected="true" /><select idref="V-61893" selected="true" /><select idref="V-61895" selected="true" /><select idref="V-61897" selected="true" /><select idref="V-61899" selected="true" /><select idref="V-61901" selected="true" /><select idref="V-61903" selected="true" /><select idref="V-61905" selected="true" /><select idref="V-61907" selected="true" /><select idref="V-61909" selected="true" /><select idref="V-61911" selected="true" /><select idref="V-61913" selected="true" /><select idref="V-61915" selected="true" /><select idref="V-61917" selected="true" /><select idref="V-61919" selected="true" /><select idref="V-61921" selected="true" /><select idref="V-61923" selected="true" /><select idref="V-61925" selected="true" /><select idref="V-61927" selected="true" /><select idref="V-61929" selected="true" /><select idref="V-61931" selected="true" /><select idref="V-61933" selected="true" /><select idref="V-61935" selected="true" /><select idref="V-61937" selected="true" /><select idref="V-61939" selected="true" /><select idref="V-61941" selected="true" /><select idref="V-61943" selected="true" /><select idref="V-61945" selected="true" /><select idref="V-61947" selected="true" /><select idref="V-61949" selected="true" /><select idref="V-61951" selected="true" /><select idref="V-61953" selected="true" /><select idref="V-61955" selected="true" /><select idref="V-61957" selected="true" /><select idref="V-61959" selected="true" /><select idref="V-61961" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-61567" selected="true" /><select idref="V-61889" selected="true" /><select idref="V-61891" selected="true" /><select idref="V-61893" selected="true" /><select idref="V-61895" selected="true" /><select idref="V-61897" selected="true" /><select idref="V-61899" selected="true" /><select idref="V-61901" selected="true" /><select idref="V-61903" selected="true" /><select idref="V-61905" selected="true" /><select idref="V-61907" selected="true" /><select idref="V-61909" selected="true" /><select idref="V-61911" selected="true" /><select idref="V-61913" selected="true" /><select idref="V-61915" selected="true" /><select idref="V-61917" selected="true" /><select idref="V-61919" selected="true" /><select idref="V-61921" selected="true" /><select idref="V-61923" selected="true" /><select idref="V-61925" selected="true" /><select idref="V-61927" selected="true" /><select idref="V-61929" selected="true" /><select idref="V-61931" selected="true" /><select idref="V-61933" selected="true" /><select idref="V-61935" selected="true" /><select idref="V-61937" selected="true" /><select idref="V-61939" selected="true" /><select idref="V-61941" selected="true" /><select idref="V-61943" selected="true" /><select idref="V-61945" selected="true" /><select idref="V-61947" selected="true" /><select idref="V-61949" selected="true" /><select idref="V-61951" selected="true" /><select idref="V-61953" selected="true" /><select idref="V-61955" selected="true" /><select idref="V-61957" selected="true" /><select idref="V-61959" selected="true" /><select idref="V-61961" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-61567" selected="true" /><select idref="V-61889" selected="true" /><select idref="V-61891" selected="true" /><select idref="V-61893" selected="true" /><select idref="V-61895" selected="true" /><select idref="V-61897" selected="true" /><select idref="V-61899" selected="true" /><select idref="V-61901" selected="true" /><select idref="V-61903" selected="true" /><select idref="V-61905" selected="true" /><select idref="V-61907" selected="true" /><select idref="V-61909" selected="true" /><select idref="V-61911" selected="true" /><select idref="V-61913" selected="true" /><select idref="V-61915" selected="true" /><select idref="V-61917" selected="true" /><select idref="V-61919" selected="true" /><select idref="V-61921" selected="true" /><select idref="V-61923" selected="true" /><select idref="V-61925" selected="true" /><select idref="V-61927" selected="true" /><select idref="V-61929" selected="true" /><select idref="V-61931" selected="true" /><select idref="V-61933" selected="true" /><select idref="V-61935" selected="true" /><select idref="V-61937" selected="true" /><select idref="V-61939" selected="true" /><select idref="V-61941" selected="true" /><select idref="V-61943" selected="true" /><select idref="V-61945" selected="true" /><select idref="V-61947" selected="true" /><select idref="V-61949" selected="true" /><select idref="V-61951" selected="true" /><select idref="V-61953" selected="true" /><select idref="V-61955" selected="true" /><select idref="V-61957" selected="true" /><select idref="V-61959" selected="true" /><select idref="V-61961" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-61567" selected="true" /><select idref="V-61889" selected="true" /><select idref="V-61891" selected="true" /><select idref="V-61893" selected="true" /><select idref="V-61895" selected="true" /><select idref="V-61897" selected="true" /><select idref="V-61899" selected="true" /><select idref="V-61901" selected="true" /><select idref="V-61903" selected="true" /><select idref="V-61905" selected="true" /><select idref="V-61907" selected="true" /><select idref="V-61909" selected="true" /><select idref="V-61911" selected="true" /><select idref="V-61913" selected="true" /><select idref="V-61915" selected="true" /><select idref="V-61917" selected="true" /><select idref="V-61919" selected="true" /><select idref="V-61921" selected="true" /><select idref="V-61923" selected="true" /><select idref="V-61925" selected="true" /><select idref="V-61927" selected="true" /><select idref="V-61929" selected="true" /><select idref="V-61931" selected="true" /><select idref="V-61933" selected="true" /><select idref="V-61935" selected="true" /><select idref="V-61937" selected="true" /><select idref="V-61939" selected="true" /><select idref="V-61941" selected="true" /><select idref="V-61943" selected="true" /><select idref="V-61945" selected="true" /><select idref="V-61947" selected="true" /><select idref="V-61949" selected="true" /><select idref="V-61951" selected="true" /><select idref="V-61953" selected="true" /><select idref="V-61955" selected="true" /><select idref="V-61957" selected="true" /><select idref="V-61959" selected="true" /><select idref="V-61961" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-61567" selected="true" /><select idref="V-61889" selected="true" /><select idref="V-61891" selected="true" /><select idref="V-61893" selected="true" /><select idref="V-61895" selected="true" /><select idref="V-61897" selected="true" /><select idref="V-61899" selected="true" /><select idref="V-61901" selected="true" /><select idref="V-61903" selected="true" /><select idref="V-61905" selected="true" /><select idref="V-61907" selected="true" /><select idref="V-61909" selected="true" /><select idref="V-61911" selected="true" /><select idref="V-61913" selected="true" /><select idref="V-61915" selected="true" /><select idref="V-61917" selected="true" /><select idref="V-61919" selected="true" /><select idref="V-61921" selected="true" /><select idref="V-61923" selected="true" /><select idref="V-61925" selected="true" /><select idref="V-61927" selected="true" /><select idref="V-61929" selected="true" /><select idref="V-61931" selected="true" /><select idref="V-61933" selected="true" /><select idref="V-61935" selected="true" /><select idref="V-61937" selected="true" /><select idref="V-61939" selected="true" /><select idref="V-61941" selected="true" /><select idref="V-61943" selected="true" /><select idref="V-61945" selected="true" /><select idref="V-61947" selected="true" /><select idref="V-61949" selected="true" /><select idref="V-61951" selected="true" /><select idref="V-61953" selected="true" /><select idref="V-61955" selected="true" /><select idref="V-61957" selected="true" /><select idref="V-61959" selected="true" /><select idref="V-61961" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-61567" selected="true" /><select idref="V-61889" selected="true" /><select idref="V-61891" selected="true" /><select idref="V-61893" selected="true" /><select idref="V-61895" selected="true" /><select idref="V-61897" selected="true" /><select idref="V-61899" selected="true" /><select idref="V-61901" selected="true" /><select idref="V-61903" selected="true" /><select idref="V-61905" selected="true" /><select idref="V-61907" selected="true" /><select idref="V-61909" selected="true" /><select idref="V-61911" selected="true" /><select idref="V-61913" selected="true" /><select idref="V-61915" selected="true" /><select idref="V-61917" selected="true" /><select idref="V-61919" selected="true" /><select idref="V-61921" selected="true" /><select idref="V-61923" selected="true" /><select idref="V-61925" selected="true" /><select idref="V-61927" selected="true" /><select idref="V-61929" selected="true" /><select idref="V-61931" selected="true" /><select idref="V-61933" selected="true" /><select idref="V-61935" selected="true" /><select idref="V-61937" selected="true" /><select idref="V-61939" selected="true" /><select idref="V-61941" selected="true" /><select idref="V-61943" selected="true" /><select idref="V-61945" selected="true" /><select idref="V-61947" selected="true" /><select idref="V-61949" selected="true" /><select idref="V-61951" selected="true" /><select idref="V-61953" selected="true" /><select idref="V-61955" selected="true" /><select idref="V-61957" selected="true" /><select idref="V-61959" selected="true" /><select idref="V-61961" selected="true" /></Profile><Group id="V-61567"><title>PP-MDF-201003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76057r1_rule" severity="medium" weight="10.0"><version>AIOS-01-080002</version><title>Apple iOS must lock the display after 15 minutes (or less) of inactivity.</title><description>&lt;VulnDiscussion&gt;The screen lock timeout must be set to a value that helps protect the device from unauthorized access. Having a too-long timeout would increase the window of opportunity for adversaries who gain physical access to the mobile device through loss, theft, etc. Such devices are much more likely to be in an unlocked state when acquired by an adversary, thus granting immediate access to the data on the mobile device. The maximum timeout period of 15 minutes has been selected to balance functionality and security; shorter timeout periods may be appropriate depending on the risks posed to the mobile device.
+
+SFR ID: FMT_SMF_EXT.1.1 #01b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000057</ident><fixtext fixref="F-67483r1_fix">Install a Configuration Profile to lock the device display after 15 minutes (or fewer) of inactivity. This is done by setting "Maximum Auto-Lock time" and "Grace Period for device lock" so the sum of their values is between 1 and 15 minutes.</fixtext><fix id="F-67483r1_fix" /><check system="C-62439r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm the screen lock time-out set to 15 minutes or fewer.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device.
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review.
+
+In the management tool, verify the sum of the values assigned to "Maximum Auto-Lock time" and "Grace period for device lock" value is between 1 and 15 minutes. Alternatively, locate the text "&lt;key&gt;maxGracePeriod&lt;/key&gt;" and "&lt;key&gt;maxInactivity&lt;/key&gt;" and ensure the sum of their integer value is between 1 and 15 in the configuration profile (.mobileconfig file). For example:
+
+"&lt;key&gt;maxGracePeriod&lt;/key&gt;
+&lt;integer&gt;5&lt;/integer&gt;
+&lt;key&gt;maxInactivity&lt;/key&gt;
+&lt;integer&gt;5&lt;/integer&gt;"
+
+Here, 5 + 5 = 10; this meets the requirement.
+
+On the iOS device:
+
+1. Open Settings app. 
+2. Tap "General".
+3. Record the value displayed for "Auto-Lock". 
+4. Go back to the Setting app main menu.
+5. Tap "Touch ID &amp; Passcode" or "Passcode".
+6. Enter current device passcode and tap "Done".
+7. Record the value displayed for "Require Passcode" (Record 0 if the setting is "Immediately".
+8. Verify the sum of the two recorded values is between 1 and 15 minutes.
+
+Note: On some iOS devices, it is not possible to have a sum of exactly 15. In these cases, the sum must be less than 15. A sum of 16 does not meet the requirement.
+
+If the sum of the "Auto-Lock" and "Require Passcode" is not between 1 and 15 minutes in the iOS management tool, if the sum of the values assigned to "&lt;key&gt;maxGracePeriod&lt;/key&gt;" and "&lt;key&gt;maxInactivity&lt;/key&gt;" is not between 1 and 15 minutes in the configuration profile, or if the sum of the values assigned to "Auto-Lock" and "Require Passcode" is not between 1 and 15 minutes, this is a finding.</check-content></check></Rule></Group><Group id="V-61889"><title>PP-MDF-201002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76379r1_rule" severity="low" weight="10.0"><version>AIOS-01-080004</version><title>Apple iOS must enforce a minimum password length of 6 characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute force attacks. The ability to crack a password is a function of how many attempts an adversary is permitted, how quickly an adversary can do each attempt, and the size of the password space. The longer the minimum length of the password is, the larger the password space. Having a too-short minimum password length significantly reduces password strength, increasing the chance of password compromise and resulting device and data compromise.
+
+SFR ID: FMT_SMF_EXT.1.1 #01a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000205</ident><fixtext fixref="F-67807r1_fix">Install a Configuration Profile to enforce a minimum passcode length value of 6 or greater.</fixtext><fix id="F-67807r1_fix" /><check system="C-62771r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm the minimum passcode length is 6 or more.
+
+This procedure is performed in the Apple iOS management tool and on the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Management tool, verify the "Minimum passcode length" value is set to 6 or greater.
+Alternatively, verify the text "&lt;key&gt;minLength&lt;/key&gt; &lt;integer&gt;6&lt;/integer&gt;" appears in the configuration profile (.mobileconfig file). It also is acceptable for the integer value to be greater than 6.
+
+On the Apple iOS device: 
+1. Open the Settings app. 
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the password policy.
+5. Tap "Restrictions".
+6. Tap "Passcode".
+7. Verify "Minimum length" is listed as "6" or greater.
+
+If the "Minimum passcode length" is less than 6 characters in the iOS management tool, "&lt;key&gt;minLength&lt;/key&gt; " has an integer value of less than 6, or the password policy on the Apple iOS device from the Apple iOS management tool does not list "Minimum length" of "6" or fewer, this is a finding.</check-content></check></Rule></Group><Group id="V-61891"><title>PP-MDF-201005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76381r1_rule" severity="low" weight="10.0"><version>AIOS-01-080005</version><title>Apple iOS must not allow more than 10 consecutive failed authentication attempts.</title><description>&lt;VulnDiscussion&gt;The more attempts an adversary has to guess a password, the more likely the adversary will enter the correct password and gain access to resources on the device. Setting a limit on the number of attempts mitigates this risk. Setting the limit at 10 gives authorized users the ability to make a few mistakes when entering the password but still provides adequate protection against dictionary or brute force attacks on the password.
+
+SFR ID: FMT_SMF_EXT.1.1 #02&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000044</ident><fixtext fixref="F-67809r1_fix">Install a Configuration Profile to allow only 10 or fewer consecutive failed authentication attempts.</fixtext><fix id="F-67809r1_fix" /><check system="C-62773r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm the consecutive failed authentication attempts is set to 10 or fewer.
+
+This procedure is performed in the Apple iOS management tool and on the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Management tool, verify the "Maximum number of failed attempts" value is set to 10 or fewer.
+Alternatively, verify the text "&lt;key&gt;maxFailedAttempts&lt;/key&gt; &lt;integer&gt;10&lt;/integer&gt;" appears in the configuration profile (.mobileconfig file). It also is acceptable for the integer value to be less than 10.
+
+On the Apple iOS device: 
+1. Open the Settings app. 
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the iOS management tool containing the password policy.
+5. Tap "Restrictions".
+6. Tap "Passcode".
+7. Verify "Max failed attempts" is listed as "10" or fewer.
+
+If the "Maximum number of failed attempts" is more than 10 in the iOS management tool, "&lt;key&gt;maxFailedAttempts&lt;/key&gt; " has an integer value of more than 10, or the password policy on the Apple iOS device from the Apple iOS management tool does not list "Max failed attempts" of "10" or fewer, this is a finding.</check-content></check></Rule></Group><Group id="V-61893"><title>PP-MDF-201001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76383r1_rule" severity="high" weight="10.0"><version>AIOS-01-080006</version><title>Apple iOS must require a valid password be successfully entered before the mobile device data is unencrypted.</title><description>&lt;VulnDiscussion&gt;Passwords provide a form of access control that prevents unauthorized individuals from accessing computing resources and sensitive data. Passwords may also be a source of entropy for generation of key encryption or data encryption keys. If a password is not required to access data, then this data is accessible to any adversary who obtains physical possession of the device. Requiring that a password be successfully entered before the mobile device data is unencrypted mitigates this risk.
+
+Note: MDF PP v.2.0 requires a Password Authentication Factor and requires management of its length and complexity. It leaves open whether the existence of a password is subject to management. This STIGID addresses the configuration to require a password, which is critical to the cybersecurity posture of the device.
+
+SFR ID: FIA_UAU_EXT.1.1&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002476</ident><fixtext fixref="F-67811r1_fix">Install a Configuration Profile to require a password to unlock the device.</fixtext><fix id="F-67811r1_fix" /><check system="C-62775r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm the device is set to require a passcode before use.
+
+This procedure is performed on the iOS device. 
+
+On the Apple iOS device: 
+1. Lock the device.
+2. Wait the duration of the “Grace Lock” period.
+3. Attempt to unlock the device. 
+4. Verify the unlock screen cannot be bypassed without entering a passcode.
+
+If the unlock screen can be bypassed without entering a passcode, this is a finding.</check-content></check></Rule></Group><Group id="V-61895"><title>PP-MDF-201004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76385r1_rule" severity="low" weight="10.0"><version>AIOS-01-080007</version><title>Apple iOS must not allow passwords that include more than two repeating or sequential characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute force attacks. Passwords that contain repeating or sequential characters are significantly easier to guess than those that do not contain repeating or sequential characters. Therefore, disallowing repeating or sequential characters increases password strength and decreases risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #01b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67813r1_fix">Install a Configuration Profile to disallow more than 2 sequential or repeating numbers or letters in the device unlock password.</fixtext><fix id="F-67813r1_fix" /><check system="C-62777r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm that simple passcodes are not allowed.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify the "Allow simple value" is unchecked. Alternatively, verify the text "&lt;key&gt;allowSimple&lt;/key&gt; &lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device: 
+1. Open the Settings app. 
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the iOS management tool containing the password policy.
+5. Tap "Restrictions".
+6. Tap "Passcode".
+7. Verify "Simple passcodes allowed" is not listed.
+
+If "Allow simple value" is checked in the Apple iOS management tool, "&lt;key&gt;allowSimple&lt;/key&gt; &lt;true/&gt;" appears in the config profile, or the password policy on the Apple iOS device from the Apple iOS management tool lists "Simple passcodes allowed Yes", this is a finding.</check-content></check></Rule></Group><Group id="V-61897"><title>PP-MDF-201018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76387r1_rule" severity="medium" weight="10.0"><version>AIOS-02-080002</version><title>Apple iOS must not allow backup to remote systems (iCloud).</title><description>&lt;VulnDiscussion&gt;Backups to remote systems (including cloud backup) can leave data vulnerable to breach on the external systems, which often offer less protection than the MOS. Where the remote backup involves a cloud-based solution, the backup capability is often used to synchronize data across multiple devices. In this case, DoD devices may synchronize DoD-sensitive information to a user's personal device or other unauthorized computers that are vulnerable to breach. Disallowing remote backup mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-002338</ident><fixtext fixref="F-67815r1_fix">Install a Configuration Profile to disable iCloud Backup.</fixtext><fix id="F-67815r1_fix" /><check system="C-62779r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm iCloud Backup is disabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device.
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Allow iCloud backup" is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;allowCloudBackup&lt;/key&gt; &lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device: 
+1. Open the Settings app. 
+2. Tap "iCloud".
+3. Tap "Backup".
+4. Verify "iCloud Backup" is off.
+
+If "Allow iCloud backup" is checked in the Apple iOS management tool, "&lt;key&gt;allowCloudBackup&lt;/key&gt;&lt;true/&gt;" appears in the configuration profile, or iCloud Backup is toggled to the right and appears green on the Apple iOS device, this is a finding.</check-content></check></Rule></Group><Group id="V-61899"><title>PP-MDF-201018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76389r1_rule" severity="medium" weight="10.0"><version>AIOS-02-080003</version><title>Apple iOS must not allow backup to remote systems (iCloud document and data synchronization).</title><description>&lt;VulnDiscussion&gt;Backups to remote systems (including cloud backup and cloud document syncing) can leave data vulnerable to breach on the external systems, which often offer less protection than the MOS. Where the remote backup involves a cloud-based solution, the backup capability is often used to synchronize data across multiple devices. In this case, DoD devices may synchronize DoD-sensitive information to a user's personal device or other unauthorized computers that are vulnerable to breach. Disallowing remote backup mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-002338</ident><fixtext fixref="F-67817r1_fix">Install a Configuration Profile to disable iCloud documents and data.</fixtext><fix id="F-67817r1_fix" /><check system="C-62781r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm "Allow iCloud documents &amp; data" is disabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device.
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Allow iCloud documents &amp; data" is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;allowCloudDocumentSync&lt;/key&gt; &lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "iCloud".
+3. Verify "Documents &amp; Data" is not listed.
+
+Note: This also verifies that iCloud Drive and iCloud Photo Library is disabled.
+
+If "Allow iCloud documents &amp; data" is checked in the Apple iOS management tool, "&lt;key&gt;allowCloudDocumentSync&lt;/key&gt; &lt;true/&gt;" 
+appears in the configuration profile, or "Documents &amp; Data" is listed, toggled to the right, and appears green on the Apple iOS device, this is a finding.</check-content></check></Rule></Group><Group id="V-61901"><title>PP-MDF-201018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76391r1_rule" severity="medium" weight="10.0"><version>AIOS-02-080004</version><title>Apple iOS must not allow backup to remote systems (iCloud keychain).</title><description>&lt;VulnDiscussion&gt;The iCloud Keychain is an Apple iOS function that will store users' account names and passwords in iCloud, and then synchronize this data between the users' Macs, iPhones, and iPads. An adversary may use any of the stored iCloud keychain passwords after unlocking one of the synchronized devices. If a user is synchronizing devices, the user must protect all of the devices to prevent unauthorized use of the passcodes. Moreover, the keychain being transmitted through the cloud opens the possibility that a well-resourced, sophisticated adversary could compromise the cloud-transmitted keychain. Not allowing the iCloud Keychain feature mitigates the risk of the encrypted set of passwords being compromised when transmitted through the cloud or synchronized across multiple devices.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-002338</ident><fixtext fixref="F-67819r1_fix">Install a Configuration Profile to disable iCloud keychain.</fixtext><fix id="F-67819r1_fix" /><check system="C-62783r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm iCloud keychain is disabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Allow iCloud keychain" is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;allowCloudKeychainSync&lt;/key&gt;&lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "iCloud".
+3. Verify "Keychain" is not listed.
+4. If "Keychain" is listed, tap "Keychain" and verify "iCloud Keychain" is off.
+
+If the "Allow iCloud keychain" is checked in the Apple iOS management tool, "&lt;key&gt;allowCloudKeychainSync&lt;/key&gt;&lt;true/&gt;" appears in the configuration profile, or iCloud Keychain is toggled to the right and appears green on the Apple iOS device, this is a finding.</check-content></check></Rule></Group><Group id="V-61903"><title>PP-MDF-201018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76393r1_rule" severity="medium" weight="10.0"><version>AIOS-02-080005</version><title>Apple iOS must not allow backup to remote systems (My Photo Stream).</title><description>&lt;VulnDiscussion&gt;When My Photo Stream is enabled, sensitive photos will be automatically uploaded to Apple-specified servers and available on other Apple iOS devices associated with the same Apple ID, provided that the other device also has My Photo Stream enabled. This potentially places sensitive photos on a server outside of DoD's control and potentially makes them available to non-DoD devices. Disabling My Photo Stream mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-002338</ident><fixtext fixref="F-67821r1_fix">Install a Configuration Profile to disable My Photo Stream.</fixtext><fix id="F-67821r1_fix" /><check system="C-62785r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “Allow My Photo Stream” is disabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify “Allow My Photo Stream” is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;allowPhotoStream&lt;/key&gt;&lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the restrictions policy.
+5. Tap "Restrictions".
+6. Verify "Photo Stream not allowed" is listed.
+
+If "Allow Photo Stream" is checked in the Apple iOS management tool, "&lt;key&gt;allowPhotoStream&lt;/key&gt; &lt;true/&gt;" appears in the configuration profile, or the restrictions policy on the Apple iOS device from the Apple iOS management tool does not list "Photo Stream not allowed", this is a finding.</check-content></check></Rule></Group><Group id="V-61905"><title>PP-MDF-201018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76395r1_rule" severity="medium" weight="10.0"><version>AIOS-02-080006</version><title>Apple iOS must not allow backup to remote systems (iCloud Photo Sharing (also known as Shared Photo Streams)).</title><description>&lt;VulnDiscussion&gt;When iCloud Photo Sharing is enabled, sensitive photos will be automatically uploaded to Apple-specified servers and available on the Apple IOS devices of other users who have accepted invitations to participate in iCloud Photo Sharing. This potentially places sensitive photos on a server outside of DoD's control and potentially makes them available to non-DoD users and devices. Disabling iCloud Photo Sharing mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-002338</ident><fixtext fixref="F-67823r1_fix">Install a Configuration Profile to disable iCloud photo sharing.</fixtext><fix id="F-67823r1_fix" /><check system="C-62787r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “iCloud photo sharing” is disabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Allow iCloud photo sharing" is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;allowSharedStream&lt;/key&gt;&lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the restrictions policy.
+5. Tap "Restrictions".
+6. Verify "Shared streams not allowed" is listed.
+
+If "Allow iCloud photo sharing" is checked in the Apple iOS management tool, "&lt;key&gt;allowSharedStream&lt;/key&gt;&lt;true/&gt;" appears in the configuration profile, or the restrictions policy on the Apple iOS device from the Apple iOS management tool does not list "Shared streams not allowed", this is a finding.</check-content></check></Rule></Group><Group id="V-61907"><title>PP-MDF-201021</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76397r1_rule" severity="low" weight="10.0"><version>AIOS-02-080007</version><title>Apple iOS must disable automatic transfer of diagnostic data to an external device other than an MDM service with which the device has enrolled.</title><description>&lt;VulnDiscussion&gt;Many software systems automatically send diagnostic data to the manufacturer or a third party. This data enables the developers to understand real world field behavior and improve the product based on that information. Unfortunately, it can also reveal information about what DoD users are doing with the systems and what causes them to fail. An adversary embedded within the software development team or elsewhere could use the information acquired to breach mobile operating system security. Disabling automatic transfer of such information mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1#45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000381</ident><fixtext fixref="F-67825r1_fix">Install a Configuration Profile to disable sending diagnostic data to an organization other than DoD.</fixtext><fix id="F-67825r1_fix" /><check system="C-62789r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “Allow sending diagnostic and usage data to Apple” is disabled.
+
+This check procedure is performed on both the iOS management tool and the iOS device.
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the iOS management tool, verify "Allow sending diagnostic and usage data to Apple" is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;allowDiagnosticSubmission&lt;/key&gt;&lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the iOS device:
+1. Open the Settings application.
+2. Tap "Privacy".
+3. Tap "Diagnostics &amp; Usage".
+4. Verify that "Don't Send" is checked.
+
+Note: This setting also disables "Share With App Developers".
+
+If "Allow sending diagnostic and usage data to Apple" is checked in the iOS management tool, "&lt;key&gt;allowDiagnosticSubmission&lt;/key&gt;&lt;true/&gt;" appears in the configuration profile, or "Automatically Send" is checked on the iOS device, this is a finding.</check-content></check></Rule></Group><Group id="V-61909"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76399r1_rule" severity="low" weight="10.0"><version>AIOS-02-080008</version><title>Apple iOS must implement the management setting: limit Ad Tracking.</title><description>&lt;VulnDiscussion&gt;Ad Tracking refers to the advertisers’ ability to categorize the device and spam the user with ads that are most relevant to the user’s preferences. By not “Force limiting ad tracking”, advertising companies are able to gather information about the user and device’s browsing habits. If “Limit Ad Tracking” is not limited, a database of browsing habits of DoD devices can be gathered and stored under no supervision of the DoD. By limiting ad tracking, this setting does not completely mitigate the risk, but it limits the amount of information gathering.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67827r1_fix">Install a Configuration Profile to limit advertisers' ability to track the user's web browsing preferences.</fixtext><fix id="F-67827r1_fix" /><check system="C-62791r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “Force limited ad tracking” is checked.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device.
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Force limited ad tracking" is checked.
+
+Alternatively, verify the text "&lt;key&gt;forceLimitAdTracking&lt;/key&gt;&lt;true/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings application.
+2. Tap "Privacy".
+3. Tap "Advertising".
+4. Verify that "Limit Ad Tracking" is on.
+
+If "Force limited ad tracking" is unchecked in the Apple iOS management tool, "&lt;key&gt;forceLimitAdTracking&lt;/key&gt;&lt;false/&gt;" appears in the configuration profile, or "Limit Ad Tracking" is toggled to the left and does not appear green on the Apple iOS device, this is a finding.</check-content></check></Rule></Group><Group id="V-61911"><title>PP-MDF-201008</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76401r1_rule" severity="medium" weight="10.0"><version>AIOS-02-080009</version><title>Apple iOS must not display notifications when the device is locked.</title><description>&lt;VulnDiscussion&gt;Many mobile devices display notifications on the lock screen so that users can obtain relevant information in a timely manner without having to frequently unlock the phone to determine if there are new notifications. However, in many cases, these notifications can contain sensitive information. When they are available on the lock screen, an adversary can see them merely by being in close physical proximity to the device. Configuring the MOS to not send notifications to the lock screen mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #21&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000062</ident><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67829r1_fix">Install a Configuration Profile to disable Notification Center from the device Lock screen.</fixtext><fix id="F-67829r1_fix" /><check system="C-62793r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “Show Notification Center in Lock screen” is disabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Show Notification Center in Lock screen" is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;allowLockScreenNotificationsView&lt;/key&gt; &lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "Touch ID &amp; Passcode" or "Passcode".
+3. Enter device passcode and tap "Done".
+4. Under "ALLOW ACCESS WHEN LOCKED", verify "Notifications View" is off.
+
+If the "Show Notification Center in Lock screen" is checked in the Apple iOS management tool, "&lt;key&gt;allowLockScreenNotificationsView&lt;/key&gt; &lt;true/&gt;" appears in the configuration profile, or "Notifications View" is toggled to the right and appears green on the Apple iOS device, this is a finding.</check-content></check></Rule></Group><Group id="V-61913"><title>PP-MDF-201008</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76403r1_rule" severity="medium" weight="10.0"><version>AIOS-02-080010</version><title>Apple iOS must not display notifications (calendar information) when the device is locked.</title><description>&lt;VulnDiscussion&gt;Many mobile devices display notifications (including calendar information) on the lock screen so that users can obtain relevant information in a timely manner without having to frequently unlock the phone to determine if there are new notifications. However, in many cases, these notifications can contain sensitive information. When they are available on the lock screen, an adversary can see them merely by being in close physical proximity to the device. Configuring the MOS to not send notifications to the lock screen mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #21&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000062</ident><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67831r1_fix">Install a Configuration Profile to disable Notification Center from the device Lock screen.</fixtext><fix id="F-67831r1_fix" /><check system="C-62795r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “Show Today view in Lock screen” is disabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Show Today view in Lock screen" is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;allowLockScreenTodayView&lt;/key&gt;&lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "Touch ID &amp; Passcode" or "Passcode".
+3. Enter device passcode and tap "Done".
+4. Under "ALLOW ACCESS WHEN LOCKED", verify "Today" is off.
+
+If the "Show Today view in Lock screen" is checked in the Apple iOS management tool, "&lt;key&gt;allowLockScreenTodayView&lt;/key&gt;&lt;true/&gt;" appears in the configuration profile, or "Today" is toggled to the right and appears green on the Apple iOS device, this is a finding.</check-content></check></Rule></Group><Group id="V-61915"><title>PP-MDF-201026</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76405r1_rule" severity="medium" weight="10.0"><version>AIOS-02-080011</version><title>Apple iOS must not include applications with the following characteristics: Siri when the device is locked.</title><description>&lt;VulnDiscussion&gt;On Apple iOS devices, users can access the device's contact database or calendar to obtain phone numbers and other information using a human voice even when the mobile device is locked. Often this information is Personally Identifiable Information (PII), which is considered sensitive. It could also be used by an adversary to profile the user or engage in social engineering to obtain further information from other unsuspecting users. Disabling access to the contact database and calendar in these situations mitigates the risk of this attack. The AO may waive this requirement with written notice if the operational environment requires this capability.
+
+SFR ID: FMT_SMF_EXT.1.1 #10b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-001806</ident><fixtext fixref="F-67833r1_fix">Install a Configuration Profile to disable Siri while the device is locked.</fixtext><fix id="F-67833r1_fix" /><check system="C-62797r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm that Siri is disabled on lock screen.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Allow Siri while device is locked" is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;allowAssistantWhileLocked&lt;/key&gt;&lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the restrictions policy.
+5. Tap "Restrictions".
+6. Verify "Siri while locked not allowed" is listed.
+
+If "Allow Siri while device is locked" is checked in the Apple iOS management tool, "&lt;key&gt;allowAssistantWhileLocked&lt;/key&gt;&lt;true/&gt;" appears in the configuration profile, or the restrictions policy on the Apple iOS device from the Apple iOS management tool does not list "Siri while locked not allowed", this is a finding.</check-content></check></Rule></Group><Group id="V-61917"><title>PP-MDF-201026</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76407r1_rule" severity="medium" weight="10.0"><version>AIOS-02-080012</version><title>Apple iOS must not include applications with the following characteristics: Voice dialing application if available when MD is locked.</title><description>&lt;VulnDiscussion&gt;On Apple iOS devices, users can access the device's contact database or calendar to obtain phone numbers and other information using a human voice even when the mobile device is locked. Often this information is Personally Identifiable Information (PII), which is considered sensitive. It could also be used by an adversary to profile the user or engage in social engineering to obtain further information from other unsuspecting users. Disabling access to the contact database and calendar in these situations mitigates the risk of this attack.
+
+SFR ID: FMT_SMF_EXT.1.1 #10b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-001806</ident><fixtext fixref="F-67835r1_fix">Install a Configuration Profile to disable Voice Control while the device is locked.</fixtext><fix id="F-67835r1_fix" /><check system="C-62799r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm that "Allow Voice Dialing" is disabled on lock screen.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Allow voice dialing" is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;allowVoiceDialing&lt;/key&gt;&lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the restrictions policy.
+5. Tap "Restrictions".
+6. Verify "Voice dialing not allowed" is listed.
+
+If "Allow voice dialing" is checked in the Apple iOS management tool, "&lt;key&gt;allowVoiceDialing&lt;/key&gt;&lt;true/&gt;" appears in the configuration profile, or the restrictions policy on the Apple iOS device from the Apple iOS management tool does not list "Voice dialing not allowed", this is a finding.</check-content></check></Rule></Group><Group id="V-61919"><title>PP-MDF-201022</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76409r1_rule" severity="medium" weight="10.0"><version>AIOS-02-080013</version><title>Apple iOS must be configured to disable Touch ID.</title><description>&lt;VulnDiscussion&gt;Many mobile devices now permit a user to unlock the user's device by presenting a fingerprint to an embedded fingerprint reader. Other biometrics and token-based systems are feasible as well. None of these alternatives are currently evaluated in a Common Criteria evaluation of a mobile device against the Security Target based on the Mobile Device Fundamentals Protection Profile. Many have known vulnerabilities. Until there are DoD-approved assurance activities to evaluate the efficacy of these alternatives, they are significant potential vulnerabilities to DoD information and information systems. Disabling them mitigates the risk of their use. Touch ID is a fingerprint reader that has been installed on some models of Apple iOS devices.
+
+SFR ID: FMT_SMF_EXT.1.1 #33&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-002008</ident><fixtext fixref="F-67837r1_fix">Install a Configuration Profile to disable Touch ID for device unlock.</fixtext><fix id="F-67837r1_fix" /><check system="C-62801r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “Allow Touch ID to unlock device” is disabled.
+
+This check procedure is performed on both the iOS management tool and the iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the iOS management tool, verify "Allow Touch ID to unlock device" is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;allowFingerprintForUnlock&lt;/key&gt;&lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management".
+4. Tap the Configuration Profile from the iOS management tool containing the restrictions policy.
+5. Tap "Restrictions".
+6. Verify "Touch ID unlock not allowed" is listed.
+
+If "Allow Touch ID to unlock device" is checked in the iOS management tool, "&lt;key&gt;allowFingerprintForUnlock&lt;/key&gt;&lt;true/&gt;" appears in the configuration profile, or “Touch ID unlock not allowed" is not listed on the iOS device, this is a finding.</check-content></check></Rule></Group><Group id="V-61921"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76411r1_rule" severity="low" weight="10.0"><version>AIOS-02-080016</version><title>Apple iOS must implement the management setting: not allow automatic completion of Safari browser passcodes.</title><description>&lt;VulnDiscussion&gt;The AutoFill functionality in the Safari web browser allows the user to complete a form that contains sensitive information, such as PII, without previous knowledge of the information. By allowing the use of the AutoFill functionality, an adversary who learns a user's Apple iOS device passcode, or who otherwise is able to unlock the device, may be able to further breach other systems by relying on the AutoFill feature to provide information unknown to the adversary. By disabling the AutoFill functionality, the risk of an adversary gaining further information about the device's user or comprising other systems is significantly mitigated.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67839r1_fix">Install a Configuration Profile to disable the AutoFill capability in the Safari app.</fixtext><fix id="F-67839r1_fix" /><check system="C-62803r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “Enable autofill” is unchecked.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device.
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Enable autofill" is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;safariAllowAutoFill&lt;/key&gt;&lt;false&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "Safari".
+3. Verify "Passwords &amp; AutoFill" is grayed out.
+
+If "Enable autofill" is checked in the Apple iOS management tool, or "&lt;key&gt;safariAllowAutoFill&lt;/key&gt;&lt;true&gt;" appears in the configuration profile, or "Passwords &amp; AutoFill" is not grayed out on the Apple iOS device, this is a finding.</check-content></check></Rule></Group><Group id="V-61923"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76413r1_rule" severity="high" weight="10.0"><version>AIOS-02-080017</version><title>Apple iOS must implement the management setting: Encrypt iTunes backups.</title><description>&lt;VulnDiscussion&gt;When syncing an Apple iOS device to a computer running iTunes, iTunes will prompt the user to back up the Apple iOS device. If the performed backup is not encrypted, this could lead to the unauthorized disclosure of DoD-sensitive information if non-DoD personnel are able to access that machine. By forcing the backup to be encrypted, this greatly mitigates the risk of compromising sensitive data. iTunes backup and USB connections to computers are not authorized, but this control provides defense-in-depth for cases in which a user violates policy either intentionally or inadvertently.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67841r1_fix">Install a Configuration Profile to force encrypted backups to iTunes.</fixtext><fix id="F-67841r1_fix" /><check system="C-62805r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “Force encrypted backups” is enabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Force encrypted backups" is checked.
+
+Alternatively, verify the text "&lt;key&gt;forceEncryptedBackup&lt;/key&gt;&lt;true/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the restrictions policy.
+5. Tap "Restrictions".
+6. Verify "Encrypted backups enforced" is listed.
+
+If "Force encrypted backups" is unchecked in the Apple iOS management tool, or "&lt;key&gt;forceEncryptedBackup&lt;/key&gt;&lt;false/&gt;" appears in the configuration profile, or the restrictions policy on the Apple iOS device from the Apple iOS management tool does not list "Encrypted backups enforced", this is a finding.</check-content></check></Rule></Group><Group id="V-61925"><title>PP-MDF-201018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76415r1_rule" severity="low" weight="10.0"><version>AIOS-02-080101</version><title>Apple iOS must not allow backup to remote systems (enterprise books).</title><description>&lt;VulnDiscussion&gt;Enterprise books may contain DoD-sensitive information. When enterprise books are backed up, they are vulnerable to attacks on the backup systems and media. Disabling the backup capability mitigates this risk. If such books are lost, accidentally deleted, or corrupted for any reason, they can be easily retrieved from the original source.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67843r1_fix">Install a Configuration Profile to prevent backup of enterprise books that could contain DoD-sensitive information.</fixtext><fix id="F-67843r1_fix" /><check system="C-62807r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “Allow backup of enterprise books" is disabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device.
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Allow backup of enterprise books" is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;allowEnterpriseBookBackup&lt;/key&gt; &lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the restrictions policy.
+5. Tap "Restrictions".
+6. Verify "Backing up enterprise books not allowed" is listed.
+
+If "Allow backup of enterprise books" is checked in the Apple iOS management tool, "&lt;key&gt;allowEnterpriseBookBackup&lt;/key&gt; &lt;true/&gt;" appears in the configuration profile, or the restrictions policy on the Apple iOS device from the Apple iOS management tool does not list "Backing up enterprise books not allowed", this is a finding.</check-content></check></Rule></Group><Group id="V-61927"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76417r1_rule" severity="low" weight="10.0"><version>AIOS-02-080102</version><title>Apple iOS must implement the management setting: not allow use of Handoff.</title><description>&lt;VulnDiscussion&gt;Handoff permits a user of an Apple iOS device to transition user activities from one device to another. Handoff passes sufficient information between the devices to describe the activity, but app data synchronization associated with the activity is handled though iCloud, which should be disabled on a compliant Apple iOS device. If a user associates both DoD and personal devices to the same Apple ID, the user may improperly reveal information about the nature of the user's activities on an unprotected device. Disabling Handoff mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-002338</ident><fixtext fixref="F-67845r1_fix">Install a Configuration Profile to disable continuation of activities between devices and workstations.</fixtext><fix id="F-67845r1_fix" /><check system="C-62809r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “Allow Handoff" is disabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device.
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Allow Handoff" is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;allowActivityContinuation&lt;/key&gt; &lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the restrictions policy.
+5. Tap "Restrictions".
+6. Verify "Handoff not allowed" is listed.
+
+If "Allow Handoff" is checked in the Apple iOS management tool, "&lt;key&gt;allowActivityContinuation&lt;/key&gt; &lt;true/&gt;" appears in the configuration profile, or the restrictions policy on the Apple iOS device from the Apple iOS management tool does not list "Handoff not allowed", this is a finding.</check-content></check></Rule></Group><Group id="V-61929"><title>PP-MDF-201018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76419r1_rule" severity="medium" weight="10.0"><version>AIOS-02-080103</version><title>Apple iOS must not allow backup to remote systems (managed applications data stored in iCloud)).</title><description>&lt;VulnDiscussion&gt;Storing data with a non-DoD cloud provider may leave the data vulnerable to breach. Disabling non-DoD cloud services mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67847r1_fix">Install a Configuration Profile to prevent DoD applications from storing data in iCloud.</fixtext><fix id="F-67847r1_fix" /><check system="C-62811r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “Allow managed apps to store data in iCloud” is disabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device.
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Allow managed apps to store data in iCloud" is unchecked.
+
+Alternatively, verify the text "&lt;key&gt;allowManagedAppsCloudSync&lt;/key&gt; &lt;false/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the restrictions policy.
+5. Tap "Restrictions".
+6. Verify "Managed apps cloud sync not allowed" is listed.
+
+If "Allow managed apps to store data in iCloud" is checked in the Apple iOS management tool, "&lt;key&gt;allowManagedAppsCloudSync&lt;/key&gt; &lt;true/&gt;" appears in the configuration profile, or the restrictions policy on the Apple iOS device from the Apple iOS management tool does not list "Managed apps cloud sync not allowed", this is a finding.</check-content></check></Rule></Group><Group id="V-61931"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76421r1_rule" severity="low" weight="10.0"><version>AIOS-02-080104</version><title>Apple iOS must implement the management setting: require the user to enter a password when connecting to an AirPlay-enabled device for the first time.</title><description>&lt;VulnDiscussion&gt;When a user is allowed to use AirPlay without a password, there is the potential that it may mistakenly associate the Apple iOS device with an AirPlay-enabled device other than the one intended (i.e., by choosing the wrong one from the AirPlay list displayed). This creates the potential that someone in control of a mistakenly-associated device may obtain DoD-sensitive information without authorization. Requiring a password before such an association mitigates this risk. Passwords do not require any administration, nor must they comply with any complexity requirements.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-002338</ident><fixtext fixref="F-67849r1_fix">Install a Configuration Profile to require the user to enter a password when connecting to an AirPlay-enabled device for the first time.</fixtext><fix id="F-67849r1_fix" /><check system="C-62813r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm "Require passcode on first AirPlay pairing" is enabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device.
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Require passcode on first AirPlay pairing" is checked.
+
+Alternatively, verify the text
+"&lt;key&gt;forceAirPlayOutgoingRequestsPairingPassword&lt;/key&gt;&lt;false/&gt;"
+appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the restrictions policy.
+5. Tap "Restrictions".
+6. Verify "AirPlay outgoing requests pairing password enforced" is listed.
+
+If "Require passcode on first AirPlay pairing" is unchecked in the Apple iOS management tool, "&lt;key&gt;forceAirPlayOutgoingRequestsPairingPassword&lt;/key&gt;&lt;true/&gt;" appears in the configuration profile, or "AirPlay outgoing requests pairing password enforced" is not listed on the Apple iOS device, this is a finding.</check-content></check></Rule></Group><Group id="V-61933"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76423r1_rule" severity="medium" weight="10.0"><version>AIOS-02-090100</version><title>Apple iOS must implement the management setting: Disable Allow MailDrop.</title><description>&lt;VulnDiscussion&gt;MailDrop allows users to send large attachments in up to 5GB in size via iCloud. Storing data with a non-DoD cloud provider may leave the data vulnerable to breach. Disabling non-DoD cloud services mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67851r1_fix">Configure the Apple iOS configuration profile to disable Allow MailDrop.</fixtext><fix id="F-67851r1_fix" /><check system="C-62815r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm "Allow MailDrop” is disabled.
+
+This validation procedure is performed on both the Apple iOS management tool and the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Allow MailDrop" is not checked.
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the restrictions policy.
+5. Tap "Accounts".
+6. Tap the mail account.
+7. Verify "Mail Drop Enabled" is "No".
+
+If "Allow MailDrop" is not disabled in the Apple iOS management tool or the restrictions policy on the Apple iOS device from the Apple iOS management tool lists "Mail Drop Enabled" as "Yes", this is a finding.</check-content></check></Rule></Group><Group id="V-61935"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76425r1_rule" severity="medium" weight="10.0"><version>AIOS-02-090101</version><title>Apple iOS must implement the management setting: Disable Allow iCloud Photo Library.</title><description>&lt;VulnDiscussion&gt;Storing data with a non-DoD cloud provider may leave the data vulnerable to breach. Disabling non-DoD cloud services mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67853r1_fix">Configure the Apple iOS configuration profile to disable Allow iCloud Photo Library.</fixtext><fix id="F-67853r1_fix" /><check system="C-62817r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm "Allow iCloud Photo Library” is disabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Allow iCloud Photo Library" is not checked.
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the restrictions policy.
+5. Tap "Restrictions".
+6. Verify "iCloud Photo Library not allowed" is listed.
+
+If "Allow iCloud Photo Library" is not disabled in the Apple iOS management tool or the restrictions policy on the Apple iOS device from the Apple iOS management tool does not list "iCloud Photo Library not allowed", this is a finding.</check-content></check></Rule></Group><Group id="V-61937"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76427r1_rule" severity="low" weight="10.0"><version>AIOS-02-090102</version><title>Apple iOS must implement the management setting: Enable Treat Airdrop as unmanaged destination.</title><description>&lt;VulnDiscussion&gt;Airdrop is a way to send contact information or photos to other users. The "Treat Airdrop as an unmanaged destination" control restricts the ability to use AirDrop with data from managed apps. AirDrop enables a possible attack vector for adversaries to exploit. Once the attacker has gained access to the information broadcast by AirDrop, he/she may distribute this sensitive information very quickly and without DoD’s control or awareness. This control eliminates the risk of the loss of sensitive DoD data from managed apps via Airdrop but does not eliminate the risk of the loss of DoD data from unmanaged apps. Therefore the user stills needs to disable Airdrop (see requirement AIOS-05-080001).
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67855r1_fix">Configure the Apple iOS configuration profile to enable Treat Airdrop as unmanaged destination.</fixtext><fix id="F-67855r1_fix" /><check system="C-62819r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm "Treat Airdrop as unmanaged destination” is enabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Treat Airdrop as unmanaged destination" is checked.
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration management tool containing the restrictions policy.
+5. Tap "Restrictions".
+6. Verify "Sharing managed documents using AirDrop not allowed" is listed.
+
+If "Treat Airdrop as unmanaged destination" is disabled in the Apple iOS management tool or the restrictions policy on the Apple iOS device from the Apple iOS management tool does not list "Sharing managed documents using AirDrop not allowed", this is a finding.</check-content></check></Rule></Group><Group id="V-61939"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76429r1_rule" severity="medium" weight="10.0"><version>AIOS-03-080101</version><title>Apple iOS must implement the management setting: use SSL for Exchange Active Sync.</title><description>&lt;VulnDiscussion&gt;Exchange email messages are a form of data in transit and thus are vulnerable to eavesdropping and man-in-the-middle attacks. Secure Sockets Layer (SSL), also referred to as Transport Layer Security (TLS), provides encryption and authentication services that mitigate the risk of breach.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67857r1_fix">Install a Configuration Profile to use SSL for Exchange Active Sync.</fixtext><fix id="F-67857r1_fix" /><check system="C-62821r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “Use SSL” for the Exchange account is enabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Use SSL" is checked under the Exchange payload.
+
+Alternatively, verify the text 
+"&lt;key&gt;SSL&lt;/key&gt;&lt;true/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the Exchange policy.
+5. Tap "Accounts".
+6. Tap the name of the Exchange account. 
+7. Verify "SSL" is set to "Yes".
+
+If "Use SSL" is unchecked in the Apple iOS management tool, "&lt;key&gt;SSL&lt;/key&gt;&lt;false/&gt;" appears in the configuration profile, or the Exchange policy on the Apple iOS device from the Apple iOS management tool has "SSL" set to "No", this is a finding.</check-content></check></Rule></Group><Group id="V-61941"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76431r1_rule" severity="medium" weight="10.0"><version>AIOS-03-080102</version><title>Apple iOS must implement the management setting: not allow messages in an Active Sync Exchange account to be forwarded or moved to other accounts in the Apple iOS Mail app.</title><description>&lt;VulnDiscussion&gt;The Apple iOS Mail app can be configured to support multiple email accounts concurrently. These email accounts are likely to involve content of varying degrees of sensitivity (e.g., both personal and enterprise messages). To prevent the unauthorized and undetected forwarding or moving of messages from one account to another, Mail ActiveSync Exchange accounts can be configured to block such behavior. While users may still send a message from the Exchange account to another account, these transactions must involve an Exchange server, enabling audit records of the transaction, filtering of mail content, and subsequent forensic analysis. 
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67859r1_fix">Install a Configuration Profile to prevent Exchange messages from being moved or forwarded between email accounts.</fixtext><fix id="F-67859r1_fix" /><check system="C-62823r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm "Allow messages to be moved" is disabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device.
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Allow messages to be moved" is unchecked under the Exchange payload.
+
+Alternatively, verify the text 
+"&lt;key&gt;PreventMove&lt;/key&gt;&lt;true/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the Exchange policy.
+5. Tap "Accounts".
+6. Tap the name of the Exchange account. 
+7. Verify "Prevent Move" is set to "Yes".
+
+If "Allow messages to be moved" is checked in the Apple iOS management tool, "&lt;key&gt;PreventMove&lt;/key&gt;&lt;false/&gt;" appears in the configuration profile, or the Exchange policy on the Apple iOS device from the Apple iOS management tool has "Prevent Move" set to "No", this is a finding.</check-content></check></Rule></Group><Group id="V-61943"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76433r1_rule" severity="medium" weight="10.0"><version>AIOS-05-080001</version><title>Apple iOS must implement the management setting: disable Airdrop.</title><description>&lt;VulnDiscussion&gt;An Airdrop feature is a way to send contact information or photos to other users with this same feature enabled. This feature enables a possible attack vector for adversaries to exploit. Once the attacker has gained access to the information broadcast by this feature, he/she may distribute this sensitive information very quickly and without DoD’s control or awareness. By disabling this feature, the risk of mass data exfiltration will be mitigated.
+
+Note, if the site uses Apple's optional Device Enrollment Program (DEP), this control is available as a supervised MDM control.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67861r1_fix">The user must configure Apple iOS to disable AirDrop.</fixtext><fix id="F-67861r1_fix" /><check system="C-62825r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “AirDrop” is disabled.
+
+This check procedure is performed on the Apple iOS device only.
+
+Note: This requirement is not applicable to Apple iOS devices that do not support AirDrop, which include iPhones prior to iPhone 5 and iPads prior to iPad 3rd generation.
+
+On the Apple iOS device:
+1. Access Control Center by swiping up from the bottom of the device on the home screen.
+2. Verify "AirDrop" is displayed with no other text in this box, or verify "AirDrop" does not appear at all.
+
+If AirDrop appears in the Control Center followed by "Contacts Only" or "Everyone", this is a finding.
+
+Note: If the site has implemented Device Enrollment Program (DEP) (not required), this setting can be managed via the MDM (supervised mode).</check-content></check></Rule></Group><Group id="V-61945"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76435r1_rule" severity="medium" weight="10.0"><version>AIOS-05-080101</version><title>Apple iOS must implement the management setting: not have any Family Members in Family Sharing.</title><description>&lt;VulnDiscussion&gt;Apple's Family Sharing service allows Apple iOS users to create a Family Group whose members have several shared capabilities, including the ability to lock, wipe, play a sound on, or locate the Apple iOS devices of other members. Each member of the group must be invited to the group and accept that invitation. A DoD user's Apple iOS device may be inadvertently or maliciously wiped by another member of their Family Group. This poses a risk that the user could be without a mobile device for a period of time or lose sensitive information that has not been backed up to other storage media. Configuring Apple iOS devices so that their associated Apple IDs are not members of Family Groups mitigates this risk.
+
+Note, if the site uses Apple's optional Device Enrollment Program (DEP), this control is available as a supervised MDM control.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67863r1_fix">The user must either remove all members from the Family Group on the Apple iOS device or associate the device with an Apple ID that is not a member of a Family Group.</fixtext><fix id="F-67863r1_fix" /><check system="C-62827r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm Family Sharing is disabled.
+
+This check procedure is performed on the Apple iOS device.
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "iCloud".
+3. If "Set Up Family Sharing..." is listed, the device is compliant.
+4. If "Setup Family Sharing..." is not listed, tap "Family".
+5. Verify no email addresses or names are listed under "FAMILY MEMBERS".
+
+Note: The Apple iOS device must be connected to the Internet to conduct this validation procedure. Otherwise, the device will display the notice "Family information is not available", in which case it cannot be determined if the configuration is compliant.
+
+If names or email addresses are listed under "FAMILY MEMBERS" on the Apple iOS device, this is a finding.
+
+Note: If the site has implemented Device Enrollment Program (DEP) (not required), this setting can be managed via the MDM (supervised mode).</check-content></check></Rule></Group><Group id="V-61947"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76437r1_rule" severity="medium" weight="10.0"><version>AIOS-05-080102</version><title>Apple iOS must implement the management setting: not share location data through iCloud.</title><description>&lt;VulnDiscussion&gt;Sharing of location data is an OPSEC risk because it potentially allows an adversary to determine a DoD user's location and movements and patterns in those movements over time. An adversary could use this information to target the user or to gather intelligence on the user's likely activities. Using commercial cloud services to store and handle location data could leave the data vulnerable to breach, particularly by sophisticated adversaries. Disabling the use of such services mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67865r1_fix">The user must configure Apple iOS to disable location sharing through iCloud.</fixtext><fix id="F-67865r1_fix" /><check system="C-62829r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm "Share My Location" is disabled.
+
+This check procedure is performed on the Apple iOS device only.
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "Privacy".
+3. Tap "Location Services".
+4. Tap "Share My Location".
+5. Verify "Share My Location" is off.
+
+If "Share My Location" is toggled to the right and appears green on the Apple iOS device, this is a finding.</check-content></check></Rule></Group><Group id="V-61949"><title>PP-MDF-201026</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76439r1_rule" severity="low" weight="10.0"><version>AIOS-05-080104</version><title>Apple iOS must not include applications with the following characteristics: payment processing (Apple Pay).</title><description>&lt;VulnDiscussion&gt;Apple Pay is a mobile payment technology that enables users to make purchases with their Apple iOS devices, provided that the vendor supports the required Near Field Communications (NFC) interface to Apple Pay. If the payment system is vulnerable to breach, a user's charge cards may be used for unauthorized payments, including charges to government-issued cards. Disabling or avoiding use of Apple Pay mitigates this risk. The use of a GFE mobile device as a personal payment system is not authorized.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67867r1_fix">The user must remove payment information from Apple Pay.</fixtext><fix id="F-67867r1_fix" /><check system="C-62831r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm that Apple Pay is not in use. It is not possible to disable Apple Pay.
+
+Note: This check procedure is only applicable on Apple iOS devices that support Apple Pay (iPhone 6 and 6 Plus) and can only be verified on the mobile device.
+
+Verify that no payment information (e.g., a charge card) is associated with Apple Pay:
+1. Open the Settings app.
+2. Tap on "Wallet &amp; Apple Pay".
+3. Verify there is no payment information listed.
+
+If there is any payment information configured for Apple pay, this is a finding.</check-content></check></Rule></Group><Group id="V-61951"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76441r1_rule" severity="medium" weight="10.0"><version>AIOS-10-080102</version><title>Apple iOS must implement the management setting: remove managed applications upon unenrollment from MDM.</title><description>&lt;VulnDiscussion&gt;When a device is unenrolled from MDM, it is possible to relax the security policies that the MDM had implemented on the device. This may cause apps and data to be more vulnerable than they were prior to enrollment. Removing managed apps (and consequently the data they maintain) upon unenrollment mitigates this risk because on appropriately configured Apple iOS devices, DoD-sensitive information exists only within managed apps.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67869r1_fix">Install a Configuration Profile to delete all managed apps upon device unenrollment.</fixtext><fix id="F-67869r1_fix" /><check system="C-62833r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Note: the procedure below is exactly the same for requirement AIOS-11-080202. This procedure needs to be performed only once.
+
+Note: Not all Apple iOS deployments involve MDM. If the site uses an authorized alternative to MDM for distribution of Configuration Profiles, this check procedure is not applicable.
+
+This check procedure is performed on the Apple iOS management tool.
+
+In the Apple iOS management tool, for each managed app, verify the app is configured to be removed when the MDM profile is removed. 
+
+If one or more managed apps are not set to be removed upon device MDM unenrollment, this is a finding.</check-content></check></Rule></Group><Group id="V-61953"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76443r1_rule" severity="medium" weight="10.0"><version>AIOS-10-080103</version><title>Apple iOS must implement the management setting: not allow a user to remove Apple iOS configuration profiles that enforce DoD security requirements.</title><description>&lt;VulnDiscussion&gt;Configuration profiles define security policies on Apple iOS devices. If a user is able to remove a configuration profile, the user can then change the configuration that had been enforced by that policy. Relaxing security policies may introduce vulnerabilities that the profiles had mitigated. Configuring a profile to never be removed mitigates this risk. 
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67871r1_fix">Configure the Apple iOS configuration profile such that it can never be removed.</fixtext><fix id="F-67871r1_fix" /><check system="C-62835r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm Configuration Profiles are not removable.
+Note: This requirement is only applicable to sites that use an authorized alternative to MDM for distribution of Configuration Profiles (for example, use Apple configurator) or are enrolled in Apple's Device Enrollment Program (DEP). Unless the site is enrolled in DEP, this requirement is not applicable for devices enrolled in MDM.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device. The procedures below assume the site is not enrolled in DEP and are not applicable to devices under MDM management.
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify "Security" is set to "Never".
+
+Alternatively, verify the text "&lt;key&gt;PayloadRemovalDisallowed&lt;/key&gt;&lt;true/&gt;" appears in the configuration profile (.mobileconfig file).
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap each Configuration Profile from the Apple iOS management tool.
+5. Verify the "Delete Profile" button is not present.
+
+If the "Delete Profile" button is available on any Configuration Profile, this is a finding.</check-content></check></Rule></Group><Group id="V-61955"><title>PP-MDF-201025</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76445r1_rule" severity="low" weight="10.0"><version>AIOS-11-080200</version><title>Apple iOS must enable VPN protection.</title><description>&lt;VulnDiscussion&gt;A key characteristic of a mobile device is that they typically will communicate wirelessly and are often expected to reside in locations outside the physical security perimeter of a DoD facility. In these circumstances, the threat of eavesdropping is substantial. Virtual private networks (VPNs) provide confidentiality and integrity protection for data transmitted over untrusted media (e.g., air) and networks (e.g., the Internet). They also provide authentication services to ensure that only authorized users are able to use them. Consequently, enabling VPN protection counters threats to communications to and from mobile devices. 
+
+Note, if the site uses Apple's optional Device Enrollment Program (DEP), the Always-on VPN control is available as a supervised MDM control.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67873r1_fix">Install a Configuration Profile to enable the Apple iOS "Per App VPN" for managed apps, the Apple iOS "Always-on VPN", a DoD-approved VPN profile, or key apps.</fixtext><fix id="F-67873r1_fix" /><check system="C-62837r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm at least one of the following are enabled: Apple iOS "Per App VPN" for managed apps, Apple iOS "Always-on VPN", an approved VPN profile is installed on the device, or key apps that connect to back-office servers (ActiveSync, MDM agent, etc.) have VPN functions included in the app.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device.
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify either the Apple iOS "Per App VPN" for managed apps is enabled or the Apple iOS "Always-on VPN" is enabled (requires supervision) or a DoD-approved VPN profile is configured.
+
+On the Apple iOS device, verify at least one of the following is enabled: 
+*For the Per App VPN, follow these steps:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the restrictions policy.
+5. Tap "Apps".
+6. Tap managed app.
+7. If the app supports Per App VPN, the profile will be listed. If listed, verify it is enabled.
+
+Note: Steps 6 and 7 must be performed for each managed app.
+
+*For the Always On VPN, follow these steps: 
+1. Open the Settings app.
+2. Tap "VPN".
+3. If an Always-ON VPN profile exists, it will be listed.
+
+*For the DoD-approved VPN profile, follow these steps:
+1. Open the Settings app.
+2. Tap "VPN".
+3. Verify the VPN profile is available.
+4. Determine if a personal VPN profile is installed.
+
+*If one of the previous methods is not enabled, verify key apps that connect to back-office servers (ActiveSync, MDM agent, etc.) include VPN capabilities in the app.
+
+If at least one of the following are not enabled: Apple iOS "Per App VPN" for managed apps, Apple iOS "Always-on VPN", an approved VPN profile is not installed on the device, or key apps that connect to back-office servers (ActiveSync, MDM agent, etc.) include VPN capabilities in the app, this is a finding. Also, if a personal VPN profile is installed, this is a finding.</check-content></check></Rule></Group><Group id="V-61957"><title>PP-MDF-201017</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76447r1_rule" severity="medium" weight="10.0"><version>AIOS-11-080201</version><title>Apple iOS must not allow backup to locally connected systems.</title><description>&lt;VulnDiscussion&gt;Data on mobile devices is protected by numerous mechanisms, including user authentication, access control, and cryptography. When the data is backed up to an external system (either locally connected or cloud-based), many if not all of these mechanisms are no longer present. This leaves the backed up data vulnerable to attack. Disabling backup to external systems mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000097</ident><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67875r1_fix">Install a Configuration Profile to disable backup of managed apps.</fixtext><fix id="F-67875r1_fix" /><check system="C-62839r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm backup in management apps is disabled and iTunes Backup is encrypted. Note, iTunes Backup is implemented by the configuration policy rule "Force encrypted backups", which is included in AIOS-02-080017, and therefore, not included in the procedure below.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device. 
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify backing up app data is disabled. 
+
+Note: If an organization has multiple configuration profiles, then the procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+On the Apple iOS device: 
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the restrictions policy.
+5. Tap "Apps".
+6. Tap managed app
+7. Verify "App data will not be backed up" is listed.
+
+Note: Steps 6 and 7 must be performed for each managed app.
+
+If backing up app data is not disabled in the Apple iOS management tool or "app data will not be backed up" is not listed for each managed app on the Apple iOS device, this is a finding.</check-content></check></Rule></Group><Group id="V-61959"><title>PP-MDF-201024</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76449r1_rule" severity="medium" weight="10.0"><version>AIOS-11-080202</version><title>Apple iOS must wipe protected or sensitive data upon unenrollment from MDM.</title><description>&lt;VulnDiscussion&gt;When a mobile device is no longer going to be managed by MDM technologies, its protected/sensitive data must be sanitized because it will no longer be protected by the MDM software, so it is at much greater risk of unauthorized access and disclosure.
+
+SFR ID: FMT_SMF_EXT.2.1&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-001028</ident><fixtext fixref="F-67877r1_fix">Install a Configuration Profile to delete all managed apps upon device unenrollment.</fixtext><fix id="F-67877r1_fix" /><check system="C-62841r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Note: The procedure below is exactly the same for requirement AIOS-10-080102. This procedure needs to be performed only once.
+
+Note: Not all Apple iOS deployments involve MDM. If the site uses an authorized alternative to MDM for distribution of Configuration Profiles, this check procedure is not applicable.
+
+This check procedure is performed on the Apple iOS management tool.
+
+In the Apple iOS management tool, for each managed app, verify the app is configured to be removed when the MDM profile is removed.
+
+If one or more managed apps are not set to be removed upon device MDM unenrollment, this is a finding.</check-content></check></Rule></Group><Group id="V-61961"><title>PP-MDF-201025</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-76451r1_rule" severity="low" weight="10.0"><version>AIOS-11-080203</version><title>Apple iOS must implement the management setting: force Apple Watch wrist detection.</title><description>&lt;VulnDiscussion&gt;As a personal device, it is key that any DoD sensitive data displayed on the Apple Watch not be viewable when the watch is not in the immediate possession of the user. This control ensures the Apple Watch screen locks when the user takes the watch off, therefore, protecting sensitive DoD data from possible exposure.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Apple iOS 9</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Apple iOS 9</dc:subject><dc:identifier>2891</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-67879r1_fix">Install a Configuration Profile to force Apple Watch wrist detection.</fixtext><fix id="F-67879r1_fix" /><check system="C-62843r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Apple_iOS_9_STIG.xml" /><check-content>Review configuration settings to confirm “Force Apple Watch wrist detection" is enabled.
+
+This check procedure is performed on both the Apple iOS management tool and the Apple iOS device.
+
+Note: If an organization has multiple configuration profiles, then the check procedure must be performed on the relevant configuration profiles applicable to the scope of the review. 
+
+In the Apple iOS management tool, verify ""Wrist detection enforced on Apple Watch" is enforced.
+
+On the Apple iOS device:
+1. Open the Settings app.
+2. Tap "General".
+3. Tap "Profiles" or "Profiles &amp; Device Management" or "Device Management". 
+4. Tap the Configuration Profile from the Apple iOS management tool containing the restrictions policy.
+5. Tap "Restrictions".
+6. Verify "Wrist detection enforced on Apple Watch" is listed.
+
+If "Wrist detection enforced on Apple Watch" is not enforced in the Apple iOS management tool or is not listed on the Apple iOS device, this is a finding.</check-content></check></Rule></Group></Benchmark>

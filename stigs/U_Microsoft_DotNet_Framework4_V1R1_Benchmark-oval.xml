@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:windows-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.4/ovaldefinition/complete/windows-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.4/ovaldefinition/complete/independent-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.4/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.4/ovaldefinition/complete/oval-common-schema.xsd">
+  <generator>
+    <oval:product_name>DISA FSO</oval:product_name>
+    <oval:schema_version>5.4</oval:schema_version>
+    <oval:timestamp>2013-03-06T11:31:44.890-05:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.fso.dotnet:def:2" version="1" class="compliance">
+      <metadata>
+        <title>APPNET0031 No Strong Name Verification</title>
+        <affected family="windows">
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+        </affected>
+        <description>Digital signatures assigned to strongly named assemblies must be verified.</description>
+      </metadata>
+      <criteria>
+        <criterion comment="No assemblies or hash values under HKLM\Software\Microsoft\StrongName\Verification" test_ref="oval:mil.disa.fso.dotnet:tst:200" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.dotnet:def:3" version="1" class="compliance">
+      <metadata>
+        <title>APPNET0046 Test Root certificates</title>
+        <affected family="windows">
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+        </affected>
+        <description>Windows systems must be configured to prevent application use of Test Root certificates. (SCC-only check)</description>
+      </metadata>
+      <criteria>
+        <criterion comment="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State is zero in bit 6 (1-based bit counting)" test_ref="oval:mil.disa.fso.dotnet:tst:300" />
+        <criterion comment="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State is zero in bit 8 (1-based bit counting)" test_ref="oval:mil.disa.fso.dotnet:tst:301" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.dotnet:def:4" version="1" class="compliance">
+      <metadata>
+        <title>APPNET0047 Application Expired Certificates</title>
+        <affected family="windows">
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+        </affected>
+        <description>Windows must check for expired application certificates. (SCC-only check)</description>
+      </metadata>
+      <criteria>
+        <criterion comment="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State is zero in bit 9 (1-based bit counting)" test_ref="oval:mil.disa.fso.dotnet:tst:400" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.dotnet:def:5" version="1" class="compliance">
+      <metadata>
+        <title>APPNET0049 Windows Revoked Certificates</title>
+        <affected family="windows">
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+        </affected>
+        <description>Windows must be configured to check for revoked application certificates. (SCC-only check)</description>
+      </metadata>
+      <criteria>
+        <criterion comment="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State is zero in bit 10 (1-based bit counting)" test_ref="oval:mil.disa.fso.dotnet:tst:500" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.dotnet:def:6" version="1" class="compliance">
+      <metadata>
+        <title>APPNET0050 Unknown Certificate Status</title>
+        <affected family="windows">
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+        </affected>
+        <description>Windows must be configured to block application execution if certificate server status is unavailable. (SCC-only check)</description>
+      </metadata>
+      <criteria>
+        <criterion comment="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State is zero in bit 11 (1-based bit counting)" test_ref="oval:mil.disa.fso.dotnet:tst:600" />
+        <criterion comment="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State is zero in bit 12 (1-based bit counting)" test_ref="oval:mil.disa.fso.dotnet:tst:601" />
+        <criterion comment="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State is zero in bit 13 (1-based bit counting)" test_ref="oval:mil.disa.fso.dotnet:tst:602" />
+        <criterion comment="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State is zero in bit 14 (1-based bit counting)" test_ref="oval:mil.disa.fso.dotnet:tst:603" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.dotnet:def:7" version="1" class="compliance">
+      <metadata>
+        <title>APPNET0051 Time Stamp Certificate Revocation</title>
+        <affected family="windows">
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+        </affected>
+        <description>Windows must be configured to check the time stamp servers certificate for revocation. (SCC-only check)</description>
+      </metadata>
+      <criteria>
+        <criterion comment="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State is zero in bit 18 (1-based bit counting)" test_ref="oval:mil.disa.fso.dotnet:tst:700" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.dotnet:def:13" version="1" class="compliance">
+      <metadata>
+        <title>APPNET0068 Invalidate Version 1 Signed Objects</title>
+        <affected family="windows">
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+        </affected>
+        <description>Windows must be configured to invalidate PKCS #7 version 1 signed objects. (SCC-only check)</description>
+      </metadata>
+      <criteria>
+        <criterion comment="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State is set in bit 17 (1-based bit counting)" test_ref="oval:mil.disa.fso.dotnet:tst:1300" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.dotnet:def:14" version="1" class="compliance">
+      <metadata>
+        <title>APPNET0069 Items in Trust Database</title>
+        <affected family="windows">
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+        </affected>
+        <description>Software publishing state table must be configured to only trust items in the users trust database. (SCC-only check)</description>
+      </metadata>
+      <criteria>
+        <criterion comment="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State is zero in bit 19 (1-based bit counting)" test_ref="oval:mil.disa.fso.dotnet:tst:1400" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <windows-def:registry_test id="oval:mil.disa.fso.dotnet:tst:200" version="1" comment="No assemblies or hash values under HKLM\Software\Microsoft\StrongName\Verification" check_existence="none_exist" check="all">
+      <windows-def:object object_ref="oval:mil.disa.fso.dotnet:obj:200" />
+    </windows-def:registry_test>
+    <windows-def:registry_test id="oval:mil.disa.fso.dotnet:tst:300" version="1" comment="HKCU\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State &amp; 32 == 0" check_existence="any_exist" check="none satisfy">
+      <windows-def:object object_ref="oval:mil.disa.fso.dotnet:obj:300" />
+      <windows-def:state state_ref="oval:mil.disa.fso.dotnet:ste:300" />
+    </windows-def:registry_test>
+    <windows-def:registry_test id="oval:mil.disa.fso.dotnet:tst:301" version="1" comment="HKCU\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State &amp; 128 == 0" check_existence="any_exist" check="none satisfy">
+      <windows-def:object object_ref="oval:mil.disa.fso.dotnet:obj:300" />
+      <windows-def:state state_ref="oval:mil.disa.fso.dotnet:ste:301" />
+    </windows-def:registry_test>
+    <windows-def:registry_test id="oval:mil.disa.fso.dotnet:tst:400" version="1" comment="HKCU\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State &amp; 256 == 0" check_existence="any_exist" check="none satisfy">
+      <windows-def:object object_ref="oval:mil.disa.fso.dotnet:obj:300" />
+      <windows-def:state state_ref="oval:mil.disa.fso.dotnet:ste:400" />
+    </windows-def:registry_test>
+    <windows-def:registry_test id="oval:mil.disa.fso.dotnet:tst:500" version="1" comment="HKCU\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State &amp; 512 == 0" check_existence="any_exist" check="none satisfy">
+      <windows-def:object object_ref="oval:mil.disa.fso.dotnet:obj:300" />
+      <windows-def:state state_ref="oval:mil.disa.fso.dotnet:ste:500" />
+    </windows-def:registry_test>
+    <windows-def:registry_test id="oval:mil.disa.fso.dotnet:tst:600" version="1" comment="HKCU\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State &amp; 1024 == 0" check_existence="any_exist" check="none satisfy">
+      <windows-def:object object_ref="oval:mil.disa.fso.dotnet:obj:300" />
+      <windows-def:state state_ref="oval:mil.disa.fso.dotnet:ste:600" />
+    </windows-def:registry_test>
+    <windows-def:registry_test id="oval:mil.disa.fso.dotnet:tst:601" version="1" comment="HKCU\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State &amp; 2048 == 0" check_existence="any_exist" check="none satisfy">
+      <windows-def:object object_ref="oval:mil.disa.fso.dotnet:obj:300" />
+      <windows-def:state state_ref="oval:mil.disa.fso.dotnet:ste:601" />
+    </windows-def:registry_test>
+    <windows-def:registry_test id="oval:mil.disa.fso.dotnet:tst:602" version="1" comment="HKCU\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State &amp; 4096 == 0" check_existence="any_exist" check="none satisfy">
+      <windows-def:object object_ref="oval:mil.disa.fso.dotnet:obj:300" />
+      <windows-def:state state_ref="oval:mil.disa.fso.dotnet:ste:602" />
+    </windows-def:registry_test>
+    <windows-def:registry_test id="oval:mil.disa.fso.dotnet:tst:603" version="1" comment="HKCU\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State &amp; 8192 == 0" check_existence="any_exist" check="none satisfy">
+      <windows-def:object object_ref="oval:mil.disa.fso.dotnet:obj:300" />
+      <windows-def:state state_ref="oval:mil.disa.fso.dotnet:ste:603" />
+    </windows-def:registry_test>
+    <windows-def:registry_test id="oval:mil.disa.fso.dotnet:tst:700" version="1" comment="HKCU\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State &amp; 131072 == 0" check_existence="any_exist" check="none satisfy">
+      <windows-def:object object_ref="oval:mil.disa.fso.dotnet:obj:300" />
+      <windows-def:state state_ref="oval:mil.disa.fso.dotnet:ste:700" />
+    </windows-def:registry_test>
+    <windows-def:registry_test id="oval:mil.disa.fso.dotnet:tst:1300" version="1" comment="HKCU\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State &amp; 65536 == 0" check_existence="any_exist" check="all">
+      <windows-def:object object_ref="oval:mil.disa.fso.dotnet:obj:300" />
+      <windows-def:state state_ref="oval:mil.disa.fso.dotnet:ste:1300" />
+    </windows-def:registry_test>
+    <windows-def:registry_test id="oval:mil.disa.fso.dotnet:tst:1400" version="1" comment="HKCU\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing\State &amp; 262144 == 0" check_existence="any_exist" check="none satisfy">
+      <windows-def:object object_ref="oval:mil.disa.fso.dotnet:obj:300" />
+      <windows-def:state state_ref="oval:mil.disa.fso.dotnet:ste:1400" />
+    </windows-def:registry_test>
+  </tests>
+  <objects>
+    <windows-def:registry_object id="oval:mil.disa.fso.dotnet:obj:200" version="1">
+      <windows-def:behaviors recurse_direction="down" max_depth="-1" />
+      <windows-def:hive datatype="string">HKEY_LOCAL_MACHINE</windows-def:hive>
+      <windows-def:key datatype="string">SOFTWARE\Microsoft\StrongName\Verification</windows-def:key>
+      <windows-def:name datatype="string" operation="pattern match">.*</windows-def:name>
+    </windows-def:registry_object>
+    <windows-def:registry_object id="oval:mil.disa.fso.dotnet:obj:300" version="1">
+      <windows-def:hive datatype="string">HKEY_CURRENT_USER</windows-def:hive>
+      <windows-def:key datatype="string">Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing</windows-def:key>
+      <windows-def:name datatype="string">State</windows-def:name>
+    </windows-def:registry_object>
+  </objects>
+  <states>
+    <windows-def:registry_state id="oval:mil.disa.fso.dotnet:ste:300" version="1" comment="sixth bit from right is set">
+      <windows-def:value datatype="int" operation="bitwise and">32</windows-def:value>
+    </windows-def:registry_state>
+    <windows-def:registry_state id="oval:mil.disa.fso.dotnet:ste:301" version="1" comment="eighth bit from right is set">
+      <windows-def:value datatype="int" operation="bitwise and">128</windows-def:value>
+    </windows-def:registry_state>
+    <windows-def:registry_state id="oval:mil.disa.fso.dotnet:ste:400" version="1" comment="ninth bit from right is set">
+      <windows-def:value datatype="int" operation="bitwise and">256</windows-def:value>
+    </windows-def:registry_state>
+    <windows-def:registry_state id="oval:mil.disa.fso.dotnet:ste:500" version="1" comment="tenth bit from right is set">
+      <windows-def:value datatype="int" operation="bitwise and">512</windows-def:value>
+    </windows-def:registry_state>
+    <windows-def:registry_state id="oval:mil.disa.fso.dotnet:ste:600" version="1" comment="eleventh bit from right is set">
+      <windows-def:value datatype="int" operation="bitwise and">1024</windows-def:value>
+    </windows-def:registry_state>
+    <windows-def:registry_state id="oval:mil.disa.fso.dotnet:ste:601" version="1" comment="twelfth bit from right is set">
+      <windows-def:value datatype="int" operation="bitwise and">2048</windows-def:value>
+    </windows-def:registry_state>
+    <windows-def:registry_state id="oval:mil.disa.fso.dotnet:ste:602" version="1" comment="thirteenth bit from right is set">
+      <windows-def:value datatype="int" operation="bitwise and">4096</windows-def:value>
+    </windows-def:registry_state>
+    <windows-def:registry_state id="oval:mil.disa.fso.dotnet:ste:603" version="1" comment="fourteenth bit from right is set">
+      <windows-def:value datatype="int" operation="bitwise and">8192</windows-def:value>
+    </windows-def:registry_state>
+    <windows-def:registry_state id="oval:mil.disa.fso.dotnet:ste:700" version="1" comment="eigtheenth bit from right is set">
+      <windows-def:value datatype="int" operation="bitwise and">131072</windows-def:value>
+    </windows-def:registry_state>
+    <windows-def:registry_state id="oval:mil.disa.fso.dotnet:ste:1300" version="1" comment="seventeenth bit from right is set">
+      <windows-def:value datatype="int" operation="bitwise and">65536</windows-def:value>
+    </windows-def:registry_state>
+    <windows-def:registry_state id="oval:mil.disa.fso.dotnet:ste:1400" version="1" comment="nineteenth bit from right is set">
+      <windows-def:value datatype="int" operation="bitwise and">262144</windows-def:value>
+    </windows-def:registry_state>
+  </states>
+</oval_definitions>
+

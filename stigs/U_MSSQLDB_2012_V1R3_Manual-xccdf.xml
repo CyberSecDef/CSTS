@@ -1,0 +1,1467 @@
+﻿<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass_with_expanded_text.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" id="Microsoft_SQL_Server_2012_Database__Security_Technical_Implementation_Guide_NewBenchmark" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2014-06-23">accepted</status><title>Microsoft SQL Server 2012 Database Security Technical Implementation Guide</title><description>The Microsoft SQL Server 2012 Database Security Technical Implementation Guide (STIG) is published as a tool to improve the security of Department of Defense (DoD) information systems. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.letterkenny.FSO.mbx.stig-customer-support-mailbox@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA, Field Security Operations</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 3 Benchmark Date: 25 Jul 2014</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critial Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-41389" selected="true" /><select idref="V-41391" selected="true" /><select idref="V-41392" selected="true" /><select idref="V-41393" selected="true" /><select idref="V-41394" selected="true" /><select idref="V-41395" selected="true" /><select idref="V-41396" selected="true" /><select idref="V-41397" selected="true" /><select idref="V-41398" selected="true" /><select idref="V-41399" selected="true" /><select idref="V-41400" selected="true" /><select idref="V-41402" selected="true" /><select idref="V-41403" selected="true" /><select idref="V-41404" selected="true" /><select idref="V-41406" selected="true" /><select idref="V-41407" selected="true" /><select idref="V-41409" selected="true" /><select idref="V-41411" selected="true" /><select idref="V-41412" selected="true" /><select idref="V-41413" selected="true" /><select idref="V-41415" selected="true" /><select idref="V-41416" selected="true" /><select idref="V-41417" selected="true" /><select idref="V-41419" selected="true" /><select idref="V-41420" selected="true" /><select idref="V-41421" selected="true" /><select idref="V-41422" selected="true" /><select idref="V-41424" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critial Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-41389" selected="true" /><select idref="V-41391" selected="true" /><select idref="V-41392" selected="true" /><select idref="V-41393" selected="true" /><select idref="V-41394" selected="true" /><select idref="V-41395" selected="true" /><select idref="V-41396" selected="true" /><select idref="V-41397" selected="true" /><select idref="V-41398" selected="true" /><select idref="V-41399" selected="true" /><select idref="V-41400" selected="true" /><select idref="V-41402" selected="true" /><select idref="V-41403" selected="true" /><select idref="V-41404" selected="true" /><select idref="V-41406" selected="true" /><select idref="V-41407" selected="true" /><select idref="V-41409" selected="true" /><select idref="V-41411" selected="true" /><select idref="V-41412" selected="true" /><select idref="V-41413" selected="true" /><select idref="V-41415" selected="true" /><select idref="V-41416" selected="true" /><select idref="V-41417" selected="true" /><select idref="V-41419" selected="true" /><select idref="V-41420" selected="true" /><select idref="V-41421" selected="true" /><select idref="V-41422" selected="true" /><select idref="V-41424" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critial Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-41389" selected="true" /><select idref="V-41391" selected="true" /><select idref="V-41392" selected="true" /><select idref="V-41393" selected="true" /><select idref="V-41394" selected="true" /><select idref="V-41395" selected="true" /><select idref="V-41396" selected="true" /><select idref="V-41397" selected="true" /><select idref="V-41398" selected="true" /><select idref="V-41399" selected="true" /><select idref="V-41400" selected="true" /><select idref="V-41402" selected="true" /><select idref="V-41403" selected="true" /><select idref="V-41404" selected="true" /><select idref="V-41406" selected="true" /><select idref="V-41407" selected="true" /><select idref="V-41409" selected="true" /><select idref="V-41411" selected="true" /><select idref="V-41412" selected="true" /><select idref="V-41413" selected="true" /><select idref="V-41415" selected="true" /><select idref="V-41416" selected="true" /><select idref="V-41417" selected="true" /><select idref="V-41419" selected="true" /><select idref="V-41420" selected="true" /><select idref="V-41421" selected="true" /><select idref="V-41422" selected="true" /><select idref="V-41424" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-41389" selected="true" /><select idref="V-41391" selected="true" /><select idref="V-41392" selected="true" /><select idref="V-41393" selected="true" /><select idref="V-41394" selected="true" /><select idref="V-41395" selected="true" /><select idref="V-41396" selected="true" /><select idref="V-41397" selected="true" /><select idref="V-41398" selected="true" /><select idref="V-41399" selected="true" /><select idref="V-41400" selected="true" /><select idref="V-41402" selected="true" /><select idref="V-41403" selected="true" /><select idref="V-41404" selected="true" /><select idref="V-41406" selected="true" /><select idref="V-41407" selected="true" /><select idref="V-41409" selected="true" /><select idref="V-41411" selected="true" /><select idref="V-41412" selected="true" /><select idref="V-41413" selected="true" /><select idref="V-41415" selected="true" /><select idref="V-41416" selected="true" /><select idref="V-41417" selected="true" /><select idref="V-41419" selected="true" /><select idref="V-41420" selected="true" /><select idref="V-41421" selected="true" /><select idref="V-41422" selected="true" /><select idref="V-41424" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-41389" selected="true" /><select idref="V-41391" selected="true" /><select idref="V-41392" selected="true" /><select idref="V-41393" selected="true" /><select idref="V-41394" selected="true" /><select idref="V-41395" selected="true" /><select idref="V-41396" selected="true" /><select idref="V-41397" selected="true" /><select idref="V-41398" selected="true" /><select idref="V-41399" selected="true" /><select idref="V-41400" selected="true" /><select idref="V-41402" selected="true" /><select idref="V-41403" selected="true" /><select idref="V-41404" selected="true" /><select idref="V-41406" selected="true" /><select idref="V-41407" selected="true" /><select idref="V-41409" selected="true" /><select idref="V-41411" selected="true" /><select idref="V-41412" selected="true" /><select idref="V-41413" selected="true" /><select idref="V-41415" selected="true" /><select idref="V-41416" selected="true" /><select idref="V-41417" selected="true" /><select idref="V-41419" selected="true" /><select idref="V-41420" selected="true" /><select idref="V-41421" selected="true" /><select idref="V-41422" selected="true" /><select idref="V-41424" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-41389" selected="true" /><select idref="V-41391" selected="true" /><select idref="V-41392" selected="true" /><select idref="V-41393" selected="true" /><select idref="V-41394" selected="true" /><select idref="V-41395" selected="true" /><select idref="V-41396" selected="true" /><select idref="V-41397" selected="true" /><select idref="V-41398" selected="true" /><select idref="V-41399" selected="true" /><select idref="V-41400" selected="true" /><select idref="V-41402" selected="true" /><select idref="V-41403" selected="true" /><select idref="V-41404" selected="true" /><select idref="V-41406" selected="true" /><select idref="V-41407" selected="true" /><select idref="V-41409" selected="true" /><select idref="V-41411" selected="true" /><select idref="V-41412" selected="true" /><select idref="V-41413" selected="true" /><select idref="V-41415" selected="true" /><select idref="V-41416" selected="true" /><select idref="V-41417" selected="true" /><select idref="V-41419" selected="true" /><select idref="V-41420" selected="true" /><select idref="V-41421" selected="true" /><select idref="V-41422" selected="true" /><select idref="V-41424" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-41389" selected="true" /><select idref="V-41391" selected="true" /><select idref="V-41392" selected="true" /><select idref="V-41393" selected="true" /><select idref="V-41394" selected="true" /><select idref="V-41395" selected="true" /><select idref="V-41396" selected="true" /><select idref="V-41397" selected="true" /><select idref="V-41398" selected="true" /><select idref="V-41399" selected="true" /><select idref="V-41400" selected="true" /><select idref="V-41402" selected="true" /><select idref="V-41403" selected="true" /><select idref="V-41404" selected="true" /><select idref="V-41406" selected="true" /><select idref="V-41407" selected="true" /><select idref="V-41409" selected="true" /><select idref="V-41411" selected="true" /><select idref="V-41412" selected="true" /><select idref="V-41413" selected="true" /><select idref="V-41415" selected="true" /><select idref="V-41416" selected="true" /><select idref="V-41417" selected="true" /><select idref="V-41419" selected="true" /><select idref="V-41420" selected="true" /><select idref="V-41421" selected="true" /><select idref="V-41422" selected="true" /><select idref="V-41424" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-41389" selected="true" /><select idref="V-41391" selected="true" /><select idref="V-41392" selected="true" /><select idref="V-41393" selected="true" /><select idref="V-41394" selected="true" /><select idref="V-41395" selected="true" /><select idref="V-41396" selected="true" /><select idref="V-41397" selected="true" /><select idref="V-41398" selected="true" /><select idref="V-41399" selected="true" /><select idref="V-41400" selected="true" /><select idref="V-41402" selected="true" /><select idref="V-41403" selected="true" /><select idref="V-41404" selected="true" /><select idref="V-41406" selected="true" /><select idref="V-41407" selected="true" /><select idref="V-41409" selected="true" /><select idref="V-41411" selected="true" /><select idref="V-41412" selected="true" /><select idref="V-41413" selected="true" /><select idref="V-41415" selected="true" /><select idref="V-41416" selected="true" /><select idref="V-41417" selected="true" /><select idref="V-41419" selected="true" /><select idref="V-41420" selected="true" /><select idref="V-41421" selected="true" /><select idref="V-41422" selected="true" /><select idref="V-41424" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-41389" selected="true" /><select idref="V-41391" selected="true" /><select idref="V-41392" selected="true" /><select idref="V-41393" selected="true" /><select idref="V-41394" selected="true" /><select idref="V-41395" selected="true" /><select idref="V-41396" selected="true" /><select idref="V-41397" selected="true" /><select idref="V-41398" selected="true" /><select idref="V-41399" selected="true" /><select idref="V-41400" selected="true" /><select idref="V-41402" selected="true" /><select idref="V-41403" selected="true" /><select idref="V-41404" selected="true" /><select idref="V-41406" selected="true" /><select idref="V-41407" selected="true" /><select idref="V-41409" selected="true" /><select idref="V-41411" selected="true" /><select idref="V-41412" selected="true" /><select idref="V-41413" selected="true" /><select idref="V-41415" selected="true" /><select idref="V-41416" selected="true" /><select idref="V-41417" selected="true" /><select idref="V-41419" selected="true" /><select idref="V-41420" selected="true" /><select idref="V-41421" selected="true" /><select idref="V-41422" selected="true" /><select idref="V-41424" selected="true" /></Profile><Group id="V-41389"><title>SRG-APP-000006-DB-000183</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53912r1_rule" severity="medium" weight="10.0"><version>SQL2-00-000300</version><title>SQL Server must maintain and support organization-defined security labels on stored information.</title><description>&lt;VulnDiscussion&gt;Security attributes are abstractions representing the basic properties or characteristics of an entity (e.g., subjects and objects) with respect to safeguarding information.
+
+These attributes are typically associated with internal data structures (e.g., records, buffers, files) within the information system and are used to enable the implementation of access control and flow control policies; reflect special dissemination, handling, or distribution instructions; or support other aspects of the information security policy.
+
+One example includes marking data as classified or FOUO. These security attributes may be assigned manually or during data processing but, either way, it is imperative these assignments are maintained while the data is in storage. If the security attributes are lost when the data is stored, there is the risk of a data compromise.
+
+The sensitivity marking or labeling of stored data items promotes the correct handling and protection of data.  Without such notification, the user may unwittingly disclose sensitive data to unauthorized users.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001399</ident><fixtext fixref="F-46813r2_fix">Develop SQL code or acquire a third-party tool to perform data labeling. SQL Server Label Security Toolkit 2.0 can be downloaded from http://sqlserverlst.codeplex.com/releases/view/83460. This tool can satisfy all data labeling and security data labeling requirements.</fixtext><fix id="F-46813r2_fix" /><check system="C-47925r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Review system documentation to determine if the labeling of sensitive data is required under organization-defined guidelines.
+If the labeling of sensitive data is not required, this is NA.
+
+Obtain system configuration settings to determine how data labeling is being performed. This can be through triggers or some other SQL-developed means or via a third-party tool. Spot check data and ensure the appropriate labels have been applied to stored data.   
+
+If the labeling of sensitive data is required and is not being performed, this is a finding.</check-content></check></Rule></Group><Group id="V-41391"><title>SRG-APP-000007-DB-000184</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53914r1_rule" severity="medium" weight="10.0"><version>SQL2-00-000400</version><title>SQL Server must maintain and support organization-defined security labels on information in process.</title><description>&lt;VulnDiscussion&gt;Security attributes are abstractions representing the basic properties or characteristics of an entity (e.g., subjects and objects) with respect to safeguarding information.
+
+These attributes are typically associated with internal data structures (e.g., records, buffers, files) within the application and are used to enable the implementation of access control and flow control policies; reflect special dissemination, handling, or distribution instructions; or support other aspects of the information security policy.
+
+Organizations define the security attributes of their data (e.g., classified, FOUO). Applications generating and/or processing data assigned these organization-defined security attributes must maintain the binding of these attributes to the data when the data is transmitted.
+
+If the application does not maintain the data security attributes when it transmits the data, there is a risk of data compromise.
+
+The sensitivity marking or labeling of data items promotes the correct handling and protection of data. Without such notification, the user may unwittingly disclose sensitive data to unauthorized users. Security labels must be correctly maintained throughout transmission.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001400</ident><fixtext fixref="F-46814r3_fix">Develop SQL code or acquire a third-party tool to perform data labeling. SQL Server Label Security Toolkit 2.0 can be downloaded from http://sqlserverlst.codeplex.com/releases/view/83460. This tool can satisfy all data labeling and security data labeling requirements.</fixtext><fix id="F-46814r3_fix" /><check system="C-47926r3_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Review system documentation to determine if the labeling of sensitive data is required under organization-defined guidelines.
+
+If the labeling of sensitive data is not required, this is NA.
+
+Obtain system configuration settings to determine how data labeling is being performed. This can be through triggers or some other SQL-developed means or via a third-party tool.  
+
+If the labeling of sensitive information in process is not being performed, this is a finding.</check-content></check></Rule></Group><Group id="V-41392"><title>SRG-APP-000008-DB-000185</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53916r1_rule" severity="medium" weight="10.0"><version>SQL2-00-000500</version><title>SQL Server must maintain and support organization-defined security labels on data in transmission.</title><description>&lt;VulnDiscussion&gt;Security attributes are abstractions representing the basic properties or characteristics of an entity (e.g., subjects and objects) with respect to safeguarding information.
+
+These attributes are typically associated with internal data structures (e.g., records, buffers, files) within the application and are used to enable the implementation of access control and flow control policies; reflect special dissemination, handling, or distribution instructions; or support other aspects of the information security policy.
+
+Organizations define the security attributes of their data (e.g., classified, FOUO). Applications generating and/or processing data assigned these organization-defined security attributes must maintain the binding of these attributes to the data when the data is transmitted.
+
+If the application does not maintain the data security attributes when it transmits the data, there is a risk of data compromise.
+
+The sensitivity marking or labeling of data items promotes the correct handling and protection of data. Without such notification, the user may unwittingly disclose sensitive data to unauthorized users. Security labels must be correctly maintained throughout transmission.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001401</ident><fixtext fixref="F-46816r2_fix">Develop SQL code or acquire a third-party tool to perform data labeling. SQL Server Label Security Toolkit 2.0 can be downloaded from http://sqlserverlst.codeplex.com/releases/view/83460. This tool can satisfy all data labeling and security data labeling requirements.</fixtext><fix id="F-46816r2_fix" /><check system="C-47928r3_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Review system documentation to determine if the labeling of sensitive data is required under organization-defined guidelines.
+If the labeling of sensitive data is not required, this is NA.
+
+Obtain system configuration settings to determine how data labeling is being performed. This can be through triggers or some other SQL-developed means or via a third-party tool.  
+
+If the labeling of sensitive data in transmission is not being performed, this is a finding.</check-content></check></Rule></Group><Group id="V-41393"><title>SRG-APP-000012-DB-000192</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53917r1_rule" severity="medium" weight="10.0"><version>SQL2-00-000900</version><title>SQL Server must allow authorized users to associate security labels to information in the database.</title><description>&lt;VulnDiscussion&gt;Security attributes are abstractions representing the basic properties or characteristics of an entity (e.g., subjects and objects) with respect to safeguarding information.
+
+These attributes are typically associated with internal data structures (e.g., records, buffers, files) within the information system and are used to enable the implementation of access control and flow control policies; reflect special dissemination, handling, or distribution instructions, or support other aspects of the information security policy.
+
+Examples of application security attributes are classified, FOUO, sensitive, etc.
+
+Throughout the course of normal usage, authorized users of applications that handle sensitive data will have the need to associate security attributes with information. Applications that maintain the binding of organization-defined security attributes to data must ensure authorized users can associate security attributes with information. For databases, this is accomplished via labeling.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001427</ident><fixtext fixref="F-46817r2_fix">Develop SQL code or acquire a third-party tool to perform data labeling. SQL Server Label Security Toolkit 2.0 can be downloaded from http://sqlserverlst.codeplex.com/releases/view/83460. This tool can satisfy all data labeling and security data labeling requirements.</fixtext><fix id="F-46817r2_fix" /><check system="C-47929r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Review system documentation to determine if the labeling of sensitive data is required under organization-defined guidelines.
+If the labeling of sensitive data is not required, this is NA.
+
+Obtain system configuration setting to determine how data labeling is being performed. This can be through triggers or some other SQL-developed means or via a third-party tool. Determine how authorized users associate security information to data. If authorized users are not able to associate security labels to data, this is a finding.</check-content></check></Rule></Group><Group id="V-41394"><title>SRG-APP-000085-DB-000038</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53918r1_rule" severity="medium" weight="10.0"><version>SQL2-00-011050</version><title>SQL Server utilizing Discretionary Access Control (DAC) must enforce a policy that limits propagation of access rights.</title><description>&lt;VulnDiscussion&gt;Discretionary Access Control (DAC) is based on the premise that individual users are "owners" of objects and therefore have discretion over who should be authorized to access the object and in which mode (e.g., read or write). Ownership is usually acquired as a consequence of creating the object or via specified ownership assignment.
+
+DAC allows the owner to determine who will have access to objects they control. An example of DAC includes user-controlled file permissions. DAC models have the potential for the access controls to propagate without limit, resulting in unauthorized access to said objects.
+
+When applications provide a discretionary access control mechanism, the application must be able to limit the propagation of those access rights.
+
+The DBMS must ensure the recipient of permissions possesses only the access intended. The database must enforce the ability to limit rights propagation if that is the intent of the grantor. If the propagation of access rights is not limited, users with rights to objects they do not own can continue to grant rights to those objects to other users without limit.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001693</ident><fixtext fixref="F-46818r2_fix">Revoke the Grant with Grant state and replace with Grant.</fixtext><fix id="F-46818r2_fix" /><check system="C-47931r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Check for rights propagation assignment to database permissions by running the following query:
+
+Select * from sys.server_permissions
+
+If any of the records returned have the Grant with Grant in the state_desc column, this is a finding.</check-content></check></Rule></Group><Group id="V-41395"><title>SRG-APP-000062-DB-000014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53920r1_rule" severity="medium" weight="10.0"><version>SQL2-00-009200</version><title>SQL Server must be protected from unauthorized access by developers.</title><description>&lt;VulnDiscussion&gt;Applications employ the concept of least privilege for specific duties and information systems (including specific functions, ports, protocols, and services). The concept of least privilege is also applied to information system processes, ensuring that the processes operate at privilege levels no higher than necessary to accomplish required organizational missions and/or functions. Organizations consider the creation of additional processes, roles, and information system accounts as necessary to achieve least privilege. Organizations also apply least privilege concepts to the design, development, implementation, and operations of information systems.
+
+Developers granted elevated database and/or operating system privileges on production databases can affect the operation and/or security of the database system. Operating system and database privileges assigned to developers on production systems should not be allowed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000037</ident><fixtext fixref="F-46820r2_fix">Remove developer accounts from SQL Server installations that are hosting only production databases by running the following SQL script:
+
+USE master
+DROP LOGIN &lt;'account name'&gt;</fixtext><fix id="F-46820r2_fix" /><check system="C-47932r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Identify whether SQL Server is hosting any development database(s) from the system documentation.
+
+
+If SQL Server is not hosting any development database, this is NA.
+
+
+Check the list of SQL Server users against the list of developer accounts by running the following SQL Server query:
+
+SELECT name AS 'Account Name'
+     , create_date AS 'Account Create Date'
+     , LOGINPROPERTY(name, 'PasswordLastSetTime') AS 'Password Last Set on'
+  FROM sys.server_principals
+ WHERE NOT TYPE IN ('C', 'R', 'U') -- ('C', 'G', 'K', 'R', 'S', 'U')
+  AND NOT name IN ('##MS_PolicyEventProcessingLogin##', '##MS_PolicyTsqlExecutionLogin##')
+  AND sid &lt;&gt; CONVERT(VARBINARY(85), 0x01) -- no 'sa' account
+  AND is_disabled &lt;&gt; 1
+ ORDER BY name. 
+
+For each developer account found on a production machine, verify if the developer account can change or alter database objects or data in the production database. If any developer account can change or alter database objects or data in a production database, this is a finding.</check-content></check></Rule></Group><Group id="V-41396"><title>SRG-APP-000062-DB-000015</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53921r1_rule" severity="medium" weight="10.0"><version>SQL2-00-009300</version><title>SQL Server must be protected from unauthorized access by developers on shared production/development host systems.</title><description>&lt;VulnDiscussion&gt;Applications employ the concept of least privilege for specific duties and information systems (including specific functions, ports, protocols, and services). The concept of least privilege is also applied to information system processes, ensuring that the processes operate at privilege levels no higher than necessary to accomplish required organizational missions and/or functions. Organizations consider the creation of additional processes, roles, and information system accounts as necessary to achieve least privilege. Organizations also apply least privilege concepts to the design, development, implementation, and operations of information systems.
+
+Developers granted elevated database and/or operating system privileges on systems that support both development and production databases can affect the operation and/or security of the production database system. Operating system and database privileges assigned to developers on shared development and production systems must be restricted.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000037</ident><fixtext fixref="F-46821r2_fix">Within the system documentation, clearly identify if SQL Server is hosting both development and production databases.
+
+Restrict developer privileges to production objects to only objects and data where those privileges are required and authorized by running the following scripts as needed:
+
+Remove the user from direct access to server permission by running the following script:
+USE master
+REVOKE &lt;'server permission name'&gt; TO &lt;'account name'&gt; CASCADE
+
+Remove the user from user-defined role access by running the following script:
+USE master
+ALTER SERVER ROLE [&lt;'server role name'&gt;] DROP MEMBER &lt;'user name'&gt;
+
+Remove permissions from developer user accounts that grant permissions beyond the development database.
+
+Navigate to SQL Server Management Studio &gt;&gt; Object Explorer &gt;&gt; &lt;'SQL Server name'&gt; &gt;&gt; Security &gt;&gt; Logins &gt;&gt; right click &lt;'administrator account name'&gt; &gt;&gt; Properties &gt;&gt; User &gt;&gt; Securables.
+
+Remove 'Securables' permissions from accounts that are beyond what is required.
+
+Navigate from 'Securables' to 'Server Roles'.
+
+Remove 'Server Roles' permissions from accounts that are beyond what is required.
+
+Navigate from 'Server Roles' to 'Users mapped to the login'.
+
+Remove 'Users mapped to the login' permissions from accounts that are beyond what is required.</fixtext><fix id="F-46821r2_fix" /><check system="C-47933r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Identify whether SQL Server contains both development and production databases from the system documentation.
+
+If SQL Server is not hosting both production and development databases, this is NA.
+
+
+If SQL Server is hosting both development and production databases, but this is not clearly documented in the system documentation, this is a finding.
+Check the list of SQL Server users against the list of developer accounts by running the following SQL Server query:
+
+SELECT name AS 'Account Name'
+     , create_date AS 'Account Create Date'
+     , LOGINPROPERTY(name, 'PasswordLastSetTime') AS 'Password Last Set on'
+  FROM sys.server_principals
+ WHERE NOT TYPE IN ('C', 'R', 'U') -- ('C', 'G', 'K', 'R', 'S', 'U')
+  AND NOT name IN ('##MS_PolicyEventProcessingLogin##', '##MS_PolicyTsqlExecutionLogin##')
+  AND sid &lt;&gt; CONVERT(VARBINARY(85), 0x01) -- no 'sa' account
+  AND is_disabled &lt;&gt; 1
+ ORDER BY name
+
+
+If no developer user account is listed, this is not a finding.
+
+Check each developer user account privilege listed above.
+
+Navigate to SQL Server Management Studio &gt;&gt; Object Explorer &gt;&gt; &lt;'SQL Server name'&gt; &gt;&gt; Security &gt;&gt; Logins &gt;&gt; right click &lt;'developer account name'&gt; &gt;&gt; Properties &gt;&gt; User &gt;&gt; Securables.
+
+If any item in the 'Permission' listing, for each highlighted item that exists in the 'Securables' listing, grants production privileges, this is a finding.
+
+Navigate from 'Securables' to 'Server Roles'.
+
+If any 'Server roles' are checked that grant production privileges, this is a finding.
+
+Navigate from 'Server Roles' to 'Users mapped to the login'.
+
+If any checked 'Database role membership' of each highlighted and checked 'Database' are determined to be granting production privileges, this is a finding.</check-content></check></Rule></Group><Group id="V-41397"><title>SRG-APP-000062-DB-000034</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53922r1_rule" severity="medium" weight="10.0"><version>SQL2-00-009500</version><title>Administrative privileges must be assigned to database accounts via database roles.</title><description>&lt;VulnDiscussion&gt;SQL Server must employ the concept of least privilege for specific duties and information systems (including specific functions, ports, protocols, and services). The concept of least privilege is also applied to information system processes, ensuring that the processes operate at privilege levels no higher than necessary to accomplish required organizational missions and/or functions. Organizations consider the creation of additional processes, roles, and information system accounts as necessary to achieve least privilege. Organizations also apply least privilege concepts to the design, development, implementation, and operations of information systems.
+
+Privileges granted outside the role of the application user job function are more likely to go unmanaged or without oversight for authorization. Maintenance of privileges using roles defined for discrete job functions offers improved oversight of application user privilege assignments and helps to protect against unauthorized privilege assignment.
+
+SQL Server access to administrative privileges can be made by membership or ownership to the administrative roles. These administrative roles must not be assigned directly to administrative user accounts. If administrative user accounts have direct access to administrative roles, this access must be removed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000037</ident><fixtext fixref="F-46822r2_fix">Navigate to SQL Server Management Studio &gt;&gt; Object Explorer &gt;&gt; &lt;'SQL Server name'&gt; &gt;&gt; Security &gt;&gt; Logins &gt;&gt; right click &lt;'administrator account name'&gt; &gt;&gt; Properties &gt;&gt; User Mapping &gt;&gt; &lt;'highlight the database'&gt; &gt;&gt; check 'Database role membership' each database.
+
+Remove 'Database role membership' by clicking the appropriate check box.
+
+Navigate to SQL Server Management Studio &gt;&gt; Object Explorer &gt;&gt; &lt;'SQL Server name'&gt; &gt;&gt; Security &gt;&gt; Logins &gt;&gt; right click &lt;'administrator account name'&gt; &gt;&gt; Properties &gt;&gt; Server Roles.
+
+Remove 'Server roles' by clicking the appropriate check box.</fixtext><fix id="F-46822r2_fix" /><check system="C-47934r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Check administrative accounts for direct 'Database role membership' to administration roles like: 'db_accessadmin', 'db_owner', etc.
+
+Navigate to SQL Server Management Studio &gt;&gt; Object Explorer &gt;&gt; &lt;'SQL Server name'&gt; &gt;&gt; Security &gt;&gt; Logins &gt;&gt; right click &lt;'administrator account name'&gt; &gt;&gt; Properties &gt;&gt; User Mapping &gt;&gt; &lt;'highlight database'&gt; &gt;&gt; check 'Database role membership' each database.
+
+If any administration accounts have a direct privilege to any 'Database role membership' that is part of the SQL Server system, this is a finding.
+
+Check administrative accounts for direct 'Server roles:' membership like: 'db_accessadmin', 'db_owner', etc...
+
+Navigate to SQL Server Management Studio &gt;&gt; Object Explorer &gt;&gt; &lt;'SQL Server name'&gt; &gt;&gt; Security &gt;&gt; Logins &gt;&gt; right click &lt;'administrator account name'&gt; &gt;&gt; Properties &gt;&gt; Server Roles.
+
+If any administration accounts have direct access to any 'Server roles' privilege that is part of the SQL Server system, this is a finding.</check-content></check></Rule></Group><Group id="V-41398"><title>SRG-APP-999999-DB-000209</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53924r1_rule" severity="medium" weight="10.0"><version>SQL2-00-023400</version><title>SQL Server default account public must be removed from each database.</title><description>&lt;VulnDiscussion&gt;SQL Server's user-defined 'public' account(s) may be assigned privileges that could give data access to an attacker. Well-known SQL Server default accounts would likely be targeted by attackers and thus more prone to providing unauthorized access to SQL Server data.
+
+If user-defined 'public' accounts are not removed or set to having zero privileges an attacker would be more likely to gain access to SQL Server data. Any 'public' account possesses a compromise to user-defined database data that could compromise the viewing of SQL Server system data and in some cases configuration settings. All user-defined 'public' accounts must be removed to eliminate any chance of unauthorized access. The only exception to this is if there is public information that is being made available to the public.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-46824r2_fix">Remove 'public' account by running the following script:
+USE &lt;'database name'&gt;
+DROP USER  &lt;'public account name'&gt; -- Removes user from database
+DROP LOGIN &lt;'public account name'&gt; -- Removes user from system
+GO
+
+
+Document the existence of the 'public' account in the system documentation.
+
+
+Remove the 'public' account as the owner of a schema by running the following script:
+-- Remove Owned Schemas by assigning schema to another user
+USE &lt;'database name'&gt;
+ALTER AUTHORIZATION ON SCHEMA::&lt;'schema name'&gt; TO &lt;'account name'&gt;
+GO
+
+
+Remove the 'public' account from direct membership of a system role by running the following script:
+USE &lt;'database name'&gt;
+ALTER ROLE &lt;'role name'&gt; DROP MEMBER &lt;'public account name'&gt;
+GO
+
+
+Remove the 'public' account from direct Securables access by running the following script:
+USE &lt;'database name'&gt;
+REVOKE &lt;'securable name'&gt; ON &lt;'object_name'&gt; TO &lt;'public account name'&gt; AS &lt;'grantor name'&gt;
+GO
+Note: &lt;'grantor name'&gt; is usually "[dbo]"
+
+
+Remove the 'public' account from direct Extended Properties.
+Navigate to SQL Server Management Studio &gt;&gt; Object Explorer &gt;&gt; &lt;'SQL Server name'&gt; &gt;&gt; Databases &gt;&gt; System Databases &gt;&gt; master &gt;&gt; Security &gt;&gt; Users&gt;&gt; right click 'public' account &gt;&gt; Properties &gt;&gt; Extended Properties &gt;&gt; &lt;highlight the Extended Property&gt;.
+Click the "Delete" button to remove the Extended Property.</fixtext><fix id="F-46824r2_fix" /><check system="C-47936r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Obtain list of 'public' accounts, if any exist, from system documentation.
+
+Check SQL Server for the existence of 'public' accounts in every user-defined database instance by running the following script:
+
+
+EXEC sp_MSforeachdb '
+IF NOT ''?'' IN (''master'', ''tempdb'', ''model'', ''msdb'')
+BEGIN
+   USE ?
+   SELECT ''?'' AS ''Database''
+        , su.name   AS ''db Account Name''
+        , sp.name   AS ''SQL Server Account Name''
+     FROM sys.sysusers su
+     LEFT JOIN sys.server_principals sp
+       ON su.sid = sp.sid
+    WHERE ( su.name like ''publ%"
+ OR sp.name like ''publ%'' )
+      AND NOT su.sid = CONVERT(VARBINARY(85), 0x)
+End'
+
+If any 'public' accounts exist and SQL Server is not setup for public information access, this is a finding.
+
+If any 'public' accounts exist that are not documented in the system documentation, this is a finding.
+
+Determine whether any of the 'public' accounts that exist have excessive privileges.
+
+Navigate to SQL Server Management Studio &gt;&gt; Object Explorer &gt;&gt; &lt;'SQL Server name'&gt; &gt;&gt; Databases &gt;&gt; System Databases &gt;&gt; master &gt;&gt; Security &gt;&gt; Users&gt;&gt; right click 'public' account &gt;&gt; Properties &gt;&gt; Owned Schemas.
+
+If any 'public' account is assigned ownership of a schema, this is a finding.
+
+Navigate from "Owned Schemas" to "Membership".
+
+If any 'public' account is assigned direct membership to any "Role Members", this is a finding.
+
+Navigate from "Membership" to "Securables".
+
+If any 'public' account is assigned direct membership to any "Securables" permission other than an authorized role assignment, this is a finding.
+
+If any 'public' account is assigned user-defined role membership that is determined to have excessive privileges (more than read/select access to public data), this is a finding.
+
+Navigate from "Securables" to "Extended Properties".
+
+If any 'public' account is assigned direct "Extended Properties", this is a finding.</check-content></check></Rule></Group><Group id="V-41399"><title>SRG-APP-999999-DB-000209</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53925r1_rule" severity="medium" weight="10.0"><version>SQL2-00-023500</version><title>SQL Server job/batch queues must be reviewed regularly to detect unauthorized SQL Server job submissions.</title><description>&lt;VulnDiscussion&gt;When dealing with unauthorized SQL Server job submissions, it should be noted any unauthorized job submissions to SQL Server job/batch queues can potentially have significant effects on the overall security of the system.
+
+If SQL Server were to allow any user to make SQL Server job/batch queue submissions, then those submissions might lead to a compromise of system integrity and/or data. This requirement is contingent upon the SQL Server job/batch queue being review regularly for unauthorized submissions.
+
+Accordingly, only qualified and authorized individuals shall be allowed to obtain access to submit SQL Server jobs. Job/batch queue submissions must adhere to an organization-defined job submission process. 
+
+Unmanaged changes that occur to SQL Server job/batch queues can lead to a compromised system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-46825r2_fix">Document procedures, within the system documentation, that detect for unauthorized SQL Server job submissions.
+
+Develop and implement procedures to detect for unauthorized SQL Server job submissions of Stored Procedures that are automatically executed and Agent jobs that are enabled.</fixtext><fix id="F-46825r2_fix" /><check system="C-47937r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Check system documentation for procedures that are regularly implemented in an effort to detect unauthorized SQL Server job submissions.
+
+If procedures that are regularly implemented are not documented in the system documentation, this is a finding.
+
+If the procedures are not implemented regularly or do not detect for unauthorized SQL Server job submissions, this is a finding.
+
+Review Stored Procedures that are able to automatically execute jobs scheduled to start automatically at system startup by running the following query:
+SELECT name
+  FROM master.sys.procedures
+ WHERE is_auto_executed = 1
+
+If any Stored Procedures listed are not documented as authorized, this is a finding.  
+
+Review the SQL Server job history by running the following query:
+
+SELECT *   FROM msdb.dbo.sysjobhistory 
+
+
+If any jobs listed are not documented as authorized, this is a finding.</check-content></check></Rule></Group><Group id="V-41400"><title>SRG-APP-999999-DB-000209</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53926r1_rule" severity="medium" weight="10.0"><version>SQL2-00-023800</version><title>SQL Server default account guest must be removed from each database.</title><description>&lt;VulnDiscussion&gt;SQL Server's default 'guest' account and any user-defined 'public' account(s) may be assigned privileges that could give data access to an attacker. Well-known SQL Server default accounts would likely be targeted by attackers and thus more prone to providing unauthorized access to SQL Server data.
+
+If SQL Server's default accounts and user-defined 'guest' account are not removed or set to having zero privileges an attacker would be more likely to gain access to SQL Server data. The default 'guest' account posses a compromise to user-defined database data that could compromise the viewing of SQL Server system data and in some cases configuration settings.
+
+This SQL Server's default 'guest' account must have its privileges set to near zero, except for the ownership of the guest schema to minimize any chance of unauthorized access.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-46826r2_fix">USE &lt;'database name'&gt;
+DROP USER  &lt;'guest account name'&gt; -- Removes user from database
+DROP LOGIN &lt;'guest account name'&gt; -- Removes user from system
+
+Note:  Removal of SQL Server 'guest' account privileges can adversely affect system operation. Testing must be done to insure that removal of privileges does not adversely affect successful system operations.</fixtext><fix id="F-46826r2_fix" /><check system="C-47938r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Obtain list of 'guest' accounts, if any exist, from system documentation.
+
+Check SQL Server for the existence of 'guest' accounts in every user-defined database instance by running the following script:
+
+EXEC sp_MSforeachdb '
+IF NOT ''?'' IN (''master'', ''tempdb'', ''model'', ''msdb'')
+BEGIN
+   USE ?
+   SELECT ''?'' AS ''Database''
+        , su.name   AS ''db Account Name''
+        , sp.name   AS ''SQL Server Account Name''
+     FROM sys.sysusers su
+     LEFT JOIN sys.server_principals sp
+       ON su.sid = sp.sid
+    WHERE ( su.name like ''gues%''
+         OR sp.name like ''gues%'' )
+      AND NOT su.sid = CONVERT(VARBINARY(85), 0x00)
+END  '
+
+If any 'guest' accounts exist and SQL Server is not setup for public information access, this is a finding.</check-content></check></Rule></Group><Group id="V-41402"><title>SRG-APP-000089-DB-000064</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53928r2_rule" severity="medium" weight="10.0"><version>SQL2-00-011200</version><title>SQL Server must provide audit record generation capability for organization-defined auditable events within the database.</title><description>&lt;VulnDiscussion&gt;Audit records can be generated from various components within the information system (e.g., network interface, hard disk, modem, etc.). From an application perspective, certain specific application functionalities may be audited as well.
+
+The list of audited events is the set of events for which audits are to be generated. This set of events is typically a subset of the list of all events for which the system is capable of generating audit records.  Examples are auditable events, time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, file names involved, and access control or flow control rules invoked.
+
+Organizations define which application components shall provide auditable events. 
+
+The DBMS must provide auditing for the list of events defined by the organization or risk negatively impacting forensic investigations into malicious behavior in the information system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000169</ident><fixtext fixref="F-46828r4_fix">
+--	Run this script to create and start an audit trace that audits required events.
+
+--	Note:	Replace 'D:&lt;path&gt;\&lt;filename&gt;' with the path and file name to your audit file.
+--			Adjust the other parameters of SP_TRACE_CREATE to suit your system's circumstances.
+
+--	The database server must be restarted for the trace to take effect.
+
+USE master;
+GO
+
+BEGIN TRY DROP PROCEDURE fso_audit END TRY BEGIN CATCH END CATCH;
+GO
+
+CREATE PROCEDURE fso_audit AS
+-- Create a Queue
+DECLARE @rc INT;
+DECLARE @TraceID INT;
+DECLARE @options INT = 6;             -- 6 specifies TRACE_FILE_ROLLOVER (2) and SHUTDOWN_ON_ERROR (4)
+DECLARE @tracefile NVARCHAR(128) = 'D:&lt;path&gt;\&lt;filename&gt;';  
+                                      -- Trace file location and beginning of file name (SQL Server adds a suffix)
+DECLARE @maxfilesize BIGINT = 500;    -- Trace file size limit in megabytes
+DECLARE @stoptime datetime = null;    -- do not stop
+DECLARE @filecount INT = 10;          -- Number of trace files in the rollover set
+EXEC @rc = SP_TRACE_CREATE 
+	@TraceID output,
+	@options,
+	@tracefile,
+	@maxfilesize,
+	@stoptime,
+	@filecount
+;
+IF (@rc != 0) GOTO Error;
+
+-- Set the events:
+DECLARE @on BIT = 1;
+
+-- Logins are audited based on SQL Server instance
+-- setting Audit Level stored in registry
+-- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.[#]\MSSQLServer\AuditLevel
+-- Audit Login
+-- Occurs when a user successfully logs in to SQL Server.
+EXEC SP_TRACE_SETEVENT @TraceID, 14, 1, @on; -- TextData
+EXEC SP_TRACE_SETEVENT @TraceID, 14, 6, @on; -- NTUserName
+EXEC SP_TRACE_SETEVENT @TraceID, 14, 7, @on; -- NTDomainName
+EXEC SP_TRACE_SETEVENT @TraceID, 14, 8, @on; -- HostName
+EXEC SP_TRACE_SETEVENT @TraceID, 14, 10, @on; -- ApplicationName
+EXEC SP_TRACE_SETEVENT @TraceID, 14, 11, @on; -- LoginName
+EXEC SP_TRACE_SETEVENT @TraceID, 14, 12, @on; -- SPID
+EXEC SP_TRACE_SETEVENT @TraceID, 14, 14, @on; -- StartTime
+EXEC SP_TRACE_SETEVENT @TraceID, 14, 23, @on; -- Success
+EXEC SP_TRACE_SETEVENT @TraceID, 14, 26, @on; -- ServerName
+EXEC SP_TRACE_SETEVENT @TraceID, 14, 35, @on; -- DatabaseName
+EXEC SP_TRACE_SETEVENT @TraceID, 14, 41, @on; -- LoginSid
+EXEC SP_TRACE_SETEVENT @TraceID, 14, 60, @on; -- IsSystem
+EXEC SP_TRACE_SETEVENT @TraceID, 14, 64, @on; -- SessionLoginName
+-- Audit Logout
+-- Occurs when a user logs out of SQL Server.
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 6, @on; -- NTUserName
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 7, @on; -- NTDomainName
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 8, @on; -- HostName
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 10, @on; -- ApplicationName
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 11, @on; -- LoginName
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 12, @on; -- SPID
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 13, @on; -- Duration
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 14, @on; -- StartTime
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 15, @on; -- EndTime
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 23, @on; -- Success
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 26, @on; -- ServerName
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 35, @on; -- DatabaseName
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 41, @on; -- LoginSid
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 60, @on; -- IsSystem
+EXEC SP_TRACE_SETEVENT @TraceID, 15, 64, @on; -- SessionLoginName
+-- Audit Server Starts and Stops
+-- Occurs when the SQL Server service state is modified.
+EXEC SP_TRACE_SETEVENT @TraceID, 18, 6, @on; -- NTUserName
+EXEC SP_TRACE_SETEVENT @TraceID, 18, 7, @on; -- NTDomainName
+EXEC SP_TRACE_SETEVENT @TraceID, 18, 8, @on; -- HostName
+EXEC SP_TRACE_SETEVENT @TraceID, 18, 10, @on; -- ApplicationName
+EXEC SP_TRACE_SETEVENT @TraceID, 18, 11, @on; -- LoginName
+EXEC SP_TRACE_SETEVENT @TraceID, 18, 12, @on; -- SPID
+EXEC SP_TRACE_SETEVENT @TraceID, 18, 14, @on; -- StartTime
+EXEC SP_TRACE_SETEVENT @TraceID, 18, 23, @on; -- Success
+EXEC SP_TRACE_SETEVENT @TraceID, 18, 26, @on; -- ServerName
+EXEC SP_TRACE_SETEVENT @TraceID, 18, 41, @on; -- LoginSid
+EXEC SP_TRACE_SETEVENT @TraceID, 18, 60, @on; -- IsSystem
+EXEC SP_TRACE_SETEVENT @TraceID, 18, 64, @on; -- SessionLoginName
+-- Audit Login Failed
+-- Indicates that a login attempt to SQL Server from a client failed.
+EXEC SP_TRACE_SETEVENT @TraceID, 20, 1, @on; -- TextData
+EXEC SP_TRACE_SETEVENT @TraceID, 20, 6, @on; -- NTUserName
+EXEC SP_TRACE_SETEVENT @TraceID, 20, 7, @on; -- NTDomainName
+EXEC SP_TRACE_SETEVENT @TraceID, 20, 8, @on; -- HostName
+EXEC SP_TRACE_SETEVENT @TraceID, 20, 10, @on; -- ApplicationName
+EXEC SP_TRACE_SETEVENT @TraceID, 20, 11, @on; -- LoginName
+EXEC SP_TRACE_SETEVENT @TraceID, 20, 12, @on; -- SPID
+EXEC SP_TRACE_SETEVENT @TraceID, 20, 14, @on; -- StartTime
+EXEC SP_TRACE_SETEVENT @TraceID, 20, 23, @on; -- Success
+EXEC SP_TRACE_SETEVENT @TraceID, 20, 26, @on; -- ServerName
+EXEC SP_TRACE_SETEVENT @TraceID, 20, 31, @on; -- Error
+EXEC SP_TRACE_SETEVENT @TraceID, 20, 35, @on; -- DatabaseName
+EXEC SP_TRACE_SETEVENT @TraceID, 20, 60, @on; -- IsSystem
+EXEC SP_TRACE_SETEVENT @TraceID, 20, 64, @on; -- SessionLoginName
+-- Audit Statement GDR Event
+-- Occurs every time a GRANT, DENY, REVOKE for a statement
+-- permission is issued by any user in SQL Server.
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 1, @on; -- TextData
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 6, @on; -- NTUserName
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 7, @on; -- NTDomainName
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 8, @on; -- HostName
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 10, @on; -- ApplicationName
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 11, @on; -- LoginName
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 12, @on; -- SPID
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 14, @on; -- StartTime
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 19, @on; -- StartTime
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 23, @on; -- Success
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 26, @on; -- ServerName
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 28, @on; -- ObjectType
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 34, @on; -- ObjectName
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 35, @on; -- DatabaseName
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 37, @on; -- OwnerName
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 39, @on; -- TargetUserName
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 40, @on; -- DBUserName
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 41, @on; -- LoginSid
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 42, @on; -- TargetLoginName
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 43, @on; -- TargetLoginSid
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 60, @on; -- IsSystem
+EXEC SP_TRACE_SETEVENT @TraceID, 102, 64, @on; -- SessionLoginName
+-- Audit Object GDR Event
+-- Occurs every time a GRANT, DENY, REVOKE for an object
+-- permission is issued by any user in SQL Server.
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 1, @on; -- TextData
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 6, @on; -- NTUserName
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 7, @on; -- NTDomainName
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 8, @on; -- HostName
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 10, @on; -- ApplicationName
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 11, @on; -- LoginName
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 12, @on; -- SPID
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 14, @on; -- StartTime
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 19, @on; -- StartTime
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 23, @on; -- Success
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 26, @on; -- ServerName
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 28, @on; -- ObjectType
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 34, @on; -- ObjectName
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 35, @on; -- DatabaseName
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 37, @on; -- OwnerName
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 39, @on; -- TargetUserName
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 40, @on; -- DBUserName
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 41, @on; -- LoginSid
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 42, @on; -- TargetLoginName
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 43, @on; -- TargetLoginSid
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 44, @on; -- ColumnPermissions
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 59, @on; -- ParentName
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 60, @on; -- IsSystem
+EXEC SP_TRACE_SETEVENT @TraceID, 103, 64, @on; -- SessionLoginName
+-- Audit AddLogin Event
+-- Occurs when a SQL Server login is added or removed;
+-- for sp_addlogin and sp_droplogin.
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 6, @on; -- NTUserName
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 7, @on; -- NTDomainName
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 8, @on; -- HostName
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 10, @on; -- ApplicationName
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 11, @on; -- LoginName
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 12, @on; -- SPID
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 14, @on; -- StartTime
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 23, @on; -- Success
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 26, @on; -- ServerName
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 35, @on; -- DatabaseName
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 41, @on; -- LoginSid
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 42, @on; -- TargetLoginName
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 43, @on; -- TargetLoginSid
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 60, @on; -- IsSystem
+EXEC SP_TRACE_SETEVENT @TraceID, 104, 64, @on; -- SessionLoginName
+-- Audit Login GDR Event
+-- Occurs when a Windows login right is added or removed;
+-- for sp_grantlogin, sp_revokelogin, and sp_denylogin.
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 6, @on; -- NTUserName
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 7, @on; -- NTDomainName
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 8, @on; -- HostName
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 10, @on; -- ApplicationName
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 11, @on; -- LoginName
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 12, @on; -- SPID
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 14, @on; -- StartTime
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 23, @on; -- Success
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 26, @on; -- ServerName
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 35, @on; -- DatabaseName
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 41, @on; -- LoginSid
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 42, @on; -- TargetLoginName
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 43, @on; -- TargetLoginSid
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 60, @on; -- IsSystem
+EXEC SP_TRACE_SETEVENT @TraceID, 105, 64, @on; -- SessionLoginName
+-- Audit Login Change Property Event
+-- Occurs when a property of a login, except passwords,
+-- is modified; for sp_defaultdb and sp_defaultlanguage.
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 42, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 43, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 106, 64, @on;
+-- Audit Login Change Password Event
+-- Occurs when a SQL Server login password is changed.
+-- Passwords are not recorded.
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 42, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 43, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 107, 64, @on;
+-- Audit Add Login to Server Role Event
+-- Occurs when a login is added or removed from a fixed server role;
+-- for sp_addsrvrolemember, and sp_dropsrvrolemember.
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 38, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 42, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 43, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 108, 64, @on;
+-- Audit Add DB User Event
+-- Occurs when a login is added or removed as a database user
+-- (Windows or SQL Server) to a database; for sp_grantdbaccess,
+-- sp_revokedbaccess, sp_adduser, and sp_dropuser.
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 21, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 38, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 39, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 42, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 43, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 44, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 51, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 109, 64, @on;
+-- Audit Add Member to DB Role Event
+-- Occurs when a login is added or removed as a database user
+-- (fixed or user-defined) to a database; for sp_addrolemember,
+-- sp_droprolemember, and sp_changegroup.
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 38, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 39, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 110, 64, @on;
+-- Audit Add Role Event
+-- Occurs when a login is added or removed as a database user to a
+-- database; for sp_addrole and sp_droprole.
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 38, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 111, 64, @on;
+-- Audit App Role Change Password Event
+-- Occurs when a password of an application role is changed.
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 38, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 112, 64, @on;
+-- Audit Statement Permission Event
+-- Occurs when a statement permission (such as CREATE TABLE) is used.
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 19, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 113, 64, @on;
+-- Audit Backup/Restore Event
+-- Occurs when a BACKUP or RESTORE command is issued.
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 115, 64, @on;
+-- Audit DBCC Event
+-- Occurs when DBCC commands are issued.
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 44, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 116, 64, @on;
+-- Audit Change Audit Event
+-- Occurs when audit trace modifications are made.
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 44, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 117, 64, @on;
+-- Audit Object Derived Permission Event
+-- Occurs when a CREATE, ALTER, and DROP object commands are issued.
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 118, 64, @on;
+-- Audit Database Management Event
+-- Occurs when a CREATE, ALTER, or DROP statement executes on
+-- database objects, such as schemas.
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 128, 64, @on;
+-- Audit Database Object Management Event
+-- Occurs when a CREATE, ALTER, or DROP statement executes on
+-- database objects, such as schemas.
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 129, 64, @on;
+-- Audit Database Principal Management Event
+-- Occurs when principals, such as users, are created, altered, or
+-- dropped from a database.
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 130, 64, @on;
+-- Audit Schema Object Management Event
+-- Occurs when server objects are created, altered, or dropped.
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 59, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 131, 64, @on;
+-- Audit Server Principal Impersonation Event
+-- Occurs when there is an impersonation within server scope, such
+-- as EXECUTE AS LOGIN.
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 132, 64, @on;
+-- Audit Database Principal Impersonation Event
+-- Occurs when an impersonation occurs within the database scope,
+-- such as EXECUTE AS USER or SETUSER.
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 38, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 133, 64, @on;
+-- Audit Server Object Take Ownership Event
+-- Occurs when the owner is changed for objects in server scope.
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 39, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 42, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 43, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 134, 64, @on;
+-- Audit Database Object Take Ownership Event
+-- Occurs when a change of owner for objects within database scope
+-- occurs.
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 39, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 135, 64, @on;
+-- Audit Change Database Owner
+-- Occurs when ALTER AUTHORIZATION is used to change the owner of a
+-- database and permissions are checked to do that.
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 39, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 42, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 43, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 152, 64, @on;
+-- Audit Schema Object Take Ownership Event
+-- Occurs when ALTER AUTHORIZATION is used to assign an owner to an
+-- object and permissions are checked to do that.
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 39, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 59, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 153, 64, @on;
+-- Audit Server Scope GDR Event
+-- Indicates that a grant, deny, or revoke event for permissions in
+-- server scope occurred, such as creating a login.
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 19, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 42, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 43, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 170, 64, @on;
+-- Audit Server Object GDR Event
+-- Indicates that a grant, deny, or revoke event for a schema object,
+-- such as a table or function, occurred.
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 19, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 42, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 43, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 171, 64, @on;
+-- Audit Database Object GDR Event
+-- Indicates that a grant, deny, or revoke event for database
+-- objects, such as assemblies and schemas, occurred.
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 19, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 39, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 42, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 43, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 172, 64, @on;
+-- Audit Server Operation Event
+-- Occurs when Security Audit operations such as altering settings,
+-- resources, external access, or authorization are used.
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 173, 64, @on;
+-- Audit Server Alter Trace Event
+-- Occurs when a statement checks for the ALTER TRACE permission.
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 175, 64, @on;
+-- Audit Server Object Management Event
+-- Occurs when server objects are created, altered, or dropped.
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 45, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 46, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 176, 64, @on;
+-- Audit Server Principal Management Event
+-- Occurs when server principals are created, altered, or dropped.
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 39, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 42, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 43, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 45, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 177, 64, @on;
+-- Audit Database Operation Event
+-- Occurs when database operations occur, such as checkpoint or
+-- subscribe query notification.
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 1, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 6, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 7, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 8, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 10, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 11, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 12, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 14, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 23, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 26, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 28, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 34, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 35, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 37, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 40, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 41, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 60, @on;
+EXEC SP_TRACE_SETEVENT @TraceID, 178, 64, @on;
+
+-- Set the trace status to start.
+EXEC SP_TRACE_SETSTATUS @TraceID, 1;
+
+-- Display trace ID for future reference.
+SELECT @TraceID AS TraceID;
+
+GOTO Finish;
+Error:
+SELECT @rc AS ErrorCode;
+Finish:
+GO
+
+EXEC SP_PROCOPTION 'fso_audit', 'startup', 'true';
+GO
+
+--	Note:	Replace 'D:&lt;path&gt;\&lt;filename&gt;' with the path and file name to your audit file.
+--			Adjust the other parameters of SP_TRACE_CREATE to suit your system's circumstances.
+
+</fixtext><fix id="F-46828r4_fix" /><check system="C-47940r7_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Check to see that all required events are being audited.
+From the query prompt:
+     SELECT DISTINCT traceid FROM sys.fn_trace_getinfo(0);
+All currently defined traces for the SQL server instance will be listed. If no traces are returned, this is a finding.
+
+Determine the trace(s) being used for the auditing requirement. 
+In the following, replace # with a trace ID being used for the auditing requirements.
+From the query prompt:
+     SELECT DISTINCT(eventid) FROM sys.fn_trace_geteventinfo(#);
+The following required event IDs should be listed:
+     14, 15, 18, 20, 
+     102, 103, 104, 105, 106, 107, 108, 109, 110, 
+     111, 112, 113, 115, 116, 117, 118, 
+     128, 129, 130, 
+     131, 132, 133, 134, 135, 
+     152, 153, 
+     170, 171, 172, 173, 175, 176, 177, 178.
+If any of the audit event IDs required above is not listed, this is a finding.
+
+Notes:
+1. It is acceptable to have the required event IDs spread across multiple traces, provided all of the traces are always active, and the event IDs are grouped in a logical manner.
+2. It is acceptable, from an auditing point of view, to include the same event IDs in multiple traces.  However, the effect of this redundancy on performance, storage, and the consolidation of audit logs into a central repository, should be taken into account.
+3. It is acceptable to trace additional event IDs. This is the minimum list.
+4. Once this check is satisfied, the DBA may find it useful to disable or modify the default trace that is set up by the SQL Server installation process. (Note that the Fix does NOT include code to do this.)  
+Use the following query to obtain a list of all event IDs, and their meaning:
+     SELECT * FROM sys.trace_events; 
+5. Because this check procedure is designed to address multiple requirements/vulnerabilities, it may appear to exceed the needs of some individual requirements.  However, it does represent the aggregate of all such requirements.
+6. Microsoft has flagged the trace techniques and tools used in this Check and Fix as deprecated.  They will be removed at some point after SQL Server 2014.  The replacement feature is Extended Events.  If Extended Events are in use, and cover all the required audit events listed above, this is not a finding.</check-content></check></Rule></Group><Group id="V-41403"><title>SRG-APP-000133-DB-000179</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53930r1_rule" severity="medium" weight="10.0"><version>SQL2-00-014900</version><title>SQL Server must be monitored to discover unauthorized changes to functions.</title><description>&lt;VulnDiscussion&gt;When dealing with change control issues, it should be noted, any changes to the hardware, software, and/or firmware components of SQL Server and/or application can potentially have significant effects on the overall security of the system.
+
+If SQL Server were to allow any user to make changes to software libraries, then those changes might be implemented without undergoing the appropriate testing and approvals that are part of a robust change management process.
+
+This requirement is contingent upon the language in which the application is programmed, as many application architectures in use today incorporate their software libraries into, and make them inseparable from, their compiled distributions, rendering them static and version dependant. However, this requirement does apply to applications with software libraries accessible and configurable, as in the case of interpreted languages.
+
+Accordingly, only qualified and authorized individuals shall be allowed to obtain access to SQL Server components for purposes of initiating changes, including upgrades and modifications.
+
+Unmanaged changes that occur to the SQL Server software libraries or configuration, such as Functions, can lead to unauthorized or compromised installations.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001499</ident><fixtext fixref="F-46831r1_fix">Configure a SQL Server timed job that automatically checks all system and user-defined Functions for being modified. If any Function is modified, an alert must be sent to the proper personnel for evaluation and possible action.</fixtext><fix id="F-46831r1_fix" /><check system="C-47941r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Check the SQL Server configuration for the timed job that automatically checks all system and user-defined Functions for being modified by running the following SQL Server query:
+DECLARE @Job_title varchar(20)
+-- user-defined VARIABLE &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+SET     @Job_title = '&lt;'enter Function modification job name'&gt;'
+-- user-defined VARIABLE &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+EXEC sp_help_job 
+     @job_name = @Job_title
+GO
+
+If a timed job or some other method is not implemented to check for Functions being modified, this is a finding.</check-content></check></Rule></Group><Group id="V-41404"><title>SRG-APP-000133-DB-000179</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53931r1_rule" severity="medium" weight="10.0"><version>SQL2-00-015100</version><title>SQL Server must be monitored to discover unauthorized changes to triggers.</title><description>&lt;VulnDiscussion&gt;When dealing with change control issues, it should be noted, any changes to the hardware, software, and/or firmware components of SQL Server and/or application can potentially have significant effects on the overall security of the system.
+
+If SQL Server were to allow any user to make changes to software libraries, then those changes might be implemented without undergoing the appropriate testing and approvals that are part of a robust change management process.
+
+This requirement is contingent upon the language in which the application is programmed, as many application architectures in use today incorporate their software libraries into, and make them inseparable from, their compiled distributions, rendering them static and version dependant. However, this requirement does apply to applications with software libraries accessible and configurable, as in the case of interpreted languages.
+
+Accordingly, only qualified and authorized individuals shall be allowed to obtain access to SQL Server components for purposes of initiating changes, including upgrades and modifications.
+
+Unmanaged changes that occur to the SQL Server software libraries or configuration, such as Triggers, can lead to unauthorized or compromised installations.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001499</ident><fixtext fixref="F-46832r1_fix">Configure a SQL Server timed job that automatically checks all system and user-defined Triggers for modification.</fixtext><fix id="F-46832r1_fix" /><check system="C-47942r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Check the SQL Server configuration for the timed job that automatically checks all system and user-defined Triggers for being modified by running the following SQL Server query:
+DECLARE @Job_title varchar(20)
+-- user-defined VARIABLE &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+SET     @Job_title = '&lt;'enter Trigger modification job name'&gt;'
+-- user-defined VARIABLE &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+EXEC sp_help_job 
+     @job_name = @Job_title
+GO
+</check-content></check></Rule></Group><Group id="V-41406"><title>SRG-APP-000133-DB-000179</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53933r1_rule" severity="medium" weight="10.0"><version>SQL2-00-015200</version><title>SQL Server must be monitored to discover unauthorized changes to stored procedures.</title><description>&lt;VulnDiscussion&gt;When dealing with change control issues, it should be noted, any changes to the hardware, software, and/or firmware components of SQL Server and/or application can potentially have significant effects on the overall security of the system.
+
+If SQL Server were to allow any user to make changes to software libraries, then those changes might be implemented without undergoing the appropriate testing and approvals that are part of a robust change management process.
+
+This requirement is contingent upon the language in which the application is programmed, as many application architectures in use today incorporate their software libraries into, and make them inseparable from, their compiled distributions, rendering them static and version dependant. However, this requirement does apply to applications with software libraries accessible and configurable, as in the case of interpreted languages.
+
+Accordingly, only qualified and authorized individuals shall be allowed to obtain access to SQL Server components for purposes of initiating changes, including upgrades and modifications.
+
+Unmanaged changes that occur to the SQL Server software libraries or configuration, such as Stored Procedures, can lead to unauthorized or compromised installations.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001499</ident><fixtext fixref="F-46833r1_fix">Configure a SQL Server timed job that automatically checks all system and user-defined Stored Procedures for modification.</fixtext><fix id="F-46833r1_fix" /><check system="C-47943r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Check the SQL Server configuration for the timed job that automatically checks all system and user-defined Stored Procedures for being modified by running the following SQL Server query:
+DECLARE @Job_title varchar(20)
+-- user-defined VARIABLE &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+SET     @Job_title = '&lt;'enter Stored Procedure modification job name'&gt;'
+-- user-defined VARIABLE &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+EXEC sp_help_job 
+     @job_name = @Job_title
+GO
+
+If a timed job or some other method is not implemented to check for Stored Procedures being modified, this is a finding.</check-content></check></Rule></Group><Group id="V-41407"><title>SRG-APP-000133-DB-000200</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53935r1_rule" severity="medium" weight="10.0"><version>SQL2-00-015600</version><title>Database objects must be owned by accounts authorized for ownership.</title><description>&lt;VulnDiscussion&gt;SQL Server database ownership is a higher level privilege that grants full rights to everything in that database, including the right to grant privileges to others. SQL Server requires that the owner of a database object be a user, and only one user can be the assigned owner of a database object. This tends to minimize the risk that multiple users could gain unauthorized access, except the one individual who is the owner.
+
+Within the database, object ownership implies full privileges to the owned object, including the privilege to assign access to the owned objects to other subjects. Unmanaged or uncontrolled ownership of databases can lead to unauthorized granting of privileges and database alterations.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001499</ident><fixtext fixref="F-46835r2_fix">Add and/or update system documentation to include any accounts authorized for object ownership and remove any account not authorized.
+
+Reassign database ownership to authorized database owner account:
+Navigate to SQL Server Management Studio &gt;&gt; Object Explorer &gt;&gt; &lt;'SQL Server name'&gt; &gt;&gt; Databases &gt;&gt; right click &lt;'database name'&gt; &gt;&gt; Properties &gt;&gt; Files.
+Select new database "Owner":
+Navigate to click on […] &gt;&gt; Select new Database Owner &gt;&gt; Browse… &gt;&gt; click on box to indicate account &gt;&gt; &lt;'OK'&gt; &gt;&gt; &lt;'OK'&gt; &gt;&gt; &lt;'OK'&gt;</fixtext><fix id="F-46835r2_fix" /><check system="C-47945r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Review system documentation to identify SQL Server accounts authorized to own database objects.
+
+If the SQL Server database ownership list does not exist or needs to be updated, this is a finding.
+
+Run the following SQL query to determine SQL Server ownership of all database objects:
+SELECT name AS 'Database name'
+     , SUSER_SNAME(owner_sid) AS 'Database Owner'
+     , state_desc AS 'Database state'
+  FROM sys.databases
+</check-content></check></Rule></Group><Group id="V-41409"><title>SRG-APP-000141-DB-000091</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53937r1_rule" severity="medium" weight="10.0"><version>SQL2-00-016900</version><title>Unused database components and database objects must be removed.</title><description>&lt;VulnDiscussion&gt;Information systems are capable of providing a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions).
+
+It is detrimental for applications to provide or install by default, functionality exceeding requirements or mission objectives. Examples include, but are not limited to, installing advertising software demonstrations or browser plug-ins not related to requirements or providing a wide array of functionality not required for every mission, yet cannot be disabled.
+
+Applications must adhere to the principles of least functionality by providing only essential capabilities.
+
+Unused and unnecessary SQL Server components increase the number of available attack vectors to SQL Server by introducing additional targets for attack. By minimizing the services and applications installed on the system, the number of potential vulnerabilities is reduced.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000381</ident><fixtext fixref="F-46837r2_fix">If any database components or objects of SQL Server are required for operation of applications that will be accessing SQL Server data or configuration, include them in the system documentation. If any unused components or objects of SQL Server are installed, uninstall or remove unused components or objects.</fixtext><fix id="F-46837r2_fix" /><check system="C-47946r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Review the list of components or optional features installed with SQL Server.
+If optional features or components of SQL Server are installed, this is not a finding. 
+
+If unused components or features of SQL Server are installed, then review the system documentation to verify unused components or features are documented and authorized.
+If any are not documented and authorized, this is a finding.</check-content></check></Rule></Group><Group id="V-41411"><title>SRG-APP-000188-DB-000121</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53939r1_rule" severity="medium" weight="10.0"><version>SQL2-00-019300</version><title>SQL Server must encrypt information stored in the database.</title><description>&lt;VulnDiscussion&gt;When data is written to digital media, such as hard drives, mobile computers, external/removable hard drives, personal digital assistants, flash/thumb drives, etc., there is risk of data loss and/or compromise.
+
+An organizational assessment of risk guides the selection of media and associated information contained on that media requiring restricted access. Organizations need to document, in policy and procedures, the media requiring restricted access, individuals authorized to access the media, and the specific measures taken to restrict access.
+
+Fewer protection measures are needed for media containing information determined by the organization to be in the public domain, to be publicly releasable, or to have limited or no adverse impact if accessed by other than authorized personnel. In these situations, it is assumed the physical access controls where the media resides provide adequate protection.
+
+As part of a defense-in-depth strategy, the organization considers routinely encrypting information at rest on selected secondary storage devices. The employment of cryptography is at the discretion of the information owner/steward. The selection of the cryptographic mechanisms used is based upon maintaining the confidentiality and integrity of the information.
+
+The strength of mechanisms is commensurate with the classification and sensitivity of the information.
+
+Information at rest, when not encrypted, is open to compromise from attackers who have gained unauthorized access to the data files.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001019</ident><fixtext fixref="F-46838r2_fix">Use third-party tools or configure SQL Server to encrypt data stored in the database. Use only NIST-certified or NSA-approved cryptography to provide encryption.
+
+Run the following SQL script to create a certificate:
+USE &lt;'database name'&gt;
+CREATE CERTIFICATE &lt;'certificate name'&gt;
+   ENCRYPTION BY PASSWORD = '&lt;'password'&gt;'
+   FROM FILE = &lt;'path/file_name'&gt;
+   WITH SUBJECT = 'name of person creating key',
+   EXPIRY_DATE = '&lt;'expiration date: yyyymmdd'&gt;'
+
+Run the following SQL script to create a symmetric key and assign an existing certificate:
+USE &lt;'database name'&gt;
+CREATE SYMMETRIC KEY &lt;'key name'&gt;
+   WITH ALGORITHM = AES_256 
+   ENCRYPTION BY &lt;'certificate name'&gt;
+
+Set SQL Server configuration settings to encrypt databases, tables, columns, and/or data elements as required by the organization and the system owner.
+
+Document all instances of acceptance of risk by the information owner where sensitive or classified data is not encrypted. Have the IAO document assurance that the unencrypted sensitive or classified information is otherwise inaccessible to those who do not have need-to-know access to the data. Developers should consider using a record-specific encryption method to protect individual records. For example, by employing the session username or other individualized element as part of the encryption key, then decryption of a data element is only possible by that user or other data accessible only by that user. Data labeling can be helpful in implementation. Consider applying additional auditing of access to any unencrypted sensitive or classified data when accessed by users (with and/or without a need to know).</fixtext><fix id="F-46838r2_fix" /><check system="C-47947r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Review SQL Server's cryptographic settings to determine whether data stored in databases is encrypted according to organizational requirements and the system owner.
+
+If all of the data on SQL Server is unclassified and encryption of information is not required, this requirement is NA.
+
+Run the following SQL query to review SQL Server's cryptographic settings for each database:
+EXEC sp_MSforeachdb '
+   SELECT ''?'' AS ''database ?'', *
+     FROM ?.sys.symmetric_keys
+    ORDER BY name, algorithm_desc
+ '
+If any database that is supposed to have encryption enabled does not list any symmetric key, this is a finding.
+
+If encryption is required by the information owner and an approved, NIST-certified cryptography is not used to encrypt stored sensitive information, this is a finding.
+
+Verify all sensitive information is encrypted: entire database, tables, columns and/or data elements, as required by the organization and the system owner.</check-content></check></Rule></Group><Group id="V-41412"><title>SRG-APP-000196-DB-000140</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53940r1_rule" severity="medium" weight="10.0"><version>SQL2-00-019500</version><title>SQL Server must implement required cryptographic protections using cryptographic modules complying with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.</title><description>&lt;VulnDiscussion&gt;Cryptography is only as strong as the encryption modules/algorithms employed to encrypt the data.
+
+Use of weak or untested encryption algorithms undermines the purposes of utilizing encryption to protect data.
+
+Use of cryptography to provide confidentiality and non-repudiation is not effective unless strong methods are employed with its use. Many earlier encryption methods and modules have been broken and/or overtaken by increasing computing power. The NIST FIPS 140-2 cryptographic standards provide proven methods and strengths to employ cryptography effectively.
+
+Detailed information on the NIST Cryptographic Module Validation Program (CMVP) is available at the following website:  http://csrc.nist.gov/groups/STM/cmvp/index.html.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001144</ident><fixtext fixref="F-46839r2_fix">Implement required cryptographic protections using cryptographic modules complying with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+Run the following SQL script to drop a symmetric key:
+USE &lt;'database name'&gt;
+DROP SYMMETRIC KEY &lt;'key name'&gt;
+
+Run the following SQL script to drop a certificate:
+USE &lt;'database name'&gt;
+DROP CERTIFICATE &lt;'certificate name'&gt;
+
+Configure symmetric keys to use approved encryption algorithms. Existing keys are not reconfigurable to use different algorithms.
+
+Run the following SQL script to create a certificate:
+USE &lt;'database name'&gt;
+CREATE CERTIFICATE &lt;'certificate name'&gt;
+   ENCRYPTION BY PASSWORD = '&lt;'password'&gt;'
+   FROM FILE = &lt;'path/file_name'&gt;
+   WITH SUBJECT = 'name of person creating key',
+   EXPIRY_DATE = '&lt;'expiration date: yyyymmdd'&gt;'
+
+Run the following SQL script to create symmetric key and assign a existing certificate:
+USE &lt;'database name'&gt;
+CREATE SYMMETRIC KEY &lt;'key name'&gt;
+   WITH ALGORITHM = AES_256 
+   ENCRYPTION BY &lt;'certificate name'&gt;</fixtext><fix id="F-46839r2_fix" /><check system="C-47949r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Run the following SQL query to review SQL Server's cryptographic settings for each database:
+EXEC sp_MSforeachdb '
+   SELECT ''?'' AS ''database ?'', *
+     FROM ?.sys.symmetric_keys
+    ORDER BY name, algorithm_desc
+ '
+
+Note:  The list of acceptable algorithms:  "AES 128", "AES 192", "AES 256" and "Triple DES".
+
+If SQL Server cryptographic algorithms listed are found to be unacceptable with applicable federal laws, Executive Orders, directives, policies, regulations, standards and guidance, this is a finding.</check-content></check></Rule></Group><Group id="V-41413"><title>SRG-APP-000231-DB-000154</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53942r1_rule" severity="medium" weight="10.0"><version>SQL2-00-024000</version><title>The Database Master Key encryption password must meet DoD password complexity requirements.</title><description>&lt;VulnDiscussion&gt;Weak passwords may be easily guessed. When passwords are used to encrypt keys used for encryption of sensitive data, then the confidentiality of all data encrypted using that key is at risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001199</ident><fixtext fixref="F-46842r3_fix">Assign an encryption password to the Database Master Key that is a minimum of 15 characters, contains at least 2 uppercase characters, 2 lowercase characters, 2 special characters, 2 numeric characters and has no repeating characters.
+To change the Database Master Key encryption password:
+USE [database name]
+ALTER MASTER KEY REGENERATE WITH ENCRYPTION BY PASSWORD = '[new password]'
+Note:  The Database Master Key encryption method should not be changed until the effects are thoroughly reviewed. Changing the master key encryption causes all encryption using the Database Master Key to be decrypted and re-encrypted. This action should not be taken during a high-demand time. Please see the MS SQL Server documentation prior to re-encrypting the
+Database Master Key for detailed information.</fixtext><fix id="F-46842r3_fix" /><check system="C-47950r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>From the query prompt:
+
+SELECT name
+FROM [master].sys.databases
+WHERE state = 0
+Repeat for each database:
+From the query prompt:
+USE [database name]
+SELECT COUNT(name)
+FROM sys.symmetric_keys s, sys.key_encryptions k
+WHERE s.name = '##MS_DatabaseMasterKey##'
+AND s.symmetric_key_id = k.key_id
+AND k.crypt_type = 'ESKP'
+
+If the value returned is greater than 0, a Database Master Key exists and is encrypted with a password.
+
+Review procedures and evidence of password requirements used to encrypt Database Master Keys. If the passwords are not required to meet DoD password standards, currently 15 characters, 2 uppercase characters, 2 lowercase characters, 2 special characters, 2 numeric
+characters and no repeating characters, this is a finding.</check-content></check></Rule></Group><Group id="V-41415"><title>SRG-APP-000231-DB-000154</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53944r1_rule" severity="medium" weight="10.0"><version>SQL2-00-024100</version><title>The Database Master Key must be encrypted by the Service Master Key where required.</title><description>&lt;VulnDiscussion&gt;When not encrypted by the Service Master Key, system administrators or application administrators may access and use the Database Master Key to view sensitive data that they are not authorized to view. Where alternate encryption means are not feasible, encryption by the Service Master Key may be necessary. To help protect sensitive data from unauthorized access by DBAs, mitigations may be in order. Mitigations may include automatic alerts or other audit events when the Database Master Key is accessed outside of the application or by a DBA account.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001199</ident><fixtext fixref="F-46843r2_fix">Where possible, encrypt the Database Master Key with a password known only to the application administrator.
+Where not possible, configure additional audit events or alerts to detect unauthorized access to the Database Master Key by users not authorized to view sensitive data.</fixtext><fix id="F-46843r2_fix" /><check system="C-47951r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>From the query prompt:
+SELECT name
+FROM [master].sys.databases
+WHERE is_master_key_encrypted_by_server = 1
+AND owner_sid &lt;&gt; 1
+AND state = 0
+If no databases are returned, this is not a finding.
+For any databases returned, verify in the System Security Plan that encryption of the Database
+Master Key using the Service Master Key is acceptable and approved by the Information Owner, and the encrypted data does not require additional protections to deter or detect DBA access. If not approved, this is a finding.
+
+If approved and additional protections are required, then verify the additional requirements are in place in accordance with the System Security Plan. These may include additional auditing on access of the Database Master Key with alerts or other automated monitoring.
+
+If the additional requirements are not in place, this is a finding.</check-content></check></Rule></Group><Group id="V-41416"><title>SRG-APP-000231-DB-000154</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53945r1_rule" severity="medium" weight="10.0"><version>SQL2-00-024200</version><title>Database Master Key passwords must not be stored in credentials within the database.</title><description>&lt;VulnDiscussion&gt;Storage of the Database Master Key password in a database credential allows decryption of sensitive data by privileged users who may not have a need-to-know requirement to access the
+data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001199</ident><fixtext fixref="F-46845r2_fix">Use the stored procedure sp_control_dbmasterkey_password to remove any credentials that
+store Database Master Key passwords.
+From the query prompt:
+EXEC SP_CONTROL_DBMASTERKEY_PASSWORD @db_name = '[database name]', @action
+= N'drop'</fixtext><fix id="F-46845r2_fix" /><check system="C-47952r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>From the query prompt:
+SELECT COUNT(credential_id)
+FROM [master].sys.master_key_passwords
+
+If count is not 0, this is a finding.</check-content></check></Rule></Group><Group id="V-41417"><title>SRG-APP-000231-DB-000154</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53946r1_rule" severity="medium" weight="10.0"><version>SQL2-00-024300</version><title>Symmetric keys must use a DoD certificate to encrypt the key.</title><description>&lt;VulnDiscussion&gt;Data within the database is protected by use of encryption. The symmetric keys are critical for this process. If the symmetric keys were to be compromised the data could be disclosed to unauthorized personnel.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001199</ident><fixtext fixref="F-46846r2_fix">Configure or alter symmetric keys to encrypt keys with certificates or authorized asymmetric keys:
+From the query prompt:
+ALTER SYMMETRIC KEY [key name] ADD ENCRYPTION BY CERTIFICATE [certificate name]
+ALTER SYMMETRIC KEY [key name] DROP ENCRYPTION BY [password, symmetric key or
+asymmetric key]
+
+The symmetric key must specify a certificate or asymmetric key for encryption.</fixtext><fix id="F-46846r2_fix" /><check system="C-47953r3_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>From the query prompt:
+SELECT name
+FROM [master].sys.databases
+WHERE state = 0
+Repeat for each database:
+From the query prompt:
+USE [database name]
+SELECT s.name, k.crypt_type_desc
+FROM sys.symmetric_keys s, sys.key_encryptions k
+WHERE s.symmetric_key_id = k.key_id
+AND k.crypt_type IN ('KSKP', 'ESKS')
+AND s.principal_id &lt;&gt; 1
+ORDER BY s.name, k.crypt_type_desc
+
+Review any symmetric keys that have been defined against the System Security Plan.
+
+If any keys are defined that are not documented in the System Security Plan, this is a finding.
+
+Review the System Security Plan to review the encryption mechanism specified for each symmetric key. If the method does not indicate use of certificates, this is a finding.
+
+If the certificate specified is not a DoD PKI certificate, this is a finding.</check-content></check></Rule></Group><Group id="V-41419"><title>SRG-APP-000231-DB-000154</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53948r1_rule" severity="medium" weight="10.0"><version>SQL2-00-024500</version><title>The Service Master Key must be backed up, stored offline and off-site.</title><description>&lt;VulnDiscussion&gt;Backup and recovery of the Service Master Key may be critical to the complete recovery of the database. Not having this key can lead to loss of data during recovery.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001199</ident><fixtext fixref="F-46847r2_fix">Document and implement procedures to safely back up and store the Service Master Key. Include in the procedures methods to establish evidence of backup and storage, and careful, restricted access and restoration of the Service Master Key. Also, include provisions to store the key off-site.
+BACKUP SERVICE MASTER KEY TO FILE = 'path_to_file'
+ENCRYPTION BY PASSWORD = 'password'</fixtext><fix id="F-46847r2_fix" /><check system="C-47954r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Review procedures for, and evidence of backup of, the SQL Server Service Master Key in the System Security Plan.
+
+If the procedures or evidence does not exist, this is a finding.
+
+If the procedures do not indicate offline and off-site storage of the Service Master Key, this is a finding.
+
+If procedures do not indicate access restrictions to the Service Master Key backup, this is a finding.</check-content></check></Rule></Group><Group id="V-41420"><title>SRG-APP-000232-DB-000155</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53949r1_rule" severity="medium" weight="10.0"><version>SQL2-00-021400</version><title>SQL Server must employ cryptographic mechanisms preventing the unauthorized disclosure of information at rest, unless the data is otherwise protected by alternative physical measures.</title><description>&lt;VulnDiscussion&gt;This control is intended to address the confidentiality and integrity of information at rest in non-mobile devices and covers user information and system information. If the data is not encrypted or protected by other means, it is subject to compromise and unauthorized disclosure.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001200</ident><fixtext fixref="F-46848r2_fix">Use encryption to protect the data where physical measures are not being utilized. To enable database encryption, create a master key, create a database encryption key, and protect it by using mechanisms tied to the master key, and then set encryption on.</fixtext><fix id="F-46848r2_fix" /><check system="C-47955r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>If physical protections are in place for the data, this is not a finding.
+
+Ensure the data is encrypted by executing:
+SELECT * FROM [master].sys.databases
+
+For each user database, ensure the Is_encrypted column is set to 1. If it is not set to 1, this is a finding.</check-content></check></Rule></Group><Group id="V-41421"><title>SRG-APP-000243-DB-000128</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53950r1_rule" severity="medium" weight="10.0"><version>SQL2-00-021800</version><title>SQL Server must prevent unauthorized and unintended information transfer via shared system resources.</title><description>&lt;VulnDiscussion&gt;The purpose of this control is to prevent information, including encrypted representations of information, produced by the actions of a prior user/role (or the actions of a process acting on behalf of a prior user/role) from being available to any current user/role (or current process) that obtains access to a shared system resource (e.g., registers, main memory, secondary storage) after the resource has been released back to the information system. Control of information in shared resources is also referred to as object reuse.
+
+Data used for the development and testing of applications often involves copying data from production. It is important that specific procedures exist for this process, so copies of sensitive data are not misplaced or left in a temporary location without the proper controls.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001090</ident><fixtext fixref="F-46850r2_fix">Create and document a process for moving data from production to development/test systems and follow the process.
+
+Modify any code used for moving data from production to development/test systems to ensure copies of production data are not left in unsecured locations.</fixtext><fix id="F-46850r2_fix" /><check system="C-47956r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Verify there are proper procedures in place for the transfer of development/test data from production. Review any scripts or code that exists for the movement of production data to development/test and verify copies of production data are not left in unprotected locations.
+
+If there is no documented procedure for data movement from production to development/test, this is a finding.
+
+If data movement code that copies from production to development/test does exist and leaves any copies of production data in unprotected locations, this is a finding.</check-content></check></Rule></Group><Group id="V-41422"><title>SRG-APP-000245-DB-000132</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53951r1_rule" severity="medium" weight="10.0"><version>SQL2-00-022000</version><title>SQL Server must protect against or limit the effects of the organization-defined types of Denial of Service (DoS) attacks.</title><description>&lt;VulnDiscussion&gt;Application management includes the ability to control the number of users and user sessions utilizing an application. Limiting the number of allowed users, and sessions per user, is helpful in limiting risks related to DoS attacks.
+
+This requirement addresses concurrent session control for a single information system account and does not address concurrent sessions by a single user via multiple system accounts.
+
+This requirement may be met via the application or by utilizing information system session control provided by a web server with specialized session management capabilities. If it has been specified that this requirement will be handled by the application, the capability to limit the maximum number of concurrent single user sessions must be designed and built into the application.
+
+The organization will need to define the maximum number of concurrent sessions for SQL Server accounts by account type, by account, or a combination thereof and SQL Server shall enforce this requirement.
+
+Unlimited concurrent connections to SQL Server could allow a successful DoS attack by exhausting connection resources.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001092</ident><fixtext fixref="F-46851r2_fix">Configure SQL Server number of concurrent sessions to the organization-defined maximum number of sessions by running the following script:
+
+USE MASTER
+GO
+
+EXEC sys.sp_configure N'show advanced options', N'1'  RECONFIGURE WITH OVERRIDE
+GO
+EXEC sys.sp_configure N'user connections', &lt;'maximum number of SQL Server concurrent connections'&gt;
+EXEC sys.sp_configure N'show advanced options', N'0'  RECONFIGURE WITH OVERRIDE
+GO</fixtext><fix id="F-46851r2_fix" /><check system="C-47957r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Check SQL Server settings for the number of concurrent Check SQL Server settings for the number of concurrent sessions by running the following script:
+
+USE MASTER
+GO
+
+EXEC sys.sp_configure N'show advanced options', N'1'  RECONFIGURE WITH OVERRIDE
+GO
+EXEC sys.sp_configure N'user connections'
+EXEC sys.sp_configure N'show advanced options', N'0'  RECONFIGURE WITH OVERRIDE
+GO
+
+If SQL Server settings for concurrent sessions is not lower than or equal to the organization-defined maximum number of sessions, this is a finding.</check-content></check></Rule></Group><Group id="V-41424"><title>SRG-APP-000251-DB-000160</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-53953r1_rule" severity="medium" weight="10.0"><version>SQL2-00-022500</version><title>SQL Server must check the validity of data inputs.</title><description>&lt;VulnDiscussion&gt;Invalid user input occurs when a user inserts data or characters into an application’s data entry fields and the application is unprepared to process that data. This results in unanticipated application behavior potentially leading to an application or information system compromise. Invalid user input is one of the primary methods employed when attempting to compromise an application.
+
+SQL Server needs to validate the data user’s attempt to input to the application for processing. Rules for checking the valid syntax and semantics of information system inputs (e.g., character set, length, numerical range, acceptable values) are in place to verify inputs match specified definitions for format and content. Inputs passed to interpreters are prescreened to prevent the content from being unintentionally interpreted as commands.
+
+A poorly designed database system can have many problems. A common issue with these types of systems is the missed opportunity to use constraints.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SQL Server Database 2012</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SQL Server Database 2012</dc:subject><dc:identifier>2560</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001310</ident><fixtext fixref="F-46852r2_fix">Use triggers, constraints, foreign keys, etc. to validate data input.
+
+Modify SQL Server to properly use the correct column data types as required in the database.</fixtext><fix id="F-46852r2_fix" /><check system="C-47958r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Microsoft SQL Server 2012 Database  Security Technical Implementation Guide_NewBenchmark.xml" /><check-content>Review SQL Server field definitions, constraints, and foreign keys to determine whether or not data being input into the database is valid.
+If field definitions are not reflective of the data, this is a finding.
+
+If column data types are not assigned correctly where required within the database, this is a finding.
+
+If columns do not contain reasonable constraints based on column use, this is a finding.</check-content></check></Rule></Group></Benchmark>

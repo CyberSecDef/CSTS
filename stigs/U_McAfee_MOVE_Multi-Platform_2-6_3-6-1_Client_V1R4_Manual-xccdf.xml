@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" id="McAfee_MOVE2_6_MultiPlatform_Client" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2016-04-05">accepted</status><title>McAfee MOVE 2.6/3.6.1 Multi-Platform Client STIG</title><description>The McAfee MOVE 2.6/3.6.1 Multi-Platform Client STIG is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the NIST 800-53 and related documents. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 4 Benchmark Date: 22 Apr 2016</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42933" selected="true" /><select idref="V-42935" selected="true" /><select idref="V-42936" selected="true" /><select idref="V-42937" selected="true" /><select idref="V-42939" selected="true" /><select idref="V-42940" selected="true" /><select idref="V-42942" selected="true" /><select idref="V-42943" selected="true" /><select idref="V-42944" selected="true" /><select idref="V-42945" selected="true" /><select idref="V-42946" selected="true" /><select idref="V-42947" selected="true" /><select idref="V-42948" selected="true" /><select idref="V-42949" selected="true" /><select idref="V-42950" selected="true" /><select idref="V-42951" selected="true" /><select idref="V-42952" selected="true" /><select idref="V-42953" selected="true" /><select idref="V-42954" selected="true" /><select idref="V-42955" selected="true" /><select idref="V-42956" selected="true" /><select idref="V-42957" selected="true" /><select idref="V-42958" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42933" selected="true" /><select idref="V-42935" selected="true" /><select idref="V-42936" selected="true" /><select idref="V-42937" selected="true" /><select idref="V-42939" selected="true" /><select idref="V-42940" selected="true" /><select idref="V-42942" selected="true" /><select idref="V-42943" selected="true" /><select idref="V-42944" selected="true" /><select idref="V-42945" selected="true" /><select idref="V-42946" selected="true" /><select idref="V-42947" selected="true" /><select idref="V-42948" selected="true" /><select idref="V-42949" selected="true" /><select idref="V-42950" selected="true" /><select idref="V-42951" selected="true" /><select idref="V-42952" selected="true" /><select idref="V-42953" selected="true" /><select idref="V-42954" selected="true" /><select idref="V-42955" selected="true" /><select idref="V-42956" selected="true" /><select idref="V-42957" selected="true" /><select idref="V-42958" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42933" selected="true" /><select idref="V-42935" selected="true" /><select idref="V-42936" selected="true" /><select idref="V-42937" selected="true" /><select idref="V-42939" selected="true" /><select idref="V-42940" selected="true" /><select idref="V-42942" selected="true" /><select idref="V-42943" selected="true" /><select idref="V-42944" selected="true" /><select idref="V-42945" selected="true" /><select idref="V-42946" selected="true" /><select idref="V-42947" selected="true" /><select idref="V-42948" selected="true" /><select idref="V-42949" selected="true" /><select idref="V-42950" selected="true" /><select idref="V-42951" selected="true" /><select idref="V-42952" selected="true" /><select idref="V-42953" selected="true" /><select idref="V-42954" selected="true" /><select idref="V-42955" selected="true" /><select idref="V-42956" selected="true" /><select idref="V-42957" selected="true" /><select idref="V-42958" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42933" selected="true" /><select idref="V-42935" selected="true" /><select idref="V-42936" selected="true" /><select idref="V-42937" selected="true" /><select idref="V-42939" selected="true" /><select idref="V-42940" selected="true" /><select idref="V-42942" selected="true" /><select idref="V-42943" selected="true" /><select idref="V-42944" selected="true" /><select idref="V-42945" selected="true" /><select idref="V-42946" selected="true" /><select idref="V-42947" selected="true" /><select idref="V-42948" selected="true" /><select idref="V-42949" selected="true" /><select idref="V-42950" selected="true" /><select idref="V-42951" selected="true" /><select idref="V-42952" selected="true" /><select idref="V-42953" selected="true" /><select idref="V-42954" selected="true" /><select idref="V-42955" selected="true" /><select idref="V-42956" selected="true" /><select idref="V-42957" selected="true" /><select idref="V-42958" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42933" selected="true" /><select idref="V-42935" selected="true" /><select idref="V-42936" selected="true" /><select idref="V-42937" selected="true" /><select idref="V-42939" selected="true" /><select idref="V-42940" selected="true" /><select idref="V-42942" selected="true" /><select idref="V-42943" selected="true" /><select idref="V-42944" selected="true" /><select idref="V-42945" selected="true" /><select idref="V-42946" selected="true" /><select idref="V-42947" selected="true" /><select idref="V-42948" selected="true" /><select idref="V-42949" selected="true" /><select idref="V-42950" selected="true" /><select idref="V-42951" selected="true" /><select idref="V-42952" selected="true" /><select idref="V-42953" selected="true" /><select idref="V-42954" selected="true" /><select idref="V-42955" selected="true" /><select idref="V-42956" selected="true" /><select idref="V-42957" selected="true" /><select idref="V-42958" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42933" selected="true" /><select idref="V-42935" selected="true" /><select idref="V-42936" selected="true" /><select idref="V-42937" selected="true" /><select idref="V-42939" selected="true" /><select idref="V-42940" selected="true" /><select idref="V-42942" selected="true" /><select idref="V-42943" selected="true" /><select idref="V-42944" selected="true" /><select idref="V-42945" selected="true" /><select idref="V-42946" selected="true" /><select idref="V-42947" selected="true" /><select idref="V-42948" selected="true" /><select idref="V-42949" selected="true" /><select idref="V-42950" selected="true" /><select idref="V-42951" selected="true" /><select idref="V-42952" selected="true" /><select idref="V-42953" selected="true" /><select idref="V-42954" selected="true" /><select idref="V-42955" selected="true" /><select idref="V-42956" selected="true" /><select idref="V-42957" selected="true" /><select idref="V-42958" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42933" selected="true" /><select idref="V-42935" selected="true" /><select idref="V-42936" selected="true" /><select idref="V-42937" selected="true" /><select idref="V-42939" selected="true" /><select idref="V-42940" selected="true" /><select idref="V-42942" selected="true" /><select idref="V-42943" selected="true" /><select idref="V-42944" selected="true" /><select idref="V-42945" selected="true" /><select idref="V-42946" selected="true" /><select idref="V-42947" selected="true" /><select idref="V-42948" selected="true" /><select idref="V-42949" selected="true" /><select idref="V-42950" selected="true" /><select idref="V-42951" selected="true" /><select idref="V-42952" selected="true" /><select idref="V-42953" selected="true" /><select idref="V-42954" selected="true" /><select idref="V-42955" selected="true" /><select idref="V-42956" selected="true" /><select idref="V-42957" selected="true" /><select idref="V-42958" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42933" selected="true" /><select idref="V-42935" selected="true" /><select idref="V-42936" selected="true" /><select idref="V-42937" selected="true" /><select idref="V-42939" selected="true" /><select idref="V-42940" selected="true" /><select idref="V-42942" selected="true" /><select idref="V-42943" selected="true" /><select idref="V-42944" selected="true" /><select idref="V-42945" selected="true" /><select idref="V-42946" selected="true" /><select idref="V-42947" selected="true" /><select idref="V-42948" selected="true" /><select idref="V-42949" selected="true" /><select idref="V-42950" selected="true" /><select idref="V-42951" selected="true" /><select idref="V-42952" selected="true" /><select idref="V-42953" selected="true" /><select idref="V-42954" selected="true" /><select idref="V-42955" selected="true" /><select idref="V-42956" selected="true" /><select idref="V-42957" selected="true" /><select idref="V-42958" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42933" selected="true" /><select idref="V-42935" selected="true" /><select idref="V-42936" selected="true" /><select idref="V-42937" selected="true" /><select idref="V-42939" selected="true" /><select idref="V-42940" selected="true" /><select idref="V-42942" selected="true" /><select idref="V-42943" selected="true" /><select idref="V-42944" selected="true" /><select idref="V-42945" selected="true" /><select idref="V-42946" selected="true" /><select idref="V-42947" selected="true" /><select idref="V-42948" selected="true" /><select idref="V-42949" selected="true" /><select idref="V-42950" selected="true" /><select idref="V-42951" selected="true" /><select idref="V-42952" selected="true" /><select idref="V-42953" selected="true" /><select idref="V-42954" selected="true" /><select idref="V-42955" selected="true" /><select idref="V-42956" selected="true" /><select idref="V-42957" selected="true" /><select idref="V-42958" selected="true" /></Profile><Group id="V-42933"><title>AV-MOVE-CLT-001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55662r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-001</version><title>All other antivirus products must be removed from the virtual machine while the McAfee AV Client is running.</title><description>&lt;VulnDiscussion&gt;Organizations should deploy antivirus software on all hosts for which satisfactory antivirus software is available. Antivirus software should be installed as soon after OS installation as possible and then updated with the latest signatures and antivirus software patches (to eliminate any known vulnerabilities in the antivirus software itself). To support the security of the host, the antivirus software should be configured and maintained properly so it continues to be effective at detecting and stopping malware. Antivirus software is most effective when its signatures are fully up-to-date. Accordingly, antivirus software should be kept current with the latest signature and software updates to improve malware detection.
+
+McAfee MOVE AV Client will not function properly with other antivirus products installed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48515r1_fix">Click on "Start"-&gt;"Control Panel". Choose the "Uninstall a program" under the "Programs" section. 
+
+Find the installed antivirus product, other than the McAfee MOVE AV Client, and choose to uninstall it.</fixtext><fix id="F-48515r1_fix" /><check system="C-49122r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>Access the system to which McAfee MOVE Client is installed. In the taskbar, right-click the red McAfee Agent shield and select "About".  
+Ensure neither the "McAfee VirusScan Enterprise + AntiSpyware Enterprise" nor the "Symantec Plugin" is listed as an installed product. 
+
+Access services.msc and review the services running on the system.
+Ensure no other antivirus products are installed.
+
+If either the "McAfee VirusScan Enterprise + AntiSpyware Enterprise" or the "Symantec Plugin" is listed as an installed product in the McAfee Agent "About" dialog box, this is a finding.
+If neither the "McAfee VirusScan Enterprise + AntiSpyware Enterprise" or the "Symantec Plugin" is listed as an installed product, but another antivirus product is shown as running as a service on this system, this is a finding.</check-content></check></Rule></Group><Group id="V-42935"><title>AV-MOVE-CLT-002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55664r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-002</version><title>The McAfee MOVE AV [Multi-Platform] Client policies must be configured with, and managed by, the HBSS ePO server.</title><description>&lt;VulnDiscussion&gt;Organizations should use centrally managed antivirus software that is controlled and monitored regularly by antivirus administrators, who are also typically responsible for acquiring, testing, approving, and delivering antivirus signature and software updates throughout the organization. Users should not be able to disable or delete antivirus software from their hosts, nor should they be able to alter critical settings. Antivirus administrators should perform continuous monitoring to confirm that hosts are using current antivirus software and that the software is configured properly. Implementing all of these recommendations should strongly support an organization in having a strong and consistent antivirus deployment across the organization.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48516r5_fix">Access the ePO server. From the System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV [Multi-Platform] Client needs to be deployed to open its properties.
+
+If the asset is not in the ePO server system tree, configure a task to deploy the McAfee Agent to asset to which the McAfee MOVE AV Client will be deployed.
+
+Once the system is communicating with the ePO server and is in the ePO server system tree, find and click the asset to which the McAfee MOVE AV Client will be deployed to open its properties.  
+
+Click on Actions, Agent, Modify Tasks on a Single System.
+
+Click on the "New Task" button.
+
+Name the new task "Deploy McAfee MOVE AV Client".
+
+For the "Type:", select "Product Deployment" from the drop-down list and click Next.
+
+For the "Products and components:", select "MOVE AV [Multi-Platform] Client" and ensure the "Action:" is "Install" and click Next.
+
+For the "Schedule status:", select "Enabled".
+
+Configure the schedule variable in accordance with local Change Control policy and click Next.
+
+On "Summary" TAB, click "Save", then "Close".
+Back at the "System Details" screen, click on the "Wake Up Agents" button.
+
+In the "Wake Up McAfee Agent" screen, for the "Force policy update:" settings, place a check in the "Force complete policy and task update" check box.
+
+Click on OK.</fixtext><fix id="F-48516r5_fix" /><check system="C-49123r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>On the system being reviewed, first confirm the system has a McAfee Agent deployed and running:
+Click Start, and type services.msc in the "Search programs and files" search bar. Press &lt;enter&gt;.
+Review the services running on the system.
+Ensure the McAfee Framework Service is listed as a service and has a status of Started.
+
+If the system does not have the McAfee Agent deployed to it, this is a finding.
+
+If the McAfee Agent is running on the system, next confirm the system has the McAfee MOVE AV Client deployed and is being managed by the ePO server:
+Access a cmd window, running as administrator. 
+Navigate to the directory to which the McAfee Agent is installed (default is C:\Program Files (x86)\McAfee\Common Framework).
+Open the McAfee Agent status monitor by executing the following command:
+cmdagent /s &lt;enter&gt;
+
+In the McAfee Agent Monitor, click the "Check New Policies" button. In the McAfee Agent Monitor, review the Agent Subsystem status lines and ensure there is a status for "Agent started performing ASCI", followed by a sequence of status lines showing the "Agent is sending PROPS VERSION package to ePO server" and "Agent communication session closed". These status lines will confirm the system is making a successful connection to the ePO server.
+
+Click the "Enforce Policies" button. In the McAfee Agent Monitor, review the Management status lines and ensure one shows a status of "Enforcing Policies for MOVEVOFF2600". This status line will confirm the system is enforcing policies for the McAfee MOVE AV Client.
+
+If McAfee Agent Status Monitor shows successful Agent Subsystem status lines of "Agent started performing ASCI", followed by a sequence of status lines showing the "Agent is sending PROPS VERSION package to ePO server" and "Agent communication session closed" and a Management status line of "Enforcing Policies for MOVEVOFF2600", this is not a finding.
+
+If either the system does not show "Agent started performing ASCI", followed by a sequence of status lines showing the "Agent is sending PROPS VERSION package to ePO server" and "Agent communication session closed", or does not show a Management status line of "Enforcing Policies for MOVEVOFF2600", this is a finding.</check-content></check></Rule></Group><Group id="V-42936"><title>AV-MOVE-CLT-003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55665r1_rule" severity="high" weight="10.0"><version>AV-MOVE-CLT-003</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured to enable malware protection.</title><description>&lt;VulnDiscussion&gt;Antivirus software should be installed as soon after OS installation as possible and then updated with the latest signatures and antivirus software patches (to eliminate any known vulnerabilities in the antivirus software itself). The antivirus software should then perform a complete scan of the host to identify any potential infections. To support the security of the host, the antivirus software should be configured and maintained properly so it continues to be effective at detecting and stopping malware. Antivirus software is most effective when its signatures are fully up-to-date. Accordingly, antivirus software should be kept current with the latest signature and software updates to improve malware detection.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48517r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General Tab, locate the "Enable Protection:" label. Select the "Enable malware protection." check box.
+
+Click Save.</fixtext><fix id="F-48517r1_fix" /><check system="C-49124r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+On the General Tab, verify the "Enable Protection:" setting has a check in the "Enable malware protection." checkbox.
+
+If the "Enable malware protection." checkbox is not selected, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee MOVE AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+Execute the following command:
+mvadm status &lt;enter&gt;
+
+If the "Protection Status" setting shows as "Disabled", this is a finding.</check-content></check></Rule></Group><Group id="V-42937"><title>AV-MOVE-CLT-004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55666r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-004</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured with the IP address of the primary Offload Scan Server used by all virtual machines using this policy.</title><description>&lt;VulnDiscussion&gt;Organizations should use centrally managed antivirus software that is controlled and monitored regularly by antivirus administrators, who are also typically responsible for acquiring, testing, approving, and delivering antivirus signature and software updates throughout the organization.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48518r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General tab, locate the "Offload Scan Server 1:" label. In the "IP Address, host name, or domain name of Server 1:" box, enter the IP address of the organization's primary McAfee MOVE Offload Scan Server.
+
+Click Save.</fixtext><fix id="F-48518r1_fix" /><check system="C-49125r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General TAB, locate the "Offload Scan Server 1:" label. In the "IP Address, host name, or domain name of Server 1:" box, ensure the organization's primary McAfee MOVE Offload Scan Server's IP address is listed.
+
+If the "IP Address, host name, or domain name of Server 1:" box is not configured with the required value, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee MOVE AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+If the "ServerAddress1" setting is empty, or does not have the IP address designated for the primary Offload Scan Server, this is a finding.</check-content></check></Rule></Group><Group id="V-42939"><title>AV-MOVE-CLT-005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55668r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-005</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured with the IP address of the secondary Offload Scan Server used by all virtual machines using this policy.</title><description>&lt;VulnDiscussion&gt;Organizations should use centrally managed antivirus software that is controlled and monitored regularly by antivirus administrators, who are also typically responsible for acquiring, testing, approving, and delivering antivirus signature and software updates throughout the organization.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48519r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General tab, locate the "Offload Scan Server 2:" label. In the "IP Address, host name, or domain name of Server 2:" box, input the organization's secondary McAfee MOVE Offload Scan Server's IP address.
+
+Click Save.</fixtext><fix id="F-48519r1_fix" /><check system="C-49126r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>NOTE:  Best practices suggest implementing a secondary McAfee MOVE AV [Multi-Platform] Offload Scan Server. If the organization does not use a secondary McAfee MOVE AV [Multi-Platform] Offload Scan Server, this check is not applicable.
+
+From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General tab, locate the "Offload Scan Server 2:" label. In the "IP Address, host name, or domain name of Server 2:" box, ensure the IP address of the organization's secondary McAfee MOVE Offload Scan Server is listed.
+
+If the "IP Address, host name, or domain name of Server 2:" box is not configured with the required value, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee MOVE AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+If the "ServerAddress2" setting is empty, or does not have the IP address designated for the secondary Offload Scan Server, this is a finding.</check-content></check></Rule></Group><Group id="V-42940"><title>AV-MOVE-CLT-006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55669r2_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-006</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured with a scan timeout of 180 seconds or more.</title><description>&lt;VulnDiscussion&gt;This setting configures the amount of time to wait for a scan to complete, in seconds. The default setting is 45 seconds. This is the duration for which a McAfee MOVE AV Agent will wait for scan response of a file from the Offload Scan Server. Typically, file scans are very fast. However, file scans may take longer time due to large file size, file type or heavy load on the offload scan server. In such case that the file scan takes longer than the scan timeout limit, the file access is allowed and a scan timeout event is generated. Setting the timeout too low may result in scans of a file terminating before the scan is completed, resulting in malware potentially going undetected.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48520r2_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General tab, locate the "Scan Timeout:" label. In the "File scans time out after (seconds):" box, input a value of 45 or more.
+
+Click Save.</fixtext><fix id="F-48520r2_fix" /><check system="C-49127r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General tab, locate the "Scan Timeout:" label. Ensure the "File scans time out after (seconds):" box is configured with a value of 45 or more.
+
+If the "File scans time out after (seconds):" setting is not configured with a value of 45 or more, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+If the "ScanTimeout" setting does not have a value of 45 or more, this is a finding.</check-content></check></Rule></Group><Group id="V-42942"><title>AV-MOVE-CLT-007</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55671r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-007</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured to cache scan results for files smaller than 40MB.</title><description>&lt;VulnDiscussion&gt;This setting configures the maximum file size (in MB) up to which scan results should be cached. The default setting is 40MB. Files smaller than this threshold are copied completely to the Offload Scan Server and scanned. If the file is found to be clean, its scan result is cached based on its SHA 1 checksum for faster future access. Files larger than this size threshold are transferred in chunks that are requested by the Offload Scan Server and scanned and setting that threshold higher could impact the performance of the scan processes.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48521r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General tab, locate the "Scan Result Cache:" label. In the "Cache scan results for files smaller than (MB):" box, input a value of 40.
+
+Click Save.</fixtext><fix id="F-48521r1_fix" /><check system="C-49128r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General tab, locate the "Scan Result Cache:" label. Ensure the "Cache scan results for files smaller than (MB):" box is configured with a value of 40.
+
+If the "Cache scan results for files smaller than (MB):" setting is not configured with a value of 40, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+If the "MaxFileSize" is not set to 40, this is a finding.</check-content></check></Rule></Group><Group id="V-42943"><title>AV-MOVE-CLT-008</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55672r2_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-008</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured to expire cached scan results after a time period of no more than 24 hours.</title><description>&lt;VulnDiscussion&gt;Antivirus software should be installed as soon after OS installation as possible and then updated with the latest signatures and antivirus software patches (to eliminate any known vulnerabilities in the antivirus software itself). The antivirus software should then perform a complete scan of the host to identify any potential infections. To support the security of the host, the antivirus software should be configured and maintained properly so it continues to be effective at detecting and stopping malware. Antivirus software is most effective when its signatures are fully up-to-date. Accordingly, antivirus software should be kept current with the latest signature and software updates to improve malware detection.
+
+The scan cache retains files previously scanned and determined to be clean. Since a cache scan result is not invalidated when a new antivirus signature (DAT) is received, and a cached file will only be re-scanned after the cached result expires, caching files past a 24 hour period allows for newly discovered malware to go undetected in those cached files.  Cached files should expire after no more than 24 hours in order to be scanned with new antivirus signatures every day.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48522r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General tab, locate the "Cache Expiration Time:" label. In the "Cached scan results expire after being cached for (hours):" box, enter a value of 24 or less.
+
+Click Save.</fixtext><fix id="F-48522r1_fix" /><check system="C-49129r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General tab, locate the "Cache Expiration Time:" label. Ensure the "Cached scan results expire after being cached for (hours):" box is configured with a value of 24 or less.
+
+If the "Cached scan results expire after being cached for (hours):" setting is not configured with a value of 24 or less, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+If the "CacheExpiration" setting is not set to a value of 24 or less, this is a finding.</check-content></check></Rule></Group><Group id="V-42944"><title>AV-MOVE-CLT-009</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55673r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-009</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured to scan when writing to disk.</title><description>&lt;VulnDiscussion&gt;Antivirus software is the most commonly used technical control for malware threat mitigation. Real-time scanning of files as they are written to disk is a crucial first line of defense from malware attacks.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48523r2_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Scan Items tab, locate the "Scan files:" label. Select the "When writing to disk" check box.
+
+Click Save.</fixtext><fix id="F-48523r2_fix" /><check system="C-49130r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Scan Items tab, locate the "Scan files:" label. Ensure the "When writing to disk" check box is selected.
+
+If the "When writing to disk" check box is not selected, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+The ScanFlags value will show a value of 1 for "Reading from disk", 2 for "Writing to disk", 3 for "Reading from disk" and "Writing to disk", 6 for "Writing to disk" and "Opened for backup", and 7 for "Reading from disk", "Writing to disk", and "Opened for backup". A value of 2, 3, 6, or 7 is valid for this requirement.
+
+If the "ScanFlags" setting does not have a value of 2, 3, 6, or 7, this is a finding.</check-content></check></Rule></Group><Group id="V-42945"><title>AV-MOVE-CLT-010</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55674r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-010</version><title>The McAfee MOVE AV [Multi-Platform] General policy must be configured to scan when reading from disk.</title><description>&lt;VulnDiscussion&gt;Antivirus software is the most commonly used technical control for malware threat mitigation. Real-time scanning of files as they are read from disk is a crucial first line of defense from malware attacks.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48524r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Scan Items tab, locate the "Scan files:" label. Select the "When reading from disk" check box.
+
+Click Save.</fixtext><fix id="F-48524r1_fix" /><check system="C-49131r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Scan Items tab, locate the "Scan files:" label. Ensure the "When reading from disk" check box is selected.
+
+If the "When reading from disk" check box is not selected, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+The ScanFlags value will show a value of 1 for "Reading from disk", 2 for "Writing to disk", 3 for "Reading from disk" and "Writing to disk", 6 for "Writing to disk" and "Opened for backup", and 7 for "Reading from disk", "Writing to disk", and "Opened for backup". A value of 1, 3 or 7 is valid for this requirement.
+
+If the "ScanFlags" setting does not have a value of 1, 3 or 7, this is a finding.</check-content></check></Rule></Group><Group id="V-42946"><title>AV-MOVE-CLT-012</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55675r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-012</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured to scan all file types.</title><description>&lt;VulnDiscussion&gt;When scanning for malware, excluding specific file types will increase the risk of a malware-infected file going undetected. By configuring antivirus software to scan all file types, the scanner has a higher success rate at detecting and eradicating malware.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48525r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Scan Items tab, locate the "File types to scan:" label. Select the "All files" radio button.
+
+Click Save.</fixtext><fix id="F-48525r1_fix" /><check system="C-49132r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Scan Items tab, locate the "File types to scan:" label. Ensure the "All files" radio button is selected.
+
+If the "All files" radio button is not selected, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+If the "ScanAllFileTypes" setting does not have a value of 1, this is a finding.</check-content></check></Rule></Group><Group id="V-42947"><title>AV-MOVE-CLT-013</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55676r2_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-013</version><title>If the McAfee MOVE AV [Multi-Platform] Client General policy is configured with path or file exclusions, those exclusions must be formally documented and approved by the ISSO/ISSM.</title><description>&lt;VulnDiscussion&gt;When scanning for malware, excluding specific file types will increase the risk of a malware-infected file going undetected. By configuring antivirus software to scan all file types, the scanner has a higher success rate at detecting and eradicating malware. The excluding files, paths, and processes from being scanned expands the potential for malware to be allowed onto the information system. While it is recognized that some file types might need to be excluded for operational reasons and/or because there is protection afforded to those files through a different mechanism, allowing those exclusions should always be vetted, documented, and approved before applying.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48526r4_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Scan Items tab, locate the "Path Exclusions:" label. 
+
+Remove any items listed other than the default "**\McAfee\Common Framework\" exclusion for McAfee MOVE AV Multi-Platform version 2.6.
+
+Remove any items listed other than the default "**\McAfee\Common Framework\" and "*.log" exclusions for McAfee MOVE AV Multi-Platform version 3.6.1.
+
+For any paths and processes required to be excluded for operational purposes, formally document those exclusions and obtain approval from the ISSO/ISSM.
+
+Click Save.</fixtext><fix id="F-48526r4_fix" /><check system="C-49133r4_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Scan Items tab, locate the "Path Exclusions:" label. 
+
+Ensure no items other than the default "**\McAfee\Common Framework\", with "Yes" selected for "Exclude Subfolders" are listed for McAfee MOVE AV Multi-Platform version 2.6.
+
+Ensure no items other than the default "**\McAfee\Common Framework\", with "Yes" selected for "Exclude Subfolders" and *.log, with "No" selected for "Exclude Subfolders" are listed for McAfee MOVE AV Multi-Platform version 3.6.1.
+
+If any exclusions other than the specified defaults are configured, those exclusions must be formally documented and approved by the ISSO/ISSM.
+
+If the "Path Exclusions:" label contains any items other than the specified defaults that have not been formally documented and approved by the ISSO/ISSM, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm excludepath list &lt;enter&gt;
+
+If the list returned by the above command has any path other than the default "McAfee\Common Framework\" for McAfee MOVE Multi-Platform version 2.6 or "McAfee\Common Framework\" and *.log for McAfee MOVE Multi-Platform version 3.6.1, those exclusions must be formally documented and approved by the ISSO/ISSM. 
+
+If the list returned by the above command has any path other than the default "McAfee\Common Framework\" for McAfee MOVE Multi-Platform version 2.6/3.6.1 or "McAfee\Common Framework\" and *.log for McAfee MOVE Multi-Platform version 3.1, and those exclusions have not been formally documented and approved by the ISSO/ISSM, this is a finding.</check-content></check></Rule></Group><Group id="V-42948"><title>AV-MOVE-CLT-014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55677r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-014</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured to report malware detections to the client event log.</title><description>&lt;VulnDiscussion&gt;Forensic identification is the practice of identifying infected hosts by looking for evidence of recent infections. The evidence may be very recent (only a few minutes old) or not so recent (hours or days old); the older the information is, the less accurate it is likely to be. The most obvious sources of evidence are those that are designed to identify malware activity, such as antivirus software, content filtering (e.g., anti-spam measures), IPS, and SIEM technologies. The logs of security applications might contain detailed records of suspicious activity, and might also indicate whether a security compromise occurred or was prevented. While logging is imperative to forensic analysis, logs could grow to the point of impacting disk space on the system. In order to avoid the risk of logs growing to the size of impacting the operating system, the log size and number of log files will be restricted, but must also be large enough to retain forensic value.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48527r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Alerts tab, locate the "Threat Alerts:" label. Select the "Malware detections are reported to the client event log." check box.
+
+Click Save.</fixtext><fix id="F-48527r1_fix" /><check system="C-49134r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Alerts tab, locate the "Threat Alerts:" label. Ensure the "Malware detections are reported to the client event log." check box is selected.
+If "Malware detections are reported to the client event log." check box is not selected, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+An "EventSink" value of 0 indicates no events are recorded. A value of 2 indicates events are sent to the client event log. A value of 4 indicates events are sent to the ePO server. A value of 6 indicates events are sent to both the client event log and the ePO server. A value of 14 indicates events are sent to the client event log, the ePO server and are displayed as a pop-up on the client. A value of 2, 6 or 14 would be valid for this requirement.
+
+If the "EventSink" value is not set to a 2, 6, or 14, this is a finding.</check-content></check></Rule></Group><Group id="V-42949"><title>AV-MOVE-CLT-015</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55678r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-015</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured to send malware detection events to the HBSS ePO server.</title><description>&lt;VulnDiscussion&gt;Forensic identification is the practice of identifying infected hosts by looking for evidence of recent infections. The evidence may be very recent (only a few minutes old) or not so recent (hours or days old); the older the information is, the less accurate it is likely to be. The most obvious sources of evidence are those that are designed to identify malware activity, such as antivirus software, content filtering (e.g., anti-spam measures), IPS, and SIEM technologies. The logs of security applications might contain detailed records of suspicious activity, and might also indicate whether a security compromise occurred or was prevented. While logging is imperative to forensic analysis, logs could grow to the point of impacting disk space on the system. In order to avoid the risk of logs growing to the size of impacting the operating system, the log size and number of log files will be restricted, but must also be large enough to retain forensic value.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48528r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+On the Alerts Tab place a check in the "Threat Alerts: Malware detection events are sent to the ePolicy Orchestrator:" checkbox.
+
+Click Save.</fixtext><fix id="F-48528r1_fix" /><check system="C-49135r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+On the Alerts Tab ensure the "Threat Alerts:" setting for "Malware detection events are sent to the ePolicy Orchestrator:" checkbox is selected.
+If the "Malware detection events are sent to the ePolicy Orchestrator:" checkbox is not selected, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+An "EventSink" value of 0 indicates no events are recorded. A value of 2 indicates events are sent to the client event log. A value of 4 indicates events are sent to the ePO server. A value of 6 indicates events are sent to both the client event log and the ePO server. A value of 14 indicates events are sent to the client event log, the ePO server and are displayed as a pop-up on the client. A value of 4, 6 or 14 would be valid for this requirement.
+
+If the "EventSink" value is not set to a 4, 6, or 14, this is a finding.</check-content></check></Rule></Group><Group id="V-42950"><title>AV-MOVE-CLT-016</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55679r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-016</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured to delete files automatically as first action.</title><description>&lt;VulnDiscussion&gt;Malware incident containment has two major components:  stopping the spread of malware and preventing further damage to hosts. Disinfecting a file is generally preferable to quarantining it because the malware is removed and the original file restored; however, many infected files cannot be disinfected. The primary goal of eradication is to remove malware from infected hosts.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48529r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Actions tab, locate the "When a threat is found:" label. Click on the drop-down box for "Perform this action first" and select "Delete files automatically."
+
+Click Save.</fixtext><fix id="F-48529r1_fix" /><check system="C-49136r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Actions tab, locate the "When a threat is found:" label. Ensure the "Perform this action first" drop-down box is configured to "Delete files automatically."
+
+If the "When a threat is found: Perform this action first" setting is not configured to "Delete files automatically", this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+If the "ThreatAction1" is not set to 0, this is a finding.</check-content></check></Rule></Group><Group id="V-42951"><title>AV-MOVE-CLT-017</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55680r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-017</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured to enable the quarantine.</title><description>&lt;VulnDiscussion&gt;Malware incident containment has two major components:  stopping the spread of malware and preventing further damage to hosts. Disinfecting a file is generally preferable to quarantining it because the malware is removed and the original file restored; however, many infected files cannot be disinfected. Accordingly, antivirus software should be configured to attempt to disinfect infected files and to either quarantine or delete files that cannot be disinfected. By enabling the quarantine, organizations will have the ability to submit copies of unknown malware to their security software vendors for analysis and will able to conduct internal forensic evaluation.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48530r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Quarantine tab, locate the "Quarantine Configuration:" label. Select the "Enabled" check box.
+
+Click Save.</fixtext><fix id="F-48530r1_fix" /><check system="C-49137r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Quarantine tab, locate the "Quarantine Configuration:" label. Ensure the "Enabled" check box is selected.
+
+If the "Enabled" check box is not selected, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+If the "QuarantineEnabled" does not have a value of 1, this is a finding.</check-content></check></Rule></Group><Group id="V-42952"><title>AV-MOVE-CLT-018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55681r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-018</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured with the location of SYSTEM_DRIVE\quarantine to ensure consistency across all systems.</title><description>&lt;VulnDiscussion&gt;The quarantine on each system represents a potential danger should the files contained within the quarantine inadvertently be executed.
+
+To better manage the quarantine on all systems, the quarantine should always be configured the same across all systems, which will allow management to better control access to those locations.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48531r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Quarantine tab, locate the "Quarantine Directory:" label. Input "&lt;SYSTEM_DRIVE&gt;\Quarantine" in the text box.
+
+Click Save.</fixtext><fix id="F-48531r1_fix" /><check system="C-49138r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Quarantine tab, locate the "Quarantine Directory:" label. Ensure "&lt;SYSTEM_DRIVE&gt;\Quarantine" is configured in the text box.
+
+If "&lt;SYSTEM_DRIVE&gt;\Quarantine" is not configured in the text box, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+If the "QuarantineFolder" does not have value of "C:\quarantine", this is a finding.</check-content></check></Rule></Group><Group id="V-42953"><title>AV-MOVE-CLT-019</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55682r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-019</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured to automatically delete quarantined data after a time period of no more than 28 days.</title><description>&lt;VulnDiscussion&gt;The quarantine on each system represents a potential danger should the files contained within the quarantine inadvertently be executed. Deleting the quarantine contents on a regular basis will alleviate the ability of malware from being executed. An organization's incident response policy should also contain steps in removing quarantined items after their forensic value has been depleted.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48532r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Quarantine tab, locate the "Quarantined data retention:" label. Select the "Automatically delete quarantined data after the specified number of days" check box.
+
+Under the Quarantine tab, locate the "Quarantined data retention:" label. Input a value of 28 days or less for "Number of days to keep backed-up data in the quarantine directory:".
+
+Click Save.</fixtext><fix id="F-48532r1_fix" /><check system="C-49139r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Quarantine tab, locate the "Quarantined data retention:" label. Ensure the "Automatically delete quarantined data after the specified number of days" check box is selected.
+Under the Quarantine tab, locate the "Quarantined data retention:" label. Ensure the value for "Number of days to keep backed-up data in the quarantine directory:" is 28 days or less.
+
+If the "Automatically delete quarantined data after the specified number of days" check box is not selected, this is a finding.
+If the "Number of days to keep backed-up data in the quarantine directory:" is not set to 28 days or less, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+If the "QuarantineDays" does not have a value from 1 through 28, this is a finding.</check-content></check></Rule></Group><Group id="V-42954"><title>AV-MOVE-CLT-020</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55683r2_rule" severity="high" weight="10.0"><version>AV-MOVE-CLT-020</version><title>The self-protection feature of the McAfee MOVE AV [Multi-Platform] Client, designed to prevent malicious attacks on McAfee MOVE AV Multi-Platform software components, must be enabled.</title><description>&lt;VulnDiscussion&gt;The self-protection feature defends files, services, and registry keys on virtual machines and will ensure uninterrupted protection.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48533r1_fix">Access the system to which McAfee MOVE Client is installed.
+
+Click Start, All Programs, Accessories. Right-click on the "Command Prompt" and choose to "Run-as administrator". This is necessary, even if logged in as an administrator.
+
+In the command window, navigate to the path to which the McAfee MOVE AV Client is installed (default is "C:\Program Files\McAfee\MOVE AV Client" on 32-bit systems and "C:\Program Files (x86)\McAfee\MOVE AV Client" on 64-bit systems).
+
+Execute the following command: 
+mvadm config set IntegrityEnabled=7 &lt;enter&gt;
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+The executed command will display settings for the McAfee MOVE AV Client installation.
+Verify the "IntegrityEnabled" setting is configured to "7 (0x7)".</fixtext><fix id="F-48533r1_fix" /><check system="C-49140r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>Access the system to which McAfee MOVE Client is installed.
+
+Click Start, All Programs, Accessories. Right-click on the "Command Prompt" and choose to "Run-as administrator". This is necessary, even if logged in as an administrator.
+
+On the local client, access a cmd window, running as administrator.
+In the command window, navigate to the path to which the McAfee MOVE AV Client is installed (default is "C:\Program Files\McAfee\MOVE AV Client" on 32-bit systems and "C:\Program Files (x86)\McAfee\MOVE AV Client" on 64-bit systems).
+
+Execute the following command: 
+mvadm config show &lt;enter&gt;
+
+The executed command will display settings for the McAfee MOVE AV Client installation.
+
+Verify the "IntegrityEnabled" setting is configured to "7 (0x7)".
+NOTE:  The setting of "7 (0x7)" for the "IntegrityEnabled" protects all McAfee AV Client services, registry, and files.
+
+If the "IntegrityEnabled" setting is not configured to "7 (0x7)", this is a finding.</check-content></check></Rule></Group><Group id="V-42955"><title>AV-MOVE-CLT-021</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55684r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-021</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured to deny access to files if first action fails.</title><description>&lt;VulnDiscussion&gt;Malware incident containment has two major components:  stopping the spread of malware and preventing further damage to hosts. Disinfecting a file is generally preferable to quarantining it because the malware is removed and the original file restored; however, many infected files cannot be disinfected. The primary goal of eradication is to remove malware from infected hosts.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48534r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Actions tab, locate the "When a threat is found:" label. Click on the drop-down box for "If the first action fails, then perform this action" and select "Deny access to files."
+
+Click Save.</fixtext><fix id="F-48534r1_fix" /><check system="C-49141r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Actions tab, locate the "When a threat is found:" label. Ensure the "If the first action fails, then perform this action" drop-down box is configured to "Deny access to files."
+
+If the "When a threat is found: If the first action fails, then perform this action" setting is not configured to "Deny access to files", this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+If the "ThreatAction2" does not have a value of 1, this is a finding.</check-content></check></Rule></Group><Group id="V-42956"><title>AV-MOVE-CLT-022</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55685r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-022</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured with the listening port of the primary Offload Scan Server used by all virtual machines using this policy.</title><description>&lt;VulnDiscussion&gt;Organizations should use centrally managed antivirus software that is controlled and monitored regularly by antivirus administrators, who are also typically responsible for acquiring, testing, approving, and delivering antivirus signature and software updates throughout the organization.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48535r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General tab, locate the "Offload Scan Server 1 Port:" label. In the "Client sends requests to Server 1 port:" box, enter the port number the MOVE AV Clients use to communicate with the Offload Scan Server.
+
+Click Save.</fixtext><fix id="F-48535r1_fix" /><check system="C-49142r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General Tab, locate the "Offload Scan Server 1 Port:" label. In the "Client sends requests to Server 1 port:" box, ensure the port number the MOVE AV Clients use to communicate with the primary Offload Scan Server is listed.
+
+If the "Client sends requests to Server 1 port:" box is not configured with the required value, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+If the "ServerPort1" does not have a value representing the port MOVE AV Clients use to communicate with the primary Offload Scan Server , this is a finding.</check-content></check></Rule></Group><Group id="V-42957"><title>AV-MOVE-CLT-023</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55686r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-023</version><title>The McAfee MOVE AV [Multi-Platform] Client General policy must be configured with the listening port of the secondary Offload Scan Server used by all virtual machines using this policy.</title><description>&lt;VulnDiscussion&gt;Organizations should use centrally managed antivirus software that is controlled and monitored regularly by antivirus administrators, who are also typically responsible for acquiring, testing, approving, and delivering antivirus signature and software updates throughout the organization.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48536r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General tab, locate the "Offload Scan Server 2 Port:" label. In the "Client sends requests to Server 2 port:" box, enter the port number the MOVE AV Clients use to communicate with the Offload Scan Server.
+
+Click Save.</fixtext><fix id="F-48536r1_fix" /><check system="C-49143r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>NOTE:  Best practices suggest implementing a secondary McAfee MOVE AV [Multi-Platform] Offload Scan Server. If the organization does not use a secondary McAfee MOVE AV [Multi-Platform] Offload Scan Server, this check is not applicable.
+
+From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the General tab, locate the "Offload Scan Server 2 Port:" label. In the "Client sends requests to Server 2 port:" box, ensure the port number the MOVE AV Clients use to communicate with the secondary Offload Scan Server is listed.
+
+If the "Client sends requests to Server 2 port:" box is not configured with the required value, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+If the "ServerPort2" does not have a value representing the port MOVE AV Clients use to communicate with the secondary Offload Scan Server , this is a finding.</check-content></check></Rule></Group><Group id="V-42958"><title>AV-MOVE-CLT-024</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55687r2_rule" severity="medium" weight="10.0"><version>AV-MOVE-CLT-024</version><title>If the McAfee MOVE AV [Multi-Platform] Client General policy is configured with process exclusions, those exclusions must be formally documented and approved by the ISSO/ISSM.</title><description>&lt;VulnDiscussion&gt;When scanning for malware, excluding specific file types will increase the risk of a malware-infected file going undetected. By configuring antivirus software to scan all file types, the scanner has a higher success rate at detecting and eradicating malware. The excluding files, paths, and processes from being scanned expands the potential for malware to be allowed onto the information system. While it is recognized that some file types might need to be excluded for operational reasons and/or because there is protection afforded to those files through a different mechanism, allowing those exclusions should always be vetted, documented, and approved before applying.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Client 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Client 2.6</dc:subject><dc:identifier>2571</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48538r3_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Scan Items tab, locate the "Process Exclusions:" label. 
+
+Remove any processes listed other than the default "UserProfileManager.exe" exclusion for McAfee AV MOVE Multi-Platform version 2.6.
+
+Remove any processes listed other than the following default exclusions for McAfee AV MOVE Multi-Platform version 3.6.1.
+
+UserProfileManager.exe
+%WINDIR%\system32\mssearch.exe
+%WINDIR%\system32\mssfh.exe
+%WINDIR%\system32\mssdmn.exe
+%WINDIR%\system32\winfs\winfs.exe
+%WINDIR%\system32\searchindexer.exe
+
+For any paths and processes required to be excluded for operational purposes, formally document those exclusions and obtain approval from the ISSO/ISSM.
+
+Click Save.
+</fixtext><fix id="F-48538r3_fix" /><check system="C-49144r4_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_Client.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset to which the McAfee MOVE AV Client has been deployed. Select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Client. Click on the MOVE AV [Multi-Platform] Client policy to open the properties. 
+
+Under the Scan Items tab, locate the "Process Exclusions:" label. 
+
+Ensure no processes other than the default "UserProfileManager.exe" are listed for McAfee MOVE AV (Multi-Platform] version 2.6.
+
+Ensure no processes other than the following default processes are listed for McAfee MOVE AV (Multi-Platform] version 3.6.1.
+
+UserProfileManager.exe
+%WINDIR%\system32\mssearch.exe
+%WINDIR%\system32\mssfh.exe
+%WINDIR%\system32\mssdmn.exe
+%WINDIR%\system32\winfs\winfs.exe
+%WINDIR%\system32\searchindexer.exe
+
+If any exclusions other than the specified defaults are configured, those exclusions must be formally documented and approved by the ISSO/ISSM.
+
+If the "Process Exclusions:" label contains any processes other than the specified defaults that have not been formally documented and approved by the ISSO/ISSM, this is a finding.
+
+On the local client, access a cmd window, running as administrator.
+
+Navigate to the path to which the McAfee AV Client has been installed (default is C:\Program Files\McAfee\MOVE AV Client on 32-bit systems or C:\Program Files(x86)\McAfee\MOVE AV Client on 64-bit systems).
+
+Execute the following command:
+mvadm procpassthru list &lt;enter&gt;
+
+If the list returned by the above command has any process other than the specified defaults, those exclusions must be formally documented and approved by the ISSO/ISSM.
+
+If the list returned by the above command has any process other than the specified defaults, and those exclusions have not been formally documented and approved by the ISSO/ISSM, this is a finding.</check-content></check></Rule></Group></Benchmark>

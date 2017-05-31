@@ -1,0 +1,1155 @@
+﻿<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" id="Microsoft_ISA_Server_2006" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status>accepted</status><title>Microsoft ISA Server 2006</title><description>Microsoft ISA Server 2006 Guidance </description><notice id="terms-of-use" xml:lang="en"></notice><reference><dc:publisher>DISA, Field Security Operations</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 25 Jun 2010</plain-text><version>1</version><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-21629" selected="true" /><select idref="V-21631" selected="true" /><select idref="V-21632" selected="true" /><select idref="V-21634" selected="true" /><select idref="V-21635" selected="true" /><select idref="V-21639" selected="true" /><select idref="V-21640" selected="true" /><select idref="V-21641" selected="true" /><select idref="V-21642" selected="true" /><select idref="V-21643" selected="true" /><select idref="V-21644" selected="true" /><select idref="V-21645" selected="true" /><select idref="V-21646" selected="true" /><select idref="V-21647" selected="true" /><select idref="V-21648" selected="true" /><select idref="V-21649" selected="true" /><select idref="V-21650" selected="true" /><select idref="V-21651" selected="true" /><select idref="V-21652" selected="true" /><select idref="V-21653" selected="true" /><select idref="V-21654" selected="true" /><select idref="V-21655" selected="true" /><select idref="V-21656" selected="true" /><select idref="V-21658" selected="true" /><select idref="V-21659" selected="true" /><select idref="V-21660" selected="true" /><select idref="V-21661" selected="true" /><select idref="V-21662" selected="true" /><select idref="V-21663" selected="true" /><select idref="V-21664" selected="true" /><select idref="V-21665" selected="true" /><select idref="V-21666" selected="true" /><select idref="V-21667" selected="true" /><select idref="V-21668" selected="true" /><select idref="V-21669" selected="true" /><select idref="V-21670" selected="true" /><select idref="V-21671" selected="true" /><select idref="V-21672" selected="true" /><select idref="V-21673" selected="true" /><select idref="V-21674" selected="true" /><select idref="V-21675" selected="true" /><select idref="V-21676" selected="true" /><select idref="V-21677" selected="true" /><select idref="V-21678" selected="true" /><select idref="V-21679" selected="true" /><select idref="V-21680" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-21629" selected="true" /><select idref="V-21631" selected="true" /><select idref="V-21632" selected="true" /><select idref="V-21634" selected="true" /><select idref="V-21635" selected="true" /><select idref="V-21639" selected="true" /><select idref="V-21640" selected="true" /><select idref="V-21641" selected="true" /><select idref="V-21642" selected="true" /><select idref="V-21643" selected="true" /><select idref="V-21644" selected="true" /><select idref="V-21645" selected="true" /><select idref="V-21646" selected="true" /><select idref="V-21647" selected="true" /><select idref="V-21648" selected="true" /><select idref="V-21649" selected="true" /><select idref="V-21650" selected="true" /><select idref="V-21651" selected="true" /><select idref="V-21652" selected="true" /><select idref="V-21653" selected="true" /><select idref="V-21654" selected="true" /><select idref="V-21655" selected="true" /><select idref="V-21656" selected="true" /><select idref="V-21658" selected="true" /><select idref="V-21659" selected="true" /><select idref="V-21660" selected="true" /><select idref="V-21661" selected="true" /><select idref="V-21662" selected="true" /><select idref="V-21663" selected="true" /><select idref="V-21664" selected="true" /><select idref="V-21665" selected="true" /><select idref="V-21666" selected="true" /><select idref="V-21667" selected="true" /><select idref="V-21668" selected="true" /><select idref="V-21669" selected="true" /><select idref="V-21670" selected="true" /><select idref="V-21671" selected="true" /><select idref="V-21672" selected="true" /><select idref="V-21673" selected="true" /><select idref="V-21674" selected="true" /><select idref="V-21675" selected="true" /><select idref="V-21676" selected="true" /><select idref="V-21677" selected="true" /><select idref="V-21678" selected="true" /><select idref="V-21679" selected="true" /><select idref="V-21680" selected="true" /></Profile><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-21629" selected="true" /><select idref="V-21631" selected="true" /><select idref="V-21632" selected="true" /><select idref="V-21634" selected="true" /><select idref="V-21635" selected="true" /><select idref="V-21639" selected="true" /><select idref="V-21640" selected="true" /><select idref="V-21641" selected="true" /><select idref="V-21642" selected="true" /><select idref="V-21643" selected="true" /><select idref="V-21644" selected="true" /><select idref="V-21645" selected="true" /><select idref="V-21646" selected="true" /><select idref="V-21647" selected="true" /><select idref="V-21648" selected="true" /><select idref="V-21649" selected="true" /><select idref="V-21650" selected="true" /><select idref="V-21651" selected="true" /><select idref="V-21652" selected="true" /><select idref="V-21653" selected="true" /><select idref="V-21654" selected="true" /><select idref="V-21655" selected="true" /><select idref="V-21656" selected="true" /><select idref="V-21658" selected="true" /><select idref="V-21659" selected="true" /><select idref="V-21660" selected="true" /><select idref="V-21661" selected="true" /><select idref="V-21662" selected="true" /><select idref="V-21663" selected="true" /><select idref="V-21664" selected="true" /><select idref="V-21665" selected="true" /><select idref="V-21666" selected="true" /><select idref="V-21667" selected="true" /><select idref="V-21668" selected="true" /><select idref="V-21669" selected="true" /><select idref="V-21670" selected="true" /><select idref="V-21671" selected="true" /><select idref="V-21672" selected="true" /><select idref="V-21673" selected="true" /><select idref="V-21674" selected="true" /><select idref="V-21675" selected="true" /><select idref="V-21676" selected="true" /><select idref="V-21677" selected="true" /><select idref="V-21678" selected="true" /><select idref="V-21679" selected="true" /><select idref="V-21680" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-21629" selected="true" /><select idref="V-21631" selected="true" /><select idref="V-21632" selected="true" /><select idref="V-21634" selected="true" /><select idref="V-21635" selected="true" /><select idref="V-21639" selected="true" /><select idref="V-21640" selected="true" /><select idref="V-21641" selected="true" /><select idref="V-21642" selected="true" /><select idref="V-21643" selected="true" /><select idref="V-21644" selected="true" /><select idref="V-21645" selected="true" /><select idref="V-21646" selected="true" /><select idref="V-21647" selected="true" /><select idref="V-21648" selected="true" /><select idref="V-21649" selected="true" /><select idref="V-21650" selected="true" /><select idref="V-21651" selected="true" /><select idref="V-21652" selected="true" /><select idref="V-21653" selected="true" /><select idref="V-21654" selected="true" /><select idref="V-21655" selected="true" /><select idref="V-21656" selected="true" /><select idref="V-21658" selected="true" /><select idref="V-21659" selected="true" /><select idref="V-21660" selected="true" /><select idref="V-21661" selected="true" /><select idref="V-21662" selected="true" /><select idref="V-21663" selected="true" /><select idref="V-21664" selected="true" /><select idref="V-21665" selected="true" /><select idref="V-21666" selected="true" /><select idref="V-21667" selected="true" /><select idref="V-21668" selected="true" /><select idref="V-21669" selected="true" /><select idref="V-21670" selected="true" /><select idref="V-21671" selected="true" /><select idref="V-21672" selected="true" /><select idref="V-21673" selected="true" /><select idref="V-21674" selected="true" /><select idref="V-21675" selected="true" /><select idref="V-21676" selected="true" /><select idref="V-21677" selected="true" /><select idref="V-21678" selected="true" /><select idref="V-21679" selected="true" /><select idref="V-21680" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-21629" selected="true" /><select idref="V-21631" selected="true" /><select idref="V-21632" selected="true" /><select idref="V-21634" selected="true" /><select idref="V-21635" selected="true" /><select idref="V-21639" selected="true" /><select idref="V-21640" selected="true" /><select idref="V-21641" selected="true" /><select idref="V-21642" selected="true" /><select idref="V-21643" selected="true" /><select idref="V-21644" selected="true" /><select idref="V-21645" selected="true" /><select idref="V-21646" selected="true" /><select idref="V-21647" selected="true" /><select idref="V-21648" selected="true" /><select idref="V-21649" selected="true" /><select idref="V-21650" selected="true" /><select idref="V-21651" selected="true" /><select idref="V-21652" selected="true" /><select idref="V-21653" selected="true" /><select idref="V-21654" selected="true" /><select idref="V-21655" selected="true" /><select idref="V-21656" selected="true" /><select idref="V-21658" selected="true" /><select idref="V-21659" selected="true" /><select idref="V-21660" selected="true" /><select idref="V-21661" selected="true" /><select idref="V-21662" selected="true" /><select idref="V-21663" selected="true" /><select idref="V-21664" selected="true" /><select idref="V-21665" selected="true" /><select idref="V-21666" selected="true" /><select idref="V-21667" selected="true" /><select idref="V-21668" selected="true" /><select idref="V-21669" selected="true" /><select idref="V-21670" selected="true" /><select idref="V-21671" selected="true" /><select idref="V-21672" selected="true" /><select idref="V-21673" selected="true" /><select idref="V-21674" selected="true" /><select idref="V-21675" selected="true" /><select idref="V-21676" selected="true" /><select idref="V-21677" selected="true" /><select idref="V-21678" selected="true" /><select idref="V-21679" selected="true" /><select idref="V-21680" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-21629" selected="true" /><select idref="V-21631" selected="true" /><select idref="V-21632" selected="true" /><select idref="V-21634" selected="true" /><select idref="V-21635" selected="true" /><select idref="V-21639" selected="true" /><select idref="V-21640" selected="true" /><select idref="V-21641" selected="true" /><select idref="V-21642" selected="true" /><select idref="V-21643" selected="true" /><select idref="V-21644" selected="true" /><select idref="V-21645" selected="true" /><select idref="V-21646" selected="true" /><select idref="V-21647" selected="true" /><select idref="V-21648" selected="true" /><select idref="V-21649" selected="true" /><select idref="V-21650" selected="true" /><select idref="V-21651" selected="true" /><select idref="V-21652" selected="true" /><select idref="V-21653" selected="true" /><select idref="V-21654" selected="true" /><select idref="V-21655" selected="true" /><select idref="V-21656" selected="true" /><select idref="V-21658" selected="true" /><select idref="V-21659" selected="true" /><select idref="V-21660" selected="true" /><select idref="V-21661" selected="true" /><select idref="V-21662" selected="true" /><select idref="V-21663" selected="true" /><select idref="V-21664" selected="true" /><select idref="V-21665" selected="true" /><select idref="V-21666" selected="true" /><select idref="V-21667" selected="true" /><select idref="V-21668" selected="true" /><select idref="V-21669" selected="true" /><select idref="V-21670" selected="true" /><select idref="V-21671" selected="true" /><select idref="V-21672" selected="true" /><select idref="V-21673" selected="true" /><select idref="V-21674" selected="true" /><select idref="V-21675" selected="true" /><select idref="V-21676" selected="true" /><select idref="V-21677" selected="true" /><select idref="V-21678" selected="true" /><select idref="V-21679" selected="true" /><select idref="V-21680" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-21629" selected="true" /><select idref="V-21631" selected="true" /><select idref="V-21632" selected="true" /><select idref="V-21634" selected="true" /><select idref="V-21635" selected="true" /><select idref="V-21639" selected="true" /><select idref="V-21640" selected="true" /><select idref="V-21641" selected="true" /><select idref="V-21642" selected="true" /><select idref="V-21643" selected="true" /><select idref="V-21644" selected="true" /><select idref="V-21645" selected="true" /><select idref="V-21646" selected="true" /><select idref="V-21647" selected="true" /><select idref="V-21648" selected="true" /><select idref="V-21649" selected="true" /><select idref="V-21650" selected="true" /><select idref="V-21651" selected="true" /><select idref="V-21652" selected="true" /><select idref="V-21653" selected="true" /><select idref="V-21654" selected="true" /><select idref="V-21655" selected="true" /><select idref="V-21656" selected="true" /><select idref="V-21658" selected="true" /><select idref="V-21659" selected="true" /><select idref="V-21660" selected="true" /><select idref="V-21661" selected="true" /><select idref="V-21662" selected="true" /><select idref="V-21663" selected="true" /><select idref="V-21664" selected="true" /><select idref="V-21665" selected="true" /><select idref="V-21666" selected="true" /><select idref="V-21667" selected="true" /><select idref="V-21668" selected="true" /><select idref="V-21669" selected="true" /><select idref="V-21670" selected="true" /><select idref="V-21671" selected="true" /><select idref="V-21672" selected="true" /><select idref="V-21673" selected="true" /><select idref="V-21674" selected="true" /><select idref="V-21675" selected="true" /><select idref="V-21676" selected="true" /><select idref="V-21677" selected="true" /><select idref="V-21678" selected="true" /><select idref="V-21679" selected="true" /><select idref="V-21680" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-21629" selected="true" /><select idref="V-21631" selected="true" /><select idref="V-21632" selected="true" /><select idref="V-21634" selected="true" /><select idref="V-21635" selected="true" /><select idref="V-21639" selected="true" /><select idref="V-21640" selected="true" /><select idref="V-21641" selected="true" /><select idref="V-21642" selected="true" /><select idref="V-21643" selected="true" /><select idref="V-21644" selected="true" /><select idref="V-21645" selected="true" /><select idref="V-21646" selected="true" /><select idref="V-21647" selected="true" /><select idref="V-21648" selected="true" /><select idref="V-21649" selected="true" /><select idref="V-21650" selected="true" /><select idref="V-21651" selected="true" /><select idref="V-21652" selected="true" /><select idref="V-21653" selected="true" /><select idref="V-21654" selected="true" /><select idref="V-21655" selected="true" /><select idref="V-21656" selected="true" /><select idref="V-21658" selected="true" /><select idref="V-21659" selected="true" /><select idref="V-21660" selected="true" /><select idref="V-21661" selected="true" /><select idref="V-21662" selected="true" /><select idref="V-21663" selected="true" /><select idref="V-21664" selected="true" /><select idref="V-21665" selected="true" /><select idref="V-21666" selected="true" /><select idref="V-21667" selected="true" /><select idref="V-21668" selected="true" /><select idref="V-21669" selected="true" /><select idref="V-21670" selected="true" /><select idref="V-21671" selected="true" /><select idref="V-21672" selected="true" /><select idref="V-21673" selected="true" /><select idref="V-21674" selected="true" /><select idref="V-21675" selected="true" /><select idref="V-21676" selected="true" /><select idref="V-21677" selected="true" /><select idref="V-21678" selected="true" /><select idref="V-21679" selected="true" /><select idref="V-21680" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-21629" selected="true" /><select idref="V-21631" selected="true" /><select idref="V-21632" selected="true" /><select idref="V-21634" selected="true" /><select idref="V-21635" selected="true" /><select idref="V-21639" selected="true" /><select idref="V-21640" selected="true" /><select idref="V-21641" selected="true" /><select idref="V-21642" selected="true" /><select idref="V-21643" selected="true" /><select idref="V-21644" selected="true" /><select idref="V-21645" selected="true" /><select idref="V-21646" selected="true" /><select idref="V-21647" selected="true" /><select idref="V-21648" selected="true" /><select idref="V-21649" selected="true" /><select idref="V-21650" selected="true" /><select idref="V-21651" selected="true" /><select idref="V-21652" selected="true" /><select idref="V-21653" selected="true" /><select idref="V-21654" selected="true" /><select idref="V-21655" selected="true" /><select idref="V-21656" selected="true" /><select idref="V-21658" selected="true" /><select idref="V-21659" selected="true" /><select idref="V-21660" selected="true" /><select idref="V-21661" selected="true" /><select idref="V-21662" selected="true" /><select idref="V-21663" selected="true" /><select idref="V-21664" selected="true" /><select idref="V-21665" selected="true" /><select idref="V-21666" selected="true" /><select idref="V-21667" selected="true" /><select idref="V-21668" selected="true" /><select idref="V-21669" selected="true" /><select idref="V-21670" selected="true" /><select idref="V-21671" selected="true" /><select idref="V-21672" selected="true" /><select idref="V-21673" selected="true" /><select idref="V-21674" selected="true" /><select idref="V-21675" selected="true" /><select idref="V-21676" selected="true" /><select idref="V-21677" selected="true" /><select idref="V-21678" selected="true" /><select idref="V-21679" selected="true" /><select idref="V-21680" selected="true" /></Profile><Group id="V-21629"><title>ISA2-001 ISA Server Adapter Template</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23943r1_rule" severity="medium"><version>ISA2-001 ISA</version><title>The ISA server must not be deployed on a Single Network Adapter Template. </title><description>&lt;VulnDiscussion&gt;A web site proxy such as Microsoft ISA Server enables a secure location at which to validate and authenticate inbound traffic prior to forwarding it to its internal destination.  By isolating each network involved in the ISA Server path, each to its own specific use, maximum separation for each network path is maintained. 
+
+Physical separation of networks and associated configurations makes it possible to shield inside network details from outside user access.   By isolating the outside facing network from inside and DMZ networks onto specific network interfaces, specific rules can be created for the published servers or applications. 
+
+While it is possible to publish a web site such as OWA on a single interface ISA server, it leaves no ability to separate user traffic from privileged maintenance traffic or network services traffic such as authentication or DNS  traffic.  Failure to separate web protocol user traffic from other traffic increases risk that inbound requests may not be adequately scanned, or that may result in unintended information disclosure.  
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;DCBP-1&lt;/IAControls&gt;</description><fixtext fixref="F-22400r1_fix">Reconfigure ISA server to use a network model other than the “Single Network Adapter” template.   
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Configuration &gt;&gt; Networks &gt;&gt; Templates tab
+
+Select a template from the list other than the "Single Network Adapter" template.  </fixtext><fix id="F-22400r1_fix" /><check system="C-25907r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Interview the ISA Server Administrator.  Access the server and verify that the ISA server is not configured in the single network adapter template model.  
+ 
+Procedure: 
+Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Configuration &gt;&gt; Networks &gt;&gt; Network tab
+
+Note the firewall template model in effect, as displayed with the diagram and text name of the template type.  Verify that the “Single Network Adapter” is not the displayed type.  
+
+Criteria:  If  any interface model other than “Single Network Adapter” is displayed, this is not a finding.  </check-content></check></Rule></Group><Group id="V-21631"><title>ISA2-890 Rule - Logging Enabled    </title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23945r1_rule" severity="medium"><version>ISA2-890 ISA</version><title>ISA firewall rules must have logging enabled.       </title><description>&lt;VulnDiscussion&gt;Logging provides a history of events performed, and can also provide evidence of tampering or attack.  Failure to create and preserve logs adds to the risk that suspicious events may go unnoticed, or increase the potential that insufficient history will be available to investigate them.  
+
+This setting ensures that for each firewall rule, logging will record actions when the rule is used.  Administrators, in reviewing these activities, will have data to manage volume, track usage, and detect potential attack scenarios.  
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECAR-1&lt;/IAControls&gt;</description><fixtext fixref="F-22401r1_fix">Enable Logging on firewall rules.     
+
+Procedure: 
+Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Firewall Policy &gt;&gt; Firewall Policy Rules
+
+Identify and select each firewall rule.   
+Right Click &gt;&gt; Properties &gt;&gt; Action tab
+Select the “Log requests matching this rule” checkbox. 
+</fixtext><fix id="F-22401r1_fix" /><check system="C-25908r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Interview the ISA Server Administrator.  Access the ISA server and firewall rule set defined there.  Ensure that each ISA Rule has logging enabled.   
+
+Procedure:  
+Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Firewall Policy &gt;&gt; Firewall Policy Rules
+
+Identify and select each firewall rule.
+Right Click &gt;&gt; Properties &gt;&gt; Action tab
+Verify that the “Log requests matching this rule” checkbox is checked.  
+
+Criteria:  If the “Log requests matching this rule” checkbox is checked, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21632"><title>ISA2-204 Rule - Use IP addresses for Applications.</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23947r1_rule" severity="medium"><version>ISA2-204 ISA</version><title>ISA Rule must use IP addresses for applications.       </title><description>&lt;VulnDiscussion&gt;Firewall rules support a number of ways to refer to target devices that are subject to their protection.  One way is to use a server or web site name that is user friendly.  It offers the flexibility of being constant regardless of the IP address assigned, because DNS is available to resolve it.   DNS traffic, however, can be captured and may offer an attacker information that could help build a more complete picture of the environment.  This type of inadvertent information disclosure raises risk of compromise and should be mitigated where possible.  
+
+Another method is to identify the OWA server by stating the web site’s IP address.  This  method enables ISA Server to skip the DNS resolution steps, any resultant network traffic, as well as any associated risk.  The reduced flexibility is negligible compared to the risk mitigation, primarily because once assigned, web sites and servers rarely change addressing.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22403r1_fix">Ensure that ISA Rule uses IP addresses for published applications.  
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Firewall Policy &gt;&gt; Firewall Policy Rules
+Identify and select the OWA firewall rule for CAC enabled access.  
+Right Click &gt;&gt; Properties &gt;&gt; “To” tab
+Enter the application server address for the OWA Web server address, in the “Computer Name or IP Address….” field.
+</fixtext><fix id="F-22403r1_fix" /><check system="C-25909r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Interview the ISA Server Administrator.  Access the ISA server firewall rule set.  Ensure that ISA Rules use IP addresses for published applications.   
+Procedure:   Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Firewall Policy &gt;&gt; Firewall Policy Rules
+
+Identify and select the OWA firewall rule for CAC enabled access.  
+
+Right Click &gt;&gt; Properties &gt;&gt; “To” tab
+Verify that the “Computer Name or IP Address….” Field is using the IP address of the OWA computer, instead of the computer name.   
+
+Criteria:  If the “Computer Name or IP Address….” Field uses the IP address of the OWA computer instead of the computer name, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21634"><title>ISA2-038 Unneeded Application Filters</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23950r1_rule" severity="low"><version>ISA2-238 ISA</version><title>Unneeded ISA Server application filters must be disabled. </title><description>&lt;VulnDiscussion&gt;Several default application and web filter add-ins are installed and enabled on the ISA server application.  When the ISA server is configured as an OWA proxy server, some filters are not necessary for that role.   Disabled filters take no action against their protocol targets.  Enabled filters do appropriate memory and CPU cycles.  
+
+For a web proxy server publishing OWA, several application filters are available.  Because the ISA server interacts with other network servers to locate resources or monitor traffic content, application filters such as DNS and RPC filters must be enabled.  Network Address Translation (NAT) in the proxy activity require use of the Web Proxy filter.  All others can be disabled.  Failure to disable unneeded filters causes server resources to be expended unnecessarily.   Note:  Removing the filters from the server does not improve the security profile, and may increase administrative effort if they become needed in the future. 
+
+With required application filters enabled, configurable policy for those services is enforced.  Failure to enable them causes none of their evaluations to be performed, with the potential result of malware compromise due to embedded content.    
+
+ISA Filters can be manipulated at the Enterprise level and at the server level.  Filters DISABLED at the Enterprise level can be enabled at the server level for specific servers as needed.  Filters ENABLED at the Enterprise level may not be changed at the server level.  Care must be taken with role based permissions for administrators to achieve the desired effect.  
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22404r1_fix">Disable unneeded application filters. 
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Configuration &gt;&gt; Add-ins
+
+For the following filters, right-click to enable the context sensitive menu, and select ENABLE for the following:
+ 
+DNS – Domain Name Service
+RPC Filter – Enables publishing of RPC Servers
+Web Proxy Filter – enables HTTP Proxy and CACHE
+
+For all other application filters, right-click to enable the context sensitive menu, select DISABLE. </fixtext><fix id="F-22404r1_fix" /><check system="C-25910r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Interview the ISA Server Administrator.  Access the ISA server filter set.  Ensure that filters for the OWA published application are enabled as follows:
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Configuration &gt;&gt; Add-ins
+
+On the Application Filters tab, filters for published OWA applications must be enabled. 
+
+For each filter, observe the filter icon.  Disabled filters are tagged with a red down-arrow icon. The following filters should list without a red down-arrow icon:
+
+DNS – Domain Name Service
+RPC Filter – Enables publishing of RPC Servers
+Web Proxy Filter – enables HTTP Proxy and CACHE
+
+All other application filters must be disabled, appearing with a red down-arrow icon, unless approved by the IAO and documented in the System Security Plan.  
+
+Criteria:  If the DNS, RPC, and Web Proxy filters list without a red down-arrow icon (enabled), with all others tagged with a red down-arrow icon (disabled), this is not a finding.   </check-content></check></Rule></Group><Group id="V-21635"><title>ISA2-031 SysPol - Error Reporting to Microsoft</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23952r1_rule" severity="medium"><version>ISA2-031 ISA</version><title>Error Reporting to Microsoft must be disabled.       </title><description>&lt;VulnDiscussion&gt;Log files help establish a history of activities, and can be useful in detecting attack attempts or determining tuning adjustments to improve availability.   This setting enables an automated log entry to be sent to Microsoft giving general details about the nature and location of the error.   Microsoft, in turn, uses this information to improve the robustness of their product.
+
+While this type of debugging information would not ordinarily contain sensitive information, it may alert eavesdroppers to the existence of problems in the ISA server.  At the very least, it could alert them to (possibly) advantageous timing to mount an attack.  At worst, it may provide them with information as to which aspects of ISA are causing problems and might be vulnerable (or at least sensitive) to attack.   
+
+Using this feature, system errors in ISA could result in outbound traffic that may be identified by an eavesdropper.  For this reason, the “Report errors to Microsoft” feature must be disabled at all times.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22406r1_fix">Disable Microsoft Error Reporting in the system policy.
+  
+Procedure:  
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Monitoring &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab 
+Click the link for Edit System Policy.  
+
+ In the “Configuration Groups” list, identify Diagnostic Services, and select Microsoft Error Reporting.  On the “General” tab, clear the “Enable this configuration group” checkbox.    
+</fixtext><fix id="F-22406r1_fix" /><check system="C-25911r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Ensure that Automated Microsoft Error Reporting is disabled. 
+
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab 
+Click the link for Edit System Policy.  
+
+In the “Configuration Groups” list, identify Diagnostic Services, and select Microsoft Error Reporting.  On the “General” tab, the “Enable this configuration group” checkbox should be cleared.    
+
+Criteria:  If the “Enable this configuration group” checkbox is cleared, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21639"><title>ISA2-032 SysPol – DHCP traffic</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23961r2_rule" severity="medium"><version>ISA2-032 ISA</version><title>DHCP traffic from the ISA server must not be allowed.</title><description>&lt;VulnDiscussion&gt;It is not typical for ISA Server addressing to be assigned or managed using DHCP servers.  Nor is it an accepted industry practice for an ISA server to host DHCP services.   In environments where server addresses are assigned with static network addresses, DHCP clients and services must be disabled.  
+
+Failure to control incidence of network services traffic such as DHCP may cause multiple vulnerability issues, such as addressing information disclosure, or denial of service (DOS) due to rogue DHCP transactions. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22415r1_fix">Disable DHCP handling in the system policy.
+  
+Procedure:  
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab
+
+Click the link for Edit System Policy.  
+
+ In the “Configuration Groups” list, identify Network Services, and select DHCP.  On the “General” tab, clear the “Enable this configuration group” checkbox. </fixtext><fix id="F-22415r1_fix" /><check system="C-25915r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Ensure that DHCP protocol handling is disabled. 
+
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab
+
+Click the link for Edit System Policy.  
+
+ In the “Configuration Groups” list, identify Network Services, and select DHCP.  On the “General” tab, the “Enable this configuration group” checkbox should be cleared.    
+
+Criteria:  If the “Enable this configuration group” checkbox is cleared for DHCP, this is not a finding.    
+</check-content></check></Rule></Group><Group id="V-21640"><title>ISA2-025 SysPol – Restrict Authentication Traffic</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23963r1_rule" severity="medium"><version>ISA2-025 ISA</version><title>Non-Microsoft authentication traffic from the ISA server must not be allowed.      </title><description>&lt;VulnDiscussion&gt;For an ISA server in the role of OWA proxy, Active Directory traffic must be allowed because the ISA firewall must be configured to require AD authentication in that scenario.  Authentication methods not in use (RADIUS, RSASecurID) must be disabled in the ISA System Policy.
+
+Alternate authentication traffic, even if directed at the ISA server in error, raises risk that the server could react to it, unnecessarily expending resources.  By disabling them, these protocols will not traverse the ISA server, even if an unauthorized process initiates them.        &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECTM-1&lt;/IAControls&gt;</description><fixtext fixref="F-22416r1_fix">Disable unneeded authentication types in the system policy.
+  
+Procedure:  
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab
+
+Click the link for Edit System Policy.  
+
+ In the “Configuration Groups” list, identify Authentication Services, and select Radius.  On the “General” tab, clear the “Enable this configuration group” checkbox.    
+
+In the “Configuration Groups” list, identify Authentication Services, and select RSASecurID.  On the “General” tab, clear the “Enable this configuration group” checkbox.
+</fixtext><fix id="F-22416r1_fix" /><check system="C-25916r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Ensure that unauthorized authentication traffic flow is not enabled. 
+
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab
+
+Click the link for Edit System Policy.  
+
+ In the “Configuration Groups” list, identify Authentication Services, and select Radius.  On the “General” tab, the “Enable this configuration group” checkbox should be cleared.    
+
+In the “Configuration Groups” list, identify Authentication Services, and select RSASecurID.  On the “General” tab, the “Enable this configuration group” checkbox should be cleared.    
+
+Criteria:  If the “Enable this configuration group” checkbox is cleared for Radius and RSASecurID, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21641"><title>ISA2-027 SysPol – Remote Management Restricted</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23965r1_rule" severity="medium"><version>ISA2-027 ISA</version><title>Remote Management traffic to the ISA server must be disabled.</title><description>&lt;VulnDiscussion&gt;Physical security measures for computer environments are necessary to control risk from theft or sabotage.  Site security for computer environments increases its success factor proportionately as it reduces or controls the number of people admitted to the environment.  Also, large deployment sites such as data centers host hundreds or thousands of computers in secured environments.  For administrators, physical access to individual computers is usually impractical.  
+ 
+Remote Management utilities are convenient ways for administrators to support physically secured servers, for example, those in raised floor environments.  By giving network-based access to physically unreachable machines, administrators may work from a single location, such as a desktop, provided they have a network path to each target machine in their charge.   
+
+As convenient as remote management can be for administrators, the same would also be true for an attacker able to reach the same servers.  For that reason, remote administration client computers must be specified as precisely as possible, to ensure the smallest possible risk exposure to an attack. 
+
+By default, the ISA Server safeguards itself by disabling all remote administration traffic.  However, when needed, ISA policies may be configured to granularly admit remote management traffic such as MMC, Terminal Server, or Web Management.    
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;ISA2-027 ISA Sites using remote administration for ISA computers must configure as tightly as possible the source of remote administration traffic.  Sites using isolated services networks may have them sufficiently secured to use a strategy of allowing the entire services network as the source, however, if it is possible to configure to one or more specific computers, such as  a terminal server to gain access to the services network, that is preferred to specifying a wider scope of potential addresses.  
+
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; "Tasks" tab 
+
+Click the link for Edit System Policy.  
+
+In the “Configuration Groups” list, identify Remote Management.  Choose the desired service from the list (Microsoft Management Console (MMC), Terminal Server, and Web Management), and perform the following:  
+
+On the “General” tab, select the “Enable this configuration group” checkbox.    On the “From” tab, click the "Add" button, identify or define the network or computes supporting remote management, and select the required entity.  
+
+Criteria:  If the IAO approval for remote administration is documented in the System Security Plan, then the configuration must match that criteria, and also meet the following stated criteria:  
+
+The “Enable this configuration group” checkbox must be checked for a specific remote management service, and the “From” tab must list authorized source locations. If this criteria is met, this is not a finding.      
+&lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECTM-1&lt;/IAControls&gt;</description><fixtext fixref="F-22417r1_fix">Disable Remote Administration traffic in the system policy.
+  
+Procedure:  
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab 
+Click the link for Edit System Policy.  
+
+In the “Configuration Groups” list, identify Remote Management.  For each item listed (Microsoft Management Console (MMC), Terminal Server, and Web Management), perform the following:  
+On the “General” tab, clear the “Enable this configuration group” checkbox.  
+</fixtext><fix id="F-22417r1_fix" /><check system="C-25917r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>For sites using remote administration features, this finding may be closed provided the Mitigation criteria are met.   Consult the mitigation steps to verify compliance using remote administration practices.  
+
+Ensure that remote management traffic is disabled. 
+
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; "Tasks" tab
+ 
+Click the link for Edit System Policy.  
+
+In the “Configuration Groups” list, identify Remote Management.  For each item listed (Microsoft Management Console (MMC), Terminal Server, and Web Management), perform the following:  
+On the “General” tab, the “Enable this configuration group” checkbox should be cleared.    
+
+Criteria:  If the “Enable this configuration group” checkbox is cleared for each service type, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21642"><title>ISA2-028 SysPol – PING to ISA</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23967r2_rule" severity="medium"><version>ISA2-028 ISA</version><title>PING to the ISA server must be disabled.       </title><description>&lt;VulnDiscussion&gt;PING is a useful diagnostic utility, enabling the sender to detect the server’s liveness on the network.  Other diagnostic utilities have embedded ICMP-based commands that are also useful, for example TRACERT or PINGPATH, which produces a report showing the path from the source computer to the destination computer one router hop at a time.   
+
+Responding to PING when initiated from an authorized source, such as from a Remote Administration computer, adds to the diagnostic value as part of a larger set of monitoring and diagnostics techniques.  The same would be true if initiated by an attacker, a scenario that does not benefit anyone except the attacker.   It is for this reason that routers and other network devices also do not have PING responses enabled. 
+
+Failure to prevent PING responses add risk that an attacker could derive several pieces of information about any server that responds to it.  Existence of the IP address, the server name, and to a lesser degree OS type and age can be deduced from the PING response.  For this reason, it is a recommended industry practice to either not allow PING, or to restrict responses to only approved sources, as would be needed in the case of remote administration networks. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;ISA2-028 ISA Sites using remote administration for ISA computers may opt to use PING, as part of a larger set of diagnostic tools.  However, PING must be configured as tightly as possible to identify the source of acceptable PING traffic.  Sites using isolated services networks may have them sufficiently secured to use a strategy of allowing the entire services network as the source. However, if it is possible to configure to one or more specific computers, such as a terminal server, to gain access to the services network, that is preferred to specifying a wider scope of potential addresses.  
+
+Procedure: 
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays (array name ) &gt;&gt; Firewall Policy (server name) &gt;&gt; "Tasks" tab
+ 
+Click the link for Edit System Policy.  
+
+In the “Configuration Groups” list, identify Remote Management Services, and select PING.  On the “General” tab, select the “Enable this configuration group” checkbox.  
+
+On the “From” tab, click the Add button, identify or define the network or computers authorized to be a source of PING traffic, and select it.  
+
+Criteria:  If the "Enable this configuration group” checkbox is selected and the authorized networks are defined, this is not a finding.  &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECTM-1&lt;/IAControls&gt;</description><fixtext fixref="F-22418r1_fix">Disable Remote Administration PING traffic to the ISA server.
+  
+Procedure:  
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays (array name ) &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab
+ 
+Click the link for Edit System Policy.  
+
+In the “Configuration Groups” list, identify Remote Management Services, and select PING.  On the “General” tab, clear the “Enable this configuration group” checkbox.      
+</fixtext><fix id="F-22418r1_fix" /><check system="C-25918r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Ensure that PING is not enabled. 
+
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; (array name) &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab &gt;&gt; 
+Click the link for Edit System Policy.  
+
+ In the “Configuration Groups” list, identify Remote Management.  Select PING and perform the following:  
+On the “General” tab, the “Enable this configuration group” checkbox should be cleared.    
+
+Criteria:  If the “Enable this configuration group” checkbox is cleared, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21643"><title>ISA2-029 SysPol – MS Remote Monitoring</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23969r1_rule" severity="medium"><version>ISA2-029 ISA</version><title>Remote MS Monitoring traffic to the ISA server must be disabled.     </title><description>&lt;VulnDiscussion&gt;Administrators for managed computer environments often use network based monitoring tools to access and report on health and status information for computers in their care.  Management hosts communicate with target servers to run utilities, extract log information, and receive alert information, should the need arise. 
+
+For sites that employ Microsoft tools, products such as Microsoft Operations Manager (MOM) and Microsoft Remote Performance Monitor would access the ISA server to monitor tasks configured by the administrators.  For sites that employ other products, specific rules would need to be created on the ISA server to enable the specific protocols and processes for those products.  
+
+As convenient as remote management can be for administrators, the same would also apply to an attacker who was able to reach the same servers.   Having remote monitoring paths to servers raises the risk that an attacker could at the very least, capture traffic and learn much about the monitored servers.   Controlling monitor access and data to be as specific as possible help to reduce any potential attack profile.    
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;ISA2-029 ISA Sites using Microsoft monitoring tools for ISA computers must configure as tightly as possible the source of remote monitoring traffic.  Sites using isolated services networks may have them sufficiently secured to use a strategy of allowing the entire services network as the source.  However, if it is possible to configure to one or more specific computers, such as  a terminal server, to gain access to the services network, that is preferred to specifying a wider scope of potential addresses.   For these sites, perform the following: 
+
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; “Tasks” tab
+ 
+Click the link for Edit System Policy.  
+
+In the “Configuration Groups” list, identify Remote Monitoring, and select a remote monitoring tool.  On the “General” tab, select the “Enable this configuration group” checkbox.    On the “From” tab, click the “Add” button, identify or define the network or computers hosting the remote monitoring tool, and select it.  
+
+Criteria:  if the “Enable this configuration group” checkbox is selected and the monitoring network is specified, this is not a finding. &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECTM-1&lt;/IAControls&gt;</description><fixtext fixref="F-22419r1_fix">Disable Remote Monitoring traffic in the system policy.
+  
+Procedure:  
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab &gt;&gt; 
+Click the link for Edit System Policy.  
+
+In the “Configuration Groups” list, identify Remote Monitoring.  For each item listed ([MOM], Remote Performance Monitor), perform the following:  
+On the “General” tab, clear the “Enable this configuration group” checkbox.  
+</fixtext><fix id="F-22419r1_fix" /><check system="C-25919r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>For sites using the included Microsoft Monitoring tools, this finding may be closed provided the Mitigation criteria are met.   Consult the mitigation steps to verify compliance using Microsoft Monitoring tools.  
+
+Ensure that remote monitoring traffic flow is disabled.  
+
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab &gt;&gt; 
+Click the link for Edit System Policy.  
+
+ In the “Configuration Groups” list, identify Remote Monitoring.  For each item listed ([MOM], Remote Performance Monitor), perform the following:  
+On the “General” tab, the “Enable this configuration group” checkbox should be cleared.    
+
+Criteria:  If the “Enable this configuration group” checkbox is cleared for each service type, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21644"><title>ISA2-030 SysPol – SMTP disabled</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23971r2_rule" severity="medium"><version>ISA2-030 ISA</version><title>SMTP traffic from the ISA server must be disabled.     </title><description>&lt;VulnDiscussion&gt;ISA monitors all give the ability to send e-Mail messages if an alert threshold is triggered.  Even for sites that may operate remote monitoring tools, there are some on-board monitors in the ISA application as well.  These local monitors are best employed for specific ISA application features that may need timely attention by administrators.  For example, if a hardware failure prevents logs being written to a remote target, the alert may need to shut down ISA services, and immediate notification of an administrator may be desired.   In this case, the e-Mail option may be elected, triggering the Event Response process.  If no alerts are configured to use the e-Mail option, then the SMTP policy should be disabled. 
+ 
+Simple Message Transfer Protocol (SMTP) is the protocol used to deliver the alert messages in e-Mail format.  For sites using e-Mail output for alert messages, the ISA server must be configured to allow SMTP to pass from the server to an authorized e-Mail Message Transfer Agent (MTA) server, and the e-Mail server’s domain must have an e-Mail enabled account with a mailbox to receive the messages.  
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;ISA2-030 ISA Sites using e-Mail communication for alerts must enable SMTP in the ISA System Policy and must configure as tightly as possible the destination MTA servers that are authorized to receive this traffic.  
+
+NOTE:  The SMTP server configured on the alert must belong to the selected configuration group.  In this configuration, care must be taken to ensure that only authorized SMTP servers and e-Mail addresses receive the outbound monitoring messages. 
+
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; “Tasks” tab
+ 
+Click the link for Edit System Policy.  
+
+In the “Configuration Groups” list, identify Remote Monitoring, and select SMTP. 
+On the “General” tab, select the “Enable this configuration group” checkbox.    
+On the “To” tab, select the “Add” button, identify and configure the e-Mail server and the user account authorized to receive alert messages.
+Criteria:  if the “Enable this configuration group” checkbox is selected and specific e-Mail servers are identified, this is not a finding.  &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECTM-1&lt;/IAControls&gt;</description><fixtext fixref="F-22420r1_fix">Prevent SMTP traffic in the system policy.
+  
+Procedure:  
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab 
+Click the link for Edit System Policy.  
+
+In the “Configuration Groups” list, identify Remote Monitoring.  Select SMTP, and perform the following:  
+On the “General” tab, clear the “Enable this configuration group” checkbox.  
+</fixtext><fix id="F-22420r1_fix" /><check system="C-25920r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>For sites using SMTP to send alert messages, this finding may be closed provided the Mitigation criteria are met.   Consult the mitigation steps to verify compliance using SMTP to send email alert messages.   
+
+Ensure that SMTP traffic flow is disabled. 
+
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab 
+Click the link for Edit System Policy.  
+
+In the “Configuration Groups” list, identify Remote Monitoring.  Select SMTP and perform the following:  
+On the “General” tab, the “Enable this configuration group” checkbox should be cleared.    
+
+Criteria:  If the “Enable this configuration group” checkbox is cleared for SMTP, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21645"><title>ISA2-833 MS Customer Improvement Program    </title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23973r1_rule" severity="medium"><version>ISA2-833 ISA</version><title>ISA Server’s Microsoft Customer Experience Improvement Program Participation must be disabled. </title><description>&lt;VulnDiscussion&gt;Log files help establish a history of activities, and can be useful in detecting attack attempts or determining tuning adjustments to improve availability.  This setting enables an automated communication to be sent to Microsoft containing details surrounding local product usage, configurations, errors, and so forth.  Microsoft, in turn, uses this information to improve the robustness of their product.
+
+While this type of information would not ordinarily contain sensitive information, it may alert eavesdroppers to the existence of the ISA server, its address and other configuration details.  At the very least, it could alert them to (possibly) advantageous attack types based on running services.  At worst, it may provide them with information as to which aspects of ISA are causing problems and might be vulnerable (or at least sensitive) to attack.  
+
+Using this feature, ISA could emit outbound traffic that could be identified by an eavesdropper.  For this reason, the “Participate in Microsoft Customer Experience Improvement Program” feature must be disabled at all times.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22421r1_fix">Set participation in the “Microsoft Customer Experience Improvement Program” to “no”.  
+
+Procedure:   Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; 
+Right Click &gt;&gt; properties &gt;&gt; Customer Feedback tab
+Select “No, I don’t wish to participate….” 
+</fixtext><fix id="F-22421r1_fix" /><check system="C-25921r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Ensure that the “Microsoft Customer Experience Improvement Program” is not enabled. 
+Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; 
+Right Click &gt;&gt; properties &gt;&gt; Customer Feedback tab
+Ensure that “No, I don’t wish to participate….” item is selected. 
+
+Criteria:  If “No, I don’t wish to participate….” is selected, this is not a finding.   </check-content></check></Rule></Group><Group id="V-21646"><title>ISA2-241 Rule - KCD Authentication</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23975r1_rule" severity="medium"><version>ISA2-241 ISA</version><title>The OWA firewall rule must require Kerberos Constrained Delegation (KCD) to enable CAC authentication.</title><description>&lt;VulnDiscussion&gt;Identification and Authentication provide the foundation for access control.  Requests inbound from the Public Internet must be challenged for authentication and authorization prior to being admitted into the desired system.  In the case of OWA, a web application, the DoD requires SSL connections and CAC authentication for authorized users based on certificate validation and Kerberos Active Directory credentials.   
+
+It is not desirable to admit unfiltered SSL traffic into the application environment, as many malware variations have been found to be embedded inside SSL requests.  Failure to terminate, examine, and filter SSL requests at the ISA server would risk passing Trojans, bots, or other malware forms into the internal networks.  Additionally, certificate SSL credentials cannot be forwarded directly from the Internet to OWA, as it is unable to process them.  
+
+For Kerberos Delegated AD authentication to be available, the ISA server must be a member of the same domain as the Exchange 2003 Front End server it is protecting, or belong to a trusted domain in the same forest.  The ISA server is identified in Active Directory as ‘trusted’ to perform the delegation.  The ISA-to-AD communication is specific to allow only the authentication steps; no other AD functions are authorized using this connection.  If other methods are selected, features such as certificate based authentication or credentials delegation would not be included in the login process.    
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22422r1_fix">Ensure that Kerberos Constrained Delegation is configured to support CAC authentication for the OWA web site. 
+ 
+Procedure:   Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager. 
+
+From the left side console tree:  Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Firewall Policy (server name) &gt;&gt; (center panel) Firewall Policy Rules &gt;&gt; &lt;OWA rule name&gt; &gt;&gt; (right click) Properties &gt;&gt; Authentication Delegation tab
+
+For the “Method used by ISA server to authenticate…” select Kerberos Constrained Delegation.  For the “Type the Service Principal Name…” field, type “http/&lt;OWA server name&gt;". </fixtext><fix id="F-22422r1_fix" /><check system="C-25922r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Verify that the OWA firewall requires Kerberos Constrained Delegated to enable CAC authentication .  
+
+Procedure:  
+Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager. 
+From the left side console tree:  Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt;&lt;array name&gt; &gt;&gt; Firewall Policy (server name) &gt;&gt; (center panel) Firewall Policy Rules &gt;&gt; &lt;OWA rule name&gt; &gt;&gt; (right click) Properties &gt;&gt; Authentication Delegation tab
+
+The “Method used by ISA server to authenticate…” field must display Kerberos Constrained Delegation.  The “Type the Service Principal Name…” field must display the OWA Front End server name.    
+
+Criteria:  If the ISA Firewall Rule for OWA displays Kerberos Constrained Delegation for authentication, and displays the OWA Front End server name, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21647"><title>ISA2-056 Local Domain Table Scope</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23977r1_rule" severity="medium"><version>ISA2-056 ISA</version><title>ISA Server must have a specific domain scope defined.        </title><description>&lt;VulnDiscussion&gt;The ISA server secures access to specific resourced inside specific networks.  Protecting security configurations that describe these resources is key to preventing accidental or deliberate information disclosure.  
+
+ISA Server domain configuration enables Administrators to restrict services to domain names that might be serviced by this ISA server.  Failure to restrict authorized domains in the local domain table may result in the generation of DNS traffic to perform domain name lookups.  The presence of DNS lookup traffic on the network segment could be captured by an attacker, resulting in information disclosure.    
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22423r1_fix">Configure the domain scope. 
+Procedure:  From the ISA console tree:  Networks &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;Array Name&gt; &gt;&gt; Configuration &gt;&gt; Networks &gt;&gt; (center panel) Network tab &gt;&gt; Internal &gt;&gt; Properties &gt;&gt; Domains tab &gt;&gt; Add button.
+
+For the “Domain Names” field, type a list of the ISA server’s domain, plus any other domains for which this domain will process requests. 
+</fixtext><fix id="F-22423r1_fix" /><check system="C-25923r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Verify that ISA web server reflects complete domain table scope.  
+
+Procedure:  From the ISA console tree:  Networks &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;Array Name&gt; &gt;&gt; Configuration &gt;&gt; Networks &gt;&gt; (center panel) Network tab &gt;&gt; Internal &gt;&gt; Properties &gt;&gt; Domains tab.
+For the “Domain Names” field, a list of the ISA server’s domain, plus any other domains for which this domain will process requests should be configured. 
+
+Criteria:  If ISA web server reflects complete domain table scope, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21648"><title>ISA2-023 SysPol - Active Directory Restricted </title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23979r1_rule" severity="medium"><version>ISA2-023 ISA</version><title>The ISA System Policy must restrict Active Directory traffic to specific Domain Controllers.</title><description>&lt;VulnDiscussion&gt;Identification and Authentication provide the foundation for access control.  When the OWA web server specifies Windows authentication, the ISA server must discover and locate domain controllers for the desired login domain. If multiple computers are available on the network, the discovery traffic on the network could be trapped and viewed by an attacker.  By specifying a specific group (such as a specific domain controller network or computers) processing will bypass the discovery process and travel directly to the configured location, thus preventing potential information disclosure.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22424r1_fix">Configure the global policy rule to enable use of AD traffic and specify a domain controller network or group.    
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab 
+Click the link for Edit System Policy.  
+
+In the “Configuration Groups” list, identify Authentication Services, and select Active Directory.  
+
+On the “General” tab, select the “Enable this configuration group” checkbox. 
+
+On the “To” tab, for the “This rule applies to traffic sent to these destinations” field, select the Add button.  Configure the “computers” or “network” authorized to perform AD authentications.  Click the "Add" button, then the "Close" button, then the "OK" button. 
+</fixtext><fix id="F-22424r1_fix" /><check system="C-25924r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Verify that a domain controller destination is specified in the ISA system policy configuration.  
+
+Procedure:  
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Firewall Policy &lt;server name&gt; &gt;&gt; tasks tab 
+Click the link for Edit System Policy.  
+
+In the “Configuration Groups” list, identify Authentication Services, and select Active Directory.  
+On the “General” tab, verify that the “Enable this configuration group” checkbox is selected. 
+On the “To” tab, for “This rule applies to traffic sent to these destinations”, verify that a specific “network” or “computers” entry is configured for AD authentication.  
+
+Criteria:  If the “General” tab has the “Enable this configuration group” selected, and a specific “network” or “computers” entry is configured in the System Policy for AD authentication, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21649"><title>ISA2-175 OWA Listener trusts only DoD RCAs    </title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23981r2_rule" severity="medium"><version>ISA2-175 ISA</version><title>OWA Listeners in the DoD must trust only DoD Root Certificate Authorities.</title><description>&lt;VulnDiscussion&gt;Server certificates are required for many security related transactions.  In fact, certain encryption and authentication steps are impossible without the information defined there.  Certificate authorities (CAs) that issue certificates are responsible to not only verify a recipient’s relationship to the issuing organization, but also to declare the scope and purpose of the certificate within that relationship.  
+
+The DoD requires that only certificates issued by a DoD certificate root authority be trusted for OWA access, and that certificates issued by other entities not be trusted.   Failure to identify only DoD certificate root authorities as being trustworthy (to the exclusion of all other issuers) risks that certificates issued from other issuers, whose processes cannot be controlled by the DoD, might result in the acceptance of unauthorized credentials.    &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22425r1_fix">Ensure that only DoD certificate Root Authorities are selected for entry. 
+
+Procedure:   Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager. 
+From the left side console tree:  Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; Firewall Policy (server name) &gt;&gt; (right panel) Toolbox tab &gt;&gt; Network Objects &gt;&gt; Web Listeners &gt;&gt; &lt;OWA web listener name&gt; &gt;&gt; (right click) Properties &gt;&gt; Authentication Tab &gt;&gt; Advanced Button &gt;&gt; Client Certificate Trust List 
+
+Select the “Only accept client certificates trusted by the Root Certification Authorities selected below:” button.  Within the “issued to” list, select only Department of Defense (DoD) certificate Root Authorities. No other Root Authorities may be selected.  
+</fixtext><fix id="F-22425r1_fix" /><check system="C-25925r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Verify that ISA server trusts only DoD certificate authorities. 
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager &gt;&gt; Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; Firewall Policy (server name) &gt;&gt; (right panel) Toolbox tab &gt;&gt; Network Objects &gt;&gt; Web Listeners &gt;&gt; &lt;OWA web listener name&gt; &gt;&gt; (right click) Properties &gt;&gt; Authentication Tab &gt;&gt; Advanced Button &gt;&gt; Client Certificate Trust List 
+
+The “Only accept client certificates trusted by the Root Certification Authorities selected below:” button should be selected.  Within the “issued to” list, only Department of Defense (DoD) certificate Root Authorities should be selected. No other Root Authorities are permitted.  
+
+Criteria:  If only DoD certificate root authorities (and no other issuers) are selected, this is not a finding. 
+</check-content></check></Rule></Group><Group id="V-21650"><title>ISA2-220 Rule - Restrict to Authenticated Users</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23983r3_rule" severity="medium"><version>ISA2-220 ISA</version><title>The OWA firewall rule must be restricted to authenticated users.     </title><description>&lt;VulnDiscussion&gt;Firewall rules are evoked if certain defined conditions are met, for example, matching criteria on traffic content, or IP address (source or destination) and determine conditions under which users are admitted to “published” web sites such as OWA.  
+
+A rule that gives access to “all users” increases risk of admitting unauthenticated users, as this setting causes ISA to skip user authentication steps.  Therefore, “all users” must never be selected.  The “Require all users to authenticate” choice must also be avoided, as it would prevent some automated ISA Server functions operating properly.  
+
+For these reasons, rules for published web sites must grant access only to “authenticated users” or a group that is a subset of “authenticated users”. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22426r2_fix">Ensure that only authenticated users are eligible to use the OWA firewall rule. 
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager. 
+From the left side console tree:  Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; Firewall Policy (server name) &gt;&gt; Firewall Policy Rules &gt;&gt; &lt;OWA rule name&gt; &gt;&gt; Properties &gt;&gt; Users tab
+
+For “This rule applies to requests from the following user sets”, select “Add”, “All Authenticated Users”.  Then select each alternative value (“All Users”, then “System”) and select “Remove”.
+</fixtext><fix id="F-22426r2_fix" /><check system="C-25926r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Verify that the OWA rule is restricted to only authenticated users. 
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager.  
+
+From the left side console tree:  Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; Firewall Policy (server name) &gt;&gt; Firewall Policy Rules &gt;&gt; &lt;OWA rule name&gt; &gt;&gt; Properties &gt;&gt; Users tab
+
+For the “This rule applies to requests from the following user sets”, “All Authenticated Users” must be selected.  
+
+Criteria:  If ISA server restricts rules to only authenticated users this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21651"><title>ISA2-010 UDP Fragment Blocking  </title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23985r2_rule" severity="medium"><version>ISA2-010 ISA</version><title>The ISA Server must have UDP fragment blocking disabled. </title><description>&lt;VulnDiscussion&gt;One server hardening technique to guard against packet flooding attacks is to filter for fragments.  Packet fragments that are created for malicious purposes are usually impossible to assemble, and can cause denial of service type outages.  While it is good to prevent this type of attack, it must not be done on the ISA server, but elsewhere in the network prior to traffic reaching the ISA server. 
+
+UDP fragmenting is a normal occurrence during the authentication process, especially when certificates are in use.  Filtering for fragments will interfere with the authentication process and cause authentications to fail.  Failing to allow fragmented UDP packets to travel to and from the ISA server risks failed authentications and would likely prevent users reaching the published applications.  The result in this case would also be a type of denial of service. 
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22427r2_fix">Clear the “Block IP Fragments” checkbox. 
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; (left column) &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Configuration &gt;&gt; (center panel) General tab &gt;&gt; Additional Security Policy &gt;&gt; Configure IP Protection &gt;&gt; IP Fragments tab
+
+Clear the “Block IP Fragments” checkbox.
+</fixtext><fix id="F-22427r2_fix" /><check system="C-25927r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Verify that ISA server has UDP fragment blocking disabled. 
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; (left column) &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Configuration &gt;&gt; (center panel) General tab &gt;&gt; Additional Security Policy &gt;&gt; Configure IP Protection &gt;&gt; IP Fragments tab
+
+Ensure that the “Block IP Fragments” checkbox is clear. 
+
+  
+Criteria:  If the “Block IP Fragments” checkbox is clear, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21652"><title>ISA2-013 Syn Flood and DOS Attacks</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23987r2_rule" severity="medium"><version>ISA2-013 ISA</version><title>ISA server must have Syn Flood and DOS attack prevention enabled plus associated logging.    </title><description>&lt;VulnDiscussion&gt;Network traffic often contains automated viruses and worms attempting to discover entry points into protected networks.  Threats are often engineered to either gain entry and compromise computers or to simply flood connections and cause Denial of Service (DOS) to the network interface.  These attacks are often brute force in nature, comprised of large volumes of packets, and can originate from either a single source or multiple sources.    
+
+ISA Server is equipped with a flood mitigation feature to assist in detecting and logging such attacks, as well as blocking the traffic. This feature is enabled by default, but administrators have the ability to disable it, for example, if it is documented that this protection is configured elsewhere in the network ahead of the ISA server.  However, there is no downside to having it enabled, not only for the protective measures offered, but also for the logging information collected.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22428r1_fix">Ensure that Syn Flood and DOS attack mitigation is enabled.    
+Procedure:  Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Configuration &gt;&gt; (center panel) General tab &gt;&gt; Additional Security Policy &gt;&gt; Configure Flood Mitigation Settings
+
+Check the “Mitigate Flood Attacks and worm propagation” checkbox. 
+Check the “Log traffic blocked by flood mitigation settings” checkbox. 
+
+For each mitigation value, click the edit button to configure values. 
+
+Maximum TCP connect requests per minute per IP address:  600
+Maximum concurrent TCP connections per IP address:  160
+Maximum half-open TCP connections 80
+Maximum HTTP requests per minute per IP address:  600
+Maximum new non-TCP sessions per minute per rule 1,000
+Maximum concurrent UDP sessions per IP address: 160
+Specify how many denied packets trigger an alert:  600 
+</fixtext><fix id="F-22428r1_fix" /><check system="C-25928r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>If the System Security Plan for the local network Infrastructure has documentation that describes Syn Flood and DOS attack protection configurations elsewhere in the infrastructure, this check is N/A. 
+
+Verify that ISA server has Syn Flood and DOS attack prevention and the logging feature enabled.   
+  
+Procedure:  Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Configuration &gt;&gt; (center panel) General tab &gt;&gt; Additional Security Policy &gt;&gt; Configure Flood Mitigation Settings
+
+The “Mitigate Flood Attacks and worm propagation” checkbox must be checked. 
+The “log traffic blocked by flood mitigation settings” checkbox must be checked. 
+
+For each mitigation value, click the edit button to confirm configuration values. 
+
+Maximum TCP connect requests per minute per IP address:  600
+Maximum concurrent TCP connections per IP address:  160
+Maximum half-open TCP connections 80
+Maximum HTTP requests per minute per IP address:  600
+Maximum new non-TCP sessions per minute per rule 1,000
+Maximum concurrent UDP sessions per IP address: 160
+Specify how many denied packets trigger an alert:  600 
+
+Criteria:  If ISA server has Syn Flood and DOS attack prevention plus the associated logging settings enabled, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21653"><title>ISA2-007 Enable Required Web Filters</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23989r2_rule" severity="medium"><version>ISA2-007 ISA</version><title>The ISA Servers must have appropriate web filters enabled.</title><description>&lt;VulnDiscussion&gt;Several default application and web filter add-ins are installed and enabled on the ISA server application.  When the ISA server is configured as an OWA proxy server, some filters are not necessary for that role.   Disabled filters take no action against their protocol targets.  Enabled filters do appropriate memory and CPU cycles.  
+
+For a web proxy server publishing OWA, only HTTP, HTTPS (SSL) and tunneled FTP are supported protocols. For authentication using Kerberos Constrained Delegation (KCD), the Authentication Delegation filter is needed.  The PPTP filter cannot be disabled;  all others can be.  Failure to disable unneeded filters causes server resources to be expended unnecessarily.   Note:  Removing the filters from the server does not improve the security profile, and may increase administrative effort if they become needed in the future, therefore, removing unneeded filters is not a necessary action. 
+
+With the HTTP filter enabled, all configurable HTTP policy is enforced.  Note:  The HTTP filter examines inbound SSL traffic after “SSL unloading”, but before the subsequent “SSL initiation” for connection to the target web server.  However, failure to enable the HTTP filter causes NONE of the HTTP evaluation to be performed, with the potential result of malware compromise due to HTTP-based content.    
+
+ISA Filters can be manipulated at the Enterprise level and at the server level.  Filters DISABLED at the Enterprise level can be enabled at the server level for specific servers as needed.  Filters ENABLED at the Enterprise level may not be changed at the server level.  Care must be taken with role based permissions for administrators to achieve the desired effect.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22429r2_fix">Ensure the HTTP, PPTP, and Authentication Delegation web filters are enabled. 
+ 
+Procedure:  Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management.  
+From the ISA console:  Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Configuration &gt;&gt; Add-ins &gt;&gt; Web Filters tab
+
+For the following web filters listed: 
+
+HTTP Filter – Filters HTTP traffic 
+PPTP Filter - Point to Point Tunnelling Protocol
+Authentication Delegation Filter – Enables authentication delegation filtering to published web apps.
+
+For each filter not enabled, right click &gt;&gt; enable.  
+</fixtext><fix id="F-22429r2_fix" /><check system="C-25929r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Verify that OWA arrays have required HTTP, PPTP and Authentication Delegation Web filters enabled.  
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management.  
+From the ISA console:  Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Configuration &gt;&gt; Add-ins &gt;&gt; Web Filters tab
+
+On the Web Filters tab, filters for OWA web services must be enabled. 
+For each filter listed, observe the filter icon.  Disabled filters are tagged with a red down-arrow icon. The following filters should list without a red down-arrow icon:
+
+HTTP Filter – Filters HTTP traffic
+PPTP Filter - Point to Point Tunneling Protocol 
+Authentication Delegation Filter – Enables authentication delegation filtering to published web applications.
+
+All other web filters must be disabled, appearing with a red down-arrow icon, unless required for the mission and approved by the IAO and documented in the System Security Plan.  
+
+Criteria:  If the HTTP, PPTP and the Authentication Delegation web filters are listed without a red down-arrow icon (enabled), with all others tagged with a red down-arrow icon (disabled), this is not a finding. 
+</check-content></check></Rule></Group><Group id="V-21654"><title>ISA2-171 Listener - Client Cert. Authentication</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23991r1_rule" severity="medium"><version>ISA2-171 ISA</version><title>OWA Web Listener must require only Client Certificate Authentication.</title><description>&lt;VulnDiscussion&gt;Identification and Authentication provide the foundation for access control.  The Web Listener is used by the ISA Server to receive inbound traffic on behalf of the targeted web site and manage admittance according to its configurations.  Among the listener’s abilities are authentication (multiple types), filtering, and SSL connection management.  
+This feature controls the authentication method used to connect to the OWA web listener.  
+
+Authentication must be set to “Client Certificate Authentication” only for use with Common Access Card (CAC) certificates, enforcing two-factor authentication.  When forwarded to the OWA server, the credentials will re-authenticate, but not require that the user key them in again.  
+
+Internal server names and addresses are protected, because only the ISA server needs to know them.  Also, the interruption helps protect against SSL based attacks that can be hidden inside encrypted SSL connections.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22430r1_fix">Configure only Client Certificate Authentication.  
+
+Procedure:   Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager. 
+From the left side console tree:  Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; Firewall Policy (server name) &gt;&gt; Toolbox tab &gt;&gt; Network Objects &gt;&gt; Web Listeners &gt;&gt; &lt;OWA web listener name&gt; &gt;&gt; Properties &gt;&gt; Authentication  
+Select “Client Certificate Authentication” on the “Methods clients use to authenticate to ISA Server” setting.  Uncheck the “Use a fallback authentication method”.   
+</fixtext><fix id="F-22430r1_fix" /><check system="C-25930r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Verify that each web listener requires only Client Certificate Authentication.  
+
+Procedure:   Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager. 
+From the left side console tree:  Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; Firewall Policy (server name) &gt;&gt; Toolbox tab &gt;&gt; Network Objects &gt;&gt; Web Listeners &gt;&gt; &lt;OWA web listener name&gt; &gt;&gt; Properties &gt;&gt; Authentication  
+
+The “Methods clients use to authenticate to ISA Server” setting must be selected.  The “Use a fallback authentication method” must be unchecked.   
+
+    
+Procedure:  
+Criteria:  If “Client Certificate Authentication” is selected and the “use fallback” checkbox is blank, this is not a finding.  
+</check-content></check></Rule></Group><Group id="V-21655"><title>ISA2-247 Rule - Restrict to One OWA Application</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23993r2_rule" severity="medium"><version>ISA2-247 ISA</version><title>ISA Server must restrict each firewall rule to one published application such as OWA.</title><description>&lt;VulnDiscussion&gt;Web publishing rules serve the purpose of screening inbound requests targeting a specific application.  While it is technically possible to select multiple applications for the same rule, it is not recommended.  For example, in Exchange 2003, it is possible to select multiple Exchange applications (OWA, Outlook over HTTPS, Outlook Mobile Access) for a given listener.  This is not recommended, and for Exchange 2007 this ability has been changed to the single application isolation model.  Failure to isolate applications in this way enables users to access multiple applications without having to separately authenticate to each. The selection of OWA gives the user access to only three web paths:  Public, Exchange, and Exchweb.     &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22431r1_fix">Ensure that only OWA paths are reachable from the OWA rule.
+ 
+Procedure:  
+Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager. 
+From the left side console tree:  Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; Firewall Policy (server name) &gt;&gt; Firewall Policy Rules &gt;&gt; &lt;OWA rule name&gt; &gt;&gt; Properties &gt;&gt; Paths tab
+
+For “Internal Paths” other than “/Public/”, “/Exchweb/”, and “/Exchange/”, highlight the path, and click on Remove.  If additional applications must be published, use the “New web listener” wizard to create a new listener and rule for them.   Additional web sites must be approved by the IAO and documented in the system security plan. 
+</fixtext><fix id="F-22431r1_fix" /><check system="C-25931r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Verify that each web publishing rule identifies only one application. 
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager. 
+From the left side console tree:  Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; Firewall Policy (server name) &gt;&gt; Firewall Policy Rules &gt;&gt; &lt;OWA rule name&gt; &gt;&gt; Properties &gt;&gt; Paths tab
+
+For “Internal Paths”, “/Public/”, “/Exchweb/”, and “/Exchange/” should be listed.  
+
+Criteria:  If only “/Public/”, “/Exchweb/”, and “/Exchange/” are selected, this is not a finding.  
+</check-content></check></Rule></Group><Group id="V-21656"><title>ISA2-855 Failsafe Low Disk Space </title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23995r1_rule" severity="medium"><version>ISA2-855 ISA</version><title>Failsafe shutdown must be configured for low disk space condition.</title><description>&lt;VulnDiscussion&gt;Monitors are automated “process watchers” that respond to performance changes, and can be useful in detecting outages and alerting administrators where attention is needed.    ISA Server 2006 built-in monitors enable the administrator to generate alerts if thresholds are reached, better enabling them to react in a timely fashion.  
+
+Low disk space condition can be reached when logs overrun their intended space either due to attack or poor operations procedures.  When a low disk space condition exists, there is risk that the ISA server can produce unanticipated actions, or cease to function, with the end result being an abrupt denial of service condition.  
+
+By configuring the failsafe monitor, notification can go out to administrators that a low disk space condition exists, but also initiate failsafe procedures on the ISA server.  For example, inbound traffic is now ignored, while outbound traffic continues.  Further actions can be specified on the lock down policy rule to continue the orderly stoppage of ISA services until administrative action can be taken.    
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22432r1_fix">Enable and configure the alert for Log Storage Limits.
+
+Procedure:  Arrays &gt;&gt; &lt;array name&gt; &lt;&lt; monitoring &gt;&gt; alerts &gt;&gt; tasks &gt;&gt; alert definition &gt;&gt; log storage limits &gt;&gt; edit &gt;&gt; general. 
+On the General tab, Select the enable checkbox.  
+
+On the events tab, the Event list box should state Log Storage Limits.  The “By server” list box should have the local ISA server name selected.  The Number of occurrences checkbox should be checked with quantity of 1.  And the “each subsequent time the thresholds are met” area, the “Only if the alert was manually reset” button should be selected. 
+ 
+Then on the Actions tab, select the “Send e-mail” checkbox, and enter a valid SMTP server, with valid From: and To: fields filled in.
+Check the “report to Windows Event Log” checkbox.   
+Check the “Stop Selected Services” checkbox, and click the Select button.  Check the Microsoft Firewall and the Microsoft ISA Server Job Scheduler checkboxes. 
+</fixtext><fix id="F-22432r1_fix" /><check system="C-25932r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Verify that disk space conditions are monitored and that an alert is configured.    
+Procedure:  
+Arrays &gt;&gt; &lt;array name&gt; &lt;&lt; monitoring &gt;&gt; alerts &gt;&gt; tasks &gt;&gt; alert definition &gt;&gt; log storage limits &gt;&gt; edit &gt;&gt; general. 
+Ensure that enable checkbox is selected.  
+
+On the events tab, in the Events list box for Log Storage Limits, the “By server” list box should have the local ISA server name selected.  The Number of occurrences checkbox should be checked and show a quantity of 1. In the “each subsequent time the thresholds are met” area, the “Only if the alert was manually reset” button should be selected. 
+ 
+Then on the Actions tab, ensure that the “Send e-mail” checkbox is checked, identifying a valid SMTP server, with valid From: and To: fields filled in.
+
+The “report to Windows Event Log” checkbox should be checked.   
+In the “Stop Selected Services” field, click the Select button.  The Microsoft Firewall and the Microsoft ISA Server Job Scheduler services should be checked. 
+
+Criteria:  If Log Storage Limits are enabled, and “Microsoft Firewall” and “Microsoft ISA Server Job Scheduler” are selected to be stopped, this is not a finding.  
+</check-content></check></Rule></Group><Group id="V-21658"><title>ISA3-815 ISA Application Dedicated Partition</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-23999r1_rule" severity="medium"><version>ISA3-815 ISA</version><title>The ISA Application must be installed on a dedicated partition separate from Security functions or other applications.</title><description>&lt;VulnDiscussion&gt;In the same way that added security layers can provide a cumulative positive effect on security posture, multiple applications can provide a cumulative negative effect.  A vulnerability and subsequent exploit to one application can lead to an exploit of other applications sharing the same security context.  For example, an exploit to an ISA server firewall that leads to unauthorized administrative access to the host system can most likely lead to other compromises, such as access to applications co-resident with the ISA system or security changes using now-available security configurations.
+
+ISA services must be installed to a discrete set of directories, on a partition that does not host other applications or the Operating System.  If other applications must share that environment, it should only occur if necessary to the operation of the ISA application.  ISA must never be installed on a Domain Controller / Directory Services server.  
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;DCPA-1&lt;/IAControls&gt;</description><fixtext fixref="F-22434r1_fix">Ensure that the ISA Application is installed on a dedicated partition separate from Security functions or other applications.
+
+Procedure:  Install the ISA Application on a dedicated partition separate from Security functions or other applications.
+</fixtext><fix id="F-22434r1_fix" /><check system="C-25934r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Ensure that The ISA Application is installed on a dedicated partition separate from Security functions or other applications.
+Procedure:  
+
+Criteria:  If The ISA Application is installed on a dedicated partition separate from Security functions or other applications, this is not a finding.  
+</check-content></check></Rule></Group><Group id="V-21659"><title>ISA3-825 ISA Configuration Storage Server</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24001r2_rule" severity="medium"><version>ISA3-825 ISA</version><title>The ISA Configuration Storage Server must be installed on a separate computer. </title><description>&lt;VulnDiscussion&gt;In the same way that added security layers can provide a cumulative positive effect on security posture, multiple applications can provide a cumulative negative effect.   A vulnerability and subsequent exploit to one application can lead to an exploit of other applications sharing the same security context.  For example, an exploit to an ISA server firewall that leads to unauthorized administrative access to the host system can most likely lead to other compromises, such as access to applications protected by the ISA system.
+
+ISA firewall services interact with a discrete configuration server.  By default, the configuration database, ADAM instance, and server install to the same server, unless directed elsewhere.  In larger environments it is desirable to install multiple ISA servers (referred to as an ‘array’), and have them share the load for inbound traffic.  In order to operate effectively, each server must share configuration values.  The configuration storage server enables each ISA server in the array to share a common configuration at runtime.  Equally valuable, is that the configuration data components are not destroyed or disclosed if the ISA server experiences hardware failure or is removed from the array.   
+
+The ISA server will continue to function after losing connection with the configuration storage server; however, no configuration changes will be possible until it is reconnected.  
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;DCPA-1&lt;/IAControls&gt;</description><fixtext fixref="F-22435r1_fix">Install the ISA Configuration Storage server on a separate computer from the ISA services computer.  
+Configure the ISA server to connect to the configuration storage server. 
+
+Procedure:  
+Install ISA Server 2006 on a separate computer, selecting “Install Configuration Storage Server” from the “setup scenarios”.  
+
+NOTE: The configuration storage server is recommended to be the first component to be installed in an ISA configuration, followed by enterprise and array creation, then installation of the ISA services computers.  Additional engineering and administrative tasks may be needed to separate the configuration storage services from the ISA computer.   
+</fixtext><fix id="F-22435r1_fix" /><check system="C-25935r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Interview the ISA Server Administrator.   Access the system security documentation that references the ISA server Configuration Storage location.  
+   
+Procedure:  Start &gt;&gt; Settings &gt;&gt; control panel &gt;&gt; Add or Remove Programs.   
+
+The following items must not be installed on the ISA OWA services computer:
+ 
+ISA Configuration Storage
+Adam Instance for ISASTGCTRL
+Microsoft SQL Server Desktop Engine (Microsoft ISA Server 2006 instance)
+
+Criteria:  If “ISA Configuration Storage", "ADAM", and "SQL Server"  are missing from the list, this is not a finding.  
+</check-content></check></Rule></Group><Group id="V-21660"><title>ISA3-821 ISA Logs and Audit Data Location</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24003r1_rule" severity="medium"><version>ISA3-821 ISA</version><title>The ISA logs or audit data must be on a separate partition from the ISA application.</title><description>&lt;VulnDiscussion&gt;Logging provides a history of events performed, and can also provide evidence of tampering or attack.  Failure to place log and audit data on a separate partition, under a separate security context adds to risk that an exploit mechanism might reach and modify log contents.  Careful placement of logs reduces the risk that suspicious events may go unnoticed, and reduces the potential that insufficient history will be available to investigate them. 
+
+ISA Server offers three log format choices:  Microsoft Desktop Engine (MSDE), SQL, and file format.  MSDE (a version of SQL Server) and file format require that a path on the current server be identified.  SQL enables log data to be sent to a SQL server at a separate location, with the option of going encrypted and authenticating with a windows user account.  File format needs may vary by site, however, they are best protected by being stored separately from the ISA services data.    
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;DCPA-1&lt;/IAControls&gt;</description><fixtext fixref="F-22436r1_fix">Specify different host system disk partitions or directories for ISA log files 
+
+Arrays &gt;&gt; &lt;array name&gt; &lt;&lt; monitoring &gt;&gt; Logging tab &gt;&gt; tasks tab &gt;&gt; configure firewall logging &gt;&gt; log tab 
+
+Select the “enable logging for this service” checkbox 
+
+There are choices for the “log storage format”.
+For MSDE database, select MSDE, click options, and select “this folder (enter the full path)” and enter a path for a separate partition from the ISA services partition.  
+
+For SQL database, select SQL, click options and verify that a separate SQL database server is selected to collect the logs.  Enter the database and table name, and select “force data encryption”.  Select “Use Windows authentication” and enter a services account and password. 
+
+For file format, select format type and click options.  Select “this folder (enter the full path)” and enter a path for a separate partition from the ISA services partition.  
+</fixtext><fix id="F-22436r1_fix" /><check system="C-25936r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Interview the ISA Server Administrator.  Ensure that the ISA logs or audit data are on a separate partition from the ISA application.
+
+Procedure:  Arrays &gt;&gt; &lt;array name&gt; &lt;&lt; monitoring &gt;&gt; Logging tab &gt;&gt; tasks tab &gt;&gt; configure firewall logging &gt;&gt; log tab 
+
+Verify that the “enable logging for this service” checkbox is checked 
+
+There are choices for the “log storage format”.
+For MSDE database, click options, and verify that “ISALogs Folder” is not selected.  Instead, “this folder (enter the full path)" must be selected and the path must be on a separate partition from the ISA services partition.  
+
+For SQL database, click options and verify that a separate SQL database server is selected to collect the logs.  Database and table name must be named, and “force data encryption” must be selected.  Windows authentication must be used, with a services account and password named. 
+
+For file format, select format type and click options.  Verify that “ISALogs Folder” is not selected.  Instead, “this folder (enter the full path)" must be selected and the path must be on a separate partition from the ISA services partition.  
+
+Criteria:  If ISA logs are configured to a location separate from the ISA services partition or server, this is not a finding.  
+</check-content></check></Rule></Group><Group id="V-21661"><title>ISA3-108 ISA Services Port/Protocol Compliance</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24005r1_rule" severity="medium"><version>ISA3-108 ISA</version><title>ISA services must be configured to use PPSM-compliant ports and protocols. </title><description>&lt;VulnDiscussion&gt;PPSM Standard defined ports and protocols must be used for ISA services.  The standard port for HTTP connections is 80 and the standard port for SSL connections is 443.  OCSP also uses port 80, as it is web based and returns the certificate status to the ISA server.  
+
+Changing the ports to non-standard values provides only temporary and limited protection against automated attacks since these attacks will not likely connect to the custom port.  However, a determined attacker may still be able to determine which ports are used by performing a comprehensive port scan.  
+
+Negative impacts to using nonstandard ports include complexity for the system administrator, custom configurations for connecting clients, risk of port conflict with other applications, and risk of incompatibility with standard port monitoring applications.  
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;DCPP-1&lt;/IAControls&gt;</description><fixtext fixref="F-22437r1_fix">Configure with PPSM compliant ports and protocols.   
+  
+Procedure:  IIS Manager &gt;&gt; [server name]&gt;&gt;Web Sites &gt;&gt; Default Web Site &gt;&gt;Properties &gt;&gt; Web Site Tab &gt;&gt; Web site identification &gt;&gt; TCP port and SSL port
+
+Enter 80 for the TCP port and 443 for the SSL port 
+</fixtext><fix id="F-22437r1_fix" /><check system="C-25937r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Verify that ISA services are deployed on compliant ports and protocols.
+
+Procedure:  IIS Manager &gt;&gt; [server name]&gt;&gt;Web Sites &gt;&gt; Default Web Site &gt;&gt;Properties &gt;&gt; Web Site Tab &gt;&gt; Web site identification &gt;&gt; TCP port and SSL port
+
+Port 80 for HTTP and port 443 for SSL should be entered.  
+
+Criteria:  If E-mail Web applications and services are implemented on compliant ports of 80 and 443 with HTTP and SSL (respectively), this is not a finding.  
+</check-content></check></Rule></Group><Group id="V-21662"><title>ISA3-058 ISA Software Monitored for Change</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24007r1_rule" severity="medium"><version>ISA3-058 ISA</version><title>The ISA software must be monitored for change compliant with INFOCON frequency.</title><description>&lt;VulnDiscussion&gt;The INFOCON system provides a framework within which the Commander USSTRATCOM Regional Commanders, Service Chiefs, base/post/camp/station/vessel Commanders, or Agency Directors can increase the measurable readiness of their networks to match operational priorities.  The readiness strategy provides the ability to continuously maintain and sustain one’s own information systems and networks throughout their schedule of deployments, exercises and operational readiness life cycle independent of network attacks or threats. The system provides a framework of prescribed actions and cycles necessary for reestablishing the confidence level and security of information systems for the commander and thereby supporting the entire Global Information Grid (GIG) (SD 527-1 Purpose).
+
+The ISA software files and directories as well as the files and directories of dependent applications are vulnerable to unauthorized changes if not adequately protected.  An unauthorized change could affect the integrity or availability of ISA services overall.  For this reason, all application software installations must monitor for change against a software baseline that is preserved when installed, and updated periodically as patches or upgrades are installed.  Automated and manual schedules for software change monitoring must be compliant with SD527-1 frequencies.   
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;DCSL-1&lt;/IAControls&gt;</description><fixtext fixref="F-22438r1_fix">Procedure:  Establish or update procedures to monitor any changes made to ISA Services software.  Identify files and directories to be included in the host system or backups and provide these to the person responsible for backups.  Verify that ISA software libraries are monitored according to INFOCON required frequencies.    </fixtext><fix id="F-22438r1_fix" /><check system="C-25938r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Interview the IAO.  Access documentation pertaining to software modification detection procedures in place and request documents of these procedures to review.  Verify by reviewing reports for inclusion of the ISA executable and configuration files.
+
+Criteria:  If ISA software is monitored for changes according to INFOCON required frequencies, this is not a finding.  
+</check-content></check></Rule></Group><Group id="V-21663"><title>ISA3-858 ISA Software Baseline Exists</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24009r1_rule" severity="medium"><version>ISA3-858 ISA</version><title>The ISA software baseline must exist to be used for scan comparisons.</title><description>&lt;VulnDiscussion&gt;ISA 2006 software, as with other application software installed on a host system, must be included in a system baseline record and periodically reviewed, otherwise unauthorized changes to the software may not be discovered.  This effort is a vital step to securing the host and the applications, as it is the only method that may provide the ability to detect and recover from otherwise undetected changes, such as those that result from worm or bot intrusions.
+
+The ISA 2006 software and configuration baseline is created and maintained for comparison during scanning efforts.  Operational procedures must include baseline updates as part of configuration management tasks that change the software and configuration.   
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;DCSW-1&lt;/IAControls&gt;</description><fixtext fixref="F-22439r1_fix">Ensure that a plan exists for periodic comparison and is incorporated into the configuration management procedures.   
+Procedure:  Implement ISA software baseline process.
+</fixtext><fix id="F-22439r1_fix" /><check system="C-25939r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Review ISA application software baseline procedures and implementation evidence.  Procedure:  Review the list of files and directories included in the baseline procedure for completeness.
+   
+Criteria:  If ISA software baseline exists and is available for comparison during scanning efforts, this is not a finding.  
+</check-content></check></Rule></Group><Group id="V-21664"><title>ISA2-035 OWA SSL Certificate Installed</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24011r1_rule" severity="medium"><version>ISA2-035 ISA</version><title>The ISA server must have a valid DoD SSL certificate for OWA. </title><description>&lt;VulnDiscussion&gt;Server certificates are required for many forms of secure communication. 
+
+Certificates must be manually installed on each server where “secure connections” or “encrypted connections” are required. A single certificate may be shared among multiple services, or multiple certificates may be installed, with each supporting a separate service association.    
+
+For ISA servers in the “OWA Application Proxy” role, a copy of the DoD OWA SSL certificate must be installed for use by the OWA listener.  Without it, a secure, encrypted connection to the OWA web site is not possible. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;IAKM-1&lt;/IAControls&gt;</description><fixtext fixref="F-22440r1_fix">Request and install an OWA SSL certificate on the ISA server. 
+
+NOTE:  The OWA SSL certificate should exist on the Exchange 2003 OWA server, for use by the OWA web site.  If it does not, that configuration process should be executed first, by initiating a certificate request from the OWA server, installing the SSL certificate there, and then installing a copy of the SSL certificate on the ISA server for use by the ISA Proxy. 
+
+Procedure: 
+Once the SSL certificate is installed on the ISA server, bind the certificate to the OWA listener as follows: 
+ 
+Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and acceleration Server &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Firewall Policy (server name) &gt;&gt; “Firewall Policy” tab
+
+Identify and highlight the OWA CAC enabled firewall rule.  Right click &gt;&gt; properties &gt;&gt; “Listener” tab &gt;&gt; Properties &gt;&gt; “Certificates” tab
+
+Click “use a single certificate for the ISA web listener”.  Click Select Certificate.  
+
+In the Certificate Installation details list box, identify and select the OWA certificate and click the “Select” button. </fixtext><fix id="F-22440r1_fix" /><check system="C-25940r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Validate that an application certificate is installed for the OWA application’s listener: 
+
+Procedure: 
+Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and acceleration Server &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Firewall Policy (server name) &gt;&gt; “Firewall Policy” tab
+
+Identify and highlight the OWA CAC enabled firewall rule.  Right click &gt;&gt; properties &gt;&gt; “Listener” tab &gt;&gt; Properties &gt;&gt; “Certificates” tab
+
+Ensure that the “use a single certificate for this web listener” is selected, and that the OWA web server name appears in the field.  
+
+Criteria:  
+If the OWA listener has a valid certificate selected, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21665"><title>ISA2-886 Credential Delegation Monitoring</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24013r1_rule" severity="medium"><version>ISA2-886 ISA</version><title>The ISA Server must be monitored for failed Kerberos Credential Delegation.  </title><description>&lt;VulnDiscussion&gt;Monitors are automated “process watchers” that respond to performance changes, and can be useful in detecting outages and alerting administrators where attention is needed.    ISA 2006 built-in monitors enable the administrator to generate alerts if thresholds are reached, better enabling them to react in a timely fashion.  
+
+For this reason, alert definitions that detect that Kerberos Credential authentications are failing must log the information so that it can be reported.    
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECAT-1&lt;/IAControls&gt;</description><fixtext fixref="F-22441r1_fix">Configure monitoring alerts that detect failed Credential delegation using Kerberos so they are logged.   
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Monitoring &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Monitoring &gt;&gt; Alerts tab &gt;&gt; Tasks tab &gt;&gt; Configure Alerts Definitions &gt;&gt; Credential Delegation using Kerberos Constrained failure
+&gt;&gt; Edit button &gt;&gt; General tab  
+
+On the General tab:
+       Check the “enable” checkbox.
+On the Events tab: 
+      Populate the “by server” field with the ISA server name. 
+      Check the “number of occurrences” checkbox and enter the value 1
+On the Actions tab:  
+       Check the “Send Email” checkbox.
+       Populate the “SMTP Server”, To, and From fields.
+       Check the “report to Windows event log” checkbox. 
+       Check the “Stop Selected Services” checkbox.  
+Click on the “select” button aligned with the “stop selected services” checkbox. 
+On the “select ISA server services” dialog, select “Microsoft firewall’ and the “Microsoft ISA server job scheduler” checkboxes. 
+</fixtext><fix id="F-22441r1_fix" /><check system="C-25941r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Ensure that monitoring alerts that detect certificates nearing expiration are logged.    
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Monitoring &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Monitoring &gt;&gt; Alerts tab &gt;&gt;  Tasks tab &gt;&gt; Configure Alerts Definitions &gt;&gt; Credential Delegation using Kerberos Constrained failure &gt;&gt; Edit button &gt;&gt; General tab  
+
+On the General tab:
+       Verify that the “enable” checkbox is checked.
+On the Events tab: 
+      Verify that the “by server” is populated with the ISA server name. 
+      Verify that the “number of occurrences checkbox is checked and the value is 1
+On the Actions tab:  
+       Verify that the “Send Email” checkbox is checked
+       Verify that the “SMTP Server”, To, From fields are populated
+       Verify that the “report to Windows event log” checkbox is checked. 
+       Verify that the “Stop Selected Services” checkbox is checked.  
+Click on the “select” button aligned with the “stop selected services” checkbox. 
+On the ‘select ISA server services’ dialog, verify that the “Microsoft firewall’ and the Microsoft ISA server job scheduler” checkboxes are checked. 
+
+Criteria:  If monitoring alerts failed Credential delegation using Kerberos are logged, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21666"><title>ISA2-884 Certificate Expiration Monitoring</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24015r1_rule" severity="low"><version>ISA2-884 ISA</version><title>The ISA Server must be monitored for Certificates nearing their expiration date.  </title><description>&lt;VulnDiscussion&gt;Monitors are automated “process watchers” that respond to performance or threshold changes, and can be useful in detecting outages and alerting administrators where attention is needed.    ISA 2006 built-in monitors enable the administrator to generate alerts if thresholds are reached, better enabling them to react in a timely fashion.  
+
+For this reason, alert definitions that detect that certificates are nearing expiration dates must log the information so that it can be reported.    Failure to monitor for certificate expiration risks that the ISA server will become unavailable due to an expired certificate.  
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECAT-1&lt;/IAControls&gt;</description><fixtext fixref="F-22442r1_fix">Configure monitoring alerts that detect certificates about to expire so they are logged.   
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Monitoring &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Monitoring &gt;&gt; Alerts tab &gt;&gt; Tasks tab &gt;&gt; Configure Alerts Definitions &gt;&gt; Certificates about to expire &gt;&gt; Edit button &gt;&gt; General tab  
+
+On the General tab:
+       Check the “enable” checkbox.
+On the Events tab: 
+      Populate the “by server” field with the ISA server name. 
+      Check the “number of occurrences” checkbox and enter the value 1
+On the Actions tab:  
+       Check the “Send Email” checkbox.
+       Populate the “SMTP Server”, To, and From fields.
+       Check the “report to Windows event log” checkbox.
+</fixtext><fix id="F-22442r1_fix" /><check system="C-25942r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Ensure that monitoring alerts that detect certificates nearing expiration are logged.    
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Monitoring &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Monitoring &gt;&gt; Alerts tab &gt;&gt; Tasks tab &gt;&gt; Configure Alerts Definitions &gt;&gt; Certificate about to expire &gt;&gt; Edit button &gt;&gt; General tab  
+
+On the General tab:
+       Verify that the “enable” checkbox is checked.
+On the Events tab: 
+      Verify that the “by server” is populated with the ISA server name. 
+      Verify that the “number of occurrences checkbox is checked and the value is 1
+On the Actions tab:  
+       Verify that the “Send Email” checkbox is checked
+       Verify that the “SMTP Server”, To, From fields are populated
+       Verify that the “report to Windows event log” checkbox is checked. 
+       
+Criteria:  If monitoring alerts that Certificates about to expire are logged, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21667"><title>ISA2-896 Free Disk Space Monitoring</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24017r1_rule" severity="medium"><version>ISA2-896 ISA</version><title>The ISA Server must be monitored for Available Free Disk Space</title><description>&lt;VulnDiscussion&gt;ISA system availability depends in part on best practices strategies for setting tuning configurations.   The health and continuity of the ISA application depends upon its having sufficient disk space to function.  Failure to ensure enough free disk space adds to the risk that ISA services will perform erratically or shut down abnormally, rendering the ISA firewall service unavailable.  
+
+For this reason, alert definitions that detect less than the threshold for free disk space available must be configured to perform orderly shutdown of the ISA service and render all traffic inadmissible until free disk space is once again available.   &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECAT-1&lt;/IAControls&gt;</description><fixtext fixref="F-22443r1_fix">Configure monitoring alerts that detect insufficient disk space available to cause the ISA firewall service to shut down.   
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Monitoring &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Monitoring  &gt;&gt; Alerts tab &gt;&gt;  Tasks tab &gt;&gt; Configure Alerts Definitions &gt;&gt; Free Disk Space Limits &gt;&gt; Edit button &gt;&gt; General tab 
+
+On the Events tab: 
+      Populate the “by server” field with the ISA server name. 
+      Check the “number of occurrences” checkbox and enter the value 1
+On the Actions tab:  
+       Check the “Send Email” checkbox.
+       Populate the “SMTP Server”, To, and From fields.
+       Check the “report to Windows event log” checkbox. 
+       Check the “Stop Selected Services” checkbox.  
+Click on the “select” button aligned with the “stop selected services” checkbox. 
+On the ‘select ISA server services’ dialog, select “Microsoft firewall’ and the Microsoft ISA server job scheduler” checkboxes. 
+</fixtext><fix id="F-22443r1_fix" /><check system="C-25943r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Ensure that monitoring alerts that detect insufficient disk space also cause the ISA firewall service to shut down.   
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Monitoring &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Monitoring  &gt;&gt; Alerts tab &gt;&gt;  Tasks tab &gt;&gt; Configure Alerts Definitions &gt;&gt; Free Disk Space Limits &gt;&gt; Edit button &gt;&gt; General tab 
+
+On the General tab:
+       Verify that the “enable” checkbox is checked.
+On the Events tab: 
+      Verify that the “by server” is populated with the ISA server name. 
+      Verify that the “number of occurrences checkbox is checked and the value is 1
+On the Actions tab:  
+       Verify that the “Send Email” checkbox is checked
+       Verify that the “SMTP Server”, To, From fields are populated
+       Verify that the “report to Windows event log” checkbox is checked. 
+       Verify that the “Stop Selected Services” checkbox is checked.  
+Click on the “select” button aligned with the “stop selected services” checkbox. 
+On the ‘select ISA server services’ dialog, verify that the “Microsoft firewall’ and the Microsoft ISA server job scheduler” checkboxes are checked. 
+
+Criteria:  If monitoring alerts that detect insufficient disk space also cause the ISA firewall service to shut down, this is not a finding.   
+</check-content></check></Rule></Group><Group id="V-21668"><title>ISA2-894 Log Functional Monitoring</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24019r1_rule" severity="medium"><version>ISA2-894 ISA</version><title>The ISA Server must be monitored for Logging failure. </title><description>&lt;VulnDiscussion&gt;Monitors are automated “process watchers” that respond to performance changes, and can be useful in detecting outages and alerting administrators where attention is needed.    ISA 2006 built-in monitors enable the administrator to generate alerts if thresholds are reached, better enabling them to react in a timely fashion.
+
+In the case of ISA Server 2006, logged events are critical not only to the server administrative effort, but also to the Event Respose effort.  Log contents provide the basis for many types of event reporting.  Failure to save log data, no matter what the reason, risks that attack events may be undetected or unrecorded.   For this reason, alert definitions that detect the inability to create log data must be configured to perform orderly shutdown of the ISA service and render all traffic inadmissible until log data can once again be saved.     
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECAT-1&lt;/IAControls&gt;</description><fixtext fixref="F-22444r1_fix">Configure monitoring alerts that detect disabled logging functions to cause the ISA firewall service to shut down.   
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Monitoring &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Monitoring  &gt;&gt; Alerts tab &gt;&gt;  Tasks tab &gt;&gt; Configure Alerts Definitions &gt;&gt; Log Failure &gt;&gt; Edit button &gt;&gt; General tab
+
+On the Events tab: 
+      Populate the “by server” field with the ISA server name. 
+      Check the “number of occurrences” checkbox and enter the value 1
+On the Actions tab:  
+       Check the “Send Email” checkbox.
+       Populate the “SMTP Server”, To, and From fields.
+       Check the “report to Windows event log” checkbox. 
+       Check the “Stop Selected Services” checkbox.  
+Click on the “select” button aligned with the “stop selected services” checkbox. 
+On the “select ISA server services” dialog, select “Microsoft firewall” and the “Microsoft ISA server job scheduler” checkboxes. 
+</fixtext><fix id="F-22444r1_fix" /><check system="C-25944r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Ensure that monitoring alerts that detect disabled logging functions also cause the ISA firewall service to shut down.   
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Monitoring &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Monitoring &gt;&gt; Alerts tab &gt;&gt; Tasks tab &gt;&gt; Configure Alerts Definitions &gt;&gt; Log Failure &gt;&gt; Edit button &gt;&gt; General tab
+
+On the General tab:
+       Verify that the “enable” checkbox is checked.
+On the Events tab: 
+      Verify that the “by server” is populated with the ISA server name. 
+      Verify that the “number of occurrences checkbox is checked and the value is 1
+On the Actions tab:  
+       Verify that the “Send Email” checkbox is checked
+       Verify that the “SMTP Server”, To, From fields are populated
+       Verify that the “report to Windows event log” checkbox is checked. 
+       Verify that the “Stop Selected Services” checkbox is checked.  
+Click on the “select” button aligned with the “stop selected services” checkbox. 
+On the ‘select ISA server services’ dialog, verify that the “Microsoft firewall’ and the Microsoft ISA server job scheduler” checkboxes are checked. 
+
+Criteria:  If monitoring alerts that detect disabled logging functions also cause the ISA firewall service to shut down, this is not a finding.
+</check-content></check></Rule></Group><Group id="V-21669"><title>ISA2-892 Log Storage Monitoring</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24021r1_rule" severity="medium"><version>ISA2-892 ISA</version><title>The ISA Server must be monitored for Log Storage Failure. </title><description>&lt;VulnDiscussion&gt;Monitors are automated “process watchers” that respond to performance or threshold changes, and can be useful in detecting outages and alerting administrators where attention is needed.    ISA 2006 built-in monitors enable the administrator to generate alerts if thresholds are reached, better enabling them to react in a timely fashion.
+
+In the case of ISA server, logged events are critical not only to the server administrative effort, but equally to the Event Response effort.  Log contents provide the basis for many types of event reporting.  Failure to write log data due to it allocated disk space being exceeded risks that attack events may be undetected or unrecorded.   Inability to write logs will cause the ISA service to stop abnormally.
+
+For this reason, alert definitions that detect the inability to write logs due to storage failure must be configured to perform orderly shutdown of the ISA service and render all traffic inadmissable until log data can once again be saved.   &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECAT-1&lt;/IAControls&gt;</description><fixtext fixref="F-22445r1_fix">Configure monitoring alerts that detect disabled logging functions to cause the ISA firewall service to shut down.   
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Monitoring  &gt;&gt; Alerts tab &gt;&gt;  Tasks tab &gt;&gt; Configure Alerts Definitions &gt;&gt; Log Storage Limits &gt;&gt; Edit button 
+On the General tab, select the “enable” checkbox.
+On the Events tab: select the ISA server in the “by server” list. 
+Select the “number of occurrences checkbox and type a value of 1
+
+On the Actions tab:  select the “Send Email” checkbox, populate the “SMTP Server”, “To”, and “From” fields with mail server and address that is able to accept email from this server. 
+Select the “report to Windows event log” checkbox. 
+Select the “Stop Selected Services” checkbox.  
+
+Click on the “select” button aligned with the “stop selected services” checkbox. 
+
+On the “select ISA server services” dialog, select the “Microsoft firewall” and the “Microsoft ISA server job scheduler” checkboxes. 
+</fixtext><fix id="F-22445r1_fix" /><check system="C-25945r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Ensure that monitoring alerts that detect log storage limit exceeded also cause the ISA firewall service to shut down.   
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Monitoring &gt;&gt; Alerts tab &gt;&gt;  Tasks tab &gt;&gt; Configure Alerts Definitions &gt;&gt; Log Storage Limits &gt;&gt; Edit button 
+On the General tab:
+       Verify that the “enable” checkbox is checked.
+On the Events tab: 
+      Verify that the “by server” is populated with the ISA server name. 
+      Verify that the “number of occurrences checkbox is checked and the value is 1
+On the Actions tab:  
+       Verify that the “Send Email” checkbox is checked
+       Verify that the “SMTP Server”, To, From fields are populated
+       Verify that the “report to Windows event log” checkbox is checked. 
+       Verify that the “Stop Selected Services” checkbox is checked.  
+Click on the “select” button aligned with the “stop selected services” checkbox. 
+On the ‘select ISA server services’ dialog, verify that the “Microsoft firewall’ and the Microsoft ISA serer job scheduler” checkboxes are checked. 
+  
+Criteria:  If monitoring alerts that detect log storage limits exceeded also cause the ISA firewall service to shut down, this is not a finding. 
+</check-content></check></Rule></Group><Group id="V-21670"><title>ISA2-026 SysPol – Certificate Revocation Checking</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24023r1_rule" severity="medium"><version>ISA2-026 ISA</version><title>Certification Revocation Checking must be performed and use specific configurations.  </title><description>&lt;VulnDiscussion&gt;All servers and applications that accept certificate authentication must also require Certificate Revocation List (CRL) validation.  The CRL is a repository comprised of data from (usually) many contributing sources of CRL.  Certificate identifiers may arrive at the CRL for a number of reasons, for example, when an employee leaves employment, or certificates expire, or if certificate keys become compromised and are reissued.  
+
+The technical process for certificate validation includes initiating a transaction to the CRL repository, requesting certificate status by identifying CRL entries, if present.  Outbound requests use port 80 to converse with the CRL. Failure to restrict outbound port 80 traffic to the CRL location risks that an attacker could use port 80 to travel to uncontrolled destinations to launch other attacks or participate as an internal bot conversing with external Internet entities.   The system policy must be edited to specify the CRL repository location.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;ISA2-026 ISA Sites using an OCSP client rather than CLR download to validate certificates will have obtained and installed an OCSP client application such as Tumbleweed Desktop Validator.  The OCSP client must be resident on the ISA 2006 Server and configured to interact with a valid certificate revocation data repository.  
+
+Procedure:  Interview the ISA Server Administrator.  Access the ISA Server and verify that presence of an OCSP client application on the server.  Verify also, that the configuration identifies the certificate status data repository, and that the service is active.  
+
+Criteria:  If an OCSP client is installed on the ISA server, is active, and configured to a valid certificate status data repository, then this is not a finding.  &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22446r1_fix">Configure the rule to restrict the outbound CRL traffic to the CRL repository.   
+
+Procedure: 
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &gt;&gt; “Tasks” tab
+
+Identify and select the Edit System Policy link.  
+
+From the “Configuration Groups” list, Authentication Services, click on CRL Download.  
+
+On the “General” tab, check the “Enable this configuration group” checkbox. 
+
+On the “To” tab, identify the “This rule applies to traffic sent to these destinations:” list, and click the “Add:” button.  
+
+From the dialog list of additions, select computers or networks that host valid CRL repositories. </fixtext><fix id="F-22446r1_fix" /><check system="C-25946r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>For sites using an OCSP client rather than CRL download for certificate validation, this finding may be closed provided the Mitigation criteria are met.   Consult the mitigation steps to verify compliance using an OCSP client.  
+
+Interview the ISA Server Administrator.  Review documentation that describes the CRL location(s) and IP address(es).  Ensure that the ISA rule restricting CRL download traffic exists, and is configured to restrict the outbound HTTP traffic to only the CRL location. 
+
+Procedure:  
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Firewall Policy &gt;&gt; “Tasks” tab
+
+Identify and select the Edit System Policy link. 
+ 
+From the “Configuration Groups” list, Authentication Services, click on CRL Download.  
+On the “General” tab, verify that the “Enable this configuration group” checkbox is selected. 
+
+On the “To” tab, identify the “This rule applies to traffic sent to these destinations:” list, and verify that valid CRL repository destinations are configured. 
+   
+Criteria:  If the System Policy rule for CRL download is enabled, and lists valid CRL server locations, this is not a finding. </check-content></check></Rule></Group><Group id="V-21671"><title>ISA2-135 SSL Required for User Connection</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24025r1_rule" severity="medium"><version>ISA2-135 ISA</version><title>The OWA Web Listener must require only SSL connections.</title><description>&lt;VulnDiscussion&gt;The ISA Listener daemon determines the nature and conditions under which it will allow a user connection to be authenticated.  In the case of OWA e-Mail resources, the DoD requires that CAC authentication be used, and that all connections be encrypted.  For this reason, the OWA Web Listener must be configured to require that all connections be secured and encrypted using SSL.  Upon arrival at the ISA server, the connection will offload the SSL encryption, and certificate based credentials will begin the authentication process.  Once authenticated, the user’s request will be repackaged into a second SSL connection that traverses the span from the ISA server to the OWA web server.  This technique is referred to as SSL Bridging, which prevents SSL-embedded attacks from reaching the targeted internal web server without interruption.  
+
+Internal server names and addresses are protected, because only the ISA server needs to know them.  Also, the interruption helps protect against SSL based attacks that can be hidden inside encrypted SSL connections.   &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22448r1_fix">Configure the OWA listener on the ISA server to require SSL only. 
+
+Procedure:
+Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager &gt;&gt; Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; Firewall Policy (server name) &gt;&gt; “Toolbox” tab &gt;&gt; Network Objects &gt;&gt; Web Listeners &gt;&gt; &lt;OWA web listener name&gt; &gt;&gt; Properties &gt;&gt; Connections  
+
+Select the “Enable SSL (HTTPS) connections on port:” with port 443 as the identified port.  
+
+Deselect the “Enable HTTP connections on port” checkbox.   </fixtext><fix id="F-22448r1_fix" /><check system="C-25947r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Verify that SSL is configured for connection to the ISA server.
+
+Procedure: 
+Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager &gt;&gt; Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; Firewall Policy (server name) &gt;&gt; “Toolbox” tab &gt;&gt; Network Objects &gt;&gt; Web Listeners &gt;&gt; &lt;OWA web listener name&gt; &gt;&gt;  Properties &gt;&gt; Connections  
+
+The “Enable SSL (HTTPS) connections on port:” must be selected, with port 443 as the identified port.  The “Enable HTTP connections on port:” must be deselected.   
+
+Criteria:  If HTTPS is selected, with HTTP deselected, this is not a finding.  </check-content></check></Rule></Group><Group id="V-21672"><title>ISA3-009 Access to Configuration Data</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24027r1_rule" severity="medium"><version>ISA3-009 ISA</version><title>Access to ISA configuration data must be restricted to ISA Server Administrator role. </title><description>&lt;VulnDiscussion&gt;Unrestricted access or access unnecessary for operation can lead to a compromise of the ISA application or disclosure of information that may lead to a successful attack or compromise of the configuration data.
+
+Microsoft ISA configuration data is hosted in multiple application infrastructure components, however, a single Firewall Administrator must be able to set and review configurations as needed for the environment.  
+
+Administrative roles may be assigned at either the enterprise level, for more global control, or at the array level for more local control. By default, ISA in a domain grants membership in the ISA Server Enterprise Administrator role to the Exchange server’s  Administrator account, and the local BUILTIN Administrators group for the ISA server.  Other refinements are available and should be used for tasks such as local administration, monitoring, and auditing. 
+
+Failure to control access to ISA configuration data adds risks information disclosure for such items as internal network addressing, application server names, web site locations, and so forth.  For ISA to effectively protect to internal assets, access control must be carefully designed and implemented.  Only ISA Server Administrator security groups should enable user access to ISA server configurations.    
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECLP-1&lt;/IAControls&gt;</description><fixtext fixref="F-22449r1_fix">Procedure:  Ensure that ISA administrative and configuration data is restricted to only ISA Server Administrators.    
+
+Procedure: Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager &gt;&gt; Microsoft Internet Security Acceleration Server 2006 &gt;&gt; Enterprise &gt;&gt; Enterprise tab 
+
+Select the “Assign Administrator Roles” item.  Click “Add…”
+
+Select the Browse button to acquire the Active Directory group comprising ISA administrators.  
+
+Select “ISA Server Enterprise Administrator” for the role.
+
+Select OK.     
+</fixtext><fix id="F-22449r1_fix" /><check system="C-25948r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Interview the ISA Server Administrator or IAO.   Access information that identifies security groups for firewall administrators and their membership content.  
+
+Procedure: Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager &gt;&gt;  Microsoft Internet Security Acceleration Server 2006 &gt;&gt; Enterprise &gt;&gt; Enterprise tab 
+
+Select the “Assign Administrator Roles” item.  
+The “ISA Server Enterprise Administrator” role must be listed with a domain group that specifically grants permissions to ISA administration, separate from those who are Windows Server administrators.    
+
+Criteria:  If groups other than &lt;domain-name\ExchangeAdmin&gt; or BUILTIN\Administrators are listed to assign separate abilities to “ISA Server Enterprise Admin” and “ISA Server Enterprise Auditor” roles, this is not a finding.  
+</check-content></check></Rule></Group><Group id="V-21673"><title>ISA3-169 Ipv6 Protocol Installed</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24029r1_rule" severity="medium"><version>ISA3-169 ISA</version><title>ISA Server interfaces must not have IPv6 protocol installed.       </title><description>&lt;VulnDiscussion&gt;IPv6 is defined with many more security and interoperability behaviors than IPv4, including IPSEC and the promise of enhanced addressing space for growing networks.  However, IPv6 has not enjoyed widespread implementation, and protocol-specific products such as ISA 2006 were not designed to inspect IPv6 characteristics. 
+   
+IPv6 is not “understood” by the ISA server’s firewall features.  ISA will not recognize IPv6 traffic, and will process it (pass it through) without authentication or filtering.  An attacker using IPv6 protocol would find an unobstructed path through an ISA 2006 server undetected, because the ISA 2006 application is not IPv6 aware.  Therefore, IPv6 should not be installed on any network Interfaces for use by the ISA server.   
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22451r1_fix">Remove TCPIP version 6 from the ISA Server. 
+
+Procedure: 
+Start &gt;&gt; Settings &gt;&gt; Control Panel &gt;&gt; Network Connections
+
+Open the Network Connections applet and identify network interface hardware.  For each network interface, perform the following: 
+
+Right Click &gt;&gt; Properties.  
+
+In the “This connection uses the following items” list box, identify and highlight the “Microsoft TCPIP version 6” item.  
+
+Click the “Uninstall” button and follow the instructions.   </fixtext><fix id="F-22451r1_fix" /><check system="C-25949r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Ensure that IPv6 traffic is not allowed to traverse the ISA server.   
+
+Procedure:  
+Start &gt;&gt; Settings &gt;&gt; Control Panel &gt;&gt; Network Connections
+
+Open the Network Connections applet and identify network interface hardware.  
+
+For each network interface, perform the following: 
+
+Right Click &gt;&gt; Properties.  
+
+In the “This connection uses the following items” list box, verify that “Microsoft TCPIP version 6” is not listed.  
+
+Criteria:  If “Microsoft TCPIP version 6” is not listed, this is not a finding.   </check-content></check></Rule></Group><Group id="V-21674"><title>ISA3-112 TCPIP Protocol in External Interface</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24031r1_rule" severity="medium"><version>ISA3-112 ISA</version><title>The ISA External interface must have only TCPIP protocol installed.       </title><description>&lt;VulnDiscussion&gt;ISA server firewall implementation models, when deployed in commercial environments, typically have multiple interfaces and network attachments.  Traffic inbound arrives at the interface labeled “external” in the ISA server. Protected servers and applications are reached via networks labeled “internal” or have other labels, as created by administrators.  For example, there may be a management network restricted to technical support staff, or service segments dedicated to DNS, DHCP, etc. 
+
+Multiple protocols are included with the Windows 2003 OS, and others may be obtained.  For example, Apple talk and NWLINK are available for easy install, primarily to interface with other OS environments, such as Apple or Unix respectively. 
+
+Unneeded protocols offer attackers open ports through which to attempt attacks. Inbound requests for an ISA server protecting OWA will be detected by a listener that will only accept SSL connections.  Because this interface is dedicated to this task, protocols other than TCPIP are not needed on the ‘external’ interface.  Failure to restrict protocol choices to only those needed by the application increases risk that an attacker could gain entry using alternate protocols and be undetected.  
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECIC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22452r1_fix">Remove all protocols from the ISA External Interface except TCPIP protocol.     
+
+NOTE:  if alternate protocols are installed to support devices and services other than ISA features, then System Administrators may have additional tasks to perform in providing protocols for those services.  
+
+Procedure: 
+First, if necessary, identify the ISA External Network Interface.  
+
+Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Firewall Policy &gt;&gt; Firewall Policy Rules
+
+Identify and select the OWA firewall rule for CAC enabled access.  
+Right Click &gt;&gt; Properties &gt;&gt; Listener tab &gt;&gt; Properties &gt;&gt; Networks tab.
+ 
+Note the “Selected IPs” address listed beside the “External” network name.  
+
+Second, if necessary, identify the server network card that is configured for the listener, with that IP address.  
+
+Start &gt;&gt; Run, and type CMD in the “command” box.   A command window should open. 
+Enter the command:  IPCONFIG /ALL and press enter.  Each information block will be preceded by the network interface card identifier, for example, “Ethernet adapter Local Area Connection…”.
+
+Note the interface identifier containing the OWA listener address. 
+
+Third, check the protocols installed for the identified interface card. 
+
+Start &gt;&gt; Settings &gt;&gt; Control Panel &gt;&gt; Network Connections
+Open the Network Connections applet and identify the listener’s network interface hardware. 
+Right Click &gt;&gt; Properties.  In the “This connection uses the following items” list box. 
+ 
+NOTE:  this list box contains a mix of network clients, network services, and network protocols.  This fix requires that only protocols be identified.  Remove every protocol so that only “Internet Protocol (TCP/IP)” protocol is listed, but no other protocols.    
+</fixtext><fix id="F-22452r1_fix" /><check system="C-25950r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Ensure that the ISA External Interface is restricted to TCPIP protocol.     
+
+Procedure: 
+Interview the ISA Server administrator. Access the system or system documentation that identifies the ISA “External” interface that receives inbound OWA traffic.  Validate against the following steps. 
+
+First, Identify the External Network Interface.  
+
+Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Management &gt;&gt; Microsoft Internet Security and Acceleration &gt;&gt; Arrays &gt;&gt; &lt;array name&gt; &gt;&gt; Firewall Policy &gt;&gt; Firewall Policy Rules
+Identify and select the OWA firewall rule for CAC enabled access.  
+Right Click &gt;&gt; Properties &gt;&gt; Listener tab &gt;&gt; Properties &gt;&gt; Networks tab Note the “Selected IPs” address listed beside the “External” network name.  
+
+Second, identify the server network card that is configured for the listener, with that IP address.  
+
+Start &gt;&gt; Run, and type CMD in the “command” box.   A command window should open. 
+Enter the command:  IPCONFIG /ALL and press enter.  Each information block will be preceded by the network interface card identifier, for example, “Ethernet adapter Local Area Connection…”  Note the interface identifier containing the OWA listener address. 
+
+Third, check the protocols installed for the identified interface card. 
+
+Start &gt;&gt; Settings &gt;&gt; Control Panel &gt;&gt; Network Connections
+Open the Network Connections applet and identify the listener’s network interface hardware.  
+Right Click &gt;&gt; Properties.  In the “This connection uses the following items” list box, verify that “Internet Protocol (TCP/IP)” is listed, but that no other protocols are listed.  
+
+Criteria:  If “Internet Protocol (TCP/IP)” is the only protocol listed, this is not a finding.  
+</check-content></check></Rule></Group><Group id="V-21675"><title>ISA2-041 Unneeded Cache services</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24033r1_rule" severity="medium"><version>ISA2-041 ISA</version><title>Unneeded Cache services must be disabled.</title><description>&lt;VulnDiscussion&gt;Unneeded, but running, services offer attackers an enhanced attack profile, and attackers often watch to discover open ports with running services.  By disabling unneeded services, the associated open ports become unresponsive to outside queries, and servers become more secure as a result.  
+
+Web servers that host fixed pages for user access do benefit from the functionality of a cache server, in that accessed pages can be kept for future access by the same user or alternate users of that web site.  In the case of the OWA web site, where the content is user-specific e-Mail messages, cached copies could be stored, but would not likely be used again by a user. 
+
+Cached data, both in memory and on disk, has historically been the target of attacks.  Given the potentially sensitive nature of e-Mail data, and given that each session’s content quickly becomes obsolete, the use of caching appears to invite more risk than benefit. With the cache feature turned off, the ISA server may require additional physical memory to achieve acceptable performance, but no residual cache data will be resident on the server for an attacker to access. 
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22454r1_fix">Disable Caching Services on the ISA server.  
+
+Procedure:
+Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager &gt;&gt; Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; array name &gt;&gt; Configuration
+
+Expand the Configuration tree by clicking the “+”, and highlight Cache. 
+
+Select the “CACHE” entry in the tree.  In the center panel, the “cache drives” tab, identify and select the ISA server name entry.  
+
+Right click the ISA server entry and select “Properties”.  
+
+For each disk drive on the ISA server, select the drive, and enter 0 in the “Maximum cache size (MB)” field, then click on the “Set” button.  
+
+Click OK to close the dialog.  Verify that the “cache size on NTFS drives” is now set to 0 and that the “Cache” entry in the tree shows the red downward arrow icon, indicating that it is disabled.</fixtext><fix id="F-22454r1_fix" /><check system="C-25951r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Interview the IAO or the ISA Server Administrator.  Review documentation such as the System Security Plan, and identify the ISA server’s deployment role (for example, that of the OWA Proxy).  
+
+Procedure:  
+Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager &gt;&gt; Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; array name &gt;&gt; Configuration 
+
+Expand the Configuration tree by clicking the “+”, and highlight Cache. 
+
+Verify that the CACHE entry in the tree is marked with a small red downward arrow.  In the center panel, the “cache drives” tab, identify and select the ISA server name entry.  Verify that the “cache size on NTFS drives” is set to 0.
+
+Criteria:  If the “caching” entry in the tree has the downward arrow (indicating that it is disabled) and has the “Cache Size on NTFS” set to 0, this is not a finding. </check-content></check></Rule></Group><Group id="V-21676"><title>ISA2-040 Unneeded VPN services</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24035r1_rule" severity="medium"><version>ISA2-040 ISA</version><title>Unneeded VPN services must be disabled. </title><description>&lt;VulnDiscussion&gt;Unneeded, but running,  services offer attackers an enhanced attack profile, and attackers often  watch to discover open ports with running services.  By disabling unneeded services, the associated open ports become unresponsive to outside queries, and servers become more secure as a result.  
+
+ISA servers operating in the OWA proxy server role do not operate in the VPN model, and therefore do not require the VPN option to be active.  
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><fixtext fixref="F-22455r1_fix">Disable the VPN option and services.  
+
+Procedure:   Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager &gt;&gt; Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; array name &gt;&gt; VPN &gt;&gt;VPN clients tab &gt;&gt; “verify that VPN is enabled” button &gt;&gt; “General” tab  
+
+Clear the “Enable VPN Client Access” checkbox.</fixtext><fix id="F-22455r1_fix" /><check system="C-25952r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Identify and disable the ISA VPN services.   
+
+Procedure:   Start &gt;&gt; Programs &gt;&gt; Microsoft ISA Server &gt;&gt; ISA Server Manager &gt;&gt; Microsoft Internet Security Acceleration Server &gt;&gt; Arrays &gt;&gt; array name &gt;&gt; VPN &gt;&gt;VPN clients tab &gt;&gt; “verify that VPN is enabled” button &gt;&gt; “General” tab.  
+
+Verify that “Enable VPN Client Access” checkbox is cleared. 
+
+Criteria:  If the “Enable VPN Client Access” checkbox is cleared, this is not a finding. </check-content></check></Rule></Group><Group id="V-21677"><title>ISA2-042 Svc. Accts. Restricted to Named Services</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24037r2_rule" severity="medium"><version>ISA2-042 ISA</version><title>ISA services must be restricted to specific service accounts.</title><description>&lt;VulnDiscussion&gt;Applications introduce some of the most common database attack avenues, and can provide a pathway for an unlimited number of malicious users to access sensitive data.  An account responsible for Service execution, if compromised, may subject the data to unauthorized exposure if it is granted more privileges than necessary.  
+
+Typically, service accounts must run only their designated services, and must not be shared with other applications or people.  Audit Log Monitoring can then assume an ‘expected’ set of activities for each service account, and administrators can more readily recognize events that are unexpected.  A discrete history of account activity is valuable if an attack of the host system needs to be investigated.  If accounts are shared among multiple services or people, it increases the risk that firewall Administrators will not have an accurate history for investigation and troubleshooting purposes.
+
+In the case of Microsoft ISA Server 2006, attempting to run ISA services on an alternate service account (rather than the default SYSTEM account) is not a supported Microsoft configuration.  Due to the nature of the ISA services access required within the server and the network, ISA services must run under the Microsoft Windows SYSTEM account. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECLP-1&lt;/IAControls&gt;</description><fixtext fixref="F-22457r2_fix">Ensure that ISA service accounts are restricted to running only the configured service.  
+
+Procedure:
+Start &gt;&gt; settings &gt;&gt; control panel &gt;&gt; administrative tools &gt;&gt; services
+
+For the following Services active in the services list: 
+
+Microsoft ISA Server Control 
+Microsoft ISA Server Job Scheduler
+
+Right Click &gt;&gt; Properties &gt;&gt; Logon tab &gt;&gt; “Log on as” field. 
+
+Select “Local SYSTEM account”. </fixtext><fix id="F-22457r2_fix" /><check system="C-25953r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>View ISA service permissions to verify service account scope. 
+
+Procedure: 
+Start &gt;&gt; settings &gt;&gt; control panel &gt;&gt; administrative tools &gt;&gt; services
+
+For the following Services active in the services list: 
+Microsoft ISA Server Control 
+Microsoft ISA Server Job Scheduler
+
+Right Click &gt;&gt; Properties &gt;&gt; Logon tab &gt;&gt; “Log on as” field. 
+Observe the user accounts specified. 
+
+Criteria:  If ISA service accounts are operating as SYSTEM, this is not a finding.  </check-content></check></Rule><Rule id="SV-24038r2_rule" severity="medium"><version>ISA2-042 ISA CFG</version><title>ISA services must be restricted to specific service accounts.</title><description>&lt;VulnDiscussion&gt;Applications introduce some of the most common database attack avenues, and can provide a pathway for an unlimited number of malicious users to access sensitive data.  An account responsible for Service execution, if compromised, may subject the data to unauthorized exposure if it is granted more privileges than necessary.  
+
+Typically, service accounts must run only their designated services, and must not be shared with other applications or people.  Audit Log Monitoring can then assume an ‘expected’ set of activities for each service account, and administrators can more readily recognize events that are unexpected.  A discrete history of account activity is valuable if an attack of the host system needs to be investigated.  If accounts are shared among multiple services or people, it increases the risk that firewall Administrators will not have an accurate history for investigation and troubleshooting purposes.
+
+In the case of Microsoft ISA Server 2006, attempting to run ISA services on an alternate service account (rather than the default SYSTEM account) is not a supported Microsoft configuration.  Due to the nature of the ISA services access required within the server and the network, ISA services must run under the Microsoft Windows SYSTEM account. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECLP-1&lt;/IAControls&gt;</description><fixtext fixref="F-22458r2_fix">Ensure that SYSTEM is running ISA Services.   
+
+Procedure: 
+Start &gt;&gt; settings &gt;&gt; control panel &gt;&gt; administrative tools &gt;&gt; services
+
+For the following Services active in the services list: 
+
+Microsoft ISA Server Storage
+MSSQL$MSFW
+SQLAGENT$MSFW
+
+Right Click &gt;&gt; Properties &gt;&gt; Logon tab &gt;&gt; “Log on as” field. 
+
+Select “Local SYSTEM account”  to run the service. 
+</fixtext><fix id="F-22458r2_fix" /><check system="C-25954r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>View ISA service permissions to verify service account scope. 
+
+Procedure:
+Start &gt;&gt; settings &gt;&gt; control panel &gt;&gt; administrative tools &gt;&gt; services
+
+For the following Services active in the services list: 
+
+Microsoft ISA Server Storage
+MSSQL$MSFW
+SQLAGENT$MSFW
+
+Right Click &gt;&gt; Properties &gt;&gt; Logon tab &gt;&gt; “Log on As” field. 
+
+Criteria:  If ISA service accounts are restricted to operating as SYSTEM, this is not a finding.  </check-content></check></Rule></Group><Group id="V-21678"><title>ISA3-150 ISA Server Audit Data Protection</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24040r1_rule" severity="medium"><version>ISA3-150 ISA</version><title>ISA audit trails must be protected against unauthorized access.   </title><description>&lt;VulnDiscussion&gt;Log files help establish a history of activities, and can be useful in detecting attack attempts or determining tuning adjustments to improve availability.  Audit log content must always be considered sensitive, and in need of protection.  
+
+Audit data available for modification by a malicious user can be altered to conceal malicious activity.  Audit data might also provide a means for the malicious user to plan unauthorized activities that exploit weaknesses.  Only authorized auditors and the database audit functions should be granted access to database audit data.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECTP-1&lt;/IAControls&gt;</description><fixtext fixref="F-22459r1_fix">Configure ISA Services audit trail protection against unauthorized access.
+
+Procedure: Access the ISA Services log files. Ensure that ISA Administrators, System Administrators, and "Backup and Restore" Processes have "Read" and "Write", and everyone else has "Write" only.
+Enumerate the access criteria into the System Security Plan.
+</fixtext><fix id="F-22459r1_fix" /><check system="C-25955r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Procedure:  Access the System Security Plan documents that describe audit data location and protection measures. Included should be server locations and directory security that limits access to appropriate and authorized individuals or processes.
+
+Only ISA administrators, System Administrators, and "Backup and Restore" processes should have both "Read" and "Write" ability.
+All other users, if any, should be restricted to "Write" only.
+
+Criteria: If other users are authorized to "Write" only, and only ISA, System
+Administrators, and  "Backup and Restore" processes may "Read" and "Write" to audit trails, this is not a finding.
+</check-content></check></Rule></Group><Group id="V-21679"><title>ISA3-041 File and Web Antivirus</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24042r2_rule" severity="high"><version>ISA3-041 ISA</version><title>The ISA Server must utilize file-and-web Antivirus software.  </title><description>&lt;VulnDiscussion&gt;With the proliferation malware and other nefarious traffic sometimes embedded inside HTTP requests, it is necessary to have web capable Anti-Virus (AV) products to scan inbound HTTP traffic in an effort to detect current attack scenarios.  
+
+File-based scanning, while useful on servers that host file-based data, do not add much value when used on a web server.  Because ISA functions as a web server in the OWA proxy role, inbound traffic must be examined upon arrival and before it is forwarded to the OWA web server.  
+
+By operating the ISA web proxy with an antivirus product created for use with a proxy server (such as ISA), it is possible to get optimized protection for both resident files and memory-based web traffic.  Products meeting this criteria are typically packaged as a file and web combination product.  Note, however, that each will like come with recommendations for excluding certain files from active antivirus tasks to avoid file allocation conflicts as the ISA application performs its protection tasks.   
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;VIVM-1&lt;/IAControls&gt;</description><fixtext fixref="F-22460r2_fix">Procedure:  Obtain and install a “File plus Web” aware combination antivirus solution created for use on an ISA server.  Document the product and configuration details as appropriate for the DIACAP Scorecard. </fixtext><fix id="F-22460r2_fix" /><check system="C-25956r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Interview the IAO.  Access the documentation that describes the antivirus solution for the ISA server.  Provisions should include product, release, and licensing information, as well as technical details surrounding file exclusions, web filtering configuration, update schedule, and update method.  
+ 
+Criteria:  
+If the ISA server is operating with file and web combination antivirus software, this is not a finding. 
+</check-content></check></Rule></Group><Group id="V-21680"><title>ISA2-882 Certificate Invalid Monitoring</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-24044r2_rule" severity="medium"><version>ISA2-882 ISA</version><title>The ISA Server must be monitored for Invalid Certificate Usage.  </title><description>&lt;VulnDiscussion&gt;Monitors are automated “process watchers” that respond to thresholds or performance changes, and can be useful in detecting outages and alerting administrators where attention is needed.  ISA 2006 built-in monitors enable the administrator to generate alerts if thresholds are reached, better enabling them to react in a timely fashion.  
+
+For this reason, alert definitions that detected  attempts at using an invalid certificate must log the information so that it can be reported. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;ISA Server Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECAT-1&lt;/IAControls&gt;</description><fixtext fixref="F-22461r1_fix">Configure monitoring alerts that detect invalid certificate usage to be logged.   
+
+Procedure:  
+Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Monitoring &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Monitoring &gt;&gt; “Alerts” tab &gt;&gt; “Tasks” tab &gt;&gt; Configure Alerts Definitions &gt;&gt; Invalid Certificate &gt;&gt; “Edit” button &gt;&gt; “General” tab
+
+On the “General” tab:
+       Check the “enable” checkbox.
+
+On the Events tab: 
+      Populate the “by server” field with the ISA server name. 
+      Check the “number of occurrences” checkbox and enter the value 1
+
+On the Actions tab:  
+       Check the “Send Email” checkbox.
+       Populate the “SMTP Server”, To, and From fields.
+       Check the “report to Windows event log” checkbox. 
+       Check the “Stop Selected Services” checkbox.  
+
+Click on the “select” button aligned with the “stop selected services” checkbox. 
+
+On the “select ISA server services” dialog, select “Microsoft firewall” and the “Microsoft ISA server job scheduler” checkboxes. 
+</fixtext><fix id="F-22461r1_fix" /><check system="C-25957r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Microsoft ISA Server 2006.xml" /><check-content>Ensure that monitoring alerts that detect invalid certificate usage are logged.    
+
+Procedure:  Start &gt;&gt; Programs &gt;&gt; ISA Server Management &gt;&gt; Monitoring &gt;&gt; Microsoft Internet Security and Acceleration Server 2006 &gt;&gt; Arrays &gt;&gt; &lt;array name &gt; &gt;&gt; Monitoring &gt;&gt; “Alerts” tab &gt;&gt; “Tasks” tab &gt;&gt; Configure Alerts Definitions &gt;&gt; Invalid Certificate &gt;&gt; “Edit” button &gt;&gt; “General” tab  
+
+On the “General” tab:
+       Verify that the “enable” checkbox is checked.
+
+On the “Events” tab: 
+      Verify that the “by server” is populated with the ISA server name
+      Verify that the “number of occurrences checkbox is checked and the value is 1
+
+On the “Actions” tab:  
+       Verify that the “Send Email” checkbox is checked.
+       Verify that the “SMTP Server”, “To”, and “From” fields are populated.
+       Verify that the “report to Windows event log” checkbox is checked.
+       Verify that the “Stop Selected Services” checkbox is checked.
+
+Click on the “select” button aligned with the “stop selected services” checkbox. 
+
+On the ‘select ISA server services’ dialog, verify that the “Microsoft firewall” and the “Microsoft ISA server job scheduler” checkboxes are checked. 
+
+Criteria:  If monitoring alerts that Invalid Certificate usage is logged and that ISA services are stopped, this is not a finding.   </check-content></check></Rule></Group></Benchmark>

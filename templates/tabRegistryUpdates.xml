@@ -1,0 +1,15 @@
+<form>
+	<controls>
+		<control type="button" id="tab7btnRefreshReg" name="tab7btnRefreshReg" locationX="149" locationY="4" sizeX="60" sizeY="25" text="Refresh" backcolor="#ffffff" />	
+		<control type="button" id="tab7btnRegUnmount" name="tab7btnRegUnmount" locationX="214" locationY="4" sizeX="60" sizeY="25" text="Unmount" backcolor="#ffffff" />	
+		
+		<control type="treeview" id="tab7treeReg" name="tab7treeReg" locationX="10" locationY="30" sizeX="200" sizeY="345" sorted="false" text="ValSystem" />
+		<control type="listview" id="tab7listReg" name="tab7listReg" locationX="210" locationY="30" sizeX="360" sizeY="345"  view="Details">
+			<column>#</column>
+			<column>Name</column>
+			<column>Type</column>
+			<column>Data</column>
+		</control>
+		
+	</controls>
+</form>

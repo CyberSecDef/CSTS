@@ -1,0 +1,1465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>repotool</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2016-06-22T11:15:35</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.fso.windows:def:4798" version="3" class="compliance">
+      <metadata>
+        <title>Firewall state - Domain Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Firewall state - Domain Profile</description>
+      </metadata>
+      <criteria operator="OR">
+        <criterion test_ref="oval:mil.disa.fso.windows:tst:479800" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!EnableFirewall value equals variable" />
+        <criteria operator="AND" negate="false">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:479802" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!EnableFirewall non existent" />
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:479801" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile!EnableFirewall value equals variable" />
+        </criteria>
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4799" version="3" class="compliance">
+      <metadata>
+        <title>Firewall state - Private Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Firewall state - Private Profile</description>
+      </metadata>
+      <criteria operator="OR">
+        <criterion test_ref="oval:mil.disa.fso.windows:tst:479900" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!EnableFirewall value equals variable" />
+        <criteria operator="AND" negate="false">
+          <criterion comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!EnableFirewall non existent" test_ref="oval:mil.disa.fso.windows:tst:479902" negate="false" />
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:479901" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile!EnableFirewall value equals variable" />
+        </criteria>
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4800" version="3" class="compliance">
+      <metadata>
+        <title>Firewall state - Public Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Firewall state - Public Profile</description>
+      </metadata>
+      <criteria operator="OR">
+        <criterion test_ref="oval:mil.disa.fso.windows:tst:480000" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!EnableFirewall value equals variable" />
+        <criteria operator="AND" negate="false">
+          <criterion comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!EnableFirewall non existent" test_ref="oval:mil.disa.fso.windows:tst:480002" negate="false" />
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:480001" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile!EnableFirewall value equals variable" />
+        </criteria>
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4801" version="3" class="compliance">
+      <metadata>
+        <title>Inbound Connections - Domain Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Inbound Connections - Domain Profile</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:480100" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DefaultInboundAction value equals variable" />
+          <criteria operator="AND" negate="false">
+            <criterion comment="defaultinboundaction non existent" test_ref="oval:mil.disa.fso.windows:tst:480102" negate="false" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480101" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile!DefaultInboundAction value equals variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4798" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4802" version="3" class="compliance">
+      <metadata>
+        <title>Outbound Connections - Domain Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Outbound Connections - Domain Profile</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:480200" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DefaultOutboundAction value equals variable" />
+          <criteria operator="AND" negate="false">
+            <criterion comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DefaultOutboundAction non existent" test_ref="oval:mil.disa.fso.windows:tst:480202" negate="false" />
+            <criterion comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile!DefaultOutboundAction value equals variable" test_ref="oval:mil.disa.fso.windows:tst:480201" negate="false" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4798" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4803" version="3" class="compliance">
+      <metadata>
+        <title>Display a Notification - Domain Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Display a Notification - Domain Profile</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:480300" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DisableNotifications value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480302" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DisableNotifications non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480301" comment="SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\!DisableNotifications value equals variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4798" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4804" version="3" class="compliance">
+      <metadata>
+        <title>Allow Unicast Response - Domain Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Allow Unicast Response - Domain Profile</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:480400" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DisableUnicastResponsesToMulticastBroadcast value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480402" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DisableUnicastResponsesToMulticastBroadcast non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480401" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile!DisableUnicastResponsesToMulticastBroadcast value equals variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4798" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4805" version="3" class="compliance">
+      <metadata>
+        <title>Windows Firewall Log File Path and Name (Domain Profile)</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>The log file path and name for the Windows Firewall should be configured correctly for the Domain Profile.</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:480500" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogFilePath value matches variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480502" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogFilePath non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480501" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging value matches variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4798" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4806" version="3" class="compliance">
+      <metadata>
+        <title>Size Limit</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>The log file size limit for the Windows Firewall should be configured correctly for the Domain Profile.</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:480600" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogFileSize value is greater than or equal to variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480602" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogFileSize non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480601" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging value is greater than or equal to variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4798" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4807" version="3" class="compliance">
+      <metadata>
+        <title>Log Dropped Packets</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>The "Log Dropped Packets" option for the Windows Firewall should be configured correctly for the Domain Profile.</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:480700" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogDroppedPackets value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480701" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging!LogDroppedPackets value equals variable" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480702" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogDroppedPackets non existent" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4798" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4808" version="3" class="compliance">
+      <metadata>
+        <title>Logged Successful Connections</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>The "Log Successful Connections" option for the Windows Firewall should be configured correctly for the Domain Profile.</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:480800" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogSuccessfulConnections value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480802" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogSuccessfulConnections non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480801" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging!LogSuccessfulConnections value equals variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4798" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4809" version="3" class="compliance">
+      <metadata>
+        <title>Inbound Connections - Private Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Inbound Connections - Private Profile</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:480900" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DefaultInboundAction value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480902" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DefaultInboundAction non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:480901" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile!DefaultInboundAction value equals variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4799" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4810" version="3" class="compliance">
+      <metadata>
+        <title>Outbound Connections - Private Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Outbound Connections - Private Profile</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:481000" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DefaultOutboundAction value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481002" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DefaultOutboundAction non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481001" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile value equals variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4799" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4811" version="3" class="compliance">
+      <metadata>
+        <title>Display a Notification - Private Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Display a Notification - Private Profile</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:481100" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DisableNotifications value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481102" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DisableNotifications non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481101" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile value equals variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4799" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4812" version="3" class="compliance">
+      <metadata>
+        <title>Allow Unicast Response - Private Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Allow Unicast Response - Private Profile</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:481200" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DisableUnicastResponsesToMulticastBroadcast value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481202" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DisableUnicastResponsesToMulticastBroadcast non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481201" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile!DisableUnicastResponsesToMulticastBroadcast value equals variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4799" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4813" version="3" class="compliance">
+      <metadata>
+        <title>Windows Firewall Log File Path and Name (Private Profile)</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>The log file path and name for the Windows Firewall should be configured correctly for the Private Profile.</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:481300" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogFilePath value matches variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481302" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogFilePath non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481301" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging!LogFilePath value matches variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4799" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4814" version="3" class="compliance">
+      <metadata>
+        <title>Size Limit</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>The log file size limit for the Windows Firewall should be configured correctly for the Private Profile.</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:481400" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogFileSize value is greater than or equal to variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481402" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogFileSize non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481401" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging!LogFileSize value is greater than or equal to variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4799" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4815" version="3" class="compliance">
+      <metadata>
+        <title>Log Dropped Packets</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>The "Log Dropped Packets" option for the Windows Firewall should be configured correctly for the Private Profile.</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:481500" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogDroppedPackets value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481502" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogDroppedPackets non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481501" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4799" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4816" version="3" class="compliance">
+      <metadata>
+        <title>Logged Successful Connections</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>The "Log Successful Connections" option for the Windows Firewall should be configured correctly for the Private Profile.</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:481600" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogSuccessfulConnections value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481602" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogSuccessfulConnections non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481601" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging!LogSuccessfulConnections value equals variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4799" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4817" version="3" class="compliance">
+      <metadata>
+        <title>Inbound Connections - Public Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Inbound Connections - Public Profile</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:481700" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DefaultInboundAction value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481702" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DefaultInboundAction non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481701" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile!DefaultInboundAction value equals variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4800" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4818" version="3" class="compliance">
+      <metadata>
+        <title>Outbound Connections - Public Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Outbound Connections - Public Profile</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:481800" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DefaultOutboundAction value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481802" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DefaultOutboundAction non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:481801" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile!DefaultOutboundAction value equals variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4800" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4820" version="3" class="compliance">
+      <metadata>
+        <title>Allow Unicast Response - Public Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Allow Unicast Response - Public Profile</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:482000" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DisableUnicastResponsesToMulticastBroadcast value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:482002" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DisableUnicastResponsesToMulticastBroadcast non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:482001" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile!DisableUnicastResponsesToMulticastBroadcast value equals variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4800" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4821" version="3" class="compliance">
+      <metadata>
+        <title>Apply Local Firewall Rules - Public Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Apply Local Firewall Rules - Public Profile</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:482100" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!AllowLocalPolicyMerge value equals variable" />
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:482101" comment="System is not a member of a domain" />
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4800" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4822" version="3" class="compliance">
+      <metadata>
+        <title>Apply Local Connection Security Rules - Public Profile</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>Apply Local Connection Security Rules - Public Profile</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:482200" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!AllowLocalIPsecPolicyMerge value equals variable" />
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:482101" comment="System is not a member of a domain" />
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4800" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4823" version="3" class="compliance">
+      <metadata>
+        <title>Windows Firewall Log File Path and Name (Public Profile)</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>The log file path and name for the Windows Firewall should be configured correctly for the Public Profile.</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:482300" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogFilePath value matches variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:482302" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogFilePath non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:482301" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging value matches variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4800" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4824" version="3" class="compliance">
+      <metadata>
+        <title>Size Limit</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>The log file size limit for the Windows Firewall should be configured correctly for the Public Profile.</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:482400" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogFileSize value is greater than or equal to variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:482402" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogFileSize non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:482401" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging!LogFileSize!LogFileSize value is greater than or equal to variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4800" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4825" version="3" class="compliance">
+      <metadata>
+        <title>Log Dropped Packets</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>The "Log Dropped Packets" option for the Windows Firewall should be configured correctly for the Public Profile.</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:482500" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogDroppedPackets value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:482502" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogDroppedPackets non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:482501" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging!LogDroppedPackets value equals variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4800" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4826" version="3" class="compliance">
+      <metadata>
+        <title>Logged Successful Connections</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <description>The "Log Successful Connections" option for the Windows Firewall should be configured correctly for the Public Profile.</description>
+      </metadata>
+      <criteria operator="AND" negate="false">
+        <criteria operator="OR">
+          <criterion test_ref="oval:mil.disa.fso.windows:tst:482600" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogSuccessfulConnections value equals variable" />
+          <criteria operator="AND">
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:482602" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogSuccessfulConnections non existent" />
+            <criterion test_ref="oval:mil.disa.fso.windows:tst:482601" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging!LogSuccessfulConnections value equals variable" />
+          </criteria>
+        </criteria>
+        <extend_definition definition_ref="oval:mil.disa.fso.windows:def:4800" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:479800" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!EnableFirewall value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:479800" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:479800" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:479801" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile!EnableFirewall value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:479801" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:479800" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:479802" version="3" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!EnableFirewall non existent" check_existence="none_exist">
+      <object object_ref="oval:mil.disa.fso.windows:obj:479800" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:479900" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!EnableFirewall value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:479900" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:479900" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:479901" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile!EnableFirewall value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:479901" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:479900" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:479902" version="3" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!EnableFirewall non existent" check_existence="none_exist">
+      <object object_ref="oval:mil.disa.fso.windows:obj:479900" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480000" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!EnableFirewall value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480000" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480001" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile!EnableFirewall value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480001" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480002" version="3" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile non existent" check_existence="none_exist">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480100" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DefaultInboundAction value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480100" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480100" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480101" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DefaultInboundAction value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480101" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480100" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480102" version="3" check="all" comment="defaultinboundaction non existent" check_existence="none_exist">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480100" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480200" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DefaultOutboundAction value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480200" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480200" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480201" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile!DefaultOutboundAction value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480201" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480200" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480202" version="3" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DefaultOutboundAction non existent" check_existence="none_exist">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480200" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480300" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DisableNotifications value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480300" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480300" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480301" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\!DisableNotifications value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480301" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480300" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480302" version="3" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DisableNotifications non existent" check_existence="none_exist">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480300" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480400" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DisableUnicastResponsesToMulticastBroadcast value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480400" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480400" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480401" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile!DisableUnicastResponsesToMulticastBroadcast value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480401" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480400" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480402" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DisableUnicastResponsesToMulticastBroadcast non existent">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480400" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480500" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogFilePath value matches variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480500" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480500" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480501" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging!LogFilePath value matches variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480501" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480500" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480502" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogFilePath non existent">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480500" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480600" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogFileSize value is greater than or equal to variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480600" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480600" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480601" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging!LogFileSize value is greater than or equal to variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480601" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480600" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480602" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogFileSize value is greater than or equal to variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480600" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480700" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogDroppedPackets value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480700" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480700" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480701" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging!LogDroppedPackets value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480701" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480700" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480702" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogDroppedPackets non existent">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480700" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480800" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogSuccessfulConnections value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480800" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480800" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480801" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging!LogSuccessfulConnections value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480801" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480800" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480802" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogSuccessfulConnections non existent">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480800" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480900" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DefaultInboundAction value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480900" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480900" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480901" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile!DefaultInboundAction value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480901" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:480900" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:480902" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DefaultInboundAction non existent">
+      <object object_ref="oval:mil.disa.fso.windows:obj:480900" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481000" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DefaultOutboundAction value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481000" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481001" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DefaultOutboundAction value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481001" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481002" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DefaultOutboundAction value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481100" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DisableNotifications value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481100" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481100" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481101" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile!DisableNotifications value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481101" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481100" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481102" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DisableNotifications value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481100" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481200" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DisableUnicastResponsesToMulticastBroadcast value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481200" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481200" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481201" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile!DisableUnicastResponsesToMulticastBroadcast value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481201" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481200" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481202" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DisableUnicastResponsesToMulticastBroadcast value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481200" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481300" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogFilePath value matches variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481300" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481300" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481301" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging!LogFilePath value matches variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481301" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481300" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481302" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogFilePath non existent">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481300" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481400" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogFileSize value is greater than or equal to variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481400" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481400" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481401" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging!LogFileSize value is greater than or equal to variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481401" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481400" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481402" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogFileSize value is greater than or equal to variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481400" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481500" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogDroppedPackets value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481500" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481500" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481501" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging!LogDroppedPackets value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481501" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481500" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481502" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogDroppedPackets non existent">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481500" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481600" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogSuccessfulConnections value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481600" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481600" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481601" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging!LogSuccessfulConnections value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481601" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481600" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481602" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogSuccessfulConnections non existent">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481600" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481700" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DefaultInboundAction value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481700" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481700" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481701" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile!DefaultInboundAction value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481701" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481700" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481702" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DefaultInboundAction value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481700" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481800" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DefaultOutboundAction value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481800" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481800" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481801" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481801" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:481800" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:481802" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DefaultOutboundAction non existent">
+      <object object_ref="oval:mil.disa.fso.windows:obj:481800" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482000" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DisableUnicastResponsesToMulticastBroadcast value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482000" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:482000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482001" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile!DisableUnicastResponsesToMulticastBroadcast value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482001" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:482000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482002" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DisableUnicastResponsesToMulticastBroadcast non existent">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482100" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!AllowLocalPolicyMerge value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482100" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:482100" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482101" version="3" check="all" comment="Registry value to determine domain membership.">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482101" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:482101" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482200" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!AllowLocalIPsecPolicyMerge value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482200" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:482200" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482300" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogFilePath value matches variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482300" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:482300" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482301" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging!LogFilePath value matches variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482301" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:482300" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482302" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogFilePath non existent">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482300" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482400" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogFileSize value is greater than or equal to variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482400" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:482400" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482401" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging!LogFileSize value is greater than or equal to variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482401" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:482400" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482402" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogFileSize value is greater than or equal to variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482400" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482500" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogDroppedPackets value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482500" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:482500" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482501" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging!LogDroppedPackets value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482501" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:482500" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482502" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogDroppedPackets value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482500" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482600" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogSuccessfulConnections value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482600" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:482600" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482601" version="3" check_existence="at_least_one_exists" check="all" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging!LogSuccessfulConnections value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482601" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:482600" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:482602" version="3" check_existence="none_exist" check="all" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogSuccessfulConnections value equals variable">
+      <object object_ref="oval:mil.disa.fso.windows:obj:482600" />
+    </registry_test>
+  </tests>
+  <objects>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:479800" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!EnableFirewall">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile</key>
+      <name datatype="string">EnableFirewall</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:479801" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile!EnableFirewall">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile</key>
+      <name datatype="string">EnableFirewall</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:479900" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!EnableFirewall">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile</key>
+      <name datatype="string">EnableFirewall</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:479901" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile!EnableFirewall">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile</key>
+      <name datatype="string">EnableFirewall</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480000" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!EnableFirewall">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile</key>
+      <name datatype="string">EnableFirewall</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480001" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile!EnableFirewall">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile</key>
+      <name datatype="string">EnableFirewall</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480100" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DefaultInboundAction">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile</key>
+      <name datatype="string">DefaultInboundAction</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480101" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DefaultInboundAction">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile</key>
+      <name datatype="string">DefaultInboundAction</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480200" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DefaultOutboundAction">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile</key>
+      <name datatype="string" operation="equals">DefaultOutboundAction</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480201" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile!DefaultOutboundAction">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile</key>
+      <name datatype="string">DefaultOutboundAction</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480300" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DisableNotifications">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile</key>
+      <name datatype="string">DisableNotifications</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480301" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\!DisableNotifications">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\</key>
+      <name datatype="string">DisableNotifications</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480400" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile!DisableUnicastResponsesToMulticastBroadcast">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile</key>
+      <name datatype="string">DisableUnicastResponsesToMulticastBroadcast</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480401" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile!DisableUnicastResponsesToMulticastBroadcast">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile</key>
+      <name datatype="string">DisableUnicastResponsesToMulticastBroadcast</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480500" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogFilePath">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging</key>
+      <name datatype="string">LogFilePath</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480501" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging!LogFilePath">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging</key>
+      <name datatype="string">LogFilePath</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480600" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogFileSize">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging</key>
+      <name datatype="string">LogFileSize</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480601" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging!LogFileSize">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging</key>
+      <name datatype="string">LogFileSize</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480700" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogDroppedPackets">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging</key>
+      <name datatype="string">LogDroppedPackets</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480701" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging!LogDroppedPackets">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging</key>
+      <name datatype="string">LogDroppedPackets</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480800" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging!LogSuccessfulConnections">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging</key>
+      <name datatype="string">LogSuccessfulConnections</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480801" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging!LogSuccessfulConnections">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\Logging</key>
+      <name datatype="string">LogSuccessfulConnections</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480900" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DefaultInboundAction">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile</key>
+      <name datatype="string">DefaultInboundAction</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:480901" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile</key>
+      <name datatype="string">DefaultInboundAction</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481000" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DefaultOutboundAction">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile</key>
+      <name datatype="string">DefaultOutboundAction</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481001" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile!DefaultOutboundAction">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile</key>
+      <name datatype="string">DefaultOutboundAction</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481100" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DisableNotifications">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile</key>
+      <name datatype="string">DisableNotifications</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481101" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile</key>
+      <name datatype="string">DisableNotifications</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481200" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile!DisableUnicastResponsesToMulticastBroadcast">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile</key>
+      <name datatype="string">DisableUnicastResponsesToMulticastBroadcast</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481201" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile!DisableUnicastResponsesToMulticastBroadcast">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile</key>
+      <name datatype="string">DisableUnicastResponsesToMulticastBroadcast</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481300" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogFilePath">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging</key>
+      <name datatype="string">LogFilePath</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481301" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging!LogFilePath">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging</key>
+      <name datatype="string">LogFilePath</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481400" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogFileSize">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging</key>
+      <name datatype="string">LogFileSize</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481401" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging!LogFileSize">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging</key>
+      <name datatype="string">LogFileSize</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481500" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogDroppedPackets">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging</key>
+      <name datatype="string">LogDroppedPackets</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481501" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging!LogDroppedPackets">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging</key>
+      <name datatype="string">LogDroppedPackets</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481600" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging!LogSuccessfulConnections">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging</key>
+      <name datatype="string">LogSuccessfulConnections</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481601" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\Logging</key>
+      <name datatype="string">LogSuccessfulConnections</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481700" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DefaultInboundAction">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile</key>
+      <name datatype="string">DefaultInboundAction</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481701" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile!DefaultInboundAction">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile</key>
+      <name datatype="string">DefaultInboundAction</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481800" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DefaultOutboundAction">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile</key>
+      <name datatype="string">DefaultOutboundAction</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:481801" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile!DefaultOutboundAction">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile</key>
+      <name datatype="string">DefaultOutboundAction</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:482000" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!DisableUnicastResponsesToMulticastBroadcast">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile</key>
+      <name datatype="string">DisableUnicastResponsesToMulticastBroadcast</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:482001" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile!DisableUnicastResponsesToMulticastBroadcast">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile</key>
+      <name datatype="string">DisableUnicastResponsesToMulticastBroadcast</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:482100" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!AllowLocalPolicyMerge">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile</key>
+      <name datatype="string">AllowLocalPolicyMerge</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:482101" version="3" comment="Registry path to determine domain membership.">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">System\CurrentControlSet\Services\TCPIP\Parameters</key>
+      <name datatype="string">Domain</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:482200" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile!AllowLocalIPsecPolicyMerge">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile</key>
+      <name datatype="string">AllowLocalIPsecPolicyMerge</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:482300" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogFilePath">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging</key>
+      <name datatype="string">LogFilePath</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:482301" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging!LogFilePath">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging</key>
+      <name datatype="string">LogFilePath</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:482400" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogFileSize">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging</key>
+      <name datatype="string">LogFileSize</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:482401" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging!LogFileSize">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging</key>
+      <name datatype="string">LogFileSize</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:482500" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogDroppedPackets">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging</key>
+      <name datatype="string">LogDroppedPackets</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:482501" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging!LogDroppedPackets">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging</key>
+      <name datatype="string">LogDroppedPackets</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:482600" version="3" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging!LogSuccessfulConnections">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging</key>
+      <name datatype="string">LogSuccessfulConnections</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:482601" version="3" comment="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile\Logging</key>
+      <name datatype="string">LogSuccessfulConnections</name>
+    </registry_object>
+  </objects>
+  <states>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:479800" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:479800" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:479900" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:479900" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:480000" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:480000" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:480100" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:480100" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:480200" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:480200" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:480300" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:480300" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:480400" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:480400" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:480500" version="3" comment="Value matches variable">
+      <type operation="equals">reg_sz</type>
+      <value datatype="string" operation="pattern match" var_ref="oval:mil.disa.fso.windows:var:480500" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:480600" version="3" comment="Value is greater than or equal to variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="greater than or equal" var_ref="oval:mil.disa.fso.windows:var:480600" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:480700" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:480700" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:480800" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:480800" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:480900" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:480900" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:481000" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:481000" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:481100" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:481100" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:481200" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:481200" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:481300" version="3" comment="Value matches variable">
+      <type operation="equals">reg_sz</type>
+      <value datatype="string" operation="pattern match" var_ref="oval:mil.disa.fso.windows:var:481300" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:481400" version="3" comment="Value is greater than or equal to variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="greater than or equal" var_ref="oval:mil.disa.fso.windows:var:481400" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:481500" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:481500" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:481600" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:481600" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:481700" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:481700" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:481800" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:481800" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:482000" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:482000" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:482100" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:482100" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:482101" version="3" comment="Reg_Sz type and blank value">
+      <type datatype="string" operation="equals">reg_sz</type>
+      <value />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:482200" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:482200" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:482300" version="3" comment="Value matches variable">
+      <type operation="equals">reg_sz</type>
+      <value datatype="string" operation="pattern match" var_ref="oval:mil.disa.fso.windows:var:482300" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:482400" version="3" comment="Value is greater than or equal to variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="greater than or equal" var_ref="oval:mil.disa.fso.windows:var:482400" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:482500" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:482500" />
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:482600" version="3" comment="Value equals variable">
+      <type operation="equals">reg_dword</type>
+      <value datatype="int" operation="equals" var_ref="oval:mil.disa.fso.windows:var:482600" />
+    </registry_state>
+  </states>
+  <variables>
+    <external_variable id="oval:mil.disa.fso.windows:var:479800" version="3" datatype="int" comment="Firewall state - Domain Profile">
+      <possible_value hint="off">0</possible_value>
+      <possible_value hint="on">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:479900" version="3" datatype="int" comment="Firewall state - Private Profile">
+      <possible_value hint="off">0</possible_value>
+      <possible_value hint="on">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:480000" version="3" datatype="int" comment="Firewall state - Public Profile">
+      <possible_value hint="off">0</possible_value>
+      <possible_value hint="on">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:480100" version="3" datatype="int" comment="Inbound Connections - Domain Profile">
+      <possible_value hint="allow">0</possible_value>
+      <possible_value hint="block">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:480200" version="3" datatype="int" comment="Outbound Connections - Domain Profile">
+      <possible_value hint="allow">0</possible_value>
+      <possible_value hint="block">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:480300" version="3" datatype="int" comment="Display a Notification - Domain Profile">
+      <possible_value hint="yes">0</possible_value>
+      <possible_value hint="no">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:480400" version="3" datatype="int" comment="Allow Unicast Response - Domain Profile">
+      <possible_value hint="yes">0</possible_value>
+      <possible_value hint="no">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:480500" version="4" datatype="string" comment="Name - Domain Profile" />
+    <external_variable id="oval:mil.disa.fso.windows:var:480600" version="3" datatype="int" comment="Size Limit - Domain Profile">
+      <possible_value hint="16384_kb">16384</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:480700" version="3" datatype="int" comment="Log Dropped Packets - Domain Profile">
+      <possible_value hint="no">0</possible_value>
+      <possible_value hint="yes">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:480800" version="3" datatype="int" comment="Logged Successful Connections - Domain Profile">
+      <possible_value hint="no">0</possible_value>
+      <possible_value hint="yes">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:480900" version="3" datatype="int" comment="Inbound Connections - Private Profile">
+      <possible_value hint="allow">0</possible_value>
+      <possible_value hint="block">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:481000" version="3" datatype="int" comment="Outbound Connections - Private Profile">
+      <possible_value hint="allow">0</possible_value>
+      <possible_value hint="block">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:481100" version="3" datatype="int" comment="Display a Notification - Private Profile">
+      <possible_value hint="yes">0</possible_value>
+      <possible_value hint="no">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:481200" version="3" datatype="int" comment="Allow Unicast Response - Private Profile">
+      <possible_value hint="yes">0</possible_value>
+      <possible_value hint="no">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:481300" version="4" datatype="string" comment="Name - Private Profile" />
+    <external_variable id="oval:mil.disa.fso.windows:var:481400" version="3" datatype="int" comment="Size Limit - Private Profile">
+      <possible_value hint="16384_kb">16384</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:481500" version="3" datatype="int" comment="Log Dropped Packets - Private Profile">
+      <possible_value hint="no">0</possible_value>
+      <possible_value hint="yes">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:481600" version="3" datatype="int" comment="Logged Successful Connections - Private Profile">
+      <possible_value hint="no">0</possible_value>
+      <possible_value hint="yes">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:481700" version="3" datatype="int" comment="Inbound Connections - Public Profile">
+      <possible_value hint="allow">0</possible_value>
+      <possible_value hint="block">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:481800" version="3" datatype="int" comment="Outbound Connections - Public Profile">
+      <possible_value hint="allow">0</possible_value>
+      <possible_value hint="block">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:482000" version="3" datatype="int" comment="Allow Unicast Response - Public Profile">
+      <possible_value hint="yes">0</possible_value>
+      <possible_value hint="no">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:482100" version="3" datatype="int" comment="Apply Local Firewall Rules - Public Profile">
+      <possible_value hint="no">0</possible_value>
+      <possible_value hint="yes">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:482200" version="3" datatype="int" comment="Apply Local Connection Security Rules - Public Profile">
+      <possible_value hint="no">0</possible_value>
+      <possible_value hint="yes">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:482300" version="4" datatype="string" comment="Name - Public Profile" />
+    <external_variable id="oval:mil.disa.fso.windows:var:482400" version="3" datatype="int" comment="Size Limit - Public Profile">
+      <possible_value hint="16384_kb">16384</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:482500" version="3" datatype="int" comment="Log Dropped Packets - Public Profile">
+      <possible_value hint="no">0</possible_value>
+      <possible_value hint="yes">1</possible_value>
+    </external_variable>
+    <external_variable id="oval:mil.disa.fso.windows:var:482600" version="3" datatype="int" comment="Logged Successful Connections - Public Profile">
+      <possible_value hint="no">0</possible_value>
+      <possible_value hint="yes">1</possible_value>
+    </external_variable>
+  </variables>
+</oval_definitions>
+

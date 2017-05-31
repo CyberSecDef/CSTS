@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:windows-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd">
+  <generator>
+    <oval:product_name>DISA</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2015-03-27T10:55:53.281-05:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.stig.word2013:def:1" version="1" class="compliance">
+      <metadata>
+        <title>DTOO104 - Disable user name and password</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>The Uniform Resource Locator (URL) standard allows user authentication to be included in URL strings in the form http://username:password@example.com. A malicious user might use this URL syntax to create a hyperlink that appears to open a legitimate website but actually opens a deceptive (spoofed) website. For example, the URL http://www.wingtiptoys.com@example.com appears to open http://www.wingtiptoys.com but actually opens http://example.com. To protect users from such attacks, Internet Explorer usually blocks any URLs using this syntax. This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a website). If user names and passwords in URLs are allowed, users could be diverted to dangerous Web pages, which could pose a security risk.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Disable user name and password">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Disable user name and password" test_ref="oval:mil.disa.stig.word2013:tst:1000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.word2013:def:2" version="1" class="compliance">
+      <metadata>
+        <title>DTOO111 - Enable IE  Bind to Object</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>Internet Explorer performs a number of safety checks before initializing an ActiveX control. It will not initialize a control if the kill bit for the control is set in the registry, or if the security settings for the zone in which the control is located do not allow it to be initialized.
+This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). A security risk could occur if potentially dangerous controls are allowed to load.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Bind to Object">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Bind to Object" test_ref="oval:mil.disa.stig.word2013:tst:2000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.word2013:def:3" version="1" class="compliance">
+      <metadata>
+        <title>DTOO117 - Saved from URL</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>Typically, when Internet Explorer loads a web page from a Universal Naming Convention (UNC) share that contains a Mark of the Web (MOTW) comment, indicating the page was saved from a site on the Internet, Internet Explorer runs the page in the Internet security zone instead of the less restrictive Local Intranet security zone. This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). If Internet Explorer does not evaluate the page for a MOTW, potentially dangerous code could be allowed to run.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Saved from URL">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Saved from URL" test_ref="oval:mil.disa.stig.word2013:tst:3000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.word2013:def:4" version="1" class="compliance">
+      <metadata>
+        <title>DTOO123 - Block Navigation to URL from Office</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>To protect users from attacks, Internet Explorer usually does not attempt to load malformed URLs. This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). If Internet Explorer attempts to load a malformed URL, a security risk could occur.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Navigate URL">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Navigate URL" test_ref="oval:mil.disa.stig.word2013:tst:4000" />
+      </criteria> 
+        </definition>           
+    <definition id="oval:mil.disa.stig.word2013:def:5" version="1" class="compliance">
+      <metadata>
+        <title>DTOO129 - Block Pop-ups</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>The Pop-up Blocker feature in Internet Explorer can be used to block most unwanted pop-up and pop-under windows from appearing. This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). If the Pop-up Blocker is disabled, disruptive and potentially dangerous pop-up windows could load and present a security risk.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Block popups">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Block popups" test_ref="oval:mil.disa.stig.word2013:tst:5000" />
+      </criteria> 
+       </definition>
+   <definition id="oval:mil.disa.stig.word2013:def:6" version="1" class="compliance"> 
+      <metadata>  
+      <title>DTOO131 - Trust Bar Notifications</title>
+      <affected family="windows">  
+      <platform>Microsoft Windows 7</platform>
+      <platform>Microsoft Windows Server 2008 R2</platform>  
+      <platform>Microsoft Windows Server 2012</platform>  
+      <platform>Microsoft Windows 8</platform>
+      <platform>Microsoft Windows 8.1</platform>   
+      <product>Microsoft Word 2013</product>
+      </affected>  
+      <description>If an application is configured to require all add-ins to be signed by a trusted publisher, any unsigned add-ins the application loads will be disabled and the application will display the Trust Bar at the top of the active window. The Trust Bar contains a message informing users about the unsigned add-in. If a user is allowed to make the determination to allow an unsigned add-in, it increases the risk of malicious code being introduced onto the user's computer or the network.</description> 
+      </metadata> 
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Disable Trust Bar Notification for unsigned application add-ins and block them" negate="false"> 
+        <criterion comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Disable Trust Bar Notification for unsigned application add-ins and block them" test_ref="oval:mil.disa.stig.word2013:tst:6000" />  
+        </criteria> 
+        </definition>
+    <definition id="oval:mil.disa.stig.word2013:def:7" version="1" class="compliance">
+      <metadata>
+        <title>DTOO133 - Disable all trusted location</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>Trusted locations specified in the Trust Center are used to define file locations assumed to be safe. Content, code, and add-ins are allowed to load from trusted locations with a minimal amount of security, without prompting the users for permission. If a dangerous file is opened from a trusted location, it will not be subject to standard security measures and could harm users' computers or data. By default, files located in trusted locations (those specified in the Trust Center) are assumed to be safe.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Trusted Locations\Disable all trusted locations">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Trusted Locations\Disable all trusted locations" test_ref="oval:mil.disa.stig.word2013:tst:7000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.word2013:def:8" version="1" class="compliance">
+      <metadata>
+        <title>DTOO142 - Force Scan Encr. Macros in open XML</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>When an Office Open XML document (Word, Excel, and PowerPoint) is rights-managed, or password-protected, any macros embedded in the document are encrypted along with the rest of the contents.  By default, these encrypted macros will be disabled unless they are scanned by antivirus software immediately before being loaded. If this default configuration is modified, Office products will not require encrypted macros to be scanned before loading. They will be handled as specified by the Office System macro security settings, which can cause macro viruses to load undetected and lead to data loss or reduced application functionality.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Scan encrypted macros in Word Open XML documents">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Scan encrypted macros in Word Open XML documents" test_ref="oval:mil.disa.stig.word2013:tst:8000" />
+     </criteria>    
+       </definition>  
+          <definition id="oval:mil.disa.stig.word2013:def:9" version="1" class="compliance">
+      <metadata>
+        <title>DTOO134 - Trusted locations on computer</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>Files located in Trusted Locations and specified in the Trust Center are typically assumed to be safe. Content, code, and add-ins are allowed to load from Trusted Locations with minimal security and without prompting the user for permission. By default, users can specify Trusted Locations on network shares, or in other remote locations not under their direct control, by selecting the "Allow Trusted Locations on my network" (not recommended) check box in the Trusted Locations section of the Trust Center. If a dangerous file is opened from a trusted location, it will not be subject to typical security measures and could affect users' computers or data.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Trusted Locations\Allow Trusted Locations">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Trusted Locations\Allow Trusted Locations" test_ref="oval:mil.disa.stig.word2013:tst:9000" />
+      </criteria>
+        </definition>
+         <definition id="oval:mil.disa.stig.word2013:def:10" version="1" class="compliance">
+      <metadata>
+        <title>DTOO139 - Save files default format</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>When users create new document files, Word 2013 saves them in the new Word 2013 .docx format.  Ensure this setting is enabled to specify that all new files are created in Word 2013.  If a new document is created in an earlier format, some users may not be able to open or use the file, or they may choose a format this is less secure than the Word 2013 format.  Users can still select a specific format when they save files, but they cannot change default of this setting from the Word Options dialog box.  This enforced user behavior ensures any change to the file format requires additional deliberate user interaction.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Save\default file format">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Trusted Locations\Allow Trusted Locations on the network" test_ref="oval:mil.disa.stig.word2013:tst:10000" />
+      </criteria> 
+        </definition> 
+        <definition id="oval:mil.disa.stig.word2013:def:11" version="1" class="compliance">
+      <metadata>
+        <title>DTOO146 - Disable Trust access to VB Project Macros</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>VSTO projects require access to the Visual Basic for Applications project system in Excel, word, and Word, even though the projects do not use Visual Basic for Applications. Design-time support of controls in both Visual Basic and C# projects depends on the Visual Basic for Applications project system in Word and Excel. By default, Excel, Word, and word do not allow automation clients to have programmatic access to VBA projects. Users can enable this by selecting the Trust access to the VBA project object model in the Macro Settings section of the Trust Center. However, doing so allows macros in any documents the user opens to access the core Visual Basic objects, methods, and properties, which represents a potential security hazard.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Trust access to Visual Basic Project">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Trust access to Visual Basic Project" test_ref="oval:mil.disa.stig.word2013:tst:11000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:12" version="1" class="compliance">
+      <metadata>
+        <title>DTOO304 - VBA Macro Warnings settings</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>When users open files containing VBA macros, applications open the files with the macros disabled and displays the Trust Bar with a warning that macros are present and have been disabled. Users may then enable these macros by clicking Options on the Trust Bar and selecting the option to enable them. Disabling or not configuring this setting may allow dangerous macros to become active on user computers or the network.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\VBA Macro Notification Settings">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\VBA Macro Notification Settings" test_ref="oval:mil.disa.stig.word2013:tst:12000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:13" version="1" class="compliance">
+      <metadata>
+        <title>DTOO302 - Don't update Links at Open</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>When users open documents Word automatically updates any links to external content, such as graphics, Excel worksheets, and PowerPoint slides. To disable automatic updating, the user can click the Office Button, click Word Options, click Advanced, scroll to the General section, and then clear the Update automatic links at open check box.
+If Word is configured to automatically update links when documents are open, document content can change without the user's knowledge, which could put important information at risk.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Advanced\Update automatic links at Open">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Advanced\Update automatic links at Open" test_ref="oval:mil.disa.stig.word2013:tst:13000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:14" version="1" class="compliance">
+      <metadata>
+        <title>DTOO303 - Warn before printing</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>Tracked changes or comments embedded within a document may contain sensitive, insulting, or embarrassing information that the document owner forgot, or that a contributor may have inserted.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Warn before printing, saving or sending a file that contains tracked changes or comments">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Warn before printing, saving or sending a file that contains tracked changes or comments" test_ref="oval:mil.disa.stig.word2013:tst:14000" />
+      </criteria> 
+        </definition>
+       <definition id="oval:mil.disa.stig.word2013:def:15" version="1" class="compliance">
+      <metadata>
+        <title>DTOO126 - Add-on Management</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>Internet Explorer add-ons are pieces of code, run in Internet Explorer, to provide additional functionality. Rogue add-ons may contain viruses or other malicious code. Disabling or not configuring this setting could allow malicious code or users to become active on user computers or the network. For example, a malicious user can monitor and then use keystrokes users type into Internet Explorer. Even legitimate add-ons may demand resources, compromising the performance of Internet Explorer, and the operating systems for user computers.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Add-on Management">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Add-on Management" test_ref="oval:mil.disa.stig.word2013:tst:15000" />
+      </criteria> 
+        </definition> 
+        <definition id="oval:mil.disa.stig.word2013:def:16" version="1" class="compliance">
+      <metadata>
+        <title>DTOO209 - Zone Elevation Protection</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>Internet Explorer places restrictions on each web page users can use the browser to open. Web pages on a user's local computer have the fewest security restrictions and reside in the Local Machine zone, making this security zone a prime target for malicious users and code. Disabling or not configuring this setting could allow pages in the Internet zone to navigate to pages in the Local Machine zone to then run code to elevate privileges. This could allow malicious code or users to become active on user computers or the network.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Protection From Zone Elevation">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Protection From Zone Elevation" test_ref="oval:mil.disa.stig.word2013:tst:16000" />
+      </criteria> 
+        </definition>
+       <definition id="oval:mil.disa.stig.word2013:def:17" version="1" class="compliance">
+      <metadata>
+        <title>DTOO211 - Restrict ActiveX Install</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>Microsoft ActiveX controls allow unmanaged, unprotected code to run on the user computers. ActiveX controls do not run within a protected container in the browser like the other types of HTML or Microsoft Silverlight-based controls. Disabling or not configuring this setting does not block prompts for ActiveX control installations and these prompts display to users. This could allow malicious code to become active on the user's computer or the network.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Restrict ActiveX Install">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Restrict ActiveX Install" test_ref="oval:mil.disa.stig.word2013:tst:17000" />
+      </criteria> 
+        </definition> 
+        <definition id="oval:mil.disa.stig.word2013:def:18" version="1" class="compliance">
+      <metadata>
+        <title>DTOO132 - Restrict File Download</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>Disabling this setting allows websites to present file download prompts via code without the user specifically initiating the download.  User preferences may also allow the download to occur without prompting or interaction with the user.  Even if Internet Explorer prompts the user to accept the download, some websites abuse this functionality.  Malicious websites may continually prompt users to download a file or present confusing dialog boxes to trick users into downloading or running a file.  If the download occurs and it contains malicious code, the code could become active on user computers or the network.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Restrict File Download">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Restrict File Download" test_ref="oval:mil.disa.stig.word2013:tst:18000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:19" version="1" class="compliance">
+      <metadata>
+        <title>DTOO124 - Scripted Window Security</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>Malicious websites often try to confuse or trick users into giving a site permission to perform an action allowing the site to take control of the users' computers in some manner. Disabling or not configuring this setting allows unknown websites to: -Create browser windows appearing to be from the local operating system. -Draw active windows displaying outside of the viewable areas of the screen capturing keyboard input. -Overlay parent windows with their own browser windows to hide important system information, choices or prompts.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Scripted Window Security Restrictions">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Scripted Window Security Restrictions" test_ref="oval:mil.disa.stig.word2013:tst:19000" />
+      </criteria> 
+        </definition>
+		<definition id="oval:mil.disa.stig.word2013:def:20" version="1" class="compliance">
+      <metadata>
+        <title>DTOO127 - Add-ins are signed by Trusted word</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>Office 2013 applications do not check the digital signature on application add-ins before opening them.  Disabling or not configuring this setting may allow an application to load a dangerous add-in.  As a result, malicious code could become active on user computers or the network.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Require that application add-ins are signed by Trusted Publisher">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Require that application add-ins are signed by Trusted Publisher" test_ref="oval:mil.disa.stig.word2013:tst:20000" />
+      </criteria> 
+        </definition> 
+        <definition id="oval:mil.disa.stig.word2013:def:21" version="1" class="compliance">
+      <metadata>
+        <title>DTOO119 - Turn off file validation</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>Office File Validation helps detect and prevent a kind of exploit known as a file format attack or file fuzzing attack. File format attacks exploit the integrity of a file. They occur when someone modifies the structure of a file with the intent of adding malicious code. Usually the malicious code is run remotely and is used to elevate the privilege of restricted accounts on the computer. As a result, an attacker could gain access to a computer that they did not previously have access to. This could enable an attacker to read sensitive information from the computer's hard disk drive or install malware, such as a worm or a key logging program. The Office File Validation feature helps prevent file format attacks by scanning and validating files before they are opened. To validate files, Office File Validation compares a file's structure to a predefined file schema, which is a set of rules that determine what a readable file looks like. If Office File Validation detects that a file's structure does not follow all rules that are described in the schema, the file does not pass validation.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Turn off file validation">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Turn off file validation" test_ref="oval:mil.disa.stig.word2013:tst:21000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:22" version="1" class="compliance">
+      <metadata>
+        <title>DTOO110 - Set default file block behavior</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>Users can open, view, or edit a large number of file types in word 2013.  Some file types are safer than others, as some could allow malicious code to become active on user computers or the network.  For this reason, disabling or not configuring this setting could allow malicious code to become active on user computers or the network.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Set default file block behavior">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Set default file block behavior" test_ref="oval:mil.disa.stig.word2013:tst:22000" />
+      </criteria> 
+        </definition>	
+        <definition id="oval:mil.disa.stig.word2013:def:23" version="1" class="compliance">
+      <metadata>
+        <title>DTOO121 - Files form the Internet zone</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>This policy setting allows for determining if files downloaded from the Internet zone open in Protected View. If enabling this policy setting, files downloaded from the Internet zone do not open in Protected View. If disabling or not configuring this policy setting, files downloaded from the Internet zone open in Protected View.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Protected View\Do not open files from the Internet zone in Protected View">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Protected View\Do not open files from the Internet zone in Protected View" test_ref="oval:mil.disa.stig.word2013:tst:23000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:24" version="1" class="compliance">
+      <metadata>
+        <title>DTOO288 - Files in unsafe locations</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>This policy setting determines if files located in unsafe locations will open in Protected View. If unsafe locations have not been specified, only the "Downloaded Program Files" and "Temporary Internet Files" folders are considered unsafe locations. If enabling this policy setting, files located in unsafe locations do not open in Protected View. If disabling or not configuring this policy setting, files located in unsafe locations open in Protected View.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Protected View\Do not open files in unsafe locations in Protected View">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Protected View\Do not open files in unsafe locations in Protected View" test_ref="oval:mil.disa.stig.word2013:tst:24000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:25" version="1" class="compliance">
+      <metadata>
+        <title>DTOO292 - Set document behavior</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>This policy key controls the behavior of how Office documents should be handled when failing file validation. By requiring such documents to be opened in Protected View, any potentially malicious code would be disabled, allowing the user to edit the document and resave correctly.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Protected View\Set document behavior if file validation fails">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Protected View\Set document behavior if file validation fails\Enabled 'Open in Protected View" test_ref="oval:mil.disa.stig.word2013:tst:25000" />
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Protected View\Set document behavior if file validation fails\Unchecked for 'Do not allow edit" test_ref="oval:mil.disa.stig.word2013:tst:25001" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:26" version="1" class="compliance">
+      <metadata>
+        <title>DTOO293 - Turn off Protected View for attachments</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>This policy setting allows for determining if word files in Outlook attachments open in Protected View. If enabling this policy setting, Outlook attachments do not open in Protected View. If disabling or not configuring this policy setting, Outlook attachments open in Protected View.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Protected View\Turn off Protected View for attachments opened from Outlook">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Protected View\Turn off Protected View for attachments opened from Outlook" test_ref="oval:mil.disa.stig.word2013:tst:26000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:27" version="1" class="compliance">
+      <metadata>
+        <title>DTOO305 - UI extending from documents and templates</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>This policy setting controls whether Office 2013 applications load any custom user interface (UI) code included with a document or template.  Office 2013 allows developers to extend the UI with customization code that is included in a document or template. If this policy setting is enabled, Office 2013 applications cannot load any UI customization code included with documents and templates. If this policy setting is disabled or not configured, Office 2013 applications load any UI customization code included with a document or template when opening it, leaving the Office 2013 application susceptible to malicious code.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Global Options\Customize\Disable UI extending from documents and templates">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Global Options\Customize\Disable UI extending from documents and templates" test_ref="oval:mil.disa.stig.word2013:tst:27000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:28" version="1" class="compliance">
+      <metadata>
+        <title>DTOO328 - Use online translation dictionaries</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>This setting allows you to prevent online dictionaries from being used for the translation of text through the Research pane.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Miscellaneous\Use online translation dictionaries">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Miscellaneous\Use online translation dictionaries" test_ref="oval:mil.disa.stig.word2013:tst:28000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:29" version="1" class="compliance">
+      <metadata>
+        <title>DTOO333 - Word 2 and earlier binary documents</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>This setting specifies whether users can open, view, edit, or save Word files saved in the specified format. Enabling block of the specified format mitigates zero-day security attacks (which are attacks that occur during between the time that a vulnerability becomes publicly known and a software update or service pack is available) by temporarily preventing users from opening specific types of files and to prevent a user from opening files that have been saved in earlier and pre-release (beta) Microsoft Office formats.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 2 and earlier binary documents and templates">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 2 and earlier binary documents and templates" test_ref="oval:mil.disa.stig.word2013:tst:29000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:30" version="1" class="compliance">
+      <metadata>
+        <title>DTOO334 - Word 2000 binary documents and templates</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>This setting specifies whether users can open, view, edit, or save files saved in the specified format. Enabling the editing of the specified format in protected view, it mitigates zero-day security attacks (which are attacks that occur during between the time that a vulnerability becomes publicly known and a software update or service pack is available) by temporarily preventing users from opening specific types of files and to prevent a user from opening files that have been saved in earlier and pre-release (beta) Microsoft Office formats.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 2000 binary documents and templates">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 2000 binary documents and templates" test_ref="oval:mil.disa.stig.word2013:tst:30000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:31" version="1" class="compliance">
+      <metadata>
+        <title>DTOO336 - Word 6.0 binary documents and templates</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>This setting specifies whether users can open, view, edit, or save Word files saved in the specified format. Enabling block of the specified format mitigates zero-day security attacks (which are attacks that occur during between the time that a vulnerability becomes publicly known and a software update or service pack is available) by temporarily preventing users from opening specific types of files and to prevent a user from opening files that have been saved in earlier and pre-release (beta) Microsoft Office formats.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 6.0 binary documents and templates">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 6.0 binary documents and templates" test_ref="oval:mil.disa.stig.word2013:tst:31000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:32" version="1" class="compliance">
+      <metadata>
+        <title>DTOO337 - Word 95 binary documents and templates</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>This setting specifies whether users can open, view, edit, or save files saved in the specified format. Enabling the editing of the specified format in protected view, it mitigates zero-day security attacks (which are attacks that occur during between the time that a vulnerability becomes publicly known and a software update or service pack is available) by temporarily preventing users from opening specific types of files and to prevent a user from opening files that have been saved in earlier and pre-release (beta) Microsoft Office formats.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 95 binary documents and templates">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 95 binary documents and templates" test_ref="oval:mil.disa.stig.word2013:tst:32000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:33" version="1" class="compliance">
+      <metadata>
+        <title>DTOO338 - Word 97 binary documents and templates</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>This setting specifies whether users can open, view, edit, or save files saved in the specified format. Enabling the editing of the specified format in protected view, it mitigates zero-day security attacks (which are attacks that occur during between the time that a vulnerability becomes publicly known and a software update or service pack is available) by temporarily preventing users from opening specific types of files and to prevent a user from opening files that have been saved in earlier and pre-release (beta) Microsoft Office formats.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 97 binary documents and templates">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 97 binary documents and templates" test_ref="oval:mil.disa.stig.word2013:tst:33000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:34" version="1" class="compliance">
+      <metadata>
+        <title>DTOO339 - Word XP binary documents and templates</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>This setting specifies whether users can open, view, edit, or save files saved in the specified format. Enabling the editing of the specified format in protected view, it mitigates zero-day security attacks (which are attacks that occur during between the time that a vulnerability becomes publicly known and a software update or service pack is available) by temporarily preventing users from opening specific types of files and to prevent a user from opening files that have been saved in earlier and pre-release (beta) Microsoft Office formats.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word XP binary documents and templates">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word XP binary documents and templates" test_ref="oval:mil.disa.stig.word2013:tst:34000" />
+      </criteria> 
+        </definition>
+        <definition id="oval:mil.disa.stig.word2013:def:35" version="1" class="compliance">
+      <metadata>
+        <title>DTOO426 - Custom XML markup warning</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <description>This policy setting specifies how Word behaves when opening a document that contains custom XML markup. Versions of Word that are distributed by Microsoft after January 10, 2010 no longer read the custom XML markup that may be contained within (.docx, .docm, .dotx, .dotm or .xml files. The new versions of Word 2007, Word 2010, and Word 2013 can still open these files, but any custom XML markup is removed. Configuring this setting will prompt the user with a warning, notifying of the lost of the XML markup. While this is the default setting, explicitly configuring the setting will ensure users are prompted.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Advanced\Custom markup warning">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Advanced\Custom markup warning" test_ref="oval:mil.disa.stig.word2013:tst:35000" />
+      </criteria> 
+        </definition>        
+  </definitions>
+  <tests>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:1000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Disable user name and password" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:1000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:1000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:2000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Bind to Object" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:2000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:2000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:3000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Saved from URL" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:3000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:3000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:4000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Navigate URL" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:4000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:4000" />
+       </registry_test>       
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:5000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Block popups" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:5000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:5000" />
+    </registry_test> 
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:6000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Disable Trust Bar Notification for unsigned application add-ins and block them" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:6000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:6000" />   
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:7000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Trusted Locations\Disable all trusted locations" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:7000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:7000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:8000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Scan encrypted macros in Word Open XML documents" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:8000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:8000" />
+    </registry_test> 
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:9000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Trusted Locations\Allow Trusted Locations" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:9000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:9000" />
+    </registry_test>
+     <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:10000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Save\default file format" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:10000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:10000" />
+    </registry_test>
+     <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:11000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Trust access to Visual Basic Project" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:11000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:11000" />   
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:12000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\VBA Macro Notification Settings" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:12000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:12000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:13000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Advanced\Update automatic links at Open" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:13000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:13000" />
+    </registry_test> 
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:14000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Warn before printing, saving or sending a file that contains tracked changes or comments" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:14000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:14000" />
+    </registry_test>
+     <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:15000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Add-on Management" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:15000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:15000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:16000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Protection From Zone Elevation" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:16000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:16000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:17000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Restrict ActiveX Install" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:17000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:17000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:18000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Restrict File Download" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:18000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:18000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:19000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Scripted Window Security Restrictions" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:19000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:19000" />
+       </registry_test>      
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:20000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Require that application add-ins are signed by Trusted Publisher" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:20000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:20000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:21000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Turn off file validation" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:21000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:21000" />
+    </registry_test> 
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:22000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\File Block Settings\Set default file block behavior" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:22000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:22000" />
+    </registry_test>
+     <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:23000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Do not open files from the Internet zone in Protected View" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:23000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:23000" />
+    </registry_test>
+     <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:24000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Do not open files in unsafe locations in Protected View" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:24000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:24000" />   
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:25000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Set document behavior if file validation fails\Enabled 'Open in Protected View" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:25000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:25000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:25001" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Set document behavior if file validation fails\Unchecked for 'Do not allow edit" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:25001" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:25001" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:26000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Turn off Protected View for attachments opened from Outlook" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:26000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:26000" />
+    </registry_test> 
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:27000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Global Options\Customize\Disable UI extending from documents and templates" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:27000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:27000" />
+    </registry_test>
+     <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:28000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Miscellaneous\Use online translation dictionaries" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:28000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:28000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:29000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 2 and earlier binary documents and templates" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:29000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:29000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:30000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 2000 binary documents and templates" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:30000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:30000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:31000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 6.0 binary documents and templates" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:31000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:31000" />
+       </registry_test>       
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:32000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 95 binary documents and templatess" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:32000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:32000" />
+    </registry_test> 
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:33000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 97 binary documents and templates" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:33000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:33000" />   
+    </registry_test> 
+       <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:34000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word XP binary documents and templatess" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:34000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:34000" />
+    </registry_test> 
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:tst:35000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Advanced\Custom markup warning" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:35000" />
+      <state state_ref="oval:mil.disa.stig.word2013:ste:35000" />   
+    </registry_test>
+    </tests>
+  <objects>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:1000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Disable user name and password">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_HTTP_USERNAME_PASSWORD_DISABLE</key>
+      <name datatype="string" operation="equals">winword.exe</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:2000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Bind to Object">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_SAFE_BINDTOOBJECT</key>
+      <name datatype="string" operation="equals">winword.exe</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:3000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Saved from URL">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_UNC_SAVEDFILECHECK</key>
+      <name datatype="string" operation="equals">winword.exe</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:4000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Navigate URL">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_VALIDATE_NAVIGATE_URL</key>
+      <name datatype="string" operation="equals">winword.exe</name>
+    </registry_object>    
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:5000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Block popups">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WEBOC_POPUPMANAGEMENT</key>
+      <name datatype="string" operation="equals">winword.exe</name>
+    </registry_object> 
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:6000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Disable Trust Bar Notification for unsigned application add-ins and block them">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\word\security</key>
+      <name datatype="string" operation="equals">notbpromptunsignedaddin</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:7000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Trusted Locations\Disable all trusted locations">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\trusted locations</key>
+      <name datatype="string" operation="equals">AllLocationsDisabled</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:8000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Scan encrypted macros in Word Open XML documents">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security</key>
+      <name datatype="string" operation="equals">WordBypassEncryptedMacroScan</name>
+    </registry_object>  
+         <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:9000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Trusted Locations\Allow Trusted Locations">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\trusted locations</key>
+      <name datatype="string" operation="equals">AllowNetworkLocations</name>
+    </registry_object>   
+      <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:10000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Save\default file format">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\options</key>
+      <name datatype="string" operation="equals">DefaultFormat</name>
+    </registry_object>
+     <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:11000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Trust access to Visual Basic Project">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security</key>
+      <name datatype="string" operation="equals">AccessVBOM</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:12000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\VBA Macro Notification Settings">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security</key>
+      <name datatype="string" operation="equals">VBAWarnings</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:13000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Advanced\Update automatic links at Open">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\options</key>
+      <name datatype="string" operation="equals">DontUpdateLinks</name>
+    </registry_object>  
+     <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:14000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Warn before printing, saving or sending a file that contains tracked changes or comments">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\options</key>
+      <name datatype="string" operation="equals">WarnRevisions</name>
+    </registry_object>   
+     <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:15000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Add-on Management">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ADDON_MANAGEMENT</key>
+      <name datatype="string" operation="equals">winword.exe</name>
+    </registry_object>
+     <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:16000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Protection From Zone Elevation">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ZONE_ELEVATION</key>
+      <name datatype="string" operation="equals">winword.exe</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:17000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Restrict ActiveX Install">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_ACTIVEXINSTALL</key>
+      <name datatype="string" operation="equals">winword.exe</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:18000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Restrict File Download">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_FILEDOWNLOAD</key>
+      <name datatype="string" operation="equals">winword.exe</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:19000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Scripted Window Security Restrictions">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WINDOW_RESTRICTIONS</key>
+      <name datatype="string" operation="equals">winword.exe</name>
+    </registry_object>    
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:20000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Require that application add-ins are signed by Trusted Publisher">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security</key>
+      <name datatype="string" operation="equals">RequireAddinSig</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:21000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Turn off file validation">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\filevalidation</key>
+      <name datatype="string" operation="equals">EnableOnLoad</name>
+    </registry_object>  
+         <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:22000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\File Block Settings\Set default file block behavior">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\fileblock</key>
+      <name datatype="string" operation="equals">OpenInProtectedView</name>
+    </registry_object>   
+      <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:23000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Do not open files from the Internet zone in Protected View">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\protectedview</key>
+      <name datatype="string" operation="equals">DisableInternetFilesInPV</name>
+    </registry_object>
+     <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:24000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Do not open files in unsafe locations in Protected View">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\protectedview</key>
+      <name datatype="string" operation="equals">DisableUnsafeLocationsInPV</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:25000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Set document behavior if file validation fails\Enabled 'Open in Protected View">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\filevalidation</key>
+      <name datatype="string" operation="equals">OpenInProtectedView</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:25001" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Set document behavior if file validation fails\Unchecked for 'Do not allow edit">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\filevalidation</key>
+      <name datatype="string" operation="equals">DisableEditFromPV</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:26000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Turn off Protected View for attachments opened from Outlook">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\protectedview</key>
+      <name datatype="string" operation="equals">DisableAttachmentsInPV</name>
+    </registry_object>  
+         <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:27000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Global Options\Customize\Disable UI extending from documents and templates">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\common\toolbars\word</key>
+      <name datatype="string" operation="equals">noextensibilitycustomizationfromdocument</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:28000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Miscellaneous\Use online translation dictionaries">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\common\research\translation</key>
+      <name datatype="string" operation="equals">useonline</name>
+    </registry_object>  
+         <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:29000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 2 and earlier binary documents and templates">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\fileblock</key>
+      <name datatype="string" operation="equals">Word2Files</name>
+    </registry_object>   
+      <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:30000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 2000 binary documents and templates">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\fileblock</key>
+      <name datatype="string" operation="equals">Word2000Files</name>
+    </registry_object>
+     <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:31000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 6.0 binary documents and templates">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\fileblock</key>
+      <name datatype="string" operation="equals">Word60Files</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:32000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 95 binary documents and templates">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\fileblock</key>
+      <name datatype="string" operation="equals">Word95Files</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:33000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 97 binary documents and templates">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\fileblock</key>
+      <name datatype="string" operation="equals">Word97Files</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:34000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word XP binary documents and templates">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\security\fileblock</key>
+      <name datatype="string" operation="equals">WordXPFiles</name>
+    </registry_object>    
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:obj:35000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Advanced\Custom markup warningd">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\word\options</key>
+      <name datatype="string" operation="equals">custommarkupwarning</name>
+    </registry_object>                  
+    </objects>
+  <states>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:1000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Disable user name and password">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:2000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Bind to Object">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:3000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Saved from URL">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:4000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Navigate URL">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>    
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:5000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Block popups">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>    
+     <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:6000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Disable Trust Bar Notification for unsigned application add-ins and block them">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:7000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Trusted Locations\Disable all trusted locations">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:8000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Scan encrypted macros in Word Open XML documents">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+      <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:9000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Trusted Locations\Allow Trusted Locations">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state> 
+       <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:10000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Save\default file format">
+      <type>reg_sz</type>
+      <value datatype="string" operation="pattern match">\s</value>
+    </registry_state>  
+      <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:11000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\Trust access to Visual Basic Project">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:12000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\VBA Macro Notification Settings">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">2</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:13000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Advanced\Update automatic links at Open">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+      <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:14000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Warn before printing, saving or sending a file that contains tracked changes or comments">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state> 
+       <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:15000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Add-on Management">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state> 
+      <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:16000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Protection From Zone Elevation">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:17000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Restrict ActiveX Install">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:18000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Restrict File Download">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:19000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Security Settings\IE Security\Scripted Window Security Restrictions">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>    
+     <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:20000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Require that application add-ins are signed by Trusted Publisher">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:21000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Turn off file validation">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+      <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:22000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\File Block Settings\Set default file block behavior">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state> 
+       <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:23000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Do not open files from the Internet zone in Protected View">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>  
+     <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:24000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Do not open files in unsafe locations in Protected View">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:25000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Set document behavior if file validation fails\Enabled 'Open in Protected View">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+     <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:25001" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Set document behavior if file validation fails\Unchecked for 'Do not allow edit">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:26000" version="1" comment="User Configuration\Administrative Templates\Microsoft word 2013\word Options\Security\Trust Center\Protected View\Turn off Protected View for attachments opened from Outlook">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+      <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:27000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Global Options\Customize\Disable UI extending from documents and templates">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:28000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Miscellaneous\Use online translation dictionaries">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+      <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:29000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 2 and earlier binary documents and templates">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">2</value>
+    </registry_state> 
+       <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:30000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 2000 binary documents and templates">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">5</value>
+    </registry_state>
+     <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:31000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 6.0 binary documents and templates">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">2</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:32000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 95 binary documents and templatesl">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">5</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:33000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word 97 binary documents and templates">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">5</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:34000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Security\Trust Center\File Block Settings\Word XP binary documents and templatess">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">5</value>
+    </registry_state>    
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.word2013:ste:35000" version="1" comment="User Configuration\Administrative Templates\Microsoft Word 2013\Word Options\Advanced\Custom markup warning">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>           
+    </states>  
+</oval_definitions>
+

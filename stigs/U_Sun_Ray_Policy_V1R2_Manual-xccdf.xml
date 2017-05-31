@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?>
+<Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" id="Sun_Ray_4_Policy_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1">
+	<status date="2015-04-02">accepted</status>
+	<title>Sun Ray 4 Policy STIG</title>
+	<description>The Sun Ray 4 Policy Security Technical Implementation Guide (STIG) is published as a tool to improve the security of Department of Defense (DoD) information systems. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</description>
+	<notice id="terms-of-use" xml:lang="en"/>
+	<reference href="http://iase.disa.mil">
+		<dc:publisher>DISA, Field Security Operations</dc:publisher>
+		<dc:source>STIG.DOD.MIL</dc:source>
+	</reference>
+	<plain-text id="release-info">Release: 2 Benchmark Date: 24 Apr 2015</plain-text>
+	<version>1</version>
+	<Profile id="MAC-1_Classified">
+		<title>I - Mission Critical Classified</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16397" selected="true"/>
+		<select idref="V-16400" selected="true"/>
+		<select idref="V-16409" selected="true"/>
+		<select idref="V-16411" selected="true"/>
+		<select idref="V-16412" selected="true"/>
+		<select idref="V-16413" selected="true"/>
+		<select idref="V-16414" selected="true"/>
+		<select idref="V-16415" selected="true"/>
+		<select idref="V-16416" selected="true"/>
+		<select idref="V-16417" selected="true"/>
+		<select idref="V-16418" selected="true"/>
+	</Profile>
+	<Profile id="MAC-1_Public">
+		<title>I - Mission Critical Public</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16397" selected="true"/>
+		<select idref="V-16400" selected="true"/>
+		<select idref="V-16409" selected="true"/>
+		<select idref="V-16411" selected="true"/>
+		<select idref="V-16412" selected="true"/>
+		<select idref="V-16413" selected="true"/>
+		<select idref="V-16414" selected="true"/>
+		<select idref="V-16415" selected="true"/>
+		<select idref="V-16416" selected="true"/>
+		<select idref="V-16417" selected="true"/>
+		<select idref="V-16418" selected="true"/>
+	</Profile>
+	<Profile id="MAC-1_Sensitive">
+		<title>I - Mission Critical Sensitive</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16397" selected="true"/>
+		<select idref="V-16400" selected="true"/>
+		<select idref="V-16409" selected="true"/>
+		<select idref="V-16411" selected="true"/>
+		<select idref="V-16412" selected="true"/>
+		<select idref="V-16413" selected="true"/>
+		<select idref="V-16414" selected="true"/>
+		<select idref="V-16415" selected="true"/>
+		<select idref="V-16416" selected="true"/>
+		<select idref="V-16417" selected="true"/>
+		<select idref="V-16418" selected="true"/>
+	</Profile>
+	<Profile id="MAC-2_Classified">
+		<title>II - Mission Support Classified</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16397" selected="true"/>
+		<select idref="V-16400" selected="true"/>
+		<select idref="V-16409" selected="true"/>
+		<select idref="V-16411" selected="true"/>
+		<select idref="V-16412" selected="true"/>
+		<select idref="V-16413" selected="true"/>
+		<select idref="V-16414" selected="true"/>
+		<select idref="V-16415" selected="true"/>
+		<select idref="V-16416" selected="true"/>
+		<select idref="V-16417" selected="true"/>
+		<select idref="V-16418" selected="true"/>
+	</Profile>
+	<Profile id="MAC-2_Public">
+		<title>II - Mission Support Public</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16397" selected="true"/>
+		<select idref="V-16400" selected="true"/>
+		<select idref="V-16409" selected="true"/>
+		<select idref="V-16411" selected="true"/>
+		<select idref="V-16412" selected="true"/>
+		<select idref="V-16413" selected="true"/>
+		<select idref="V-16414" selected="true"/>
+		<select idref="V-16415" selected="true"/>
+		<select idref="V-16416" selected="true"/>
+		<select idref="V-16417" selected="true"/>
+		<select idref="V-16418" selected="true"/>
+	</Profile>
+	<Profile id="MAC-2_Sensitive">
+		<title>II - Mission Support Sensitive</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16397" selected="true"/>
+		<select idref="V-16400" selected="true"/>
+		<select idref="V-16409" selected="true"/>
+		<select idref="V-16411" selected="true"/>
+		<select idref="V-16412" selected="true"/>
+		<select idref="V-16413" selected="true"/>
+		<select idref="V-16414" selected="true"/>
+		<select idref="V-16415" selected="true"/>
+		<select idref="V-16416" selected="true"/>
+		<select idref="V-16417" selected="true"/>
+		<select idref="V-16418" selected="true"/>
+	</Profile>
+	<Profile id="MAC-3_Classified">
+		<title>III - Administrative Classified</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16397" selected="true"/>
+		<select idref="V-16400" selected="true"/>
+		<select idref="V-16409" selected="true"/>
+		<select idref="V-16411" selected="true"/>
+		<select idref="V-16412" selected="true"/>
+		<select idref="V-16413" selected="true"/>
+		<select idref="V-16414" selected="true"/>
+		<select idref="V-16415" selected="true"/>
+		<select idref="V-16416" selected="true"/>
+		<select idref="V-16417" selected="true"/>
+		<select idref="V-16418" selected="true"/>
+	</Profile>
+	<Profile id="MAC-3_Public">
+		<title>III - Administrative Public</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16397" selected="true"/>
+		<select idref="V-16400" selected="true"/>
+		<select idref="V-16409" selected="true"/>
+		<select idref="V-16411" selected="true"/>
+		<select idref="V-16412" selected="true"/>
+		<select idref="V-16413" selected="true"/>
+		<select idref="V-16414" selected="true"/>
+		<select idref="V-16415" selected="true"/>
+		<select idref="V-16416" selected="true"/>
+		<select idref="V-16417" selected="true"/>
+		<select idref="V-16418" selected="true"/>
+	</Profile>
+	<Profile id="MAC-3_Sensitive">
+		<title>III - Administrative Sensitive</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16397" selected="true"/>
+		<select idref="V-16400" selected="true"/>
+		<select idref="V-16409" selected="true"/>
+		<select idref="V-16411" selected="true"/>
+		<select idref="V-16412" selected="true"/>
+		<select idref="V-16413" selected="true"/>
+		<select idref="V-16414" selected="true"/>
+		<select idref="V-16415" selected="true"/>
+		<select idref="V-16416" selected="true"/>
+		<select idref="V-16417" selected="true"/>
+		<select idref="V-16418" selected="true"/>
+	</Profile>
+	<Group id="V-16397">
+		<title>No up-to-date documentation or diagrams</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17390r1_rule" severity="medium" weight="10.0">
+			<version>SUN0010</version>
+			<title>There is no up-to-date documentation or diagrams of the Sun Ray infrastructure.</title>
+			<description>&lt;VulnDiscussion&gt;Without current and accurate documentation, any changes to the Sun Ray infrastructure may jeopardize the network’s integrity. To assist in the management, auditing, and security of the network, facility drawings and topology maps are a necessity.  Topology maps and documentation are important because they show the overall layout of the network infrastructure and where devices are physically located. They also show the relationship and inter-connectivity between devices and where possible intrusive attacks could take place. If an incident were to occur, the lack of documentation would impact the ability to respond.  Additionally, documentation along with diagrams of the network topology are required to be submitted to the Connection Approval Process (CAP) for approval to connect to the NIPRNet or SIPRNet.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;DCSW-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4 Policy</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4 Policy</dc:subject>
+				<dc:identifier>1427</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16427r1_fix">Develop up-to-date documentation for the Sun Ray infrastructure.</fixtext>
+			<fix id="F-16427r1_fix"/>
+			<check system="C-17275r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_Policy_STIG.xml"/>
+				<check-content>Request a copy of all the Sun Ray infrastructure documentation.  Documentation must include all routers, switches, servers (Solaris, Windows), applications (such as Citrix XenApp and Sun Ray Software), Sun Ray Desktop Units, IP addresses, and any third party applications.  If the documentation does not include all of these components, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16400">
+		<title>User Registration process not clearly documented</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17393r1_rule" severity="low" weight="10.0">
+			<version>SUN0060</version>
+			<title>User Registration process is not clearly documented.</title>
+			<description>&lt;VulnDiscussion&gt; Without proper user registration documentation, users and system administrators may not register users in the Sun Ray system properly and potentially grant users more privileges than necessary.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4 Policy</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4 Policy</dc:subject>
+				<dc:identifier>1427</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16430r1_fix">Develop Sun Ray system user registration documentation.</fixtext>
+			<fix id="F-16430r1_fix"/>
+			<check system="C-17276r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_Policy_STIG.xml"/>
+				<check-content>Request a copy of the user registration documentation from the IAO/SA.  Review the document for step by step procedures in registering users in the Sun Ray System.  </check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16409">
+		<title>IAO/SA is not receiving patch notifications.</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17402r1_rule" severity="medium" weight="10.0">
+			<version>SUN0100</version>
+			<title>The IAO/SA is not receiving Sun Ray security and patch notifications.</title>
+			<description>&lt;VulnDiscussion&gt;Organizations need to stay current with all applicable Sun Ray Server software updates that are released from Sun. In order to be aware of updates as they are released, Sun Ray system administrators will subscribe to Sun Ray Server vendor security notices, updates, and patches to ensure that all new vulnerabilities are known. New Sun Ray Server patches and updates should be reviewed for the Sun Ray Server before moving them into a production environment.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4 Policy</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4 Policy</dc:subject>
+				<dc:identifier>1427</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16435r1_fix">Access Sun Microsystem's website and update your profile by going to subscriptions and select the SunSolve Patch Club Report.  This will ensure you get emails on all new and updated patches through SunSolve.</fixtext>
+			<fix id="F-16435r1_fix"/>
+			<check system="C-17277r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_Policy_STIG.xml"/>
+				<check-content>Ask the IAO/SA to provide actual update notification or email to verify that they are on the subscription list.  The email subscription for Sun is the SunSolve Patch Club Report and it is sent out weekly by Sun.  If no emails or documentation can be provided, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16411">
+		<title>Applications published are not approved</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17404r1_rule" severity="medium" weight="10.0">
+			<version>SUN0150</version>
+			<title>Applications published to users are not approved by the IAO/SA.  </title>
+			<description>&lt;VulnDiscussion&gt;Publishing applications to users via the Kiosk mode bypasses a login mode.  Therefore, some applications may or may not provide security to identify and authorize users to the application.  For instance, adding the xterm application provides users with access to a command-line interface from a Kiosk mode session.  This is not ideal since users should not be able to access the server’s command line functionality.  Therefore, only approved applications will be published to users.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4 Policy</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4 Policy</dc:subject>
+				<dc:identifier>1427</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16436r1_fix">Document and approve all published applications running on the Sun Ray network.</fixtext>
+			<fix id="F-16436r1_fix"/>
+			<check system="C-17281r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_Policy_STIG.xml"/>
+				<check-content>Request a copy of the documentation that lists all approved applications.  If unapproved applications are published to users that are not on the list, this is a finding. If no list exists, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16412">
+		<title>Sun Ray Session Server used in hosting other apps</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17405r1_rule" severity="medium" weight="10.0">
+			<version>SUN0220</version>
+			<title>The Sun Ray Session Server (SRSS) is used to host other applications.</title>
+			<description>&lt;VulnDiscussion&gt;The availability of the Sun Ray Session Server (SRSS) is critical since it manages the sessions associated with the Desktop Units.  The Sun Ray software controls user authentication, encryption between Sun Ray servers and Desktop Units, system administration tools, session management, policy enforcement, and device management.  If other applications are competing or using hardware resources, the availability of the SRSS may be a risk.  Furthermore, application programs such as web servers, databases, or messaging systems may provide an avenue by which a privileged user may unintentionally introduce malicious code.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;DCBP-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4 Policy</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4 Policy</dc:subject>
+				<dc:identifier>1427</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16437r1_fix">Remove all applications that are not required for the SRSS.</fixtext>
+			<fix id="F-16437r1_fix"/>
+			<check system="C-17282r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_Policy_STIG.xml"/>
+				<check-content>Ask the IAO/SA what applications are running on the SRSS.  Besides the documented UNIX services, the SRSS may have the following running as part of the Sun Ray solution and these are not applicable to this check:
+- DHCP Server
+- Sun Ray Connector for Windows OS 
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16413">
+		<title>Sun Ray logs not reviewed weekly</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17406r1_rule" severity="medium" weight="10.0">
+			<version>SUN0240</version>
+			<title>The Sun Ray system and user logs are not reviewed weekly.</title>
+			<description>&lt;VulnDiscussion&gt;If a system administrator does not review Sun Ray logs weekly, there is the potential that an attack or other security issue can go unnoticed for a week or more, which is unacceptable in DoD environments.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECAT-1, ECAT-2&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4 Policy</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4 Policy</dc:subject>
+				<dc:identifier>1427</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16439r1_fix">Review Sun Ray logs at a minimum weekly.</fixtext>
+			<fix id="F-16439r1_fix"/>
+			<check system="C-17296r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_Policy_STIG.xml"/>
+				<check-content>Critical Sun Ray log files are the administration, authentication, automatic mounting, mass storage devices, messages, and web administration.  These logs are listed below.  Ask the IAO/SA if Sun Ray logs are reviewed weekly.
+
+# ls-lL /var/opt/SUNWut/log | less
+
+admin_log
+auth_log
+utmountd.log
+utstoraged.log
+messages
+utwebadmin.log
+
+If these logs are being written to an external syslog server, ask the IAO/SA if these are reviewed weekly.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16414">
+		<title>DRP does not include Sun Ray system</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17407r1_rule" severity="medium" weight="10.0">
+			<version>SUN0280</version>
+			<title>The disaster recovery plan does not include the Sun Ray system (network infrastructure and peripherals).</title>
+			<description>&lt;VulnDiscussion&gt;If the disaster recovery plan does not include the Sun Ray system, recovering from a disaster would not be possible.  All peripherals and necessary equipment must be included in the disaster recovery plan to ensure a successful restoration of data, servers, and clients are possible.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;CODP-1, CODP-2, CODP-3&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4 Policy</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4 Policy</dc:subject>
+				<dc:identifier>1427</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16440r1_fix">Add the Sun Ray system to the COOP.  </fixtext>
+			<fix id="F-16440r1_fix"/>
+			<check system="C-17297r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_Policy_STIG.xml"/>
+				<check-content>Ask for a copy of the site’s Continuity of Operations Planning (COOP). Verify the Sun Ray system is specifically mentioned in the plan.  Ensure the plan addresses the restoration of the Sun Ray system within 24 hours of activation of the COOP.  Additionally, ensure that the Sun Ray system restoration is validated at least annually as part of the normal COOP testing process.  If any of these requirements is not met, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16415">
+		<title>There are no backup and recovery procedures</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17411r1_rule" severity="low" weight="10.0">
+			<version>SUN0290</version>
+			<title>There are no backup and recovery procedures for the Sun Ray system.</title>
+			<description>&lt;VulnDiscussion&gt;Backup and recovery procedures are critical to the availability and protection of the Sun Ray system. Availability of the system will be hindered if the system is compromised, shutdown, or not available. Backup and recovery of the Sun Ray system includes the operating system, applications, and databases.  Due to the complexity of the Sun Ray system and potential third party applications, procedures will need to be developed to provide guidance to system administrators.  Without a process in place describing the steps to backup and recover the Sun Ray system, backups and recoveries may be inconsistent based on the system administrator performing the action.  Furthermore, if a system administrator would leave the position, there will be no documentation on the process to backup or recover the system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;DCSD-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4 Policy</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4 Policy</dc:subject>
+				<dc:identifier>1427</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16441r1_fix">Produce backup documentation for the Sun Ray system.</fixtext>
+			<fix id="F-16441r1_fix"/>
+			<check system="C-17300r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_Policy_STIG.xml"/>
+				<check-content>Request a copy of the procedures to backup the Sun Ray system.  If the documentation cannot be produced, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16416">
+		<title>There is no spare Sun Ray Desktop Unit</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17412r1_rule" severity="medium" weight="10.0">
+			<version>SUN0300</version>
+			<title>There is no spare Sun Ray Desktop Unit available for use in the event of a Sun Ray Desktop Unit malfunction or failure.</title>
+			<description>&lt;VulnDiscussion&gt;Users will not be able to access the required applications for their job function if the Sun Ray Desktop Unit fails or malfunctions. Having a spare Sun Ray Desktop Unit will provide users a quick replacement of the failed unit, while giving them minimal downtime. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;DCHW-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4 Policy</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4 Policy</dc:subject>
+				<dc:identifier>1427</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16442r1_fix">Purchase a spare Desktop Unit in case of a failure. </fixtext>
+			<fix id="F-16442r1_fix"/>
+			<check system="C-17301r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_Policy_STIG.xml"/>
+				<check-content>Ask the IOA/SA to show you where the spare Desktop Units are located in case of a failure.  If no spares exist, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16417">
+		<title>Sun Ray system not in control of site CCB</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17413r1_rule" severity="medium" weight="10.0">
+			<version>SUN0350</version>
+			<title>The Sun Ray system is not under direct control of a site Configuration Control Board.</title>
+			<description>&lt;VulnDiscussion&gt;Security integrity of the system and the ability to back-up and recover from failures cannot be maintained without the control of the system configuration.  Unless the configuration is controlled by an independent board it is much less likely to be in its approved accredited state.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;DCCB-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4 Policy</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4 Policy</dc:subject>
+				<dc:identifier>1427</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16443r1_fix">Implement a configuration management process for the Sun Ray system.</fixtext>
+			<fix id="F-16443r1_fix"/>
+			<check system="C-17302r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_Policy_STIG.xml"/>
+				<check-content>Ask to see the documented configuration management process for Sun Ray system.
+Ensure that the plan includes a site Configuration Control Board (CCB). If a plan that includes a CCB exists, this is not a finding. If a plan exists but does not include a CCB or there is not a plan, this is a finding.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16418">
+		<title>Sun Ray server not configured in PNP database</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17414r1_rule" severity="medium" weight="10.0">
+			<version>SUN0360</version>
+			<title>The site has not configured the Sun Ray server in the PNP database.</title>
+			<description>&lt;VulnDiscussion&gt;DoDI 8550.1 Ports, Protocols, and Services Management (PPSM) is the DoD’s policy on IP Ports, Protocols, and Services (PPS). It controls the PPS that are permitted or approved to cross DoD network boundaries. Standard well known and registered IP ports and associated protocols and services are assessed for vulnerabilities and threats to the entire Global Information Grid (GIG) which includes the DISN backbone networks. The results are published in a Vulnerability Assessment (VA) report. Each port and protocol is given a rating of green, yellow, orange, or red in association with 
+each of the 16 defined boundary types. Green means the protocol is relatively secure and is approved to cross the associated boundary without restrictions. Yellow means the protocol has security issues that must be mitigated to be used. Red means that the protocol is prohibited due to vulnerabilities that cannot be mitigated or approved, and is banned when crossing that boundary. The orange category requires DSAWG approval if the protocol exists and is necessary on the network.  However, the orange category mandates that new systems and applications must not be developed using this protocol whether it crosses a boundary or not. 
+
+The PPS Assurance Categories Assignment List (CAL) contains information regarding the assessed ports and protocols and defined boundaries, which is updated on a monthly basis. The PPSM information is available on the IASE and DKO/DoD IA Portal web sites. A portion of the DoDI 8550.1 PPS policy requires registration of those PPS that cross any of the boundaries defined by the policy that are “visible to DoD-managed components”. Therefore, to comply with the policy and ensure that protocols and ports are acceptable, Sun Ray servers will be registered as automated information 
+systems (AIS) with their associated TCP or UDP ports in the DoD Ports and Protocol Registration System.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;DCPP-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4 Policy</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4 Policy</dc:subject>
+				<dc:identifier>1427</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16444r1_fix">Register all Sun Ray traffic that is leaving the local enclave in the PNP database for the site.</fixtext>
+			<fix id="F-16444r1_fix"/>
+			<check system="C-17303r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_Policy_STIG.xml"/>
+				<check-content>If either inbound or outbound traffic to the Sun Ray server is leaving the local
+enclave, verify that the server has been registered in the Ports and Protocols (PNP) database (https://pnp.cert.smil.mil) for the site. If it not registered this is a finding. If the traffic is completely contained within the local enclave, this requirement does not apply.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+</Benchmark>

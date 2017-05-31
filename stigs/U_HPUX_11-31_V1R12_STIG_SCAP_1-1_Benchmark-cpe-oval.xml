@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/unix-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>repotool</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2016-06-17T16:34:54</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition class="inventory" id="oval:mil.disa.fso.hpux:def:1" version="1">
+      <metadata>
+        <title>HP-UX 11.31</title>
+        <affected family="unix">
+          <platform>HP-UX 11.31</platform>
+        </affected>
+        <reference ref_id="cpe:/o:hp:hp-ux:11.31" source="CPE" />
+        <description>The operating system installed on the system is HP-UX 11.31</description>
+      </metadata>
+      <criteria>
+        <criterion comment="Installed operating system is part of the Unix family" test_ref="oval:mil.disa.fso.hpux:tst:100" />
+        <criterion comment="Installed operating system is HP-UX 11.31" test_ref="oval:mil.disa.fso.hpux:tst:101" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check_existence="at_least_one_exists" id="oval:mil.disa.fso.hpux:tst:100" version="1" check="only one" comment="installed operating system is part of the Unix family">
+      <object object_ref="oval:mil.disa.fso.hpux:obj:100" />
+      <state state_ref="oval:mil.disa.fso.hpux:ste:100" />
+    </family_test>
+    <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.hpux:tst:101" version="1" comment="Installed operating system is HP-UX 11.31" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.fso.hpux:obj:101" />
+      <state state_ref="oval:mil.disa.fso.hpux:ste:101" />
+    </uname_test>
+  </tests>
+  <objects>
+    <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.hpux:obj:100" version="1" comment="The family object" />
+    <uname_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.hpux:obj:101" version="1" comment="The uname object" />
+  </objects>
+  <states>
+    <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.hpux:ste:100" version="1">
+      <family>unix</family>
+    </family_state>
+    <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.hpux:ste:101" version="1">
+      <os_release>B.11.31</os_release>
+    </uname_state>
+  </states>
+</oval_definitions>
+

@@ -1,0 +1,28 @@
+<form>
+	<controls>
+		<control type="Label" id="tab0LblIsoSelection" name="tab0LblIsoSelection" locationX="5" locationY="10" sizeX="125" sizeY="20" text="Selected ISO File:" />
+		<control type="textBox" id="tab0txtIsoSelection" name="tab0txtIsoSelection" locationX="5" locationY="30" sizeX="350" sizeY="20" backcolor="#ffffff" />
+		<control type="button" id="tab0btnSelectIso" name="tab0btnSelectIso" locationX="360" locationY="29" sizeX="80" sizeY="20" text="Browse..." />
+		<control type="button" id="tab0btnExtractIso" name="tab0btnExtractIso" locationX="450" locationY="29" sizeX="60" sizeY="20" text="Extract" />
+		<control type="button" id="tab0btnDiscardIso" name="tab0btnDiscardIso" locationX="510" locationY="29" sizeX="60" sizeY="20" text="Discard" />
+
+		<control type="Label" id="tab0LblAvailWim" name="tab0LblAvailWim" locationX="5" locationY="60" sizeX="300" sizeY="20" text="Available WIM Files:" />
+		<control type="comboBox" id="tab0cboAvailWim" name="tab0cboAvailWim" locationX="5" locationY="80" sizeX="300" sizeY="25" />
+		<control type="Label" id="tab0LblAvailWimIndex" name="tab0LblAvailWimIndex" locationX="305" locationY="60" sizeX="200" sizeY="20" text="Index:" />
+		<control type="comboBox" id="tab0cboAvailWimIndex" name="tab0cboAvailWimIndex" locationX="305" locationY="80" sizeX="50" sizeY="25" />
+		<control type="button" id="tab0btnMountWim" name="tab0btnMountWim" locationX="360" locationY="80" sizeX="80" sizeY="20" text="Mount" />
+		<control type="button" id="tab0btnCommitWim" name="tab0btnCommitWim" locationX="450" locationY="80" sizeX="60" sizeY="20" text="Commit"/>
+		<control type="button" id="tab0btnDiscardWim" name="tab0btnDiscardWim" locationX="510" locationY="80" sizeX="60" sizeY="20" text="Discard"/>
+		
+		
+		
+		
+		
+		
+		<control type="button" id="tab0btncreateiso" name="tab0btncreateiso" locationX="5" locationY="110" sizeX="570" sizeY="50" text="Create Updated ISO Package"/>
+		
+		<control type="pictureBox" id="tab0pic1" name="tab0pic1" locationX="5" locationY="175" sizeX="200" sizeY="200" imagePath="winUpd.png" />
+		<control type="pictureBox" id="tab0pic2" name="tab0pic2" locationX="190" locationY="175" sizeX="200" sizeY="200" imagePath="scap.png" />
+		<control type="pictureBox" id="tab0pic3" name="tab0pic3" locationX="380" locationY="175" sizeX="200" sizeY="200" imagePath="winSec.png" />
+	</controls>
+</form>

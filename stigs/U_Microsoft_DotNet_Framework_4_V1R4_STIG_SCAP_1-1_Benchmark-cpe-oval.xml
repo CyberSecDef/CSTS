@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>repotool</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2016-03-11T14:24:55</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.fso.dotnet:def:1" version="2" class="inventory">
+      <metadata>
+        <title>Microsoft .NET Framework 4.0 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft .NET Framework 4.0</platform>
+          <product>Microsoft .NET Framework</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:.net_framework:4.0" />
+        <description>Microsoft .NET Framework 4.0 is installed</description>
+      </metadata>
+      <criteria operator="OR">
+        <criterion comment=".NET Framework 4.0 Client version is installed" test_ref="oval:mil.disa.fso.dotnet:tst:100" />
+        <criterion comment=".NET Framework 4.0 Full version is installed" test_ref="oval:mil.disa.fso.dotnet:tst:101" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:tst:100" version="1" comment=".NET Framework 4.0 Client version is installed" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.fso.dotnet:obj:100" />
+      <state state_ref="oval:mil.disa.fso.dotnet:ste:100" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:tst:101" version="1" comment=".NET Framework 4.0 Full version is installed" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.fso.dotnet:obj:101" />
+      <state state_ref="oval:mil.disa.fso.dotnet:ste:100" />
+    </registry_test>
+  </tests>
+  <objects>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:100" version="1" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client\\Install">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client</key>
+      <name datatype="string">Install</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:obj:101" version="1" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\\Install">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full</key>
+      <name datatype="string">Install</name>
+    </registry_object>
+  </objects>
+  <states>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.dotnet:ste:100" version="1">
+      <value datatype="int">1</value>
+    </registry_state>
+  </states>
+</oval_definitions>
+

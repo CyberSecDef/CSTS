@@ -1,0 +1,2296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?>
+<Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" id="Google_Chrome_v24_Windows" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1">
+	<status date="2013-03-07">accepted</status>
+	<title>Google Chrome v24 Windows Benchmark</title>
+	<notice id="terms-of-use" xml:lang="en"/>
+	<reference href="http://iase.disa.mil">
+		<dc:publisher>DISA, Field Security Operations</dc:publisher>
+		<dc:source>STIG.DOD.MIL</dc:source>
+	</reference>
+	<plain-text id="release-info">Release: 1 Benchmark Date: 07 Mar 2013</plain-text>
+	<platform idref="cpe:/a:google:chrome"/>
+	<version>1</version>
+	<Profile id="MAC-1_Classified">
+		<title>I - Mission Critial Classified</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-35464" selected="true"/>
+		<select idref="V-35619" selected="true"/>
+		<select idref="V-35620" selected="true"/>
+		<select idref="V-35621" selected="true"/>
+		<select idref="V-35622" selected="true"/>
+		<select idref="V-35623" selected="true"/>
+		<select idref="V-35624" selected="true"/>
+		<select idref="V-35625" selected="true"/>
+		<select idref="V-35626" selected="true"/>
+		<select idref="V-35757" selected="true"/>
+		<select idref="V-35758" selected="true"/>
+		<select idref="V-35759" selected="true"/>
+		<select idref="V-35760" selected="true"/>
+		<select idref="V-35761" selected="true"/>
+		<select idref="V-35762" selected="true"/>
+		<select idref="V-35763" selected="true"/>
+		<select idref="V-35764" selected="true"/>
+		<select idref="V-35765" selected="true"/>
+		<select idref="V-35767" selected="true"/>
+		<select idref="V-35769" selected="true"/>
+		<select idref="V-35771" selected="true"/>
+		<select idref="V-35773" selected="true"/>
+		<select idref="V-35776" selected="true"/>
+		<select idref="V-35777" selected="true"/>
+		<select idref="V-35779" selected="true"/>
+		<select idref="V-35780" selected="true"/>
+		<select idref="V-35781" selected="true"/>
+		<select idref="V-35784" selected="true"/>
+		<select idref="V-35785" selected="true"/>
+		<select idref="V-35787" selected="true"/>
+		<select idref="V-35788" selected="true"/>
+		<!--<select idref="V-35789" selected="true"/>-->
+		<select idref="V-35790" selected="true"/>
+		<select idref="V-35791" selected="true"/>
+		<select idref="V-35792" selected="true"/>
+		<select idref="V-35793" selected="true"/>
+		<select idref="V-35794" selected="true"/>
+		<!--<select idref="V-35795" selected="true"/>-->
+		<!--<select idref="V-35797" selected="true"/>-->
+		<!--<select idref="V-35799" selected="true"/>-->
+		<!--<select idref="V-36600" selected="true"/>-->
+		<!--<select idref="V-36603" selected="true"/>-->
+	</Profile>
+	<Profile id="MAC-1_Public">
+		<title>I - Mission Critial Public</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-35464" selected="true"/>
+		<select idref="V-35619" selected="true"/>
+		<select idref="V-35620" selected="true"/>
+		<select idref="V-35621" selected="true"/>
+		<select idref="V-35622" selected="true"/>
+		<select idref="V-35623" selected="true"/>
+		<select idref="V-35624" selected="true"/>
+		<select idref="V-35625" selected="true"/>
+		<select idref="V-35626" selected="true"/>
+		<select idref="V-35757" selected="true"/>
+		<select idref="V-35758" selected="true"/>
+		<select idref="V-35759" selected="true"/>
+		<select idref="V-35760" selected="true"/>
+		<select idref="V-35761" selected="true"/>
+		<select idref="V-35762" selected="true"/>
+		<select idref="V-35763" selected="true"/>
+		<select idref="V-35764" selected="true"/>
+		<select idref="V-35765" selected="true"/>
+		<select idref="V-35767" selected="true"/>
+		<select idref="V-35769" selected="true"/>
+		<select idref="V-35771" selected="true"/>
+		<select idref="V-35773" selected="true"/>
+		<select idref="V-35776" selected="true"/>
+		<select idref="V-35777" selected="true"/>
+		<select idref="V-35779" selected="true"/>
+		<select idref="V-35780" selected="true"/>
+		<select idref="V-35781" selected="true"/>
+		<select idref="V-35784" selected="true"/>
+		<select idref="V-35785" selected="true"/>
+		<select idref="V-35787" selected="true"/>
+		<select idref="V-35788" selected="true"/>
+		<!--<select idref="V-35789" selected="true"/>-->
+		<select idref="V-35790" selected="true"/>
+		<select idref="V-35791" selected="true"/>
+		<select idref="V-35792" selected="true"/>
+		<select idref="V-35793" selected="true"/>
+		<select idref="V-35794" selected="true"/>
+		<!--<select idref="V-35795" selected="true"/>-->
+		<!--<select idref="V-35797" selected="true"/>-->
+		<!--<select idref="V-35799" selected="true"/>-->
+		<!--<select idref="V-36600" selected="true"/>-->
+		<!--<select idref="V-36603" selected="true"/>-->
+	</Profile>
+	<Profile id="MAC-1_Sensitive">
+		<title>I - Mission Critial Sensitive</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-35464" selected="true"/>
+		<select idref="V-35619" selected="true"/>
+		<select idref="V-35620" selected="true"/>
+		<select idref="V-35621" selected="true"/>
+		<select idref="V-35622" selected="true"/>
+		<select idref="V-35623" selected="true"/>
+		<select idref="V-35624" selected="true"/>
+		<select idref="V-35625" selected="true"/>
+		<select idref="V-35626" selected="true"/>
+		<select idref="V-35757" selected="true"/>
+		<select idref="V-35758" selected="true"/>
+		<select idref="V-35759" selected="true"/>
+		<select idref="V-35760" selected="true"/>
+		<select idref="V-35761" selected="true"/>
+		<select idref="V-35762" selected="true"/>
+		<select idref="V-35763" selected="true"/>
+		<select idref="V-35764" selected="true"/>
+		<select idref="V-35765" selected="true"/>
+		<select idref="V-35767" selected="true"/>
+		<select idref="V-35769" selected="true"/>
+		<select idref="V-35771" selected="true"/>
+		<select idref="V-35773" selected="true"/>
+		<select idref="V-35776" selected="true"/>
+		<select idref="V-35777" selected="true"/>
+		<select idref="V-35779" selected="true"/>
+		<select idref="V-35780" selected="true"/>
+		<select idref="V-35781" selected="true"/>
+		<select idref="V-35784" selected="true"/>
+		<select idref="V-35785" selected="true"/>
+		<select idref="V-35787" selected="true"/>
+		<select idref="V-35788" selected="true"/>
+		<!--<select idref="V-35789" selected="true"/>-->
+		<select idref="V-35790" selected="true"/>
+		<select idref="V-35791" selected="true"/>
+		<select idref="V-35792" selected="true"/>
+		<select idref="V-35793" selected="true"/>
+		<select idref="V-35794" selected="true"/>
+		<!--<select idref="V-35795" selected="true"/>-->
+		<!--<select idref="V-35797" selected="true"/>-->
+		<!--<select idref="V-35799" selected="true"/>-->
+		<!--<select idref="V-36600" selected="true"/>-->
+		<!--<select idref="V-36603" selected="true"/>-->
+	</Profile>
+	<Profile id="MAC-2_Classified">
+		<title>II - Mission Support Classified</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-35464" selected="true"/>
+		<select idref="V-35619" selected="true"/>
+		<select idref="V-35620" selected="true"/>
+		<select idref="V-35621" selected="true"/>
+		<select idref="V-35622" selected="true"/>
+		<select idref="V-35623" selected="true"/>
+		<select idref="V-35624" selected="true"/>
+		<select idref="V-35625" selected="true"/>
+		<select idref="V-35626" selected="true"/>
+		<select idref="V-35757" selected="true"/>
+		<select idref="V-35758" selected="true"/>
+		<select idref="V-35759" selected="true"/>
+		<select idref="V-35760" selected="true"/>
+		<select idref="V-35761" selected="true"/>
+		<select idref="V-35762" selected="true"/>
+		<select idref="V-35763" selected="true"/>
+		<select idref="V-35764" selected="true"/>
+		<select idref="V-35765" selected="true"/>
+		<select idref="V-35767" selected="true"/>
+		<select idref="V-35769" selected="true"/>
+		<select idref="V-35771" selected="true"/>
+		<select idref="V-35773" selected="true"/>
+		<select idref="V-35776" selected="true"/>
+		<select idref="V-35777" selected="true"/>
+		<select idref="V-35779" selected="true"/>
+		<select idref="V-35780" selected="true"/>
+		<select idref="V-35781" selected="true"/>
+		<select idref="V-35784" selected="true"/>
+		<select idref="V-35785" selected="true"/>
+		<select idref="V-35787" selected="true"/>
+		<select idref="V-35788" selected="true"/>
+		<!--<select idref="V-35789" selected="true"/>-->
+		<select idref="V-35790" selected="true"/>
+		<select idref="V-35791" selected="true"/>
+		<select idref="V-35792" selected="true"/>
+		<select idref="V-35793" selected="true"/>
+		<select idref="V-35794" selected="true"/>
+		<!--<select idref="V-35795" selected="true"/>-->
+		<!--<select idref="V-35797" selected="true"/>-->
+		<!--<select idref="V-35799" selected="true"/>-->
+		<!--<select idref="V-36600" selected="true"/>-->
+		<!--<select idref="V-36603" selected="true"/>-->
+	</Profile>
+	<Profile id="MAC-2_Public">
+		<title>II - Mission Support Public</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-35464" selected="true"/>
+		<select idref="V-35619" selected="true"/>
+		<select idref="V-35620" selected="true"/>
+		<select idref="V-35621" selected="true"/>
+		<select idref="V-35622" selected="true"/>
+		<select idref="V-35623" selected="true"/>
+		<select idref="V-35624" selected="true"/>
+		<select idref="V-35625" selected="true"/>
+		<select idref="V-35626" selected="true"/>
+		<select idref="V-35757" selected="true"/>
+		<select idref="V-35758" selected="true"/>
+		<select idref="V-35759" selected="true"/>
+		<select idref="V-35760" selected="true"/>
+		<select idref="V-35761" selected="true"/>
+		<select idref="V-35762" selected="true"/>
+		<select idref="V-35763" selected="true"/>
+		<select idref="V-35764" selected="true"/>
+		<select idref="V-35765" selected="true"/>
+		<select idref="V-35767" selected="true"/>
+		<select idref="V-35769" selected="true"/>
+		<select idref="V-35771" selected="true"/>
+		<select idref="V-35773" selected="true"/>
+		<select idref="V-35776" selected="true"/>
+		<select idref="V-35777" selected="true"/>
+		<select idref="V-35779" selected="true"/>
+		<select idref="V-35780" selected="true"/>
+		<select idref="V-35781" selected="true"/>
+		<select idref="V-35784" selected="true"/>
+		<select idref="V-35785" selected="true"/>
+		<select idref="V-35787" selected="true"/>
+		<select idref="V-35788" selected="true"/>
+		<!--<select idref="V-35789" selected="true"/>-->
+		<select idref="V-35790" selected="true"/>
+		<select idref="V-35791" selected="true"/>
+		<select idref="V-35792" selected="true"/>
+		<select idref="V-35793" selected="true"/>
+		<select idref="V-35794" selected="true"/>
+		<!--<select idref="V-35795" selected="true"/>-->
+		<!--<select idref="V-35797" selected="true"/>-->
+		<!--<select idref="V-35799" selected="true"/>-->
+		<!--<select idref="V-36600" selected="true"/>-->
+		<!--<select idref="V-36603" selected="true"/>-->
+	</Profile>
+	<Profile id="MAC-2_Sensitive">
+		<title>II - Mission Support Sensitive</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-35464" selected="true"/>
+		<select idref="V-35619" selected="true"/>
+		<select idref="V-35620" selected="true"/>
+		<select idref="V-35621" selected="true"/>
+		<select idref="V-35622" selected="true"/>
+		<select idref="V-35623" selected="true"/>
+		<select idref="V-35624" selected="true"/>
+		<select idref="V-35625" selected="true"/>
+		<select idref="V-35626" selected="true"/>
+		<select idref="V-35757" selected="true"/>
+		<select idref="V-35758" selected="true"/>
+		<select idref="V-35759" selected="true"/>
+		<select idref="V-35760" selected="true"/>
+		<select idref="V-35761" selected="true"/>
+		<select idref="V-35762" selected="true"/>
+		<select idref="V-35763" selected="true"/>
+		<select idref="V-35764" selected="true"/>
+		<select idref="V-35765" selected="true"/>
+		<select idref="V-35767" selected="true"/>
+		<select idref="V-35769" selected="true"/>
+		<select idref="V-35771" selected="true"/>
+		<select idref="V-35773" selected="true"/>
+		<select idref="V-35776" selected="true"/>
+		<select idref="V-35777" selected="true"/>
+		<select idref="V-35779" selected="true"/>
+		<select idref="V-35780" selected="true"/>
+		<select idref="V-35781" selected="true"/>
+		<select idref="V-35784" selected="true"/>
+		<select idref="V-35785" selected="true"/>
+		<select idref="V-35787" selected="true"/>
+		<select idref="V-35788" selected="true"/>
+		<!--<select idref="V-35789" selected="true"/>-->
+		<select idref="V-35790" selected="true"/>
+		<select idref="V-35791" selected="true"/>
+		<select idref="V-35792" selected="true"/>
+		<select idref="V-35793" selected="true"/>
+		<select idref="V-35794" selected="true"/>
+		<!--<select idref="V-35795" selected="true"/>-->
+		<!--<select idref="V-35797" selected="true"/>-->
+		<!--<select idref="V-35799" selected="true"/>-->
+		<!--<select idref="V-36600" selected="true"/>-->
+		<!--<select idref="V-36603" selected="true"/>-->
+	</Profile>
+	<Profile id="MAC-3_Classified">
+		<title>III - Administrative Classified</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-35464" selected="true"/>
+		<select idref="V-35619" selected="true"/>
+		<select idref="V-35620" selected="true"/>
+		<select idref="V-35621" selected="true"/>
+		<select idref="V-35622" selected="true"/>
+		<select idref="V-35623" selected="true"/>
+		<select idref="V-35624" selected="true"/>
+		<select idref="V-35625" selected="true"/>
+		<select idref="V-35626" selected="true"/>
+		<select idref="V-35757" selected="true"/>
+		<select idref="V-35758" selected="true"/>
+		<select idref="V-35759" selected="true"/>
+		<select idref="V-35760" selected="true"/>
+		<select idref="V-35761" selected="true"/>
+		<select idref="V-35762" selected="true"/>
+		<select idref="V-35763" selected="true"/>
+		<select idref="V-35764" selected="true"/>
+		<select idref="V-35765" selected="true"/>
+		<select idref="V-35767" selected="true"/>
+		<select idref="V-35769" selected="true"/>
+		<select idref="V-35771" selected="true"/>
+		<select idref="V-35773" selected="true"/>
+		<select idref="V-35776" selected="true"/>
+		<select idref="V-35777" selected="true"/>
+		<select idref="V-35779" selected="true"/>
+		<select idref="V-35780" selected="true"/>
+		<select idref="V-35781" selected="true"/>
+		<select idref="V-35784" selected="true"/>
+		<select idref="V-35785" selected="true"/>
+		<select idref="V-35787" selected="true"/>
+		<select idref="V-35788" selected="true"/>
+		<!--<select idref="V-35789" selected="true"/>-->
+		<select idref="V-35790" selected="true"/>
+		<select idref="V-35791" selected="true"/>
+		<select idref="V-35792" selected="true"/>
+		<select idref="V-35793" selected="true"/>
+		<select idref="V-35794" selected="true"/>
+		<!--<select idref="V-35795" selected="true"/>-->
+		<!--<select idref="V-35797" selected="true"/>-->
+		<!--<select idref="V-35799" selected="true"/>-->
+		<!--<select idref="V-36600" selected="true"/>-->
+		<!--<select idref="V-36603" selected="true"/>-->
+	</Profile>
+	<Profile id="MAC-3_Public">
+		<title>III - Administrative Public</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-35464" selected="true"/>
+		<select idref="V-35619" selected="true"/>
+		<select idref="V-35620" selected="true"/>
+		<select idref="V-35621" selected="true"/>
+		<select idref="V-35622" selected="true"/>
+		<select idref="V-35623" selected="true"/>
+		<select idref="V-35624" selected="true"/>
+		<select idref="V-35625" selected="true"/>
+		<select idref="V-35626" selected="true"/>
+		<select idref="V-35757" selected="true"/>
+		<select idref="V-35758" selected="true"/>
+		<select idref="V-35759" selected="true"/>
+		<select idref="V-35760" selected="true"/>
+		<select idref="V-35761" selected="true"/>
+		<select idref="V-35762" selected="true"/>
+		<select idref="V-35763" selected="true"/>
+		<select idref="V-35764" selected="true"/>
+		<select idref="V-35765" selected="true"/>
+		<select idref="V-35767" selected="true"/>
+		<select idref="V-35769" selected="true"/>
+		<select idref="V-35771" selected="true"/>
+		<select idref="V-35773" selected="true"/>
+		<select idref="V-35776" selected="true"/>
+		<select idref="V-35777" selected="true"/>
+		<select idref="V-35779" selected="true"/>
+		<select idref="V-35780" selected="true"/>
+		<select idref="V-35781" selected="true"/>
+		<select idref="V-35784" selected="true"/>
+		<select idref="V-35785" selected="true"/>
+		<select idref="V-35787" selected="true"/>
+		<select idref="V-35788" selected="true"/>
+		<!--<select idref="V-35789" selected="true"/>-->
+		<select idref="V-35790" selected="true"/>
+		<select idref="V-35791" selected="true"/>
+		<select idref="V-35792" selected="true"/>
+		<select idref="V-35793" selected="true"/>
+		<select idref="V-35794" selected="true"/>
+		<!--<select idref="V-35795" selected="true"/>-->
+		<!--<select idref="V-35797" selected="true"/>-->
+		<!--<select idref="V-35799" selected="true"/>-->
+		<!--<select idref="V-36600" selected="true"/>-->
+		<!--<select idref="V-36603" selected="true"/>-->
+	</Profile>
+	<Profile id="MAC-3_Sensitive">
+		<title>III - Administrative Sensitive</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-35464" selected="true"/>
+		<select idref="V-35619" selected="true"/>
+		<select idref="V-35620" selected="true"/>
+		<select idref="V-35621" selected="true"/>
+		<select idref="V-35622" selected="true"/>
+		<select idref="V-35623" selected="true"/>
+		<select idref="V-35624" selected="true"/>
+		<select idref="V-35625" selected="true"/>
+		<select idref="V-35626" selected="true"/>
+		<select idref="V-35757" selected="true"/>
+		<select idref="V-35758" selected="true"/>
+		<select idref="V-35759" selected="true"/>
+		<select idref="V-35760" selected="true"/>
+		<select idref="V-35761" selected="true"/>
+		<select idref="V-35762" selected="true"/>
+		<select idref="V-35763" selected="true"/>
+		<select idref="V-35764" selected="true"/>
+		<select idref="V-35765" selected="true"/>
+		<select idref="V-35767" selected="true"/>
+		<select idref="V-35769" selected="true"/>
+		<select idref="V-35771" selected="true"/>
+		<select idref="V-35773" selected="true"/>
+		<select idref="V-35776" selected="true"/>
+		<select idref="V-35777" selected="true"/>
+		<select idref="V-35779" selected="true"/>
+		<select idref="V-35780" selected="true"/>
+		<select idref="V-35781" selected="true"/>
+		<select idref="V-35784" selected="true"/>
+		<select idref="V-35785" selected="true"/>
+		<select idref="V-35787" selected="true"/>
+		<select idref="V-35788" selected="true"/>
+		<!--<select idref="V-35789" selected="true"/>-->
+		<select idref="V-35790" selected="true"/>
+		<select idref="V-35791" selected="true"/>
+		<select idref="V-35792" selected="true"/>
+		<select idref="V-35793" selected="true"/>
+		<select idref="V-35794" selected="true"/>
+		<!--<select idref="V-35795" selected="true"/>-->
+		<!--<select idref="V-35797" selected="true"/>-->
+		<!--<select idref="V-35799" selected="true"/>-->
+		<!--<select idref="V-36600" selected="true"/>-->
+		<!--<select idref="V-36603" selected="true"/>-->
+	</Profile>
+	<Group id="V-35464">
+		<title>DTBC0001 - Disable firewall traversal from remote host</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-46751r1_rule" severity="medium" weight="10.0">
+			<version>DTBC-0001</version>
+			<title>Firewall traversal from remote host must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;Remote connections should never be allowed that bypass the firewall, as there is no way to verify if they can be trusted.
+
+"Enables usage of STUN and relay servers when remote clients are trying to establish a connection to this machine. If this setting is enabled, then remote clients can discover and connect to this machine even if they are separated by a firewall. If this setting is disabled and outgoing UDP connections are filtered by the firewall, then this machine will only allow connections from client machines within the local network. If this policy is left not set the setting will be enabled." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40005r1_fix">Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If RemoteAccessHostFirewallTraversal is not displayed under the Policy Name column or it is not set to false under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the RemoteAccessHostFirewallTraversal value name does not exist or its value data is not set to 0, then this is a finding.</fixtext>
+			<fix id="F-40005r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240001" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Valid for Chrome Browser version 14 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: RemoteAccessHostFirewallTraversal
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 0
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Configure remote access options\
+    Policy Name: Enable firewall traversal from remote access host
+    Policy State: Disabled
+    Policy Value: N/A</check-content>
+			</check>
+		</Rule>
+		<Rule id="SV-46751r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0001</version>
+			<title>Firewall traversal from remote host must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;Remote connections should never be allowed that bypass the firewall, as there is no way to verify if they can be trusted.
+
+"Enables usage of STUN and relay servers when remote clients are trying to establish a connection to this machine. If this setting is enabled, then remote clients can discover and connect to this machine even if they are separated by a firewall. If this setting is disabled and outgoing UDP connections are filtered by the firewall, then this machine will only allow connections from client machines within the local network. If this policy is left not set the setting will be enabled." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40005r1_fix">Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If RemoteAccessHostFirewallTraversal is not displayed under the Policy Name column or it is not set to false under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the RemoteAccessHostFirewallTraversal value name does not exist or its value data is not set to 0, then this is a finding.</fixtext>
+			<fix id="F-40005r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240001" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Valid for Chrome Browser version 14 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: RemoteAccessHostFirewallTraversal
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 0
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Configure remote access options\
+    Policy Name: Enable firewall traversal from remote access host
+    Policy State: Disabled
+    Policy Value: N/A</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35619">
+		<title>DTBC0002 - Disable all sites from tracking a users location</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-46906r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0002</version>
+			<title>Site tracking users location must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;Tracking of user location data over time poses a significant OPSEC issue.
+
+"allows you to set whether websites are allowed to track the users' physical location. Tracking the users' physical location can be allowed by default, denied by default or the user can be asked every time a website requests the physical location. If this policy is left not set, 'AskGeolocation' will be used and the user will be able to change it.
+	1 = Allow sites to track the users' physical location
+	2 = Do not allow any site to track the users' physical location
+	3 = Ask whenever a site wants to track the users' physical location" - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40160r1_fix">Valid for Chrome Browser version 10 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: DefaultGeolocationSetting
+    Value Type: REG_DWORD
+    Value Data: 2
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Content Settings\
+    Policy Name: Default geolocation setting
+    Policy State: Enabled
+    Policy Value: Do not allow any site to track the users' physical location</fixtext>
+			<fix id="F-40160r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240002" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If DefaultGeolocationSetting is not displayed under the Policy Name column or it is not set to Do not allow any site to track the users’ physical location under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the DefaultGeolocationSetting value name does not exist or its value data is not set to 2, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35620">
+		<title>DTBC0003 - Do not allow sites to show desktop notifications</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-46907r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0003</version>
+			<title>Sites ability for showing desktop notifications must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Allows you to set whether websites are allowed to display desktop notifications. Displaying desktop notifications can be allowed by default, denied by default or the user can be asked every time a website wants to show desktop notifications. If this policy is left not set, 'AskNotifications' will be used and the user will be able to change it.
+    1 = Allow sites to show desktop notifications
+    2 = Do not allow any site to show desktop notifications
+    3 = Ask every time a site wants to show desktop notifications" - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40161r1_fix">Valid for Chrome Browser version 10 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: DefaultNotificationsSetting
+    Value Type: REG_DWORD
+    Value Data: 2
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Content Settings\
+    Policy Name: Default notification setting
+    Policy State: Enabled
+    Policy Value: Do not allow any site to show desktop notifications</fixtext>
+			<fix id="F-40161r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240003" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If Default notification setting is not displayed under the Policy Name column or it is not set to Do not allow any site to show desktop notifications under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the DefaultNotificationsSetting value name does not exist or its value data is not set to 2, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35621">
+		<title>DTBC0004 - Disable sites from showing pop-ups</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-46908r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0004</version>
+			<title>Sites ability to show pop-ups must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Allows you to set whether websites are allowed to show pop-ups. Showing popups can be either allowed for all websites or denied for all websites. If this policy is left not set, 'BlockPopups' will be used and the user will be able to change it.
+    1 = Allow all sites to show pop-ups
+    2 = Do not allow any site to show popups" - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40162r1_fix">Valid for Chrome Browser version 10 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: DefaultPopupsSetting
+    Value Type: REG_DWORD
+    Value Data: 2
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Content Settings\
+    Policy Name: Default popups setting
+    Policy State: Enabled
+    Policy Value: Do not allow any site to show popups</fixtext>
+			<fix id="F-40162r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240004" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If DefaultPopupsSetting is not displayed under the Policy Name column or it is not set to Do not allow any site to show popups under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the value name DefaultPopupsSetting does not exist or its value data is not set to 2, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35622">
+		<title>DTBC0005 - Blacklist extensions by default</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-46909r2_rule" severity="high" weight="10.0">
+			<version>DTBC-0005</version>
+			<title>Extensions must be blacklisted by default</title>
+			<description>&lt;VulnDiscussion&gt;Extensions are developed by third party sources. They are designed to extend Google Chrome's functionality. An extension can be made by anyone, to do and access almost anything on a system; this means they pose a high risk to any system that would allow all extensions to be installed by default. 
+
+"Allows you to specify which extensions the users can NOT install. Extensions already installed will be removed if blacklisted. A blacklist value of '*' means all extensions are blacklisted unless they are explicitly listed in the whitelist. If this policy is left not set the user can install any extension in Google Chrome." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40163r1_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\ExtensionInstallBlacklist
+    Value Name: 1
+    Value Type: String (REG_SZ)
+    Value Data: *
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Extensions\
+    Policy Name: Configure extension installation blacklist
+    Policy State: Enabled
+    Policy Value: *</fixtext>
+			<fix id="F-40163r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240005" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If ExtensionInstallBlacklist is not displayed under the Policy Name column or it is not set to * under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\ExtensionInstallBlacklist
+3. If the ExtensionInstallBlacklist key does not exist, or a registry value name of 1 does not exist under that key, or the registry value name of 1 does not have its value data set to * then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35623">
+		<title>DTBC0006 - Whitelist approved extensions</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-46910r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0006</version>
+			<title>Extensions that are approved for use must be whitelisted</title>
+			<description>&lt;VulnDiscussion&gt;The whitelist should only contain organizationally approved extensions. This is to prevent a user from accidently whitelisitng a malicious extension.
+
+"Allows you to specify which extensions are not subject to the blacklist. A blacklist value of * means all extensions are blacklisted and users can only install extensions listed in the whitelist. By default, no extensions are whitelisted. If all extensions have been blacklisted by policy, then the whitelist policy can be used to allow specific extensions to be installed. Administrators should determine which extensions should be allowed to be installed by their users. If no extensions are whitelisted, then no extensions can be installed when combined with blacklisting all extensions" - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40164r1_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\ExtensionInstallWhitelist
+    For each extension that is to whitelisted sequential keys must be created. The name of the keys are numeric going 1,2,3,etc.
+    Value Name: 1
+    Value Type: String (REG_SZ)
+    Value Data: oiigbmnaadbkfbmpbfijlflahbdbdgdf
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Extensions\
+    Policy Name: Configure extension installation whitelist
+    Policy State: Enabled
+    Policy Value: oiigbmnaadbkfbmpbfijlflahbdbdgdf
+    
+Note: oiigbmnaadbkfbmpbfijlflahbdbdgdf is the extension ID for scriptno(a commonly used Chrome extension)</fixtext>
+			<fix id="F-40164r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240006" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If ExtensionInstallWhitelist is not displayed under the Policy Name column or it is not set to oiigbmnaadbkfbmpbfijlflahbdbdgdf or a list of administrator approved extension IDs, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\ExtensionInstallWhitelist
+3. If the ExtensionInstallWhitelist key does not exist or is not set to oiigbmnaadbkfbmpbfijlflahbdbdgdf or a list of administrator approved extension IDs, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35624">
+		<title>DTBC0007 - Specify the default search provider name</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-46911r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0007</version>
+			<title>The default search providers name must be set</title>
+			<description>&lt;VulnDiscussion&gt;"Specifies the name of the default search provider. If left empty or not set, the host name specified by the search URL will be used. This policy is only considered if the 'DefaultSearchProviderEnabled' policy is enabled.
+    When doing internet searches it is important to used an encrypted connection via https." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40165r1_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: DefaultSearchProviderName
+    Value Type: String (REG_SZ)
+    Value Data: organization approved encrypted search provider (ex. Google Encrypted Search)
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Default search provider\
+    Policy Name: Default search provider name
+    Policy State: Enabled
+    Policy Value: set to an organization approved encrypted search provider (ex. Google Encrypted Search)</fixtext>
+			<fix id="F-40165r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240007" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If DefaultSearchProviderName is displayed under the Policy Name column or it is not set to an organization approved encrypted search provider (ex. Google Encrypted Search) under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the DefaultSearchProviderName value name does not exist or it is not set to an organization approved encrypted search provider (ex. Google Encrypted Search), then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35625">
+		<title>DTBC0008 - Set default search provider URL to perform encrypted search</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-46912r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0008</version>
+			<title>The default search provider URL must be set</title>
+			<description>&lt;VulnDiscussion&gt;"Specifies the URL of the search engine used when doing a default search. The URL should contain the string '{searchTerms}', which will be replaced at query time by the terms the user is searching for. This option must be set when the 'DefaultSearchProviderEnabled' policy is enabled and will only be respected if this is the case.." - Google Chrome Administrators Policy List
+
+    When doing internet searches it is important to used an encrypted connection via https. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40166r1_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: DefaultSearchProviderSearchURL
+    Value Type: String (REG_SZ)
+    Value Data: must be set to an organization approved encrypted search string 
+    (ex. https://encrypted.google.com/search?{google:acceptedSuggestion}{google:originalQueryForSuggestion}sourceid=chrome&amp;amp;ie={inputEncoding}&amp;amp;q=%{searchTerms})
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Default search provider\
+    Policy Name: Default search provider search URL
+    Policy State: Enabled
+    Policy Value: must be set to an organization approved encrypted search string 
+    (ex. https://encrypted.google.com/search?{google:acceptedSuggestion}{google:originalQueryForSuggestion}sourceid=chrome&amp;amp;ie={inputEncoding}&amp;amp;q=%{searchTerms})</fixtext>
+			<fix id="F-40166r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240008" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If DefaultSearchProviderSearchURL is not displayed under the Policy Name column or it is not set to an organization approved encrypted search string 
+    (ex. https://encrypted.google.com/search?{google:acceptedSuggestion}{google:originalQueryForSuggestion}sourceid=chrome&amp;amp;ie={inputEncoding}&amp;amp;q=%{searchTerms}) under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the DefaultSearchProviderSearchURL value name does not exist or its value data is not set to  an organization approved encrypted search string 
+    (ex. https://encrypted.google.com/search?{google:acceptedSuggestion}{google:originalQueryForSuggestion}sourceid=chrome&amp;amp;ie={inputEncoding}&amp;amp;q=%{searchTerms}) then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35626">
+		<title>DTBC0009 - Enable default search provider</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-46913r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0009</version>
+			<title>Default search provider must be enabled</title>
+			<description>&lt;VulnDiscussion&gt;"Enables the use of a default search provider. If you enable this setting, a default search is performed when the user types text In the omnibox that is not a URL. You can specify the default search provider to be used by setting the rest of the default search policies. If these are left empty, the user can choose the default provider. If you disable this setting, no search is performed when the user enters non-URL text in the omnibox. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set, the default search provider is enabled, and the user will be able to set the search provider list." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40180r1_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: DefaultSearchProviderEnabled
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 1
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Default search provider\
+    Policy Name: Enable the default search provider
+    Policy State: Enabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40180r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240009" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If DefaultSearchProviderEnabled is not displayed under the Policy Name column or it is not set to true under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the DefaultSearchProviderEnabled value name does not exist or its value data is not set to 1, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35757">
+		<title>DTBC0010 - Disable cleartext passwords in Password Manager</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47044r2_rule" severity="high" weight="10.0">
+			<version>DTBC-0010</version>
+			<title>Use of cleartext passwords in the Password Manager must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;Cleartext passwords would allow another individual to see password via shouldersurfing.
+
+"Controls whether the user may show passwords in clear text in the password manager. If you disable this setting, the password manager does not allow showing stored passwords in clear text in the password manager window. If you enable or do not set this policy, users can view their passwords in clear text in the password manager.." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40303r1_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: PasswordManagerAllowShowPasswords
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 0
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Password manager\
+    Policy Name: Allow users to show passwords in Password Manager
+    Policy State: Disabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40303r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240010" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If PasswordManagerAllowShowPasswords is not displayed under the Policy Name column or it is not set to false under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the PasswordManagerAllowShowPasswords value name does not exist or its value data is not set to 0, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35758">
+		<title>DTBC0011 - Disable the Password Manager</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47045r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0011</version>
+			<title>The Password Manager must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Enables saving passwords and using saved passwords in Google Chrome. If you enable this setting, users can have Google Chrome memorize passwords and provide them automatically the next time they log in to a site. If you disable this setting, users are not able to save passwords or use already saved passwords. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set, this will be enabled but the user will be able to change it." - Google Chrome Administrators Policy List
+
+Password manager should not be used as it stores passwords locally.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40304r1_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: PasswordManagerEnabled
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 0
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Password Manager\
+    Policy Name: Enable the password manager
+    Policy State: Disabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40304r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240011" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If PasswordManagerEnabled is not displayed under the Policy Name column or it is not set to false under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the PasswordManagerEnabled value name does not exist or its value data is not set to 0, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35759">
+		<title>DTBC0012 - Set HTTP Authentication to negotiate</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47046r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0012</version>
+			<title>The HTTP Authentication must be set to negotiate</title>
+			<description>&lt;VulnDiscussion&gt;"Specifies which HTTP Authentication schemes are supported by Google Chrome. Possible values are 'basic', 'digest', 'ntlm' and 'negotiate'. Separate multiple values with commas. If this policy is left not set, all four schemes will be used." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40305r1_fix">Valid for Chrome Browser version 9 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: AuthSchemes
+    Value Type: String (REG_SZ)
+    Value Data: negotiate
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Policies for HTTP Authentication\
+    Policy Name: Supported authentication schemes
+    Policy State: Enabled
+    Policy Value: negotiate</fixtext>
+			<fix id="F-40305r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240012" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If AuthSchemes is not displayed under the Policy Name column or it is not set to negotiate under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome
+3. If the AuthSchemes value name does not exist or its value data is not set to negotiate, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35760">
+		<title>DTBC0013 - Disable running outdated plugins</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47047r2_rule" severity="high" weight="10.0">
+			<version>DTBC-0013</version>
+			<title>The running of outdated plugins must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;Running outdated plugins could lead to system compromise through the use of known exploits.Having plugins that udpated to the most current version ensures the smallest attack surfuce possible.
+
+"Allows Google Chrome to run plugins that are outdated. If you enable this setting, outdated plugins are used as normal plugins. If you disable this setting, outdated plugins will not be used and users will not be asked for permission to run them. If this setting is not set, users will be asked for permission to run outdated plugins." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40306r1_fix">Valid for Chrome Browser version 12 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: AllowOutdatedPlugins
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 0
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Allow running plugins that are outdated
+    Policy State: Disabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40306r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240013" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If AllowOutdatedPlugins is not displayed under the Policy Name column or it is not set to false under the Policy Name column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome
+3. If the AllowOutdatedPlugins value name does not exist or its value data is not set to 0, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35761">
+		<title>DTBC0014 - Ask for user permission to run plugins requiring authorization</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47048r2_rule" severity="high" weight="10.0">
+			<version>DTBC-0014</version>
+			<title>Plugins requiring authorization must ask for user permission</title>
+			<description>&lt;VulnDiscussion&gt;"Allows Google Chrome to run plugins that require authorization. If you enable this setting, plugins that are not outdated always run. If this setting is disabled or not set, users will be asked for permission to run plugins that require authorization. These are plugins that can compromise security." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40307r1_fix">Valid for Chrome Browser version 13 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: AlwaysAuthorizePlugins
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 0
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Always runs plugins that require authorization
+    Policy State: Disabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40307r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240014" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If AlwaysAuthorizePlugins is not displayed under the Policy Name column or it is not set to false under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the AlwaysAuthorizePlugins value name does not exist or its value data is not set to 0, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35762">
+		<title>DTBC0015 - Block third party cookies</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47049r2_rule" severity="low" weight="10.0">
+			<version>DTBC-0015</version>
+			<title>Third party cookies must be blocked</title>
+			<description>&lt;VulnDiscussion&gt;"Blocks third party cookies. Enabling this setting prevents cookies from being set by web page elements that are not from the domain that is in the browser's address bar. Disabling this setting allows cookies to be set by web page elements that are not from the domain that is in the browser's address bar and prevents users from changing this setting. If this policy is left not set, third party cookies will be enabled but the user will be able to change that." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40308r1_fix">Valid for Chrome Browser version 10 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: BlockThirdPartyCookies
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 1
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Block third party cookies
+    Policy State: Enabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40308r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240015" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If BlockThirdPartyCookies is not displayed under the Policy Name column or it is not set to true under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the BlockThirdPartyCookies value name does not exist or its value data is not set to 1, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35763">
+		<title>DTBC0016 - prevent wiping site data on closing browser</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47050r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0016</version>
+			<title>Site data must not be wiped on closing the browser</title>
+			<description>&lt;VulnDiscussion&gt;"This policy is an override for the "Clear cookies and other site data when I close my browser" content settings option. When set to enabled Google Chrome will delete all locally stored data from the browser when it is shut down. If set to disabled site data will not be cleared on exit. If this policy is left not set Google Chrome will use the default which is to preserve site data on shut down and the user will be able to change this. If the "RestoreOnStartup" policy is set to restore URLs from previous sessions this policy will not clear cookies or other data relevant to restoring the previous browsing session completely." - Google Chrome Administrators Policy List
+			
+    The site data must be retained for forensics purposes. If a system is compromised, it is important to have as much information available as possible to ensure that it can be determined how the system was compromised.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40309r1_fix">Universal method(Requires Chrome Browser v15 or later):
+        1. In the omnibox(address bar) type chrome://policy
+        2. If the policy "ClearSiteDataOnExit" is not shown or it is not set to false, this is a finding.
+
+Windows:
+Start regedit
+Navigate to HKLM\Software\Policies\Google\Chrome\ClearSiteDataOnExit
+If this key does not exist or is not set to 0 this is a finding</fixtext>
+			<fix id="F-40309r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240016" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method(Requires Chrome Browser v15 or later):
+        1. In the omnibox(address bar) type chrome://policy
+        2. If the policy "ClearSiteDataOnExit" is not shown or it is not set to false, this is a finding.
+
+Windows:
+Start regedit
+Navigate to HKLM\Software\Policies\Google\Chrome\ClearSiteDataOnExit
+If this key does not exist or is not set to 0 this is a finding</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35764">
+		<title>DTBC0017 - Disable background processing</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47051r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0017</version>
+			<title>Background processing must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Determines whether a Google Chrome process is started on OS login and keeps running when the last browser window is closed, allowing background apps to remain active. The background process displays an icon in the system tray and can always be closed from there. If this policy is set to True, background mode is enabled and cannot be controlled by the user in the browser settings. If this policy is set to False, background mode is disabled and cannot be controlled by the user in the browser settings. If this policy is left unset, background mode is initially disabled and can be controlled by the user in the browser settings." - Google Chrome Administrators Policy List
+
+This setting, if enabled, allows Google Chrome to run at all times. There is two reasons that this is not wanted. First, it can tie up system resources that might otherwise be needed. Second, it does not make it obvious to the user that it is running and poorly written extensions could cause instability on the system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40310r1_fix">Valid for Chrome Browser version 19 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: BackgroundModeEnabled
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 0
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Continue running background apps when Google Chrome is closed
+    Policy State: Disabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40310r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240017" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If BackgroundModeEnabled is not displayed under the Policy Name column and it is not set to false under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the BackgroundModeEnabled value name does not exist or its value data is not set to 0, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35765">
+		<title>DTBC0018 - Disable SPDY Protocol</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47052r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0018</version>
+			<title>The SPDY protocol must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Disables use of the SPDY protocol in Google Chrome. If this policy is enabled the SPDY protocol will not be available in Google Chrome. Setting this policy to disabled will allow the usage of SPDY. If this policy is left not set, SPDY will be available." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40311r1_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: DisableSpdy
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 1
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Disable SPDY protocol
+    Policy State: Enabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40311r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240018" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If DisableSpdy is not displayed under the Policy Name column or it is not set to true under the Policy Name column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the DisableSpdy value name does not exist or its value data is not set to 1, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35767">
+		<title>DTBC0019 - Disable 3D Graphics APIs</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47054r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0019</version>
+			<title>3D Graphics APIs must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Disable support for 3D graphics APIs. Enabling this setting prevents web pages from accessing the graphics processing unit (GPU). Specifically, web pages can not access the WebGL API and plugins can not use the Pepper 3D API. Disabling this setting or leaving it not set potentially allows web pages to use the WebGL API and plugins to use the Pepper 3D API. The default settings of the browser may still require command line arguments to be passed in order to use these APIs." - Google Chrome Administrators Policy List
+
+Chrome uses WebGL to render graphics using the GPU. There are few sites that currently take advantage of this feature. Since there is unlikely to be an operational impact, it is recommended that this feature is turned off in order to reduce the attack surface.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<fixtext fixref="F-40313r1_fix">Valid for Chrome Browser version 9 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: Disable3DAPIs
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 1
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Disable support for 3D graphics APIs
+    Policy State: Enabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40313r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240019" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If Disable3DAPIs is not displayed under the Policy Name column or it is not set to true under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the Disable3DAPIs value name does not exist or its value data is not set to 1, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35769">
+		<title>DTBC0020 - Disable Google Data Synchronization</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47056r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0020</version>
+			<title>Google Data Synchronization must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Disables data synchronization in Google Chrome using Google-hosted synchronization services and prevents users from changing this setting. If you enable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set Google Sync will be available for the user to choose whether to use it or not.
+This feature is used to sync information between different user devices. This data is stored on Google owned servers. The data consists of information such as email, calendars, viewing history, etc. This feature must be disabled because the organization has not control over the servers the data is stored on." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40315r1_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: SyncDisabled
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 1
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Disable synchronization of data with Google
+    Policy State: Enabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40315r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240020" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If SyncDisabled is not displayed under the Policy Name column or it is not set to true under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the SyncDisabled value name does not exist or its value data is not set to 1, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35771">
+		<title>DTBC0021 - Disable URL protocol schemas</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47058r2_rule" severity="high" weight="10.0">
+			<version>DTBC-0021</version>
+			<title>The URL protocol schemas file and javascript must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Disables the listed protocol schemes in Google Chrome. URLs using a scheme from this list will not load and can not be navigated to. If this policy is left not set or the list is empty all schemes will be accessible in Google Chrome." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40318r1_fix">Valid for Chrome Browser version 12 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\DisabledSchemes\
+    Value Name: 1
+    Value Type: String (REG_SZ)
+    Value Data: file
+
+    Key Path: HKLM\Software\Policies\Google\Chrome\DisabledSchemes\
+    Value Name: 2
+    Value Type: String (REG_SZ)
+    Value Data: javascript
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Disable URL protocol schemes
+    Policy State: Enabled
+    Policy Value 1: file
+    Policy Value 2: javascript</fixtext>
+			<fix id="F-40318r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240021" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If DisabledSchemes is not displayed under the Policy Name column or it is not set to file,javascript under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\DisabledSchemes
+3. If the DisabledSchemes key does not exist, or the does not cantain entries 1 and 2 set to file and javascript,  then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35773">
+		<title>DTBC0022 - Disable AutoFill</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47060r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0022</version>
+			<title>AutoFill must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Enables Google Chrome's AutoFill feature and allows users to auto complete web forms using previously stored information such as address or credit card information. If you disable this setting, AutoFill will be inaccessible to users. If you enable this setting or do not set a value, AutoFill will remain under the control of the user. This will allow them to configure AutoFill profiles and to switch AutoFill on or off at their own discretion." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40321r1_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: AutoFillEnabled
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 0
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Enable AutoFill
+    Policy State: Disabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40321r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240022" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If AutoFillEnabled is not displayed under the Policy Name column or it is not set to false under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the AutoFillEnabled value name does not exist or its value data is not set to 0, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35776">
+		<title>DTBC0023 - Disable Cloud print sharing</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47063r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0023</version>
+			<title>Cloud print sharing must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Enables Google Chrome to act as a proxy between Google Cloud Print and legacy printers connected to the machine. If this setting is enabled or not configured, users can enable the cloud print proxy by authentication with their Google account. If this setting is disabled, users cannot enable the proxy, and the machine will not be allowed to share it's printers with Google Cloud Print. If this policy is left not set, this will be enabled but the user will be able to change it." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40322r1_fix">Valid for Chrome Browser version 17 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: CloudPrintProxyEnabled
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 0
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Enable Google Cloud Print proxy
+    Policy State: Disabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40322r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240023" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If CloudPrintProxyEnabled is not displayed under the Policy Name column or it is not set to false under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the CloudPrintProxyEnabled value name does not exist or its value data is not set to 0, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35777">
+		<title>DTBC0024 - Disable Google Chrome Instant</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47064r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0024</version>
+			<title>Google Chrome Instant must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Enables Google Chrome's Instant feature and prevents users from changing this setting. If you enable this setting, Google Chrome Instant is enabled. If you disable this setting, Google Chrome Instant is disabled. If you enable or disable this setting, users cannot change or override this setting. If this setting is left not set the user can decide to use this function or not." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40324r2_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: InstantEnabled
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 0
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Enable Instant
+    Policy State: Disabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40324r2_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240024" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If InstantEnabled is not displayed under the Policy Name column or it is not set to false under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the InstantEnabled value name does not exist or its value data is not set to 0, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35779">
+		<title>DTBC0025 - Disable network prediction</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47066r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0025</version>
+			<title>Network prediction must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Enables network prediction in Google Chrome and prevents users from changing this setting. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set, this will be enabled but the user will be able to change it." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40325r1_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: DnsPrefetchingEnabled
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 0
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Enable network prediction
+    Policy State: Disabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40325r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240025" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If DnsPrefetchingEnabled is not displayed under the Policy Name column or it is not set to false under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the DnsPrefetchingEnabled value name does not exist or its value data is not set to 0, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35780">
+		<title>DTBC0026 - Disable metrics reporting to Google</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47067r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0026</version>
+			<title>Metrics reporting to Google must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Enables anonymous reporting of usage and crash-related data about Google Chrome to Google and prevents users from changing this setting. If you enable this setting, anonymous reporting of usage and crash-related data is sent to Google. If you disable this setting, anonymous reporting of usage and crash-related data is never sent to Google. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set the setting will be what the user chose upon installation / first run." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40326r1_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: MetricsReportingEnabled
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 0
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Enable reporting of usage and crash-related data
+    Policy State: Disabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40326r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240026" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If MetricsReportingEnabled is not displayed under the Policy Name column or it is not set to false under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the MetricsReportingEnabled value name does not exist or its value data is not set to 0, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35781">
+		<title>DTBC0027 - Disable search suggestion</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47068r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0027</version>
+			<title>Search suggestions must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Search suggestion should be disabled as it could lead to searches being conducted that were never intended to be made." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40327r2_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: SearchSuggestEnabled
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 0
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Enable search suggestions
+    Policy State: Disabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40327r2_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240027" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If SearchSuggestEnabled is not displayed under the Policy Name column or it is not set to false under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the SearchSuggestEnabled value name does not exist or its value data is not set to 0, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35784">
+		<title>DTBC0029 - Disable import of saved passwords</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47071r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0029</version>
+			<title>Importing of saved passwords must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"This policy forces the saved passwords to be imported from the previous default browser if enabled. If enabled, this policy also affects the import dialog. If disabled, the saved passwords are not imported. If it is not set, the user may be asked whether to import, or importing may happen automatically." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40330r1_fix">Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If ImportSavedPasswords is not displayed under the Policy Name column or it is not set to false under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the ImportSavedPasswords value name does not exist or its value data is not set to 0, then this is a finding.</fixtext>
+			<fix id="F-40330r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240029" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If ImportSavedPasswords is not displayed under the Policy Name column or it is not set to false under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the ImportSavedPasswords value name does not exist or its value data is not set to 0, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35785">
+		<title>DTBC0030 - Disable incognito mode</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47072r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0030</version>
+			<title>Incognito mode must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;Incognito mode prevents saving of anything from the current session. This is bad from a foreignics standpoint. This information needs to be retained in case a compromise happens. 
+
+"pecifies whether the user may open pages in Incognito mode in Google Chrome. If 'Enabled' is selected or the policy is left unset, pages may be opened in Incognito mode. If 'Disabled' is selected, pages may not be opened in Incognito mode. If 'Forced' is selected, pages may be opened ONLY in Incognito mode.
+    0 = Incognito mode available.
+    1 = Incognito mode disabled.
+    2 = Incognito mode forced." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40331r1_fix">Valid for Chrome Browser version 14 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: IncognitoModeAvailability
+    Value Type: REG_DWORD
+    Value Data: 1
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Incognito mode availability
+    Policy State: Enabled
+    Policy Value: Incognito mode disabled</fixtext>
+			<fix id="F-40331r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240030" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If IncognitoModeAvailability is not displayed under the Policy Name column or it is not set to 1 under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the IncognitoModeAvailability value name does not exist or its value data is not set to 1, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35787">
+		<title>DTBC0033 - Set the user data location</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47074r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0033</version>
+			<title>The user data location must be set</title>
+			<description>&lt;VulnDiscussion&gt;"Configures the directory that Google Chrome will use for storing user data. If you set this policy, Google Chrome will use the provided directory regardless whether the user has specified the '--user-data-dir' flag or not. If this policy is left not set the default profile path will be used and the user will be able to override it with the '--user-data-dir' command line flag." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40335r1_fix">Valid for Chrome Browser version 11 or later.
+Windows Registry:
+    Registry Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: UserDataDir
+    Value Type: String (REG_SZ)
+    Value Data: "${roaming_app_data}\Chrome\Data"
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: "Set user data directory"
+    Policy State: Enabled
+    Policy Value: "${roaming_app_data}\Chrome\Data"</fixtext>
+			<fix id="F-40335r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240033" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method(Requires Chrome Browser v15 or later):
+        1. In the omnibox(address bar) type chrome://policy
+        2. If the policy "UserDataDir" is not shown or is not set to "${roaming_app_data}\Chrome\Data", then this is a finding.
+
+Windows:
+Start regedit
+Navigate to HKLM\Software\Policies\Google\Chrome\UserDataDir
+If this key does not exist or is not set to "${roaming_app_data}\Chrome\Data" this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35788">
+		<title>DTBC0034 - Disable plugins by default</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47075r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0034</version>
+			<title>Plugins must be disabled by default</title>
+			<description>&lt;VulnDiscussion&gt;"Specifies a list of plugins that are disabled in Google Chrome and prevents users from changing this setting. The wildcard characters * and ? can be used to match sequences of arbitrary characters. * matches an arbitrary number of characters while ? specifies an optional single character, i.e. matches zero or one characters. The escape character is \, so to match actual *, ?, or \ characters, you can put a \ in front of them. If you enable this setting, the specified list of plugins is never used in Google Chrome. The plugins are marked as disabled in about:plugins and users cannot enable them. Note that this policy can be overridden by EnabledPlugins and DisabledPluginsExceptions. If this policy is left not set the user can use any plugin installed on the system except for hard-coded incompatible, outdated or dangerous plugins. - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40336r1_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\DisabledPlugins
+    Value Name: 1
+    Value Type: String (REG_SZ)
+    Value Data: *
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Specify a list of disabled plugins
+    Policy State: Enabled
+    Policy Value: *</fixtext>
+			<fix id="F-40336r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240034" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If DisabledPlugins is not displayed under the Policy Name column or it is not set to * under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\DisabledPlugins
+3. If the DisabledPlugins key does not exist, or the 1 value name does not exist under that key and the value data is not set to * then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<!--<Group id="V-35789">
+		<title>DTBC0035 - Enable approved plugins</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47076r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0035</version>
+			<title>Plugins approved for use must be enabled</title>
+			<description>&lt;VulnDiscussion&gt;"Specifies a list of plugins that are enabled in Google Chrome and prevents users from changing this setting. The wildcard characters '*' and '?' can be used to match sequences of arbitrary characters. '*' matches an arbitrary number of characters while '?' specifies an optional single character, i.e. matches zero or one characters. The escape character is '\', so to match actual '*', '?', or '\' characters, you can put a '\' in front of them. The specified list of plugins is always used in Google Chrome if they are installed. The plugins are marked as enabled in 'about:plugins' and users cannot disable them. Note that this policy overrides both DisabledPlugins and DisabledPluginsExceptions. If this policy is left not set the user can disable any plugin installed on the system." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40337r2_fix">Valid for Chrome Browser version 11 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\EnabledPlugins
+    Value Name: 1
+    Value Type: String (REG_SZ)
+    Value Data: Java*
+
+    Key Path: HKLM\Software\Policies\Google\Chrome\EnabledPlugins
+    Value Name: 2
+    Value Type: String (REG_SZ)
+    Value Data: Shockwave Flash
+
+    Key Path: HKLM\Software\Policies\Google\Chrome\EnabledPlugins
+    Value Name: 3
+    Value Type: String (REG_SZ)
+    Value Data: Chrome PDF Viewer
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Specify a list of enabled plugins
+    Policy State: Enabled
+    Policy Value 1: Java*
+    Policy Value 2: Shockwave Flash
+    Policy Value 3: Chrome PDF Viewer</fixtext>
+			<fix id="F-40337r2_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240035" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If EnabledPlugins is not displayed under the Policy Name column or does not contain  list of administrator approved Plugins under the Policy Value column, then this is a finding.
+
+Suggested: the set or subset of Java*,Shockwave Flash,Chrome PDF Viewer
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\EnabledPlugins
+3. If the EnabledPlugins key does not exist and does not contain a set of administrator approved Plugins then this is a finding.
+
+Suggested: the set or subset of Java*,Shockwave Flash,Chrome PDF Viewer</check-content>
+			</check>
+		</Rule>
+	</Group> -->
+	<Group id="V-35790">
+		<title>DTBC0036 - Disable automated search and installation of missing plugins</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47077r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0036</version>
+			<title>Automated installation of missing plugins must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"If you set this setting to enabled the automatic search and installation of missing plugins will be disabled in Google Chrome." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40338r1_fix">Valid for Chrome Browser version 11 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: DisablePluginFinder
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 1
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Specify whether the plugin finder should be disabled
+    Policy State: Enabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40338r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240036" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If DisablePluginFinder is not displayed under the Policy Name column or it is not set to true under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the DisablePluginFinder value name does not exist or its value data is not set to 1, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35791">
+		<title>DTBC0037 - Enable online revocation checks</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47078r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0037</version>
+			<title>Online revocation checks must be done</title>
+			<description>&lt;VulnDiscussion&gt;"By setting this policy to true, the previous behaviour is restored and online OCSP/CRL checks will be performed. If the policy is not set, or is set to false, then Chrome will not perform online revocation checks in Chrome 19 and later.." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40339r1_fix">Valid for Chrome Browser version 19 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: EnableOnlineRevocationChecks
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 1
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Whether online OCSP/CRL checks are performed
+    Policy State: Enabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40339r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240037" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If EnableOnlineRevocationChecks is not displayed under the Policy Name column or it is not set to true under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the EnableOnlineRevocationChecks value name does not exist or its value data is not set to 1, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35792">
+		<title>DTBC0038 - Enable Safe Browsing</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47079r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0038</version>
+			<title>Safe Browsing must be enabled</title>
+			<description>&lt;VulnDiscussion&gt;"Enables Google Chrome's Safe Browsing feature and prevents users from changing this setting. If you enable this setting, Safe Browsing is always active. If you disable this setting, Safe Browsing is never active. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set, this will be enabled but the user will be able to change it." - Google Chrome Administrators Policy List
+
+Safe browsing uses a signature database to test sites when they are be loaded to ensure they don't contain any known maleware.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40340r1_fix">Valid for Chrome Browser version 14 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: SafeBrowsingEnabled
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 1
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Enable Safe Browsing
+    Policy State: Enabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40340r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240038" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If SafeBrowsingEnabled is not displayed under the Policy Name column or it is not set to true under the Policy Value column, then this is a finding.
+
+Windows method:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the SafeBrowsingEnabled value name does not exist or its value data is not set to 1, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35793">
+		<title>DTBC0039 - Force saving of browsing history</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47080r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0039</version>
+			<title>Browser history must be saved</title>
+			<description>&lt;VulnDiscussion&gt;"Disables saving browser history in Google Chrome and prevents users from changing this setting. If this setting is enabled, browsing history is not saved. If this setting is disabled or not set, browsing history is saved." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40341r1_fix">Valid for Chrome Browser version 8 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: SavingBrowserHistoryDisabled
+    Value Type: Boolean (REG_DWORD)
+    Value Data: 0
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Disable saving browser history
+    Policy State: Disabled
+    Policy Value:  N/A</fixtext>
+			<fix id="F-40341r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240039" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method (Requires Chrome Browser v15 or later):
+        1. In the omnibox (address bar) type chrome://policy
+        2. If the policy "SavingBrowserHistoryDisabled" is not shown or is not set to false, then this is a finding.
+
+Windows:
+1. Start regedit
+2. Navigate to HKLM\Software\Policies\Google\Chrome\
+3. If the SavingBrowserHistoryDisabled value name does not exist or its value data is not set to 0, then this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-35794">
+		<title>DTBC0040 - set default behavior to block plugin usage</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47081r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0040</version>
+			<title>Default behavior must block plugin usage</title>
+			<description>&lt;VulnDiscussion&gt;"Allows you to set whether websites are allowed to automatically run plugins. Automatically running plugins can be either allowed for all websites or denied for all websites. If this policy is left not set, 'AllowPlugins' will be used and the user will be able to change it.
+    1 = Allow all sites to automatically run plugins
+    2 = Block all plugins
+    3 = Click to play." - Google Chrome Administrators Policy List
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40342r2_fix">Valid for Chrome Browser version 10 or later.
+
+Windows Registry:
+    Registry Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: DefaultPluginsSetting
+    Value Type: REG_DWORD
+    Value Data: 3
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Content Settings\
+    Policy Name: "Default plugins setting"
+    Policy State: Enabled
+    Policy Value:  "Click to play"</fixtext>
+			<fix id="F-40342r2_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240040" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method(Requires Chrome Browser v15 or later):
+        1. In the omnibox(address bar) type chrome://policy
+        2. If the policy "DefaultPluginsSetting" is not shown or is not set to "Click to play", this is a finding.
+
+Windows:
+Start regedit
+Navigate to HKLM\Software\Policies\Google\Chrome\DefaultPluginsSetting
+If this key does not exist or is not set to 3 this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<!--<Group id="V-35795">
+		<title>DTBC0041 - Disable JavaScript for blacklisted sites</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47082r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0041</version>
+			<title>JavaScript must be disabled by default</title>
+			<description>&lt;VulnDiscussion&gt;"Allows you to set a list of url patterns that specify sites which are not allowed to run JavaScript. If this policy is left not set the global default value will be used for all sites either from the 'DefaultJavaScriptSetting' policy if it is set, or the user's personal configuration otherwise." - Google Chrome Administrators Policy List
+
+Javascript is one of the most common attack vectors used to compromise a system. Therefore, a system should block javascript by default and allow by exception.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40343r2_fix">Valid for Chrome Browser version 11 or later.
+
+Windows Registry:
+    Registry Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: JavaScriptBlockedForUrls
+    Value Type: List of strings
+    Value Data: a list of administrator approved blacklisted sites
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Content Settings\
+    Policy Name: "Block JavaScript on these sites"
+    Policy State: Enabled
+    Policy Value:  a list of administrator approved blacklisted sites
+
+If this setting is not feasible, the usage of a user controlled JavaScript blocker extension such as ScriptNo is recommend. This will give the users control at blocking JavaScript by default, and granting privileges to websites they need JavaScript for.</fixtext>
+			<fix id="F-40343r2_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240041" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method(Requires Chrome Browser v15 or later):
+        1. In the omnibox(address bar) type chrome://policy
+        2. If the policy "PluginsBlockedForUrls" is not shown or is not set to a list of administrator approved blacklisted sites, then this is a finding.
+
+Windows:
+Start regedit
+Navigate to HKLM\Software\Policies\Google\Chrome\PluginsBlockedForUrls
+If this key does not exist or is not set to a list of administrator approved blacklisted sites this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group> -->
+	<!--<Group id="V-35797">
+		<title>DTBC0043 - Disable plugin usage on blacklisted sites</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47084r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0043</version>
+			<title>Plugin usage must be disabled by default</title>
+			<description>&lt;VulnDiscussion&gt;"Allows you to set a list of url patterns that specify sites which are not allowed to run plugins. If this policy is left not set the global default value will be used for all sites either from the 'DefaultPluginsSetting' policy if it is set, or the user's personal configuration otherwise.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40345r2_fix">Valid for Chrome Browser version 11 or later.
+
+Windows Registry:
+    Registry Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: PluginsBlockedForUrls
+    Value Type: List of strings
+    Value Data: a list of administrator approved blacklisted sites
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Content Settings\
+    Policy Name: "Block plugins on these sites"
+    Policy State: Enabled
+    Policy Value:  a list of administrator approved blacklisted sites</fixtext>
+			<fix id="F-40345r2_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240043" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method(Requires Chrome Browser v15 or later):
+        1. In the omnibox(address bar) type chrome://policy
+        2. If the policy "PluginsBlockedForUrls" is not shown or is not set to "*", then this is a finding.
+
+Windows:
+Start regedit
+Navigate to HKLM\Software\Policies\Google\Chrome\PluginsBlockedForUrls
+If this key does not exist or is not set to "*" this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group> -->
+	<!--<Group id="V-35799">
+		<title>DTBC0045 - Disable per session cookies</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-47086r2_rule" severity="medium" weight="10.0">
+			<version>DTBC-0045</version>
+			<title>Session only based cookies must be disabled</title>
+			<description>&lt;VulnDiscussion&gt;"Allows you to set a list of url patterns that specify sites which are allowed to set session only cookies. If this policy is left not set the global default value will be used for all sites either from the 'DefaultCookiesSetting' policy if it is set, or the user's personal configuration otherwise. If the "RestoreOnStartup" policy is set to restore URLs from previous sessions this policy will not be respected and cookies will be stored permanently for those sites." - Google Chrome Administrators Policy List&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-40347r1_fix">Valid for Chrome Browser version 11 or later.
+
+Windows registry:
+    Key Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: CookiesSessionOnlyForUrls
+    Value Type: List of strings
+    Value Data: null
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\
+    Policy Name: Allow session only cookies on these sites
+    Policy State: Disabled
+    Policy Value: N/A</fixtext>
+			<fix id="F-40347r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240045" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method(Requires Chrome Browser v15 or later):
+        1. In the omnibox(address bar) type chrome://policy
+        2. If the policy "CookiesSessionOnlyForUrls" does not show up or has any defined values, this is a finding.
+
+Windows:
+Start regedit
+Navigate to HKLM\Software\Policies\Google\Chrome\CookiesSessionOnlyForUrls
+If this key does not exist or has any defined values this is a finding</check-content>
+			</check>
+		</Rule>
+	</Group> -->
+	<!-- <Group id="V-36600">
+		<title>DTBC0046 - Blacklist plugins by default</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-48104r1_rule" severity="medium" weight="10.0">
+			<version>DTBC-0046</version>
+			<title>Plugins must be disabled by default</title>
+			<description>&lt;VulnDiscussion&gt;Disabling plugins by default will reduce the attach surface of Google Chrome. Also, it ensures that functionality that is not used is disabled. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-41243r1_fix">Valid for Chrome Browser version 11 or later.
+
+Windows Registry:
+    Registry Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: BlockPlugins
+    Value Type: List of strings
+    Value Data: "*"
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Content Settings\
+    Policy Name: "Block all plugins"
+    Policy State: Enabled
+    Policy Value:  "*"
+</fixtext>
+			<fix id="F-41243r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240046" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method(Requires Chrome Browser v15 or later):
+        1. In the omnibox(address bar) type chrome://policy
+        2. If the policy "DisabledPlugins" is not shown or is not set to "*", then this is a finding.
+
+Windows:
+Start regedit
+Navigate to HKLM\Software\Policies\Google\Chrome\DisabledPlugins
+If this key does not exist or is not set to "*" this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group> -->
+	<!-- <Group id="V-36603">
+		<title>DTBC0047 - Enable approved plugins</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-48107r1_rule" severity="medium" weight="10.0">
+			<version>DTBC-0047</version>
+			<title>Approved plugins will be whitelisted.</title>
+			<description>&lt;VulnDiscussion&gt;Allowing only approved plugins will reduce the attack surface of Google Chrome. It will also ensure unused features are turned off.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>VMS Target Google Chrome 24</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>VMS Target</dc:type>
+				<dc:subject>Google Chrome 24</dc:subject>
+				<dc:identifier>2390</dc:identifier>
+			</reference>
+			<ident system="http://iase.disa.mil/cci">CCI-001588</ident>
+			<fixtext fixref="F-41245r1_fix">Valid for Chrome Browser version 11 or later.
+Windows Registry:
+    Registry Path: HKLM\Software\Policies\Google\Chrome\
+    Value Name: PluginsAllowedForUrls
+    Value Type: List of strings
+    Value Data: "Shockwave Flash", "Chrome PDF Viewer", "Google Earth Plugin", "Silverlight", and "Java(TM)"
+    
+Windows group policy:
+    Policy Path: Computer Configuration\Administrative Templates\Google\Google Chrome\Content Settings\
+    Policy Name: "Allow plugins on these sites"
+    Policy State: Enabled
+    Policy Value:  "Shockwave Flash", "Chrome PDF Viewer", "Google Earth Plugin", "Silverlight", and "Java(TM)", </fixtext>
+			<fix id="F-41245r1_fix"/>
+			<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+				<check-content-ref name="oval:mil.disa.fso.chrome:def:240047" href="U_GoogleChrome24Windows_V1R1_STIG_Benchmark-oval.xml"/>
+				<check-content>Universal method(Requires Chrome Browser v15 or later):
+        1. In the omnibox(address bar) type chrome://policy
+        2. If the policy "AllowPlugins" is not shown or is not set to  "Shockwave Flash", "Chrome PDF Viewer", "Google Earth Plugin", "Silverlight", and "Java(TM)", then this is a finding.
+
+Windows:
+Start regedit
+Navigate to HKLM\Software\Policies\Google\Chrome\PluginsAllowedForUrls
+If this key does not exist or is not set to  "Shockwave Flash", "Chrome PDF Viewer", "Google Earth Plugin", "Silverlight", and "Java(TM)" this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group> -->
+</Benchmark>

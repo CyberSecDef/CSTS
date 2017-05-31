@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:aix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#aix" xmlns:unix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix             http://oval.mitre.org/language/download/schema/version5.4/ovaldefinition/complete/unix-definitions-schema.xsd            http://oval.mitre.org/XMLSchema/oval-definitions-5#independent             http://oval.mitre.org/language/download/schema/version5.4/ovaldefinition/complete/independent-definitions-schema.xsd            http://oval.mitre.org/XMLSchema/oval-definitions-5             http://oval.mitre.org/language/download/schema/version5.4/ovaldefinition/complete/oval-definitions-schema.xsd            http://oval.mitre.org/XMLSchema/oval-common-5             http://oval.mitre.org/language/download/schema/version5.4/ovaldefinition/complete/oval-common-schema.xsd            http://oval.mitre.org/XMLSchema/oval-definitions-5#aix            http://oval.mitre.org/language/download/schema/version5.4/ovaldefinition/complete/aix-definitions-schema.xsd            ">
+  <generator>
+    <oval:product_name>DISA FSO</oval:product_name>
+    <oval:schema_version>5.4</oval:schema_version>
+    <oval:timestamp>2011-07-12T12:00:00-04:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition class="inventory" id="oval:mil.disa.fso.aix:def:3" version="3">
+      <metadata>
+        <title>IBM AIX 5.3</title>
+        <affected family="unix">
+          <platform>IBM AIX 5.3</platform>
+        </affected>
+        <reference ref_id="cpe:/o:ibm:aix:5.3" source="CPE" />
+        <description>The operating system installed on the system is IBM AIX 5.3</description>
+      </metadata>
+      <criteria>
+        <criterion comment="Installed operating system is part of the Unix family" test_ref="oval:mil.disa.fso.aix:tst:300" />
+        <criterion comment="Installed operation system is IBM AIX 5.3" test_ref="oval:mil.disa.fso.aix:tst:301" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check_existence="at_least_one_exists" id="oval:mil.disa.fso.aix:tst:300" version="3" check="only one" comment="installed operating system is part of the Unix family">
+      <object object_ref="oval:mil.disa.fso.aix:obj:300" />
+      <state state_ref="oval:mil.disa.fso.aix:ste:300" />
+    </family_test>
+    <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.aix:tst:301" version="3" comment="Installed operating system is IBM AIX" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.fso.aix:obj:301" />
+      <state state_ref="oval:mil.disa.fso.aix:ste:301" />
+    </uname_test>
+  </tests>
+  <objects>
+    <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.aix:obj:300" version="3" comment="The family object" />
+    <uname_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.aix:obj:301" version="3" comment="The uname object" />
+  </objects>
+  <states>
+    <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.aix:ste:300" version="3">
+      <family>unix</family>
+    </family_state>
+    <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.aix:ste:301" version="3">
+      <os_name>AIX</os_name>
+      <os_release>3</os_release>
+      <os_version>5</os_version>
+    </uname_state>
+  </states>
+</oval_definitions>
+

@@ -1,0 +1,12 @@
+<form name="form1" text="Cyber Security Tool Suite - findDormantAccounts Settings" clientSizeX="465" clientSizeY="110" FormBorderStyle="fixedDialog">
+	<controls>
+		<control type="label" id="lblAge" name="lblAge" text="Days Since Last Login:" locationX="5" locationY="10" sizeX="120" sizeY="20" />
+		<control type="NumericUpDown" id="udAge" name="udAge" locationX="130" locationY="5" sizeX="50" sizeY="25" text="30"/>
+		
+		<control type="label" id="lblUserOu" name="lblUserOu" text="User OU:" locationX="5" locationY="35" sizeX="55" sizeY="20" />
+		<control type="comboBox" id="cboUserOu" name="cboUserOu" locationX="60" locationY="30" sizeX="400" sizeY="225" />
+		
+		<control type="button" id="btnExecute" name="btnExecute" text="Execute" locationX="5" locationY="55" sizeX="455" sizeY="50" backColor="#FFCCCCCC"/>
+
+	</controls>
+</form>

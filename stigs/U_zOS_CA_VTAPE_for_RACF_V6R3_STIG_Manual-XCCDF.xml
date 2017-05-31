@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" id="zOS_CA_VTAPE_for_RACF_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2012-01-09">accepted</status><title>z/OS CA VTAPE for RACF STIG</title><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA, Field Security Operations</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 3 Benchmark Date: 27 Jan 2012</plain-text><version>6</version><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Group id="V-16932"><title>ZB000000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-33825r1_rule" severity="medium" weight="10.0"><version>ZVTAR000</version><title>CA VTAPE installation data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;CA VTAPE installation data sets have the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;DCSL-1, ECAR-1, ECAR-2, ECCD-1, ECCD-2&lt;/IAControls&gt;</description><fixtext fixref="F-269r2_fix">The IAO will ensure that update and alter access to CA VTAPE installation data sets is limited to System Programmers only, and all update and alter access is logged.  Read access can be given to all authorized users.
+
+The installing Systems Programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and alter access is logged. He will identify if any additional groups have update and/or alter access for specific data sets, and once documented he will work with the IAO to see that they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be: 
+SYS2.VTAPE.**
+SYS3.VTAPE.** (data sets that are not altered by product STCs, can be more specific)
+
+The following commands are provided as a sample for implementing data set controls: 
+
+ad 'SYS2.VTAPE.**' uacc(none) owner(sys2) -
+	audit(success(update) failures(read)) -
+	data('CA VTAPE Install DS')
+pe 'SYS2.VTAPE.**' id(&lt;syspaudt&gt; &lt;tstcaudt&gt;) acc(a)
+pe 'SYS2.VTAPE.**' id(&lt;audtaudt&gt; authorized users) acc(r)
+pe 'SYS2.VTAPE.**' id(VTAPE STCs)
+
+ad 'SYS3.VTAPE.**' uacc(none) owner(sys3) -
+	audit(success(update) failures(read)) -
+	data('CA VTAPE Install DS')
+pe 'SYS3.VTAPE.**' id(&lt;syspaudt&gt; &lt;tstcaudt&gt;) acc(a)
+pe 'SYS3.VTAPE.**' id(&lt;audtaudt&gt; authorized users) acc(r)
+pe 'SYS3.VTAPE.**' id(VTAPE STCs)
+
+setr generic(dataset) refresh</fixtext><fix id="F-269r2_fix" /><check system="C-4645r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_zOS CA VTAPE for RACF STIG.xml" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(VTARPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZVTA0000)
+
+Verify that the accesses to the CA VTAPE installation data sets are properly restricted.
+ 
+___	The RACF data set rules for the data sets restricts READ access to all authorized users.
+
+___	The RACF data set rules for the data sets restricts UPDATE and/or ALTER access to systems programming personnel.
+
+___	The RACF data set rules for the data sets specify that all (i.e., failures and successes) UPDATE and/or ALTER access are logged.</check-content></check></Rule></Group><Group id="V-17067"><title>ZB000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-33828r2_rule" severity="medium" weight="10.0"><version>ZVTAR001</version><title>CA VTAPE STC data sets will be properly protected. </title><description>&lt;VulnDiscussion&gt;CA VTAPE STC data sets have the ability to use privileged functions and/or have access to sensitive data.  Failure to properly restrict access to these data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;DCSL-1, ECAR-1, ECAR-2, ECAR-3, ECCD-1, ECCD-2&lt;/IAControls&gt;</description><fixtext fixref="F-34571r1_fix">The IAO will ensure that WRITE and/or greater access to CA VTAPE STC data sets is limited to System Programmers, Tape Management personnel and/or CA VTAPE’s STC(s) and/or batch user(s) only.  READ access can be given to auditors and authorized users.
+
+The installing Systems Programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged. He will identify if any additional groups have update and/or alter access for specific data sets, and once documented he will work with the IAO to see that they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be: 
+SYS3.VTAPE (data sets that are altered by the product’s STCs, this can be more specific)
+
+The following commands are provided as a sample for implementing data set controls: 
+
+ad 'SYS3.VTAPE.**' uacc(none) owner(sys3) -
+	audit(failures(read)) -
+	data('Vendor DS Profile: CA VTAPE')
+pe 'SYS3.VTAPE.**' id(&lt;syspaudt&gt; &lt;tstcaudt&gt; VTAPE STCs) acc(a)
+pe 'SYS3.VTAPE.**' id(&lt;tapeaudt&gt; VTAPE STCs) acc(a)
+pe 'SYS3.VTAPE.**' id(&lt;audtaudt&gt; authorized users) acc(r)
+
+setr generic(dataset) refresh</fixtext><fix id="F-34571r1_fix" /><check system="C-39443r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_zOS CA VTAPE for RACF STIG.xml" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(VTASTC)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZVTA0001)
+
+Verify that the accesses to the CA VTAPE STC data sets are properly restricted.  If the following guidance is true, this is not a finding.
+ 
+___	The RACF data set rules for the data sets restricts READ access to auditors and authorized users.
+
+___	The RACF data set rules for the data sets restricts WRITE and/or greater access to systems programming personnel and Tape Management personnel.
+
+___	The RACF data set rules for the data sets restricts WRITE and/or greater access to the CA VTAPE’s STC(s) and/or batch user(s).
+
+___	The RACF data set rules for the data sets specify UACC(NONE) and NOWARNING.</check-content></check></Rule></Group><Group id="V-17452"><title>ZB000030</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-33831r1_rule" severity="medium" weight="10.0"><version>ZVTAR030</version><title>CA VTAPE Started Task name is not properly identified/defined to the system ACP.</title><description>&lt;VulnDiscussion&gt;CA VTAPE requires a started task that will be restricted to certain resources, datasets and other system functions. By defining the started task as a userid to the system ACP, It allows the ACP to control the access and authorized users that require these capabilities. Failure to properly control these capabilities, could compromise of the operating system environment, ACP, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECCD-1, ECCD-2&lt;/IAControls&gt;</description><fixtext fixref="F-453r2_fix">The CA VTAPE system programmer and the IAO will ensure that a product's Started Task(s) is properly identified/defined to the System ACP. 
+
+If the product requires a Started Task, verify that it is properly defined to the System ACP with the proper attributes.
+
+Most installation manuals will indicate how the Started Task is identified and any additional attributes that must be specified.
+
+A sample is provided here:
+
+au SVTS name('CA VTAPE') owner(stc) dfltgrp(stc) nopass
+au SVTSAS name('CA VTAPE') owner(stc) dfltgrp(stc) nopass</fixtext><fix id="F-453r2_fix" /><check system="C-3620r4_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_zOS CA VTAPE for RACF STIG.xml" /><check-content>Refer to the following report produced by the RACF Data Collection:
+
+-	RACFCMDS.RPT(LISTUSER)
+
+The CA VTAPE started task(s) and/or batch job userid(s) is defined and is assigned the RACF PROTECTED attribute.</check-content></check></Rule></Group><Group id="V-17454"><title>ZB000032</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-33833r2_rule" severity="medium" weight="10.0"><version>ZVTAR032</version><title>CA VTAPE Started task(s) must be properly defined to the STARTED resource class for RACF.</title><description>&lt;VulnDiscussion&gt;Access to product resources should be restricted to only those individuals responsible for the application connectivity and who have a requirement to access these resources.  Improper control of product resources could potentially compromise the operating system, ACP, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECCD-1, ECCD-2&lt;/IAControls&gt;</description><fixtext fixref="F-331r2_fix">The CA VTAPE system programmer and the IAO will ensure that a product's started task(s) is (are) properly identified and/or defined to the System ACP. 
+
+A unique userid must be assigned for the CA VTAPE started task(s) thru a corresponding STARTED class entry.
+
+The following sample set of commands is shown here as a guideline:
+
+rdef started SVTS.** uacc(none) owner(admin) audit(all(read)) stdata(user(SVTS) group(stc))
+rdef started SVTSAS.** uacc(none) owner(admin) audit(all(read)) stdata(user(SVTSAS) group(stc))
+
+setr racl(started) ref</fixtext><fix id="F-331r2_fix" /><check system="C-3371r3_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_zOS CA VTAPE for RACF STIG.xml" /><check-content>Refer to the following report produced by the RACF Data Collection:
+
+-	DSMON.RPT(RACSPT)
+
+Automated Analysis
+Refer to the following report produced by the RACF Data Collection:
+
+-	PDI(ZVTA0032)
+
+Verify that the CA VTAPE started task(s) is (are) defined to the STARTED resource class profile and/or ICHRIN03 table entry.</check-content></check></Rule></Group></Benchmark>

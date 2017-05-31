@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>repotool</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2016-03-08T15:58:38</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition class="inventory" id="oval:mil.disa.stig.adobe.reader:def:2" version="4">
+      <metadata>
+        <title>Adobe Acrobat Reader DC Classic Track</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <platform>Adobe Acrobat Reader DC Classic Track</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <reference ref_id="cpe:/a:adobe:acrobat_dc:::~~classic~~~" source="CPE" />
+        <description>Adobe Acrobat Reader DC Classic Track is installed</description>
+      </metadata>
+      <criteria>
+        <criterion comment="Adobe Acrobat DC Classic Track is installed" test_ref="oval:mil.disa.stig.adobe.reader:tst:202" />
+        <criterion comment="Adobe Acrobat DC ENU_GUID key exists" test_ref="oval:mil.disa.stig.adobe.reader:tst:201" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="Adobe Acrobat DC ENU_GUID key exists" id="oval:mil.disa.stig.adobe.reader:tst:201" version="2">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:200" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" check_existence="at_least_one_exists" comment="Adobe Acrobat DC Classic Track is installed" id="oval:mil.disa.stig.adobe.reader:tst:202" version="2">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:203" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:200" />
+    </registry_test>
+  </tests>
+  <objects>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Adobe Acrobat DC ENU_GUID key, 32 and 64-bit systems" id="oval:mil.disa.stig.adobe.reader:obj:200" version="1">
+      <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="UNION">
+        <object_reference>oval:mil.disa.stig.adobe.reader:obj:201</object_reference>
+        <object_reference>oval:mil.disa.stig.adobe.reader:obj:202</object_reference>
+      </set>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Adobe Acrobat DC Classic 2015 ENU_GUID key, 32-bit system" id="oval:mil.disa.stig.adobe.reader:obj:201" version="1">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Adobe\Acrobat Reader\2015\Installer</key>
+      <name>ENU_GUID</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Adobe Acrobat DC Classic 2015 ENU_GUID key, 64-bit system" id="oval:mil.disa.stig.adobe.reader:obj:202" version="1">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\WOW6432Node\Adobe\Acrobat Reader\2015\Installer</key>
+      <name>ENU_GUID</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Version of Adobe Acrobat DC installed, 32 and 64-bit systems" id="oval:mil.disa.stig.adobe.reader:obj:203" version="1">
+      <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" set_operator="UNION">
+        <object_reference>oval:mil.disa.stig.adobe.reader:obj:204</object_reference>
+        <object_reference>oval:mil.disa.stig.adobe.reader:obj:205</object_reference>
+      </set>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Version of Adobe Acrobat DC installed, 32-bit system" id="oval:mil.disa.stig.adobe.reader:obj:204" version="1">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key var_check="all" var_ref="oval:mil.disa.stig.adobe.reader:var:200" />
+      <name>DisplayVersion</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Version of Adobe Acrobat DC installed, 64-bit system" id="oval:mil.disa.stig.adobe.reader:obj:205" version="1">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key var_check="all" var_ref="oval:mil.disa.stig.adobe.reader:var:201" />
+      <name>DisplayVersion</name>
+    </registry_object>
+  </objects>
+  <states>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Version track ID is 30" id="oval:mil.disa.stig.adobe.reader:ste:200" version="1">
+      <value operation="pattern match">^\d+\.\d+\.30</value>
+    </registry_state>
+  </states>
+  <variables>
+    <local_variable comment="Adobe Acrobat DC Key, 32-bit systems" datatype="string" id="oval:mil.disa.stig.adobe.reader:var:200" version="1">
+      <concat>
+        <literal_component>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\</literal_component>
+        <object_component item_field="value" object_ref="oval:mil.disa.stig.adobe.reader:obj:200" />
+      </concat>
+    </local_variable>
+    <local_variable comment="Adobe Acrobat DC Key, 64-bit systems" datatype="string" id="oval:mil.disa.stig.adobe.reader:var:201" version="1">
+      <concat>
+        <literal_component>SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\</literal_component>
+        <object_component item_field="value" object_ref="oval:mil.disa.stig.adobe.reader:obj:200" />
+      </concat>
+    </local_variable>
+  </variables>
+</oval_definitions>
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/unix-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>repotool</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2016-06-23T13:07:13</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.fso.solaris11:def:2" version="1" class="inventory">
+      <metadata>
+        <title>Solaris 10 (x86) is installed</title>
+        <affected family="unix">
+          <platform>Solaris 10</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/o:sun:sunos:5.10:-:ix86" />
+        <description>The operating system installed on the system is Sun Solaris 10 for x86.</description>
+      </metadata>
+      <criteria>
+        <criterion comment="Solaris 10 Installed" test_ref="oval:mil.disa.fso.solaris11:tst:201" />
+        <criterion comment="ix86 architecture" test_ref="oval:mil.disa.fso.solaris11:tst:200" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.solaris11:tst:200" version="1" comment="ix86 architecture" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.fso.solaris11:obj:200" />
+      <state state_ref="oval:mil.disa.fso.solaris11:ste:200" />
+    </uname_test>
+    <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.solaris11:tst:201" version="1" comment="Solaris 10 Installed" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.fso.solaris11:obj:200" />
+      <state state_ref="oval:mil.disa.fso.solaris11:ste:201" />
+    </uname_test>
+  </tests>
+  <objects>
+    <uname_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.solaris11:obj:200" version="1" comment="The single uname object." />
+  </objects>
+  <states>
+    <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.solaris11:ste:200" version="1" comment="processor type is ix86">
+      <processor_type operation="pattern match">^i.*86</processor_type>
+    </uname_state>
+    <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.solaris11:ste:201" version="1" comment="os release is 5.10">
+      <os_release>5.10</os_release>
+    </uname_state>
+  </states>
+</oval_definitions>
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" id="zOS_ICSF_for_RACF_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2015-06-22">accepted</status><title>z/OS ICSF for RACF STIG</title><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA, Field Security Operations</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 4 Benchmark Date: 24 Jul 2015</plain-text><version>6</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-16932" selected="true" /><select idref="V-17067" selected="true" /><select idref="V-17452" selected="true" /><select idref="V-17454" selected="true" /></Profile><Group id="V-16932"><title>ZB000000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-30549r1_rule" severity="medium" weight="10.0"><version>ZICSR000</version><title>IBM Integrated Crypto Service Facility (ICSF) install data sets are not properly protected.</title><description>&lt;VulnDiscussion&gt;IBM Integrated Crypto Service Facility (ICSF) product has the ability to use privileged functions and/or have access to sensitive data. Failure to properly restrict access to their data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;Systems Programmer&lt;/Responsibility&gt;&lt;IAControls&gt;DCSL-1, ECAR-1, ECAR-2, ECCD-1, ECCD-2&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM Integrated Crypto Service Facility [ICSF]</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM Integrated Crypto Service Facility [ICSF]</dc:subject><dc:identifier>1900</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000213</ident><ident system="http://iase.disa.mil/cci">CCI-002234</ident><fixtext fixref="F-27505r1_fix">The IAO will ensure that update and allocate access to IBM Integrated Crypto Service Facility (ICSF) install data sets is limited to System Programmers only, and all update and allocate access is logged. Read access can be given to Auditors and any other users that have a valid requirement to utilize these data sets.
+
+The installing Systems Programmer will identify and document the product data sets and categorize them according to who will have update and alter access and if required that all update and allocate access is logged.  He will identify if any additional groups have update access for specific data sets, and once documented he will work with the IAO to see that they are properly restricted to the ACP (Access Control Program) active on the system.
+
+Data sets to be protected will be: 
+SYS1.CSF
+
+The following commands are provided as a sample for implementing data set controls: 
+
+ad 'SYS1.CSF.**' uacc(none) owner(sys1) -
+	audit(success(update) failures(read)) -
+	data('Vendor DS Profile: icsf')
+pe 'SYS1.CSF.**' id(syspaudt tstcaudt) acc(a)
+pe 'SYS1.CSF.**' id(icsfusrs) acc(r)
+
+ad 'sys1.csf.scsfmod0.**' owner(sys1) 
+ data('apf auth icsf ds') -
+ audit(success(update) failures(read)) uacc(none)               
+pe 'sys1.csf.scsfmod0.**' id(syspaudt tstcaudt) acc(a)                    
+
+setr generic(dataset) refresh</fixtext><fix id="F-27505r1_fix" /><check system="C-30881r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_zOS ICSF for RACF STIG.xml" /><check-content>a)	Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(ICSFRPT)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZICS0000)
+
+b)	Verify that access to the IBM Integrated Crypto Service Facility (ICSF) install data sets are properly restricted.
+ 
+___	The RACF data set rules for the data sets does not restrict UPDATE and/or ALTER access to systems programming personnel.
+
+___	The RACF data set rules for the data sets does not specify that all (i.e., failures and successes) UPDATE and/or ALTER access will be logged.
+
+c)	If all of the above are untrue, there is NO FINDING.
+
+d)	If any of the above is true, this is a FINDING.</check-content></check></Rule></Group><Group id="V-17067"><title>ZB000001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-30564r2_rule" severity="medium" weight="10.0"><version>ZICSR001</version><title>IBM Integrated Crypto Service Facility (ICSF) STC data sets must be properly protected.</title><description>&lt;VulnDiscussion&gt;IBM Integrated Crypto Service Facility (ICSF) STC data sets have the ability to use privileged functions and/or have access to sensitive data.  Failure to properly restrict access to their data sets could result in violating the integrity of the base product which could result in compromising the operating system or sensitive data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;DCSL-1, ECAR-1, ECAR-2, ECAR-3, ECCD-1, ECCD-2&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM Integrated Crypto Service Facility [ICSF]</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM Integrated Crypto Service Facility [ICSF]</dc:subject><dc:identifier>1900</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001499</ident><fixtext fixref="F-17072r3_fix">The ISSO will ensure that WRITE and/or greater access to IBM Integrated Crypto Service Facility (ICSF) STC and/or batch data sets are limited to system programmers and ICSF STC and/or batch jobs only.  READ access can be given to auditors at the ISSOs discretion.
+
+The installing Systems Programmer will identify and document the product data sets and categorize them according to who will have what type of access and if required which type of access is logged.  The installing systems programmer will identify any additional groups requiring access to specific data sets, and once documented the installing systems programmer will work with the ISSO to see that they are properly restricted to the ACP (Access Control Program) active on the system.
+
+(Note: The data sets and/or data set prefixes identified below are examples of a possible installation.  The actual data sets and/or prefixes are determined when the product is actually installed on a system through the product’s installation guide and can be site specific.)
+
+The data sets to be protected are identified in the data set referenced in the CSFPARM DD statement of the ICSF started task(s) and/or batch job(s), the entries for CKDSN and PKDSN specify the data sets.
+
+Note: Currently on most CSD systems the CKDSN specifies SYS3.CSF.CKDS and PKDSN specifies SYS3.CSF.PKDS.
+
+The following commands are provided as a sample for implementing data set controls:
+
+ad 'sys3.csf.**' uacc(none) owner(sys3) -
+audit(failures(read)) -
+data('ICSF Output Data')
+pe 'sys3.csf.**' id(syspaudt) acc(a)
+pe 'sys3.csf.**' id(tstcaudt) acc(a)
+pe 'sys3.csf.**' id(icsfstc) acc(a)
+pe 'sys3.csf.**' id(audtaudt) acc(r)</fixtext><fix id="F-17072r3_fix" /><check system="C-182r3_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_zOS ICSF for RACF STIG.xml" /><check-content>Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	SENSITVE.RPT(ICSFSTC)
+
+Automated Analysis
+Refer to the following report produced by the Data Set and Resource Data Collection:
+
+-	PDI(ZICS0001)
+
+Verify that access to the IBM Integrated Crypto Service Facility (ICSF) STC data sets are properly restricted.  The data sets to be protected are identified in the data set referenced in the CSFPARM DD statement of the ICSF started task(s) and/or batch job(s), the entries for CKDSN and PKDSN specify the data sets.  If the following guidance is true, this is not a finding.
+
+___	The RACF data set access authorizations restrict READ access to auditors.
+
+___	The RACF data set access authorizations restrict WRITE and/or greater access to systems programming personnel.
+
+___	The RACF data set access authorizations restrict WRITE and/or greater access to the product STC(s) and/or batch job(s).
+
+___	The RACF data set access authorizations specify UACC(NONE) and NOWARNING.</check-content></check></Rule></Group><Group id="V-17452"><title>ZB000030</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-30590r1_rule" severity="medium" weight="10.0"><version>ZICSR030</version><title>IBM Integrated Crypto Service Facility (ICSF) Started Task name is not properly identified / defined to the system ACP.</title><description>&lt;VulnDiscussion&gt;IBM Integrated Crypto Service Facility (ICSF) requires a started task that will be restricted to certain resources, datasets and other system functions. By defining the started task as a userid to the system ACP, It allows the ACP to control the access and authorized users that require these capabilities. Failure to properly control these capabilities, could compromise of the operating system environment, ACP, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECCD-1, ECCD-2&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM Integrated Crypto Service Facility [ICSF]</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM Integrated Crypto Service Facility [ICSF]</dc:subject><dc:identifier>1900</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000764</ident><fixtext fixref="F-27528r1_fix">The Systems Programmer and IAO will ensure that the started task for IBM Integrated Crypto Service Facility (ICSF) Started Task(s) is properly Identified / defined to the System ACP.
+
+If the product requires a Started Task, verify that it is properly defined to the System ACP with the proper attributes.
+
+Most installation manuals will indicate how the Started Task is identified and any additional attributes that must be specified.  Define the started task userid CSFSTART for IBM Integrated Crypto Service Facility (ICSF).
+
+Example:
+
+AU CSFSTART NAME('STC, ICSF') NOPASS -
+	OWNER(STC) DFLTGRP(STC) -
+	 DATA('START ICSF')</fixtext><fix id="F-27528r1_fix" /><check system="C-30920r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_zOS ICSF for RACF STIG.xml" /><check-content>a)	Refer to the following report produced by the RACF Data Collection:
+
+-	RACFCMDS.RPT(LISTUSER)
+
+b)	If the userid(s) for the IBM Integrated Crypto Service Facility (ICSF) started task is defined to the security database, there is NO FINDING.
+
+c)	If the userid(s) for the IBM Integrated Crypto Service Facility (ICSF) started task is not defined to the security database, this is a FINDING.</check-content></check></Rule></Group><Group id="V-17454"><title>ZB000032</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-30579r1_rule" severity="medium" weight="10.0"><version>ZICSR032</version><title>IBM Integrated Crypto Service Facility (ICSF) Started task(s) must be properly defined to the STARTED resource class for RACF.</title><description>&lt;VulnDiscussion&gt;Access to product resources should be restricted to only those individuals responsible for the application connectivity and who have a requirement to access these resources.  Improper control of product resources could potentially compromise the operating system, ACP, and customer data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Manager&lt;/Responsibility&gt;&lt;IAControls&gt;ECCD-1, ECCD-2&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target IBM Integrated Crypto Service Facility [ICSF]</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>IBM Integrated Crypto Service Facility [ICSF]</dc:subject><dc:identifier>1900</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000764</ident><fixtext fixref="F-255r1_fix">The IBM Integrated Crypto Service Facility (ICSF) system programmer and the IAO will ensure that a product's started task(s) is (are) properly identified and/or defined to the System ACP.  
+
+A unique userid must be assigned for the IBM Integrated Crypto Service Facility (ICSF) started task(s) thru a corresponding STARTED class entry.
+
+The following sample set of commands is shown here as a guideline:
+
+rdef started CSFSTART.** uacc(none) owner(admin) audit(all(read)) stdata(user(CSFSTART) group(stc))
+
+setr racl(started) ref</fixtext><fix id="F-255r1_fix" /><check system="C-3339r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_zOS ICSF for RACF STIG.xml" /><check-content>Refer to the following report produced by the RACF Data Collection:
+
+-	DSMON.RPT(RACSPT)
+
+Automated Analysis
+Refer to the following report produced by the RACF Data Collection:
+
+-	PDI(ZICS0032)
+
+Verify that the IBM Integrated Crypto Service Facility (ICSF) started task(s) is (are) defined to the STARTED resource class profile and/or ICHRIN03 table entry.</check-content></check></Rule></Group></Benchmark>

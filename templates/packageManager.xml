@@ -1,0 +1,40 @@
+<form name="form1" text="Cyber Security Tool Suite - Package Manager" clientSizeX="1280" clientSizeY="800" FormBorderStyle="Sizable" minSizeX="1280" minSizeY="800">
+	<controls>
+		
+		<control type="menuStrip" id="mnuMain" name="mnuMain" locationX="0" locationY="200" sizeX="400" sizeY="20">
+			<menuCat name="mnuFile" id="mnuFile" text="&amp;File">
+				<item name="mnuFileOpen" id="mnuFileOpen">&amp;Open</item>
+				<item name="mnuFileSave" id="mnuFileSave">&amp;Save</item>
+				<item name="mnuFileClose" id="mnuFileClose">&amp;Close</item>	
+			</menuCat>
+			<menuCat name="mnuEdit" id="mnuEdit" text="&amp;Edit">
+				<item name="mnuEditCut" id="mnuEditCut">&amp;Cut</item>
+				<item name="mnuEditCopy" id="mnuEditCopy">C&amp;opy</item>
+			</menuCat>
+			<menuCat name="mnuPackage" id="mnuPackage" text="&amp;Package">
+				<item name="mnuEditCut" id="mnuEditCut">&amp;Cut</item>
+				<item name="mnuEditCopy" id="mnuEditCopy">C&amp;opy</item>
+			</menuCat>
+		</control>	
+		
+		
+		
+		
+		<control type="treeView" id="treePackages" name="treePackages" locationX="0" locationY="25" sizeX="175" sizeY="775" dock="left" rootText="Packages"/>		
+		
+		
+		<control type="webBrowser" id="webDisplay" name="webDisplay" locationX="330" locationY="25" dock="fill" />
+		
+		
+		
+		<control type="statusStrip" id="stbMain" name="stbMain" >
+			<item name="stbStatus" id="stbStatus" type="label" text="Status: "/>
+			<item name="stnStatusBlank" id="stnStatusBlank" text='' type="label" />
+			<item name="stpSep2" id="stpSep2" type="seperator" />
+			<item name="stbBenchmark" id="stbBenchmark" type="label" text=""/>
+			<item name="stpSep1" id="stpSep1" type="seperator" />
+			<item name="stbProgress" id="stbProgress" type="progressBar" />
+		</control>
+		
+	</controls>
+</form>

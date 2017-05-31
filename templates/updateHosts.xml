@@ -1,0 +1,23 @@
+<form name="form1" text="Cyber Security Tool Suite - Update Hosts Settings" clientSizeX="400" clientSizeY="275" FormBorderStyle="fixedDialog">
+	<controls>
+		<control type="label" id="lblCmd" name="lblCmd" text="Command To Execute" locationX="5" locationY="5" sizeX="250" sizeY="20" />
+		<control type="textBox" id="txtCmd" name="txtCmd" locationX="5" locationY="25" sizeX="380" sizeY="25"/>
+		
+		<control type="CheckBox" id="gpupdate" name="gpupdate" locationX="5" locationY="50" text="Update Group Policy" sizeX="380" sizeY="25"/>
+		<control type="CheckBox" id="audit" name="audit" locationX="5" locationY="75" text="Update Audit Permissions" sizeX="380" sizeY="25"/>
+		
+		<control type="CheckBox" id="winrm" name="winrm" locationX="5" locationY="100" text="Configure Windows Remote Management" sizeX="380" sizeY="25"/>
+		<control type="CheckBox" id="office" name="office" locationX="5" locationY="125" text="Fix MS Office User Settings" sizeX="380" sizeY="25"/>
+		<control type="CheckBox" id="acas" name="acas" locationX="5" locationY="150" text="Update host for ACAS Credentialed Scans" sizeX="380" sizeY="25"/>
+		<control type="CheckBox" id="win10" name="win10" locationX="5" locationY="175" text="Prevent Windows 10 upgrade." sizeX="380" sizeY="25"/>
+		
+		<control type="CheckBox" id="disUpdate" name="disUpdate" locationX="5" locationY="200" text="Toggle Windows Hotfix from Installing." sizeX="225" sizeY="25"/>
+		<control type="comboBox" id="cboToggle" name="cboToggle" locationX="235" locationY="200" sizeX="60" sizeY="25">
+			<item>Enable</item>
+			<item>Disable</item>
+		</control>
+		<control type="textBox" id="txtKB" name="txtKB" locationX="300" locationY="200" sizeX="100" sizeY="25" value="test"/>
+		
+		<control type="button" id="btnExecute" name="btnExecute" text="Execute" locationX="5" locationY="225" sizeX="390" sizeY="40" backColor="#FFCCCCCC"/>
+	</controls>
+</form>

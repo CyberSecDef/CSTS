@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/unix-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>repotool</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2015-12-15T13:58:28</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition class="inventory" id="oval:mil.disa.fso.aix:def:2" version="3">
+      <metadata>
+        <title>IBM AIX 6.1</title>
+        <affected family="unix">
+          <platform>IBM AIX 6.1</platform>
+        </affected>
+        <reference ref_id="cpe:/o:ibm:aix:6.1" source="CPE" />
+        <description>The operating system installed on the system is IBM AIX 6.1</description>
+      </metadata>
+      <criteria>
+        <criterion comment="Installed operating system is part of the Unix family" test_ref="oval:mil.disa.fso.aix:tst:200" />
+        <criterion comment="Installed operation system is IBM AIX 6.1" test_ref="oval:mil.disa.fso.aix:tst:201" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check_existence="at_least_one_exists" id="oval:mil.disa.fso.aix:tst:200" version="3" check="only one" comment="installed operating system is part of the Unix family">
+      <object object_ref="oval:mil.disa.fso.aix:obj:200" />
+      <state state_ref="oval:mil.disa.fso.aix:ste:200" />
+    </family_test>
+    <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.aix:tst:201" version="3" comment="Installed operating system is IBM AIX" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.fso.aix:obj:201" />
+      <state state_ref="oval:mil.disa.fso.aix:ste:201" />
+    </uname_test>
+  </tests>
+  <objects>
+    <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.aix:obj:200" version="3" comment="The family object" />
+    <uname_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.aix:obj:201" version="3" comment="The uname object" />
+  </objects>
+  <states>
+    <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.aix:ste:200" version="3">
+      <family>unix</family>
+    </family_state>
+    <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.fso.aix:ste:201" version="3">
+      <os_name>AIX</os_name>
+      <os_release>1</os_release>
+      <os_version>6</os_version>
+    </uname_state>
+  </states>
+</oval_definitions>
+

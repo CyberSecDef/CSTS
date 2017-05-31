@@ -1,0 +1,20 @@
+<form name="form1" text="Cyber Security Tool Suite - SecureWipe Settings" clientSizeX="200" clientSizeY="135" FormBorderStyle="fixedDialog">
+	<controls>
+		<control type="label" id="lblTargetPartition" name="lblTargetPartition" text="Target Partition:" locationX="5" locationY="10" sizeX="100" sizeY="20" />
+		<control type="comboBox" id="cboTargetPartition" name="cboTargetPartition" locationX="130" locationY="5" sizeX="65" sizeY="25" text="C:\" />
+			
+		
+		<control type="label" id="lblWipeType" name="lblWipeType" text="Wipe Type:" locationX="5" locationY="35" sizeX="100" sizeY="20" />
+		<control type="comboBox" id="cboWipeType" name="cboWipeType" locationX="130" locationY="30" sizeX="65" sizeY="25" text="Random">
+			<item>Random</item>
+			<item>Zero-Filled</item>
+			<item>One-Filled</item>
+		</control>
+		
+		<control type="label" id="lblSpaceToLeave" name="lblSpaceToLeave" text="Space To Leave (MB):" locationX="5" locationY="60" sizeX="120" sizeY="20" />
+		<control type="textBox" id="txtSpaceToLeave" name="txtSpaceToLeave" locationX="130" locationY="55" sizeX="65" sizeY="25" text="100"/>
+		
+		
+		<control type="button" id="btnExecute" name="btnExecute" text="Execute" locationX="5" locationY="80" sizeX="190" sizeY="50" backColor="#FFCCCCCC"/>
+	</controls>
+</form>

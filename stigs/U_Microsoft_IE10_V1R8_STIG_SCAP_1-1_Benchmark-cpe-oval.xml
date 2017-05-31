@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>repotool</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2016-06-22T09:32:11</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.fso.ie:def:409" version="3" class="inventory">
+      <metadata>
+        <title>Microsoft Internet Explorer 10 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Internet Explorer 10</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:internet_explorer:10" />
+        <description>A version of Microsoft Internet Explorer 10 is installed.</description>
+      </metadata>
+      <criteria>
+        <criterion comment="Internet Explorer 10 is installed" test_ref="oval:mil.disa.fso.ie:tst:40900" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.ie:tst:40900" version="2" comment="Internet Explorer 10 is installed" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.fso.ie:obj:40900" />
+      <state state_ref="oval:mil.disa.fso.ie:ste:40900" />
+    </registry_test>
+  </tests>
+  <objects>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.ie:obj:40900" version="2">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Microsoft\Internet Explorer</key>
+      <name datatype="string">svcVersion</name>
+    </registry_object>
+  </objects>
+  <states>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.ie:ste:40900" version="2" comment="The registry key has a value that matches 10.*">
+      <value operation="pattern match">^10\..*$</value>
+    </registry_state>
+  </states>
+</oval_definitions>
+

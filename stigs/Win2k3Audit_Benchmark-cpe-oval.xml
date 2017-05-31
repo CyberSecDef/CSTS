@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- *********************************************************************************************************-->
+<!-- This OVAL definition file implements Microsoft Windows Server 2003 Security Guide   -->
+<!--   Definitions and tests are included for all environments (Specialized  Security-Limited Functionality   -->
+<!-- , Enterprise, and Legacy).                              -->
+<!-- The accompanying XCCDF (eXtensible Configuration Checklist Description Format) file allows the           -->
+<!-- selection of a Profile, which will combine the environment with the FIPS 199 impact level                -->
+<!-- to identify the set of checks to execute.                                                                -->
+<!-- An External Variables section is located at the end of this file.  The values for these variables        -->
+<!-- are set within the profiles of the accompanying XCCDF file according to the value appropriate for        -->
+<!-- the environment being tested.                                                                            -->
+<!-- ******************************************************************************************************** -->
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd                   http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd                   http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd                   http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
+	<!--                                                                                                      -->
+	<!--                                                                                                      -->
+	<generator>
+		<oval:product_name>G2, Inc.</oval:product_name>
+		<oval:schema_version>5.3</oval:schema_version>
+		<oval:timestamp>2012-03-16T12:00:00</oval:timestamp>
+	</generator>
+	<!-- ================================================================== -->
+	<!-- ===================  DEFINITIONS  =================================== -->
+	<!-- ================================================================== -->
+	<definitions>
+		<definition class="inventory" id="oval:gov.nist.2:def:2" version="1">
+			<metadata>
+				<title>Precondition 2: Windows family, Windows Server 2003</title>
+				<affected family="windows">
+					<platform>Microsoft Windows Server 2003</platform>
+					<product>Windows Server 2003</product>
+				</affected>
+				<description>Windows Server 2003 is installed</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:gov.nist.2:tst:6"/>
+				<criterion comment="Windows Server 2003 is installed" test_ref="oval:gov.nist.2:tst:7"/>
+			</criteria>
+		</definition>
+		<!-- ============== The following have deprecated for this benchmark ========= -->
+		<definition deprecated="true" class="inventory" id="oval:gov.nist.2:def:1" version="2">
+			<metadata>
+				<title>Precondition 1: Windows family</title>
+				<affected family="windows">
+					<platform>Microsoft Windows Server 2003</platform>
+				</affected>
+				<description>Windows is installed</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:gov.nist.2:tst:6"/>
+			</criteria>
+		</definition>
+		<definition deprecated="true" class="inventory" id="oval:gov.nist.2:def:10" version="2">
+			<metadata>
+				<title>Precondition 10: Windows family, Windows Server 2003, SP3, 32 bit</title>
+				<affected family="windows">
+					<platform>Microsoft Windows Server 2003</platform>
+					<product>Windows Server 2003, SP3, 32 bit</product>
+				</affected>
+				<description>Windows Server 2003 SP3 is installed and running on a 32bit architecture</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:gov.nist.2:tst:6"/>
+				<criterion comment="Windows Server 2003 is installed" test_ref="oval:gov.nist.2:tst:7"/>
+				<criterion comment="Server 2003 SP3 or later is installed" test_ref="oval:gov.nist.2:tst:119"/>
+				<criterion comment="Architecture is 32 bit" test_ref="oval:gov.nist.2:tst:11"/>
+			</criteria>
+		</definition>
+		<definition deprecated="true" class="inventory" id="oval:gov.nist.2:def:11" version="2">
+			<metadata>
+				<title>Precondition 11: Windows family, Windows Server 2003, SP1, 64 bit</title>
+				<affected family="windows">
+					<platform>Microsoft Windows Server 2003</platform>
+					<product>Windows Server 2003, SP1, 64 bit</product>
+				</affected>
+				<description>Windows Server 2003 SP1 is installed and running on a 64bit architecture</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:gov.nist.2:tst:6"/>
+				<criterion comment="Windows Server 2003 is installed" test_ref="oval:gov.nist.2:tst:7"/>
+				<criterion comment="Server 2003 SP1 is installed" test_ref="oval:gov.nist.2:tst:56"/>
+				<criterion comment="Architecture is 64 bit" test_ref="oval:gov.nist.2:tst:120"/>
+			</criteria>
+		</definition>
+		<definition deprecated="true" class="inventory" id="oval:gov.nist.2:def:12" version="2">
+			<metadata>
+				<title>Precondition 12: Windows family, Windows Server 2003, SP2, 64 bit</title>
+				<affected family="windows">
+					<platform>Microsoft Windows Server 2003</platform>
+					<product>Windows Server 2003, SP2, 64 bit</product>
+				</affected>
+				<description>Windows Server 2003 SP2 is installed and running on a 64bit architecture</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:gov.nist.2:tst:6"/>
+				<criterion comment="Windows Server 2003 is installed" test_ref="oval:gov.nist.2:tst:7"/>
+				<criterion comment="Server 2003 SP2 is installed" test_ref="oval:gov.nist.2:tst:10"/>
+				<criterion comment="Architecture is 64 bit" test_ref="oval:gov.nist.2:tst:120"/>
+			</criteria>
+		</definition>
+		<definition deprecated="true" class="inventory" id="oval:gov.nist.2:def:13" version="2">
+			<metadata>
+				<title>Precondition 13: Windows family, Windows Server 2003, SP3, 64 bit</title>
+				<affected family="windows">
+					<platform>Microsoft Windows Server 2003</platform>
+					<product>Windows Server 2003, SP3, 64 bit</product>
+				</affected>
+				<description>Windows Server 2003 SP3 is installed and running on a 64bit architecture</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:gov.nist.2:tst:6"/>
+				<criterion comment="Windows Server 2003 is installed" test_ref="oval:gov.nist.2:tst:7"/>
+				<criterion comment="Server 2003 SP3 or later is installed" test_ref="oval:gov.nist.2:tst:119"/>
+				<criterion comment="Architecture is 64 bit" test_ref="oval:gov.nist.2:tst:120"/>
+			</criteria>
+		</definition>
+		<definition deprecated="true" class="inventory" id="oval:gov.nist.2:def:3" version="2">
+			<metadata>
+				<title>Precondition 3: Windows family, Windows Server 2003, SP1</title>
+				<affected family="windows">
+					<platform>Microsoft Windows Server 2003</platform>
+					<product>Windows Server 2003, SP1</product>
+				</affected>
+				<description>Windows Server 2003with SP1 is installed</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:gov.nist.2:tst:6"/>
+				<criterion comment="Windows Server 2003 is installed" test_ref="oval:gov.nist.2:tst:7"/>
+				<criterion comment="Server 2003SP1 is installed" test_ref="oval:gov.nist.2:tst:56"/>
+			</criteria>
+		</definition>
+		<definition deprecated="true" class="inventory" id="oval:gov.nist.2:def:4" version="2">
+			<metadata>
+				<title>Precondition 4: Windows family, Windows Server 2003, SP2</title>
+				<affected family="windows">
+					<platform>Microsoft Windows Server 2003</platform>
+					<product>Windows Server 2003, SP2</product>
+				</affected>
+				<description>Windows Server 2003with SP2 is installed</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:gov.nist.2:tst:6"/>
+				<criterion comment="Windows Server 2003 is installed" test_ref="oval:gov.nist.2:tst:7"/>
+				<criterion comment="Server 2003SP2 is installed" test_ref="oval:gov.nist.2:tst:10"/>
+			</criteria>
+		</definition>
+		<definition deprecated="true" class="inventory" id="oval:gov.nist.2:def:5" version="2">
+			<metadata>
+				<title>Precondition 5: Windows family, Windows Server 2003, SP3</title>
+				<affected family="windows">
+					<platform>Microsoft Windows Server 2003</platform>
+					<product>Windows Server 2003, SP3</product>
+				</affected>
+				<description>Windows Server 2003with SP3 or later is installed</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:gov.nist.2:tst:6"/>
+				<criterion comment="Windows Server 2003 is installed" test_ref="oval:gov.nist.2:tst:7"/>
+				<criterion comment="Server 2003SP3 or later is installed" test_ref="oval:gov.nist.2:tst:119"/>
+			</criteria>
+		</definition>
+		<definition deprecated="true" class="inventory" id="oval:gov.nist.2:def:6" version="2">
+			<metadata>
+				<title>Precondition 6: Windows family, Windows Server 2003, 32 bit</title>
+				<affected family="windows">
+					<platform>Microsoft Windows Server 2003</platform>
+					<product>Windows Server 2003, 32 bit</product>
+				</affected>
+				<description>Windows Server 2003 is installed and running on a 32bit architecture</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:gov.nist.2:tst:6"/>
+				<criterion comment="Windows Server 2003 is installed" test_ref="oval:gov.nist.2:tst:7"/>
+				<criterion comment="Architecture is 32 bit" test_ref="oval:gov.nist.2:tst:11"/>
+			</criteria>
+		</definition>
+		<definition deprecated="true" class="inventory" id="oval:gov.nist.2:def:7" version="2">
+			<metadata>
+				<title>Precondition 7: Windows family, Windows Server 2003, 64 bit</title>
+				<affected family="windows">
+					<platform>Microsoft Windows Server 2003</platform>
+					<product>Windows Server 2003, 64 bit</product>
+				</affected>
+				<description>Windows Server 2003 is installed and running on a 64 bit architecture</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:gov.nist.2:tst:6"/>
+				<criterion comment="Windows Server 2003 is installed" test_ref="oval:gov.nist.2:tst:7"/>
+				<criterion comment="Architecture is 64 bit" test_ref="oval:gov.nist.2:tst:120"/>
+			</criteria>
+		</definition>
+		<definition deprecated="true" class="inventory" id="oval:gov.nist.2:def:8" version="2">
+			<metadata>
+				<title>Precondition 8: Windows family, Windows Server 2003, SP1, 32 bit</title>
+				<affected family="windows">
+					<platform>Microsoft Windows Server 2003</platform>
+					<product>Windows Server 2003, SP1, 32 bit</product>
+				</affected>
+				<description>Windows Server 2003SP1 is installed and running on a 32bit architecture</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:gov.nist.2:tst:6"/>
+				<criterion comment="Windows Server 2003 is installed" test_ref="oval:gov.nist.2:tst:7"/>
+				<criterion comment="Server 2003SP1 is installed" test_ref="oval:gov.nist.2:tst:56"/>
+				<criterion comment="Architecture is 32 bit" test_ref="oval:gov.nist.2:tst:11"/>
+			</criteria>
+		</definition>
+		<definition deprecated="true" class="inventory" id="oval:gov.nist.2:def:9" version="2">
+			<metadata>
+				<title>Precondition 9: Windows family, Windows Server 2003, SP2, 32 bit</title>
+				<affected family="windows">
+					<platform>Microsoft Windows Server 2003</platform>
+					<product>Windows Server 2003, SP2, 32 bit</product>
+				</affected>
+				<description>Precondition 9: Windows family, Windows Server 2003, SP2, 32 bit</description>
+			</metadata>
+			<criteria>
+				<criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:gov.nist.2:tst:6"/>
+				<criterion comment="Windows Server 2003 is installed" test_ref="oval:gov.nist.2:tst:7"/>
+				<criterion comment="Server 2003 SP2 is installed" test_ref="oval:gov.nist.2:tst:10"/>
+				<criterion comment="Architecture is 32 bit" test_ref="oval:gov.nist.2:tst:11"/>
+			</criteria>
+		</definition>
+	</definitions>
+	<!-- ================================================================== -->
+	<!-- ===========================  TESTS ================================ -->
+	<!-- ================================================================== -->
+	<tests>
+		<family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" check="only one" comment="the installed operating system is part of the Microsoft Windows family" id="oval:gov.nist.2:tst:6" version="1">
+			<object object_ref="oval:gov.nist.2:obj:3"/>
+			<state state_ref="oval:gov.nist.2:ste:14"/>
+		</family_test>
+		<registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" comment="Windows Server 2003is installed" id="oval:gov.nist.2:tst:7" version="1">
+			<object object_ref="oval:gov.nist.2:obj:4"/>
+			<state state_ref="oval:gov.nist.2:ste:15"/>
+		</registry_test>
+		<!-- ============== The following have deprecated for this benchmark ========= -->
+		<registry_test deprecated="true" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" comment="Win2K/XP/2003 service pack 2 is installed" id="oval:gov.nist.2:tst:10" version="2">
+			<object object_ref="oval:gov.nist.2:obj:6"/>
+			<state state_ref="oval:gov.nist.2:ste:16"/>
+		</registry_test>
+		<registry_test deprecated="true" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" comment="32-Bit version of Windows is installed" id="oval:gov.nist.2:tst:11" version="2">
+			<object object_ref="oval:gov.nist.2:obj:7"/>
+			<state state_ref="oval:gov.nist.2:ste:17"/>
+		</registry_test>
+		<registry_test deprecated="true" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" comment="Win2K/XP/2003 service pack 3 or later is installed" id="oval:gov.nist.2:tst:119" version="2">
+			<object object_ref="oval:gov.nist.2:obj:6"/>
+			<state state_ref="oval:gov.nist.2:ste:57"/>
+		</registry_test>
+		<registry_test deprecated="true" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" comment="64-Bit version of Windows is installed" id="oval:gov.nist.2:tst:120" version="2">
+			<object object_ref="oval:gov.nist.2:obj:7"/>
+			<state state_ref="oval:gov.nist.2:ste:58"/>
+		</registry_test>
+		<registry_test deprecated="true" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="at least one" comment="Win2K/XP/2003 service pack 1 is installed" id="oval:gov.nist.2:tst:56" version="2">
+			<object object_ref="oval:gov.nist.2:obj:6"/>
+			<state state_ref="oval:gov.nist.2:ste:56"/>
+		</registry_test>
+	</tests>
+	<!-- ================================================================== -->
+	<!-- ========================= OBJECTS ================================ -->
+	<!-- ================================================================== -->
+	<objects>
+		<family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:gov.nist.2:obj:3" version="1"/>
+		<registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:gov.nist.2:obj:4" version="1">
+			<hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+			<key datatype="string">SOFTWARE\Microsoft\Windows NT\CurrentVersion</key>
+			<name datatype="string">CurrentVersion</name>
+		</registry_object>
+		<!-- ============== The following have deprecated for this benchmark ========= -->
+		<registry_object deprecated="true" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:gov.nist.2:obj:6" version="2">
+			<hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+			<key datatype="string">SOFTWARE\Microsoft\Windows NT\CurrentVersion</key>
+			<name datatype="string">CSDVersion</name>
+		</registry_object>
+		<registry_object deprecated="true" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:gov.nist.2:obj:7" version="2">
+			<hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+			<key datatype="string">SYSTEM\CurrentControlSet\Control\Session Manager\Environment</key>
+			<name datatype="string">PROCESSOR_ARCHITECTURE</name>
+		</registry_object>
+	</objects>
+	<!-- ================================================================== -->
+	<!-- ======================= STATES ==================================== -->
+	<!-- ================================================================== -->
+	<states>
+		<family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:gov.nist.2:ste:14" version="1">
+			<family>windows</family>
+		</family_state>
+		<registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:gov.nist.2:ste:15" version="1">
+			<value>5.2</value>
+		</registry_state>
+		<!-- ============== The following have deprecated for this benchmark ========= -->
+		<registry_state deprecated="true" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:gov.nist.2:ste:16" version="2">
+			<value operation="equals">Service Pack 2</value>
+		</registry_state>
+		<registry_state deprecated="true" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:gov.nist.2:ste:17" version="2">
+			<value operation="equals">x86</value>
+		</registry_state>
+		<registry_state deprecated="true" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:gov.nist.2:ste:56" version="2">
+			<value operation="equals">Service Pack 1</value>
+		</registry_state>
+		<registry_state deprecated="true" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:gov.nist.2:ste:57" version="2">
+			<value operation="pattern match">^Service Pack [3-9]|\d{2,}$</value>
+		</registry_state>
+		<registry_state deprecated="true" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:gov.nist.2:ste:58" version="2">
+			<value operation="equals">ia64</value>
+		</registry_state>
+	</states>
+</oval_definitions>

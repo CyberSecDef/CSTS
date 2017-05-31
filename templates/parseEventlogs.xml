@@ -1,0 +1,18 @@
+<form name="form1" text="Cyber Security Tool Suite - parseEvenlogs Settings" clientSizeX="410" clientSizeY="200" FormBorderStyle="fixedDialog">
+	<controls>
+		<control type="label" id="lblCmd" name="lblCmd" text="Location of Eventlog Archives:" locationX="5" locationY="5" sizeX="250" sizeY="20" />
+		<control type="textBox" id="txtArchiveLocation" name="txtArchiveLocation" locationX="5" locationY="25" sizeX="255" sizeY="25"/>
+		<control type="button" id="btnOpenFolderBrowser" name="btnOpenFolderBrowser" text="Browse for Archive" locationX="265" locationY="25" sizeX="140" sizeY="20" />
+		
+		<control type="label" id="lblComputer" name="lblComputer" text="Live System:" locationX="5" locationY="50" sizeX="250" sizeY="20" />
+		<control type="textBox" id="txtComputer" name="txtComputer" locationX="5" locationY="70" sizeX="255" sizeY="20" />
+		
+		<control type="label" id="lblStart" name="lblStart" text="Start:" locationX="5" locationY="100" sizeX="100" sizeY="20" />
+		<control type="dateTimePicker" id="dtpStart" name="dtpStart" locationX="5" locationY="120" />
+		
+		<control type="label" id="lblStop" name="lblStop" text="Stop:" locationX="205" locationY="100" sizeX="100" sizeY="20" />
+		<control type="dateTimePicker" id="dtpStop" name="dtpStop" locationX="205" locationY="120" />
+		
+		<control type="button" id="btnExecute" name="btnExecute" text="Execute" locationX="5" locationY="145" sizeX="400" sizeY="50" backColor="#FFCCCCCC"/>
+	</controls>
+</form>

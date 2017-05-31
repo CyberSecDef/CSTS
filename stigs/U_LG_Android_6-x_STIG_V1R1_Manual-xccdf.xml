@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" id="LG_Android_6-x_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2016-05-05">accepted</status><title>LG Android 6.x Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 09 May 2016</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-66805" selected="true" /><select idref="V-66807" selected="true" /><select idref="V-66809" selected="true" /><select idref="V-66811" selected="true" /><select idref="V-66813" selected="true" /><select idref="V-66815" selected="true" /><select idref="V-66817" selected="true" /><select idref="V-66819" selected="true" /><select idref="V-66821" selected="true" /><select idref="V-66823" selected="true" /><select idref="V-66825" selected="true" /><select idref="V-66827" selected="true" /><select idref="V-66829" selected="true" /><select idref="V-66831" selected="true" /><select idref="V-66833" selected="true" /><select idref="V-66835" selected="true" /><select idref="V-66837" selected="true" /><select idref="V-66839" selected="true" /><select idref="V-66841" selected="true" /><select idref="V-66843" selected="true" /><select idref="V-66845" selected="true" /><select idref="V-66861" selected="true" /><select idref="V-66863" selected="true" /><select idref="V-66865" selected="true" /><select idref="V-66867" selected="true" /><select idref="V-66869" selected="true" /><select idref="V-66871" selected="true" /><select idref="V-66873" selected="true" /><select idref="V-66875" selected="true" /><select idref="V-66877" selected="true" /><select idref="V-66879" selected="true" /><select idref="V-66881" selected="true" /><select idref="V-66883" selected="true" /><select idref="V-66885" selected="true" /><select idref="V-66887" selected="true" /><select idref="V-66889" selected="true" /><select idref="V-66891" selected="true" /><select idref="V-66893" selected="true" /><select idref="V-66895" selected="true" /><select idref="V-66897" selected="true" /><select idref="V-66899" selected="true" /><select idref="V-66901" selected="true" /><select idref="V-66903" selected="true" /><select idref="V-66905" selected="true" /><select idref="V-66907" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-66805" selected="true" /><select idref="V-66807" selected="true" /><select idref="V-66809" selected="true" /><select idref="V-66811" selected="true" /><select idref="V-66813" selected="true" /><select idref="V-66815" selected="true" /><select idref="V-66817" selected="true" /><select idref="V-66819" selected="true" /><select idref="V-66821" selected="true" /><select idref="V-66823" selected="true" /><select idref="V-66825" selected="true" /><select idref="V-66827" selected="true" /><select idref="V-66829" selected="true" /><select idref="V-66831" selected="true" /><select idref="V-66833" selected="true" /><select idref="V-66835" selected="true" /><select idref="V-66837" selected="true" /><select idref="V-66839" selected="true" /><select idref="V-66841" selected="true" /><select idref="V-66843" selected="true" /><select idref="V-66845" selected="true" /><select idref="V-66861" selected="true" /><select idref="V-66863" selected="true" /><select idref="V-66865" selected="true" /><select idref="V-66867" selected="true" /><select idref="V-66869" selected="true" /><select idref="V-66871" selected="true" /><select idref="V-66873" selected="true" /><select idref="V-66875" selected="true" /><select idref="V-66877" selected="true" /><select idref="V-66879" selected="true" /><select idref="V-66881" selected="true" /><select idref="V-66883" selected="true" /><select idref="V-66885" selected="true" /><select idref="V-66887" selected="true" /><select idref="V-66889" selected="true" /><select idref="V-66891" selected="true" /><select idref="V-66893" selected="true" /><select idref="V-66895" selected="true" /><select idref="V-66897" selected="true" /><select idref="V-66899" selected="true" /><select idref="V-66901" selected="true" /><select idref="V-66903" selected="true" /><select idref="V-66905" selected="true" /><select idref="V-66907" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-66805" selected="true" /><select idref="V-66807" selected="true" /><select idref="V-66809" selected="true" /><select idref="V-66811" selected="true" /><select idref="V-66813" selected="true" /><select idref="V-66815" selected="true" /><select idref="V-66817" selected="true" /><select idref="V-66819" selected="true" /><select idref="V-66821" selected="true" /><select idref="V-66823" selected="true" /><select idref="V-66825" selected="true" /><select idref="V-66827" selected="true" /><select idref="V-66829" selected="true" /><select idref="V-66831" selected="true" /><select idref="V-66833" selected="true" /><select idref="V-66835" selected="true" /><select idref="V-66837" selected="true" /><select idref="V-66839" selected="true" /><select idref="V-66841" selected="true" /><select idref="V-66843" selected="true" /><select idref="V-66845" selected="true" /><select idref="V-66861" selected="true" /><select idref="V-66863" selected="true" /><select idref="V-66865" selected="true" /><select idref="V-66867" selected="true" /><select idref="V-66869" selected="true" /><select idref="V-66871" selected="true" /><select idref="V-66873" selected="true" /><select idref="V-66875" selected="true" /><select idref="V-66877" selected="true" /><select idref="V-66879" selected="true" /><select idref="V-66881" selected="true" /><select idref="V-66883" selected="true" /><select idref="V-66885" selected="true" /><select idref="V-66887" selected="true" /><select idref="V-66889" selected="true" /><select idref="V-66891" selected="true" /><select idref="V-66893" selected="true" /><select idref="V-66895" selected="true" /><select idref="V-66897" selected="true" /><select idref="V-66899" selected="true" /><select idref="V-66901" selected="true" /><select idref="V-66903" selected="true" /><select idref="V-66905" selected="true" /><select idref="V-66907" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-66805" selected="true" /><select idref="V-66807" selected="true" /><select idref="V-66809" selected="true" /><select idref="V-66811" selected="true" /><select idref="V-66813" selected="true" /><select idref="V-66815" selected="true" /><select idref="V-66817" selected="true" /><select idref="V-66819" selected="true" /><select idref="V-66821" selected="true" /><select idref="V-66823" selected="true" /><select idref="V-66825" selected="true" /><select idref="V-66827" selected="true" /><select idref="V-66829" selected="true" /><select idref="V-66831" selected="true" /><select idref="V-66833" selected="true" /><select idref="V-66835" selected="true" /><select idref="V-66837" selected="true" /><select idref="V-66839" selected="true" /><select idref="V-66841" selected="true" /><select idref="V-66843" selected="true" /><select idref="V-66845" selected="true" /><select idref="V-66861" selected="true" /><select idref="V-66863" selected="true" /><select idref="V-66865" selected="true" /><select idref="V-66867" selected="true" /><select idref="V-66869" selected="true" /><select idref="V-66871" selected="true" /><select idref="V-66873" selected="true" /><select idref="V-66875" selected="true" /><select idref="V-66877" selected="true" /><select idref="V-66879" selected="true" /><select idref="V-66881" selected="true" /><select idref="V-66883" selected="true" /><select idref="V-66885" selected="true" /><select idref="V-66887" selected="true" /><select idref="V-66889" selected="true" /><select idref="V-66891" selected="true" /><select idref="V-66893" selected="true" /><select idref="V-66895" selected="true" /><select idref="V-66897" selected="true" /><select idref="V-66899" selected="true" /><select idref="V-66901" selected="true" /><select idref="V-66903" selected="true" /><select idref="V-66905" selected="true" /><select idref="V-66907" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-66805" selected="true" /><select idref="V-66807" selected="true" /><select idref="V-66809" selected="true" /><select idref="V-66811" selected="true" /><select idref="V-66813" selected="true" /><select idref="V-66815" selected="true" /><select idref="V-66817" selected="true" /><select idref="V-66819" selected="true" /><select idref="V-66821" selected="true" /><select idref="V-66823" selected="true" /><select idref="V-66825" selected="true" /><select idref="V-66827" selected="true" /><select idref="V-66829" selected="true" /><select idref="V-66831" selected="true" /><select idref="V-66833" selected="true" /><select idref="V-66835" selected="true" /><select idref="V-66837" selected="true" /><select idref="V-66839" selected="true" /><select idref="V-66841" selected="true" /><select idref="V-66843" selected="true" /><select idref="V-66845" selected="true" /><select idref="V-66861" selected="true" /><select idref="V-66863" selected="true" /><select idref="V-66865" selected="true" /><select idref="V-66867" selected="true" /><select idref="V-66869" selected="true" /><select idref="V-66871" selected="true" /><select idref="V-66873" selected="true" /><select idref="V-66875" selected="true" /><select idref="V-66877" selected="true" /><select idref="V-66879" selected="true" /><select idref="V-66881" selected="true" /><select idref="V-66883" selected="true" /><select idref="V-66885" selected="true" /><select idref="V-66887" selected="true" /><select idref="V-66889" selected="true" /><select idref="V-66891" selected="true" /><select idref="V-66893" selected="true" /><select idref="V-66895" selected="true" /><select idref="V-66897" selected="true" /><select idref="V-66899" selected="true" /><select idref="V-66901" selected="true" /><select idref="V-66903" selected="true" /><select idref="V-66905" selected="true" /><select idref="V-66907" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-66805" selected="true" /><select idref="V-66807" selected="true" /><select idref="V-66809" selected="true" /><select idref="V-66811" selected="true" /><select idref="V-66813" selected="true" /><select idref="V-66815" selected="true" /><select idref="V-66817" selected="true" /><select idref="V-66819" selected="true" /><select idref="V-66821" selected="true" /><select idref="V-66823" selected="true" /><select idref="V-66825" selected="true" /><select idref="V-66827" selected="true" /><select idref="V-66829" selected="true" /><select idref="V-66831" selected="true" /><select idref="V-66833" selected="true" /><select idref="V-66835" selected="true" /><select idref="V-66837" selected="true" /><select idref="V-66839" selected="true" /><select idref="V-66841" selected="true" /><select idref="V-66843" selected="true" /><select idref="V-66845" selected="true" /><select idref="V-66861" selected="true" /><select idref="V-66863" selected="true" /><select idref="V-66865" selected="true" /><select idref="V-66867" selected="true" /><select idref="V-66869" selected="true" /><select idref="V-66871" selected="true" /><select idref="V-66873" selected="true" /><select idref="V-66875" selected="true" /><select idref="V-66877" selected="true" /><select idref="V-66879" selected="true" /><select idref="V-66881" selected="true" /><select idref="V-66883" selected="true" /><select idref="V-66885" selected="true" /><select idref="V-66887" selected="true" /><select idref="V-66889" selected="true" /><select idref="V-66891" selected="true" /><select idref="V-66893" selected="true" /><select idref="V-66895" selected="true" /><select idref="V-66897" selected="true" /><select idref="V-66899" selected="true" /><select idref="V-66901" selected="true" /><select idref="V-66903" selected="true" /><select idref="V-66905" selected="true" /><select idref="V-66907" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-66805" selected="true" /><select idref="V-66807" selected="true" /><select idref="V-66809" selected="true" /><select idref="V-66811" selected="true" /><select idref="V-66813" selected="true" /><select idref="V-66815" selected="true" /><select idref="V-66817" selected="true" /><select idref="V-66819" selected="true" /><select idref="V-66821" selected="true" /><select idref="V-66823" selected="true" /><select idref="V-66825" selected="true" /><select idref="V-66827" selected="true" /><select idref="V-66829" selected="true" /><select idref="V-66831" selected="true" /><select idref="V-66833" selected="true" /><select idref="V-66835" selected="true" /><select idref="V-66837" selected="true" /><select idref="V-66839" selected="true" /><select idref="V-66841" selected="true" /><select idref="V-66843" selected="true" /><select idref="V-66845" selected="true" /><select idref="V-66861" selected="true" /><select idref="V-66863" selected="true" /><select idref="V-66865" selected="true" /><select idref="V-66867" selected="true" /><select idref="V-66869" selected="true" /><select idref="V-66871" selected="true" /><select idref="V-66873" selected="true" /><select idref="V-66875" selected="true" /><select idref="V-66877" selected="true" /><select idref="V-66879" selected="true" /><select idref="V-66881" selected="true" /><select idref="V-66883" selected="true" /><select idref="V-66885" selected="true" /><select idref="V-66887" selected="true" /><select idref="V-66889" selected="true" /><select idref="V-66891" selected="true" /><select idref="V-66893" selected="true" /><select idref="V-66895" selected="true" /><select idref="V-66897" selected="true" /><select idref="V-66899" selected="true" /><select idref="V-66901" selected="true" /><select idref="V-66903" selected="true" /><select idref="V-66905" selected="true" /><select idref="V-66907" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-66805" selected="true" /><select idref="V-66807" selected="true" /><select idref="V-66809" selected="true" /><select idref="V-66811" selected="true" /><select idref="V-66813" selected="true" /><select idref="V-66815" selected="true" /><select idref="V-66817" selected="true" /><select idref="V-66819" selected="true" /><select idref="V-66821" selected="true" /><select idref="V-66823" selected="true" /><select idref="V-66825" selected="true" /><select idref="V-66827" selected="true" /><select idref="V-66829" selected="true" /><select idref="V-66831" selected="true" /><select idref="V-66833" selected="true" /><select idref="V-66835" selected="true" /><select idref="V-66837" selected="true" /><select idref="V-66839" selected="true" /><select idref="V-66841" selected="true" /><select idref="V-66843" selected="true" /><select idref="V-66845" selected="true" /><select idref="V-66861" selected="true" /><select idref="V-66863" selected="true" /><select idref="V-66865" selected="true" /><select idref="V-66867" selected="true" /><select idref="V-66869" selected="true" /><select idref="V-66871" selected="true" /><select idref="V-66873" selected="true" /><select idref="V-66875" selected="true" /><select idref="V-66877" selected="true" /><select idref="V-66879" selected="true" /><select idref="V-66881" selected="true" /><select idref="V-66883" selected="true" /><select idref="V-66885" selected="true" /><select idref="V-66887" selected="true" /><select idref="V-66889" selected="true" /><select idref="V-66891" selected="true" /><select idref="V-66893" selected="true" /><select idref="V-66895" selected="true" /><select idref="V-66897" selected="true" /><select idref="V-66899" selected="true" /><select idref="V-66901" selected="true" /><select idref="V-66903" selected="true" /><select idref="V-66905" selected="true" /><select idref="V-66907" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-66805" selected="true" /><select idref="V-66807" selected="true" /><select idref="V-66809" selected="true" /><select idref="V-66811" selected="true" /><select idref="V-66813" selected="true" /><select idref="V-66815" selected="true" /><select idref="V-66817" selected="true" /><select idref="V-66819" selected="true" /><select idref="V-66821" selected="true" /><select idref="V-66823" selected="true" /><select idref="V-66825" selected="true" /><select idref="V-66827" selected="true" /><select idref="V-66829" selected="true" /><select idref="V-66831" selected="true" /><select idref="V-66833" selected="true" /><select idref="V-66835" selected="true" /><select idref="V-66837" selected="true" /><select idref="V-66839" selected="true" /><select idref="V-66841" selected="true" /><select idref="V-66843" selected="true" /><select idref="V-66845" selected="true" /><select idref="V-66861" selected="true" /><select idref="V-66863" selected="true" /><select idref="V-66865" selected="true" /><select idref="V-66867" selected="true" /><select idref="V-66869" selected="true" /><select idref="V-66871" selected="true" /><select idref="V-66873" selected="true" /><select idref="V-66875" selected="true" /><select idref="V-66877" selected="true" /><select idref="V-66879" selected="true" /><select idref="V-66881" selected="true" /><select idref="V-66883" selected="true" /><select idref="V-66885" selected="true" /><select idref="V-66887" selected="true" /><select idref="V-66889" selected="true" /><select idref="V-66891" selected="true" /><select idref="V-66893" selected="true" /><select idref="V-66895" selected="true" /><select idref="V-66897" selected="true" /><select idref="V-66899" selected="true" /><select idref="V-66901" selected="true" /><select idref="V-66903" selected="true" /><select idref="V-66905" selected="true" /><select idref="V-66907" selected="true" /></Profile><Group id="V-66805"><title>PP-MDF-201001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81295r2_rule" severity="high" weight="10.0"><version>LGA6-20-100101</version><title>LG Android 6.x must require a valid password be successfully entered before the mobile device data is unencrypted.</title><description>&lt;VulnDiscussion&gt;Passwords provide a form of access control that prevents unauthorized individuals from accessing computing resources and sensitive data. Passwords may also be a source of entropy for generation of key encryption or data encryption keys. If a password is not required to access data, then this data is accessible to any adversary who obtains physical possession of the device. Requiring that a password be successfully entered before the mobile device data is unencrypted mitigates this risk.
+
+Note: MDF PP v.2.0 requires a Password Authentication Factor and requires management of its length and complexity. It leaves open whether the existence of a password is subject to management. This STIGID addresses the configuration to require a password, which is critical to the cybersecurity posture of the device.
+
+SFR ID: FIA_UAU_EXT.1.1&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002476</ident><fixtext fixref="F-72905r2_fix">Configure the mobile operating system to force successful entry of a password before data resident on the device is decrypted.
+
+On the MDM Administration Console, configure a "Password" policy and assign it to all groups.</fixtext><fix id="F-72905r2_fix" /><check system="C-67455r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Password" setting in the MDM console.
+2. Verify a password policy has been configured.
+3. Verify a password policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to the password entry screen: Settings &gt;&gt; General &gt;&gt; Security (or Fingerprints &amp; security) &gt;&gt; Lock screen &gt;&gt; Select screen lock.
+3. Verify password is enabled and cannot be disabled (grayed out).
+
+If on the MDM console a password policy is not configured or on the LG Android device the password is not enabled or can be disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-66807"><title>PP-MDF-201002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81297r2_rule" severity="low" weight="10.0"><version>LGA6-20-100201</version><title>LG Android 6.x must enforce a minimum password length of 6 characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute force attacks. The ability to crack a password is a function of how many attempts an adversary is permitted, how quickly an adversary can do each attempt, and the size of the password space. The longer the minimum length of the password is, the larger the password space. Having a too-short minimum password length significantly reduces password strength, increasing the chance of password compromise and resulting device and data compromise.
+
+SFR ID: FMT_SMF_EXT.1.1 #01a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000205</ident><fixtext fixref="F-72907r2_fix">Configure the mobile operating system to enforce a minimum password length of six characters or more.
+
+On the MDM Administration Console, set the "Password length" value to six or greater.</fixtext><fix id="F-72907r2_fix" /><check system="C-67457r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM Console, do the following:
+
+1. Ask the MDM administrator to display the "Password length" setting in the MDM console.
+2. In the password policy, verify the setting for the password length equals or is greater than six characters.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to the password entry screen: Settings &gt;&gt; General &gt;&gt; Security (or Fingerprints &amp; security) &gt;&gt; Lock screen &gt;&gt; Select screen lock &gt;&gt; Password &gt;&gt; Set password.
+3. Attempt to enter a password with a length less than the required value.
+
+If the configured value of the "Password length" setting is less than six characters or if the LG Android device accepts a password of less than six characters, this is a finding.</check-content></check></Rule></Group><Group id="V-66809"><title>PP-MDF-201003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81299r2_rule" severity="medium" weight="10.0"><version>LGA6-20-100301</version><title>LG Android 6.x must lock the display after 15 minutes (or less) of inactivity.</title><description>&lt;VulnDiscussion&gt;The screen lock timeout must be set to a value that helps protect the device from unauthorized access. Having a too-long timeout would increase the window of opportunity for adversaries who gain physical access to the mobile device through loss, theft, etc. Such devices are much more likely to be in an unlocked state when acquired by an adversary, thus granting immediate access to the data on the mobile device. The maximum timeout period of 15 minutes has been selected to balance functionality and security; shorter timeout periods may be appropriate depending on the risks posed to the mobile device.
+
+SFR ID: FMT_SMF_EXT.1.1 #02b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000057</ident><fixtext fixref="F-72909r2_fix">Configure the mobile operating system to lock the device display after 15 minutes (or less) of inactivity.
+
+On the MDM Administration Console, set the "Maximum time to lock" value to 15 minutes (or less).</fixtext><fix id="F-72909r2_fix" /><check system="C-67459r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Maximum time to lock" setting in the password policy on the MDM console.
+2. Verify the value of the setting is 15 minutes or less.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to the password entry screen: Settings &gt;&gt; General &gt;&gt; Security (or Fingerprints &amp; security) &gt;&gt; Lock screen &gt;&gt; Lock timer.
+3. Verify "Lock timer" is set to 15 minutes or less.
+
+If on the MDM console the "maximum time to lock" setting is not set to 15 minutes or less or if on the LG Android device the "Lock timer" is not set to 15 minutes or less, this is a finding.</check-content></check></Rule></Group><Group id="V-66811"><title>PP-MDF-201004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81301r2_rule" severity="low" weight="10.0"><version>LGA6-20-100401</version><title>LG Android 6.x must not allow passwords that include more than two repeating or sequential characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute force attacks. Passwords that contain repeating or sequential characters are significantly easier to guess than those that do not contain repeating or sequential characters. Therefore, disallowing repeating or sequential characters increases password strength and decreases risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #01b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72911r2_fix">Configure the mobile operating system to prevent passwords from containing more than two repeating or sequential characters.
+
+On the MDM Administration Console, set the "Max Repeating Characters" and "Max Sequential Numbers" values to 2 or less.</fixtext><fix id="F-72911r2_fix" /><check system="C-67461r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Max Repeating Characters" and "Max Sequential Numbers" settings in the Android Password Policy.
+2. Verify the value of the setting is two or less.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to the password entry screen: Settings &gt;&gt; General &gt;&gt; Security (or Fingerprints &amp; security) &gt;&gt; Lock screen &gt;&gt; Select screen lock &gt;&gt; Password &gt;&gt; Set password.
+3. Attempt to enter a password that contains repeating characters or sequential numbers of more than two.
+4. Verify the password is not accepted.
+
+If on the MDM console the configured values of the "Max Repeating Character" and "Max Sequential Number" settings are greater than two or the LG Android device accepts a password that contains more than two repeating characters or sequential numbers, this is a finding.</check-content></check></Rule></Group><Group id="V-66813"><title>PP-MDF-201005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81303r2_rule" severity="low" weight="10.0"><version>LGA6-20-100501</version><title>LG Android 6.x must not allow more than 10 consecutive failed authentication attempts.</title><description>&lt;VulnDiscussion&gt;The more attempts an adversary has to guess a password, the more likely the adversary will enter the correct password and gain access to resources on the device. Setting a limit on the number of attempts mitigates this risk. Setting the limit at 10 gives authorized users the ability to make a few mistakes when entering the password but still provides adequate protection against dictionary or brute force attacks on the password.
+
+SFR ID: FMT_SMF_EXT.1.1 #02c&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000044</ident><fixtext fixref="F-72913r2_fix">Configure the mobile operating system to allow only 10 or less consecutive failed authentication attempts.
+
+On the MDM Administration Console, set the "Maximum failed password attempts" value to 10 or less.</fixtext><fix id="F-72913r2_fix" /><check system="C-67463r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM Console, do the following:
+
+1. Ask the MDM administrator to display "Maximum failed password attempts" in the password policy.
+2. Verify the value is 10 or less.
+
+On the LG Android device:
+
+Note: It is recommended that this procedure be performed only on a test device.
+
+Enter the wrong Password until the device performs a factory reset.
+
+Note: The number of password attempts needed before the device performs a factory reset.
+
+If on the MDM console the "Maximum failed password attempts" is not set to 10 or less or the LG Android device did not perform a factory reset before a wrong password was entered eleven times, this is a finding.</check-content></check></Rule></Group><Group id="V-66815"><title>PP-MDF-201006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81305r2_rule" severity="medium" weight="10.0"><version>LGA6-20-100601</version><title>LG Android 6.x must enforce an application installation policy by specifying one or more authorized application repositories by disabling Google Play.</title><description>&lt;VulnDiscussion&gt;Forcing all applications to be installed from authorized application repositories can prevent unauthorized and malicious applications from being installed and executed on mobile devices. Allowing such installations and executions could cause a compromise of DoD data accessible by these unauthorized/malicious applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #10a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-001806</ident><fixtext fixref="F-72915r3_fix">Configure the mobile operating system to disable unauthorized application repositories.
+
+On the MDM Administration Console, disable "Google Play Store".</fixtext><fix id="F-72915r3_fix" /><check system="C-67465r3_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following: 
+
+1. Ask the MDM administrator to display the "Allow Google Play Store" setting in the MDM console.
+2. Verify the setting is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to the Play Store on the device home screen.
+3. Verify Google Play Store application does not run.
+
+If on the MDM console the "Allow Google Play Store" setting is enabled or if the user is able to run the Google Play Store on the LG Android device, this is a finding.</check-content></check></Rule></Group><Group id="V-66817"><title>PP-MDF-201007</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81307r2_rule" severity="medium" weight="10.0"><version>LGA6-20-100701</version><title>LG Android 6.x must enforce an application installation policy by specifying an application whitelist.</title><description>&lt;VulnDiscussion&gt;Requiring all authorized applications to be in an application whitelist prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the whitelist. Failure to configure an application whitelist properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DoD data accessible by these applications.
+
+The application whitelist, in addition to controlling the installation of applications on the MD, must control user access/execution of all core applications (included in the operating system (OS) by the OS vendor) and pre-installed applications (provided by the MD vendor and wireless carrier), or the MD must provide an alternate method of restricting user access/execution to core and pre-installed applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #10b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-001806</ident><fixtext fixref="F-72917r2_fix">Configure the mobile operating system to use an application whitelist.
+
+On the MDM Administration Console, set "Application whitelist configuration (install)".</fixtext><fix id="F-72917r2_fix" /><check system="C-67467r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on the MDM Administration Console.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Application whitelist configuration (install)" setting.
+2. Verify the "Application whitelist configuration (install)" setting is enabled.
+3. Verify all applications on the list of white-listed applications have been approved by the Authorizing Official (AO).
+4. Verify an application white list policy has been assigned to all groups.
+
+Note: This list can be empty if no applications have been approved.
+
+If the "Application whitelist configuration (install)" setting is disabled, or if applications listed in the MDM console "Application whitelist configuration (install)" are not approved by the AO, this is a finding.</check-content></check></Rule></Group><Group id="V-66819"><title>PP-MDF-201008</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81309r2_rule" severity="medium" weight="10.0"><version>LGA6-20-100801</version><title>LG Android 6.x must not display notifications when the device is locked.</title><description>&lt;VulnDiscussion&gt;Many mobile devices display notifications on the lock screen so that users can obtain relevant information in a timely manner without having to frequently unlock the phone to determine if there are new notifications. However, in many cases, these notifications can contain sensitive information. When they are available on the lock screen, an adversary can see them merely by being in close physical proximity to the device. Configuring the mobile operating system to not send notifications to the lock screen mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #21&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000062</ident><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72919r2_fix">Configure the mobile operating system to not display notifications when the device is locked.
+
+On the MDM Administration Console, select "All" or "Secure notifications" in the Keyguard Disabled policy.</fixtext><fix id="F-72919r2_fix" /><check system="C-67469r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow Keyguard" setting in the MDM console.
+2. Verify "All" or "Secure notifications" is selected in the "Keyguard Disabled" policy.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Add a calendar event for the current day on the device.
+3. Lock the device.
+4. Verify no notifications are displayed on the locked screen of the LG Android device.
+
+If on the MDM console the "Keyguard Disabled" policy is not set to "All" or "Secure notifications" is not set on the LG Android device; a notification can be displayed on the locked screen, this is a finding.</check-content></check></Rule></Group><Group id="V-66821"><title>PP-MDF-201010</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81311r2_rule" severity="medium" weight="10.0"><version>LGA6-20-101001</version><title>LG Android 6.x must not allow use of developer modes.</title><description>&lt;VulnDiscussion&gt;Developer modes expose features of the mobile operating system that are not available during standard operation. An adversary may leverage a vulnerability inherently in developer mode to compromise the confidentiality, integrity, and availability of DoD-sensitive information. Disabling developer modes mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #24&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000381</ident><fixtext fixref="F-72921r2_fix">Configure the mobile operating system to disable developer modes.
+
+On the MDM Administration Console, disable "Allow Developer Modes".</fixtext><fix id="F-72921r2_fix" /><check system="C-67471r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow developer modes" setting in the MDM console.
+2. Verify the setting is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to Settings &gt;&gt; General &gt;&gt; About Phone &gt;&gt; Software info &gt;&gt; Build number.
+3. Push "Build number" multiple times until a pop-up menu display indicates developer option unavailable by server policy.
+
+If on the MDM console and the "Allow developer modes" setting is enabled or on the LG Android device the developer mode is available, this is a finding.</check-content></check></Rule></Group><Group id="V-66823"><title>PP-MDF-201011</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81313r2_rule" severity="high" weight="10.0"><version>LGA6-20-101101</version><title>LG Android 6.x must protect data at rest on built-in storage media.</title><description>&lt;VulnDiscussion&gt;The mobile operating system must ensure the data being written to the mobile device's built-in storage media is protected from unauthorized access. If data at rest is unencrypted, it is vulnerable to disclosure. Even if the operating system enforces permissions on data access, an adversary can read storage media directly, thereby circumventing operating system controls. Encrypting the data ensures confidentiality is protected even when the operating system is not running.
+
+SFR ID: FMT_SMF_EXT.1.1 #25&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001199</ident><fixtext fixref="F-72923r2_fix">Configure the mobile operating system to enable data-at-rest protection for built-in storage media.
+
+On the MDM Administration Console, enable "Device Encryption" for on-device storage.</fixtext><fix id="F-72923r2_fix" /><check system="C-67473r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Encryption" setting in the MDM console.
+2. Verify "Device Encryption" is selected.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to Settings &gt;&gt; General &gt;&gt; Security (or Fingerprints &amp; security).
+3. Verify "Encrypt phone" is enabled and cannot be disabled (grayed out).
+
+If on the MDM console "Device Encryption" is not enabled or if on the LG Android device "Encrypt phone" is not enabled and grayed out, this is a finding.</check-content></check></Rule></Group><Group id="V-66825"><title>PP-MDF-201012</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81315r2_rule" severity="high" weight="10.0"><version>LGA6-20-101201</version><title>LG Android 6.x must protect data at rest on removable storage media.</title><description>&lt;VulnDiscussion&gt;The mobile operating system must ensure the data being written to the mobile device's removable media is protected from unauthorized access. If data at rest is unencrypted, it is vulnerable to disclosure. Even if the operating system enforces permissions on data access, an adversary can read removable media directly, thereby circumventing operating system controls. Encrypting the data ensures confidentiality is protected even when the operating system is not running.
+
+SFR ID: FMT_SMF_EXT.1.1 #26&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001199</ident><fixtext fixref="F-72925r2_fix">Configure the mobile operating system to enable data-at-rest protection for removable media.
+
+On the MDM Administration Console, enable "Storage Card Encryption" for removable media.</fixtext><fix id="F-72925r2_fix" /><check system="C-67475r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Encryption" setting in the MDM console.
+2. Verify "Storage Card Encryption" is enabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to Settings &gt;&gt; General &gt;&gt; Security (or Fingerprints &amp; security).
+3. Verify "Encrypt SD card storage" is enabled and cannot be disabled.
+
+If on the MDM console the "Storage Card Encryption" is not enabled or if LG Android device "Encrypt SD card storage" is not enabled and grayed out, this is a finding.</check-content></check></Rule></Group><Group id="V-66827"><title>PP-MDF-201015</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81317r2_rule" severity="low" weight="10.0"><version>LGA6-20-101501</version><title>LG Android 6.x must display the DoD advisory warning message at start-up or each time the user unlocks the device.</title><description>&lt;VulnDiscussion&gt;The mobile operating system is required to display the DoD-approved system use notification message or banner before granting access to the system that provides privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. Required banners help ensure that DoD can audit and monitor the activities of mobile device users without legal restriction.
+
+System use notification messages can be displayed when individuals first access or unlock the mobile device. The banner shall be implemented as a "click-through" banner at device unlock (to the extent permitted by the operating system). A "click through" banner prevents further activity on the information system unless and until the user executes a positive action to manifest agreement by clicking on a box indicating “OK.”
+
+The approved DoD text must be used exactly as required in the KS referenced in DoDI 8500.01. For devices accommodating banners of 1300 characters, the banner text is: 
+
+You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+-At any time, the USG may inspect and seize data stored on this IS.
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.
+
+For devices with severe character limitations, the banner text is:
+
+I've read &amp; consent to terms in IS user agreem't.
+
+The administrator must configure the banner text exactly as written without any changes.
+
+SFR ID: FMT_SMF_EXT.1.1 #36&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000048</ident><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72927r2_fix">Configure the mobile operating system to display the DoD-mandated warning banner text.
+
+On the MDM Administration Console, set the "Enforce warning banner" with the required text.</fixtext><fix id="F-72927r2_fix" /><check system="C-67477r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Enforce warning banner" setting in the MDM console.
+2. Verify the warning banner has been set up and the wording is exactly as specified in the Vulnerability Discussion.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Reboot the device and verify the warning banner is displayed.
+2. Verify the required text is displayed and the user must click "Agree" after checking "I understand and agree to this".
+
+If on the MDM console the "Enforce warning banner" setting is not set and does not show the required text or if the LG Android device does not show the Warning banner after every device reboot, this is a finding.</check-content></check></Rule></Group><Group id="V-66829"><title>PP-MDF-201016</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81319r2_rule" severity="medium" weight="10.0"><version>LGA6-20-101601</version><title>LG Android 6.x must not allow a USB mass storage mode.</title><description>&lt;VulnDiscussion&gt;USB mass storage mode enables the transfer of data and software from one device to another. This software can include malware. When USB mass storage is enabled on a mobile device, it becomes a potential vector for malware and unauthorized data exfiltration. Prohibiting USB mass storage mode mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #39&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000381</ident><fixtext fixref="F-72929r2_fix">Configure the mobile operating system to disable USB mass storage mode.
+
+On the MDM Administration Console, disable "Allow USB".</fixtext><fix id="F-72929r2_fix" /><check system="C-67479r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow USB" setting in the MDM console.
+2. Verify the setting is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Connect device to a USB cable.
+3. Open device Notification bar and select the USB notification "Tap for more USB options.
+4. Verify all USB connection types, except for "Charge only", are disabled and cannot be enabled (grayed out).
+
+Since the USB storage and USB media player cannot be used, the USB function is only available for device charging.
+
+If on the MDM console the "Allow USB" setting is enabled or if on the LG Android device any USB functions that are available other than device charging, this is a finding.</check-content></check></Rule></Group><Group id="V-66831"><title>PP-MDF-201017</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81321r2_rule" severity="medium" weight="10.0"><version>LGA6-20-101701</version><title>LG Android 6.x must not allow backup to locally connected systems.</title><description>&lt;VulnDiscussion&gt;Data on mobile devices is protected by numerous mechanisms, including user authentication, access control, and cryptography. When the data is backed up to an external system (either locally connected or cloud-based), many if not all of these mechanisms are no longer present. This leaves the backed up data vulnerable to attack. Disabling backup to external systems mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000097</ident><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72931r2_fix">Configure the mobile operating system to disable backup to locally connected systems.
+
+On the MDM Administration Console, disable the "Allow LG Backup" setting.
+
+Note: LGA6-201016-01 may be used together to make disabling the USB connection to a locally connected system like a PC.</fixtext><fix id="F-72931r2_fix" /><check system="C-67481r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow LG Backup" settings in the MDM console.
+2. Verify the setting is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to Settings &gt;&gt; General &gt;&gt; Backup &amp; reset.
+3. Select "LG Backup" and verify it is unavailable by server policy.
+
+If on the MDM console the "Allow LG Backup" setting is enabled and on the LG Android device the setting "LG Backup" is available, this is a finding.</check-content></check></Rule></Group><Group id="V-66833"><title>PP-MDF-201018</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81323r2_rule" severity="medium" weight="10.0"><version>LGA6-20-101801</version><title>LG Android 6.x must not allow backup to remote systems.</title><description>&lt;VulnDiscussion&gt;Backups to remote systems (including cloud backup) can leave data vulnerable to breach on the external systems, which often offer less protection than the mobile operating system. Where the remote backup involves a cloud-based solution, the backup capability is often used to synchronize data across multiple devices. In this case, DoD devices may synchronize DoD-sensitive information to a user's personal device or other unauthorized computers that are vulnerable to breach. Disallowing remote backup mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #40&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-002338</ident><fixtext fixref="F-72933r2_fix">Configure the mobile operating system to disable backup to remote systems (including commercial clouds).
+
+On the MDM Administration Console, disable the "Allow Google Backup" setting.</fixtext><fix id="F-72933r2_fix" /><check system="C-67483r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow Google Backup" settings in MDM console.
+2. Verify the setting is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to Settings &gt;&gt; General &gt;&gt; Backup &amp; reset.
+3. Verify "Back up my data" is disabled (grayed out).
+
+If on the MDM console the "Allow Google Backup" setting is enabled or on the LG Android device "Back up my data" is not disabled (grayed out), this is a finding.
+
+Note: To disable cloud backup applications, use the application blacklist.</check-content></check></Rule></Group><Group id="V-66835"><title>PP-MDF-201021</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81325r2_rule" severity="low" weight="10.0"><version>LGA6-20-102101</version><title>LG Android 6.x must disable automatic transfer of diagnostic data to an external device other than an MDM service with which the device has enrolled.</title><description>&lt;VulnDiscussion&gt;Many software systems automatically send diagnostic data to the manufacturer or a third party. This data enables the developers to understand real world field behavior and improve the product based on that information. Unfortunately, it can also reveal information about what DoD users are doing with the systems and what causes them to fail. An adversary embedded within the software development team or elsewhere could use the information acquired to breach mobile operating system security. Disabling automatic transfer of such information mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1#45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000381</ident><fixtext fixref="F-72935r2_fix">Configure the mobile operating system to disable automatic transfer of diagnostic data to an external device other than an MDM service with which the device has enrolled.
+
+On the MDM Administration Console, disable the "Allow Google crash report" setting.</fixtext><fix id="F-72935r2_fix" /><check system="C-67485r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow Google crash report" setting in the MDM console.
+2. Verify the Google crash report is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2a. Navigate to Settings &gt;&gt; General. If "Developer mode" has already been disabled on the MDM console: Verify "Developer options" does not show on the screen. Also, navigate to Settings &gt;&gt; About phone &gt;&gt; Software info. Tap on "Build number" several times and verify that the device will not enable developer mode.
+2b. Navigate to Settings &gt;&gt; General. If "Developer mode" has not been disabled on the MDM console: Enable USB debugging. Next go to Developer options &gt;&gt; Select Take bug report and choose "Report".
+Verify Google crash report cannot be used.
+
+If on the MDM console the "Allow Google crash report" setting is enabled or on the LG Android device the Google crash report is available, this is a finding.</check-content></check></Rule></Group><Group id="V-66837"><title>PP-MDF-201022</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81327r2_rule" severity="medium" weight="10.0"><version>LGA6-20-102201</version><title>LG Android 6.x must disable authentication mechanisms providing user access to protected data other than a Password Authentication Factor: Disable fingerprint.</title><description>&lt;VulnDiscussion&gt;Many mobile devices now permit a user to unlock the user's device by presenting a fingerprint to an embedded fingerprint reader. Other biometrics and token-based systems are feasible as well. None of these alternatives are currently evaluated in a Common Criteria evaluation of a mobile device against the Security Target based on the Mobile Device Fundamentals Protection Profile. Many have known vulnerabilities. Until there are DoD-approved assurance activities to evaluate the efficacy of these alternatives, they are significant potential vulnerabilities to DoD information and information systems. Disabling them mitigates the risk of their use.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000381</ident><fixtext fixref="F-72937r2_fix">Configure the mobile operating system to not allow authentication mechanisms other than a Password Authentication Factor where the authentication provides user access to protected data.
+
+On the MDM Administration Console, disable the "Allow fingerprint" setting.</fixtext><fix id="F-72937r2_fix" /><check system="C-67487r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow fingerprint" setting in the MDM console.
+2. Verify the fingerprint for screen lock is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device (this procedure is NA for devices without fingerprint support):
+
+1. Navigate to Settings &gt;&gt; Security (or Fingerprints &amp; security) &gt;&gt; Select Fingerprints.
+2. Verify the "Screen Lock" option is disabled (grayed out) and cannot be enabled.
+
+If on the MDM console the Fingerprint for screen lock is enabled or on the LG Android device a user is able to enable the fingerprint for screen lock feature, this is a finding.</check-content></check></Rule></Group><Group id="V-66839"><title>PP-MDF-201025</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81329r2_rule" severity="low" weight="10.0"><version>LGA6-20-102501</version><title>LG Android 6.x must enable VPN protection.</title><description>&lt;VulnDiscussion&gt;A key characteristic of a mobile device is that they typically will communicate wirelessly and are often expected to reside in locations outside the physical security perimeter of a DoD facility. In these circumstances, the threat of eavesdropping is substantial. Virtual private networks (VPNs) provide confidentiality and integrity protection for data transmitted over untrusted media (e.g., air) and networks (e.g., the Internet). They also provide authentication services to ensure that only authorized users are able to use them. Consequently, enabling VPN protection counters threats to communications to and from mobile devices.
+
+SFR ID: FMT_SMF_EXT.1.1 #03&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72939r2_fix">Configure the mobile operating system to enable VPN protection.
+
+On the MDM Administration Console, configure the organization VPN profile in the "VPN profiles" rule.</fixtext><fix id="F-72939r2_fix" /><check system="C-67489r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG for Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the list of configured VPN profiles in the "VPN profiles" rule.
+2. Verify the list includes the organization VPN profile.
+
+On the LG Android device:
+
+1. Open Settings &gt;&gt; Networks &gt;&gt; VPN.
+2. Select "LG VPN".
+3. Verify the list includes the organization VPN profile.
+
+If on the MDM console the organization VPN profile has not been set up or on the LG Android device the organization profile is not listed under "LG VPN", this is a finding.</check-content></check></Rule></Group><Group id="V-66841"><title>PP-MDF-201026</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81331r2_rule" severity="medium" weight="10.0"><version>LGA6-20-102601</version><title>LG Android 6.x whitelist must not include applications with the following characteristics:
+
+-backup MD data to non-DoD cloud servers (including user and application access to cloud backup services);
+-transmit MD diagnostic data to non-DoD servers;
+-voice assistant application if available when MD is locked;
+-voice dialing application if available when MD is locked;
+-allows synchronization of data or applications between devices associated with user;
+-payment processing; and
+-allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs, display screens (screen mirroring), or printers.</title><description>&lt;VulnDiscussion&gt;Requiring all authorized applications to be in an application whitelist prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the whitelist. Failure to configure an application whitelist properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DoD data accessible by these applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #10b&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-001806</ident><fixtext fixref="F-72941r2_fix">Configure the MDM console application whitelist (install) to exclude applications with the following characteristics:
+
+-backup MD data to non-DoD cloud servers (including user and application access to cloud backup services);
+-transmit MD diagnostic data to non-DoD servers;
+-voice assistant application if available when MD is locked;
+-voice dialing application if available when MD is locked;
+-allows synchronization of data or applications between devices associated with user;
+-payment processing; and
+-allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs, display screens (screen mirroring), or printers.
+
+Configure the MDM console application blacklist (launch) to include all pre-installed applications which have not been approved by the AO.</fixtext><fix id="F-72941r2_fix" /><check system="C-67491r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on the MDM Administration Console.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Application blacklist configuration (launch)” setting in the "Android Application" rule.
+2. Verify the list contains all pre-installed applications which have not been approved by the Authorizing Official (AO).
+3. Ask the MDM administrator to display the "Application whitelist configuration (install)” setting in the "Android Application" rule.
+4. Verify no applications with the following prohibited features are included on the whitelist.
+-backup MD data to non-DoD cloud servers (including user and application access to cloud backup services);
+-transmit MD diagnostic data to non-DoD servers;
+-voice assistant application if available when MD is locked;
+-voice dialing application if available when MD is locked;
+-allows synchronization of data or applications between devices associated with user;
+-payment processing; and
+-allows unencrypted (or encrypted but not FIPS 140-2 validated) data sharing with other MDs, display screens (screen mirroring), or printers.
+5. Verify the policy has been assigned to all groups.
+
+Note: Refer to the Supplemental document for additional information.
+
+If on the MDM console the "Application blacklist configuration (launch)" does not have all unapproved pre-installed applications or the "Application whitelist configuration (install)" has applications with unauthorized features, this is a finding.</check-content></check></Rule></Group><Group id="V-66843"><title>PP-MDF-201027</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81333r2_rule" severity="medium" weight="10.0"><version>LGA6-20-102701</version><title>LG Android 6.x must be configured to implement the management setting: Disable Bluetooth Data Transfer.</title><description>&lt;VulnDiscussion&gt;Some Bluetooth profiles provide the capability for remote transfer of sensitive DoD data without encryption or otherwise do not meet DoD IT security policies and therefore should be disabled.
+
+SFR ID: FMT_SMF_EXT.1.1 #20&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72943r2_fix">Configure the mobile operating system to disable Bluetooth Data Transfer.
+
+On the MDM Administration Console, disable the "Allow Bluetooth Data Transfer" setting.</fixtext><fix id="F-72943r2_fix" /><check system="C-67493r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow Bluetooth Data Transfer" setting in the MDM console.
+2. Verify the Bluetooth Data transfer is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to Settings &gt;&gt; Networks.
+3. Verify under "Bluetooth" the following text appears: "Only headset is available by server policy".
+
+If on the MDM console the "Allow Bluetooth Data Transfer" setting is not disabled and on the LG Android device the text "Only headset is available by server policy" is not under "Bluetooth" in "Wireless Networks", this is a finding.</check-content></check></Rule></Group><Group id="V-66845"><title>PP-MDF-201029</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81335r2_rule" severity="medium" weight="10.0"><version>LGA6-20-102901</version><title>LG Android 6.x must be configured to disable VPN split-tunneling.</title><description>&lt;VulnDiscussion&gt;Spilt-tunneling allows multiple simultaneous remote connections to the mobile device. Without VPN split-tunneling disabled, malicious applications can covertly off-load device data to a third-party server or set up a trusted tunnel between a non-DoD third-party server and a DoD network, providing a vector to attack the network.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-002824</ident><fixtext fixref="F-72945r2_fix">Configure the mobile operating system to disable VPN split-tunneling (if the MD provides a configurable control).
+
+On the MDM Administration Console, disable the "Allow VPN split tunneling" setting.</fixtext><fix id="F-72945r2_fix" /><check system="C-67495r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow VPN Split Tunneling" setting in the MDM console.
+2. Verify the setting for the VPN Split Tunneling is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to the VPN Split Tunneling setting: 
+Settings &gt;&gt; Network &gt;&gt; VPN &gt;&gt; LG VPN &gt;&gt; Add LG VPN network &gt;&gt; Show advanced options popup.
+3. Verify "Disable Split Tunneling" option is checked and cannot be changed (grayed out).
+
+If on the MDM console the "Allow VPN split tunneling" setting is enabled or the LG Android device the "Disable Split Tunneling" setting is not checked and can be changed, this is a finding.</check-content></check></Rule></Group><Group id="V-66861"><title>PP-MDF-201031</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81351r2_rule" severity="medium" weight="10.0"><version>LGA6-20-103101</version><title>LG Android 6.x must be configured to disable automatic updates of system software.</title><description>&lt;VulnDiscussion&gt;FOTA allows the user to download and install firmware updates over-the-air. These updates can include OS upgrades, security patches, bug fixes, new features and applications. Since the updates are controlled by the carriers, DoD will not have an opportunity to review and update policies prior to update availability to end users. Disabling FOTA will mitigate the risk of allowing users access to applications that could compromise DoD sensitive data. After reviewing the update and adjusting any necessary policies (i.e., disabling applications determined to pose risk), the administrator can re-enable FOTA.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72961r2_fix">Configure the mobile operating system to disable automatic updates of system software.
+
+On the MDM Console, add the FOTA client application (package name: com.lge.lgdmsclient) in “Application blacklist (launch)" to disable automatic updates of system software.</fixtext><fix id="F-72961r2_fix" /><check system="C-67497r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the list of unapproved core and preinstalled applications in the "Application blacklist configuration (launch)" setting in the MDM console.
+2. Verify the FOTA client application (package name: com.lge.lgdmsclient) is on the blacklist.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Open the device settings.
+3. Navigate to Settings &gt;&gt; General &gt;&gt; About phone &gt;&gt; Software update (AT&amp;T) (or System Updates for Verizon)
+4. Verify the when the user clicks the "Software Update" the following message is displayed: 
+"Cannot open this app by server policy."
+
+If on the MDM console in the "Application blacklist configuration (launch)" does not list the FOTA client or on the LG Android device the "Software Update" setting can be launched, this is a finding.</check-content></check></Rule></Group><Group id="V-66863"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81353r2_rule" severity="medium" weight="10.0"><version>LGA6-99-100001</version><title>LG Android 6.x must implement the management setting: Install CA certificate.</title><description>&lt;VulnDiscussion&gt;Without implementing the desired security configuration settings, the mobile operating system will have known weaknesses that adversaries could exploit to disrupt the confidentiality, integrity, and availability of the DoD data accessed on and through the mobile device.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72963r2_fix">Configure the mobile operating system to install CA certificates on the device.
+
+On the MDM Console, add the CA certificates to the "Certificate Configuration" rule.</fixtext><fix id="F-72963r2_fix" /><check system="C-67499r3_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG for Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the list of server authentication certificates in the "Certificate Configuration" rule.
+2. Verify the CA certificates are present.
+3. Verify the policy has been assigned to all groups.
+
+On the LG for Android device:
+
+1. Navigate to Settings &gt;&gt; General &gt;&gt; Security (or Fingerprints &amp; security) &gt;&gt; Certificate management &gt;&gt; Trusted credentials.
+2. Select the "User" tab.
+3a. Verify the presence of the CA certificates under "Personal" for Activation Type COPE#2.
+3b. Verify the presence of the CA certificates for Activation Type COPE#1.
+
+If on the MDM console the CA certificates are not present in the MDM Console certificate configuration or on the device the CA certificates are not listed under the "User" tab, this is a finding.</check-content></check></Rule></Group><Group id="V-66865"><title>PP-MDF-201006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81355r2_rule" severity="medium" weight="10.0"><version>LGA6-20-100602</version><title>LG Android 6.x must enforce an application installation policy by specifying one or more authorized application repositories by disabling unknown sources.</title><description>&lt;VulnDiscussion&gt;Forcing all applications to be installed from authorized application repositories can prevent unauthorized and malicious applications from being installed and executed on mobile devices. Allowing such installations and executions could cause a compromise of DoD data accessible by these unauthorized/malicious applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #10a&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-001806</ident><fixtext fixref="F-72965r3_fix">Configure the mobile operating system to disable unauthorized application repositories.
+
+On the MDM Administration Console, disable "Unknown Sources".</fixtext><fix id="F-72965r3_fix" /><check system="C-67501r3_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow unknown sources" setting in the MDM console.
+2. Verify the setting is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to Settings &gt;&gt; General &gt;&gt; Security (or Fingerprints and security &gt;&gt; Unknown sources.
+3. Verify "Unknown sources" setting is disabled (grayed out).
+
+If on the MDM console the "Allow unknown sources" setting is enabled or on the LG Android device the "Unknown sources" setting is accessible, this is a finding.</check-content></check></Rule></Group><Group id="V-66867"><title>PP-MDF-201009</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81357r2_rule" severity="medium" weight="10.0"><version>LGA6-20-100902</version><title>LG Android 6.x must not allow protocols supporting wireless remote access connections: Bluetooth tethering.</title><description>&lt;VulnDiscussion&gt;Having wireless remote access connections enabled could allow establishment of unauthorized remote access connections, which may give an adversary unintended capabilities. These remote access connections would expose the mobile device to additional risk, thereby increasing the likelihood of compromise of the confidentiality and integrity of its resident data. In this context, tethering refers to wired connections to an external device and not use of the device as a hotspot. A mobile device providing personal hotspot functionality is not considered wireless remote access if the functionality only provides access to a distribution network (such as a mobile carrier's cellular data network) and does not provide access to local applications or data.
+
+SFR ID: FMT_SMF_EXT.1.1 #23&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000063</ident><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72967r2_fix">Configure the mobile operating system to disable wireless remote access connections.
+
+On the MDM Administration Console, disable "Bluetooth tethering".</fixtext><fix id="F-72967r2_fix" /><check system="C-67503r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow Bluetooth tethering" setting in the MDM console.
+2. Verify the setting is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Open the device settings.
+2. Select Settings &gt;&gt; Networks &gt;&gt; Tethering.
+3. Verify the "Bluetooth tethering" setting is set to “Off” and disabled (off and grayed out).
+
+If on the MDM console the "Allow Bluetooth tethering" is not disabled, or on the LG Android device "Bluetooth tethering" is not set to “off” and disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-66869"><title>PP-MDF-201022</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81359r2_rule" severity="medium" weight="10.0"><version>LGA6-20-102202</version><title>LG Android 6.x must disable authentication mechanisms providing user access to protected data other than a Password Authentication Factor: Disable Smart Lock.</title><description>&lt;VulnDiscussion&gt;Many mobile devices now permit a user to unlock the user's device by presenting a fingerprint to an embedded fingerprint reader. Other biometrics and token-based systems are feasible as well. None of these alternatives are currently evaluated in a Common Criteria evaluation of a mobile device against the Security Target based on the Mobile Device Fundamentals Protection Profile. Many have known vulnerabilities. Until there are DoD-approved assurance activities to evaluate the efficacy of these alternatives, they are significant potential vulnerabilities to DoD information and information systems. Disabling them mitigates the risk of their use.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000381</ident><fixtext fixref="F-72969r2_fix">Configure the mobile operating system to not allow authentication mechanisms other than a Password Authentication Factor where the authentication provides user access to protected data.
+
+On the MDM Administration Console, disable the "Allow Smart Lock" setting.</fixtext><fix id="F-72969r2_fix" /><check system="C-67505r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow Smart Lock" setting in the MDM console.
+2. Verify the Smart Lock is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Navigate to Settings &gt;&gt; Security (or Fingerprints &amp; security) &gt;&gt; Trust agents.
+2. Verify Smart Lock is disabled (grayed out) and cannot be enabled.
+
+If on the MDM console Smart Lock for Lock screen authentication is enabled or on the LG Android device a user is able to enable the Smart lock settings on the device, this is a finding.</check-content></check></Rule></Group><Group id="V-66871"><title>PP-MDF-201009</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81361r2_rule" severity="medium" weight="10.0"><version>LGA6-20-100903</version><title>LG Android 6.x must not allow protocols supporting wireless remote access connections: USB tethering.</title><description>&lt;VulnDiscussion&gt;Having wireless remote access connections enabled could allow establishment of unauthorized remote access connections, which may give an adversary unintended capabilities. These remote access connections would expose the mobile device to additional risk, thereby increasing the likelihood of compromise of the confidentiality and integrity of its resident data. In this context, tethering refers to wired connections to an external device and not use of the device as a hotspot. A mobile device providing personal hotspot functionality is not considered wireless remote access if the functionality only provides access to a distribution network (such as a mobile carrier's cellular data network) and does not provide access to local applications or data.
+
+SFR ID: FMT_SMF_EXT.1.1 #23&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000063</ident><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72971r2_fix">Configure the mobile operating system to disable wireless remote access connections.
+
+On the MDM Administration Console, disable "USB tethering".</fixtext><fix id="F-72971r2_fix" /><check system="C-67507r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow USB tethering" setting in the MDM console.
+2. Verify the setting is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+Open the device settings.
+
+For AT&amp;T devices:
+-Select Settings &gt;&gt; Networks &gt;&gt; Tethering.
+-Verify "USB tethering" setting is set to “off” and disabled (grayed out).
+
+For Verizon devices:
+-Open status bar and then click "Use USB connection for".
+-Verify "Tethering" option is set to “off” and disabled (grayed out).
+
+If on the MDM console "Allow USB tethering" is not disabled or if on the LG Android device the USB tethering option is not set to “off” and disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-66873"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81363r2_rule" severity="medium" weight="10.0"><version>LGA6-99-100003</version><title>LG Android 6.x must implement the management setting: Disable USB host storage.</title><description>&lt;VulnDiscussion&gt;The USB host storage feature allows the device to connect to select USB devices (e.g., USB flash drives, USB mouse, USB keyboard) using a micro USB to USB adapter cable. A user can copy sensitive DoD information to external USB storage unencrypted, resulting in compromise of DoD data. Disabling this feature mitigates the risk of compromising sensitive DoD data.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72973r2_fix">Configure the mobile operating system to disable USB host storage.
+
+On the MDM Administration Console, disable the "USB host storage" setting in the "Android Restrictions" rule.</fixtext><fix id="F-72973r2_fix" /><check system="C-67509r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "USB host storage" setting in the "Android Restrictions" rule.
+2. Verify the setting is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Connect a USB OTG flash drive to the device.
+2. Go to file manager.
+3. Verify USB storage is not available.
+
+If on the MDM console the "USB host storage" configuration is enabled or on the LG Android device USB storage is available when a USB OTG flash drive is connected to the device, this is a finding.</check-content></check></Rule></Group><Group id="V-66875"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81365r2_rule" severity="low" weight="10.0"><version>LGA6-99-100004</version><title>LG Android 6.x must implement the management setting: Disable Voice Command.</title><description>&lt;VulnDiscussion&gt;On mobile operating system devices, users (may be able to) access the device's contact database or calendar to obtain phone numbers and other information using a human voice even when the mobile device is locked. Often this information is personally identifiable information (PII), which is considered sensitive. It could also be used by an adversary to profile the user or engage in social engineering to obtain further information from other unsuspecting users. Disabling access to the contact database and calendar in these situations mitigates the risk of this attack. The AO may waive this requirement with written notice if the operational environment requires this capability.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72975r2_fix">Configure the mobile operating system to disable Voice Command.
+
+On the MDM Administration Console, disable "Allow Voice Command".</fixtext><fix id="F-72975r2_fix" /><check system="C-67511r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow Voice Command" settings in the "Android Restrictions" rule.
+2. Verify the value "Allow Voice Command" is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Select "Applications".
+2. Select the "Voice Command" app.
+3. Verify the "Voice Command" app cannot be selected and a message “Voice apps are unavailable by server policy."
+
+If on the MDM console the "Allow Voice Command" setting is enabled or on the LG Android device the voice application is not disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-66877"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81367r2_rule" severity="low" weight="10.0"><version>LGA6-99-100005</version><title>LG Android 6.x must implement the management setting: Disable NFC.</title><description>&lt;VulnDiscussion&gt;NFC is a wireless technology that transmits small amounts of information from the device to the NFC reader. Any data transmitted can be potentially compromised. Disabling this feature mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72977r2_fix">Configure the mobile operating system to disable NFC.
+
+On the MDM Administration Console, disable "Allow NFC".</fixtext><fix id="F-72977r2_fix" /><check system="C-67513r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow NFC" setting in the "Android Restrictions" rule.
+2. Verify the setting is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Open Settings &gt;&gt; Networks &gt;&gt; Share &amp; connect.
+2. Verify "NFC" is disabled (grayed out).
+
+If on the MDM console the "Allow NFC" configuration is enabled or on the LG Android device NFC is not disabled (grayed out), this is a finding.</check-content></check></Rule></Group><Group id="V-66879"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81369r2_rule" severity="medium" weight="10.0"><version>LGA6-99-100006</version><title>LG Android 6.x must implement the management setting: Disable Nearby devices.</title><description>&lt;VulnDiscussion&gt;The Nearby devices feature allows the user to share files with other devices that are connected on the same Wi-Fi access point using the DLNA technology. Even though the user must allow requests from other devices, this feature can potentially result in unauthorized access to and compromise of sensitive DoD files. Disabling this feature will mitigate this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72979r2_fix">Configure the mobile operating system to disable DLNA.
+
+On the MDM Administration Console, disable "Allow DLNA".</fixtext><fix id="F-72979r2_fix" /><check system="C-67515r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed both on the MDM console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow DLNA" settings.
+2. Verify the value is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Select Settings &gt;&gt; Networks &gt;&gt; Share &amp; connect
+2. Try to launch "Media server".
+3. Verify "Media server" is disabled and the following message is displayed: "DLNA discovery is unavailable by server policy."
+
+If on the MDM console "Allow DLNA" configuration is enabled or the LG Android device the "Media server" is not disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-66881"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81371r2_rule" severity="medium" weight="10.0"><version>LGA6-99-100007</version><title>LG Android 6.x must implement the management setting: Disable Removal of device administrator rights.</title><description>&lt;VulnDiscussion&gt;Security-related parameters are those parameters impacting the security state of the system and include parameters related to the implementation of other IA controls. If these controls are not implemented, the system may be vulnerable to a variety of attacks. The use of an MDM allows an organization to assign values to security-related parameters across all the devices it manages. This provides assurance that the required mobile OS security controls are being enforced and that the device user or an adversary has not modified or disabled the controls. It also greatly increases efficiency and manageability of devices in a large-scale environment relative to an environment in which each device must be configured separately. For these reasons, a user must not be allowed to remove the MDM from the device.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72981r2_fix">Configure the mobile operating system to disable Removal of device administrator rights.
+
+On the MDM Administration Console, disable "Removal of device administrator rights".</fixtext><fix id="F-72981r2_fix" /><check system="C-67517r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow Removal of device administrator rights" settings in the "Android Restrictions" rule.
+2. Verify the value is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Navigate to Settings &gt;&gt; General &gt;&gt; Security (or Fingerprint and security).
+2. Select "Phone administrators".
+3. Verify the enterprise MDM agent is on and cannot be turned off (grayed out). (Note: Name of agent app will depend on the MDM vendor used.)
+
+If on the MDM console the "Allow Removal of device administrator rights" setting is enabled or on the LG Android device the MDM agent can be disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-66883"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81373r2_rule" severity="medium" weight="10.0"><version>LGA6-99-100008</version><title>LG Android 6.x must implement the management setting: Disable System Time Changes.</title><description>&lt;VulnDiscussion&gt;Determining the correct time a particular application event occurred on a system is critical when conducting forensic analysis and investigating system events.
+
+Periodically synchronizing internal clocks with an authoritative time source is needed in order to correctly correlate the timing of events that occur across the enterprise. The three authoritative time sources for mobile operating systems are an authoritative time server that is synchronized with redundant United States Naval Observatory (USNO) time servers as designated for the appropriate DoD network (NIPRNet or SIPRNet), or the Global Positioning System (GPS), or the wireless carrier.
+
+Time stamps generated by the audit system in mobile operating systems shall include both date and time. The time may be expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72983r2_fix">Configure the mobile operating system to disable system time changes, to synchronize the internal clock with network-provided time.
+
+On the MDM Console, select the "Disable System Time Changes" checkbox in the "Android Restrictions" rule.</fixtext><fix id="F-72983r2_fix" /><check system="C-67519r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Disable System Time Changes" check box in the "Android Restrictions" rule.
+2. Verify the check box is selected.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Navigate to Settings &gt;&gt; General &gt;&gt; Date &amp; time.
+2. Verify the "Auto-date &amp; time" checkbox is checked and cannot be changed (grayed out).
+
+If on the MDM console "Disable System Time Changes" is not enabled or on the LG Android device "Auto-date &amp; time" is not enabled or can be changed, this is a finding.</check-content></check></Rule></Group><Group id="V-66885"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81375r2_rule" severity="high" weight="10.0"><version>LGA6-99-100009</version><title>LG Android 6.x must implement the management setting: Enable CC mode.</title><description>&lt;VulnDiscussion&gt;CC mode implements several security controls required by the Mobile Device Functional Protection Profile (MDFPP). If CC mode is not implemented, DoD data is more at risk of being compromised, and the MD is more at risk of being compromised if lost or stolen.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72985r2_fix">Configure the mobile operating system to enable CC mode.
+
+On the MDM Administration Console, enable CC mode.</fixtext><fix id="F-72985r2_fix" /><check system="C-67521r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on the MDM Administration Console.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "CC Mode" settings in the "Android Restrictions" rule.
+2. Verify the value is enabled.
+3. Verify the policy has been assigned to all groups.
+
+If on the MDM console the "CC Mode" setting is disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-66887"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81377r2_rule" severity="medium" weight="10.0"><version>LGA6-99-100010</version><title>LG Android 6.x must implement the management setting: Disable all non-approved preinstalled applications.</title><description>&lt;VulnDiscussion&gt;Applications from various sources (including the vendor, the carrier, and Google) are installed on the device at the time of manufacture. Core apps are apps preinstalled by Google. Third-party preinstalled apps included apps from the vendor and carrier. Some of the applications can compromise DoD data or upload user's information to non-DoD approved servers. A user must be blocked from using such applications that exhibit behavior that can result in compromise of DoD data or DoD user information. The site administrator must analyze all pre-installed applications on the device and block all applications not approved for DoD use by configuring the "Application blacklist configuration (launch)".
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72987r2_fix">Configure the mobile operating system to disable pre-installed applications which have not been approved by the Authorizing Official (AO).
+
+On the MDM Administration Console, add all pre-installed applications to the "Application blacklist configuration (launch)" setting in the "Android Applications" rule.
+
+Note: Refer to the Supplemental document for additional information.</fixtext><fix id="F-72987r2_fix" /><check system="C-67523r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on the MDM Administration Console.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Application blacklist configuration (launch)” setting in the "Android Application" rule.
+2. Verify the list contains all non-approved preinstalled applications.
+3. Verify the policy has been assigned to all groups.
+
+See the Supplemental document for more information.
+
+If on the MDM console the "Application blacklist configuration (launch)" configuration does not contain all non-approved pre-installed applications, this is a finding.</check-content></check></Rule></Group><Group id="V-66889"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81379r2_rule" severity="medium" weight="10.0"><version>LGA6-99-100012</version><title>LG Android 6.x must be configured to implement the management setting: Disable LG browser and Chrome browser.
+
+Note: This requirement is Not Applicable for the COPE#2 activation type.</title><description>&lt;VulnDiscussion&gt;The native browser includes encryption modules that are not FIPS 140-2 validated. DoD policy requires all encryption modules used in DoD IT systems be FIPS 140-2 validated.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72989r2_fix">Configure the mobile device to disable non-FIPS-validated browsers.
+
+On the MDM Administration Console, add "Browser" and "Chrome" browser to the application list in the "Application Blacklist Configuration (launch)" setting.
+
+Note: This requirement is Not Applicable for the COPE#2 Activation Type.</fixtext><fix id="F-72989r2_fix" /><check system="C-67525r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the list of unapproved core and preinstalled applications in the “Application Blacklist Configuration (launch)" setting in the MDM console.
+2. Verify the list contains LG Browser and Chrome.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Attempt to launch the native Android Browser (LG Browser) and Chrome browser on the device.
+2. Verify the browsers will not run and the following message is displayed: Application is disabled by server policy.
+
+If on the MDM console the "Application Blacklist Configuration (launch)" setting is not set up with the Android/LG Browser and Chrome browser or on the LG Android device the native Android browser and Chrome browser can be launched, this is a finding.</check-content></check></Rule></Group><Group id="V-66891"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81381r2_rule" severity="medium" weight="10.0"><version>LGA6-99-100014</version><title>LG Android 6.x must not allow Google Auto sync.</title><description>&lt;VulnDiscussion&gt;Synchronization of data between devices associated with one user permits a user of a mobile operating system device to transition user activities from one device to another. This feature passes sufficient information between the devices to describe the activity, but app data synchronization associated with the activity is handled through cloud services, which should be disabled on a compliant mobile operating system device. If a user associates both DoD and personal devices to the same Apple ID, the user may improperly reveal information about the nature of the user's activities on an unprotected device. Disabling this service mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72991r2_fix">Configure the mobile device to disable Google auto sync.
+
+On the MDM Administration Console, disable the "Allow AutoSync" setting.</fixtext><fix id="F-72991r2_fix" /><check system="C-67527r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow AutoSync" setting in the MDM console.
+2. Verify the setting "Allow AutoSync" is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to Settings &gt;&gt; General &gt;&gt; Accounts (or Account &amp; Sync).
+3. Verify the message "AutoSync is disabled" is displayed.
+
+If on the MDM console the "Allow AutoSync" setting is enabled or on the LG Android device the message "AutoSync is disabled" is not displayed, this is a finding.</check-content></check></Rule></Group><Group id="V-66893"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81383r2_rule" severity="medium" weight="10.0"><version>LGA6-99-100015</version><title>LG Android 6.x must be configured to implement the management settings: Disable Android Beam.</title><description>&lt;VulnDiscussion&gt;Android Beam provides the capability for Android devices to transfer data between them. Data transfer is not encrypted using FIPS-validated encryption mechanisms. Sensitive DoD information could be compromised if Android beam is enabled.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72993r2_fix">Configure the mobile device to disable Android Beam.
+
+On the MDM Administration Console, disable the "Allow Android Beam" setting.</fixtext><fix id="F-72993r2_fix" /><check system="C-67529r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow Android Beam" setting in the MDM console.
+2. Verify the setting for the Android Beam is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Unlock the device.
+2. Navigate to Settings &gt;&gt; General &gt;&gt; Share &amp; connect.
+3. Verify the Android Beam disabled and the following message is displayed:
+"Android Beam is disabled by server policy".
+
+If on the MDM console the "Allow Android Beam" setting is enabled or on the LG Android device Android Beam not disabled and the following message is not displayed: "Android Beam is disabled by server policy", this is a finding.</check-content></check></Rule></Group><Group id="V-66895"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81385r2_rule" severity="medium" weight="10.0"><version>LGA6-99-100018</version><title>LG Android 6.x must be configured to disable download mode.</title><description>&lt;VulnDiscussion&gt;Download mode allows the firmware of the device to be flashed (updated) by the user. All updates should be controlled by the system administrator to ensure configuration control of the security baseline of the device.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72995r2_fix">Configure the mobile device to disable download mode.
+
+On the MDM Administration Console, disable the "Allow download mode" setting.</fixtext><fix id="F-72995r2_fix" /><check system="C-67531r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on the MDM Administration Console.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow Download mode" setting in the MDM console.
+2. Verify the setting for the Download mode is disabled.
+3. Verify the policy has been assigned to all groups.
+
+If on the MDM console "Allow download mode" setting is enabled, this is a finding.</check-content></check></Rule></Group><Group id="V-66897"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81387r2_rule" severity="medium" weight="10.0"><version>LGA6-99-100051</version><title>LG Android 6.x must implement the management setting: Disallow addition of Google Accounts (for Work Profile).
+
+This requirement is only valid for activation type COPE#2.</title><description>&lt;VulnDiscussion&gt;A Google account may gather a user's information, such as PII, or sensitive documents. With this feature enabled, sensitive information will be backed up to the manufacturer's servers and database. This data is stored at a location that has unauthorized employees accessing this data. This data is stored on a server that has a location unknown to the DoD.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72997r2_fix">Configure the mobile operating system to disable addition of a Google account.
+
+On the MDM Administration Console, disable "Allow addition of Google Accounts (for Work Profile)" setting.</fixtext><fix id="F-72997r2_fix" /><check system="C-67533r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow addition of Google Accounts (for Work Profile)" settings.
+2. Verify the setting is disabled.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Navigate to Settings &gt;&gt; Accounts.
+2. Verify in the Work Profile there is no "Add account" setting available.
+
+If on the MDM console "Allow addition of Google Accounts (for Work Profile)" is not disabled or on the LG Android device the "Add account" setting is available in the Work Profile, this is a finding.</check-content></check></Rule></Group><Group id="V-66899"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81389r1_rule" severity="medium" weight="10.0"><version>LGA6-99-100052</version><title>LG Android 6.x must implement the management setting: list approved apps on the Whitelisted Android Apps (for Work Profile).
+
+This requirement is only valid for activation type COPE#2.</title><description>&lt;VulnDiscussion&gt;This setting enables an application whitelist in the Work Profile. Failure to specify which applications are approved could allow unauthorized and malicious applications to be downloaded, installed, and/or executed on the mobile device, causing a compromise of DoD data accessible by these applications.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-72999r2_fix">Configure the mobile operating system to list only approved apps on the Whitelisted Android Apps (for Work Profile).
+
+On the MDM Administration Console, add the approved system applications in the lists of Whitelisted Android Apps (for Work Profile).</fixtext><fix id="F-72999r2_fix" /><check system="C-67535r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on the MDM Administration Console.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the Whitelisted Android Apps (for Work Profile).
+2. Verify the list of apps has been approved by the AO.
+3. Verify the policy has been assigned to all groups.
+
+If on the MDM console the Whitelisted Android apps (for Work Profile) contain non-AO approved apps, this is a finding.</check-content></check></Rule></Group><Group id="V-66901"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81391r2_rule" severity="low" weight="10.0"><version>LGA6-99-100055</version><title>LG Android 6.x must implement the management setting: Set uninstall not allowed for mandatory Work Profile apps.
+
+This requirement is only valid for activation type COPE#2.</title><description>&lt;VulnDiscussion&gt;This setting will block the removal of required applications. The Approving Authority may determine that a specific set of apps are required to meet mission needs. Key mission capabilities may be degraded if required apps are removed.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-73001r2_fix">Configure the mobile operating system to block application's uninstallation.
+
+On the MDM Administration Console, configure the list of mandatory Work Profile apps in the Whitelisted Android Apps (for Work Profile) to "uninstall not allowed".</fixtext><fix id="F-73001r2_fix" /><check system="C-67537r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the Whitelisted Android Apps (for Work Profile).
+2. Verify apps designated by the AO as being mandatory have been set to "uninstall not allowed" on the whitelist.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Go to "Apps" menu or "Home" screen.
+2. Select 1-2 apps designated by the AO as being mandatory.
+3. Verify that user cannot uninstall the apps.
+
+If on the MDM console mandatory work profile apps are not set to "uninstall not allowed" in the Whitelisted Android Apps (for Work Profile) or on the LG Android device the user can uninstall mandatory apps, this is a finding.</check-content></check></Rule></Group><Group id="V-66903"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81393r2_rule" severity="medium" weight="10.0"><version>LGA6-99-100057</version><title>LG Android 6.x must implement the management setting: Install CA certificate (for Work Profile).
+
+This requirement is only valid for activation type COPE#2.</title><description>&lt;VulnDiscussion&gt;Unauthorized applications pose a variety of risks to DoD information and systems. Digital signature (or public key) technology enables strong assurance of application source and integrity. However, these assurance characteristics are only present when the certificates or public keys used to validate signatures are known and trusted. If an adversary's key is used to validate signatures on applications, the MOS would then trust any code that the adversary signed with its corresponding private key. The impact could include compromise of DoD-sensitive information. Limiting certificates and public keys to those that DoD has approved mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-73003r2_fix">Configure the mobile operating system to install CA certificates on the device.
+
+On the MDM Console, add the CA certificates to the "Certificate Configuration" rule for the Work Profile.</fixtext><fix id="F-73003r2_fix" /><check system="C-67539r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG for Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the list of server authentication certificates in the "Certificate Configuration" rule for Work Profile.
+2. Verify the CA certificates are present.
+3. Verify the policy has been assigned to all groups.
+
+On the LG for Android device:
+
+1. Navigate to Settings &gt;&gt; General &gt;&gt; Security (or Fingerprints &amp; security) &gt;&gt; Certificate management &gt;&gt; Trusted credentials.
+2. Select the "User" tab.
+3. Verify the presence of the CA certificates under "Work" for Activation Type COPE#2.
+
+If on the MDM console the CA certificates are not present in the MDM Console certificate configuration or on the device the CA certificates are not listed under the "User" tab, this is a finding.</check-content></check></Rule></Group><Group id="V-66905"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81395r2_rule" severity="medium" weight="10.0"><version>LGA6-99-100058</version><title>LG Android 6.x must implement the management setting: Disable content sharing (for Work Profile).
+
+This requirement is only valid for activation type COPE#2.</title><description>&lt;VulnDiscussion&gt;Allowing movement of files between the container and personal side will result in both personal data and sensitive DoD data being placed in the same space. This can potentially result in DoD data being transmitted to non-authorized recipients via personal email accounts or social applications, or transmission of malicious files to DoD accounts. Disabling this feature mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-73005r2_fix">Configure the mobile operating system to disable cross-profile sharing.
+
+On the MDM Administration Console, set the "Allow Cross-Profile Sharing (for Work Profile)" to disable.</fixtext><fix id="F-73005r2_fix" /><check system="C-67541r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow content sharing from work profile to personal space (Work Profile only)" settings.
+2. Verify that the setting is not checked.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Launch badged "Contacts" app.
+2. Choose one of the contacts to share.
+3. Select the menu.
+4. Choose a "Share".
+5. Verify that the message "No application to perform this action" is displayed.
+
+If on the MDM console "Allow content sharing from work profile to personal space (Work Profile only)" is enabled or on the LG Android device a contact in the Work Profile can be shared, this is a finding.</check-content></check></Rule></Group><Group id="V-66907"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-81397r2_rule" severity="medium" weight="10.0"><version>LGA6-99-100060</version><title>LG Android 6.x must implement the management setting: Disable allow copy and paste between Work Profile and personal space.
+
+This requirement is only valid for activation type COPE#2.</title><description>&lt;VulnDiscussion&gt;Allowing movement of data between the container and personal side will result in both personal data and sensitive DoD data being placed in the same space. This can potentially result in DoD data being transmitted to non-authorized recipients via personal email accounts or social applications. Disabling this feature mitigates this risk.
+
+SFR ID: FMT_SMF_EXT.1.1 #45&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target LG Android 6.x (Marshmallow)</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>LG Android 6.x (Marshmallow)</dc:subject><dc:identifier>3007</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-73007r2_fix">Configure the mobile operating system to disable cross-profile sharing.
+
+On the MDM Administration Console, set the "Allow Cross-Profile Sharing (for Work Profile)" to disable.</fixtext><fix id="F-73007r2_fix" /><check system="C-67543r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_LG_Android_6-x_STIG.xml" /><check-content>This validation procedure is performed on both the MDM Administration Console and the LG Android device.
+
+On the MDM console, do the following:
+
+1. Ask the MDM administrator to display the "Allow copy and paste from work profile to personal space (Work Profile only)" settings.
+2. Verify that the setting is not checked.
+3. Verify the policy has been assigned to all groups.
+
+On the LG Android device:
+
+1. Copy text from a Work Profile app (for example a Contact phone number).
+2. Verify the text cannot be pasted into a Personal space app (for example the browser search box).
+
+If on the MDM console "Allow copy and paste from work profile to personal space (Work Profile only)" is enabled or on the LG Android device text from a Work Profile app can be pasted into a Personal space app, this is a finding.</check-content></check></Rule></Group></Benchmark>

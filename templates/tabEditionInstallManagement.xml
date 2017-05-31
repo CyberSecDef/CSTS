@@ -1,0 +1,14 @@
+<form>
+	<controls>
+				
+		<control type="Label" id="tab5LblProdKey" name="tab5LblProdKey" locationX="5" locationY="10" sizeX="200" sizeY="20" text="Product Key:" />
+		<control type="textBox" id="tab5txtProdKey" name="tab5txtProdKey" locationX="5" locationY="30" sizeX="450" sizeY="20" backcolor="#ffffff" />
+		<control type="button" id="tab5BtnProdKey" name="tab5BtnProdKey" locationX="460" locationY="29" sizeX="100" sizeY="20" text="Set Product Key" />
+		
+		<control type="Label" id="tab5LblUnattendSelection" name="tab5LblUnattendSelection" locationX="5" locationY="60" sizeX="200" sizeY="20" text="Selected Unattend XML File:" />
+		<control type="textBox" id="tab5txtUnattendSelection" name="tab5txtUnattendSelection" locationX="5" locationY="80" sizeX="350" sizeY="20" backcolor="#ffffff" />
+		<control type="button" id="tab5btnSelectXml" name="tab5btnSelectXml" locationX="360" locationY="79" sizeX="100" sizeY="20" text="Browse..." />
+		<control type="button" id="tab5BtnUnattend" name="tab5BtnUnattend" locationX="460" locationY="79" sizeX="100" sizeY="20" text="Apply" />
+
+	</controls>
+</form>

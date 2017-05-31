@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:windows-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd">
+  <generator>
+    <oval:product_name>DISA</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2014-03-27T10:55:53.281-05:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.stig.project2010:def:1" version="1" class="compliance">
+      <metadata>
+        <title>DTOO104 - Disable user name and password</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <product>Microsoft Project 2010</product>
+        </affected>
+        <description>The Uniform Resource Locator (URL) standard allows user authentication to be included in URL strings in the form http://username:password@example.com. A malicious user might use this URL syntax to create a hyperlink that appears to open a legitimate website but actually opens a deceptive (spoofed) website. For example, the URL http://www.wingtiptoys.com@example.com appears to open http://www.wingtiptoys.com but actually opens http://example.com. To protect users from such attacks, Internet Explorer usually blocks any URLs using this syntax. This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a website). If user names and passwords in URLs are allowed, users could be diverted to dangerous Web pages, which could pose a security risk.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Disable user name and password">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Disable user name and password" test_ref="oval:mil.disa.stig.project2010:tst:1000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.project2010:def:2" version="1" class="compliance">
+      <metadata>
+        <title>DTOO111 - Enable IE  Bind to Object</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Project 2010</product>
+        </affected>
+        <description>Internet Explorer performs a number of safety checks before initializing an ActiveX control. It will not initialize a control if the kill bit for the control is set in the registry, or if the security settings for the zone in which the control is located do not allow it to be initialized.
+This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). A security risk could occur if potentially dangerous controls are allowed to load.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Bind to Object">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Bind to Object" test_ref="oval:mil.disa.stig.project2010:tst:2000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.project2010:def:3" version="1" class="compliance">
+      <metadata>
+        <title>DTOO117 - Saved from URL</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Project 2010</product>
+        </affected>
+        <description>Typically, when Internet Explorer loads a web page from a Universal Naming Convention (UNC) share that contains a Mark of the Web (MOTW) comment, indicating the page was saved from a site on the Internet, Internet Explorer runs the page in the Internet security zone instead of the less restrictive Local Intranet security zone. This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). If Internet Explorer does not evaluate the page for a MOTW, potentially dangerous code could be allowed to run.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Saved from URL">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Saved from URL" test_ref="oval:mil.disa.stig.project2010:tst:3000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.project2010:def:4" version="1" class="compliance">
+      <metadata>
+        <title>DTOO123 - Block Navigation to URL from Office</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Project 2010</product>
+        </affected>
+        <description>To protect users from attacks, Internet Explorer usually does not attempt to load malformed URLs. This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). If Internet Explorer attempts to load a malformed URL, a security risk could occur.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Navigate URL">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Navigate URL" test_ref="oval:mil.disa.stig.project2010:tst:4000" />
+      </criteria> 
+        </definition>           
+    <definition id="oval:mil.disa.stig.project2010:def:5" version="1" class="compliance">
+      <metadata>
+        <title>DTOO129 - Block Pop-ups</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Project 2010</product>
+        </affected>
+        <description>The Pop-up Blocker feature in Internet Explorer can be used to block most unwanted pop-up and pop-under windows from appearing. This functionality can be controlled separately for instances of Internet Explorer spawned by Office applications (for example, if a user clicks a link in an Office document or selects a menu option that loads a web page). If the Pop-up Blocker is disabled, disruptive and potentially dangerous pop-up windows could load and present a security risk.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Block popups">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Block popups" test_ref="oval:mil.disa.stig.project2010:tst:5000" />
+      </criteria> 
+       </definition>
+   <definition id="oval:mil.disa.stig.project2010:def:6" version="1" class="compliance"> 
+      <metadata>  
+      <title>DTOO126 - Add-on Management</title>
+      <affected family="windows">  
+      <platform>Microsoft Windows 7</platform>
+      <platform>Microsoft Windows Server 2008 R2</platform>  
+      <platform>Microsoft Windows Server 2012</platform>  
+      <platform>Microsoft Windows 8</platform>
+      <platform>Microsoft Windows 8.1</platform>   
+      <product>Microsoft Project 2010</product>
+      </affected>  
+      <description>Internet Explorer add-ons are pieces of code, run in Internet Explorer, to provide additional functionality. Rogue add-ons may contain viruses or other malicious code. Disabling or not configuring this setting could allow malicious code or users to become active on user computers or the network. For example, a malicious user can monitor and then use keystrokes users type into Internet Explorer. Even legitimate add-ons may demand resources, compromising the performance of Internet Explorer, and the operating systems for user computers.</description> 
+      </metadata> 
+      <criteria operator="AND" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Add-on Management" negate="false"> 
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Add-on Management" test_ref="oval:mil.disa.stig.project2010:tst:6000" />  
+        </criteria> 
+        </definition>
+    <definition id="oval:mil.disa.stig.project2010:def:7" version="1" class="compliance">
+      <metadata>
+        <title>DTOO209 - Zone Elevation Protection</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Project 2010</product>
+        </affected>
+        <description>Internet Explorer places restrictions on each web page users can use the browser to open. Web pages on a user's local computer have the fewest security restrictions and reside in the Local Machine zone, making this security zone a prime target for malicious users and code. Disabling or not configuring this setting could allow pages in the Internet zone to navigate to pages in the Local Machine zone to then run code to elevate privileges. This could allow malicious code or users to become active on user computers or the network.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Protection From Zone Elevation">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Protection From Zone Elevation" test_ref="oval:mil.disa.stig.project2010:tst:7000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.project2010:def:8" version="1" class="compliance">
+      <metadata>
+        <title>DTOO211 - Restrict ActiveX Install</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Project 2010</product>
+        </affected>
+        <description>Microsoft ActiveX controls allow unmanaged, unprotected code to run on the user computers. ActiveX controls do not run within a protected container in the browser like the other types of HTML or Microsoft Silverlight-based controls. Disabling or not configuring this setting does not block prompts for ActiveX control installations, and these prompts display to users. This could allow malicious code to become active on user computers or the network.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Restrict ActiveX Install">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 10 (Machine)\Security Settings\IE Security\Restrict ActiveX Install" test_ref="oval:mil.disa.stig.project2010:tst:8000" />
+     </criteria>    
+       </definition>  
+          <definition id="oval:mil.disa.stig.project2010:def:9" version="1" class="compliance">
+      <metadata>
+        <title>DTOO132 - Restrict File Download</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Project 2010</product>
+        </affected>
+        <description>Disabling this setting allows websites to present file download prompts via code without the user specifically initiating the download. User preferences may also allow the download to occur without prompting or interaction with the user. Even if Internet Explorer prompts the user to accept the download, some websites abuse this functionality. Malicious websites may continually prompt users to download a file or present confusing dialog boxes to trick users into downloading or running a file. If the download occurs and it contains malicious code, the code could become active on user computers or the network.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Restrict File Download">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Restrict File Download" test_ref="oval:mil.disa.stig.project2010:tst:9000" />
+      </criteria>
+        </definition>
+         <definition id="oval:mil.disa.stig.project2010:def:10" version="1" class="compliance">
+      <metadata>
+        <title>DTOO124 - Scripted Windows Security</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Project 2010</product>
+        </affected>
+        <description>Malicious websites often try to confuse or trick users into giving a site permission to perform an action allowing the site to take control of the users' computers in some manner. Disabling or not configuring this setting allows unknown websites to: Create browser windows appearing to be from the local operating system, draw active windows displaying outside of the viewable areas of the screen capturing keyboard input and overlay parent windows with their own browser windows to hide important system information, choices or prompts.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Scripted Window Security Restrictions">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Scripted Window Security Restrictions" test_ref="oval:mil.disa.stig.project2010:tst:10000" />
+      </criteria> 
+        </definition> 
+        <definition id="oval:mil.disa.stig.project2010:def:11" version="1" class="compliance">
+      <metadata>
+        <title>DTOO128 - Data Execution Prevention</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Project 2010</product>
+        </affected>
+        <description>Data Execution Prevention (DEP) is a set of hardware and software technologies performing additional checks on memory to help prevent malicious code from running on a system. The primary benefit of DEP is to help prevent code execution from data pages. Enabling this setting, turns off Data Execution Prevention. As a result, malicious code takes advantage of code injection or buffer overflow vulnerabilities possibly exploiting the computer.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Project 2010\Security\Trust Center\Turn off Data Execution Prevention">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Project 2010\Security\Trust Center\Turn off Data Execution Prevention" test_ref="oval:mil.disa.stig.project2010:tst:11000" />
+      </criteria> 
+        </definition>        
+       <definition id="oval:mil.disa.stig.project2010:def:12" version="1" class="compliance">
+      <metadata>
+        <title>DTOO346 - Untrusted intranet zone</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Project 2010</product>
+        </affected>
+        <description>Enabling this setting allows users to access Project server websites and workspaces outside of the trusted Internet zone.  As a result, malicious code could become active on user computers or the network to gain access to sensitive data.  In this situation, the site could attempt to capture personal information, such as passwords and user names.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Project 2010\Project Options\Security\Enable untrusted intranet zone access to Project server">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Project 2010\Project Options\Security\Enable untrusted intranet zone access to Project server" test_ref="oval:mil.disa.stig.project2010:tst:12000" />
+      </criteria> 
+        </definition> 
+  </definitions>
+  <tests>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:tst:1000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Disable user name and password" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.project2010:obj:1000" />
+      <state state_ref="oval:mil.disa.stig.project2010:ste:1000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:tst:2000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Bind to Object" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.project2010:obj:2000" />
+      <state state_ref="oval:mil.disa.stig.project2010:ste:2000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:tst:3000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Saved from URL" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.project2010:obj:3000" />
+      <state state_ref="oval:mil.disa.stig.project2010:ste:3000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:tst:4000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Navigate URL" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.project2010:obj:4000" />
+      <state state_ref="oval:mil.disa.stig.project2010:ste:4000" />
+       </registry_test>       
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:tst:5000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Block popups" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.project2010:obj:5000" />
+      <state state_ref="oval:mil.disa.stig.project2010:ste:5000" />
+    </registry_test> 
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:tst:6000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Add-on Management" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.project2010:obj:6000" />
+      <state state_ref="oval:mil.disa.stig.project2010:ste:6000" />   
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:tst:7000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Protection From Zone Elevation" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.project2010:obj:7000" />
+      <state state_ref="oval:mil.disa.stig.project2010:ste:7000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:tst:8000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Restrict ActiveX Install" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.project2010:obj:8000" />
+      <state state_ref="oval:mil.disa.stig.project2010:ste:8000" />
+    </registry_test> 
+        <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:tst:9000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Restrict File Download" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.project2010:obj:9000" />
+      <state state_ref="oval:mil.disa.stig.project2010:ste:9000" />
+    </registry_test>
+     <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:tst:10000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Scripted Window Security Restrictions" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.project2010:obj:10000" />
+      <state state_ref="oval:mil.disa.stig.project2010:ste:10000" />
+    </registry_test>
+     <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:tst:11000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Project 2010\Security\Trust Center\Turn off Data Execution Prevention" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.project2010:obj:11000" />
+      <state state_ref="oval:mil.disa.stig.project2010:ste:11000" />   
+    </registry_test>    
+     <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:tst:12000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Project 2010\Project Options\Security\Enable untrusted intranet zone access to Project server" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.project2010:obj:12000" />
+      <state state_ref="oval:mil.disa.stig.project2010:ste:12000" />
+    </registry_test>
+    </tests>
+  <objects>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:obj:1000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Disable user name and password">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_HTTP_USERNAME_PASSWORD_DISABLE</key>
+      <name datatype="string" operation="equals">winproj.exe</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:obj:2000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Bind to Object">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_SAFE_BINDTOOBJECT</key>
+      <name datatype="string" operation="equals">winproj.exe</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:obj:3000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Saved from URL">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_UNC_SAVEDFILECHECK</key>
+      <name datatype="string" operation="equals">winproj.exe</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:obj:4000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Navigate URL">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_VALIDATE_NAVIGATE_URL</key>
+      <name datatype="string" operation="equals">winproj.exe</name>
+    </registry_object>    
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:obj:5000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Block popups">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WEBOC_POPUPMANAGEMENT</key>
+      <name datatype="string" operation="equals">winproj.exe</name>
+    </registry_object> 
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:obj:6000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Add-on Management">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ADDON_MANAGEMENT</key>
+      <name datatype="string" operation="equals">winproj.exe</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:obj:7000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Protection From Zone Elevation">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ZONE_ELEVATION</key>
+      <name datatype="string" operation="equals">winproj.exe</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:obj:8000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Restrict ActiveX Install">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_ACTIVEXINSTALL</key>
+      <name datatype="string" operation="equals">winproj.exe</name>
+    </registry_object>  
+         <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:obj:9000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Restrict File Download">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_FILEDOWNLOAD</key>
+      <name datatype="string" operation="equals">winproj.exe</name>
+    </registry_object>   
+      <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:obj:10000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Scripted Window Security Restrictions">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WINDOW_RESTRICTIONS</key>
+      <name datatype="string" operation="equals">winproj.exe</name>
+    </registry_object>
+     <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:obj:11000" version="1" comment="User Configuration\Administrative Templates\Microsoft Project 2010\Security\Trust Center\Turn off Data Execution Prevention">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\14.0\ms project\security</key>
+      <name datatype="string" operation="equals">EnableDEP</name>
+    </registry_object>   
+      <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:obj:12000" version="1" comment="User Configuration\Administrative Templates\Microsoft Project 2010\Project Options\Security\Enable untrusted intranet zone access to Project server">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\14.0\ms project\security</key>
+      <name datatype="string" operation="equals">TrustWSS</name>
+    </registry_object>
+    </objects>
+  <states>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:ste:1000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Disable user name and password">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:ste:2000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Bind to Object">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:ste:3000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Saved from URL">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:ste:4000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Navigate URL">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>    
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:ste:5000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Block popups">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>    
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:ste:6000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Add-on Management">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:ste:7000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Protection From Zone Elevation">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:ste:8000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security/Restrict ActiveX Install">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:ste:9000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Restrict File Download">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state> 
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:ste:10000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2010 (Machine)\Security Settings\IE Security\Scripted Window Security Restrictions">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>  
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:ste:11000" version="1" comment="User Configuration\Administrative Templates\Microsoft Project 2010\Security\Trust Center\Turn off Data Execution Prevention">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>   
+       <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2010:ste:12000" version="1" comment="User Configuration\Administrative Templates\Microsoft Project 2010\Project Options\Security\Enable untrusted intranet zone access to Project server">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>  
+    </states>  
+</oval_definitions>
+

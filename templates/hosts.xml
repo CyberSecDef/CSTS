@@ -1,0 +1,26 @@
+<form name="form1" text="Cyber Security Tool Suite - Host Selector" clientSizeX="800" clientSizeY="600" FormBorderStyle="fixedDialog" backColor="#FFDDEEFF">
+	<controls>
+		<control type="label" id="lblOu" name="lblOu" text="Organizational Units" locationX="5" locationY="5" sizeX="250" sizeY="20" />
+		<control type="treeView" id="treeOu" name="treeOu" locationX="5" locationY="25" sizeX="250" sizeY="570" backColor="#FFEEEEFF"/>
+		<control type="label" id="lblCsv" name="lblCsv" text="Comma Separated Hosts" locationX="260" locationY="5" sizeX="530" sizeY="12" />
+		<control type="textBox" id="txtCsv" name="txtCsv" text="" locationX="260" locationY="25" sizeX="530" sizeY="100" multiLine="true" />
+		<control type="label" id="lblFileName" name="lblFileName" text="Selected Host CSV File" locationX="260" locationY="135" sizeX="530" sizeY="12" />
+		<control type="textBox" id="txtFileName" name="txtFileName" text="" locationX="260" locationY="150" sizeX="430" sizeY="25" multiLine="true" />
+		<control type="button" id="btnOpenCsvFile" name="btnOpenCsvFile" text="Browse for CSV" locationX="695" locationY="150" sizeX="100" sizeY="25" />
+		<control type="label" id="lblCommand" name="lblCommand" text="Current Command Line Options" locationX="260" locationY="180" sizeX="530" sizeY="12" />
+		<control type="textBox" id="txtCommand" name="txtCommand" text="" locationX="260" locationY="195" sizeX="530" sizeY="50" multiLine="true" />
+		
+		<control type="label" id="lblPreview" name="lblPreview" text="Selected System Preview" locationX="260" locationY="250" sizeX="530" sizeY="12" />
+		<control type="listView" id="lstPreview" name="lstPreview" locationX="260" locationY="265" sizeX="530" sizeY="270" view="Details" >
+			<column>#</column>
+			<column>HostName</column>
+			<column>IP</column>
+			<column>MAC</column>
+		</control>
+		
+		<control type="button" id="btnPreviewHosts" name="btnPreviewHosts" text="Preview Hosts" locationX="370" locationY="540" sizeX="100" sizeY="25" />
+		<control type="button" id="btnClearSelections" name="btnClearSelections" text="Clear Selections" locationX="480" locationY="540" sizeX="100" sizeY="25" />
+		<control type="button" id="btnExecute" name="btnExecute" text="Execute" locationX="585" locationY="540" sizeX="100" sizeY="25" />
+		<control type="progressBar" id="pbrPreview" name="pbrPreview" locationX="260" locationY="570" sizeX="530" sizeY="23" minimum="0" maximum="100"/>
+	</controls>
+</form>

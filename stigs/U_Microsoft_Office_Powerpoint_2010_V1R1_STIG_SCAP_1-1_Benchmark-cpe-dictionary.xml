@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+  <cpe-item name="cpe:/a:microsoft:powerpoint:2010">
+    <title>Microsoft Powerpoint 2010</title>
+    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_Microsoft_Office_Powerpoint_2010_V1R1_STIG_SCAP_1-1_Benchmark-cpe-oval.xml">oval:mil.disa.stig.powerpoint2010:def:15696</check>
+  </cpe-item>
+</cpe-list>
+

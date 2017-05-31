@@ -1,0 +1,1488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Benchmark xmlns="http://checklists.nist.gov/xccdf/1.1" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" id="Windows_Firewall" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" style="SCAP_1.1">
+  <status date="2015-06-26">accepted</status>
+  <title>Windows Firewall with Advanced Security Security Technical Implementation Guide</title>
+  <description>The Windows Firewall with Advanced Security Security Technical Implementation Guide (STIG) is published as a tool to improve the security of Department of Defense (DoD) information systems. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</description>
+  <notice id="terms-of-use" xml:lang="en">Developed_by_DISA_for_the_DoD</notice>
+  <reference href="http://iase.disa.mil">
+    <dc:publisher>DISA, Field Security Operations</dc:publisher>
+    <dc:source>STIG.DOD.MIL</dc:source>
+  </reference>
+  <plain-text id="release-info">Release: 3 Benchmark Date: 24 Jul 2015</plain-text>
+  <platform idref="cpe:/o:microsoft:windows_server_2012:-" />
+  <platform idref="cpe:/o:microsoft:windows_server_2012:r2" />
+  <platform idref="cpe:/o:microsoft:windows_7" />
+  <platform idref="cpe:/o:microsoft:windows_8" />
+  <platform idref="cpe:/o:microsoft:windows_8.1" />
+  <platform idref="cpe:/o:microsoft:windows_server_2008:r2" />
+  <platform idref="cpe:/o:microsoft:windows_server_2008" />
+  <platform idref="cpe:/o:microsoft:windows_vista" />
+  <version>1</version>
+  <metadata>
+    <dc:creator>DISA</dc:creator>
+    <dc:publisher>DISA</dc:publisher>
+    <dc:contributor>DISA</dc:contributor>
+    <dc:source>STIG.DOD.MIL</dc:source>
+  </metadata>
+  <Profile id="MAC-1_Classified">
+    <title>I - Mission Critical Classified</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-17415" selected="true" />
+    <select idref="V-17416" selected="true" />
+    <select idref="V-17417" selected="true" />
+    <select idref="V-17418" selected="true" />
+    <select idref="V-17419" selected="true" />
+    <select idref="V-17420" selected="true" />
+    <select idref="V-17421" selected="true" />
+    <select idref="V-17424" selected="true" />
+    <select idref="V-17425" selected="true" />
+    <select idref="V-17426" selected="true" />
+    <select idref="V-17427" selected="true" />
+    <select idref="V-17428" selected="true" />
+    <select idref="V-17429" selected="true" />
+    <select idref="V-17430" selected="true" />
+    <select idref="V-17431" selected="true" />
+    <select idref="V-17434" selected="true" />
+    <select idref="V-17435" selected="true" />
+    <select idref="V-17436" selected="true" />
+    <select idref="V-17437" selected="true" />
+    <select idref="V-17438" selected="true" />
+    <select idref="V-17439" selected="true" />
+    <select idref="V-17440" selected="true" />
+    <select idref="V-17441" selected="true" />
+    <select idref="V-17442" selected="true" />
+    <select idref="V-17443" selected="true" />
+    <select idref="V-17444" selected="true" />
+    <select idref="V-17445" selected="true" />
+    <select idref="V-17446" selected="true" />
+    <select idref="V-17447" selected="true" />
+  </Profile>
+  <Profile id="MAC-1_Public">
+    <title>I - Mission Critical Public</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-17415" selected="true" />
+    <select idref="V-17416" selected="true" />
+    <select idref="V-17417" selected="true" />
+    <select idref="V-17418" selected="true" />
+    <select idref="V-17419" selected="true" />
+    <select idref="V-17420" selected="true" />
+    <select idref="V-17421" selected="true" />
+    <select idref="V-17424" selected="true" />
+    <select idref="V-17425" selected="true" />
+    <select idref="V-17426" selected="true" />
+    <select idref="V-17427" selected="true" />
+    <select idref="V-17428" selected="true" />
+    <select idref="V-17429" selected="true" />
+    <select idref="V-17430" selected="true" />
+    <select idref="V-17431" selected="true" />
+    <select idref="V-17434" selected="true" />
+    <select idref="V-17435" selected="true" />
+    <select idref="V-17436" selected="true" />
+    <select idref="V-17437" selected="true" />
+    <select idref="V-17438" selected="true" />
+    <select idref="V-17439" selected="true" />
+    <select idref="V-17440" selected="true" />
+    <select idref="V-17441" selected="true" />
+    <select idref="V-17442" selected="true" />
+    <select idref="V-17443" selected="true" />
+    <select idref="V-17444" selected="true" />
+    <select idref="V-17445" selected="true" />
+    <select idref="V-17446" selected="true" />
+    <select idref="V-17447" selected="true" />
+  </Profile>
+  <Profile id="MAC-1_Sensitive">
+    <title>I - Mission Critical Sensitive</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-17415" selected="true" />
+    <select idref="V-17416" selected="true" />
+    <select idref="V-17417" selected="true" />
+    <select idref="V-17418" selected="true" />
+    <select idref="V-17419" selected="true" />
+    <select idref="V-17420" selected="true" />
+    <select idref="V-17421" selected="true" />
+    <select idref="V-17424" selected="true" />
+    <select idref="V-17425" selected="true" />
+    <select idref="V-17426" selected="true" />
+    <select idref="V-17427" selected="true" />
+    <select idref="V-17428" selected="true" />
+    <select idref="V-17429" selected="true" />
+    <select idref="V-17430" selected="true" />
+    <select idref="V-17431" selected="true" />
+    <select idref="V-17434" selected="true" />
+    <select idref="V-17435" selected="true" />
+    <select idref="V-17436" selected="true" />
+    <select idref="V-17437" selected="true" />
+    <select idref="V-17438" selected="true" />
+    <select idref="V-17439" selected="true" />
+    <select idref="V-17440" selected="true" />
+    <select idref="V-17441" selected="true" />
+    <select idref="V-17442" selected="true" />
+    <select idref="V-17443" selected="true" />
+    <select idref="V-17444" selected="true" />
+    <select idref="V-17445" selected="true" />
+    <select idref="V-17446" selected="true" />
+    <select idref="V-17447" selected="true" />
+  </Profile>
+  <Profile id="MAC-2_Classified">
+    <title>II - Mission Support Classified</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-17415" selected="true" />
+    <select idref="V-17416" selected="true" />
+    <select idref="V-17417" selected="true" />
+    <select idref="V-17418" selected="true" />
+    <select idref="V-17419" selected="true" />
+    <select idref="V-17420" selected="true" />
+    <select idref="V-17421" selected="true" />
+    <select idref="V-17424" selected="true" />
+    <select idref="V-17425" selected="true" />
+    <select idref="V-17426" selected="true" />
+    <select idref="V-17427" selected="true" />
+    <select idref="V-17428" selected="true" />
+    <select idref="V-17429" selected="true" />
+    <select idref="V-17430" selected="true" />
+    <select idref="V-17431" selected="true" />
+    <select idref="V-17434" selected="true" />
+    <select idref="V-17435" selected="true" />
+    <select idref="V-17436" selected="true" />
+    <select idref="V-17437" selected="true" />
+    <select idref="V-17438" selected="true" />
+    <select idref="V-17439" selected="true" />
+    <select idref="V-17440" selected="true" />
+    <select idref="V-17441" selected="true" />
+    <select idref="V-17442" selected="true" />
+    <select idref="V-17443" selected="true" />
+    <select idref="V-17444" selected="true" />
+    <select idref="V-17445" selected="true" />
+    <select idref="V-17446" selected="true" />
+    <select idref="V-17447" selected="true" />
+  </Profile>
+  <Profile id="MAC-2_Public">
+    <title>II - Mission Support Public</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-17415" selected="true" />
+    <select idref="V-17416" selected="true" />
+    <select idref="V-17417" selected="true" />
+    <select idref="V-17418" selected="true" />
+    <select idref="V-17419" selected="true" />
+    <select idref="V-17420" selected="true" />
+    <select idref="V-17421" selected="true" />
+    <select idref="V-17424" selected="true" />
+    <select idref="V-17425" selected="true" />
+    <select idref="V-17426" selected="true" />
+    <select idref="V-17427" selected="true" />
+    <select idref="V-17428" selected="true" />
+    <select idref="V-17429" selected="true" />
+    <select idref="V-17430" selected="true" />
+    <select idref="V-17431" selected="true" />
+    <select idref="V-17434" selected="true" />
+    <select idref="V-17435" selected="true" />
+    <select idref="V-17436" selected="true" />
+    <select idref="V-17437" selected="true" />
+    <select idref="V-17438" selected="true" />
+    <select idref="V-17439" selected="true" />
+    <select idref="V-17440" selected="true" />
+    <select idref="V-17441" selected="true" />
+    <select idref="V-17442" selected="true" />
+    <select idref="V-17443" selected="true" />
+    <select idref="V-17444" selected="true" />
+    <select idref="V-17445" selected="true" />
+    <select idref="V-17446" selected="true" />
+    <select idref="V-17447" selected="true" />
+  </Profile>
+  <Profile id="MAC-2_Sensitive">
+    <title>II - Mission Support Sensitive</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-17415" selected="true" />
+    <select idref="V-17416" selected="true" />
+    <select idref="V-17417" selected="true" />
+    <select idref="V-17418" selected="true" />
+    <select idref="V-17419" selected="true" />
+    <select idref="V-17420" selected="true" />
+    <select idref="V-17421" selected="true" />
+    <select idref="V-17424" selected="true" />
+    <select idref="V-17425" selected="true" />
+    <select idref="V-17426" selected="true" />
+    <select idref="V-17427" selected="true" />
+    <select idref="V-17428" selected="true" />
+    <select idref="V-17429" selected="true" />
+    <select idref="V-17430" selected="true" />
+    <select idref="V-17431" selected="true" />
+    <select idref="V-17434" selected="true" />
+    <select idref="V-17435" selected="true" />
+    <select idref="V-17436" selected="true" />
+    <select idref="V-17437" selected="true" />
+    <select idref="V-17438" selected="true" />
+    <select idref="V-17439" selected="true" />
+    <select idref="V-17440" selected="true" />
+    <select idref="V-17441" selected="true" />
+    <select idref="V-17442" selected="true" />
+    <select idref="V-17443" selected="true" />
+    <select idref="V-17444" selected="true" />
+    <select idref="V-17445" selected="true" />
+    <select idref="V-17446" selected="true" />
+    <select idref="V-17447" selected="true" />
+  </Profile>
+  <Profile id="MAC-3_Classified">
+    <title>III - Administrative Classified</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-17415" selected="true" />
+    <select idref="V-17416" selected="true" />
+    <select idref="V-17417" selected="true" />
+    <select idref="V-17418" selected="true" />
+    <select idref="V-17419" selected="true" />
+    <select idref="V-17420" selected="true" />
+    <select idref="V-17421" selected="true" />
+    <select idref="V-17424" selected="true" />
+    <select idref="V-17425" selected="true" />
+    <select idref="V-17426" selected="true" />
+    <select idref="V-17427" selected="true" />
+    <select idref="V-17428" selected="true" />
+    <select idref="V-17429" selected="true" />
+    <select idref="V-17430" selected="true" />
+    <select idref="V-17431" selected="true" />
+    <select idref="V-17434" selected="true" />
+    <select idref="V-17435" selected="true" />
+    <select idref="V-17436" selected="true" />
+    <select idref="V-17437" selected="true" />
+    <select idref="V-17438" selected="true" />
+    <select idref="V-17439" selected="true" />
+    <select idref="V-17440" selected="true" />
+    <select idref="V-17441" selected="true" />
+    <select idref="V-17442" selected="true" />
+    <select idref="V-17443" selected="true" />
+    <select idref="V-17444" selected="true" />
+    <select idref="V-17445" selected="true" />
+    <select idref="V-17446" selected="true" />
+    <select idref="V-17447" selected="true" />
+  </Profile>
+  <Profile id="MAC-3_Public">
+    <title>III - Administrative Public</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-17415" selected="true" />
+    <select idref="V-17416" selected="true" />
+    <select idref="V-17417" selected="true" />
+    <select idref="V-17418" selected="true" />
+    <select idref="V-17419" selected="true" />
+    <select idref="V-17420" selected="true" />
+    <select idref="V-17421" selected="true" />
+    <select idref="V-17424" selected="true" />
+    <select idref="V-17425" selected="true" />
+    <select idref="V-17426" selected="true" />
+    <select idref="V-17427" selected="true" />
+    <select idref="V-17428" selected="true" />
+    <select idref="V-17429" selected="true" />
+    <select idref="V-17430" selected="true" />
+    <select idref="V-17431" selected="true" />
+    <select idref="V-17434" selected="true" />
+    <select idref="V-17435" selected="true" />
+    <select idref="V-17436" selected="true" />
+    <select idref="V-17437" selected="true" />
+    <select idref="V-17438" selected="true" />
+    <select idref="V-17439" selected="true" />
+    <select idref="V-17440" selected="true" />
+    <select idref="V-17441" selected="true" />
+    <select idref="V-17442" selected="true" />
+    <select idref="V-17443" selected="true" />
+    <select idref="V-17444" selected="true" />
+    <select idref="V-17445" selected="true" />
+    <select idref="V-17446" selected="true" />
+    <select idref="V-17447" selected="true" />
+  </Profile>
+  <Profile id="MAC-3_Sensitive">
+    <title>III - Administrative Sensitive</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-17415" selected="true" />
+    <select idref="V-17416" selected="true" />
+    <select idref="V-17417" selected="true" />
+    <select idref="V-17418" selected="true" />
+    <select idref="V-17419" selected="true" />
+    <select idref="V-17420" selected="true" />
+    <select idref="V-17421" selected="true" />
+    <select idref="V-17424" selected="true" />
+    <select idref="V-17425" selected="true" />
+    <select idref="V-17426" selected="true" />
+    <select idref="V-17427" selected="true" />
+    <select idref="V-17428" selected="true" />
+    <select idref="V-17429" selected="true" />
+    <select idref="V-17430" selected="true" />
+    <select idref="V-17431" selected="true" />
+    <select idref="V-17434" selected="true" />
+    <select idref="V-17435" selected="true" />
+    <select idref="V-17436" selected="true" />
+    <select idref="V-17437" selected="true" />
+    <select idref="V-17438" selected="true" />
+    <select idref="V-17439" selected="true" />
+    <select idref="V-17440" selected="true" />
+    <select idref="V-17441" selected="true" />
+    <select idref="V-17442" selected="true" />
+    <select idref="V-17443" selected="true" />
+    <select idref="V-17444" selected="true" />
+    <select idref="V-17445" selected="true" />
+    <select idref="V-17446" selected="true" />
+    <select idref="V-17447" selected="true" />
+  </Profile>
+  <Profile id="Disable_Slow_Rules">
+    <title>Disable Slow Rules</title>
+    <description>This profile disables rules known to have poor performance in some environments, such as systems with large numbers of user accounts.</description>
+  </Profile>
+  <Profile id="CAT_I_Only">
+    <title>CAT I Only</title>
+    <description>This profile only includes rules that are Severity Category I.</description>
+    <select selected="false" idref="SV-54833r2_rule" />
+    <select selected="false" idref="SV-54849r2_rule" />
+    <select selected="false" idref="SV-54855r2_rule" />
+    <select selected="false" idref="SV-54863r3_rule" />
+    <select selected="false" idref="SV-54866r3_rule" />
+    <select selected="false" idref="SV-54867r3_rule" />
+    <select selected="false" idref="SV-54870r3_rule" />
+    <select selected="false" idref="SV-54874r3_rule" />
+    <select selected="false" idref="SV-54877r3_rule" />
+    <select selected="false" idref="SV-54878r3_rule" />
+    <select selected="false" idref="SV-54890r3_rule" />
+    <select selected="false" idref="SV-54891r3_rule" />
+    <select selected="false" idref="SV-54892r3_rule" />
+    <select selected="false" idref="SV-54902r3_rule" />
+    <select selected="false" idref="SV-54903r3_rule" />
+    <select selected="false" idref="SV-54904r3_rule" />
+    <select selected="false" idref="SV-54905r3_rule" />
+    <select selected="false" idref="SV-54908r3_rule" />
+    <select selected="false" idref="SV-54910r3_rule" />
+    <select selected="false" idref="SV-54912r3_rule" />
+    <select selected="false" idref="SV-54917r3_rule" />
+    <select selected="false" idref="SV-54918r3_rule" />
+    <select selected="false" idref="SV-54919r3_rule" />
+    <select selected="false" idref="SV-54921r3_rule" />
+    <select selected="false" idref="SV-54922r3_rule" />
+    <select selected="false" idref="SV-54923r3_rule" />
+  </Profile>
+  <Value id="domain_profile_firewall_state_var" type="number" operator="equals">
+    <title>Firewall state</title>
+    <description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+    <value>1</value>
+    <value selector="off">0</value>
+    <value selector="on">1</value>
+  </Value>
+  <Value id="private_profile_firewall_state_var" type="number" operator="equals">
+    <title>Firewall state</title>
+    <description>Enable the firewall when connected to a private network</description>
+    <value>1</value>
+    <value selector="off">0</value>
+    <value selector="on">1</value>
+  </Value>
+  <Value id="public_profile_firewall_state_var" type="number" operator="equals">
+    <title>Firewall state</title>
+    <description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+    <value>1</value>
+    <value selector="off">0</value>
+    <value selector="on">1</value>
+  </Value>
+  <Value id="domain_profile_inbound_connections_var" type="number" operator="equals">
+    <title>Inbound Connections</title>
+    <description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+    <value>1</value>
+    <value selector="allow">0</value>
+    <value selector="block">1</value>
+  </Value>
+  <Value id="domain_profile_outbound_connections_var" type="number" operator="equals">
+    <title>Outbound Connections</title>
+    <description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+    <value>0</value>
+    <value selector="allow">0</value>
+    <value selector="block">1</value>
+  </Value>
+  <Value id="domain_profile_display_notification_var" type="number" operator="equals">
+    <title>Display a Notification</title>
+    <description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+    <value>0</value>
+    <value selector="yes">0</value>
+    <value selector="no">1</value>
+  </Value>
+  <Value id="domain_profile_allow_unicast_response_var" type="number" operator="equals">
+    <title>Allow Unicast Response</title>
+    <description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+    <value>1</value>
+    <value selector="yes">0</value>
+    <value selector="no">1</value>
+  </Value>
+  <Value id="domain_profile_name_var" type="string" operator="pattern match">
+    <title>domain_profile_name_var</title>
+    <description>Location and file name of the firewall log for a domain connection</description>
+    <value>((%[Ss][Yy][Ss][Tt][Ee][Mm][Rr][Oo][Oo][Tt]%)|(%[Ww][Ii][Nn][Dd][Ii][Rr]%)|([C-Zc-z]:\\[Ww][Ii][Nn][Dd][Oo][Ww][Ss]))\\[Ss][Yy][Ss][Tt][Ee][Mm]32\\[Ll][Oo][Gg][Ff][Ii][Ll][Ee][Ss]\\[Ff][Ii][Rr][Ee][Ww][Aa][Ll][Ll]\\[^\.][^\\]*</value>
+    <value selector="firewall_dir">((%[Ss][Yy][Ss][Tt][Ee][Mm][Rr][Oo][Oo][Tt]%)|(%[Ww][Ii][Nn][Dd][Ii][Rr]%)|([C-Zc-z]:\\[Ww][Ii][Nn][Dd][Oo][Ww][Ss]))\\[Ss][Yy][Ss][Tt][Ee][Mm]32\\[Ll][Oo][Gg][Ff][Ii][Ll][Ee][Ss]\\[Ff][Ii][Rr][Ee][Ww][Aa][Ll][Ll]\\[^\.][^\\]*</value>
+  </Value>
+  <Value id="domain_profile_size_limit_var" type="number" operator="equals">
+    <title>domain_profile_size_limit_var</title>
+    <description>Firewall log file size for a domain connection.</description>
+    <value>16384</value>
+    <value selector="16384_kb">16384</value>
+  </Value>
+  <Value id="domain_profile_log_dropped_packets_var" type="number" operator="equals">
+    <title>domain_profile_log_dropped_packets_var</title>
+    <description>Enables logging of dropped packets for a domain connection.</description>
+    <value>1</value>
+    <value selector="no">0</value>
+    <value selector="yes">1</value>
+  </Value>
+  <Value id="domain_profile_logged_successful_connections_var" type="number" operator="equals">
+    <title>domain_profile_logged_successful_connections_var</title>
+    <description>Enables logging of successful connections for a domain connection.</description>
+    <value>1</value>
+    <value selector="no">0</value>
+    <value selector="yes">1</value>
+  </Value>
+  <Value id="private_profile_inbound_connections_var" type="number" operator="equals">
+    <title>Inbound Connections</title>
+    <description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+    <value>1</value>
+    <value selector="allow">0</value>
+    <value selector="block">1</value>
+  </Value>
+  <Value id="private_profile_outbound_connections_var" type="number" operator="equals">
+    <title>Outbound Connections</title>
+    <description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+    <value>0</value>
+    <value selector="allow">0</value>
+    <value selector="block">1</value>
+  </Value>
+  <Value id="private_profile_display_notification_var" type="number" operator="equals">
+    <title>Display a Notification</title>
+    <description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+    <value>0</value>
+    <value selector="yes">0</value>
+    <value selector="no">1</value>
+  </Value>
+  <Value id="private_profile_allow_unicast_response_var" type="number" operator="equals">
+    <title>Allow Unicast Response</title>
+    <description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+    <value>1</value>
+    <value selector="yes">0</value>
+    <value selector="no">1</value>
+  </Value>
+  <Value id="private_profile_name_var" type="string" operator="pattern match">
+    <title>private_profile_name_var</title>
+    <description>Location and file name of the firewall log for a private network connection</description>
+    <value>((%[Ss][Yy][Ss][Tt][Ee][Mm][Rr][Oo][Oo][Tt]%)|(%[Ww][Ii][Nn][Dd][Ii][Rr]%)|([C-Zc-z]:\\[Ww][Ii][Nn][Dd][Oo][Ww][Ss]))\\[Ss][Yy][Ss][Tt][Ee][Mm]32\\[Ll][Oo][Gg][Ff][Ii][Ll][Ee][Ss]\\[Ff][Ii][Rr][Ee][Ww][Aa][Ll][Ll]\\[^\.][^\\]*</value>
+    <value selector="firewall_dir">((%[Ss][Yy][Ss][Tt][Ee][Mm][Rr][Oo][Oo][Tt]%)|(%[Ww][Ii][Nn][Dd][Ii][Rr]%)|([C-Zc-z]:\\[Ww][Ii][Nn][Dd][Oo][Ww][Ss]))\\[Ss][Yy][Ss][Tt][Ee][Mm]32\\[Ll][Oo][Gg][Ff][Ii][Ll][Ee][Ss]\\[Ff][Ii][Rr][Ee][Ww][Aa][Ll][Ll]\\[^\.][^\\]*</value>
+  </Value>
+  <Value id="private_profile_size_limit_var" type="number" operator="equals">
+    <title>private_profile_size_limit_var</title>
+    <description>Firewall log file size for a private network connection</description>
+    <value>16384</value>
+    <value selector="16384_kb">16384</value>
+  </Value>
+  <Value id="private_profile_log_dropped_packets_var" type="number" operator="equals">
+    <title>private_profile_log_dropped_packets_var</title>
+    <description>Enable logging of dropped packets for a private network connection</description>
+    <value>1</value>
+    <value selector="no">0</value>
+    <value selector="yes">1</value>
+  </Value>
+  <Value id="private_profile_logged_successful_connections_var" type="number" operator="equals">
+    <title>private_profile_logged_successful_connections_var</title>
+    <description>Enable logging of successful connections for a private network connection</description>
+    <value>1</value>
+    <value selector="no">0</value>
+    <value selector="yes">1</value>
+  </Value>
+  <Value id="public_profile_inbound_connections_var" type="number" operator="equals">
+    <title>Inbound Connections</title>
+    <description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+    <value>1</value>
+    <value selector="allow">0</value>
+    <value selector="block">1</value>
+  </Value>
+  <Value id="public_profile_outbound_connections_var" type="number" operator="equals">
+    <title>Outbound Connections</title>
+    <description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+    <value>0</value>
+    <value selector="allow">0</value>
+    <value selector="block">1</value>
+  </Value>
+  <Value id="public_profile_display_notification_var" type="number" operator="equals">
+    <title>Display a Notification</title>
+    <description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+    <value>0</value>
+    <value selector="yes">0</value>
+    <value selector="no">1</value>
+  </Value>
+  <Value id="SV-25243r1_rule_var" type="number" operator="equals">
+    <title>Allow Unicast Response</title>
+    <description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+    <value>1</value>
+    <value selector="yes">0</value>
+    <value selector="no">1</value>
+  </Value>
+  <Value id="public_profile_apply_local_firewall_rules_var" type="number" operator="equals">
+    <title>Apply Local Firewall Rules</title>
+    <description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+    <value>0</value>
+    <value selector="no">0</value>
+    <value selector="yes">1</value>
+  </Value>
+  <Value id="public_profile_apply_local_connection_security_rules_var" type="number" operator="equals">
+    <title>Apply Local Connection Security Rules</title>
+    <description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+    <value>0</value>
+    <value selector="no">0</value>
+    <value selector="yes">1</value>
+  </Value>
+  <Value id="public_profile_name_var" type="string" operator="equals">
+    <title>public_profile_name_var</title>
+    <description>Location and file name of the firewall log for a public network connection</description>
+    <value>((%[Ss][Yy][Ss][Tt][Ee][Mm][Rr][Oo][Oo][Tt]%)|(%[Ww][Ii][Nn][Dd][Ii][Rr]%)|([C-Zc-z]:\\[Ww][Ii][Nn][Dd][Oo][Ww][Ss]))\\[Ss][Yy][Ss][Tt][Ee][Mm]32\\[Ll][Oo][Gg][Ff][Ii][Ll][Ee][Ss]\\[Ff][Ii][Rr][Ee][Ww][Aa][Ll][Ll]\\[^\.][^\\]*</value>
+    <value selector="firewall_dir">((%[Ss][Yy][Ss][Tt][Ee][Mm][Rr][Oo][Oo][Tt]%)|(%[Ww][Ii][Nn][Dd][Ii][Rr]%)|([C-Zc-z]:\\[Ww][Ii][Nn][Dd][Oo][Ww][Ss]))\\[Ss][Yy][Ss][Tt][Ee][Mm]32\\[Ll][Oo][Gg][Ff][Ii][Ll][Ee][Ss]\\[Ff][Ii][Rr][Ee][Ww][Aa][Ll][Ll]\\[^\.][^\\]*</value>
+  </Value>
+  <Value id="public_profile_size_limit_var" type="number" operator="equals">
+    <title>public_profile_size_limit_var</title>
+    <description>Firewall log file size for a public network connection</description>
+    <value>16384</value>
+    <value selector="16384_kb">16384</value>
+  </Value>
+  <Value id="public_profile_log_dropped_packets_var" type="number" operator="equals">
+    <title>public_profile_log_dropped_packets_var</title>
+    <description>Enable logging of dropped packets for a public network connection</description>
+    <value>1</value>
+    <value selector="no">0</value>
+    <value selector="yes">1</value>
+  </Value>
+  <Value id="public_profile_logged_successful_connections_var" type="number" operator="equals">
+    <title>public_profile_logged_successful_connections_var</title>
+    <description>Enables logging of successful connections for a public network connection</description>
+    <value>1</value>
+    <value selector="no">0</value>
+    <value selector="yes">1</value>
+  </Value>
+  <Group id="V-17415">
+    <title>Windows Firewall Domain - Enable Firewall</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54833r2_rule" severity="medium" weight="10.0">
+      <version>WNFWA-000001</version>
+      <title>The Windows Firewall with Advanced Security must be enabled when connected to a domain.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  This setting enables the firewall when connected to the domain.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63429r3_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Domain Profile Tab -&gt; State, "Firewall state" to "On (recommended)".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set domainprofile state on".
+Or
+"Netsh advfirewall set allprofiles state on".</fixtext>
+      <fix id="F-63429r3_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="domain_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479800" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4798" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17416">
+    <title>Windows Firewall Private - Enable Firewall</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54849r2_rule" severity="medium" weight="10.0">
+      <version>WNFWA-000002</version>
+      <title>The Windows Firewall with Advanced Security must be enabled when connected to a private network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  This setting enables the firewall when connected to a private network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63481r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Private Profile Tab -&gt; State, "Firewall state" to "On (recommended)".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set privateprofile state on".
+Or
+"Netsh advfirewall set allprofiles state on".</fixtext>
+      <fix id="F-63481r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="private_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479900" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4799" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17417">
+    <title>Windows Firewall Public - Enable Firewall</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54855r2_rule" severity="medium" weight="10.0">
+      <version>WNFWA-000003</version>
+      <title>The Windows Firewall with Advanced Security must be enabled when connected to a public network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  This setting enables the firewall when connected to a public network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63483r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Public Profile Tab -&gt; State, "Firewall state" to "On (recommended)".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set publicprofile state on".
+Or
+"Netsh advfirewall set allprofiles state on".</fixtext>
+      <fix id="F-63483r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="public_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:480000" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4800" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17418">
+    <title>Windows Firewall Domain - Inbound</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54859r3_rule" severity="high" weight="10.0">
+      <version>WNFWA-000004</version>
+      <title>The Windows Firewall with Advanced Security must block unsolicited inbound connections when connected to a domain.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Unsolicited inbound connections may be malicious attempts to gain access to a system.  Unsolicited inbound connections, for which there is no rule allowing the connection, will be blocked in the domain.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63485r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Domain Profile Tab -&gt; State, "Inbound connections" to "Block (default)".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set domainprofile firewallpolicy blockinbound,allowoutbound".
+Or
+"Netsh advfirewall set allprofiles firewallpolicy blockinbound,allowoutbound".
+Both inbound and outbound parameters must be specified to execute this command.</fixtext>
+      <fix id="F-63485r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="domain_profile_inbound_connections_var" export-name="oval:mil.disa.fso.windows:var:480100" />
+		<check-export value-id="domain_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479800" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4801" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17419">
+    <title>Windows Firewall Domain - Outbound</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54863r3_rule" severity="medium" weight="10.0">
+      <version>WNFWA-000005</version>
+      <title>The Windows Firewall with Advanced Security must allow outbound connections, unless a rule explicitly blocks the connection when connected to a domain.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Outbound connections are allowed in the domain, unless a rule explicitly blocks the connection.  This allows normal outbound communication, which could be restricted as necessary with additional rules.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63487r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Domain Profile Tab -&gt; State, "Outbound connections" to "Allow (default)".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set domainprofile firewallpolicy blockinbound,allowoutbound".
+Or
+"Netsh advfirewall set allprofiles firewallpolicy blockinbound,allowoutbound".
+Both inbound and outbound parameters must be specified to execute this command.</fixtext>
+      <fix id="F-63487r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="domain_profile_outbound_connections_var" export-name="oval:mil.disa.fso.windows:var:480200" />
+		<check-export value-id="domain_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479800" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4802" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17420">
+    <title>Windows Firewall Domain - Display Notifications</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54866r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000006</version>
+      <title>The Windows Firewall with Advanced Security must display notifications when a program is blocked from receiving an inbound connection when connected to a domain.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  The display of notifications to the user when a program is blocked from receiving an inbound connection in the domain must be enabled to alert the user of potential issues.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63489r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Domain Profile Tab -&gt; Settings (select Customize) -&gt; Firewall settings, "Display a notification" to "Yes".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set domainprofile settings inboundusernotification enable".
+Or
+"Netsh advfirewall set allprofiles settings inboundusernotification enable".</fixtext>
+      <fix id="F-63489r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="domain_profile_display_notification_var" export-name="oval:mil.disa.fso.windows:var:480300" />
+		<check-export value-id="domain_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479800" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4803" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17421">
+    <title>Windows Firewall Domain - Unicast Response</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54867r3_rule" severity="medium" weight="10.0">
+      <version>WNFWA-000007</version>
+      <title>The Windows Firewall with Advanced Security must block unicast responses to multicast or broadcast messages when connected to a domain.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Unicast responses to multicast or broadcast messages in the domain will be blocked.  This helps minimize the risk of an attacker using broadcast or multicast traffic to deliver malicious payloads.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63491r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Domain Profile Tab -&gt; Settings (select Customize) -&gt; Unicast response, "Allow unicast response" to "No".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set domainprofile settings unicastresponsetomulticast disable".
+Or
+"Netsh advfirewall set allprofiles settings unicastresponsetomulticast disable".</fixtext>
+      <fix id="F-63491r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="domain_profile_allow_unicast_response_var" export-name="oval:mil.disa.fso.windows:var:480400" />
+		<check-export value-id="domain_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479800" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4804" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17424">
+    <title>Windows Firewall Domain - Log File</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54870r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000008</version>
+      <title>The Windows Firewall with Advanced Security log file name and location must be configured for domain connections.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  The location and file name of the firewall log for a domain connection will be defined  to ensure the logs are maintained.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63493r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Domain Profile Tab -&gt; Logging (select Customize), "Name" to "%windir%\system32\logfiles\firewall\domainfirewall.log".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh command may also be used to configure this setting:
+"Netsh advfirewall set domainprofile logging filename %windir%\system32\LogFiles\Firewall\domainfw.log".</fixtext>
+      <fix id="F-63493r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="domain_profile_name_var" export-name="oval:mil.disa.fso.windows:var:480500" />
+		<check-export value-id="domain_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479800" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4805" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17425">
+    <title>Windows Firewall Domain - Log Size</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54874r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000009</version>
+      <title>The Windows Firewall with Advanced Security log size must be configured for domain connections.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  The firewall log file size for a domain connection will be set to ensure enough capacity is allocated for audit data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63495r3_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Domain Profile Tab -&gt; Logging (select Customize), "Size limit (KB):" to "16,384" or greater.
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh command may also be used to configure this setting:
+"Netsh advfirewall set domainprofile logging maxfilesize 16384" or greater.</fixtext>
+      <fix id="F-63495r3_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="domain_profile_size_limit_var" export-name="oval:mil.disa.fso.windows:var:480600" />
+		<check-export value-id="domain_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479800" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4806" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17426">
+    <title>Windows Firewall Domain - Log Dropped Packets</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54877r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000010</version>
+      <title>The Windows Firewall with Advanced Security must log dropped packets when connected to a domain.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Logging of dropped packets for a domain connection will be enabled to maintain an audit trail of potential issues.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63497r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Domain Profile Tab -&gt; Logging (select Customize), "Log dropped packets" to "Yes".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set domainprofile logging droppedconnections enable".
+Or
+"Netsh advfirewall set allprofiles logging droppedconnections enable".</fixtext>
+      <fix id="F-63497r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="domain_profile_log_dropped_packets_var" export-name="oval:mil.disa.fso.windows:var:480700" />
+		<check-export value-id="domain_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479800" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4807" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17427">
+    <title>Windows FW Domain - Log Successful Connections</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54878r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000011</version>
+      <title>The Windows Firewall with Advanced Security must log successful connections when connected to a domain.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Logging of successful connections for a domain connection will be enabled to maintain an audit trail if issues are discovered.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63917r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Domain Profile Tab -&gt; Logging (select Customize), "Log successful connections" to "Yes".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set domainprofile logging allowedconnections enable".
+Or
+"Netsh advfirewall set allprofiles logging allowedconnections enable".</fixtext>
+      <fix id="F-63917r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="domain_profile_logged_successful_connections_var" export-name="oval:mil.disa.fso.windows:var:480800" />
+		<check-export value-id="domain_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479800" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4808" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17428">
+    <title>Windows Firewall Private – Inbound</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54879r3_rule" severity="high" weight="10.0">
+      <version>WNFWA-000012</version>
+      <title>The Windows Firewall with Advanced Security must block unsolicited inbound connections when connected to a private network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Unsolicited inbound connections may be malicious attempts to gain access to a system.  Unsolicited inbound connections, for which there is no rule allowing the connection, will be blocked on a private network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63499r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Private Profile Tab -&gt; State, "Inbound connections" to "Block (default)".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set privateprofile firewallpolicy blockinbound,allowoutbound".
+Or
+"Netsh advfirewall set allprofiles firewallpolicy blockinbound,allowoutbound".
+Both inbound and outbound parameters must be specified to execute this command.</fixtext>
+      <fix id="F-63499r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="private_profile_inbound_connections_var" export-name="oval:mil.disa.fso.windows:var:480900" />
+		<check-export value-id="private_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479900" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4809" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17429">
+    <title>Windows Firewall Private - Outbound</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54890r3_rule" severity="medium" weight="10.0">
+      <version>WNFWA-000013</version>
+      <title>The Windows Firewall with Advanced Security must allow outbound connections, unless a rule explicitly blocks the connection when connected to a private network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Outbound connections are allowed on a private network, unless a rule explicitly blocks the connection.  This allows normal outbound communication, which could be restricted as necessary with additional rules.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63501r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Private Profile Tab -&gt; State, "Outbound connections" to "Allow (default)".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set privateprofile firewallpolicy blockinbound,allowoutbound".
+Or
+"Netsh advfirewall set allprofiles firewallpolicy blockinbound,allowoutbound".
+Both inbound and outbound parameters must be specified to execute this command.</fixtext>
+      <fix id="F-63501r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="private_profile_outbound_connections_var" export-name="oval:mil.disa.fso.windows:var:481000" />
+		<check-export value-id="private_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479900" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4810" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17430">
+    <title>Windows Firewall Private - Display Notifications</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54891r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000014</version>
+      <title>The Windows Firewall with Advanced Security must display notifications when a program is blocked from receiving an inbound connection when connected to a private network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  The display of notifications to the user when a program is blocked from receiving an inbound connection on a private network must be enabled to alert the user of potential issues.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63503r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Private Profile Tab -&gt; Settings (select Customize) -&gt; Firewall settings, "Display a notification" to "Yes".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set privateprofile settings inboundusernotification enable".
+Or
+"Netsh advfirewall set allprofiles settings inboundusernotification enable".</fixtext>
+      <fix id="F-63503r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="private_profile_display_notification_var" export-name="oval:mil.disa.fso.windows:var:481100" />
+		<check-export value-id="private_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479900" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4811" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17431">
+    <title>Windows Firewall Private - Unicast Response</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54892r3_rule" severity="medium" weight="10.0">
+      <version>WNFWA-000015</version>
+      <title>The Windows Firewall with Advanced Security must block unicast responses to multicast or broadcast messages when connected to a private network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Unicast responses to multicast or broadcast messages for a private connection will be blocked.  This helps minimize the risk of an attacker using broadcast or multicast traffic to deliver malicious payloads.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63505r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Private Profile Tab -&gt; Settings (select Customize) -&gt; Unicast response, "Allow unicast response" to "No".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set privateprofile settings unicastresponsetomulticast disable".
+Or
+"Netsh advfirewall set allprofiles settings unicastresponsetomulticast disable".</fixtext>
+      <fix id="F-63505r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="private_profile_allow_unicast_response_var" export-name="oval:mil.disa.fso.windows:var:481200" />
+		<check-export value-id="private_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479900" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4812" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17434">
+    <title>Windows Firewall Private - Log File</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54902r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000016</version>
+      <title>The Windows Firewall with Advanced Security log file name and location must be configured for private network connections.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  The location and file name of the firewall log for a private connection will be defined  to ensure the logs are maintained.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63507r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Private Profile Tab -&gt; Logging (select Customize), "Name" to "%windir%\system32\logfiles\firewall\privatefirewall.log".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh command may also be used to configure this setting:
+"Netsh advfirewall set privateprofile logging filename %windir%\system32\LogFiles\Firewall\privatefw.log".</fixtext>
+      <fix id="F-63507r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="private_profile_name_var" export-name="oval:mil.disa.fso.windows:var:481300" />
+		<check-export value-id="private_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479900" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4813" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17435">
+    <title>Windows Firewall Private - Log Size</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54903r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000017</version>
+      <title>The Windows Firewall with Advanced Security log size must be configured for private network connections.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  The firewall log file size for a private connection will be set  to ensure enough capacity is allocated for audit data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63509r3_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Private Profile Tab -&gt; Logging (select Customize), "Size limit (KB)" to "16,384" or greater.
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh command may also be used to configure this setting:
+"Netsh advfirewall set privateprofile logging maxfilesize 16384" or greater.</fixtext>
+      <fix id="F-63509r3_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="private_profile_size_limit_var" export-name="oval:mil.disa.fso.windows:var:481400" />
+		<check-export value-id="private_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479900" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4814" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17436">
+    <title>Windows Firewall Private - Log Dropped Packets</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54904r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000018</version>
+      <title>The Windows Firewall with Advanced Security must log dropped packets when connected to a private network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.   Logging of dropped packets for a private network connection will be enabled  to maintain an audit trail of potential issues.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63511r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Private Profile Tab -&gt; Logging (select Customize), "Log dropped packets" to "Yes".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set privateprofile logging droppedconnections enable".
+Or
+"Netsh advfirewall set allprofiles logging droppedconnections enable".</fixtext>
+      <fix id="F-63511r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="private_profile_log_dropped_packets_var" export-name="oval:mil.disa.fso.windows:var:481500" />
+		<check-export value-id="private_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479900" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4815" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17437">
+    <title>Windows FW Private - Log Successful Connections</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54905r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000019</version>
+      <title>The Windows Firewall with Advanced Security must log successful connections when connected to a private network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Logging of successful connections for a private network connection will be enabled  to maintain an audit trail if issues are discovered.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63513r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Private Profile Tab -&gt; Logging (select Customize), "Logged successful connections" to "Yes".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set privateprofile logging allowedconnections enable".
+Or
+"Netsh advfirewall set allprofiles logging allowedconnections enable".</fixtext>
+      <fix id="F-63513r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="private_profile_logged_successful_connections_var" export-name="oval:mil.disa.fso.windows:var:481600" />
+		<check-export value-id="private_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:479900" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4816" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17438">
+    <title>Windows Firewall Public – Inbound</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54906r3_rule" severity="high" weight="10.0">
+      <version>WNFWA-000020</version>
+      <title>The Windows Firewall with Advanced Security must block unsolicited inbound connections when connected to a public network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Unsolicited inbound connections may be malicious attempts to gain access to a system.  Unsolicited inbound connections, for which there is no rule allowing the connection, will be blocked on a public network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63515r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Public Profile Tab -&gt; State, "Inbound connections" to "Block (default)".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set publicprofile firewallpolicy blockinbound,allowoutbound".
+Or
+"Netsh advfirewall set allprofiles firewallpolicy blockinbound,allowoutbound".
+Both inbound and outbound parameters must be specified to execute this command.</fixtext>
+      <fix id="F-63515r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="public_profile_inbound_connections_var" export-name="oval:mil.disa.fso.windows:var:481700" />
+		<check-export value-id="public_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:480000" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4817" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17439">
+    <title>Windows Firewall Public - Outbound</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54908r3_rule" severity="medium" weight="10.0">
+      <version>WNFWA-000021</version>
+      <title>The Windows Firewall with Advanced Security must allow outbound connections, unless a rule explicitly blocks the connection when connected to a public network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Outbound connections are allowed on a public network, unless a rule explicitly blocks the connection.  This allows normal outbound communication, which could be restricted as necessary with additional rules.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63517r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Public Profile Tab -&gt; State, "Outbound connections" to "Allow (default)".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set publicprofile firewallpolicy blockinbound,allowoutbound".
+Or
+"Netsh advfirewall set allprofiles firewallpolicy blockinbound,allowoutbound".
+Both inbound and outbound parameters must be specified to execute this command.</fixtext>
+      <fix id="F-63517r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="public_profile_outbound_connections_var" export-name="oval:mil.disa.fso.windows:var:481800" />
+		<check-export value-id="public_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:480000" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4818" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17440">
+    <title>Windows Firewall Public - Display Notifications</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54910r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000022</version>
+      <title>The Windows Firewall with Advanced Security must display notifications when a program is blocked from receiving an inbound connection when connected to a public network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  The display of notifications to the user when a program is blocked from receiving an inbound connection on a public network must be enabled to alert the user of potential issues.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63519r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Public Profile Tab -&gt; Settings (select Customize) -&gt; Firewall settings, "Display a notification" to "Yes".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set publicprofile settings inboundusernotification enable".
+Or
+"Netsh advfirewall set allprofiles settings inboundusernotification enable".</fixtext>
+      <fix id="F-63519r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="public_profile_display_notification_var" export-name="oval:mil.disa.fso.windows:var:481900" />
+		<check-export value-id="public_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:480000" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4819" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17441">
+    <title>Windows Firewall Public - Unicast Response</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54912r3_rule" severity="medium" weight="10.0">
+      <version>WNFWA-000023</version>
+      <title>The Windows Firewall with Advanced Security must block unicast responses to multicast or broadcast messages when connected to a public network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Unicast responses to multicast or broadcast messages for a public network will be blocked.  This helps minimize the risk of an attacker using broadcast or multicast traffic to deliver malicious payloads.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63521r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Public Profile Tab -&gt; Settings (select Customize) -&gt; Unicast response, "Allow unicast response" to "No".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set publicprofile settings unicastresponsetomulticast disable".
+Or
+"Netsh advfirewall set allprofiles settings unicastresponsetomulticast disable".</fixtext>
+      <fix id="F-63521r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="SV-25243r1_rule_var" export-name="oval:mil.disa.fso.windows:var:482000" />
+		<check-export value-id="public_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:480000" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4820" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17442">
+    <title>Windows Firewall Public - Local Firewall Rules</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54917r3_rule" severity="medium" weight="10.0">
+      <version>WNFWA-000024</version>
+      <title>The Windows Firewall with Advanced Security local firewall rules must not be merged with Group Policy settings when connected to a public network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Local firewall rules will not be merged with Group Policy settings on a public network to prevent Group Policy settings from being changed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63523r1_fix">If the system is not a member of a domain, this is NA.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Public Profile Tab -&gt; Settings (select Customize) -&gt; Rule merging, "Apply local firewall rules:" to "No".</fixtext>
+      <fix id="F-63523r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="public_profile_apply_local_firewall_rules_var" export-name="oval:mil.disa.fso.windows:var:482100" />
+		<check-export value-id="public_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:480000" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4821" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17443">
+    <title>Windows Firewall Public - Local Connection Rules</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54918r3_rule" severity="medium" weight="10.0">
+      <version>WNFWA-000025</version>
+      <title>The Windows Firewall with Advanced Security local connection rules must not be merged with Group Policy settings when connected to a public network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Local connection rules will not be merged with Group Policy settings on a public network to prevent Group Policy settings from being changed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63525r1_fix">If the system is not a member of a domain, this is NA.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Public Profile Tab -&gt; Settings (select Customize) -&gt; Rule merging, "Apply local connection security rules:" to "No".</fixtext>
+      <fix id="F-63525r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="public_profile_apply_local_connection_security_rules_var" export-name="oval:mil.disa.fso.windows:var:482200" />
+		<check-export value-id="public_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:480000" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4822" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17444">
+    <title>Windows Firewall Public - Log File</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54919r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000026</version>
+      <title>The Windows Firewall with Advanced Security log file name and location must be configured for public network connections.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  The location and file name of the firewall log for a public network connection will be defined  to ensure the logs are maintained.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63527r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Public Profile Tab -&gt; Logging (select Customize), "Name" to "%windir%\system32\logfiles\firewall\publicfirewall.log".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh command may also be used to configure this setting:
+"Netsh advfirewall set publicprofile logging filename %windir%\system32\LogFiles\Firewall\publicfw.log".</fixtext>
+      <fix id="F-63527r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="public_profile_name_var" export-name="oval:mil.disa.fso.windows:var:482300" />
+		<check-export value-id="public_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:480000" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4823" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17445">
+    <title>Windows Firewall Public - Log Size</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54921r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000027</version>
+      <title>The Windows Firewall with Advanced Security log size must be configured for public network connections.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  The firewall log file size for a public network connection will be set  to ensure enough capacity is allocated for audit data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63529r2_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Public Profile Tab -&gt; Logging (select Customize), "Size limit (KB)" to "16,384" or greater.
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh command may also be used to configure this setting:
+"Netsh advfirewall set publicprofile logging maxfilesize 16384" or greater.</fixtext>
+      <fix id="F-63529r2_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="public_profile_size_limit_var" export-name="oval:mil.disa.fso.windows:var:482400" />
+		<check-export value-id="public_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:480000" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4824" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17446">
+    <title>Windows Firewall Public - Log Dropped Packets</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54922r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000028</version>
+      <title>The Windows Firewall with Advanced Security must log dropped packets when connected to a public network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Logging of dropped packets for a public network connection will be enabled  to maintain an audit trail of potential issues.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63531r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Public Profile Tab -&gt; Logging (select Customize), "Log dropped packets" to "Yes".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set publicprofile logging droppedconnections enable".
+Or
+"Netsh advfirewall set allprofiles logging droppedconnections enable".</fixtext>
+      <fix id="F-63531r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="public_profile_log_dropped_packets_var" export-name="oval:mil.disa.fso.windows:var:482500" />
+		<check-export value-id="public_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:480000" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4825" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-17447">
+    <title>Windows FW Public - Log Successful Connections</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-54923r3_rule" severity="low" weight="10.0">
+      <version>WNFWA-000029</version>
+      <title>The Windows Firewall with Advanced Security must log successful connections when connected to a public network.</title>
+      <description>&lt;VulnDiscussion&gt;A firewall provides a line of defense against attack.  To be effective, it must be enabled and properly configured.  Logging of successful connections for a public network connection will be enabled to maintain an audit trail if issues are discovered.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Windows Firewall with Advanced Security</dc:title>
+        <dc:publisher>DISA FSO</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Windows Firewall with Advanced Security</dc:subject>
+        <dc:identifier>2565</dc:identifier>
+      </reference>
+      <fixtext fixref="F-63533r1_fix">The preferred method of configuring the firewall settings is with a policy, particularly in a domain environment.
+
+Configure the policy value for Computer Configuration -&gt; Windows Settings -&gt; Security Settings -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall with Advanced Security -&gt; Windows Firewall Properties (this link will be in the right pane) -&gt; Public Profile Tab -&gt; Logging (select Customize), "Logged successful connections" to "Yes".
+
+In addition to using policies, systems may also be configured using the firewall GUI or Netsh commands.  These methods may be more appropriate for standalone systems.
+The configuration settings in the GUI are the same as those specified in the policy above.  Windows Firewall Properties will be a link in the center pane after opening Windows Firewall with Advanced Security.
+
+The following Netsh commands may also be used to configure this setting:
+"Netsh advfirewall set publicprofile logging allowedconnections enable".
+Or
+"Netsh advfirewall set allprofiles logging allowedconnections enable".</fixtext>
+      <fix id="F-63533r1_fix" />
+      <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <check-export value-id="public_profile_logged_successful_connections_var" export-name="oval:mil.disa.fso.windows:var:482600" />
+		<check-export value-id="public_profile_firewall_state_var" export-name="oval:mil.disa.fso.windows:var:480000" />
+        <check-content-ref name="oval:mil.disa.fso.windows:def:4826" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-oval.xml" />
+      </check>
+    </Rule>
+  </Group>
+</Benchmark>
+

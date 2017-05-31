@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>repotool</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2016-03-21T13:46:22</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.stig.project2013:def:15620" version="2" class="inventory">
+      <metadata>
+        <title>Microsoft Project Professional 2013 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Project Professional 2013</platform>
+          <product>Microsoft Project Professional 2013</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:project:2013::professional" />
+        <description>Microsoft Project Professional 2013 is installed.</description>
+      </metadata>
+      <criteria operator="OR">
+        <criterion comment="Check if Microsoft Project Professional 2013 (x86) is installed on a 64 bit Windows Platform" test_ref="oval:mil.disa.stig.project2013:tst:1" />
+        <criterion comment="Check if Microsoft Project Professional 2013 is installed on a Windows platform with the same architecture" test_ref="oval:mil.disa.stig.project2013:tst:2" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2013:tst:1" version="2" comment="Check if Microsoft Project Professional 2013 (x86) is installed on a 64 bit Windows platform" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.stig.project2013:obj:1" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2013:tst:2" version="2" comment="Check if Microsoft Project Professional 2013 is installed on a Windows platform of the same architecture" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.stig.project2013:obj:2" />
+    </registry_test>
+  </tests>
+  <objects>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2013:obj:1" version="2" comment="Registry key for the Microsoft Project Professional 2013 (x86) on a 64 bit Windows platform.">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Office15.PRJPRO</key>
+      <name xsi:nil="true" />
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.project2013:obj:2" version="2" comment="Registry key for the Microsoft Project Professional 2013 on a Windows machine with the same architecutre.">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Office15.PRJPRO</key>
+      <name xsi:nil="true" />
+    </registry_object>
+  </objects>
+</oval_definitions>
+

@@ -1,0 +1,2098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:windows-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:independent-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/windows-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/independent-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.3/ovaldefinition/complete/oval-common-schema.xsd">
+	<generator>
+		<oval:product_name>DISA FSO</oval:product_name>
+		<oval:schema_version>5.3</oval:schema_version>
+		<oval:timestamp>2012-08-14T00:00:00.625-04:00</oval:timestamp>
+	</generator>
+	<definitions>
+		<!-- DTBC-0001 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240001" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0001 - Firewall traversal from remote host must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<product>OS</product>
+				</affected>
+				<description>Enables usage of STUN and relay servers when remote clients are trying to establish a connection to this machine. If this setting is enabled, then remote clients can discover and connect to this machines even if they are separated by a firewall. If this setting is disabled and outgoing UDP connections are filtered by the firewall, then this machine will only allow connections from client machines within the local network. If this policy is left not set the setting will be enabled. </description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240001"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0001 DEF END -->
+		<!-- DTBC-0002 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240002" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0002 - Site tracking user's location must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<product>OS</product>
+				</affected>
+				<description>Allows you to set whether websites are allowed to track the users' physical location. Tracking the users' physical location can be allowed by default, denied by default or the user can be asked every time a website requests the physical location. If this policy is left not set, 'AskGeolocation' will be used and the user will be able to change it.
+	1 = Allow sites to track the users' physical location
+	2 = Do not allow any site to track the users' physical location
+	3 = Ask whenever a site wants to track the users' physical location</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240002"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0002 DEF END -->
+		<!-- DTBC-0003 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240003" version="56054708" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0003 - sites' ability for showing desktop notifications must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<product>OS</product>
+				</affected>
+				<description>Allows you to set whether websites are allowed to display desktop notifications. Displaying desktop notifications can be allowed by default, denied by default or the user can be asked every time a website wants to show desktop notifications. If this policy is left not set, 'AskNotifications' will be used and the user will be able to change it.
+    1 = Allow sites to show desktop notifications
+    2 = Do not allow any site to show desktop notifications
+    3 = Ask every time a site wants to show desktop notifications</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240003"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0003 DEF END -->
+		<!-- DTBC-0004 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240004" version="56054711" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0004 - Sites' ability to show pop-ups must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<product>OS</product>
+				</affected>
+				<description>Allows you to set whether websites are allowed to show pop-ups. Showing popups can be either allowed for all websites or denied for all websites. If this policy is left not set, 'BlockPopups' will be used and the user will be able to change it.
+    1 = Allow all sites to show pop-ups
+    2 = Do not allow any site to show popups
+</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240004"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0004 DEF END -->
+		<!-- DTBC-0005 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240005" version="56054714" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0005 - Extensions must be blacklisted by default</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<product>OS</product>
+				</affected>
+				<description>Allows you to specify which extensions the users can NOT install. Extensions already installed will be removed if blacklisted. A blacklist value of '*' means all extensions are blacklisted unless they are explicitly listed in the whitelist. If this policy is left not set the user can install any extension in Google Chrome.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240005"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0005 DEF END -->
+		<!-- DTBC-0006 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240006" version="56054717" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0006 - Extensions that are approved for use must be whitelisted</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<product>OS</product>
+				</affected>
+				<description>Allows you to specify which extensions are not subject to the blacklist. A blacklist value of * means all extensions are blacklisted and users can only install extensions listed in the whitelist. By default, no extensions are whitelisted. If all extensions have been blacklisted by policy, then the whitelist policy can be used to allow specific extensions to be installed. Administrators should determine which extensions should be allowed to be installed by their users. If no extensions are whitelisted, then no extensions can be installed when combined with blacklisting all extensions.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240006"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0006 DEF END -->
+		<!-- DTBC-0007 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240007" version="56054720" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0007 - The default search provider's name must be set</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<product>OS</product>
+				</affected>
+				<description>Specifies the name of the default search provider. If left empty or not set, the host name specified by the search URL will be used. This policy is only considered if the 'DefaultSearchProviderEnabled' policy is enabled</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240007"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0007 DEF END -->
+		<!-- DTBC-0008 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240008" version="56054723" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0008 - The default search provider URL must be set</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<product>OS</product>
+				</affected>
+				<description>Specifies the URL of the search engine used when doing a default search. The URL should contain the string '{searchTerms}', which will be replaced at query time by the terms the user is searching for. This option must be set when the 'DefaultSearchProviderEnabled' policy is enabled and will only be respected if this is the case.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240008"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0008 DEF END -->
+		<!-- DTBC-0009 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240009" version="56054726" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0009 - Default search provider must be enabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<product>OS</product>
+				</affected>
+				<description>Enables the use of a default search provider. If you enable this setting, a default search is performed when the user types text In the omnibox that is not a URL. You can specify the default search provider to be used by setting the rest of the default search policies. If these are left empty, the user can choose the default provider. If you disable this setting, no search is performed when the user enters non-URL text in the omnibox. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set, the default search provider is enabled, and the user will be able to set the search provider list.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240009"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0009 DEF END -->
+		<!-- DTBC-0010 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240010" version="56054729" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0010 - Use of cleartext passwords in the Password Manager must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<product>OS</product>
+				</affected>
+				<description>Controls whether the user may show passwords in clear text in the password manager. If you disable this setting, the password manager does not allow showing stored passwords in clear text in the password manager window. If you enable or do not set this policy, users can view their passwords in clear text in the password manager.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240010"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0010 DEF END -->
+		<!-- DTBC-0011 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240011" version="56054732" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0011 - The Password Manager must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<product>OS</product>
+				</affected>
+				<description>Enables saving passwords and using saved passwords in Google Chrome. If you enable this setting, users can have Google Chrome memorize passwords and provide them automatically the next time they log in to a site. If you disable this setting, users are not able to save passwords or use already saved passwords. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set, this will be enabled but the user will be able to change it.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240011"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0011 DEF END -->
+		<!-- DTBC-0012 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240012" version="56054735" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0012 - The HTTP Authentication must be set to negotiate</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<product>OS</product>
+				</affected>
+				<description>Specifies which HTTP Authentication schemes are supported by Google Chrome. Possible values are 'basic', 'digest', 'ntlm' and 'negotiate'. Separate multiple values with commas. If this policy is left not set, all four schemes will be used.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240012"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0012 DEF END -->
+		<!-- DTBC-0013 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240013" version="56054738" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0013 - The running of outdated plugins must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<product>OS</product>
+				</affected>
+				<description>Allows Google Chrome to run plugins that are outdated. If you enable this setting, outdated plugins are used as normal plugins. If you disable this setting, outdated plugins will not be used and users will not be asked for permission to run them. If this setting is not set, users will be asked for permission to run outdated plugins.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240013"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0013 DEF END -->
+		<!-- DTBC-0014 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240014" version="56054741" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0014 - Plugins requiring authorization must ask for user permission</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<product>OS</product>
+				</affected>
+				<description>Allows Google Chrome to run plugins that require authorization. If you enable this setting, plugins that are not outdated always run. If this setting is disabled or not set, users will be asked for permission to run plugins that require authorization. These are plugins that can compromise security.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240014"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0014 DEF END -->
+		<!-- DTBC-0015 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240015" version="56054744" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0015 - Third party cookies must be blocked</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<product>OS</product>
+				</affected>
+				<description>Blocks third party cookies. Enabling this setting prevents cookies from being set by web page elements that are not from the domain that is in the browser's address bar. Disabling this setting allows cookies to be set by web page elements that are not from the domain that is in the browser's address bar and prevents users from changing this setting. If this policy is left not set, third party cookies will be enabled but the user will be able to change that.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240015"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0015 DEF END -->
+		<!-- DTBC-0016 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240016" version="56054747" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0016 - Site data must not be wiped on closing the browser</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows 7</platform>
+					<product>OS</product>
+				</affected>
+				<description>This policy is an override for the "Clear cookies and other site data when I close my browser" content settings option. When set to enabled Google Chrome will delete all locally stored data from the browser when it is shut down. If set to disabled site data will not be cleared on exit. If this policy is left not set Google Chrome will use the default which is to preserve site data on shut down and the user will be able to change this. If the "RestoreOnStartup" policy is set to restore URLs from previous sessions this policy will not clear cookies or other data relevant to restoring the previous browsing session completely.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240016"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0016 DEF END -->
+		<!-- DTBC-0017 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240017" version="56054750" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0017 - Background processing must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Determines whether a Google Chrome process is started on OS login and keeps running when the last browser window is closed, allowing background apps to remain active. The background process displays an icon in the system tray and can always be closed from there. If this policy is set to True, background mode is enabled and cannot be controlled by the user in the browser settings. If this policy is set to False, background mode is disabled and cannot be controlled by the user in the browser settings. If this policy is left unset, background mode is initially disabled and can be controlled by the user in the browser settings.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240017"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0017 DEF END -->
+		<!-- DTBC-0018 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240018" version="56054753" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0018 - The SPDY protocol must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Disables use of the SPDY protocol in Google Chrome. If this policy is enabled the SPDY protocol will not be available in Google Chrome. Setting this policy to disabled will allow the usage of SPDY. If this policy is left not set, SPDY will be available.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240018"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0018 DEF END -->
+		<!-- DTBC-0019 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240019" version="56054756" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0019 - 3D Graphics APIs must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Disable support for 3D graphics APIs. Enabling this setting prevents web pages from accessing the graphics processing unit (GPU). Specifically, web pages can not access the WebGL API and plugins can not use the Pepper 3D API. Disabling this setting or leaving it not set potentially allows web pages to use the WebGL API and plugins to use the Pepper 3D API. The default settings of the browser may still require command line arguments to be passed in order to use these APIs.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240019"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0019 DEF END -->
+		<!-- DTBC-0020 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240020" version="56054759" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0020 - Google Data Synchronization must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Disables data synchronization in Google Chrome using Google-hosted synchronization services and prevents users from changing this setting. If you enable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set Google Sync will be available for the user to choose whether to use it or not.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240020"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0020 DEF END -->
+		<!-- DTBC-0021 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240021" version="56054762" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0021 - The URL protocol schemas "file" and "javascript" must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Disables the listed protocol schemes in Google Chrome. URLs using a scheme from this list will not load and can not be navigated to. If this policy is left not set or the list is empty all schemes will be accessible in Google Chrome.</description>
+			</metadata>
+			<criteria operator="OR">
+				<criteria operator="AND">
+					<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:2400211"/>
+					<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:2400212"/>
+				</criteria>
+				<criteria operator="AND">
+					<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:2400213"/>
+					<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:2400214"/>
+				</criteria>
+			</criteria>
+		</definition>
+		<!-- DTBC-0021 DEF END -->
+		<!-- DTBC-0022 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240022" version="56054768" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0022 - AutoFill must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Enables Google Chrome's AutoFill feature and allows users to auto complete web forms using previously stored information such as address or credit card information. If you disable this setting, AutoFill will be inaccessible to users. If you enable this setting or do not set a value, AutoFill will remain under the control of the user. This will allow them to configure AutoFill profiles and to switch AutoFill on or off at their own discretion.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240022"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0022 DEF END -->
+		<!-- DTBC-0023 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240023" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0023 - Disable Cloud Print Sharing</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>"Enables Google Chrome to act as a proxy between Google Cloud Print and legacy printers connected to the machine. If this setting is enabled or not configured, users can enable the cloud print proxy by authentication with their Google account. If this setting is disabled, users cannot enable the proxy, and the machine will not be allowed to share it's printers with Google Cloud Print. If this policy is left not set, this will be enabled but the user will be able to change it." - Google Chrome Administrators Policy List</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240023"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0023 DEF END -->
+		<!-- DTBC-0024 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240024" version="56054774" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0024 - Google Chrome Instant must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Discussion: 
+Enables Google Chrome's Instant feature and prevents users from changing this setting. If you enable this setting, Google Chrome Instant is enabled. If you disable this setting, Google Chrome Instant is disabled. If you enable or disable this setting, users cannot change or override this setting. If this setting is left not set the user can decide to use this function or not.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240024"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0024 DEF END -->
+		<!-- DTBC-0025 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240025" version="56054777" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0025 - Network prediction must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Enables network prediction in Google Chrome and prevents users from changing this setting. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set, this will be enabled but the user will be able to change it.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240025"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0025 DEF END -->
+		<!-- DTBC-0026 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240026" version="56054780" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0026 - Metrics reporting to Google must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Enables anonymous reporting of usage and crash-related data about Google Chrome to Google and prevents users from changing this setting. If you enable this setting, anonymous reporting of usage and crash-related data is sent to Google. If you disable this setting, anonymous reporting of usage and crash-related data is never sent to Google. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set the setting will be what the user chose upon installation / first run.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240026"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0026 DEF END -->
+		<!-- DTBC-0027 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240027" version="56054783" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0027 - Search suggestions must be enabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Enables search suggestions in Google Chrome's Omnibox and prevents users from changing this setting. If you enable this setting, search suggestions are used. If you disable this setting, search suggestions are never used. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set, this will be enabled but the user will be able to change it.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240027"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0027 DEF END -->
+		<!-- DTBC-0028 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240028" version="56054786" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0028 - Submitting documents to Google Print Cloud must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Enables Google Chrome to submit documents to Google Cloud Print for printing. NOTE: This only affects Google Cloud Print support in Google Chrome. It does not prevent users from submitting print jobs on web sites. If this setting is enabled or not configured, users can print to Google Cloud Print from the Google Chrome print dialog. If this setting is disabled, users cannot print to Google Cloud Print from the Google Chrome print dialog.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240028"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0028 DEF END -->
+		<!-- DTBC-0029 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240029" version="56054789" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0029 - Importing of saved passwords must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>This policy forces the saved passwords to be imported from the previous default browser if enabled. If enabled, this policy also affects the import dialog. If disabled, the saved passwords are not imported. If it is not set, the user may be asked whether to import, or importing may happen automatically.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240029"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0029 DEF END -->
+		<!-- DTBC-0030 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240030" version="56054792" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0030 - Incognito mode must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Specifies whether the user may open pages in Incognito mode in Google Chrome. If 'Enabled' is selected or the policy is left unset, pages may be opened in Incognito mode. If 'Disabled' is selected, pages may not be opened in Incognito mode. If 'Forced' is selected, pages may be opened ONLY in Incognito mode.
+    0 = Incognito mode available.
+    1 = Incognito mode disabled.
+    2 = Incognito mode forced.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240030"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0030 DEF END -->
+		<!-- DTBC-0033 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240033" version="56054817" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0036 - The user data location must be set</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>"Configures the directory that Google Chrome will use for storing user data. If you set this policy, Google Chrome will use the provided directory regardless whether the user has specified the '--user-data-dir' flag or not. If this policy is left not set the default profile path will be used and the user will be able to override it with the '--user-data-dir' command line flag." - Google Chrome Administrators Policy List</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240033"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0033 DEF END -->
+		<!-- DTBC-0034 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240034" version="56054817" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0034 - Plugins must be disabled by default</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>"Specifies a list of plugins that are disabled in Google Chrome and prevents users from changing this setting. The wildcard characters * and ? can be used to match sequences of arbitrary characters. * matches an arbitrary number of characters while ? specifies an optional single character, i.e. matches zero or one characters. The escape character is \, so to match actual *, ?, or \ characters, you can put a \ in front of them. If you enable this setting, the specified list of plugins is never used in Google Chrome. The plugins are marked as disabled in about:plugins and users cannot enable them. Note that this policy can be overridden by EnabledPlugins and DisabledPluginsExceptions. If this policy is left not set the user can use any plugin installed on the system except for hard-coded incompatible, outdated or dangerous plugins. - Google Chrome Administrators Policy List</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240034"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0034 DEF END -->
+		<!-- DTBC-0036 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240036" version="56054816" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0036 - Automated installation of missing plugins must be disabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>If you set this setting to enabled the automatic search and installation of missing plugins will be disabled in Google Chrome. Setting this option to disabled or leave it not set the plugin finder will be active.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240036"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0036 DEF END -->
+		<!-- DTBC-0037 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240037" version="56054819" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DBTC-0037 - Online revocation checks must be done</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>In light of the fact that soft-fail, online revocation checks provide no effective security benefit, they are disabled by default in Google Chrome version 19 and later. By setting this policy to true, the previous behaviour is restored and online OCSP/CRL checks will be performed. If the policy is not set, or is set to false, then Chrome will not perform online revocation checks in Chrome 19 and later.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240037"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0037 DEF END -->
+		<!-- DTBC-0038 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240038" version="56054822" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0038 - Safe Browsing must be enabled</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Enables Google Chrome's Safe Browsing feature and prevents users from changing this setting. If you enable this setting, Safe Browsing is always active. If you disable this setting, Safe Browsing is never active. If you enable or disable this setting, users cannot change or override this setting in Google Chrome. If this policy is left not set, this will be enabled but the user will be able to change it.
+</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240038"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0038 DEF END -->
+		<!-- DTBC-0039 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240039" version="56054825" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0039 - Browser history must be saved</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Disables saving browser history in Google Chrome and prevents users from changing this setting. If this setting is enabled, browsing history is not saved. If this setting is disabled or not set, browsing history is saved.
+</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240039"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0039 DEF END -->
+		<!-- DTBC-0040 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240040" version="56054828" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0040 - Default behavior must block plugin usage</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Allows you to set whether websites are allowed to automatically run plugins. Automatically running plugins can be either allowed for all websites or denied for all websites. If this policy is left not set, 'AllowPlugins' will be used and the user will be able to change it.
+    1 = Allow all sites to automatically run plugins
+    2 = Block all plugins</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240040"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0040 DEF END -->
+		<!-- DTBC-0042 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240042" version="56054829" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0042 - JavaScript must be enabled for approved domains</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>"Allows you to set a list of url patterns that specify sites which are allowed to run JavaScript. If this policy is left not set the global default value will be used for all sites either from the 'DefaultJavaScriptSetting' policy if it is set, or the user's personal configuration otherwise.." - Google Chrome Administrators Policy List
+
+Javascript is one of the most common attack vectors used to compromise a system, as such all sites should be blocked by default. Only trusted sites should be whitelisted.</description>
+			</metadata>
+			<criteria operator="OR">
+				<criteria operator="AND">
+					<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:2400421"/>
+					<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:2400422"/>
+				</criteria>
+				<criteria operator="AND">
+					<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:2400423"/>
+					<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:2400424"/>
+				</criteria>
+			</criteria>
+		</definition>
+		<!-- DTBC-0042 DEF END -->
+		<!-- DTBC-0043 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240043" version="56054830" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0043 - Plugin usage must be disabled by default</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>"Allows you to set a list of url patterns that specify sites which are not allowed to run plugins. If this policy is left not set the global default value will be used for all sites either from the 'DefaultPluginsSetting' policy if it is set, or the user's personal configuration otherwise.</description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240043"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0043 DEF END -->
+		<!-- DTBC-0046 DEF START -->
+		<definition class="compliance" id="oval:mil.disa.fso.chrome:def:240046" version="56054830" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+			<metadata>
+				<title>DTBC-0046 - Blacklist plugins by default</title>
+				<affected family="windows">
+					<platform>Microsoft Windows XP</platform>
+					<platform>Microsoft Windows 2000, x86</platform>
+					<platform>Microsoft Windows 2000</platform>
+					<platform>Microsoft windows</platform>
+					<platform>Microsoft Windows Vista</platform>
+					<platform>Microsoft Windows Server 2003</platform>
+					<platform>Microsoft Windows XP, x64</platform>
+					<platform>Microsoft Windows XP, x86</platform>
+					<platform>Microsoft Windows Vista, x64</platform>
+					<platform>Microsoft Windows Vista, x86</platform>
+					<platform>Microsoft Windows Server 2003, x64</platform>
+					<platform>Microsoft Windows Server 2003, x86</platform>
+					<platform>Microsoft Windows Server 2008</platform>
+					<platform>Microsoft Windows Server 2008, x86</platform>
+					<platform>Microsoft Windows Server 2008, x64</platform>
+					<platform>Microsoft Windows 7</platform>
+					<platform>Microsoft Windows 7, x86</platform>
+					<platform>Microsoft Windows 7, x64</platform>
+					<platform>Microsoft Windows Server 2008 R2</platform>
+					<platform>Microsoft Windows Server 2008 R2, x64</platform>
+					<product>OS</product>
+				</affected>
+				<description>Disabling plugins by default will reduce the attach surface of Google Chrome. Also, it ensures that functionality that is not used is disabled. </description>
+			</metadata>
+			<criteria operator="AND">
+				<criterion comment="Registry check" test_ref="oval:mil.disa.fso.chrome:tst:240046"/>
+			</criteria>
+		</definition>
+		<!-- DTBC-0046 END -->
+	</definitions>
+	<tests>
+		<!-- DTBC-0001 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240001" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240001"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240001"/>
+		</win-def:registry_test>
+		<!-- DTBC-0001 TEST END -->
+		<!-- DTBC-0002 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240002" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240002"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240002"/>
+		</win-def:registry_test>
+		<!-- DTBC-0002 TEST END -->
+		<!-- DTBC-0003 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240003" version="56054708" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240003"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240003"/>
+		</win-def:registry_test>
+		<!-- DTBC-0003 TEST END -->
+		<!-- DTBC-0004 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240004" version="56054711" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240004"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240004"/>
+		</win-def:registry_test>
+		<!-- DTBC-0004 TEST END -->
+		<!-- DTBC-0005 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240005" version="56054714" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240005"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240005"/>
+		</win-def:registry_test>
+		<!-- DTBC-0005 TEST END -->
+		<!-- DTBC-0006 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240006" version="56054717" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240006"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240006"/>
+		</win-def:registry_test>
+		<!-- DTBC-0006 TEST END -->
+		<!-- DTBC-0007 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240007" version="56054720" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240007"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240007"/>
+		</win-def:registry_test>
+		<!-- DTBC-0007 TEST END -->
+		<!-- DTBC-0008 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240008" version="56054723" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240008"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240008"/>
+		</win-def:registry_test>
+		<!-- DTBC-0008 TEST END -->
+		<!-- DTBC-0009 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240009" version="56054726" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240009"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240009"/>
+		</win-def:registry_test>
+		<!-- DTBC-0009 TEST END -->
+		<!-- DTBC-0010 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240010" version="56054729" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240010"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240010"/>
+		</win-def:registry_test>
+		<!-- DTBC-0010 TEST END -->
+		<!-- DTBC-0011 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240011" version="56054732" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240011"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240011"/>
+		</win-def:registry_test>
+		<!-- DTBC-0011 TEST END -->
+		<!-- DTBC-0012 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240012" version="56054735" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240012"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240012"/>
+		</win-def:registry_test>
+		<!-- DTBC-0012 TEST END -->
+		<!-- DTBC-0013 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240013" version="56054738" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240013"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240013"/>
+		</win-def:registry_test>
+		<!-- DTBC-0013 TEST END -->
+		<!-- DTBC-0014 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240014" version="56054741" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240014"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240014"/>
+		</win-def:registry_test>
+		<!-- DTBC-0014 TEST END -->
+		<!-- DTBC-0015 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240015" version="56054744" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240015"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240015"/>
+		</win-def:registry_test>
+		<!-- DTBC-0015 TEST END -->
+		<!-- DTBC-0016 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240016" version="56054747" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240016"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240016"/>
+		</win-def:registry_test>
+		<!-- DTBC-0016 TEST END -->
+		<!-- DTBC-0017 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240017" version="56054750" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240017"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240017"/>
+		</win-def:registry_test>
+		<!-- DTBC-0017 TEST END -->
+		<!-- DTBC-0018 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240018" version="56054753" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240018"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240018"/>
+		</win-def:registry_test>
+		<!-- DTBC-0018 TEST END -->
+		<!-- DTBC-0019 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240019" version="56054756" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240019"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240019"/>
+		</win-def:registry_test>
+		<!-- DTBC-0019 TEST END -->
+		<!-- DTBC-0020 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240020" version="56054759" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240020"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240020"/>
+		</win-def:registry_test>
+		<!-- DTBC-0020 TEST END -->
+		<!-- DTBC-0021 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:2400211" version="56054762" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:2400211"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:2400211"/>
+		</win-def:registry_test>
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:2400212" version="56054762" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:2400212"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:2400212"/>
+		</win-def:registry_test>
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:2400213" version="56054762" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:2400213"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:2400213"/>
+		</win-def:registry_test>
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:2400214" version="56054762" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:2400214"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:2400214"/>
+		</win-def:registry_test>
+		<!-- DTBC-0021 TEST END -->
+		<!-- DTBC-0022 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240022" version="56054768" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240022"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240022"/>
+		</win-def:registry_test>
+		<!-- DTBC-0022 TEST END -->
+		<!-- DTBC-0023 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240023" version="57522654" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240023"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240023"/>
+		</win-def:registry_test>
+		<!-- DTBC-0023 TEST END -->
+		<!-- DTBC-0024 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240024" version="56054774" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240024"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240024"/>
+		</win-def:registry_test>
+		<!-- DTBC-0024 TEST END -->
+		<!-- DTBC-0025 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240025" version="56054777" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240025"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240025"/>
+		</win-def:registry_test>
+		<!-- DTBC-0025 TEST END -->
+		<!-- DTBC-0026 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240026" version="56054780" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240026"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240026"/>
+		</win-def:registry_test>
+		<!-- DTBC-0026 TEST END -->
+		<!-- DTBC-0027 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240027" version="56054783" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240027"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240027"/>
+		</win-def:registry_test>
+		<!-- DTBC-0027 TEST END -->
+		<!-- DTBC-0028 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240028" version="56054786" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240028"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240028"/>
+		</win-def:registry_test>
+		<!-- DTBC-0028 TEST END -->
+		<!-- DTBC-0029 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240029" version="56054789" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240029"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240029"/>
+		</win-def:registry_test>
+		<!-- DTBC-0029 TEST END -->
+		<!-- DTBC-0030 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240030" version="56054792" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240030"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240030"/>
+		</win-def:registry_test>
+		<!-- DTBC-0030 TEST END -->
+		<!-- DTBC-0033 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240033" version="56054793" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240033"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240033"/>
+		</win-def:registry_test>
+		<!-- DTBC-0033 TEST END -->
+		<!-- DTBC-0034 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240034" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240034"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240034"/>
+		</win-def:registry_test>
+		<!-- DTBC-0034 TEST END -->
+		<!-- DTBC-0036 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240036" version="56054816" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240036"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240036"/>
+		</win-def:registry_test>
+		<!-- DTBC-0036 TEST END -->
+		<!-- DTBC-0037 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240037" version="56054819" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240037"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240037"/>
+		</win-def:registry_test>
+		<!-- DTBC-0037 TEST END -->
+		<!-- DTBC-0038 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240038" version="56054822" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240038"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240038"/>
+		</win-def:registry_test>
+		<!-- DTBC-0038 TEST END -->
+		<!-- DTBC-0039 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240039" version="56054825" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240039"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240039"/>
+		</win-def:registry_test>
+		<!-- DTBC-0039 TEST END -->
+		<!-- DTBC-0040 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240040" version="56054828" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240040"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240040"/>
+		</win-def:registry_test>
+		<!-- DTBC-0040 TEST END -->
+		<!-- DTBC-0042 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:2400421" version="57522651" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:2400421"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:2400421"/>
+		</win-def:registry_test>
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:2400422" version="57522652" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:2400422"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:2400422"/>
+		</win-def:registry_test>
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:2400423" version="57522651" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:2400423"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:2400423"/>
+		</win-def:registry_test>
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:2400424" version="57522652" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:2400424"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:2400424"/>
+		</win-def:registry_test>
+		<!-- DTBC-0042 TEST END -->
+		<!-- DTBC-0043 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240043" version="57522653" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240043"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240043"/>
+		</win-def:registry_test>
+		<!-- DTBC-0043 TEST END -->
+		<!-- DTBC-0046 TEST START -->
+		<win-def:registry_test xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" check="all" check_existence="at_least_one_exists" comment="Password history=VAR" id="oval:mil.disa.fso.chrome:tst:240046" version="57522654" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" object_ref="oval:mil.disa.fso.chrome:obj:240046"/>
+			<state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" state_ref="oval:mil.disa.fso.chrome:ste:240046"/>
+		</win-def:registry_test>
+		<!-- DTBC-0046 TEST END -->
+	</tests>
+	<objects>
+		<!-- DTBC-0001 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240001" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">SOFTWARE\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">RemoteAccessHostFirewallTraversal</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0001 OBJECTS END -->
+		<!-- DTBC-0002 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240002" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">SOFTWARE\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">DefaultGeolocationSetting</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0002 OBJECTS END -->
+		<!-- DTBC-0003 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240003" version="56054708" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">SOFTWARE\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">DefaultNotificationsSetting</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0003 OBJECTS END -->
+		<!-- DTBC-0004 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240004" version="56054711" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">DefaultPopupsSetting</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0004 OBJECTS END -->
+		<!-- DTBC-0005 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240005" version="56054714" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome\ExtensionInstallBlacklist</win-def:key>
+			<win-def:name datatype="string" operation="equals">1</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0005 OBJECTS END -->
+		<!-- DTBC-0006 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240006" version="56054717" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome\ExtensionInstallWhitelist</win-def:key>
+			<win-def:name datatype="string" operation="equals">1</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0006 OBJECTS END -->
+		<!-- DTBC-0007 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240007" version="56054720" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">DefaultSearchProviderName</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0007 OBJECTS END -->
+		<!-- DTBC-0008 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240008" version="56054723" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">DefaultSearchProviderSearchURL</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0008 OBJECTS END -->
+		<!-- DTBC-0009 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240009" version="56054726" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">DefaultSearchProviderEnabled</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0009 OBJECTS END -->
+		<!-- DTBC-0010 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240010" version="56054729" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">PasswordManagerAllowShowPasswords</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0010 OBJECTS END -->
+		<!-- DTBC-0011 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240011" version="56054732" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">PasswordManagerEnabled</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0011 OBJECTS END -->
+		<!-- DTBC-0012 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240012" version="56054735" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">AuthSchemes</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0012 OBJECTS END -->
+		<!-- DTBC-0013 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240013" version="56054738" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">AllowOutdatedPlugins</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0013 OBJECTS END -->
+		<!-- DTBC-0014 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240014" version="56054741" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">AlwaysAuthorizePlugins</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0014 OBJECTS END -->
+		<!-- DTBC-0015 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240015" version="56054744" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">BlockThirdPartyCookies</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0015 OBJECTS END -->
+		<!-- DTBC-0016 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240016" version="56054747" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">ClearSiteDataOnExit</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0016 OBJECTS END -->
+		<!-- DTBC-0017 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240017" version="56054750" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">BackgroundModeEnabled</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0017 OBJECTS END -->
+		<!-- DTBC-0018 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240018" version="56054753" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">DisableSpdy</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0018 OBJECTS END -->
+		<!-- DTBC-0019 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240019" version="56054756" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">Disable3DAPIs</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0019 OBJECTS END -->
+		<!-- DTBC-0020 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240020" version="56054759" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">SyncDisabled</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0020 OBJECTS END -->
+		<!-- DTBC-0021 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:2400211" version="56054762" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome\DisabledSchemes</win-def:key>
+			<win-def:name datatype="string" operation="equals">1</win-def:name>
+		</win-def:registry_object>
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:2400212" version="56054765" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome\DisabledSchemes</win-def:key>
+			<win-def:name datatype="string" operation="equals">2</win-def:name>
+		</win-def:registry_object>
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:2400213" version="56054762" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome\DisabledSchemes</win-def:key>
+			<win-def:name datatype="string" operation="equals">1</win-def:name>
+		</win-def:registry_object>
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:2400214" version="56054765" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome\DisabledSchemes</win-def:key>
+			<win-def:name datatype="string" operation="equals">2</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0021 OBJECTS END -->
+		<!-- DTBC-0022 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240022" version="56054768" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">AutoFillEnabled</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0022 OBJECTS END -->
+		<!-- DTBC-0023 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240023" version="575226513" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome\</win-def:key>
+			<win-def:name datatype="string" operation="equals">CloudPrintProxyEnabled</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0023 OBJECTS END -->
+		<!-- DTBC-0024 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240024" version="56054774" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">SyncDisabled</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0024 OBJECTS END -->
+		<!-- DTBC-0025 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240025" version="56054777" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">DnsPrefetchingEnabled</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0025 OBJECTS END -->
+		<!-- DTBC-0026 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240026" version="56054780" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">MetricsReportingEnabled</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0026 OBJECTS END -->
+		<!-- DTBC-0027 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240027" version="56054783" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">SearchSuggestEnabled</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0027 OBJECTS END -->
+		<!-- DTBC-0028 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240028" version="56054786" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">CloudPrintSubmitEnabled</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0028 OBJECTS END -->
+		<!-- DTBC-0029 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240029" version="56054789" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">ImportSavedPasswords</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0029 OBJECTS END -->
+		<!-- DTBC-0030 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240030" version="56054792" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">IncognitoModeAvailability</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0030 OBJECTS END -->
+		<!-- DTBC-0033 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240033" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">UserDataDir</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0033 OBJECTS END -->
+		<!-- DTBC-0034 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240034" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome\DisabledPlugins</win-def:key>
+			<win-def:name datatype="string" operation="equals">1</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0034 OBJECTS END -->
+		<!-- DTBC-0036 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240036" version="56054816" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">DisablePluginFinder</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0036 OBJECTS END -->
+		<!-- DTBC-0037 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240037" version="56054819" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">EnableOnlineRevocationChecks</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0037 OBJECTS END -->
+		<!-- DTBC-0038 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240038" version="56054822" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">SafeBrowsingEnabled</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0038 OBJECTS END -->
+		<!-- DTBC-0039 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240039" version="56054825" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">SavingBrowserHistoryDisabled</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0039 OBJECTS END -->
+		<!-- DTBC-0040 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240040" version="56054828" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome</win-def:key>
+			<win-def:name datatype="string" operation="equals">DefaultPluginsSetting</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0040 OBJECTS END -->
+		<!-- DTBC-0042 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:2400421" version="57522651" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome\JavaScriptAllowedForUrls</win-def:key>
+			<win-def:name datatype="string" operation="equals">1</win-def:name>
+		</win-def:registry_object>
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:2400422" version="57522651" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome\JavaScriptAllowedForUrls</win-def:key>
+			<win-def:name datatype="string" operation="equals">2</win-def:name>
+		</win-def:registry_object>
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:2400423" version="57522651" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome\JavaScriptAllowedForUrls</win-def:key>
+			<win-def:name datatype="string" operation="equals">1</win-def:name>
+		</win-def:registry_object>
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:2400424" version="57522651" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome\JavaScriptAllowedForUrls</win-def:key>
+			<win-def:name datatype="string" operation="equals">2</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0042 OBJECTS END -->
+		<!-- DTBC-0043 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240043" version="575226512" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome\PluginsBlockedForUrls</win-def:key>
+			<win-def:name datatype="string" operation="equals">1</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0043 OBJECTS END -->
+		<!-- DTBC-0046 OBJECTS START -->
+		<win-def:registry_object xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:obj:240046" version="575226513" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</win-def:hive>
+			<win-def:key datatype="string" operation="equals">Software\Policies\Google\Chrome\BlockPlugins</win-def:key>
+			<win-def:name datatype="string" operation="equals">1</win-def:name>
+		</win-def:registry_object>
+		<!-- DTBC-0046 OBJECTS END -->
+	</objects>
+	<states>
+		<!-- DTBC-0001 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240001" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0001 STATES END -->
+		<!-- DTBC-0002 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240002" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:3"/>
+		</win-def:registry_state>
+		<!-- DTBC-0002 STATES END -->
+		<!-- DTBC-0003 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240003" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:3"/>
+		</win-def:registry_state>
+		<!-- DTBC-0003 STATES END -->
+		<!-- DTBC-0004 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240004" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:3"/>
+		</win-def:registry_state>
+		<!-- DTBC-0004 STATES END -->
+		<!-- DTBC-0005 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240005" version="56054804" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:8"/>
+		</win-def:registry_state>
+		<!-- DTBC-0005 STATES END -->
+		<!-- DTBC-0006 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240006" version="56054717" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:20"/>
+		</win-def:registry_state>
+		<!-- DTBC-0006 STATES END -->
+		<!-- DTBC-0007 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240007" version="56054720" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:21"/>
+		</win-def:registry_state>
+		<!-- DTBC-0007 STATES END -->
+		<!-- DTBC-0008 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240008" version="56054723" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:22"/>
+		</win-def:registry_state>
+		<!-- DTBC-0008 STATES END -->
+		<!-- DTBC-0009 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240009" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:2"/>
+		</win-def:registry_state>
+		<!-- DTBC-0009 STATES END -->
+		<!-- DTBC-0010 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240010" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0010 STATES END -->
+		<!-- DTBC-0011 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240011" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0011 STATES END -->
+		<!-- DTBC-0012 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240012" version="56054735" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:23"/>
+		</win-def:registry_state>
+		<!-- DTBC-0012 STATES END -->
+		<!-- DTBC-0013 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240013" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0013 STATES END -->
+		<!-- DTBC-0014 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240014" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0014 STATES END -->
+		<!-- DTBC-0015 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240015" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:2"/>
+		</win-def:registry_state>
+		<!-- DTBC-0015 STATES END -->
+		<!-- DTBC-0016 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240016" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0016 STATES END -->
+		<!-- DTBC-0017 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240017" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0017 STATES END -->
+		<!-- DTBC-0018 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240018" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:2"/>
+		</win-def:registry_state>
+		<!-- DTBC-0018 STATES END -->
+		<!-- DTBC-0019 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240019" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:2"/>
+		</win-def:registry_state>
+		<!-- DTBC-0019 STATES END -->
+		<!-- DTBC-0020 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240020" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:2"/>
+		</win-def:registry_state>
+		<!-- DTBC-0020 STATES END -->
+		<!-- DTBC-0021 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:2400211" version="56054762" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:4"/>
+		</win-def:registry_state>
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:2400212" version="56054765" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:5"/>
+		</win-def:registry_state>
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:2400213" version="56054765" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:5"/>
+		</win-def:registry_state>
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:2400214" version="56054762" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:4"/>
+		</win-def:registry_state>
+		<!-- DTBC-0021 STATES END -->
+		<!-- DTBC-0022 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240022" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0022 STATES END -->
+		<!-- DTBC-0023 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240023" version="56054709" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0023 STATES END -->
+		<!-- DTBC-0024 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240024" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:2"/>
+		</win-def:registry_state>
+		<!-- DTBC-0024 STATES END -->
+		<!-- DTBC-0025 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240025" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0025 STATES END -->
+		<!-- DTBC-0026 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240026" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0026 STATES END -->
+		<!-- DTBC-0027 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240027" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0027 STATES END -->
+		<!-- DTBC-0028 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240028" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0028 STATES END -->
+		<!-- DTBC-0029 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240029" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0029 STATES END -->
+		<!-- DTBC-0030 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240030" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:2"/>
+		</win-def:registry_state>
+		<!-- DTBC-0030 STATES END -->
+		<!-- DTBC-0033 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240033" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:240033"/>
+		</win-def:registry_state>
+		<!-- DTBC-0033 STATES END -->
+		<!-- DTBC-0034 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240034" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:8"/>
+		</win-def:registry_state>
+		<!-- DTBC-0034 STATES END -->
+		<!-- DTBC-0036 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240036" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:2"/>
+		</win-def:registry_state>
+		<!-- DTBC-0036 STATES END -->
+		<!-- DTBC-0037 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240037" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:2"/>
+		</win-def:registry_state>
+		<!-- DTBC-0037 STATES END -->
+		<!-- DTBC-0038 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240038" version="56054705" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:2"/>
+		</win-def:registry_state>
+		<!-- DTBC-0038 STATES END -->
+		<!-- DTBC-0039 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240039" version="56054702" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:1"/>
+		</win-def:registry_state>
+		<!-- DTBC-0039 STATES END -->
+		<!-- DTBC-0040 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240040" version="56054709" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:10"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:17"/>
+		</win-def:registry_state>
+		<!-- DTBC-0040 STATES END -->
+		<!-- DTBC-0042 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:2400421" version="56054706" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:12"/>
+		</win-def:registry_state>
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:2400422" version="56054707" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:13"/>
+		</win-def:registry_state>
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:2400423" version="56054707" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:13"/>
+		</win-def:registry_state>
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:2400424" version="56054706" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:12"/>
+		</win-def:registry_state>
+		<!-- DTBC-0042 STATES END -->
+		<!-- DTBC-0043 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240043" version="56054708" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:8"/>
+		</win-def:registry_state>
+		<!-- DTBC-0043 STATES END -->
+		<!-- DTBC-0046 STATES START -->
+		<win-def:registry_state xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.chrome:ste:240046" version="56054709" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+			<win-def:type datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:11"/>
+			<win-def:value datatype="string" operation="equals" var_check="at least one" var_ref="oval:mil.disa.fso.chrome:var:8"/>
+		</win-def:registry_state>
+		<!-- DTBC-0046 STATES END -->
+	</states>
+	<variables>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:1" version="56054702">
+			<value>0</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:2" version="56054714">
+			<value>1</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:3" version="56054705">
+			<value>2</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:17" version="56054705">
+			<value>3</value>
+		</constant_variable>
+		<constant_variable comment="The type of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:10" version="56054702">
+			<value>reg_dword</value>
+		</constant_variable>
+		<constant_variable comment="The type of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:11" version="56054714">
+			<value>reg_sz</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:20" version="56054717">
+			<value>oiigbmnaadbkfbmpbfijlflahbdbdgdf</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:21" version="56054720">
+			<value>Google Encrypted Search</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:22" version="56054723">
+			<value>https://encrypted.google.com/search?{google:acceptedSuggestion}{google:originalQueryForSuggestion}sourceid=chrome&amp;ie={inputEncoding}&amp;q=%{searchTerms}</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:23" version="56054735">
+			<value>negotiate</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:4" version="56054762">
+			<value>file</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:5" version="56054765">
+			<value>javascript</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:6" version="56054798">
+			<value>${local_app_data}\Chrome\Cache</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:7" version="56054801">
+			<value>${roaming_app_data}\Chrome\Data</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:8" version="56054804">
+			<value>*</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:9" version="56054807">
+			<value>Java*</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:556280044" version="57522647">
+			<value>Shockwave Flash</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:556280174" version="57522650">
+			<value>Chrome PDF Viewer</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:12" version="57522650">
+			<value>[*.]gov</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:13" version="57522650">
+			<value>[*.]mil</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:14" version="57522650">
+			<value>Google Earth Plugin</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:15" version="57522650">
+			<value>Silverlight</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:16" version="57522650">
+			<value>Java(TM)</value>
+		</constant_variable>
+		<constant_variable comment="The value of the registry entry" datatype="string" id="oval:mil.disa.fso.chrome:var:240033" version="1">
+			<value>${roaming_app_data}\Chrome\Data</value>
+		</constant_variable>
+	</variables>
+</oval_definitions>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/unix-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>repotool</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2015-08-24T11:06:32</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.stig.solaris11:def:1" version="1" class="inventory">
+      <metadata>
+        <title>Solaris 11 x86 (Sun SunOS 5.11)</title>
+        <affected family="unix">
+          <platform>Solaris 11 x86 (Sun SunOS 5.11)</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/o:sun:sunos:5.11" />
+        <description>Solaris 11 x86 (Sun SunOS 5.11) is the installed operating system</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion comment="Installed operating system is of the Unix family" test_ref="oval:mil.disa.stig.solaris11:tst:102" />
+        <criterion comment="Installed operating system's name is SunOS" test_ref="oval:mil.disa.stig.solaris11:tst:101" />
+        <criterion comment="Installed operating system is release 5.11" test_ref="oval:mil.disa.stig.solaris11:tst:103" />
+        <criterion comment="Installed operating system's architecture is x86" test_ref="oval:mil.disa.stig.solaris11:tst:104" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.stig.solaris11:tst:101" version="1" check="all" comment="Installed operating system's name is SunOS" check_existence="all_exist">
+      <object object_ref="oval:mil.disa.stig.solaris11:obj:101" />
+      <state state_ref="oval:mil.disa.stig.solaris11:ste:101" />
+    </uname_test>
+    <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.stig.solaris11:tst:102" version="1" check="all" comment="Installed operating system is of the Unix family" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.solaris11:obj:102" />
+      <state state_ref="oval:mil.disa.stig.solaris11:ste:102" />
+    </family_test>
+    <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.stig.solaris11:tst:103" version="1" check="all" comment="Installed operating system is release 5.11" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.solaris11:obj:101" />
+      <state state_ref="oval:mil.disa.stig.solaris11:ste:103" />
+    </uname_test>
+    <uname_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.stig.solaris11:tst:104" version="1" check="all" comment="Installed operating system architecture is x86" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.solaris11:obj:101" />
+      <state state_ref="oval:mil.disa.stig.solaris11:ste:104" />
+    </uname_test>
+  </tests>
+  <objects>
+    <uname_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.stig.solaris11:obj:101" version="1" comment="OS information" />
+    <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.stig.solaris11:obj:102" version="1" comment="The operating system family" />
+  </objects>
+  <states>
+    <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.stig.solaris11:ste:101" version="1" comment="The OS name">
+      <os_name datatype="string" operation="equals" entity_check="all">SunOS</os_name>
+    </uname_state>
+    <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.stig.solaris11:ste:102" version="1" comment="Unix family OS">
+      <family datatype="string" operation="equals" entity_check="all">unix</family>
+    </family_state>
+    <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.stig.solaris11:ste:103" version="1" comment="The release of the installed OS">
+      <os_release datatype="string" operation="equals" entity_check="all">5.11</os_release>
+    </uname_state>
+    <uname_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" id="oval:mil.disa.stig.solaris11:ste:104" version="1" comment="OS architecture">
+      <processor_type datatype="string" operation="pattern match" entity_check="all">^i.*86</processor_type>
+    </uname_state>
+  </states>
+</oval_definitions>
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:windows-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd">
+  <generator>
+    <oval:product_name>DISA</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2015-03-27T10:55:53.281-05:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.stig.lync2013:def:1" version="1" class="compliance">
+      <metadata>
+        <title>DTOO420 - Store user passwords</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <product>Microsoft Lync 2013</product>
+        </affected>
+        <description>Lync 2013 provides a single, unified client for real-time communications, including voice and video calls, Lync Meetings, presence, instant messaging, and persistent chat. These features require the ability to log into the service with a username and password. The Lync client could potentially be configured to store user passwords locally which would allow it to be susceptible to compromise and to be used maliciously..</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Allow storage of user passwords">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Allow storage of user passwords" test_ref="oval:mil.disa.stig.lync2013:tst:1000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.lync2013:def:2" version="1" class="compliance">
+      <metadata>
+        <title>DTOO421 - Session Initiation Protocol (SIP) security mode</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Lync 2013</product>
+        </affected>
+        <description>Lync 2013 provides a single, unified client for real-time communications, including voice and video calls, Lync Meetings, presence, instant messaging, and persistent chat, using the Session Initiation Protocol (SIP). SIP is widely used for controlling multimedia communication sessions, such as voice and video calls over Internet Protocol (IP) networks. By using TLS it would render a sniff/man in the middle attack very difficult to impossible to achieve within the time period in which a given conversation could be attacked. TLS authenticates all parties and encrypts all traffic. This does not prevent listening over the wire, but the attacker cannot read the traffic unless the encryption is broken.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Configure SIP security mode">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Configure SIP security mode" test_ref="oval:mil.disa.stig.lync2013:tst:2000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.lync2013:def:3" version="1" class="compliance">
+      <metadata>
+        <title>DTOO422 - Session Initiation Protocol (SIP)</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft lync2013</product>
+        </affected>
+        <description>Lync 2013 provides a single, unified client for real-time communications, including voice and video calls, Lync Meetings, presence, instant messaging, and persistent chat. The Lync client has a fall back option so that, in the event the Lync client cannot make a secure SIP connection to the Lync server, it will fall back to an unencrypted HTTP connection. In that event, all traffic will be unencrypted and in clear text. The configuration must be set to prevent HTTP being used for SIP connections in the event TLS or TCP fail.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Disable HTTP fallback for SIP connection">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Disable HTTP fallback for SIP connection" test_ref="oval:mil.disa.stig.lync2013:tst:3000" />
+      </criteria>
+    </definition>       
+  </definitions>
+  <tests>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.lync2013:tst:1000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Allow storage of user passwords" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.lync2013:obj:1000" />
+      <state state_ref="oval:mil.disa.stig.lync2013:ste:1000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.lync2013:tst:2000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Configure SIP security mode" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.lync2013:obj:2000" />
+      <state state_ref="oval:mil.disa.stig.lync2013:ste:2000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.lync2013:tst:3000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Disable HTTP fallback for SIP connection" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.lync2013:obj:3000" />
+      <state state_ref="oval:mil.disa.stig.lync2013:ste:3000" />
+    </registry_test>    
+  </tests>
+  <objects>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.lync2013:obj:1000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Allow storage of user passwords">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\office\15.0\lync</key>
+      <name datatype="string" operation="equals">savepassword</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.lync2013:obj:2000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Configure SIP security mode">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\office\15.0\lync</key>
+      <name datatype="string" operation="equals">enablesiphighsecuritymode</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.lync2013:obj:3000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Disable HTTP fallback for SIP connection">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\office\15.0\lync</key>
+      <name datatype="string" operation="equals">disablehttpconnect</name>
+    </registry_object>     
+    </objects>
+  <states>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.lync2013:ste:1000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Allow storage of user passwords">
+       <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.lync2013:ste:2000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Configure SIP security mode">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.lync2013:ste:3000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Lync 2013\Microsoft Lync Feature Policies\Disable HTTP fallback for SIP connection">
+       <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>       
+    </states> 
+</oval_definitions>
+

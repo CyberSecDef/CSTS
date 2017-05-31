@@ -1,0 +1,20 @@
+<form name="form1" text="Cyber Security Tool Suite - Manage Local Admins Settings" clientSizeX="280" clientSizeY="150" FormBorderStyle="fixedDialog">
+	<controls>
+		
+		<control type="label" id="lblAction" name="lblAction" text="Action" locationX="5" locationY="10" sizeX="65" sizeY="20" />
+		<control type="comboBox" id="cboAction" name="cboAction" locationX="75" locationY="10" sizeX="200" sizeY="25">
+			<item>List</item>
+			<item>Disable</item>
+			<item>Delete</item>
+			<item>Enable</item>
+		</control>
+		
+		<control type="label" id="lblNewAdmin" name="lblNewAdmin" text="New Admin" locationX="5" locationY="40" sizeX="65" sizeY="20" />
+		<control type="textBox" id="txtNewAdmin" name="txtNewAdmin" locationX="75" locationY="40" sizeX="200" sizeY="25"/>
+		
+		<control type="label" id="lblNewPass" name="lblNewPass" text="New Pass" locationX="5" locationY="65" sizeX="65" sizeY="20" />
+		<control type="textBox" id="txtNewPass" name="txtNewPass" locationX="75" locationY="65" sizeX="200" sizeY="25"/>
+		
+		<control type="button" id="btnExecute" name="btnExecute" text="Execute" locationX="5" locationY="95" sizeX="270" sizeY="50" backColor="#FFCCCCCC"/>
+	</controls>
+</form>

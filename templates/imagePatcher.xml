@@ -1,0 +1,17 @@
+<form name="form1" text="Cyber Security Tool Suite - Image Patcher" clientSizeX="600" clientSizeY="410" FormBorderStyle="fixedDialog">
+	<controls>
+		<control type="tabControl" id="tabControl" name="tabControl" locationX="10" locationY="5" sizeX="585" sizeY="400" >
+			<tab>ISO/Wim Control</tab>
+			<tab>Driver Management</tab>
+			<tab>Update Management</tab>
+			<tab>Feature Management</tab>
+			<tab>SCAP/GPO Settings</tab>
+			<tab>Edition/Install Management</tab>
+			<tab>Registry Updates</tab>
+			<tab>File System Updates</tab>
+		</control>
+		<control type="pictureBox" id="splash" name="splash" locationX="10" locationY="5" sizeX="585" sizeY="400" imagePath="splash.gif" />
+		<control type="label" id="splashTxt" name="splashTxt" locationX="10" locationY="5" sizeX="585" sizeY="400" textAlignment="topcenter" fontSize="24" fontFamily="Verdana" foreColor="#CBEDFF" />
+		<control type="label" id="splashTxt2" name="splashTxt2" locationX="10" locationY="275" sizeX="585" sizeY="400" textAlignment="topcenter" fontSize="24" fontFamily="Verdana" foreColor="#CBEDFF" />
+	</controls>
+</form>	

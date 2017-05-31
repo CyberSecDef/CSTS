@@ -1,0 +1,9 @@
+<form>
+	<controls>
+		<control type="label" id="tab3lblInstalledFeatures" name="tab3lblInstalledFeatures" locationX="10" locationY="10" sizeX="200" sizeY="20" text="Installed Features:" />
+		<control type="button" id="tab3btnRefreshFeatures" name="tab3btnRefreshFeatures" locationX="199" locationY="4" sizeX="60" sizeY="25" text="Refresh" backcolor="#ffffff" />
+		<control type="treeview" id="tab3treeFeatures" name="tab3treeFeatures" locationX="10" locationY="30" sizeX="250" sizeY="345"  sorted="true" checkboxes="true" text="Features" />
+		<control type="button" id="tab3btnUpdateFeatures" name="tab3btnUpdateFeatures" text="Update Features" locationX="270" locationY="320" sizeX="300" sizeY="50" />
+		<control type="pictureBox" id="tab3Picture" name="tab3Picture" locationX="300" locationY="80" sizeX="256" sizeY="230" imagePath="Features.png" />
+	</controls>
+</form>

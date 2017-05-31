@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><Benchmark xmlns="http://checklists.nist.gov/xccdf/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://checklists.nist.gov/xccdf/1.1" xmlns:cpe="http://cpe.mitre.org/dictionary/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" id="USGCB-Win7-Energy" resolved="0" xml:lang="en-US" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd       http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+      <status date="2011-06-10">accepted</status>
+      <title>USGCB: Guidance for Securing Microsoft Windows 7 energy settings for IT Professionals</title>
+      <description>This guide has been created to assist IT professionals, in effectively configuring energy conserving settings on systems with Microsoft Windows 7</description>
+      <notice id="terms-of-use" xml:lang="en-US">Do not attempt to implement any of the settings in this guide without first testing them in a non-operational environment. NIST assumes no responsibility whatsoever for its use by other parties, and makes no guarantees, expressed or implied, about its quality, reliability, or any other characteristic. NIST would appreciate acknowledgement if the document and template are used.</notice>
+      <front-matter xml:lang="en-US">The Federal CIO council created the Technology Information Subcommittee (TIS) at the direction of OMB to govern, among other federal activities, the FDCC iniatitive. The TIS, based on federal agency input, selects platforms and applcations for federal implementation. The TIS also is the Change Control Board (CCB) for configuration settings. As stated in the Federal CIO Council Memo to federal agencies, "The USGCB settings replace the Federal Desktop Core Configuration (FDCC) settings and provide the recommended security baselines for Information Technology products widely deployed across the agencies."</front-matter>
+      <rear-matter xml:lang="en-US"><xhtml:strong>Trademark Information</xhtml:strong><xhtml:br/><xhtml:br/>Microsoft, Windows, Windows Vista, Windows 7, Internet Explorer, and Windows Firewall are either registered trademarks or trademarks of Microsoft Corporation in the United States and other countries.<xhtml:br/><xhtml:br/>All other names are registered trademarks or trademarks of their respective companies.</rear-matter>
+      <reference href="http://nvd.nist.gov/chklst_detail.cfm?config_id=76">
+            <dc:publisher>National Institute of Standards and Technology</dc:publisher>
+            <dc:identifier>SP 800-68</dc:identifier>
+      </reference>
+      <platform idref="cpe:/o:microsoft:windows_7"/>
+      <version>v1.2.0.0</version>
+      <metadata>
+            <publisher xmlns="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</publisher>
+      </metadata>
+      <model system="urn:xccdf:scoring:default"/>
+      <model system="urn:xccdf:scoring:flat"/>
+      <!-- ==================================================================================================== -->
+      <!-- =========================================  USGCB PROFILES  ========================================== -->
+      <!-- ==================================================================================================== -->
+      <!--                                                                                                      -->
+      <!-- These profiles outline the specific guidance outlined by the United States Government Configuration Baseline.     -->
+      <!-- Each defines the set of XCCDF rules that are applicable for that guidance as well as specific values -->
+      <!-- to be used when determining complinace.                                                              -->
+      <!--                                                                                                      -->
+      <Profile id="united_states_government_configuration_baseline_version_1.2.0.0">
+            <title>United States Government Configuration Baseline version 1.2.0.0</title>
+            
+            <description>This profile represents guidance for energy conservation for Windows 7 on desktop systems.</description>
+            <!-- '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+            <!-- '''  2 - USGCB Energy Settings                                                               ''' -->
+            <!-- '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+            <select idref="Specify_the_System_Hibernate_Timeout_On_Battery" selected="true"/>
+            <select idref="Specify_the_System_Hibernate_Timeout_Plugged_in" selected="true"/>
+            <select idref="Turn_off_the_Display_On_Battery" selected="true"/>
+            <select idref="Turn_off_the_Display_Plugged_In" selected="true"/>
+            <!-- '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+            <!-- '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+            <!-- '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+            <refine-value idref="Specify_the_System_Hibernate_Timeout_On_Battery_var" selector="3600_Seconds"/>
+            <refine-value idref="Specify_the_System_Hibernate_Timeout_Plugged_in_var" selector="3600_Seconds"/>
+            <refine-value idref="Turn_off_the_Display_On_Battery_var" selector="1200_seconds"/>
+            <refine-value idref="Turn_off_the_Display_Plugged_In_var" selector="1200_seconds"/>
+      </Profile>
+      <!-- ==================================================================================================== -->
+      <!-- =====================================  USGCB SECURITY GUIDANCE  ===================================== -->
+      <!-- ==================================================================================================== -->
+      <!--                                                                                                      -->
+      <!-- The following groups represent the collection of USGCB guidance for Microsoft Windows 7 Energy settings. -->
+      <!--                                                                                                      -->
+      <!-- **************************************************************************************************** -->
+      <!-- ***  1 - Introduction                                                                                            *** -->
+      <!-- **************************************************************************************************** -->
+      <Group id="introduction">
+            <title>Introduction</title>
+            <description>This guide has been created to assist federal agencies in configuring systems running Microsoft Windows 7 with energy conservation recommended by the EPA.<xhtml:br/><xhtml:br/>Under the direction of OMB and in collaboration with DHS, DISA, NSA, USAF, and Microsoft, NIST has provided the following baseline to help agencies test, implement, and deploy the Microsoft Windows 7 United States Government Configuration Baseline (USGCB) baseline. The United States Government Configuration Baseline (USGCB) is an OMB-mandated security configuration.<xhtml:br/><xhtml:br/>Please refer to the USGCB home page for additional information. http://USGCB.nist.gov</description>
+      </Group>
+      <!-- **************************************************************************************************** -->
+      <!-- ***  2 - USGCB Energy Settings                                                                        *** -->
+      <!-- **************************************************************************************************** -->      
+      <Group id="USGCB_energy_settings">
+            <title>USGCB Energy Settings</title>
+            <description>USGCB has identified the following additional controls that must be checked in order to verify compliance.</description>
+            <Value id="Specify_the_System_Hibernate_Timeout_On_Battery_var" type="number" operator="less than or equal">
+                  <title>Specify the System Hibernate Timeout (On Battery)</title>
+                  <description>Specifies the period of inactivity before Windows transitions the system to hibernate.</description>
+                  <value>3600</value>
+                  <value selector="3600_Seconds">3600</value>
+            </Value>
+            <Value id="Specify_the_System_Hibernate_Timeout_Plugged_in_var" type="number" operator="less than or equal">
+                  <title>Specify the System Hibernate Timeout (Plugged In)</title>
+                  <description>Specifies the period of inactivity before Windows transitions the system to hibernate.</description>
+                  <value>3600</value>
+                  <value selector="3600_Seconds">3600</value>
+            </Value>
+            <Value id="Turn_off_the_Display_On_Battery_var" type="number" operator="less than or equal">
+                  <title>Turn off the Display (On Battery)</title>
+                  <description>Specifies the period of inactivity before Windows transitions the system to hibernate.</description>
+                  <value>1200</value>
+                  <value selector="1200_seconds">1200</value>
+            </Value>
+            <Value id="Turn_off_the_Display_Plugged_In_var" type="number" operator="less than or equal">
+                  <title>Turn off the Display (Plugged In)</title>
+                  <description>Specifies the period of inactivity before Windows turns off the display.</description>
+                  <value>1200</value>
+                  <value selector="1200_seconds">1200</value>
+            </Value>
+            <Rule id="Specify_the_System_Hibernate_Timeout_On_Battery" selected="false" weight="10.0">
+                  <title>Specify the System Hibernate Timeout (On Battery)</title>
+                  <description>Specifies the period of inactivity before Windows transitions the system to hibernate.</description>
+                  <reference>
+                        <dc:type>GPO</dc:type>
+                        <dc:source>Computer Configuration\Administrative Templates\System\Power Management\Sleep Settings</dc:source>
+                  </reference>
+                  <ident system="http://cce.mitre.org">CCE-13091-4</ident>
+                  <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <check-export export-name="oval:gov.nist.usgcb.windowsseven:var:20020" value-id="Specify_the_System_Hibernate_Timeout_On_Battery_var"/>
+                        <check-content-ref href="USGCB-Windows-7-Energy-oval.xml" name="oval:gov.nist.usgcb.windowsseven:def:20020"/>
+                  </check>
+            </Rule>
+            <Rule id="Specify_the_System_Hibernate_Timeout_Plugged_in" selected="false" weight="10.0">
+                  <title>Specify the System Hibernate Timeout (Plugged In)</title>
+                  <description>Specifies the period of inactivity before Windows transitions the system to hibernate.</description>
+                  <reference>
+                        <dc:type>GPO</dc:type>
+                        <dc:source>Computer Configuration\Administrative Templates\System\Power Management\Sleep Settings</dc:source>
+                  </reference>
+                  <ident system="http://cce.mitre.org">CCE-13668-9</ident>
+                  <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <check-export export-name="oval:gov.nist.usgcb.windowsseven:var:20021" value-id="Specify_the_System_Hibernate_Timeout_Plugged_in_var"/>
+                        <check-content-ref href="USGCB-Windows-7-Energy-oval.xml" name="oval:gov.nist.usgcb.windowsseven:def:20021"/>
+                  </check>
+            </Rule>
+            <Rule id="Turn_off_the_Display_On_Battery" selected="false" weight="10.0">
+                  <title>Turn off the Display (On Battery)</title>
+                  <description>Specifies the period of inactivity before Windows transitions the system to hibernate.</description>
+                  <reference>
+                        <dc:type>GPO</dc:type>
+                        <dc:source>Computer Configuration\Administrative Templates\System\Power Management\Video and Display Settings</dc:source>
+                  </reference>
+                  <ident system="http://cce.mitre.org">CCE-12924-7</ident>
+                  <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <check-export export-name="oval:gov.nist.usgcb.windowsseven:var:20022" value-id="Turn_off_the_Display_On_Battery_var"/>
+                        <check-content-ref href="USGCB-Windows-7-Energy-oval.xml" name="oval:gov.nist.usgcb.windowsseven:def:20022"/>
+                  </check>
+            </Rule>
+            <Rule id="Turn_off_the_Display_Plugged_In" selected="false" weight="10.0">
+                  <title>Turn off the Display (Plugged In)</title>
+                  <description>Specifies the period of inactivity before Windows turns off the display.</description>
+                  <reference>
+                        <dc:type>GPO</dc:type>
+                        <dc:source>Computer Configuration\Administrative Templates\System\Power Management\Video and Display Settings</dc:source>
+                  </reference>
+                  <ident system="http://cce.mitre.org">CCE-12393-5</ident>
+                  <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+                        <check-export export-name="oval:gov.nist.usgcb.windowsseven:var:20023" value-id="Turn_off_the_Display_Plugged_In_var"/>
+                        <check-content-ref href="USGCB-Windows-7-Energy-oval.xml" name="oval:gov.nist.usgcb.windowsseven:def:20023"/>
+                  </check>
+            </Rule>
+      </Group>
+      <!-- ==================================================================================================== -->
+      <!-- ==================================================================================================== -->
+      <!-- ==================================================================================================== -->
+</Benchmark>

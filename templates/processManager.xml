@@ -1,0 +1,76 @@
+<form name="form1" text="Cyber Security Tool Suite - Process Explorer" clientSizeX="800" clientSizeY="800" FormBorderStyle="fixedDialog">
+	<controls>
+		<control type="toolStrip" id="toolMain" name="toolMain" locationX="0" locationY="200" sizeX="400" sizeY="20">
+			<item name="tsiSave" id="tsiSave" imagePath="save.png" text="Save" toolTipText="Save" />
+			<item name="tsiSep1" id="tsiSep1" type="seperator"></item>
+		</control>
+		<control type="menuStrip" id="mnuMain" name="mnuMain" locationX="0" locationY="200" sizeX="400" sizeY="20">
+			<menuCat name="mnuFile" id="mnuFile" text="&amp;File">
+				<item name="mnuFileOpen" id="mnuFileOpen">&amp;Open</item>
+			</menuCat>
+			<menuCat name="mnuOptions" id="mnuOptions" text="&amp;Options">
+				<item name="mnuEditCut" id="mnuEditCut">&amp;Cut</item>
+			</menuCat>
+			<menuCat name="mnuView" id="mnuView" text="&amp;View">
+				<item name="mnuEditCopy" id="mnuEditCopy">C&amp;opy</item>
+			</menuCat>
+			<menuCat name="mnuView" id="mnuView" text="&amp;Process">
+				<item name="mnuEditCopy" id="mnuEditCopy">C&amp;opy</item>
+			</menuCat>
+			<menuCat name="mnuView" id="mnuView" text="&amp;Find">
+				<item name="mnuEditCopy" id="mnuEditCopy">C&amp;opy</item>
+			</menuCat>
+			<menuCat name="mnuView" id="mnuView" text="&amp;DLL">
+				<item name="mnuEditCopy" id="mnuEditCopy">C&amp;opy</item>
+			</menuCat>
+		</control>
+		
+		<control type="dataGridView" id="lstActiveProcess" name="lstActiveProcess" locationX="5" locationY="50" sizeX="790" sizeY="500"  >
+			<column type="checkBox">Select</column>
+			<column type="image">Icon</column>
+			<column type="textBox">Process</column>
+			<column type="textBox">User Name</column>
+			<column type="textBox">PID</column>
+			<column type="textBox">PPID</column>
+			<column type="textBox">CPU</column>
+			<column type="textBox">Private Bytes</column>
+			<column type="textBox">Working Set</column>
+			<column type="textBox">Handles</column>
+			<column type="textBox">Description</column>
+			<column type="textBox">Company</column>
+			<column type="textBox">Path</column>
+		</control>
+
+		<control type="listView" id="lstDependencies" name="lstDependencies" locationX="5" locationY="550" sizeX="790" sizeY="190" view="details">
+			<column>#</column>
+			<column>Name</column>
+			<column>Description</column>
+			<column>Company Name</column>
+			<column>Path</column>
+			<column>Size</column>
+			<column>Version</column>
+		</control>
+		
+		<control type="pictureBox" id="pboxCpu" name="pboxCpu" locationX="5" locationY="742" sizeX="128" sizeY="32" imagePath="processManager_blank.png" />
+		<control type="pictureBox" id="pboxCommit" name="pboxCommit" locationX="140" locationY="742" sizeX="128" sizeY="32" imagePath="processManager_blank.png" />
+		<control type="pictureBox" id="pboxRam" name="pboxRam" locationX="275" locationY="742" sizeX="128" sizeY="32" imagePath="processManager_blank.png" />
+		<control type="pictureBox" id="pboxNet" name="pboxNet" locationX="408" locationY="742" sizeX="128" sizeY="32" imagePath="processManager_blank.png" />
+		<control type="pictureBox" id="pboxDisk" name="pboxDisk" locationX="540" locationY="742" sizeX="128" sizeY="32" imagePath="processManager_blank.png" />
+		
+		<control type="statusStrip" id="stbMain" name="stbMain" >
+			<item name="stbLabelCpu" id="stbLabelCpu" text='CPU Usage: ' type="label" />
+			<item name="stbTest" id="stbTest" type="seperator"></item>
+			<item name="stbLabelProcesses" id="stbLabelProcesses" text='Processes: ' type="label" />
+			<item name="stbTest" id="stbTest" type="seperator"></item>
+			<item name="stbLabelCommit" id="stbLabelCommit" text='Commit Charge: ' type="label" />
+			<item name="stbTest" id="stbTest" type="seperator"></item>
+			<item name="stbLabelMem" id="stbLabelMem" text='Physical RAM Usage: ' type="label" />
+			<item name="stbTest" id="stbTest" type="seperator"></item>
+			<item name="stbLabelNet" id="stbLabelNet" text='Network Utilization: ' type="label" />
+			<item name="stbTest" id="stbTest" type="seperator"></item>
+			<item name="stbLabelDisk" id="stbLabelDisk" text='Disk Utilization: ' type="label" />
+			<item name="stbTest" id="stbTest" type="seperator"></item>
+		</control>
+		
+	</controls>
+</form>

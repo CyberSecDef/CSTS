@@ -1,0 +1,20 @@
+<form name="form1" text="Cyber Security Tool Suite - Hardware Comparison Settings" clientSizeX="800" clientSizeY="600" FormBorderStyle="fixedDialog" backColor="#FFCCDDEE">
+	<controls>
+		<control type="label" id="lblOu" name="lblOu" text="Organizational Units" locationX="5" locationY="5" sizeX="250" sizeY="20" />
+		<control type="treeView" id="treeOu" name="treeOu" locationX="5" locationY="25" sizeX="250" sizeY="570" backColor="#FFEEEEFF"/>
+		
+		
+		<control type="label" id="lblHosts" name="lblHosts" text="CA Plan Hosts" locationX="260" locationY="5" sizeX="280" sizeY="20" />
+		<control type="textBox" id="txtHosts" name="txtHosts" locationX="260" locationY="25" sizeX="530" sizeY="200" multiLine="true"/>
+				
+		<control type="label" id="lblIpa" name="lblIpa" text="IPA Hosts" locationX="260" locationY="250" sizeX="280" sizeY="20" />
+		<control type="textBox" id="txtIpa" name="txtIpa" locationX="260" locationY="270" sizeX="530" sizeY="200" multiLine="true"/>
+		
+		<control type="label" id="lblScans" name="lblScans" text="Scan Locations" locationX="260" locationY="490" sizeX="280" sizeY="20" />
+		<control type="textBox" id="txtScanPath" name="txtScanPath" locationX="260" locationY="520" sizeX="430" sizeY="25" />
+		<control type="button" id="btnScanBrowser" name="btnScanBrowser" text="Browse..." locationX="695" locationY="515" sizeX="100" sizeY="25" />
+		<control type="CheckBox" id="chkRecurse" name="chkRecurse" locationX="645" locationY="490" text="Recurse into sub folders?" sizeX="380" sizeY="25"/>
+
+		<control type="button" id="btnExecute" name="btnExecute" text="Execute" locationX="260" locationY="545" sizeX="535" sizeY="50" backColor="#FFCCCCCC"/>
+	</controls>
+</form>

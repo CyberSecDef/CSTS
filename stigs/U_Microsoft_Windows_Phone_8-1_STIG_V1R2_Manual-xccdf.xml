@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" id="Windows_Phone_8.1" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2015-05-13">accepted</status><title>Microsoft Windows Phone 8.1 Security Technical Implementation Guide</title><description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA, Field Security Operations</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 24 Jul 2015</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-58931" selected="true" /><select idref="V-58933" selected="true" /><select idref="V-58935" selected="true" /><select idref="V-58937" selected="true" /><select idref="V-58939" selected="true" /><select idref="V-58941" selected="true" /><select idref="V-58943" selected="true" /><select idref="V-58945" selected="true" /><select idref="V-58947" selected="true" /><select idref="V-58949" selected="true" /><select idref="V-58951" selected="true" /><select idref="V-58953" selected="true" /><select idref="V-58955" selected="true" /><select idref="V-58957" selected="true" /><select idref="V-58959" selected="true" /><select idref="V-58961" selected="true" /><select idref="V-58963" selected="true" /><select idref="V-58965" selected="true" /><select idref="V-58967" selected="true" /><select idref="V-58971" selected="true" /><select idref="V-58973" selected="true" /><select idref="V-58975" selected="true" /><select idref="V-58977" selected="true" /><select idref="V-58979" selected="true" /><select idref="V-59025" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-58931" selected="true" /><select idref="V-58933" selected="true" /><select idref="V-58935" selected="true" /><select idref="V-58937" selected="true" /><select idref="V-58939" selected="true" /><select idref="V-58941" selected="true" /><select idref="V-58943" selected="true" /><select idref="V-58945" selected="true" /><select idref="V-58947" selected="true" /><select idref="V-58949" selected="true" /><select idref="V-58951" selected="true" /><select idref="V-58953" selected="true" /><select idref="V-58955" selected="true" /><select idref="V-58957" selected="true" /><select idref="V-58959" selected="true" /><select idref="V-58961" selected="true" /><select idref="V-58963" selected="true" /><select idref="V-58965" selected="true" /><select idref="V-58967" selected="true" /><select idref="V-58971" selected="true" /><select idref="V-58973" selected="true" /><select idref="V-58975" selected="true" /><select idref="V-58977" selected="true" /><select idref="V-58979" selected="true" /><select idref="V-59025" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-58931" selected="true" /><select idref="V-58933" selected="true" /><select idref="V-58935" selected="true" /><select idref="V-58937" selected="true" /><select idref="V-58939" selected="true" /><select idref="V-58941" selected="true" /><select idref="V-58943" selected="true" /><select idref="V-58945" selected="true" /><select idref="V-58947" selected="true" /><select idref="V-58949" selected="true" /><select idref="V-58951" selected="true" /><select idref="V-58953" selected="true" /><select idref="V-58955" selected="true" /><select idref="V-58957" selected="true" /><select idref="V-58959" selected="true" /><select idref="V-58961" selected="true" /><select idref="V-58963" selected="true" /><select idref="V-58965" selected="true" /><select idref="V-58967" selected="true" /><select idref="V-58971" selected="true" /><select idref="V-58973" selected="true" /><select idref="V-58975" selected="true" /><select idref="V-58977" selected="true" /><select idref="V-58979" selected="true" /><select idref="V-59025" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-58931" selected="true" /><select idref="V-58933" selected="true" /><select idref="V-58935" selected="true" /><select idref="V-58937" selected="true" /><select idref="V-58939" selected="true" /><select idref="V-58941" selected="true" /><select idref="V-58943" selected="true" /><select idref="V-58945" selected="true" /><select idref="V-58947" selected="true" /><select idref="V-58949" selected="true" /><select idref="V-58951" selected="true" /><select idref="V-58953" selected="true" /><select idref="V-58955" selected="true" /><select idref="V-58957" selected="true" /><select idref="V-58959" selected="true" /><select idref="V-58961" selected="true" /><select idref="V-58963" selected="true" /><select idref="V-58965" selected="true" /><select idref="V-58967" selected="true" /><select idref="V-58971" selected="true" /><select idref="V-58973" selected="true" /><select idref="V-58975" selected="true" /><select idref="V-58977" selected="true" /><select idref="V-58979" selected="true" /><select idref="V-59025" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-58931" selected="true" /><select idref="V-58933" selected="true" /><select idref="V-58935" selected="true" /><select idref="V-58937" selected="true" /><select idref="V-58939" selected="true" /><select idref="V-58941" selected="true" /><select idref="V-58943" selected="true" /><select idref="V-58945" selected="true" /><select idref="V-58947" selected="true" /><select idref="V-58949" selected="true" /><select idref="V-58951" selected="true" /><select idref="V-58953" selected="true" /><select idref="V-58955" selected="true" /><select idref="V-58957" selected="true" /><select idref="V-58959" selected="true" /><select idref="V-58961" selected="true" /><select idref="V-58963" selected="true" /><select idref="V-58965" selected="true" /><select idref="V-58967" selected="true" /><select idref="V-58971" selected="true" /><select idref="V-58973" selected="true" /><select idref="V-58975" selected="true" /><select idref="V-58977" selected="true" /><select idref="V-58979" selected="true" /><select idref="V-59025" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-58931" selected="true" /><select idref="V-58933" selected="true" /><select idref="V-58935" selected="true" /><select idref="V-58937" selected="true" /><select idref="V-58939" selected="true" /><select idref="V-58941" selected="true" /><select idref="V-58943" selected="true" /><select idref="V-58945" selected="true" /><select idref="V-58947" selected="true" /><select idref="V-58949" selected="true" /><select idref="V-58951" selected="true" /><select idref="V-58953" selected="true" /><select idref="V-58955" selected="true" /><select idref="V-58957" selected="true" /><select idref="V-58959" selected="true" /><select idref="V-58961" selected="true" /><select idref="V-58963" selected="true" /><select idref="V-58965" selected="true" /><select idref="V-58967" selected="true" /><select idref="V-58971" selected="true" /><select idref="V-58973" selected="true" /><select idref="V-58975" selected="true" /><select idref="V-58977" selected="true" /><select idref="V-58979" selected="true" /><select idref="V-59025" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-58931" selected="true" /><select idref="V-58933" selected="true" /><select idref="V-58935" selected="true" /><select idref="V-58937" selected="true" /><select idref="V-58939" selected="true" /><select idref="V-58941" selected="true" /><select idref="V-58943" selected="true" /><select idref="V-58945" selected="true" /><select idref="V-58947" selected="true" /><select idref="V-58949" selected="true" /><select idref="V-58951" selected="true" /><select idref="V-58953" selected="true" /><select idref="V-58955" selected="true" /><select idref="V-58957" selected="true" /><select idref="V-58959" selected="true" /><select idref="V-58961" selected="true" /><select idref="V-58963" selected="true" /><select idref="V-58965" selected="true" /><select idref="V-58967" selected="true" /><select idref="V-58971" selected="true" /><select idref="V-58973" selected="true" /><select idref="V-58975" selected="true" /><select idref="V-58977" selected="true" /><select idref="V-58979" selected="true" /><select idref="V-59025" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-58931" selected="true" /><select idref="V-58933" selected="true" /><select idref="V-58935" selected="true" /><select idref="V-58937" selected="true" /><select idref="V-58939" selected="true" /><select idref="V-58941" selected="true" /><select idref="V-58943" selected="true" /><select idref="V-58945" selected="true" /><select idref="V-58947" selected="true" /><select idref="V-58949" selected="true" /><select idref="V-58951" selected="true" /><select idref="V-58953" selected="true" /><select idref="V-58955" selected="true" /><select idref="V-58957" selected="true" /><select idref="V-58959" selected="true" /><select idref="V-58961" selected="true" /><select idref="V-58963" selected="true" /><select idref="V-58965" selected="true" /><select idref="V-58967" selected="true" /><select idref="V-58971" selected="true" /><select idref="V-58973" selected="true" /><select idref="V-58975" selected="true" /><select idref="V-58977" selected="true" /><select idref="V-58979" selected="true" /><select idref="V-59025" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-58931" selected="true" /><select idref="V-58933" selected="true" /><select idref="V-58935" selected="true" /><select idref="V-58937" selected="true" /><select idref="V-58939" selected="true" /><select idref="V-58941" selected="true" /><select idref="V-58943" selected="true" /><select idref="V-58945" selected="true" /><select idref="V-58947" selected="true" /><select idref="V-58949" selected="true" /><select idref="V-58951" selected="true" /><select idref="V-58953" selected="true" /><select idref="V-58955" selected="true" /><select idref="V-58957" selected="true" /><select idref="V-58959" selected="true" /><select idref="V-58961" selected="true" /><select idref="V-58963" selected="true" /><select idref="V-58965" selected="true" /><select idref="V-58967" selected="true" /><select idref="V-58971" selected="true" /><select idref="V-58973" selected="true" /><select idref="V-58975" selected="true" /><select idref="V-58977" selected="true" /><select idref="V-58979" selected="true" /><select idref="V-59025" selected="true" /></Profile><Group id="V-58931"><title>PP-MDF-001007</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73361r1_rule" severity="medium" weight="10.0"><version>MSWP-81-100301</version><title>Windows Phone 8.1 must be configured to disable developer modes.</title><description>&lt;VulnDiscussion&gt;Developer modes circumvent certain security measures, so their use for standard operation is not recommended. Developer modes may increase the likelihood of compromise of confidentiality, integrity, and availability.
+
+SFR ID: FMT_SMF.1.1 #21&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64323r1_fix">Configure the MDM system to require the Allow Developer Unlocking/Developer Mode policy to be disabled for Windows Phone devices. Deploy the MDM policy on managed devices.</fixtext><fix id="F-64323r1_fix" /><check system="C-59759r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on the MDM administration console:
+
+On the MDM administration console:
+1. Ask the MDM administrator to verify the phone compliance policy.
+2. Find the setting for restricting the Allow Developer Unlock capability.
+3. Verify that setting restriction is turned on.
+
+If the MDM does not have the policy to disable developer mode enforced, this is a finding.</check-content></check></Rule></Group><Group id="V-58933"><title>PP-MDF-001004</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73363r1_rule" severity="medium" weight="10.0"><version>MSWP-81-100303</version><title>Windows Phone 8.1 must be configured to enforce an application installation policy by specifying one or more authorized application repositories.</title><description>&lt;VulnDiscussion&gt;Forcing all applications to be installed from authorized application repositories can prevent unauthorized and malicious applications from being installed and executed on mobile devices. Allowing such installations and executions could cause a compromise of DoD data accessible by these unauthorized/malicious applications.
+
+SFR ID: FMT_SMF.1.1 #10&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64325r1_fix">Configure an application control policy using an MDM for Windows Phone 8.1 to disable the Store application. Deploy the policy to managed devices.</fixtext><fix id="F-64325r1_fix" /><check system="C-59761r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device.
+
+On the MDM administration console:
+1. Display the policy that restricts the use of a Store application.
+2. Verify that this policy is set to be disabled.
+
+On Windows Phone:
+1. From the Start page or on the Applications page (swipe to the left from the Start page), find the Store application icon.
+NOTE: The Store icon should appear dim.
+
+2. Tap on the Store app to attempt to launch it. A message should be displayed: 
+"App disabled. This app has been disabled by company policy. Contact your company's support person for help."
+
+If the MDM does not have a policy that disables the Store application, or if the Windows Store app can be successfully launched, this is a finding.</check-content></check></Rule></Group><Group id="V-58935"><title>PP-MDF-001005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73365r1_rule" severity="medium" weight="10.0"><version>MSWP-81-100305</version><title>Windows Phone 8.1 must be configured to enforce an application installation policy through an application whitelist specifying a set of allowed applications and versions.</title><description>&lt;VulnDiscussion&gt;Requiring all authorized applications to be in an application whitelist prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the whitelist. Failure to configure an application whitelist properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DoD data accessible by these applications. The actions of some enterprise apps cannot be controlled by whitelist, such as backup of application information to OneDrive. Other mitigation techniques will be required to facilitate those actions to safeguard data.
+
+SFR ID: FMT_SMF.1.1 #10&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64329r2_fix">Setup an Application catalog (authorized apps) using an MDM for Windows Phone 8.1.
+
+This will provide an authorized repository of applications which can be installed on a managed user's device.</fixtext><fix id="F-64329r2_fix" /><check system="C-59765r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is only performed on the MDM administration console.
+
+On the MDM administration console:
+1. Display policy area for managing allowed applications.
+2. Verify a policy exists that creates an application whitelist of allowed applications.
+3. Verify all applications on the list of whitelisted applications have been approved by the Approving Official (AO).
+4. Verify the application whitelist policy has been deployed to the target devices under management on the MDM console.
+
+NOTE: This list can be empty if no applications have been approved. See the STIG supplemental document for additional information.
+
+If the application whitelist policy does not exist or does not contain only authorized applications or has not been deployed to targeted devices under enrollment, this is a finding.</check-content></check></Rule></Group><Group id="V-58937"><title>PP-MDF-001012</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73367r1_rule" severity="medium" weight="10.0"><version>MSWP-81-100603</version><title>Windows Phone 8.1 must be configured to disable USB mass storage mode.</title><description>&lt;VulnDiscussion&gt;This data transfer capability could allow users to transfer sensitive DoD data onto unauthorized USB storage devices, thus leading to the compromise of this DoD data.
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64331r1_fix">Configure the MDM system to require the Allow USB Connection policy to be disabled for Windows Phone devices. 
+
+Deploy the MDM policy on managed devices.</fixtext><fix id="F-64331r1_fix" /><check system="C-59767r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed only on the MDM administration console.
+
+On the MDM administration console:
+1. Ask the MDM administrator to verify the phone compliance policy.
+2. Find the "Allow USB Connection" setting.
+3. Verify the "Allow USB Connection Setting" is disabled.
+
+If the MDM does not have a compliance policy that disables USB connectivity, this is a finding.</check-content></check></Rule></Group><Group id="V-58939"><title>PP-MDF-001003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73369r1_rule" severity="low" weight="10.0"><version>MSWP-81-100807</version><title>Windows Phone 8.1 must be configured to prohibit more than 10 consecutive failed authentication attempts.</title><description>&lt;VulnDiscussion&gt;Users must not be able to override the system policy on the maximum number of consecutive failed authentication attempts because this could allow them to raise the maximum, thus giving adversaries more chances to guess/brute-force passwords, which increases the risk of the mobile device being compromised. Therefore, only administrators should have the authority to set consecutive failed authentication attempt policies.
+
+SFR ID: FMT_SMF.1.1 #02&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000043</ident><ident system="http://iase.disa.mil/cci">CCI-000044</ident><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-001382</ident><fixtext fixref="F-64333r1_fix">Configure the MDM system to enforce a local device wipe after 10 or less repeated sign-on failures. 
+
+Deploy the policy on managed devices.</fixtext><fix id="F-64333r1_fix" /><check system="C-59769r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device.
+
+On the MDM administration console:
+1. Ask the MDM administrator to display the device password settings. Check that these settings are configured.
+2. Number of repeated sign-on failures before device is wiped is 10 or less.
+
+This validation procedure is performed on the Windows Phone mobile device.
+NOTE: This test should not be used on a production device.
+
+On the Windows Phone mobile device:
+1. Ensure that the device has timed out or power cycled so that the lockscreen is shown.
+2. Attempt to unlock the device using an incorrect PIN.
+3. On the last attempt, a warning will be presented and will ask the user to enter A1B2C3. This is to ensure that random logon attempts were not being pocket dialed. Once A1B2C3 is entered, a final attempt to unlock the phone can be made.
+4. Verify that after the 10th attempt or less, the message Goodbye is displayed as the Windows Phone reboots and wipes/hard resets. 
+
+If the MDM is not configured to wipe the device in 10 attempts or less, or the device does not wipe after 10 attempts to unlock it, this is a finding.</check-content></check></Rule></Group><Group id="V-58941"><title>PP-MDF-001002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73371r1_rule" severity="medium" weight="10.0"><version>MSWP-81-100808</version><title>Windows Phone 8.1 must be configured to lock the display after 15 minutes (or less) of inactivity.</title><description>&lt;VulnDiscussion&gt;The screen lock time-out must be set to a value that helps protect the device from unauthorized access. Having a too-long time-out would increase the window of opportunity for adversaries who gain physical access to the mobile device through loss, theft, etc. Such devices are much more likely to be in an unlocked state when acquired by an adversary, thus granting immediate access to the data on the mobile device. The maximum time-out period of 15 minutes has been selected to balance functionality and security; shorter time-out periods may be appropriate, depending on the risks posed to the mobile device.
+
+SFR ID: FMT_SMF.1.1 #02&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000057</ident><ident system="http://iase.disa.mil/cci">CCI-000059</ident><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64335r1_fix">Configure Windows Phone 8.1 policies to lock the device after 15 minutes or less. 
+
+Deploy the policy on managed devices.</fixtext><fix id="F-64335r1_fix" /><check system="C-59771r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device.
+
+On the MDM administration console:
+1. Ask the MDM administrator to display the device password settings.
+2. Verify the device time-out/inactivity setting is turned on.
+3. Verify the minimum length is set to 15 minutes.
+
+On the Windows Phone mobile device:
+1. Initiate the test by leaving the phone idle for longer than 15 minutes
+2. Tap the Power button to turn the screen on.
+3. Swipe up the lock screen and reveal the unlock screen. 
+4. Verify that a password is required to gain access to the device.
+
+If the MDM is not configured to require a device lock after 15 minutes or less, or the device fails to lock in 15 minutes or less, this is a finding.</check-content></check></Rule></Group><Group id="V-58943"><title>PP-MDF-001001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73373r1_rule" severity="low" weight="10.0"><version>MSWP-81-100810</version><title>Windows Phone 8.1 must be configured to enforce a minimum password length of 6 characters.</title><description>&lt;VulnDiscussion&gt;Password strength is a measure of the effectiveness of a password in resisting guessing and brute-force attacks. The ability to crack a password is a function of how many attempts an adversary is permitted, how quickly an adversary can do each attempt, and the size of the password space. The longer the minimum length of the password is, the larger the password space. Having a too-short minimum password length significantly reduces password strength, increasing the chance of password compromise and resulting device and data compromise.
+
+SFR ID: FMT_SMF.1.1 #01&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000205</ident><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64337r1_fix">Configure the MDM system to enforce a password required as well as a minimum length password of 6 characters for device unlock. 
+
+Deploy the policy on managed devices.</fixtext><fix id="F-64337r1_fix" /><check system="C-59773r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device.
+
+On the MDM administration console:
+1. Ask the MDM administrator to display the device password settings.
+2. Verify that a password required setting is in effect.
+3. Verify the minimum length for the password is set to 6 or greater.
+
+On the Windows Phone mobile device:
+1. Attempt to change the password to a 5-digit password. 
+2. Verify Windows Phone rejects the new password. 
+
+If the password policy on the MDM is not set to require a password with a minimum length of at least 6, or a device accepts a passcode of less than 6 characters, this is a finding.</check-content></check></Rule></Group><Group id="V-58945"><title>PP-MDF-001008</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73375r1_rule" severity="high" weight="10.0"><version>MSWP-81-101102</version><title>Windows Phone 8.1 must be configured to enable data-at-rest protection for built-in storage media.</title><description>&lt;VulnDiscussion&gt;The operating system must ensure the data being written to the mobile device's built-in storage media is protected from unauthorized access. If data at rest is unencrypted, it is vulnerable to disclosure. Even if the operating system enforces permissions on data access, an adversary can read storage media directly, thereby circumventing operating system controls. Encrypting the data ensures confidentiality is protected even when the operating system is not running.
+
+SFR ID: FMT_SMF.1.1 #22&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-001199</ident><fixtext fixref="F-64339r1_fix">Configure the MDM system to require the device encryption for Windows Phone devices. 
+
+Deploy the MDM policy to managed devices.</fixtext><fix id="F-64339r1_fix" /><check system="C-59775r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device.
+
+On the MDM administration console:
+1. Ask the MDM administrator to display the device encryption setting.
+2. Verify device encryption is activated.
+
+On the Windows Phone mobile device:
+1. Launch "Settings".
+2. Select "storage sense".
+3. Verify the word "encrypted" appears after the measurement of how much storage is in use.
+
+For example, "2.62 GB used, encrypted" is compliant, whereas "2.62 GB used" is not compliant.
+
+If the MDM is not configured to enforce encryption, or if the word "encrypted" does not appear in the specified location in the "storage sense" screen of the Settings app, this is a finding.</check-content></check></Rule></Group><Group id="V-58947"><title>PP-MDF-001009</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73377r1_rule" severity="high" weight="10.0"><version>MSWP-81-101202</version><title>Windows Phone 8.1 must be configured to enable data-at-rest protection for removable storage media or to disable the removable storage media.</title><description>&lt;VulnDiscussion&gt;The operating system must ensure the data being written to the mobile device's removable media is protected from unauthorized access. If data at rest is unencrypted, it is vulnerable to disclosure. Even if the operating system enforces permissions on data access, an adversary can read removable media directly, thereby circumventing operating system controls. Encrypting the data ensures confidentiality is protected even when the operating system is not running. Windows Phone 8.1 platform cannot enforce encryption for removable media, so the use of removable media must be disabled. This alternative mitigation, prohibiting the use of removable storage media using an IA control, eliminates the threat of data vulnerabilities since no data can be stored on such media.
+
+SFR ID: FMT_SMF.1.1 #23&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><ident system="http://iase.disa.mil/cci">CCI-001199</ident><fixtext fixref="F-64341r1_fix">Configure the MDM system to enforce a policy that configures the "allow removable storage" policy to be disabled for Windows Phone devices. 
+
+Deploy the MDM policy to managed devices.</fixtext><fix id="F-64341r1_fix" /><check system="C-59777r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device.
+
+On the MDM administration console:
+1. Ask the MDM administrator to verify the phone compliance policy.
+2. Find the setting for "allow removable storage".
+3. Verify that setting restriction is turned off/disallowed.
+
+On a Windows Phone 8.1 device that contains a microSD slot and has a microSD card inserted:
+1. Launch "settings".
+2. Find and tap on "storage sense".
+3. If a removable storage card is mounted, there should be a section that lists phone storage, and directly under that, a section for SD card storage.
+4. Verify that the SD card section has a sentence directly below it that says "not found".
+
+If the MDM does not have a policy enforcement that disables the use of removable storage, or if a "not found" message does not appear under the SD card location on the "storage sense" screen of the Settings app, and instead, under SD card, you see how much space is used and how much is free, that SD card was not disabled, and this is a finding.</check-content></check></Rule></Group><Group id="V-58949"><title>PP-MDF-003005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73379r1_rule" severity="low" weight="10.0"><version>MSWP-81-300812</version><title>Before establishing a user session, Windows Phone 8.1 must display an administrator-specified advisory notice and consent warning banner regarding use of Windows Phone 8.1.</title><description>&lt;VulnDiscussion&gt;The operating system is required to display the DoD-approved system use notification message or banner before granting access to the system that provides privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. This ensures the legal requirements for auditing and monitoring are met. System use notification messages can be displayed when individuals log on to the information system. The approved DoD text must be used as specified in the DoD CIO memorandum dated 9 May 2008.
+
+SFR ID: FTA_TAB.1.1&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000048</ident><fixtext fixref="F-64343r3_fix">This procedure is the same as requirement MSWP-81-100812. The procedure only has to be performed once.
+
+This requirement is enforced via User Based Enforcement (UBE).
+
+For Windows Phone 8.1, the following procedure must be followed:
+
+Distribute a photo to all users with phones that has a picture with the notice and consent warning message. Save that photo locally to the phone.
+
+Each user then does the following on the phone:
+1. In the App list, tap Settings.
+2. In the Settings list, tap lock screen.
+3. Under Background, tap choose background.
+4. Tap photo.
+5. Tap change photo.
+6. Select and tap the photo distributed by the administrator, and tap the check mark at the bottom of the photo.
+
+The phone with the notice and consent warning is now displayed before unlocking the phone.</fixtext><fix id="F-64343r3_fix" /><check system="C-59779r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This procedure is the same as requirement MSWP-81-100812. The procedure only has to be performed once.
+
+This validation procedure is performed on the Windows Phone mobile device:
+1. Lock the phone; tap button to turn off screen.
+2. Tap power button to power up.
+3. Swipe up on lockscreen to reveal screen.
+4. See Banner warning.
+5. Verify that the DoD warning banner has the required text.
+
+If configured banner message was not viewable or does not have required text, this is a finding.</check-content></check></Rule></Group><Group id="V-58951"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73381r1_rule" severity="medium" weight="10.0"><version>MSWP-81-500101</version><title>Windows Phone 8.1 must be configured to implement the management setting:
+
+Disable the capability of being able to show notifications in the Action Center while a device is locked.</title><description>&lt;VulnDiscussion&gt;When a mobile device is locked, there should be no access to its protected/sensitive data since it could enable unauthorized people with physical access to the device to bring up and view confidential information. The Action Center on the Windows Phone 8.1 platform allows the viewing of recent notifications including emails, calendar reminders, instant messages, and other potentially sensitive information. Disabling this feature mitigates the exposure of this data.
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64345r1_fix">Configure the MDM system to require the "allow access to Action Center information under lockscreen" policy to be disabled for Windows Phone devices. 
+
+Deploy the MDM policy on managed devices.</fixtext><fix id="F-64345r1_fix" /><check system="C-59781r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device. It assumes you have an existing device time-out policy in place that will lock the device after a certain period.
+
+On the MDM administration console:
+1. Ask the MDM administrator to verify the phone compliance policy.
+2. Find the setting for "allow access to Action Center information under lockscreen".
+3. Verify that setting restriction is turned off/disallowed.
+
+On the Windows Phone mobile device:
+1. If On, tap the power button to turn the screen off; otherwise, leave the screen off until the time-out period passes. The device could also be powered off instead.
+2. Press the power button to turn on the screen.
+3. The lockscreen background screen should appear. Swipe a finger from the very top of the screen to bring up the action center. 
+4. Verify that when the action center appears, the only things visible are the 4 configurable settings buttons, along with the "all settings" button. 
+
+If an MDM policy to disallow the "allow access to Action Center information under lockscreen" is missing, or any notifications for various services like email show up under the settings buttons, this is a finding.</check-content></check></Rule></Group><Group id="V-58953"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73383r1_rule" severity="medium" weight="10.0"><version>MSWP-81-500607</version><title>Windows Phone 8.1 must be configured to implement the management setting:
+
+Disable the ability of users to be able to manually turn off the VPN.</title><description>&lt;VulnDiscussion&gt;For consumer use, the ability to turn off or suspend a VPN connection may be useful in cases of bypassing server issues or decreasing battery utilization, but, in a DoD environment, a VPN connection needs to be retained to provide a consistent secure tunnel for communications with DoD networks. Therefore, disabling the ability for a user to be able to turn off VPN makes it more difficult for an adversary to capture network traffic.
+
+For Windows Phone 8.1, this requirement is needed to prevent access to cloud services like OneDrive by OS applications and components such as:
+
+Office Hub/Applications
+OneNote
+Backup
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64347r2_fix">Configure the MDM system to enforce a security policy that disallows manually turning off VPN in Windows Phone settings. 
+
+Deploy the policy on managed devices.</fixtext><fix id="F-64347r2_fix" /><check system="C-59783r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device.
+
+On the MDM administration console:
+1. Ask the MDM administrator to verify the phone compliance policy.
+2. Find the setting for "manual VPN On/Off Control".
+3. Verify that setting restriction is turned off/disallowed.
+
+This validation procedure is performed on the Windows Phone mobile device.
+
+On the Windows Phone mobile device:
+1.Wait for the MDM policy to be applied.
+2. Go to settings/VPN.
+3. Verify that the VPN Status toggle is On and that the control is disabled and cannot be turned off. 
+
+If, on the MDM System, the "manual VPN On/Off Control" policy is not disabled, this is a finding.
+ 
+If, on the Windows Phone mobile device, the VPN Status toggle is not disabled, this is a finding.</check-content></check></Rule></Group><Group id="V-58955"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73385r1_rule" severity="medium" weight="10.0"><version>MSWP-81-500802</version><title>Windows Phone 8.1 must be configured to implement the management setting:
+
+Not allow the device unlock password to contain more than two sequential or repeating characters (e.g., 456, aaa).</title><description>&lt;VulnDiscussion&gt;Password complexity or strength refers to how difficult it is to determine a password using a dictionary or brute-force attack. Passwords with sequential or repeating numbers or alphabetic characters (e.g., 456, 987, 222, abc, ddd) are considered easier to crack than random patterns. Therefore, disallowing sequential or repeating numbers or alphabetic characters makes it more difficult for an adversary to discover the password.
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64349r1_fix">Configure the MDM system to enforce a password policy that disables "Require simple password, no repeating or pattern based passwords".
+
+Deploy the policy on managed devices.</fixtext><fix id="F-64349r1_fix" /><check system="C-59785r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device.
+
+On the MDM administration console:
+1. Ask the MDM administrator to verify the phone compliance policy.
+2. Find the setting for "Require simple password, no repeating or pattern based passwords".
+3. Verify that setting restriction is turned off/disallowed.
+
+This validation procedure is performed on the Windows Phone mobile device.
+
+On the Windows Phone mobile device:
+1.Wait for the MDM policy to be applied.
+2. When prompted that the password policy has changed, attempt to set a password that is either 111111 or 123456.
+3. Verify that those password types are not allowed. 
+
+If the MDM system does not enforce a password policy that disables "Require simple password, no repeating or pattern based passwords" or, on the phone, creating simple password is allowed, this is a finding.</check-content></check></Rule></Group><Group id="V-58957"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73387r1_rule" severity="medium" weight="10.0"><version>MSWP-81-500902</version><title>Windows Phone 8.1 must be configured to implement the management setting: Disable the capability of the Cortana personal assistant A.I. to be functional when the device is locked.</title><description>&lt;VulnDiscussion&gt;When a mobile device is locked, there should be no access to its protected/sensitive data since it could enable unauthorized people with physical access to the device to bring up and view confidential information. The Cortana personal assistant can perform a number of voice-related queries and actions that can aid productivity but also allows some of its actions to be done while the device is locked. Disabling this feature mitigates the exposure of potentially sensitive information that should remain secured when a device is locked.
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64351r1_fix">Configure the MDM system to require the "allow access to the Cortana personal assistant" policy to be disabled for Windows Phone devices. 
+
+Deploy the MDM policy on managed devices.</fixtext><fix id="F-64351r1_fix" /><check system="C-59787r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device. It assumes you have an existing device time-out policy in place that will lock the device after a certain period.
+
+On the MDM administration console:
+1. Ask the MDM administrator to verify the phone compliance policy.
+2. Find the setting for "allow access to the Cortana personal assistant".
+3. Verify that setting restriction is turned off/disallowed.
+
+On the Windows Phone mobile device:
+1. If On, tap the power button to turn the screen off; otherwise, leave the screen off until the time-out period passes. The device could also be powered off instead.
+2. Press the power button to turn on the screen.
+3. The lockscreen background screen should appear. Press and hold the Search button at the lower right of the device. A screen will appear that says "Listening..."
+4. Speak the voice command "show me my calendar". 
+5. Verify that when Cortana responds, she says, "You just need to unlock your phone first."
+ 
+If the MDM does not have a policy setting enforced for "allow access to the Cortana personal assistant", or if Cortana is able to provide voice assistance and show information under the lockscreen, this is a finding.</check-content></check></Rule></Group><Group id="V-58959"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73389r1_rule" severity="medium" weight="10.0"><version>MSWP-81-500903</version><title>Windows Phone 8.1 must be configured to implement the management setting:
+
+Disable the capability for a user to manually unenroll from MDM management.</title><description>&lt;VulnDiscussion&gt;The use of an MDM allows an organization to assign values to security-related parameters across all the devices it manages. This provides assurance that the required mobile OS security controls are being enforced and that the device user or an adversary has not modified or disabled the controls. If a user has the ability on their device to manually unenroll from MDM management, this removes all IA controls and exposes the device and the user to a number of threat vectors and takes them out of compliance. Disabling this feature mitigates the risk from loss of control and ensures that the devices maintain the required locked down state.
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64353r2_fix">Configure the MDM system with a security policy that requires the "allow user to manually unenroll from management" capability to be disabled for Windows Phone devices.
+
+Deploy the MDM policy to managed devices.</fixtext><fix id="F-64353r2_fix" /><check system="C-59789r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device. It assumes you have an existing device time-out policy in place that will lock the device after a certain period.
+
+On the MDM administration console:
+1. Ask the MDM administrator to verify the phone compliance policy.
+2. Find the setting for "allow user to manually unenroll from management".
+3. Verify that setting restriction is turned off/disallowed.
+
+On the Windows Phone mobile device:
+1. Go to "settings".
+2. Tap on "workplace".
+3. Look at the bottom of the screen to see if there is a company/agency name with the small text of "enrolled" under it.
+4. Tap on that enrollment name; that should take you to a new page with details about the enrollment and have a refresh and wastebasket icon at the bottom.
+5. Tap on the wastebasket (delete) icon to unenroll from MDM management. A message box should come up with a "Can't delete account" alert.
+
+If the MDM does not disable the policy setting for "allow user to manually unenroll from management" or, if, on the phone, a message starting with the sentence "Can't delete account" is not shown when tapping on the wastebasket icon in the workplace app, this is a finding.</check-content></check></Rule></Group><Group id="V-58961"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73391r1_rule" severity="medium" weight="10.0"><version>MSWP-81-500906</version><title>Windows Phone 8.1 must be configured to implement the management setting:
+
+Disable the sharing of Office documents through service providers like email and cloud.</title><description>&lt;VulnDiscussion&gt;Generally, when doing document collaboration, it is useful, from a productivity perspective, to be able to share those documents with peers who can review and edit those documents. But, if those same documents can be shared to public locations through email and cloud storage services, data leakage scenarios are possible, enabling sensitive data to be shared outside of secure DoD locations. To mitigate these threats, the sharing capability of documents should be disabled to prevent this possibility.
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64355r1_fix">Configure the MDM system to require the "allow sharing of documents (Office)" policy to be disabled for Windows Phone devices. 
+
+Deploy the MDM policy on managed devices.</fixtext><fix id="F-64355r1_fix" /><check system="C-59791r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device.
+
+On the MDM administration console:
+1. Ask the MDM administrator to verify the phone compliance policy.
+2. Find the setting for "allow sharing of documents (Office)".
+3. Verify that setting restriction is turned off/disallowed.
+
+On the Windows Phone mobile device:
+1. From the Start page, swipe to the left to show the all apps list, find "Office", and tap on it.
+2. Swipe to the left until you see the page called "places".
+3. Tap on the "phone" location.
+4. Tap on the file called "sample spreadsheet".
+5. Tap on the menu (look for 3 dots) at the lower right of the screen, and then scroll through that menu and look for "share".
+6. Verify that in that menu the menu item called "share" is grayed out/disabled. 
+
+If the MDM console does not have the Office Sharing policy disabled, or if the sharing menu item for an Office document is not disabled and can be tapped on and a share action started, this is a finding.</check-content></check></Rule></Group><Group id="V-58963"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73393r1_rule" severity="medium" weight="10.0"><version>MSWP-81-500907</version><title>Windows Phone 8.1 must be configured to implement the management setting:
+
+Disable the capability for syncing settings such as the theme, application settings, Internet Explorer sites visited, and cached passwords to Microsoft OneDrive cloud storage.</title><description>&lt;VulnDiscussion&gt;A public cloud backup feature may gather a user's information, such as PII, or sensitive documents. With this feature enabled, sensitive information will be backed up to the manufacturer's servers and database. This data is stored at a location that has unauthorized employees accessing this data. This data is stored on a server that has a location unknown to the DoD. Disabling this feature mitigates the risk of a backup feature that stores sensitive data on a server that has the potential to be located in a country other than the United States.
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64357r2_fix">Configure the MDM system to require the "sync settings to OneDrive" policy to be disabled for Windows Phone devices. 
+
+Deploy the MDM policy to managed devices.</fixtext><fix id="F-64357r2_fix" /><check system="C-59793r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device. It assumes you have an existing device time-out policy in place that will lock the device after a certain period.
+
+On the MDM administration console:
+1. Ask the MDM administrator to verify the phone compliance policy.
+2. Find the setting for "sync settings to OneDrive".
+3. Verify that setting restriction is turned off/disallowed.
+
+On the Windows Phone mobile device:
+1. Launch "Settings".
+2. Find and tap on "sync my settings".
+3. Verify that no settings toggles are visible, and there should be a sentence that says:  "Disabled by policy".
+
+If the MDM does not have the allow "sync settings to OneDrive" policy disabled, or, if the "Disabled by policy" message does not appear in the specified location on the "sync my settings" screen of the phone, this is a finding.</check-content></check></Rule></Group><Group id="V-58965"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73395r1_rule" severity="medium" weight="10.0"><version>MSWP-81-501203</version><title>Windows Phone 8.1 must be configured to implement the management setting:
+
+Disallow the sharing of device telemetry captured as a result of crashes and other logging processes.</title><description>&lt;VulnDiscussion&gt;Applications and OS processes have a capability to have telemetry data called Software Quality Metrics (SQM) that can send software instrumentation metrics to the SQM service and to the client to download client-specific control data. The protocol allows applications and operating system components to collect and send instrumentation metrics, including customer experience data, crash reports, and traces to a hosted service over HTTP/HTTPS. That data, while not including any privacy-sensitive information, could potentially contain information sensitive to DoD. Disabling this feature mitigates the risk of any unknown information being stored in Microsoft telemetry tracking databases.
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64359r1_fix">Configure the MDM system to require the "Allow telemetry data to be sent" policy to be disabled for Windows Phone devices. 
+
+Deploy the MDM policy to managed devices.</fixtext><fix id="F-64359r1_fix" /><check system="C-59795r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device. It assumes you have an existing device time-out policy in place that will lock the device after a certain period.
+
+On the MDM administration console:
+1. Ask the MDM administrator to verify the phone compliance policy.
+2. Find the setting for "Allow telemetry data to be sent".
+3. Verify that setting restriction is turned off/disallowed.
+
+On the Windows Phone mobile device:
+1. Launch "Settings".
+2. Select "feedback".
+3. Verify that the setting toggle called "Send feedback" is disabled. There should be a sentence after the disabled toggle that says:  "Disabled by company policy".
+
+If the MDM console does not have the "Allow telemetry data to be sent" policy disabled or, on the phone, the "Disabled by company policy" message does not appear in the specified location on the "feedback" screen of the Settings app, this is a finding.</check-content></check></Rule></Group><Group id="V-58967"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73397r1_rule" severity="medium" weight="10.0"><version>MSWP-81-501407</version><title>Windows Phone 8.1 must be configured to implement the management setting:
+
+Employ mobile device management services to centrally manage security-relevant configuration and policy settings.</title><description>&lt;VulnDiscussion&gt;Security-related parameters are those parameters impacting the security state of the system and include parameters related to the implementation of other IA controls. If these controls are not implemented, the system may be vulnerable to a variety of attacks. The use of an MDM allows an organization to assign values to security-related parameters across all the devices it manages. This provides assurance that the required mobile OS security controls are being enforced and that the device user or an adversary has not modified or disabled the controls. It also greatly increases efficiency and manageability of devices in a large-scale environment relative to an environment in which each device must be configured separately.
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64361r1_fix">Enroll the device in MDM.
+
+Implement MDM to centrally manage configuration settings.</fixtext><fix id="F-64361r1_fix" /><check system="C-59797r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on the Windows Phone 8.1 device only.
+
+On the Windows Phone mobile device:
+1. Go to "settings".
+2. Tap on "workplace".
+3. Look at the bottom of the screen to see if there is a company/agency name with the small text of "enrolled" under it.
+
+If the word "enrolled" is not shown at the bottom of the workplace screen and a button named "add account" is displayed instead, this is a finding.</check-content></check></Rule></Group><Group id="V-58971"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73401r1_rule" severity="medium" weight="10.0"><version>MSWP-81-501408</version><title>Windows Phone 8.1 must be designed to implement protected and secure OS Updates.</title><description>&lt;VulnDiscussion&gt;MOS updates and upgrades are an essential part of the life cycle of modern smartphones and generally occur annually. OS updates need to be a trusted process to prevent compromise of OS code, drivers, code signing, and malware injection. That process needs to be delivered over a securely encrypted and mutually authenticated method. If the MOS update process security cannot be documented, then the ability to disable updates or manage their availability by MDM is an acceptable option. The UBE action on the mobile device ensures that all approved (whitelist) apps will receive important functional and security updates, in addition to system security updates.
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64365r2_fix">This requirement is enforced via User Based Enforcement (UBE).
+
+The procedure for the user to follow is:
+1. From the Start page, swipe left to get to the App list, tap Settings.
+2. In the Settings list, tap "phone update".
+3. If a setting called "Automatically download updates" is shown, uncheck that check box.
+
+NOTE: This step has to be done before a device has been enrolled into management by a DoD MDM:
+
+4. Return to the App list.
+5. Find the "Store" app, and tap on it.
+6. Tap on the menu (look for 3 dots) on the lower right of the screen, and then tap on "settings".
+7. Scroll down to App updates, and slide the toggle for "Update apps automatically" to Off.</fixtext><fix id="F-64365r2_fix" /><check system="C-59799r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed on both the MDM administration console and the Windows Phone mobile device.
+
+On the MDM administration console:
+1. Ask the MDM administrator to create or modify a temporary policy to enable the "Store" application.
+2. Change that setting value to be enabled.
+3. Deploy that updated policy to the test device.
+4. After the phone procedure below is completed, push the STIG enforcement policy to the device. This ensures that the Store app is once again restricted.
+
+This validation procedure is performed on the Windows Phone mobile device:
+1. From the Start page, swipe left to get to the App list, tap Settings.
+2. In the Settings list, tap "phone update".
+3. Verify that if a setting called "Automatically download updates" is shown, that check box is unchecked.
+4. Return to the App list.
+5. Find the "Store" app, and tap on it.
+6. Tap on the menu (look for 3 dots) on the lower right of the screen, and then tap on "settings".
+7. Scroll down to App updates, and verify that the "Update apps automatically" check box is turned Off.
+
+If the phone update "Automatically download updates" check box is checked or the Store app's setting for "Update apps automatically" check box is turned On, this is a finding.</check-content></check></Rule></Group><Group id="V-58973"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73403r1_rule" severity="medium" weight="10.0"><version>MSWP-81-501409</version><title>Windows Phone 8.1 must disable split-tunneling on the VPN client.</title><description>&lt;VulnDiscussion&gt;Without strong mutual authentication, a mobile device may connect to an unauthorized network. In many cases, the user may falsely believe that the device is connected to an authorized network and then provide authentication credentials and other sensitive information. A strong bidirectional, cryptographically based authentication method over VPN mitigates this risk.
+
+For Windows Phone 8.1, this requirement is needed to prevent access to cloud services like OneDrive by OS applications and components such as:
+
+Office Hub/Applications
+OneNote
+Backup
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64367r2_fix">Configure the MDM system to enforce a VPN profile that sets the connection to be Forced Tunnel. 
+
+Configure the MDM settings as follows:
+1. Create a new VPN profile, or modify an existing one that has a configuration setting that disables the setting for "Split Tunnel".
+2. Deploy the policy to managed devices.</fixtext><fix id="F-64367r2_fix" /><check system="C-59801r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is only performed on the MDM system.
+
+1. Ask the MDM administrator to review the current VPN profile for Windows Phone 8.1 devices.
+2. Find the setting in the profile that controls the use of "Split Tunneling".
+3. Verify that the setting is set to disabled or false.
+
+If the VPN profile's setting for allowing "Split Tunneling" is set to allowed, this is a finding.</check-content></check></Rule></Group><Group id="V-58975"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73405r1_rule" severity="medium" weight="10.0"><version>MSWP-81-501411</version><title>Windows Phone 8.1 must have a mechanism to restrict capabilities of applications and OS components that leverage cloud storage by blocking access to OneDrive at the firewall level.</title><description>&lt;VulnDiscussion&gt;While backup and collaboration of data is useful from a productivity perspective, if that same data can be shared to public locations through cloud storage services, data leakage scenarios are possible, enabling sensitive data to be shared outside of secure DoD locations. To mitigate these threats, the ability to store or backup data in public cloud areas should be blocked.
+
+For Windows Phone 8.1, this requirement is needed to prevent access to cloud services like OneDrive by OS applications and components such as:
+
+Office Hub/Applications
+OneNote
+Backup
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64369r2_fix">Configure firewall settings for the VPN Gateway to terminate inbound traffic from mobile devices accessing public OneDrive on the Internet.
+
+Configure the firewall for VPN as follows: 
+1. Have the firewall administrator add rules that block outbound access to OneDrive.
+ 
+Block access to these domains: 
+"*.live.com"
+"*.live.net"
+"*.livefilestore.com"
+"*.1drv.com"
+
+This is one of 5 implementation requirements that work together to prevent access to cloud services.</fixtext><fix id="F-64369r2_fix" /><check system="C-59805r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is performed only on the firewall(s) that control VPN Gateway access for mobile devices accessing public OneDrive on the Internet.
+
+On the firewall administration console: 
+1. Ask the firewall administrator to verify that a rule exists that blocks outbound access to OneDrive.
+2. Verify there is a rule to block access to all of these domains: 
+"*.live.com"
+"*.live.net"
+"*.livefilestore.com"
+"*.1drv.com"
+
+If the firewall for the DoD VPN does not have rules prohibiting outbound traffic to "*.live.com",
+"*.live.net",
+"*.livefilestore.com", and
+"*.1drv.com", this is a finding.</check-content></check></Rule></Group><Group id="V-58977"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73407r1_rule" severity="medium" weight="10.0"><version>MSWP-81-501412</version><title>Windows Phone 8.1 must require an Always On VPN session when used.</title><description>&lt;VulnDiscussion&gt;Without strong mutual authentication, a mobile device may connect to an unauthorized network. In many cases, the user may falsely believe that the device is connected to an authorized network and then provide authentication credentials and other sensitive information. A strong bidirectional, cryptographically based authentication method over VPN mitigates this risk. A VPN can be configured to time out when idle, which, depending on the configuration for a triggered connection, might enable scenarios where the VPN is not on and unprotected access to the Internet is possible. Requiring the VPN connection to be Always On ensures that the VPN is at all times protecting and securing traffic.
+
+For Windows Phone 8.1, this configuration supports the DoD requirement that applications cannot access or store data to cloud storage services.
+
+For Windows Phone 8.1, this requirement is needed to prevent access to cloud services like OneDrive by OS applications and components such as:
+
+Office Hub/Applications
+OneNote
+Backup
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64371r2_fix">Configure the MDM system to enforce a VPN profile that sets the connection to be an Always On connection. 
+
+Configure the MDM settings as follows:
+1. Create a new VPN profile, or modify an existing one that has a configuration setting that enforces the setting for "Always On".
+2. Deploy the policy to managed devices.</fixtext><fix id="F-64371r2_fix" /><check system="C-59807r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>This validation procedure is only performed on the MDM system.
+
+1. Ask the MDM administrator to review the current VPN profile for Windows Phone 8.1 devices.
+2. Find the setting in the profile that controls the use of an "Always On" VPN connection.
+3. Verify that the setting is set to required.
+
+If the VPN profile's setting for "Always On" is not set to required, this is a finding.</check-content></check></Rule></Group><Group id="V-58979"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73409r1_rule" severity="medium" weight="10.0"><version>MSWP-81-501413</version><title>Windows Phone 8.1 must have a mechanism to restrict capabilities of applications and OS components that leverage cloud storage by disabling the Backup feature.</title><description>&lt;VulnDiscussion&gt;While backup and collaboration of data is useful from a productivity perspective, if that same data can be shared to public locations through cloud storage services, data leakage scenarios are possible, enabling sensitive data to be shared outside of secure DoD locations. To mitigate these threats, the ability to store or backup data in public cloud areas should be blocked.
+
+For Windows Phone 8.1, this requirement is needed to prevent access to cloud services like OneDrive by OS applications and components such as:
+
+Office Hub/Applications
+OneNote
+Backup
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64373r2_fix">Configure a User Based Enforcement (UBE) to disable all Windows Phone Backup functions.
+
+For Windows Phone 8.1, the following procedure must be followed:
+1. From the Start page, swipe to the left to show the App list.
+2. Find and tap on "Settings".
+3. In the Settings list, tap on "backup".
+4. Tap on "apps+settings", then slide the toggle for the setting "Settings backup" to Off. You will see a warning that no more backups will occur. Confirm change by tapping on "turn off". 
+5. Tap the phone's back button.
+6. Tap on "text messages", then, in that setting, slide the toggle for "Text message backup" to Off.
+7. Tap the phone's back button.
+8. Tap on "photos+videos", then, in that setting, select the "Don't upload" radio button for both the Photos and Videos settings.</fixtext><fix id="F-64373r2_fix" /><check system="C-59809r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>The procedure is performed only on the Windows Phone 8.1 device.
+
+1. From the Start page, swipe to the left to show the App list.
+2. Find and tap on "Settings".
+3. In the Settings list, tap on "backup".
+4. Tap on "apps+settings", then verify the toggle for the setting "Settings backup" to set to Off. 
+5. Tap the phone's back button.
+6. Tap on "text messages", then, in that setting, verify the toggle for "Text message backup" to set to Off.
+7. Tap the phone's back button.
+8. Tap on "photos+videos", then, in that setting, verify the "Don't upload" radio button for both the Photos and Videos settings is selected.
+
+If the Backup app under settings does not have the "apps+settings" toggle set to Off, the "text messages" toggle set to Off, and the "Don't upload" radio button selected for Photos and Videos in "photos+videos, this is a finding.</check-content></check></Rule></Group><Group id="V-59025"><title>PP-MDF-991000</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-73455r1_rule" severity="medium" weight="10.0"><version>MSWP-81-501414</version><title>Windows Phone 8.1 must be running build 8.10.15116 or higher (GDR2).</title><description>&lt;VulnDiscussion&gt;Throughout ongoing operating system development, Windows Phone has a process of MOS updates to add new features including improved enterprise and security capabilities as well as fixes to issues discovered after its initial release. These releases are termed General Distribution Releases (GDR). In working with DoD and our enterprise customers worldwide, requirements and issues were discovered that resulted in necessary changes to the Windows Phone MOS. One of those changes in the General Distribution Release 2 (GDR2) provides the capability needed to implement the VPN process required by the DoD to ensure that personal cloud services are blocked from use by the end user, and is the key to success for all associated requirements.
+
+SFR ID: FMT_SMF.1.1 #42&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Windows Phone OS 8.1</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Windows Phone OS 8.1</dc:subject><dc:identifier>2663</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-64419r1_fix">Ensure that the devices being used are running operating system build 8.10.15116 or higher (GDR2).</fixtext><fix id="F-64419r1_fix" /><check system="C-59815r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Windows Phone 8.1.xml" /><check-content>The procedure is performed only on the Windows Phone 8.1 device.
+
+1. From the Start page swipe to the left to show the App list.
+2. Find and tap on "Settings".
+3. In the Settings list tap on "about".
+4. Tap on the "more info" button.
+5. Verify that the "OS version" number is greater than or equal to 8.10.15116 to meet all DISA STIG requirements including VPN.
+
+If the "OS version" number under settings/About/more info is not greater than or equal to 8.10.15116, this is a finding.</check-content></check></Rule></Group></Benchmark>

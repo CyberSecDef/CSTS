@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xmlns:meta="http://scap.nist.gov/schema/cpe-dictionary-metadata/0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://scap.nist.gov/schema/cpe-dictionary-metadata/0.2 http://nvd.nist.gov/schema/cpe-dictionary-metadata_0.2.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.2.xsd">
+	<generator>
+		<product_name>DISA FSO</product_name>
+		<product_version>13</product_version>
+		<schema_version>2.1</schema_version>
+		<timestamp>2013-01-28T12:00:00</timestamp>
+	</generator>
+	<cpe-item name="cpe:/o:microsoft:windows_7">
+		<title xml:lang="en-US">Microsoft Windows 7</title>
+		<notes xml:lang="en-US">
+			<note>This CPE Name represents version 6.1.7600 of the Windows OS</note>
+		</notes>
+		<!--**CORRECTION** Added check for Windows 7.-->
+		<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_Windows_7_V1R23_STIG_SCAP_1-0_Benchmark-cpe-oval.xml">oval:mil.disa.fso.windows:def:3892</check>
+		<meta:item-metadata modification-date="2010-03-09T12:05:27.740-05:00" status="DRAFT" nvd-id="100461"/>
+	</cpe-item>
+</cpe-list>

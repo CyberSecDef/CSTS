@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd">
+  <generator>
+    <oval:product_name>DISA FSO</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2013-02-21T12:00:00-05:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.fso.windows:def:4398" version="2" class="inventory">
+      <metadata>
+        <title>Microsoft Windows Server 2012 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/o:microsoft:windows_server_2012:-" />
+        <description>A version of Microsoft Windows Server 2012 is installed.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:mil.disa.fso.windows:tst:439800" />
+        <criterion comment="Windows Server 2012 is installed" test_ref="oval:mil.disa.fso.windows:tst:439801" />
+        <criterion comment="Windows Server 2012 R2 is installed" test_ref="oval:mil.disa.fso.windows:tst:439802" negate="true" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4968" version="1" class="inventory">
+      <metadata>
+        <title>Microsoft Windows Server 2012 R2 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/o:microsoft:windows_server_2012:r2" />
+        <description>A version of Microsoft Windows Server 2012 R2 is installed.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:mil.disa.fso.windows:tst:439800" />
+        <criterion comment="Windows Server 2012 R2 is installed" test_ref="oval:mil.disa.fso.windows:tst:439802" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:1061" version="4" class="inventory">
+      <metadata>
+        <title>Microsoft Windows Server 2008 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/o:microsoft:windows_2008" />
+        <description>The operating system installed on the system is Microsoft Windows Server 2008</description>
+      </metadata>
+      <criteria>
+        <criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:mil.disa.fso.windows:tst:106100" />
+        <criterion comment="Windows Server 2008 is installed" test_ref="oval:mil.disa.fso.windows:tst:106101" />
+        <criterion negate="true" comment="Windows Server 2008 R2 is installed" test_ref="oval:mil.disa.fso.windows:tst:106102" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:3174" version="2" class="inventory">
+      <metadata>
+        <title>Microsoft Windows Server 2008 R2 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/o:microsoft:windows_2008:r2" />
+        <description>The operating system installed on the system is Microsoft Windows Server 2008 R2</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:mil.disa.fso.windows:tst:317400" />
+        <criteria operator="OR">
+          <criterion comment="Windows Server 2008 R2 is installed - PA5.2" test_ref="oval:mil.disa.fso.windows:tst:317402" />
+          <criterion comment="Windows Server 2008 R2 is installed - PA5.3" test_ref="oval:mil.disa.fso.windows:tst:317403" />
+        </criteria>
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:3930" version="3" class="inventory">
+      <metadata>
+        <title>Microsoft Windows 8 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 8</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/o:microsoft:windows_8" />
+        <description>A version of Microsoft Windows 8 is installed.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:mil.disa.fso.windows:tst:393000" />
+        <criteria operator="OR">
+          <criterion comment="Windows 8 is installed" test_ref="oval:mil.disa.fso.windows:tst:393001" />
+        </criteria>
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4969" version="1" class="inventory">
+      <metadata>
+        <title>Microsoft Windows 8.1 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 8</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/o:microsoft:windows_8.1" />
+        <description>A version of Microsoft Windows 8.1 is installed.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:mil.disa.fso.windows:tst:393000" />
+        <criteria operator="OR">
+          <criterion comment="Windows 8.1 is installed" test_ref="oval:mil.disa.fso.windows:tst:393002" />
+        </criteria>
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:3892" version="1" class="inventory">
+      <metadata>
+        <title>Microsoft Windows 7 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/o:microsoft:windows_7" />
+        <description>The operating system installed on the system is Microsoft Windows 7</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:mil.disa.fso.windows:tst:389200" />
+        <criterion comment="Windows 7 is installed" test_ref="oval:mil.disa.fso.windows:tst:389201" />
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:228" version="3" class="inventory">
+      <metadata>
+        <title>Microsoft Windows Vista is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Vista</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/o:microsoft:windows_vista" />
+        <description>The operating system installed on the system is Microsoft Windows Vista</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2007-02-13T12:46:06">
+              <contributor organization="Secure Elements, Inc.">Dragos Prisaca</contributor>
+            </submitted>
+            <status_change date="2007-02-13T14:53:06-04:00">DRAFT</status_change>
+            <status_change date="2007-03-21T16:17:12.775-04:00">INTERIM</status_change>
+            <status_change date="2007-04-13T15:13:39.760-04:00">ACCEPTED</status_change>
+            <modified comment="Added CPE reference." date="2007-04-30T07:48:00.893-04:00">
+              <contributor organization="The MITRE Corporation">Jonathan Baker</contributor>
+            </modified>
+            <status_change date="2007-04-30T07:56:25.929-04:00">INTERIM</status_change>
+            <status_change date="2007-05-23T15:05:40.286-04:00">ACCEPTED</status_change>
+            <modified comment="Vista test updated because of the conflictions with Server 2008" date="2008-03-26T10:51:02.210-04:00">
+              <contributor organization="Secure Elements, Inc.">Sudhir Gandhe</contributor>
+            </modified>
+            <status_change date="2008-03-31T04:00:22.690-04:00">INTERIM</status_change>
+            <modified comment="Changed the CPE reference" date="2008-04-04T11:17:00.315-04:00">
+              <contributor organization="The MITRE Corporation">Andrew Buttner</contributor>
+            </modified>
+            <status_change date="2008-04-21T04:00:18.129-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria operator="AND">
+        <criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:org.mitre.oval:tst:99" />
+        <criterion comment="Windows Vista is installed" test_ref="oval:org.mitre.oval:tst:7914" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:tst:439800" version="1" comment="the installed operating system is part of the Microsoft Windows family" check_existence="at_least_one_exists" check="only one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:439800" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:439800" />
+    </family_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:439801" version="1" comment="Windows Server 2012 is installed" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:439801" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:439801" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:439802" version="1" comment="Windows Server 2012 R2 is installed" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:439801" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:439802" />
+    </registry_test>
+    <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:tst:106100" version="1" comment="the installed operating system is part of the Microsoft Windows family" check_existence="at_least_one_exists" check="only one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:106100" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:106100" />
+    </family_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:106101" version="2" comment="Windows Server 2008 is installed" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:106101" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:106101" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:106102" version="4" comment="Windows Server 2008 R2 is installed" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:106101" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:106102" />
+    </registry_test>
+    <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:tst:317400" version="1" comment="the installed operating system is part of the Microsoft Windows family" check_existence="at_least_one_exists" check="only one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:317400" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:317400" />
+    </family_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" deprecated="true" id="oval:mil.disa.fso.windows:tst:317401" version="2" comment="Windows Server 2008 is installed" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:317401" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:317401" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:317402" version="2" comment="Windows Server 2008 R2 is installed - PA5.2" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:317401" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:317402" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:317403" version="1" comment="Windows Server 2008 R2 is installed - PA5.3" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:317401" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:317403" />
+    </registry_test>
+    <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:tst:393000" version="1" comment="the installed operating system is part of the Microsoft Windows family" check_existence="at_least_one_exists" check="only one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:393000" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:393000" />
+    </family_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:393001" version="1" comment="Windows 8 is installed" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:393001" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:393001" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:393002" version="1" comment="Windows 8.1 is installed" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:393001" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:393002" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:389201" version="1" comment="Windows 7 is installed" check_existence="at_least_one_exists" check="at least one">
+      <!--**MAPPED**oval:org.mitre.oval:tst:10792;4-->
+      <object object_ref="oval:mil.disa.fso.windows:obj:389201" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:389201" />
+    </registry_test>
+    <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:tst:389200" version="1" comment="the installed operating system is part of the Microsoft Windows family" check_existence="at_least_one_exists" check="only one">
+      <!--**MAPPED**oval:org.mitre.oval:tst:99;1-->
+      <object object_ref="oval:mil.disa.fso.windows:obj:389200" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:389200" />
+    </family_test>
+    <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:org.mitre.oval:tst:99" version="1" comment="the installed operating system is part of the Microsoft Windows family" check_existence="at_least_one_exists" check="only one">
+      <object object_ref="oval:org.mitre.oval:obj:99" />
+      <state state_ref="oval:org.mitre.oval:ste:99" />
+    </family_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:org.mitre.oval:tst:7914" version="1" comment="Windows Vista is installed" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:org.mitre.oval:obj:5590" />
+      <state state_ref="oval:org.mitre.oval:ste:3828" />
+    </registry_test>
+  </tests>
+  <objects>
+    <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:obj:439800" version="1" comment="Family" />
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:439801" version="1" comment="This registry key identifies the Windows ProductName">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Microsoft\Windows NT\CurrentVersion</key>
+      <name datatype="string">ProductName</name>
+    </registry_object>
+    <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:obj:106100" version="1" comment="This is the default family object. Only one family object should exist." />
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:106101" version="1" comment="This registry key identifies the Windows ProductName">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Microsoft\Windows NT\CurrentVersion</key>
+      <name datatype="string">ProductName</name>
+    </registry_object>
+    <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:obj:317400" version="1" comment="This is the default family object. Only one family object should exist." />
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:317401" version="1" comment="This registry key identifies the Windows ProductName">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Microsoft\Windows NT\CurrentVersion</key>
+      <name datatype="string">ProductName</name>
+    </registry_object>
+    <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:obj:393000" version="1" comment="Family" />
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:393001" version="1" comment="This registry key identifies the Windows ProductName">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Microsoft\Windows NT\CurrentVersion</key>
+      <name datatype="string">ProductName</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:389201" version="1" comment="This registry key identifies the Windows ProductName">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Microsoft\Windows NT\CurrentVersion</key>
+      <name datatype="string">ProductName</name>
+    </registry_object>
+    <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:obj:389200" version="1" comment="This is the default family object. Only one family object should exist." />
+    <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:org.mitre.oval:obj:99" version="1" comment="This is the default family object. Only one family object should exist." />
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:org.mitre.oval:obj:5590" version="1" comment="This registry key  ProductName">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Microsoft\Windows NT\CurrentVersion</key>
+      <name datatype="string">ProductName</name>
+    </registry_object>
+  </objects>
+  <states>
+    <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:ste:439800" version="1" comment="Microsoft Windows family">
+      <family operation="equals">windows</family>
+    </family_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:439801" version="1" comment="The registry key matches with Windows Server 2012">
+      <value operation="pattern match">^[a-zA-Z0-9\(\)\s]*2012[a-zA-Z0-9\(\)\s]*$</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:439802" version="2" comment="The registry key matches with Windows Server 2012 R2">
+      <value operation="pattern match">^[a-zA-Z0-9\(\)\s]*2012 [rR]2[a-zA-Z0-9\(\)\s]*$</value>
+    </registry_state>
+    <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:ste:106100" version="3" comment="Microsoft Windows family">
+      <family operation="equals">windows</family>
+    </family_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:106101" version="4" comment="The registry key matches with 2008">
+      <value operation="pattern match">^[a-zA-Z0-9\(\)[:space:]]*2008[a-zA-Z0-9\(\)\-[:space:]]*$</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:106102" version="4" comment="The registry key matches with 2008 R2">
+      <value operation="pattern match">^[a-zA-Z0-9\(\)[:space:]]*2008 [Rr]2[a-zA-Z0-9\(\)[:space:]]*$</value>
+    </registry_state>
+    <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:ste:317400" version="1" comment="Microsoft Windows family">
+      <family operation="equals">windows</family>
+    </family_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" deprecated="true" id="oval:mil.disa.fso.windows:ste:317401" version="2" comment="The registry key matches with 2008">
+      <value operation="pattern match">^[a-zA-Z0-9\(\)[:space:]]*2008[a-zA-Z0-9\(\)[:space:]]*$</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:317402" version="2" comment="The registry key matches with 2008 R2 - PA5.2">
+      <value operation="pattern match">^[a-zA-Z0-9\(\)[:space:]]*2008 [Rr]2[a-zA-Z0-9\(\)[:space:]]*$</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:317403" version="1" comment="The registry key matches with 2008 R2 - PA5.3">
+      <value operation="pattern match">^[a-zA-Z0-9\(\)\s]*2008 [Rr]2[a-zA-Z0-9\(\)\s]*$</value>
+    </registry_state>
+    <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:ste:393000" version="1" comment="Microsoft Windows family">
+      <family operation="equals">windows</family>
+    </family_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:393001" version="1" comment="The registry key matches with Windows 8">
+      <value operation="pattern match">^[a-zA-Z0-9\(\)\s]*[Ww][Ii][Nn][Dd][Oo][Ww][Ss] 8[a-zA-Z0-9\(\)\s]*$</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:393002" version="1" comment="The registry key matches with Windows 8.1">
+      <value operation="pattern match">^[a-zA-Z0-9\(\)\s]*[Ww][Ii][Nn][Dd][Oo][Ww][Ss] 8\.1[a-zA-Z0-9\(\)\s]*$</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:389201" version="1" comment="The registry key matches with Windows 7">
+      <!--**MAPPED**oval:org.mitre.oval:ste:5027;4-->
+      <value operation="pattern match">^.*[Ww][Ii][Nn][Dd][Oo][Ww][Ss] 7.*$</value>
+    </registry_state>
+    <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:ste:389200" version="1" comment="Microsoft Windows family">
+      <!--**MAPPED**oval:org.mitre.oval:ste:99;2-->
+      <!--**DOWNGRADE**<family operation="case insensitive equals">windows</family>-->
+      <family operation="equals">windows</family>
+    </family_state>
+    <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:org.mitre.oval:ste:99" version="1" comment="Microsoft Windows family">
+      <family>windows</family>
+    </family_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:org.mitre.oval:ste:3828" version="1" comment="The registry key matches with Vista">
+      <value operation="pattern match">.*[Vv]ista.*</value>
+    </registry_state>
+  </states>
+</oval_definitions>
+

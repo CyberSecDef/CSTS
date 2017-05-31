@@ -1,0 +1,25 @@
+<form name="form1" text="Cyber Security Tool Suite - cleanUsbHistory Settings" clientSizeX="525" clientSizeY="185" FormBorderStyle="fixedDialog">
+	<controls>
+
+		<control type="checkbox" id="chkDiskDrive" name="chkDiskDrive" locationX="5" locationY="5" sizeX="175" sizeY="25" text="Disk Drive" checked="true"/>
+		<control type="checkbox" id="chkGenericUsbHub" name="chkGenericUsbHub" locationX="5" locationY="25" sizeX="175" sizeY="25" text="Generic USB Hub" checked="true"/>
+		<control type="checkbox" id="chkKeyboard" name="chkKeyboard" locationX="5" locationY="45" sizeX="175" sizeY="25" text="Keyboard" checked=""/>
+		<control type="checkbox" id="chkMouse" name="chkMouse" locationX="5" locationY="65" sizeX="175" sizeY="25" text="Mouse" checked=""/>
+		<control type="checkbox" id="chkSmartCard" name="chkSmartCard" locationX="5" locationY="85" sizeX="175" sizeY="25" text="Smart Card Reader" checked=""/>
+		<control type="checkbox" id="chkUSBCompositeDevice" name="chkUSBCompositeDevice" locationX="5" locationY="105" sizeX="175" sizeY="25" text="USB Composite Device" checked=""/>
+		
+		<control type="checkbox" id="chkUsbMassStorageDevice" name="chkUsbMassStorageDevice" locationX="185" locationY="5" sizeX="175" sizeY="25" text="USB Mass Storage Device" checked="true"/>
+		<control type="checkbox" id="chkUsbInputDevice" name="chkUsbInputDevice" locationX="185" locationY="25" sizeX="175" sizeY="25" text="USB Input Device" checked=""/>
+		<control type="checkbox" id="chkUsbRootHub" name="chkUsbRootHub" locationX="185" locationY="45" sizeX="175" sizeY="25" text="USB Root Hub" checked=""/>
+		<control type="checkbox" id="chkUSBSTOR" name="chkUSBSTOR" locationX="185" locationY="65" sizeX="175" sizeY="25" text="USBStor " checked="true"/>
+		<control type="checkbox" id="chkWPD" name="chkWPD" locationX="185" locationY="85" sizeX="175" sizeY="25" text="Windows Portable Device" checked="true"/>
+		<control type="checkbox" id="chkAll" name="chkAll" locationX="185" locationY="105" sizeX="175" sizeY="25" text="All" checked=""/>
+		
+		<control type="checkbox" id="Test" name="Test" locationX="400" locationY="5" sizeX="175" sizeY="25" text="Test Only" checked=""/>
+		<control type="checkbox" id="Reboot" name="Reboot" locationX="400" locationY="30" sizeX="175" sizeY="25" text="Reboot Host" checked=""/>
+		
+		
+		<control type="button" id="btnExecute" name="btnExecute" text="Execute" locationX="5" locationY="130" sizeX="340" sizeY="50" backColor="#FFCCCCCC"/>
+
+	</controls>
+</form>

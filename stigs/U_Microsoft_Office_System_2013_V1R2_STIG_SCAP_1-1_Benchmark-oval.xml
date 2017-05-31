@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:windows-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd">
+  <generator>
+    <oval:product_name>DISA</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2015-03-27T10:55:53.281-05:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:1" version="1" class="compliance">
+      <metadata>
+        <title>DTOO191 - ActiveX control initialization for Office</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>ActiveX controls can adversely affect a computer directly. In addition, malicious code can be used to compromise an ActiveX control and attack a computer. To indicate the safety of an ActiveX control, developers can denote them as Safe For Initialization (SFI). SFI indicates a control is safe to open and run, and it is not capable of causing a problem for any computer, regardless of whether it has persisted data values or not. If a control is not marked SFI, it is possible the control could adversely affect a computer—or it could mean the developers did not test the control in all situations and are not sure whether it might be compromised in the future. By default, if a control is marked SFI, the application loads the control in safe mode and uses persisted values (if any). If the control is not marked SFI, the application loads the control in unsafe mode with persisted values (if any), or uses the default (first-time initialization) settings. In both situations, the Message Bar informs users the controls have been disabled and prompts them to respond.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\ActiveX Control Initialization">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\ActiveX Control Initialization" test_ref="oval:mil.disa.stig.officesystem2013:tst:1000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:2" version="1" class="compliance">
+      <metadata>
+        <title>DTOO196 - Mix of policy and user locations</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>When Microsoft Office files are opened from trusted locations, all the content in the files is enabled and active. Users are not notified about any potential risks that might be contained in the files, such as unsigned macros, ActiveX controls, or links to content on the Internet.
+By default, users can specify any location as a trusted location, and a computer can have a combination of user-created, OCT-created, and Group Policy–created trusted locations.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Allow mix of policy and user locations">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Allow mix of policy and user locations" test_ref="oval:mil.disa.stig.officesystem2013:tst:2000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:3" version="1" class="compliance">
+      <metadata>
+        <title>DTOO181 - PNG as Output Format</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Office files can save graphic files in Portable Network Graphics (PNG) format to improve the quality of the graphics when documents are saved as web pages. The PNG graphic file format (.png) is used for a wide range of graphics, from small images (such as bullets and banners) to complex images (such as photographs), and can offer better image fidelity and smaller file sizes than some other formats. However, PNG graphics cannot be displayed by many earlier web browsers, such as Microsoft Internet Explorer version 5 or earlier.
+Office applications do not save graphics in the PNG format by default but can be configured to save in PNG format by explicitly enabling this setting. 
+By disabling this setting, future zero-day attacks that target PNG files will be thwarted.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Browsers\Allow PNG as an output format">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Browsers\Allow PNG as an output format" test_ref="oval:mil.disa.stig.officesystem2013:tst:3000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:4" version="1" class="compliance">
+      <metadata>
+        <title>DTOO212 - Control Blogging </title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>The blogging feature in Office products enables users to compose blog entries and post them to their blogs directly from Office, without using any additional software.
+By default, users can post blog entries to any compatible blogging service provider, including Windows Live Spaces, Blogger, a SharePoint or Community Server site, and others. Leaving this capability enabled introduces the risk of users posting confidential and FOUO date to non-DoD sites.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Control Blogging">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Control Blogging" test_ref="oval:mil.disa.stig.officesystem2013:tst:4000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:5" version="1" class="compliance">
+      <metadata>
+        <title>DTOO200 - Allow users to read with browsers</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>The Windows Rights Management Add-on for Internet Explorer provides a way for users who do not use the 2013 Office release to view, but not alter, files with restricted permissions. By default, IRM-enabled files are saved in a format that cannot be viewed by using the Windows Rights Management Add-on. If this setting is enabled, an embedded rights-managed HTML version of the content is saved with each IRM-enabled file, which can be viewed in Internet Explorer using the add-on, representing the risk of documents being read by those without the rights and not intended to have access to the document..</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Allow users with earlier versions of Office to read with browsers">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Allow users with earlier versions of Office to read with browsers" test_ref="oval:mil.disa.stig.officesystem2013:tst:5000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:6" version="1" class="compliance">
+      <metadata>
+        <title>DTOO186 - Trust Bar Notifications</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>The Message Bar in Office applications is used to identify security issues, such as unsigned macros or potentially unsafe add-ins. When such issues are detected, the application disables the unsafe feature or content and displays the Message Bar at the top of the active window. The Message Bar informs the users about the nature of the security issue and, in some cases, provides the users with an option to enable the potentially unsafe feature or content, which could harm the user's computer.
+By default, if an Office application detects a security issue, the Message Bar is displayed. However, this configuration can be modified by users in the Trust Center.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Disable all Trust Bar notifications for security issues" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Disable all Trust Bar notifications for security issues" test_ref="oval:mil.disa.stig.officesystem2013:tst:6000" />
+      </criteria>
+        </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:7" version="1" class="compliance">
+      <metadata>
+        <title>DTOO207 - Document Info Beaconing UI</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>This policy setting controls whether users see a security warning when they open custom Document Information Panels that contain a web beaconing threat.  Web beacons can be used to contact an external server when users open forms. Information could be gathered by the form, or information entered by users could be sent to an external server, exposing the internal users and systems to additional attacks.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Document Information Panel\Document Information Panel Beaconing UI" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Document Information Panel\Document Information Panel Beaconing UI" test_ref="oval:mil.disa.stig.officesystem2013:tst:7000" />
+      </criteria>      
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:8" version="1" class="compliance">
+      <metadata>
+        <title>DTOO184 - Cust. Experience Improvement Program</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>When users choose to participate in the Customer Experience Improvement Program (CEIP), Office applications automatically send information to Microsoft about how the applications are used. This information is combined with other CEIP data to help Microsoft solve problems and to improve the products and features customers use most often. This feature does not collect users' names, addresses, or any other identifying information except the IP address that is used to send the data.
+By default, users have the opportunity to opt into participation in the CEIP the first time they run an Office application. If an organization has policies that govern the use of external resources such as the CEIP, allowing users to opt in to the program might cause them to violate these policies.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Enable Customer Experience Improvement Program" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Enable Customer Experience Improvement Program" test_ref="oval:mil.disa.stig.officesystem2013:tst:8000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:9" version="1" class="compliance">
+      <metadata>
+        <title>DTOO190 - Encr. type for Password Protected files</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>If unencrypted files are intercepted, sensitive information in the files can be compromised. To protect information confidentiality, Microsoft Office application files can be encrypted and password protected. Only users who know the correct password will be able to decrypt such files. Since some encryption types are less secure and easier to breach, Microsoft Enhanced RSA and AES Cryptographic Provider, AES-256, 256-bit should be used when encrypting documents.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encryption type for password protected Office 97-2003 files" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encryption type for password protected Office 97-2003 files" test_ref="oval:mil.disa.stig.officesystem2013:tst:9000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:10" version="1" class="compliance">
+      <metadata>
+        <title>DTOO189 - Encryption Type for Pwd Protected Files</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>If unencrypted files are intercepted, sensitive information in the files can be compromised. To protect information confidentiality, Microsoft Office application files can be encrypted and password protected. Only users who know the correct password will be able to decrypt such files. Since some encryption types are less secure and easier to breach, Microsoft Enhanced RSA and AES Cryptographic Provider, AES-256, 256-bit should be used when encrypting documents.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encryption type for password protected Office Open XML files" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encryption type for password protected Office Open XML files" test_ref="oval:mil.disa.stig.officesystem2013:tst:10000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:11" version="1" class="compliance">
+      <metadata>
+        <title>DTOO182 - Improve Proofing Tools</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>The "Help Improve Proofing Tools" feature collects data about use of the Proofing Tools, such as additions to the custom dictionary, and sends it to Microsoft. After about six months, the feature stops sending data to Microsoft and deletes the data collection file from the user's computer. Although this feature does not intentionally collect personal information, some of the content sent could include items that were marked as spelling or grammar errors, such as proper names and account numbers. However, any numbers such as account numbers, street addresses, and phone numbers are converted to zeroes when the data is collected. Microsoft uses this information solely to improve the effectiveness of the Office Proofing Tools, not to identify users.
+By default, this feature is enabled, if users choose to participate in the Customer Experience Improvement Program (CEIP). If an organization has policies that govern the use of external resources such as the CEIP, allowing the use of the "Help Improve Proofing Tools" feature might cause them to violate these policies..</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ Spelling\Proofing Data Collection\Improve Proofing Tools" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ Spelling\Proofing Data Collection\Improve Proofing Tools" test_ref="oval:mil.disa.stig.officesystem2013:tst:11000" />
+      </criteria>      
+         </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:12" version="1" class="compliance">
+      <metadata>
+        <title>DTOO194 - Hyperlink warnings for Office</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Unsafe hyperlinks are links that might pose a security risk if users click them. Clicking an unsafe link could compromise the security of sensitive information or harm the computer.
+Links that Office considers unsafe include links to executable files, TIFF files, and Microsoft Document Imaging (MDI) files. Other unsafe links are those using protocols considered to be unsafe, including msn, nntp, mms, outlook, and stssync.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Suppress hyperlink warnings" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Suppress hyperlink warnings" test_ref="oval:mil.disa.stig.officesystem2013:tst:12000" />
+      </criteria>
+      </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:13" version="1" class="compliance">
+      <metadata>
+        <title>DTOO206 - Incl. Doc. properties for PDF and XPS</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>If the Microsoft Save as PDF or XPS Add-in for Microsoft Office Programs is installed, document properties are saved as metadata when users save or publish files using the PDF or XPS commands in Access 2013, Excel 2013, InfoPath 2013, PowerPoint 2013, and Word 2013 using the PDF or XPS or Publish. If this metadata contains sensitive information, saving it with the file could compromise security.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Microsoft Save As PDF and XPS add-ins\Disable inclusion of document properties in PDF and XPS output"  negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Microsoft Save As PDF and XPS add-ins\Disable inclusion of document properties in PDF and XPS output" test_ref="oval:mil.disa.stig.officesystem2013:tst:13000" />
+      </criteria> 
+        </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:14" version="1" class="compliance">
+      <metadata>
+        <title>DTOO198 - Internet Fax Feature</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Excel, PowerPoint, and Word users can use the Internet Fax feature to send documents to fax recipients through an Internet fax service provider. If your organization has policies that govern the time, place, or manner in which faxes are sent, this feature could help users evade those policies.
+By default, Office users can use the Internet Fax feature.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Services\Fax\Disable Internet Fax feature"  negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Services\Fax\Disable Internet Fax feature" test_ref="oval:mil.disa.stig.officesystem2013:tst:14000" />
+      </criteria> 
+       </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:15" version="1" class="compliance">
+      <metadata>
+        <title>DTOO183 - Opt-In Wizard on first run use</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>The Opt-in Wizard displays the first time users run a 2013 Microsoft Office application, which allows them to opt into Internet-based services that will help improve their Office experience, such as Microsoft Update, the Customer Experience Improvement Program, Office Diagnostics, and Online Help. If an organization has policies that govern the use of such external resources, allowing users to opt in to these services might cause them to violate the policies.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Disable Opt-in Wizard on first run"  negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Disable Opt-in Wizard on first run" test_ref="oval:mil.disa.stig.officesystem2013:tst:15000" />
+      </criteria> 
+        </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:16" version="1" class="compliance">
+      <metadata>
+        <title>DTOO195 - Disable Password to Open UI</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>If 2013 Office users add passwords to documents, other users can be prevented from opening the documents. This capability can provide an extra level of protection to documents already protected by access control lists, or provide a means of securing documents not protected by file-level security.
+By default, users can add passwords to Excel 2013 workbooks, PowerPoint 2013 presentations, and Word 2013 documents from the Save or Save As dialog box by clicking Tools, clicking General Options, and entering appropriate passwords to open or modify the documents. If this configuration is changed, the General Options dialog box for saving with a password will not be available for the user to password-protect their documents.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Disable password to open UI"  negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Disable password to open UI" test_ref="oval:mil.disa.stig.officesystem2013:tst:16000" />
+      </criteria> 
+        </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:17" version="1" class="compliance">
+      <metadata>
+        <title>DTOO197 - Document Manifests</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>An XML expansion pack is the group of files that constitutes a Smart Document in Excel and Word. One or more components that provide the logic needed for a Smart Document are packaged by using an XML expansion pack. These components can include any type of file, including XML schemas, Extensible Stylesheet Language Transforms (XSLTs), dynamic-link libraries (DLLs), and image files, as well as additional XML files, HTML files, Word files, Excel files, and text files.
+The key component to building an XML expansion pack is creating an XML expansion pack manifest file. By creating this file, the locations of all files that make up the XML expansion pack are specified, as well as information that instructs Office 2013 how to set up the files for the Smart Document. The XML expansion pack can also contain information about how to set up other files, such as how to install and register a COM object required by the XML expansion pack.
+XML expansion packs can be used to initialize and load malicious code, which might affect the stability of a computer and lead to data loss. Office applications can load an XML expansion pack manifest file with a Smart Document.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Smart Documents (Word, Excel\Disable Smart Document's use of manifests"  negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Smart Documents (Word, Excel\Disable Smart Document's use of manifests" test_ref="oval:mil.disa.stig.officesystem2013:tst:17000" />
+      </criteria>  
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:18" version="1" class="compliance">
+      <metadata>
+        <title>DTOO208 - Office client polling from Office Server</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Users of Office applications can see and use links to Microsoft Office SharePoint Server sites from those applications. Administrators configure published links to Office applications during initial deployment, and can add or change links as part of regular operations. These links appear on the My SharePoint Sites tab of the Open, Save, and Save As dialog boxes when opening and saving documents from these applications. Links can be targeted so that they only appear to users who are members of particular audiences.
+If a malicious person gains access to the list of published links, they could modify the links to point to unapproved sites, which could make sensitive data vulnerable to exposure.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Server Settings\Disable the Office client from polling the SharePoint Server for published links">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Server Settings\Disable the Office client from polling the SharePoint Server for published links" test_ref="oval:mil.disa.stig.officesystem2013:tst:18000" />
+      </criteria>
+    </definition>  
+        <definition id="oval:mil.disa.stig.officesystem2013:def:19" version="1" class="compliance">
+      <metadata>
+        <title>DTOO201 - Connection permissions verification</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Users are not required to connect to the network to verify permissions. If users do not need their licenses confirmed when attempting to open Office documents, they might be able to access documents after their licenses have been revoked. Also, it is not possible to log the usage of files with restricted permissions if users' licenses are not confirmed.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Always require users to connect to verify permission">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Always require users to connect to verify permission" test_ref="oval:mil.disa.stig.officesystem2013:tst:19000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:20" version="1" class="compliance">
+      <metadata>
+        <title>DTOO185 - Do not receive Automatic small updates</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Having access to updates, add-ins, and patches on the Office Online website can help users ensure computers are up to date and equipped with the latest security patches. However, to ensure updates are tested and applied in a consistent manner, many organizations prefer to roll out updates using a centralized mechanism such as Microsoft Systems Center or Windows Server Update Services.
+By default, users are allowed to download updates, add-ins, and patches from the Office Online Web site to keep their Office applications running smoothly and securely. If an organization has policies that govern the use of external resources such as Office Online, allowing users to download updates might cause them to violate these policies.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Automatically receive small updates to improve reliability">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Automatically receive small updates to improve reliability" test_ref="oval:mil.disa.stig.officesystem2013:tst:20000" />
+      </criteria>    
+      </definition> 
+      <definition id="oval:mil.disa.stig.officesystem2013:def:21" version="1" class="compliance"> 
+      <metadata>  
+      <title>DTOO193 - Automation Security</title>
+      <affected family="windows">  
+      <platform>Microsoft Windows 7</platform>
+      <platform>Microsoft Windows Server 2008 R2</platform>  
+      <platform>Microsoft Windows Server 2012</platform>  
+      <platform>Microsoft Windows 8</platform>
+      <platform>Microsoft Windows 8.1</platform>   
+      <product>Microsoft Office System 2013</product>
+      </affected>  
+      <description>When a separate program is used to launch Microsoft Office Excel, PowerPoint, or Word programmatically, any macros can run in the programmatically opened application without being blocked. This functionality could allow an attacker to use automation to run malicious code in Excel, PowerPoint, or Word.</description> 
+      </metadata> 
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Automation Security" negate="false"> 
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Automation Security" test_ref="oval:mil.disa.stig.officesystem2013:tst:21000" />  
+        </criteria> 
+        </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:22" version="1" class="compliance">
+      <metadata>
+        <title>DTOO203 - Legacy Format signatures</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Office applications use the XML-based XMLDSIG format to attach digital signatures to documents, including Office 97-2003 binary documents. XMLDSIG signatures are not recognized by Office 2003 applications or previous versions. If an Office user opens an Excel, PowerPoint, or Word binary document with an XMLDSIG signature attached, the signature will be lost.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Signing\Legacy format signatures">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Signing\Legacy format signatures" test_ref="oval:mil.disa.stig.officesystem2013:tst:22000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:23" version="1" class="compliance">
+      <metadata>
+        <title>DTOO192 - Load controls for forms3</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>ActiveX controls are Component Object Model (COM) objects and have unrestricted access to users' computers. ActiveX controls can access the local file system and change the registry settings of the operating system. If a malicious user repurposes an ActiveX control to take over a user's computer, the effect could be significant.
+To help improve security, ActiveX developers can mark controls as Safe For Initialization (SFI), which means that the developer states that the controls are safe to open and run and not capable of causing harm to any computers. If a control is not marked SFI, the control could adversely affect a computer--or it could mean the developers did not test the control in all situations and are not sure whether their control might be compromised at some future date.
+SFI controls run in safe mode, which limits their access to the computer. For example, a worksheet control can both read and write files when it is in unsafe mode, but perhaps only read from files when it is in safe mode. This functionality allows the control to be used in very powerful ways when safety is not important, but the control would still be safe for use in a Web page.
+If a control is not marked as SFI, it is marked Unsafe For Initialization (UFI), which means that it is capable of affecting a user's computer. If UFI ActiveX controls are loaded, they are always loaded in unsafe mode.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Load Controls in Forms3">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Load Controls in Forms3" test_ref="oval:mil.disa.stig.officesystem2013:tst:23000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:24" version="1" class="compliance">
+      <metadata>
+        <title>DTOO179 - Open as Read/Write when browsing</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>By default, when an Office 2013 document on a web server is opened using Internet Explorer, the appropriate application opens the file in read-only mode. However, if the default configuration is changed, the document is opened as read/write. Users could potentially make changes to documents and resave them in situations where the web server security is not configured to prevent such changes.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Files\Open Office documents as read/write while browsing">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Files\Open Office documents as read/write while browsing" test_ref="oval:mil.disa.stig.officesystem2013:tst:24000" />
+      </criteria>
+    </definition>   
+    <definition id="oval:mil.disa.stig.officesystem2013:def:25" version="1" class="compliance">
+      <metadata>
+        <title>DTOO199 - Permissions on managed content</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>This setting controls whether Office 2013 users can change permissions for content that is protected with Information Rights Management (IRM). The Information Rights Management feature of Office 2013 allows individuals and administrators to specify access permissions to Word documents, Excel workbooks, PowerPoint presentations, InfoPath templates and forms, and Outlook email messages. This functionality helps prevent sensitive information from being printed, forwarded, or copied by unauthorized people.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Prevent users from changing permissions on rights managed content">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Prevent users from changing permissions on rights managed content" test_ref="oval:mil.disa.stig.officesystem2013:tst:25000" />
+      </criteria>
+       </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:26" version="1" class="compliance">
+      <metadata>
+        <title>DTOO188 - Protect document metadata</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>When an Office Open XML document is protected with a password and saved, any metadata associated with the document is encrypted along with the rest of the document's contents. If this configuration is changed, potentially sensitive information such as the document author and hyperlink references could be exposed to unauthorized people. </description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Protect document metadata for password protected files">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Protect document metadata for password protected files" test_ref="oval:mil.disa.stig.officesystem2013:tst:26000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:27" version="1" class="compliance">
+      <metadata>
+        <title>DTOO187 - Protect metadata / rights managed docs</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>When Information Rights Management (IRM) is used to restrict access to an Office Open XML document, any metadata associated with the document is not encrypted. This configuration could allow potentially sensitive information such as the document author and hyperlink references to be exposed to unauthorized individuals.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Protect document metadata for rights managed Office Open XML Files" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Protect document metadata for rights managed Office Open XML Files" test_ref="oval:mil.disa.stig.officesystem2013:tst:27000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:28" version="1" class="compliance">
+      <metadata>
+        <title>DTOO180 - Vector Markup Lang (VML) / IE graphics</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>When saving documents as web pages, Excel, PowerPoint, and Word can save vector-based graphics in Vector Markup Language (VML), which enables Internet Explorer to display them smoothly at any resolution. By default, when saving VML graphics, Office applications also save copies of the graphics in a standard raster file format (GIF or PNG) for use by browsers that cannot display VML. If the "Rely on VML for displaying graphics in browsers" check box in the web Options dialog box is selected, applications will not save raster copies of VML graphics, which means those graphics will not display in non-Microsoft browsers.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Browsers\Rely on VML for displaying graphics in browsers" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Browsers\Rely on VML for displaying graphics in browsers" test_ref="oval:mil.disa.stig.officesystem2013:tst:28000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:29" version="1" class="compliance">
+      <metadata>
+        <title>DTOO204 - External Signature Services menu</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Users can select Add Signature Services (from the Signature Line drop-down menu on the Insert tab of the Ribbon in Excel 2013, PowerPoint 2013, and Word 2013) to see a list of signature service providers on the Microsoft Office website. If an organization has policies that govern the use of external resources such as signature providers or Office Marketplace, allowing users to access the Add Signature Services menu item might enable them to violate those policies.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Signing\Suppress external signature services menu item" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Signing\Suppress external signature services menu item" test_ref="oval:mil.disa.stig.officesystem2013:tst:29000" />
+      </criteria>
+      </definition> 
+      <definition id="oval:mil.disa.stig.officesystem2013:def:30" version="1" class="compliance"> 
+      <metadata>  
+      <title>DTOO345 - Online content options</title>
+      <affected family="windows">  
+      <platform>Microsoft Windows 7</platform>
+      <platform>Microsoft Windows Server 2008 R2</platform>  
+      <platform>Microsoft Windows Server 2012</platform>  
+      <platform>Microsoft Windows 8</platform>
+      <platform>Microsoft Windows 8.1</platform>   
+      <product>Microsoft Office System 2013</product>
+      </affected>  
+      <description>The Office 2013 Help system automatically searches MicrosoftOffice.com for content when a computer is connected to the Internet. Users can change this default by clearing the Search Microsoft Office.com for Help content when I'm connected to the Internet check box in the Privacy Options section of the Trust Center. If an organization has policies that govern the use of external resources such as Office.com, allowing the Help system to download content might cause users to violate these policies.</description> 
+      </metadata> 
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools | Options | General | Service Options\Online Content\Online content options" negate="false"> 
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools | Options | General | Service Options\Online Content\Online content options" test_ref="oval:mil.disa.stig.officesystem2013:tst:30000" />  
+        </criteria> 
+        </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:31" version="1" class="compliance">
+      <metadata>
+        <title>DTOO321 - Encrypt document properties</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>This policy setting allows a document's properties to be encrypted.  This applies to OLE documents (Office 97-2003 compatible) if the application is configured for CAPI RC4.  Disabling this setting will prevent the encryption of document properties, which may expose sensitive data.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encrypt document properties">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encrypt document properties" test_ref="oval:mil.disa.stig.officesystem2013:tst:31000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:32" version="1" class="compliance">
+      <metadata>
+        <title>DTOO401 - Office Automatic Updates</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>This policy setting controls whether the Office automatic updates are enabled or disabled for all Office products installed via Click-to-Run. This policy has no effect on Office products installed via Windows Installer. If this policy setting is enabled, Office periodically checks for updates. When updates are detected, Office downloads and applies them in the background. If policy setting is disabled, Office will not check for updates. Without receiving automatic updates, vulnerabilities found within the Office products will not be applied, leaving the vulnerabilities exposed.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Updates\Enable Automatic Updates">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Updates\Enable Automatic Updates" test_ref="oval:mil.disa.stig.officesystem2013:tst:32000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:33" version="1" class="compliance">
+      <metadata>
+        <title>DTOO402 - The Enable Updates and Disable Updates UI options</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>This policy setting allows the user interface (UI) options to enable or disable Office automatic updates to be hidden from users. These options are found in the Product Information area of all Office applications installed via Click-to-Run. This policy setting has no effect on Office applications installed via Windows Installer. If this policy setting is enabled, the "Enable Updates" and "Disable Updates" options in the UI are hidden from users. If this policy setting is not configured, the "Enable Updates" and "Disable Updates" options are visible, and users can enable or disable Office automatic updates from the UI.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Updates\Hide option to enable or disable updates">
+        <criterion comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Updates\Hide option to enable or disable updates" test_ref="oval:mil.disa.stig.officesystem2013:tst:33000" />
+      </criteria>
+    </definition>   
+    <definition id="oval:mil.disa.stig.officesystem2013:def:34" version="1" class="compliance">
+      <metadata>
+        <title>DTOO403 - Office365 sign-in video</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Office 365 is a subscription-based service which offers access to various Microsoft Office applications.  Access to Office 365 will not be permitted; only locally installed and configured Office 2013 installations will be used. Since the ability to sign into Office 365 will be disabled, this policy, which determines whether a video about signing into Office365 is played when Office first runs, will also be disabled.</description>
+      </metadata>
+      <criteria operator="OR" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\First Run\Disable First Run Movie">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\First Run\Disable First Run Movie" test_ref="oval:mil.disa.stig.officesystem2013:tst:34000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:35" version="1" class="compliance">
+      <metadata>
+        <title>DTOO404 - Office365 first-run prompt</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Office 365 functionality allows users to provide credentials for accessing Office 365 using either their Microsoft Account, or the user ID assigned by the organization. Access to Office 365 will not be permitted; only locally installed and configured Office 2013 installations will be used. Since the ability to sign into Office 365 will be disabled, this policy, which determines whether the Office First Run comes up on first application boot if not previously viewed, will also be disabled.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\First Run\Disable Office First Run on application boot">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\First Run\Disable Office First Run on application boot" test_ref="oval:mil.disa.stig.officesystem2013:tst:35000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:36" version="1" class="compliance">
+      <metadata>
+        <title>DTOO405 - Block office365 sign-in ability</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Office 2013 can be configured to prompt users for credentials to Office365 using either their Microsoft Account or the user ID assigned by an organization for accessing Office 365.  Access to Office 365 will not be permitted and only locally installed and configured Office installations will be used.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Block signing into Office">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Block signing into Office" test_ref="oval:mil.disa.stig.officesystem2013:tst:36000" />
+      </criteria>
+    </definition>
+       <definition id="oval:mil.disa.stig.officesystem2013:def:37" version="1" class="compliance">
+      <metadata>
+        <title>DTOO406 - Disable automatic screenshot hyperlinking</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>The ability to automatically bind hyperlink to a screenshot inserted through the Insert Screenshot tool introduces the possibility of a malicious URL or website being imbedded in the Word, PowerPoint, Excel or Outlook document. Disabling the hyperlink in those screenshots will ensure users do not have the ability to directly open the hyperlinks.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Do not automatically hyperlink screenshots">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Do not automatically hyperlink screenshots" test_ref="oval:mil.disa.stig.officesystem2013:tst:37000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:38" version="1" class="compliance">
+      <metadata>
+        <title>DTOO407 - Disable prompt to save to OneDrive (formerly SkyDrive)</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>OneDrive (formerly SkyDrive) is a cloud based storage feature that introduces the capability for users to save documents to locations outside of protected enclaves. This feature introduces the risk that FOUO and PII data, as well as other DoD protected data, may be inadvertently stored in a nonsecure location.  This setting, which will prompt the user to sign in to OneDrive while performing a file save operation, must be disabled.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Show SkyDrive Sign In">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Show SkyDrive Sign In" test_ref="oval:mil.disa.stig.officesystem2013:tst:38000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:39" version="1" class="compliance">
+      <metadata>
+        <title>DTOO408 - Office Presentation Service must be removed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>The Office Presentation Service is a free, public service that allows others to  follow along in a web browser. Allowing this feature could result in presentations with DoD FOUO, PII and other protected data to be viewed in a nonsecure location. By disabling this policy, the user will not have the ability to deliver a presentation online.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Present Online\Remove Office Presentation Service from the list of online presentation services in PowerPoint and Word">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Present Online\Remove Office Presentation Service from the list of online presentation services in PowerPoint and Word" test_ref="oval:mil.disa.stig.officesystem2013:tst:39000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:40" version="1" class="compliance">
+      <metadata>
+        <title>DTOO409 - Disable programmatic creation of online presentation</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Allowing online presentations to be created programmatically allows for the capability of malicious content to become imbedded in those programmatically created presentations.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Present Online\Restrict programmatic access for creating online presentations in PowerPoint and Word">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Present Online\Restrict programmatic access for creating online presentations in PowerPoint and Word" test_ref="oval:mil.disa.stig.officesystem2013:tst:40000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:41" version="1" class="compliance">
+      <metadata>
+        <title>DTOO410 - Office Feedback tool</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>The "Office Feedback" tool, also called "Send-a-Smile", allows a user to click on an icon and send feedback to Microsoft. The "Office Feedback" Tool must be configured to be disabled. In the event that the Office Feedback Tool has not been configured correctly as disabled, this policy configures whether the uploading of screenshots via the tool is allowed and should also be disabled. Uploading screenshots to a commercial vendor from a DoD computer may unintentionally reveal configuration and/or FOUO content.</description>
+      </metadata>
+      <criteria operator="AND" negate="false" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Allow including screenshot with Office Feedback">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Allow including screenshot with Office Feedback" test_ref="oval:mil.disa.stig.officesystem2013:tst:41000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:42" version="1" class="compliance">
+      <metadata>
+        <title>DTOO411 - Disable Office Feedback</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>The "Office Feedback" tool, also called "Send-a-Smile", allows a user to click on an icon and send feedback to Microsoft. Applications used by DoD users should not be able to provide feedback to commercial vendors regarding their positive and negative experiences when using Office due to the potential of unintentionally revealing FOUO or other protected content.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Send Office Feedback" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Send Office Feedback" test_ref="oval:mil.disa.stig.officesystem2013:tst:42000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:43" version="1" class="compliance">
+      <metadata>
+        <title>DTOO412 - Disable run unsecure Office apps</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Unsecure apps for Office, which are apps that have web page or catalog locations that are not SSL-secured (https://), and/or are not in users' Internet zones may allow data to be transmitted/accessed via clear text to outside sources. By configuring this policy to be disabled, users will be prevented from transmitting/accessing data in a nonsecure manner.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Trusted Catalogs\Allow Unsecure Apps and Catalogs"  negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Trusted Catalogs\Allow Unsecure Apps and Catalogs" test_ref="oval:mil.disa.stig.officesystem2013:tst:43000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:44" version="1" class="compliance">
+      <metadata>
+        <title>DTOO413 - Block Apps for Office</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>This policy setting allows users to be prevented from using or inserting apps that come from the Office Store. If this policy setting is enabled, apps from the Office Store are blocked. If this policy setting is disabled or not configured, apps from the Office Store are allowed, unless the "Block Apps for Office" policy setting is enabled.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Trusted Catalogs\Block the Office Store" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Trusted Catalogs\Block the Office Store" test_ref="oval:mil.disa.stig.officesystem2013:tst:44000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:45" version="1" class="compliance">
+      <metadata>
+        <title>DTOO414 - Roaming settings must be stored locally and not synchronized</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Microsoft Office includes the ability to roam settings for specific Office features amongst devices by storing this data in the cloud. This data includes user activity such as the list of most recently used documents as well as user preferences such as the Office theme. This policy setting controls whether this data is allowed to be stored in the cloud. If this policy setting is enabled, roaming settings are only stored locally and not synchronized to the Microsoft Office roaming settings web service. If this policy setting is disabled or not configured, roaming settings are synchronized with the Microsoft Office roaming settings web service and users can access their data from other devices. Existing data in the cloud is not affected by this policy.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Services\Disable Roaming Office User Settings" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Services\Disable Roaming Office User Settings" test_ref="oval:mil.disa.stig.officesystem2013:tst:45000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:46" version="1" class="compliance">
+      <metadata>
+        <title>DTOO415 - Data upload for Office Telemetry Agent</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Office Telemetry is a new compatibility monitoring framework. When an Office document or solution is loaded, used, closed, or raises an error in certain Office 2013 applications, the Office Telemetry application adds a record about the event to a local data store. Each record includes a description of the problem and a link to more information. Inventory and usage data is also tracked. The actual logging capability will be enabled, but this policy allows that data to be uploaded to a remote location which, if enabled, could pass information about the internal network and configuration to that remote site.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on data uploading for Office Telemetry Agent" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on data uploading for Office Telemetry Agen" test_ref="oval:mil.disa.stig.officesystem2013:tst:46000" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.officesystem2013:def:47" version="1" class="compliance">
+      <metadata>
+        <title>DTOO416 - Telemetry Agent privacy setting</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>This policy setting configures the Office Telemetry Agent to disguise, or obfuscate, certain file properties that are reported in telemetry data. If this policy setting is enabled, Office Telemetry Agent obfuscates the file name, file path, and title of Office documents before uploading telemetry data to the shared folder. If this policy setting is disabled or not configured, the Office Telemetry Agent uploads telemetry data that shows the full file name, file path, and title of all Office documents.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on privacy setting in Office Telemetry Agent" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on privacy setting in Office Telemetry Agent" test_ref="oval:mil.disa.stig.officesystem2013:tst:47000" />
+      </criteria>
+      </definition>
+       <definition id="oval:mil.disa.stig.officesystem2013:def:48" version="1" class="compliance">
+      <metadata>
+        <title>DTOO417 - Enable Telemetry data collection</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <product>Microsoft Office System 2013</product>
+        </affected>
+        <description>Office Telemetry is a new compatibility monitoring framework. When an Office document or solution is loaded, used, closed, or raises an error in certain Office 2013 applications, the Office Telemetry application adds a record about the event to a local data store. Each record includes a description of the problem and a link to more information. Inventory and usage data is also tracked. This policy setting allows the data collection features in Office that are used by the Office Telemetry Dashboard and Office Telemetry Log to be turned on. If this policy setting is enabled, Office Telemetry Agent and Office applications will collect telemetry data, which includes Office application usage, most recently used Office documents (including file names) and solutions usage, compatibility issues, and critical errors that occur on the local computers. Office Telemetry Dashboard can be used to view this data remotely, and users can use Office Telemetry Log to view this data on their local computers. If this policy setting is disabled or not configured, the Office Telemetry Agent and Office applications do not generate or collect telemetry data.</description>
+      </metadata>
+      <criteria operator="AND" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on telemetry data collection" negate="false">
+        <criterion comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on telemetry data collection" test_ref="oval:mil.disa.stig.officesystem2013:tst:48000" />
+      </criteria>
+      </definition>
+  </definitions>
+  <tests>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:1000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\ActiveX Control Initialization" check_existence="none_exist">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:1000" />
+     </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:2000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Allow mix of policy and user locations" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:2000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:2000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:3000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Browsers\Allow PNG as an output format" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:3000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:3000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:4000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Control Blogging" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:4000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:4000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:5000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Allow users with earlier versions of Office to read with browsers" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:5000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:5000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:6000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Disable all Trust Bar notifications for security issues" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:6000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:6000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:7000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Document Information Panel\Document Information Panel Beaconing UI" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:7000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:7000" />
+    </registry_test>    
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:8000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Enable Customer Experience Improvement Program" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:8000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:8000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:9000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encryption type for password protected Office 97-2003 files" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:9000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:9000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:10000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encryption type for password protected Office Open XML files" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:10000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:10000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:11000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ Spelling\Proofing Data Collection\Improve Proofing Tools" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:11000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:11000" />
+      </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:12000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Suppress hyperlink warnings" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:12000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:12000" />
+     </registry_test>
+      <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:13000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Microsoft Save As PDF and XPS add-ins\Disable inclusion of document properties in PDF and XPS output" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:13000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:13000" />
+    </registry_test> 
+      <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:14000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Services\Fax\Disable Internet Fax feature" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:14000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:14000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:15000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Disable Opt-in Wizard on first run" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:15000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:15000" />
+      </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:16000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Disable password to open UI" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:16000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:16000" />
+     </registry_test>
+      <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:17000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Smart Documents (Word, Excel\Disable Smart Document's use of manifests" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:17000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:17000" />
+    </registry_test>    
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:18000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Server Settings\Disable the Office client from polling the SharePoint Server for published links" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:18000" />
+    <state state_ref="oval:mil.disa.stig.officesystem2013:ste:18000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:19000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Always require users to connect to verify permission" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:19000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:19000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:20000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Automatically receive small updates to improve reliability" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:20000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:20000" />
+    </registry_test>
+     <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:21000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Automation Security" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:21000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:21000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:22000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Signing\Legacy format signatures" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:22000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:22000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:23000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Load Controls in Forms3" check_existence="none_exist">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:23000" />
+     </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:24000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Files\Open Office documents as read/write while browsing" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:24000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:24000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:25000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Prevent users from changing permissions on rights managed content" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:25000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:25000" />
+    </registry_test>
+   <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:26000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Protect document metadata for password protected files" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:26000" />
+    <state state_ref="oval:mil.disa.stig.officesystem2013:ste:26000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:27000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Protect document metadata for rights managed Office Open XML Files" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:27000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:27000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:28000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Browsers\Rely on VML for displaying graphics in browsers" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:28000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:28000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:29000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Signing\Suppress external signature services menu item" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:29000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:29000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:30000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools | Options | General | Service Options\Online Content\Online content options" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:30000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:30000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:31000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encrypt document properties" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:31000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:31000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:32000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Updates\Enable Automatic Updates" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:32000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:32000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:33000" version="1" check="all" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Updates\Hide option to enable or disable updates" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:33000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:33000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:34000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\First Run\Disable First Run Movie" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:34000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:34000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:35000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\First Run\Disable Office First Run on application boot" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:35000" />
+    <state state_ref="oval:mil.disa.stig.officesystem2013:ste:35000" />
+    </registry_test>  
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:36000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Block signing into Office" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:36000" />
+    <state state_ref="oval:mil.disa.stig.officesystem2013:ste:36000" />
+    </registry_test>
+   <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:37000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Do not automatically hyperlink screenshots" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:37000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:37000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:38000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Show SkyDrive Sign In" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:38000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:38000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:39000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Present Online\Remove Office Presentation Service from the list of online presentation services in PowerPoint and Word" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:39000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:39000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:40000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Present Online\Restrict programmatic access for creating online presentations in PowerPoint and Word" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:40000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:40000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:41000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Allow including screenshot with Office Feedback" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:41000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:41000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:42000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Send Office Feedback" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:42000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:42000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:43000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Trusted Catalogs\Allow Unsecure Apps and Catalogs" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:43000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:43000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:44000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Trusted Catalogs\Block the Office Store" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:44000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:44000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:45000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Services\Disable Roaming Office User Settings" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:45000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:45000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:46000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on data uploading for Office Telemetry Agent" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:46000" />
+      <state state_ref="oval:mil.disa.stig.officesystem2013:ste:46000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:47000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on privacy setting in Office Telemetry Agent" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:47000" />
+    <state state_ref="oval:mil.disa.stig.officesystem2013:ste:47000" />
+       </registry_test> 
+       <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:tst:48000" version="1" check="all" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on telemetry data collection" check_existence="at_least_one_exists">
+      <object object_ref="oval:mil.disa.stig.officesystem2013:obj:48000" />
+    <state state_ref="oval:mil.disa.stig.officesystem2013:ste:48000" />
+       </registry_test>  
+  </tests>
+  <objects>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:1000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\ActiveX Control Initialization">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\Common\Security</key>
+      <name datatype="string" operation="equals">UFIControls</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:2000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Allow mix of policy and user locations">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\security\trusted locations</key>
+      <name datatype="string" operation="equals">Allow User Locations</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:3000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Browsers\Allow PNG as an output format">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\internet</key>
+      <name datatype="string" operation="equals">AllowPNG</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:4000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Control Blogging">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\Common\Blog</key>
+      <name datatype="string" operation="equals">DisableBlog</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:5000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Allow users with earlier versions of Office to read with browsers">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\drm</key>
+      <name datatype="string" operation="equals">IncludeHTML</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:6000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Disable all Trust Bar notifications for security issues">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\trustcenter</key>
+      <name datatype="string" operation="equals">TrustBar</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:7000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Document Information Panel\Document Information Panel Beaconing UI">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\documentinformationpanel</key>
+      <name datatype="string" operation="equals">Beaconing</name>
+    </registry_object>    
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:8000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Enable Customer Experience Improvement Program">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common</key>
+      <name datatype="string" operation="equals">QMEnable</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:9000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encryption type for password protected Office 97-2003 files">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\security</key>
+      <name datatype="string" operation="equals">DefaultEncryption12</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:10000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encryption type for password protected Office Open XML files">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\security</key>
+      <name datatype="string" operation="equals">OpenXMLEncryption</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:11000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ Spelling\Proofing Data Collection\Improve Proofing Tools">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\ptwatson</key>
+      <name datatype="string" operation="equals">PTWOptIn</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:12000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Suppress hyperlink warnings">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\security</key>
+      <name datatype="string" operation="equals">DisableHyperLinkWarning</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:13000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Microsoft Save As PDF and XPS add-ins\Disable inclusion of document properties in PDF and XPS output">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\fixedformat</key>
+      <name datatype="string" operation="equals">DisableFixedFormatDocProperties</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:14000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Services\Fax\Disable Internet Fax feature">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\services\fax</key>
+      <name datatype="string" operation="equals">NoFax</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:15000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Disable Opt-in Wizard on first run">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\general</key>
+      <name datatype="string" operation="equals">ShownFirstRunOptin</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:16000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Disable password to open UI">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\security</key>
+      <name datatype="string" operation="equals">DisablePasswordUI</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:17000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Smart Documents (Word, Excel\Disable Smart Document's use of manifests">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\Common\Smart Tag</key>
+      <name datatype="string" operation="equals">NeverLoadManifests</name>
+    </registry_object>    
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:18000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Server Settings\Disable the Office client from polling the SharePoint Server for published links">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\portal</key>
+      <name datatype="string" operation="equals">LinkPublishingDisabled</name>
+    </registry_object> 
+      <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:19000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Always require users to connect to verify permission">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\drm</key>
+      <name datatype="string" operation="equals">RequireConnection</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:20000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Automatically receive small updates to improve reliability">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common</key>
+      <name datatype="string" operation="equals">UpdateReliabilityData</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:21000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Automation Security">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\Common\Security</key>
+      <name datatype="string" operation="equals">AutomationSecurity</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:22000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Signing\Legacy format signatures">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\signatures</key>
+      <name datatype="string" operation="equals">EnableCreationOfWeakXPSignatures</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:23000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Load Controls in Forms3">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">keycupoliciesmsvbasecurity</key>
+      <name datatype="string" operation="equals">LoadControlsInForms</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:24000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Files\Open Office documents as read/write while browsing">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\internet</key>
+      <name datatype="string" operation="equals">OpenDocumentsReadWriteWhileBrowsing</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:25000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Prevent users from changing permissions on rights managed content">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\drm</key>
+      <name datatype="string" operation="equals">DisableCreation</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:26000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Protect document metadata for password protected files">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\security</key>
+      <name datatype="string" operation="equals">OpenXMLEncryptProperty</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:27000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Protect document metadata for rights managed Office Open XML Files">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\security</key>
+      <name datatype="string" operation="equals">DRMEncryptProperty</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:28000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Browsers\Rely on VML for displaying graphics in browsers">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\internet</key>
+      <name datatype="string" operation="equals">RelyOnVML</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:29000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Signing\Suppress external signature services menu item">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\signatures</key>
+      <name datatype="string" operation="equals">SuppressExtSigningSvcs</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:30000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools | Options | General | Service Options\Online Content\Online content options">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\internet</key>
+      <name datatype="string" operation="equals">UseOnlineContent</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:31000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encrypt document properties">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">Software\Policies\Microsoft\Office\15.0\common\security</key>
+      <name datatype="string" operation="equals">EncryptDocProps</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:32000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Updates\Enable Automatic Updates">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\common\officeupdate</key>
+      <name datatype="string" operation="equals">EnableAutomaticUpdates</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:33000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Updates\Hide option to enable or disable updates">
+      <hive datatype="string" operation="equals">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\common\officeupdate</key>
+      <name datatype="string" operation="equals">HideEnableDisableUpdates</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:34000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\First Run\Disable First Run Movie">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\firstrun</key>
+      <name datatype="string" operation="equals">disablemovie</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:35000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\First Run\Disable Office First Run on application boot">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\firstrun</key>
+      <name datatype="string" operation="equals">bootedrtm</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:36000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Block signing into Office">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\common\signin</key>
+      <name datatype="string" operation="equals">signinoptions</name>
+    </registry_object>       
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:37000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Do not automatically hyperlink screenshots">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\gfx</key>
+      <name datatype="string" operation="equals">disablescreenshotautohyperlink</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:38000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Show SkyDrive Sign In">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\common\general</key>
+      <name datatype="string" operation="equals">SkyDriveSignInOption</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:39000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Present Online\Remove Office Presentation Service from the list of online presentation services in PowerPoint and Word">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\common\broadcast</key>
+      <name datatype="string" operation="equals">disabledefaultservice</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:40000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Present Online\Restrict programmatic access for creating online presentations in PowerPoint and Word">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\common\broadcast</key>
+      <name datatype="string" operation="equals">disableprogrammaticaccess</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:41000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Allow including screenshot with Office Feedback">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\common\feedback</key>
+      <name datatype="string" operation="equals">includescreenshot</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:42000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Send Office Feedback">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\common\feedback</key>
+      <name datatype="string" operation="equals">enabled</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:43000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Trusted Catalogs\Allow Unsecure Apps and Catalogs">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\wef\trustedcatalogs</key>
+      <name datatype="string" operation="equals">requireserververification</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:44000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Trusted Catalogs\Block the Office Store">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\wef\trustedcatalogs</key>
+      <name datatype="string" operation="equals">disableomexcatalogs</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:45000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Services\Disable Roaming Office User Settings">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\common\roaming</key>
+      <name datatype="string" operation="equals">roamingsettingsdisabled</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:46000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on data uploading for Office Telemetry Agent">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\osm</key>
+      <name datatype="string" operation="equals">enableupload</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:47000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on privacy setting in Office Telemetry Agent">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\osm</key>
+      <name datatype="string" operation="equals">enablefileobfuscation</name>
+    </registry_object>  
+       <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:obj:48000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on telemetry data collection">
+      <hive datatype="string" operation="equals">HKEY_CURRENT_USER</hive>
+      <key datatype="string" operation="equals">software\policies\Microsoft\office\15.0\osm</key>
+      <name datatype="string" operation="equals">enablelogging</name>
+    </registry_object> 
+    </objects>
+  <states>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:2000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Allow mix of policy and user locations">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:3000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Browsers\Allow PNG as an output format">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:4000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Control Blogging">
+      <type datatype="string" operation="equals" entity_check="all" >reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:5000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Allow users with earlier versions of Office to read with browsers">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:6000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Disable all Trust Bar notifications for security issues">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:7000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Document Information Panel\Document Information Panel Beaconing UI">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>    
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:8000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Enable Customer Experience Improvement Program">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:9000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encryption type for password protected Office 97-2003 files">
+      <type datatype="string" operation="equals" entity_check="all">reg_sz</type>
+      <value datatype="string" operation="equals" entity_check="all">Microsoft Enhanced RSA and AES Cryptographic Provider,AES 256,256</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:10000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encryption type for password protected Office Open XML files">
+      <type datatype="string" operation="equals" entity_check="all" >reg_sz</type>
+      <value datatype="string" operation="equals" entity_check="all" >Microsoft Enhanced RSA and AES Cryptographic Provider,AES 256,256</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:11000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ Spelling\Proofing Data Collection\Improve Proofing Tools">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:12000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Suppress hyperlink warnings">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:13000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Microsoft Save As PDF and XPS add-ins\Disable inclusion of document properties in PDF and XPS output">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:14000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Services\Fax\Disable Internet Fax feature">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:15000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Disable Opt-in Wizard on first run">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:16000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Disable password to open UI">
+        <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:17000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Smart Documents (Word, Excel\Disable Smart Document's use of manifests">
+       <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>    
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:18000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Server Settings\Disable the Office client from polling the SharePoint Server for published links">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>  
+      <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:19000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Always require users to connect to verify permission">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:20000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Automatically receive small updates to improve reliability">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:21000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Automation Security">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">2</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:22000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Signing\Legacy format signatures">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:24000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Files\Open Office documents as read/write while browsing">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:25000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Manage Restricted Permissions\Prevent users from changing permissions on rights managed content">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:26000" version="3" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Protect document metadata for password protected files">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:27000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Protect document metadata for rights managed Office Open XML Files">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:28000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools \ Options \ General \ Web Options\Browsers\Rely on VML for displaying graphics in browsers">
+<type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:29000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Signing\Suppress external signature services menu item">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:30000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Tools | Options | General | Service Options\Online Content\Online content options">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:31000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Encrypt document properties">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:32000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Updates\Enable Automatic Updates">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:33000" version="1" comment="Computer Configuration\Administrative Templates\Microsoft Office 2013 (Machine)\Updates\Hide option to enable or disable updates">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:34000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\First Run\Disable First Run Movie">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:35000" version="3" comment="User Configuration\Administrative Templates\Microsoft Office 2013\First Run\Disable Office First Run on application boot">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:36000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Block signing into Office">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">2</value>
+    </registry_state>    
+        <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:37000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Do not automatically hyperlink screenshots">
+    <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:38000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Miscellaneous\Show SkyDrive Sign In">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:39000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Present Online\Remove Office Presentation Service from the list of online presentation services in PowerPoint and Word">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:40000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Present Online\Restrict programmatic access for creating online presentations in PowerPoint and Word">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:41000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Allow including screenshot with Office Feedback">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:42000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Privacy\Trust Center\Send Office Feedback">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:43000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Trusted Catalogs\Allow Unsecure Apps and Catalogs">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:44000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Security Settings\Trust Center\Trusted Catalogs\Block the Office Store">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:45000" version="3" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Services\Disable Roaming Office User Settings">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:46000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on data uploading for Office Telemetry Agent">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:47000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on privacy setting in Office Telemetry Agent">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.officesystem2013:ste:48000" version="1" comment="User Configuration\Administrative Templates\Microsoft Office 2013\Telemetry Dashboard\Turn on telemetry data collection">
+      <type datatype="string" operation="equals" entity_check="all">reg_dword</type>
+      <value datatype="string" operation="equals" entity_check="all">1</value>
+    </registry_state>
+    </states>  
+</oval_definitions>
+

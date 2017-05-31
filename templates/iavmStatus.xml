@@ -1,0 +1,31 @@
+<!-- 
+Structure: IAVM Status Form
+This is the GUI that loads when no command line parameters are present
+!-->
+<form name="form1" text="Cyber Security Tool Suite - IAVM Status Settings" clientSizeX="400" clientSizeY="105" FormBorderStyle="fixedDialog">
+	<!-- 
+	Group: Controls
+	The individual controls within the GUI
+	!-->	
+	<controls>
+		<!-- 
+		Var: lblIavm
+		This label is for the txtIAVM textBox
+		See Also:
+		<txtIAVM>
+		!-->
+		<control type="label" id="lblIavm" name="lblIavm" text="IAVMs to check for:" locationX="5" locationY="5" sizeX="250" sizeY="20" />
+		
+		<!--
+		Var: txtIAVM
+		This represents a textbox the user can enter a MS KB Patch number in
+		!-->
+		<control type="textBox" id="txtIAVM" name="txtIAVM" locationX="5" locationY="25" sizeX="380" sizeY="25"/>
+
+		<!--
+		Var: btnExecute
+		This represents a button the user can click on to execute the report
+		!-->
+		<control type="button" id="btnExecute" name="btnExecute" text="Execute" locationX="5" locationY="50" sizeX="390" sizeY="50" backColor="#FFCCCCCC"/>
+	</controls>
+</form>

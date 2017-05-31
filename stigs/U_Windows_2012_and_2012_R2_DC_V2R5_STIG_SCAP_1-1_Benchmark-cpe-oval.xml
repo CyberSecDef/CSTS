@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>repotool</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2016-06-17T11:48:45</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.fso.windows:def:4398" version="2" class="inventory">
+      <metadata>
+        <title>Microsoft Windows Server 2012 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/o:microsoft:windows_server_2012:-" />
+        <description>A version of Microsoft Windows Server 2012 is installed.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:mil.disa.fso.windows:tst:439800" />
+        <criterion comment="Windows Server 2012 is installed" test_ref="oval:mil.disa.fso.windows:tst:439801" />
+        <criterion comment="Windows Server 2012 R2 is installed" test_ref="oval:mil.disa.fso.windows:tst:439802" negate="true" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.fso.windows:def:4968" version="1" class="inventory">
+      <metadata>
+        <title>Microsoft Windows Server 2012 R2 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2012</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/o:microsoft:windows_server_2012:r2" />
+        <description>A version of Microsoft Windows Server 2012 R2 is installed.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion comment="the installed operating system is part of the Microsoft Windows family" test_ref="oval:mil.disa.fso.windows:tst:439800" />
+        <criterion comment="Windows Server 2012 R2 is installed" test_ref="oval:mil.disa.fso.windows:tst:439802" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <family_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:tst:439800" version="1" comment="the installed operating system is part of the Microsoft Windows family" check_existence="at_least_one_exists" check="only one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:439800" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:439800" />
+    </family_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:439801" version="1" comment="Windows Server 2012 is installed" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:439801" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:439801" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:tst:439802" version="1" comment="Windows Server 2012 R2 is installed" check_existence="at_least_one_exists" check="at least one">
+      <object object_ref="oval:mil.disa.fso.windows:obj:439801" />
+      <state state_ref="oval:mil.disa.fso.windows:ste:439802" />
+    </registry_test>
+  </tests>
+  <objects>
+    <family_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:obj:439800" version="1" comment="Family" />
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:obj:439801" version="1" comment="This registry key identifies the Windows ProductName">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Microsoft\Windows NT\CurrentVersion</key>
+      <name datatype="string">ProductName</name>
+    </registry_object>
+  </objects>
+  <states>
+    <family_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="oval:mil.disa.fso.windows:ste:439800" version="1" comment="Microsoft Windows family">
+      <family operation="equals">windows</family>
+    </family_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:439801" version="1" comment="The registry key matches with Windows Server 2012">
+      <value operation="pattern match">^[a-zA-Z0-9\(\)\s]*2012[a-zA-Z0-9\(\)\s]*$</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.fso.windows:ste:439802" version="2" comment="The registry key matches with Windows Server 2012 R2">
+      <value operation="pattern match">^[a-zA-Z0-9\(\)\s]*2012 [rR]2[a-zA-Z0-9\(\)\s]*$</value>
+    </registry_state>
+  </states>
+</oval_definitions>
+

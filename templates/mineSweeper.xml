@@ -1,0 +1,5 @@
+<form name="form1" text="Cyber Security Tool Suite - MineSweeper" clientSizeX="420" clientSizeY="460" FormBorderStyle="fixedDialog">
+	<controls>
+		<control type="textbox" id="txtFlags" name="txtFlags" text="" locationX="10" locationY="10" sizeX="50" sizeY="25" backColor="#FFFFFFFF" />
+	</controls>
+</form>

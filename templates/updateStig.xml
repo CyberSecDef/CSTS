@@ -1,0 +1,13 @@
+<form name="form1" text="Cyber Security Tool Suite - Update Hosts Settings" clientSizeX="310" clientSizeY="100" FormBorderStyle="fixedDialog">
+	<controls>
+		
+		<control type="textBox" id="txtOldFile" name="txtOldFile" locationX="5" locationY="5" sizeX="150" sizeY="25"/>
+		<control type="button" id="btnOldFile" name="btnOldFile" locationX="155" locationY="5" sizeX="150" sizeY="20" text="Browse for Old Checklist" />
+		
+		<control type="textBox" id="txtNewFile" name="txtNewFile" locationX="5" locationY="30" sizeX="150" sizeY="25"/>
+		<control type="button" id="btnNewFile" name="btnNewFile" locationX="155" locationY="30" sizeX="150" sizeY="20" text="Browse for New Checklist"/>
+		
+		
+		<control type="button" id="btnExecute" name="btnExecute" text="Execute" locationX="5" locationY="55" sizeX="300" sizeY="40" backColor="#FFCCCCCC"/>
+	</controls>
+</form>

@@ -1,0 +1,54 @@
+<form name="form1" text="Cyber Security Tool Suite - System Manager" clientSizeX="800" clientSizeY="600" >
+	<controls>
+		<control type="toolStrip" id="toolMain2" name="toolMain2" locationX="0" locationY="200" sizeX="400" sizeY="20">
+			<item name="tsiSave" id="tsiSave" imagePath="save.png" text="" toolTipText="Save" />
+			<item name="tsiSep1" id="tsiSep1" type="seperator"></item>
+			<item name="tsiAdd" id="tsiAdd" text="New Tab" toolTipText="New Tab" />
+		</control>	
+		<control type="toolStrip" id="toolMain" name="toolMain" locationX="0" locationY="200" sizeX="400" sizeY="20">
+			<item name="tsiLblAddress" id="tsiLblAddress" imagePath="folder.png" text="Address" toolTipText="Address" />
+			<item name="tsiTxtAddress" id="tsiTxtAddress" text="" toolTipText="Address" type="textBox" width="800"/>
+		</control>
+		
+		
+		<control type="menuStrip" id="mnuMain" name="mnuMain" locationX="0" locationY="200" sizeX="400" sizeY="20">
+			<menuCat name="mnuFile" id="mnuFile" text="&amp;File">
+				<item name="mnuFileOpen" id="mnuFileOpen">&amp;Open</item>
+			</menuCat>
+			<menuCat name="mnuOptions" id="mnuOptions" text="&amp;Options">
+				<item name="mnuEditCut" id="mnuEditCut">&amp;Cut</item>
+			</menuCat>
+			<menuCat name="mnuView" id="mnuView" text="&amp;View">
+				<item name="mnuEditCopy" id="mnuEditCopy">C&amp;opy</item>
+			</menuCat>
+			<menuCat name="mnuView" id="mnuView" text="&amp;Process">
+				<item name="mnuEditCopy" id="mnuEditCopy">C&amp;opy</item>
+			</menuCat>
+			<menuCat name="mnuView" id="mnuView" text="&amp;Find">
+				<item name="mnuEditCopy" id="mnuEditCopy">C&amp;opy</item>
+			</menuCat>
+			<menuCat name="mnuView" id="mnuView" text="&amp;DLL">
+				<item name="mnuEditCopy" id="mnuEditCopy">C&amp;opy</item>
+			</menuCat>
+		</control>
+		
+		<control type="tabControl" id="tabControl" name="tabControl" locationX="10" locationY="70" dock="top" sizeX="40" sizeY="40">
+			
+		</control>
+		
+		<control type="panel" id="tabControl2" name="tabControl2" locationX="10" locationY="400" backColor="#FFFFFF" borderStyle="Fixed3d">
+		
+		</control>
+		
+		<control type="statusStrip" id="stbMain" name="stbMain" >
+			<item name="stbLabelCpu" id="stbLabelCpu" text='CPU Usage: ' type="label" />
+			<item name="stbTest" id="stbTest" type="seperator"></item>
+			<item name="stbLabelProcesses" id="stbLabelProcesses" text='Processes: ' type="label" />
+			<item name="stbTest" id="stbTest" type="seperator"></item>
+			<item name="stbLabelCommit" id="stbLabelCommit" text='Commit Charge: ' type="label" />
+			<item name="stbTest" id="stbTest" type="seperator"></item>
+
+		</control>
+		
+	</controls>
+</form>	

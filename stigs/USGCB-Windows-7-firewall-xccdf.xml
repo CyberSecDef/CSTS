@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?><Benchmark xmlns="http://checklists.nist.gov/xccdf/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://checklists.nist.gov/xccdf/1.1" xmlns:cpe="http://cpe.mitre.org/dictionary/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" id="USGCB-Win7-Firewall" resolved="0" xml:lang="en-US" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd       http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+	<status date="2011-06-10">accepted</status>
+	<title>USGCB: Guidance for Securing Microsoft Windows 7 Firewall for IT Professional</title>
+	<description>This guide has been created to assist IT professionals, in effectively securing systems with Microsoft Windows 7 Firewall</description>
+	<notice id="terms-of-use" xml:lang="en-US">Do not attempt to implement any of the settings in this guide without first testing them in a non-operational environment. NIST assumes no responsibility whatsoever for its use by other parties, and makes no guarantees, expressed or implied, about its quality, reliability, or any other characteristic. NIST would appreciate acknowledgement if the document and template are used.</notice>
+	<front-matter xml:lang="en-US">The Federal CIO council created the Technology Information Subcommittee (TIS) at the direction of OMB to govern, among other federal activities, the FDCC iniatitive. The TIS, based on federal agency input, selects platforms and applcations for federal implementation. The TIS also is the Change Control Board (CCB) for configuration settings. As stated in the Federal CIO Council Memo to federal agencies, "The USGCB settings replace the Federal Desktop Core Configuration (FDCC) settings and provide the recommended security baselines for Information Technology products widely deployed across the agencies."</front-matter>
+	<rear-matter xml:lang="en-US">
+		<xhtml:strong>Trademark Information</xhtml:strong>
+		<xhtml:br/>
+		<xhtml:br/>Microsoft, Windows, Windows Vista, Windows 7, Internet Explorer, and Windows Firewall are either registered trademarks or trademarks of Microsoft Corporation in the United States and other countries.<xhtml:br/>
+		<xhtml:br/>All other names are registered trademarks or trademarks of their respective companies.</rear-matter>
+	<reference href="http://web.nvd.nist.gov/view/ncp/repository/checklistDetail?id=296">
+		<dc:publisher>National Institute of Standards and Technology</dc:publisher>
+		<dc:identifier>SP 800-68</dc:identifier>
+	</reference>
+	<platform idref="cpe:/o:microsoft:windows_7"/>
+	<version>v1.2.0.0</version>
+	<metadata>
+		<publisher xmlns="http://purl.org/dc/elements/1.1/">National Institute of Standards and Technology</publisher>
+	</metadata>
+	<model system="urn:xccdf:scoring:default"/>
+	<model system="urn:xccdf:scoring:flat"/>
+	<!-- ==================================================================================================== -->
+	<!-- =========================================  USGCB PROFILES  ========================================== -->
+	<!-- ==================================================================================================== -->
+	<!--                                                                                                      -->
+	<!-- These profiles outline the specific guidance outlined by the United States Government Configuration Baseline.     -->
+	<!-- Each defines the set of XCCDF rules that are applicable for that guidance as well as specific values -->
+	<!-- to be used when determining complinace.                                                              -->
+	<!--                                                                                                      -->
+	<Profile id="united_states_government_configuration_baseline_version_1.2.0.0">
+		<title>United States Government Configuration Baseline version 1.2.0.0</title>
+		<description>This profile represents guidance outlined in Federal Core Configuration settings for Windows 7 Firewall on desktop systems.</description>
+		<!-- '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+		<!-- '''  3 - USGCB Other Settings                                                               ''' -->
+		<!-- '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+		<select idref="domain_profile_Core_Networking_DHCP_In" selected="true"/>
+		<select idref="domain_profile_Core_Networking_DHCPV6_In" selected="true"/>
+		<select idref="domain_profile_log_dropped_packets" selected="true"/>
+		<select idref="domain_profile_logged_successful_connections" selected="true"/>
+		<select idref="domain_profile_name" selected="true"/>
+		<select idref="domain_profile_size_limit" selected="true"/>
+		<select idref="domain_profile_display_notification" selected="true"/>
+		<select idref="domain_profile_apply_local_connection_security_rules" selected="true"/>
+		<select idref="domain_profile_apply_local_firewall-rules" selected="true"/>
+		<select idref="domain_profile_allow_unicast_response" selected="true"/>
+		<select idref="domain_profile_firewall-state" selected="true"/>
+		<select idref="domain_profile_inbound_connections" selected="true"/>
+		<select idref="domain_profile_outbound_connections" selected="true"/>
+		<select idref="private_profile_log_dropped_packets" selected="true"/>
+		<select idref="private_profile_logged_successful_connections" selected="true"/>
+		<select idref="private_profile_name" selected="true"/>
+		<select idref="private_profile_size_limit" selected="true"/>
+		<select idref="private_profile_display_notification" selected="true"/>
+		<select idref="private_profile_apply_local_connection_security_rules" selected="true"/>
+		<select idref="private_profile_apply_local_firewall-rules" selected="true"/>
+		<select idref="private_profile_allow_unicast_response" selected="true"/>
+		<select idref="private_profile_firewall-state" selected="true"/>
+		<select idref="private_profile_inbound_connections" selected="true"/>
+		<select idref="private_profile_outbound_connections" selected="true"/>
+		<select idref="public_profile_log_dropped_packets" selected="true"/>
+		<select idref="public_profile_logged_successful_connections" selected="true"/>
+		<select idref="public_profile_name" selected="true"/>
+		<select idref="public_profile_size_limit" selected="true"/>
+		<select idref="public_profile_display_notification" selected="true"/>
+		<select idref="public_profile_apply_local_connection_security_rules" selected="true"/>
+		<select idref="public_profile_apply_local_firewall-rules" selected="true"/>
+		<select idref="public_profile_allow_unicast_response" selected="true"/>
+		<select idref="public_profile_firewall-state" selected="true"/>
+		<select idref="public_profile_inbound_connections" selected="true"/>
+		<select idref="public_profile_outbound_connections" selected="true"/>
+		<!-- '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+		<!-- '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+		<!-- '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+		<refine-value idref="domain_profile_log_dropped_packets_var" selector="yes"/>
+		<refine-value idref="domain_profile_logged_successful_connections_var" selector="yes"/>
+		<refine-value idref="domain_profile_name_var" selector="firewall-dir"/>
+		<refine-value idref="domain_profile_size_limit_var" selector="16384_kb"/>
+		<refine-value idref="domain_profile_display_notification_var" selector="yes"/>
+		<refine-value idref="domain_profile_apply_local_connection_security_rules_var" selector="no"/>
+		<refine-value idref="domain_profile_apply_local_firewall-rules_var" selector="no"/>
+		<refine-value idref="domain_profile_allow_unicast_response_var" selector="no"/>
+		<refine-value idref="domain_profile_firewall-state_var" selector="on"/>
+		<refine-value idref="domain_profile_inbound_connections_var" selector="block"/>
+		<refine-value idref="domain_profile_outbound_connections_var" selector="allow"/>
+		<refine-value idref="private_profile_log_dropped_packets_var" selector="yes"/>
+		<refine-value idref="private_profile_logged_successful_connections_var" selector="yes"/>
+		<refine-value idref="private_profile_name_var" selector="firewall-dir"/>
+		<refine-value idref="private_profile_size_limit_var" selector="16384_kb"/>
+		<refine-value idref="private_profile_display_notification_var" selector="yes"/>
+		<refine-value idref="private_profile_apply_local_connection_security_rules_var" selector="no"/>
+		<refine-value idref="private_profile_apply_local_firewall-rules_var" selector="no"/>
+		<refine-value idref="private_profile_allow_unicast_response_var" selector="no"/>
+		<refine-value idref="private_profile_firewall-state_var" selector="on"/>
+		<refine-value idref="private_profile_inbound_connections_var" selector="block"/>
+		<refine-value idref="private_profile_outbound_connections_var" selector="allow"/>
+		<refine-value idref="public_profile_log_dropped_packets_var" selector="yes"/>
+		<refine-value idref="public_profile_logged_successful_connections_var" selector="yes"/>
+		<refine-value idref="public_profile_name_var" selector="firewall-dir"/>
+		<refine-value idref="public_profile_size_limit_var" selector="16384_kb"/>
+		<refine-value idref="public_profile_display_notification_var" selector="yes"/>
+		<refine-value idref="public_profile_apply_local_connection_security_rules_var" selector="no"/>
+		<refine-value idref="public_profile_apply_local_firewall-rules_var" selector="no"/>
+		<refine-value idref="public_profile_allow_unicast_response_var" selector="no"/>
+		<refine-value idref="public_profile_firewall-state_var" selector="on"/>
+		<refine-value idref="public_profile_inbound_connections_var" selector="block"/>
+		<refine-value idref="public_profile_outbound_connections_var" selector="allow"/>
+	</Profile>
+	<!-- ==================================================================================================== -->
+	<!-- =====================================  USGCB SECURITY GUIDANCE  ===================================== -->
+	<!-- ==================================================================================================== -->
+	<!--                                                                                                      -->
+	<!-- The following groups represent the collection of USGCB guidance for Microsoft Windows 7 Firewall. -->
+	<!-- For specific recommendations regarding which rules to enable and which values to use, please refer   -->
+	<!-- to the XCCDF profiles above.                                                                         -->
+	<!--                                                                                                      -->
+	<!-- **************************************************************************************************** -->
+	<!-- ***  1 - Introduction                                                                            *** -->
+	<!-- **************************************************************************************************** -->
+	<Group id="introduction">
+		<title>Introduction</title>
+		<description>This guide has been created to assist federal agencies in effectively securing systems with Microsoft Windows 7 Firewall based on OMB United States Government Configuration Baseline recommendations.<xhtml:br/>
+			<xhtml:br/>Under the direction of OMB and in collaboration with DHS, DISA, NSA, USAF, and Microsoft, NIST has provided the following baseline to help agencies test, implement, and deploy the Microsoft Windows 7 Firewall United States Government Configuration Baseline (USGCB) baseline. The United States Government Configuration Baseline (USGCB) is an OMB-mandated security configuration.<xhtml:br/>
+			<xhtml:br/>Please refer to the USGCB home page for additional information. http://USGCB.nist.gov</description>
+	</Group>
+	<!-- **************************************************************************************************** -->
+	<!-- ***  2 - USGCB Security Settings                                                                  *** -->
+	<!-- **************************************************************************************************** -->
+	<!--                                                                                                      -->
+	<!-- none                                                                                                 -->
+	<!--                                                                                                      -->
+	<!-- **************************************************************************************************** -->
+	<!-- ***  3 - USGCB Other Settings                                                                     *** -->
+	<!-- **************************************************************************************************** -->
+	<Group id="USGCB_other_settings">
+		<title>USGCB Other Settings</title>
+		<description>USGCB has identified the following additional controls that must be checked in order to verify compliance.</description>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- ~~~  Inbound Rules                                                                            -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Group id="inbound_rules">
+			<title>Inbound Rules</title>
+			<description>Inbound firewall rules</description>
+			<Rule id="domain_profile_Core_Networking_DHCP_In" selected="false" weight="10.0">
+				<title>Core Networking - Dynamic Host Configuration Protocol (DHCP-In)</title>
+				<description>To allow the client to receive DHCP resonses that would otherwise be blocked by CCE-9069-6.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Inbound Rules</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-14986-4</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20940"/>
+				</check>
+			</Rule>
+			<Rule id="domain_profile_Core_Networking_DHCPV6_In" selected="false" weight="10.0">
+				<title>Core Networking - Dynamic Host Configuration Protocol (DHCPV6-In)</title>
+				<description>To allow the client to receive DHCPV6 resonses that would otherwise be blocked by CCE-9069-6.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Inbound Rules</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-14854-4</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20941"/>
+				</check>
+			</Rule>
+		</Group>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- ~~~  Domain Profile                                                                            -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Group id="windows_firewall-with_advanced_security_domain_profile">
+			<title>Windows Firewall with Advanced Security - Domain Profile</title>
+			<description>The Domain Profile applies when a computer is connected to a network and authenticates to a domain controller in the domain to which the computer belongs.</description>
+			<Value id="domain_profile_log_dropped_packets_var" operator="equals" type="number">
+				<title>domain_profile_log_dropped_packets_var</title>
+				<description>todo</description>
+				<value>1</value>
+				<value selector="no">0</value>
+				<value selector="yes">1</value>
+			</Value>
+			<Value id="domain_profile_logged_successful_connections_var" operator="equals" type="number">
+				<title>domain_profile_logged_successful_connections_var</title>
+				<description>todo</description>
+				<value>1</value>
+				<value selector="no">0</value>
+				<value selector="yes">1</value>
+			</Value>
+			<Value id="domain_profile_name_var" operator="pattern match" type="string">
+				<title>domain_profile_name_var</title>
+				<description>todo</description>
+				<value>((%[Ss][Yy][Ss][Tt][Ee][Mm][Rr][Oo][Oo][Tt]%)|(%[Ww][Ii][Nn][Dd][Ii][Rr]%)|([C-Zc-z]:\\[Ww][Ii][Nn][Dd][Oo][Ww][Ss]))\\[Ss][Yy][Ss][Tt][Ee][Mm]32\\[Ll][Oo][Gg][Ff][Ii][Ll][Ee][Ss]\\[Ff][Ii][Rr][Ee][Ww][Aa][Ll][Ll]\\[^\.][^\\]*</value>
+				<value selector="firewall-dir">((%[Ss][Yy][Ss][Tt][Ee][Mm][Rr][Oo][Oo][Tt]%)|(%[Ww][Ii][Nn][Dd][Ii][Rr]%)|([C-Zc-z]:\\[Ww][Ii][Nn][Dd][Oo][Ww][Ss]))\\[Ss][Yy][Ss][Tt][Ee][Mm]32\\[Ll][Oo][Gg][Ff][Ii][Ll][Ee][Ss]\\[Ff][Ii][Rr][Ee][Ww][Aa][Ll][Ll]\\[^\.][^\\]*</value>
+			</Value>
+			<Value id="domain_profile_size_limit_var" operator="equals" type="number">
+				<title>domain_profile_size_limit_var</title>
+				<description>todo</description>
+				<value>0</value>
+				<value selector="16384_kb">16384</value>
+			</Value>
+			<Value id="domain_profile_display_notification_var" operator="equals" type="number">
+				<title>Display a Notification</title>
+				<description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+				<value>0</value>
+				<value selector="yes">0</value>
+				<value selector="no">1</value>
+			</Value>
+			<Value id="domain_profile_apply_local_connection_security_rules_var" operator="equals" type="number">
+				<title>Apply Local Connection Security Rules</title>
+				<description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+				<value>0</value>
+				<value selector="no">0</value>
+				<value selector="yes">1</value>
+			</Value>
+			<Value id="domain_profile_apply_local_firewall-rules_var" operator="equals" type="number">
+				<title>Apply Local Firewall Rules</title>
+				<description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+				<value>0</value>
+				<value selector="no">0</value>
+				<value selector="yes">1</value>
+			</Value>
+			<Value id="domain_profile_allow_unicast_response_var" operator="equals" type="number">
+				<title>Allow Unicast Response</title>
+				<description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+				<value>1</value>
+				<value selector="yes">0</value>
+				<value selector="no">1</value>
+			</Value>
+			<Value id="domain_profile_firewall-state_var" operator="equals" type="number">
+				<title>Firewall state</title>
+				<description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+				<value>1</value>
+				<value selector="off">0</value>
+				<value selector="on">1</value>
+			</Value>
+			<Value id="domain_profile_inbound_connections_var" operator="equals" type="number">
+				<title>Inbound Connections</title>
+				<description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+				<value>1</value>
+				<value selector="allow">0</value>
+				<value selector="block">1</value>
+			</Value>
+			<Value id="domain_profile_outbound_connections_var" operator="equals" type="number">
+				<title>Outbound Connections</title>
+				<description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+				<value>0</value>
+				<value selector="allow">0</value>
+				<value selector="block">1</value>
+			</Value>
+			<Rule id="domain_profile_log_dropped_packets" selected="false" weight="10.0">
+				<title>Log Dropped Packets</title>
+				<description>The "Log Dropped Packets" option for the Windows Firewall should be configured correctly for the Domain Profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Domain Profile Tab\Logging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-10502-3</ident>
+				<ident system="cce.mitre.org/version/4">CCE-251</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export value-id="domain_profile_log_dropped_packets_var" export-name="oval:gov.nist.USGCB.win7firewall:var:20904"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20904"/>
+				</check>
+			</Rule>
+			<Rule id="domain_profile_logged_successful_connections" selected="false" weight="10.0">
+				<title>Logged Successful Connections</title>
+				<description>The "Log Successful Connections" option for the Windows Firewall should be configured correctly for the Domain Profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Domain Profile Tab\Logging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-10268-1</ident>
+				<ident system="cce.mitre.org/version/4">CCE-617</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export value-id="domain_profile_logged_successful_connections_var" export-name="oval:gov.nist.USGCB.win7firewall:var:20905"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20905"/>
+				</check>
+			</Rule>
+			<Rule id="domain_profile_name" selected="false" weight="10.0">
+				<title>Name</title>
+				<description>The log file path and name for the Windows Firewall should be configured correctly for the Domain Profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Domain Profile Tab\Logging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-10022-2</ident>
+				<ident system="cce.mitre.org/version/4">CCE-793</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export value-id="domain_profile_name_var" export-name="oval:gov.nist.USGCB.win7firewall:var:20906"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20906"/>
+				</check>
+			</Rule>
+			<Rule id="domain_profile_size_limit" selected="false" weight="10.0">
+				<title>Size Limit</title>
+				<description>The log file size limit for the Windows Firewall should be configured correctly for the Domain Profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Domain Profile Tab\Logging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9747-7</ident>
+				<ident system="cce.mitre.org/version/4">CCE-57</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export value-id="domain_profile_size_limit_var" export-name="oval:gov.nist.USGCB.win7firewall:var:20907"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20907"/>
+				</check>
+			</Rule>
+			<Rule id="domain_profile_display_notification" selected="false" weight="10.0">
+				<title>Display a Notification</title>
+				<description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Domain Profile Tab\Settings\Firewall settings</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9774-1</ident>
+				<ident system="cce.mitre.org/version/4">CCE-1047</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export value-id="domain_profile_display_notification_var" export-name="oval:gov.nist.USGCB.win7firewall:var:20908"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20908"/>
+				</check>
+			</Rule>
+			<Rule id="domain_profile_apply_local_connection_security_rules" selected="false" weight="10.0">
+				<title>Apply Local Connection Security Rules</title>
+				<description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Domain Profile Tab\Settings\Rule merging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9329-4</ident>
+				<ident system="cce.mitre.org/version/4">CCE-584</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20909" value-id="domain_profile_apply_local_connection_security_rules_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20909"/>
+				</check>
+			</Rule>
+			<Rule id="domain_profile_apply_local_firewall-rules" selected="false" weight="10.0">
+				<title>Apply Local Firewall Rules</title>
+				<description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Domain Profile Tab\Settings\Rule merging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9686-7</ident>
+				<ident system="cce.mitre.org/version/4">CCE-400</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20910" value-id="domain_profile_apply_local_firewall-rules_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20910"/>
+				</check>
+			</Rule>
+			<Rule id="domain_profile_allow_unicast_response" selected="false" weight="10.0">
+				<title>Allow Unicast Response</title>
+				<description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Domain Profile Tab\Settings\Unicast response</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9069-6</ident>
+				<ident system="cce.mitre.org/version/4">CCE-696</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20911" value-id="domain_profile_allow_unicast_response_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20911"/>
+				</check>
+			</Rule>
+			<Rule id="domain_profile_firewall-state" selected="false" weight="10.0">
+				<title>Firewall state</title>
+				<description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Domain Profile Tab\State</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9465-6</ident>
+				<ident system="cce.mitre.org/version/4">CCE-806</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20912" value-id="domain_profile_firewall-state_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20912"/>
+				</check>
+			</Rule>
+			<Rule id="domain_profile_inbound_connections" selected="false" weight="10.0">
+				<title>Inbound Connections</title>
+				<description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Domain Profile Tab\State</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9620-6</ident>
+				<ident system="cce.mitre.org/version/4">CCE-249</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20913" value-id="domain_profile_inbound_connections_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20913"/>
+				</check>
+			</Rule>
+			<Rule id="domain_profile_outbound_connections" selected="false" weight="10.0">
+				<title>Outbound Connections</title>
+				<description>The Domain Profile is used when the computer is connected to a network and is authenticated to a domain controller.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Domain Profile Tab\State</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9509-1</ident>
+				<ident system="cce.mitre.org/version/4">CCE-485</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20914" value-id="domain_profile_outbound_connections_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20914"/>
+				</check>
+			</Rule>
+		</Group>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- ~~~  Private Profile                                                                           -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Group id="windows_firewall-with_advanced_security_private_profile">
+			<title>Windows Firewall with Advanced Security - Private Profile</title>
+			<description>The Private Profile only applies if a user with local administrator privileges assigns it to a network that was previously set to Public. Microsoft recommends only doing this for a trusted network.</description>
+			<Value id="private_profile_log_dropped_packets_var" operator="equals" type="number">
+				<title>private_profile_log_dropped_packets_var</title>
+				<description>todo</description>
+				<value>1</value>
+				<value selector="no">0</value>
+				<value selector="yes">1</value>
+			</Value>
+			<Value id="private_profile_logged_successful_connections_var" operator="equals" type="number">
+				<title>private_profile_logged_successful_connections_var</title>
+				<description>todo</description>
+				<value>1</value>
+				<value selector="no">0</value>
+				<value selector="yes">1</value>
+			</Value>
+			<Value id="private_profile_name_var" operator="pattern match" type="string">
+				<title>private_profile_name_var</title>
+				<description>todo</description>
+				<value>((%[Ss][Yy][Ss][Tt][Ee][Mm][Rr][Oo][Oo][Tt]%)|(%[Ww][Ii][Nn][Dd][Ii][Rr]%)|([C-Zc-z]:\\[Ww][Ii][Nn][Dd][Oo][Ww][Ss]))\\[Ss][Yy][Ss][Tt][Ee][Mm]32\\[Ll][Oo][Gg][Ff][Ii][Ll][Ee][Ss]\\[Ff][Ii][Rr][Ee][Ww][Aa][Ll][Ll]\\[^\.][^\\]*</value>
+				<value selector="firewall-dir">((%[Ss][Yy][Ss][Tt][Ee][Mm][Rr][Oo][Oo][Tt]%)|(%[Ww][Ii][Nn][Dd][Ii][Rr]%)|([C-Zc-z]:\\[Ww][Ii][Nn][Dd][Oo][Ww][Ss]))\\[Ss][Yy][Ss][Tt][Ee][Mm]32\\[Ll][Oo][Gg][Ff][Ii][Ll][Ee][Ss]\\[Ff][Ii][Rr][Ee][Ww][Aa][Ll][Ll]\\[^\.][^\\]*</value>
+			</Value>
+			<Value id="private_profile_size_limit_var" operator="equals" type="number">
+				<title>private_profile_size_limit_var</title>
+				<description>todo</description>
+				<value>0</value>
+				<value selector="16384_kb">16384</value>
+			</Value>
+			<Value id="private_profile_display_notification_var" operator="equals" type="number">
+				<title>Display a Notification</title>
+				<description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+				<value>0</value>
+				<value selector="yes">0</value>
+				<value selector="no">1</value>
+			</Value>
+			<Value id="private_profile_apply_local_connection_security_rules_var" operator="equals" type="number">
+				<title>Apply Local Connection Security Rules</title>
+				<description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+				<value>1</value>
+				<value selector="no">0</value>
+				<value selector="yes">1</value>
+			</Value>
+			<Value id="private_profile_apply_local_firewall-rules_var" operator="equals" type="number">
+				<title>Apply Local Firewall Rules</title>
+				<description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+				<value>1</value>
+				<value selector="no">0</value>
+				<value selector="yes">1</value>
+			</Value>
+			<Value id="private_profile_allow_unicast_response_var" operator="equals" type="number">
+				<title>Allow Unicast Response</title>
+				<description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+				<value>1</value>
+				<value selector="yes">0</value>
+				<value selector="no">1</value>
+			</Value>
+			<Value id="private_profile_firewall-state_var" operator="equals" type="number">
+				<title>Firewall state</title>
+				<description>todo - description needed</description>
+				<value>1</value>
+				<value selector="off">0</value>
+				<value selector="on">1</value>
+			</Value>
+			<Value id="private_profile_inbound_connections_var" operator="equals" type="number">
+				<title>Inbound Connections</title>
+				<description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+				<value>1</value>
+				<value selector="allow">0</value>
+				<value selector="block">1</value>
+			</Value>
+			<Value id="private_profile_outbound_connections_var" operator="equals" type="number">
+				<title>Outbound Connections</title>
+				<description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+				<value>0</value>
+				<value selector="allow">0</value>
+				<value selector="block">1</value>
+			</Value>
+			<Rule id="private_profile_log_dropped_packets" selected="false" weight="10.0">
+				<title>Log Dropped Packets</title>
+				<description>The "Log Dropped Packets" option for the Windows Firewall should be configured correctly for the Private Profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Private Profile Tab\Logging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-10215-2</ident>
+				<ident system="cce.mitre.org/version/4">CCE-325</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export value-id="private_profile_log_dropped_packets_var" export-name="oval:gov.nist.USGCB.win7firewall:var:20915"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20915"/>
+				</check>
+			</Rule>
+			<Rule id="private_profile_logged_successful_connections" selected="false" weight="10.0">
+				<title>Logged Successful Connections</title>
+				<description>The "Log Successful Connections" option for the Windows Firewall should be configured correctly for the Private Profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Private Profile Tab\Logging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-10611-2</ident>
+				<ident system="cce.mitre.org/version/4">CCE-327</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export value-id="private_profile_logged_successful_connections_var" export-name="oval:gov.nist.USGCB.win7firewall:var:20916"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20916"/>
+				</check>
+			</Rule>
+			<Rule id="private_profile_name" selected="false" weight="10.0">
+				<title>Name</title>
+				<description>The log file path and name for the Windows Firewall should be configured correctly for the Private Profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Private Profile Tab\Logging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-10386-1</ident>
+				<ident system="cce.mitre.org/version/4">CCE-999</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export value-id="private_profile_name_var" export-name="oval:gov.nist.USGCB.win7firewall:var:20917"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20917"/>
+				</check>
+			</Rule>
+			<Rule id="private_profile_size_limit" selected="false" weight="10.0">
+				<title>Size Limit</title>
+				<description>The log file size limit for the Windows Firewall should be configured correctly for the Private Profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Private Profile Tab\Logging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-10250-9</ident>
+				<ident system="cce.mitre.org/version/4">CCE-1091</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export value-id="private_profile_size_limit_var" export-name="oval:gov.nist.USGCB.win7firewall:var:20918"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20918"/>
+				</check>
+			</Rule>
+			<Rule id="private_profile_display_notification" selected="false" weight="10.0">
+				<title>Display a Notification</title>
+				<description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Private Profile Tab\Settings\Firewall settings</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-8884-9</ident>
+				<ident system="cce.mitre.org/version/4">CCE-38</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20919" value-id="private_profile_display_notification_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20919"/>
+				</check>
+			</Rule>
+			<Rule id="private_profile_apply_local_connection_security_rules" selected="false" weight="10.0">
+				<title>Apply Local Connection Security Rules</title>
+				<description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Private Profile Tab\Settings\Rule merging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9712-1</ident>
+				<ident system="cce.mitre.org/version/4">CCE-199</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20920" value-id="private_profile_apply_local_connection_security_rules_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20920"/>
+				</check>
+			</Rule>
+			<Rule id="private_profile_apply_local_firewall-rules" selected="false" weight="10.0">
+				<title>Apply Local Firewall Rules</title>
+				<description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Private Profile Tab\Settings\Rule merging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9663-6</ident>
+				<ident system="cce.mitre.org/version/4">CCE-117</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20921" value-id="private_profile_apply_local_firewall-rules_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20921"/>
+				</check>
+			</Rule>
+			<Rule id="private_profile_allow_unicast_response" selected="false" weight="10.0">
+				<title>Allow Unicast Response</title>
+				<description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Private Profile Tab\Settings\Unicast response</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9522-4</ident>
+				<ident system="cce.mitre.org/version/4">CCE-70</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20922" value-id="private_profile_allow_unicast_response_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20922"/>
+				</check>
+			</Rule>
+			<Rule id="private_profile_firewall-state" selected="false" weight="10.0">
+				<title>Firewall state</title>
+				<description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Private Profile Tab\State</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9739-4</ident>
+				<ident system="cce.mitre.org/version/4">CCE-7</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20923" value-id="private_profile_firewall-state_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20923"/>
+				</check>
+			</Rule>
+			<Rule id="private_profile_inbound_connections" selected="false" weight="10.0">
+				<title>Inbound Connections</title>
+				<description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Private Profile Tab\State</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9694-1</ident>
+				<ident system="cce.mitre.org/version/4">CCE-29</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20924" value-id="private_profile_inbound_connections_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20924"/>
+				</check>
+			</Rule>
+			<Rule id="private_profile_outbound_connections" selected="false" weight="10.0">
+				<title>Outbound Connections</title>
+				<description>The Private Profile is used only if a local administrator changes the profile for a computer connected previously to a public network (using a Public Profile).</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Private Profile Tab\State</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-8870-8</ident>
+				<ident system="cce.mitre.org/version/4">CCE-32</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20925" value-id="private_profile_outbound_connections_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20925"/>
+				</check>
+			</Rule>
+		</Group>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- ~~~  Public Profile                                                                            -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Group id="windows_firewall-with_advanced_security_public_profile">
+			<title>Windows Firewall with Advanced Security - Public Profile</title>
+			<description>The Public Profile is the default network location type when the computer is not connected to a domain. Public profile settings should be the most restrictive because the computer is connected to a public network where security cannot be as tightly controlled as within an IT environment.</description>
+			<Value id="public_profile_log_dropped_packets_var" operator="equals" type="number">
+				<title>public_profile_log_dropped_packets_var</title>
+				<description>todo</description>
+				<value>1</value>
+				<value selector="no">0</value>
+				<value selector="yes">1</value>
+			</Value>
+			<Value id="public_profile_logged_successful_connections_var" operator="equals" type="number">
+				<title>public_profile_logged_successful_connections_var</title>
+				<description>todo</description>
+				<value>1</value>
+				<value selector="no">0</value>
+				<value selector="yes">1</value>
+			</Value>
+			<Value id="public_profile_name_var" operator="equals" type="string">
+				<title>public_profile_name_var</title>
+				<description>todo</description>
+				<value>((%[Ss][Yy][Ss][Tt][Ee][Mm][Rr][Oo][Oo][Tt]%)|(%[Ww][Ii][Nn][Dd][Ii][Rr]%)|([C-Zc-z]:\\[Ww][Ii][Nn][Dd][Oo][Ww][Ss]))\\[Ss][Yy][Ss][Tt][Ee][Mm]32\\[Ll][Oo][Gg][Ff][Ii][Ll][Ee][Ss]\\[Ff][Ii][Rr][Ee][Ww][Aa][Ll][Ll]\\[^\.][^\\]*</value>
+				<value selector="firewall-dir">((%[Ss][Yy][Ss][Tt][Ee][Mm][Rr][Oo][Oo][Tt]%)|(%[Ww][Ii][Nn][Dd][Ii][Rr]%)|([C-Zc-z]:\\[Ww][Ii][Nn][Dd][Oo][Ww][Ss]))\\[Ss][Yy][Ss][Tt][Ee][Mm]32\\[Ll][Oo][Gg][Ff][Ii][Ll][Ee][Ss]\\[Ff][Ii][Rr][Ee][Ww][Aa][Ll][Ll]\\[^\.][^\\]*</value>
+			</Value>
+			<Value id="public_profile_size_limit_var" operator="equals" type="number">
+				<title>public_profile_size_limit_var</title>
+				<description>todo</description>
+				<value>0</value>
+				<value selector="16384_kb">16384</value>
+			</Value>
+			<Value id="public_profile_display_notification_var" operator="equals" type="number">
+				<title>Display a Notification</title>
+				<description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+				<value>1</value>
+				<value selector="yes">0</value>
+				<value selector="no">1</value>
+			</Value>
+			<Value id="public_profile_apply_local_connection_security_rules_var" operator="equals" type="number">
+				<title>Apply Local Connection Security Rules</title>
+				<description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+				<value>0</value>
+				<value selector="no">0</value>
+				<value selector="yes">1</value>
+			</Value>
+			<Value id="public_profile_apply_local_firewall-rules_var" operator="equals" type="number">
+				<title>Apply Local Firewall Rules</title>
+				<description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+				<value>0</value>
+				<value selector="no">0</value>
+				<value selector="yes">1</value>
+			</Value>
+			<Value id="public_profile_allow_unicast_response_var" operator="equals" type="number">
+				<title>Allow Unicast Response</title>
+				<description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+				<value>1</value>
+				<value selector="yes">0</value>
+				<value selector="no">1</value>
+			</Value>
+			<Value id="public_profile_firewall-state_var" operator="equals" type="number">
+				<title>Firewall state</title>
+				<description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+				<value>1</value>
+				<value selector="off">0</value>
+				<value selector="on">1</value>
+			</Value>
+			<Value id="public_profile_inbound_connections_var" operator="equals" type="number">
+				<title>Inbound Connections</title>
+				<description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+				<value>1</value>
+				<value selector="allow">0</value>
+				<value selector="block">1</value>
+			</Value>
+			<Value id="public_profile_outbound_connections_var" operator="equals" type="number">
+				<title>Outbound Connections</title>
+				<description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+				<value>0</value>
+				<value selector="allow">0</value>
+				<value selector="block">1</value>
+			</Value>
+			<Rule id="public_profile_log_dropped_packets" selected="false" weight="10.0">
+				<title>Log Dropped Packets</title>
+				<description>The "Log Dropped Packets" option for the Windows Firewall should be configured correctly for the Public Profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Public Profile Tab\Logging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9749-3</ident>
+				<ident system="cce.mitre.org/version/4">CCE-1165</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export value-id="public_profile_log_dropped_packets_var" export-name="oval:gov.nist.USGCB.win7firewall:var:20926"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20926"/>
+				</check>
+			</Rule>
+			<Rule id="public_profile_logged_successful_connections" selected="false" weight="10.0">
+				<title>Logged Successful Connections</title>
+				<description>The "Log Successful Connections" option for the Windows Firewall should be configured correctly for the Public Profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Public Profile Tab\Logging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9753-5</ident>
+				<ident system="cce.mitre.org/version/4">CCE-534</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export value-id="public_profile_logged_successful_connections_var" export-name="oval:gov.nist.USGCB.win7firewall:var:20927"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20927"/>
+				</check>
+			</Rule>
+			<Rule id="public_profile_name" selected="false" weight="10.0">
+				<title>Name</title>
+				<description>The log file path and name for the Windows Firewall should be configured correctly for the Public Profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Public Profile Tab\Logging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9926-7</ident>
+				<ident system="cce.mitre.org/version/4">CCE-1263</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export value-id="public_profile_name_var" export-name="oval:gov.nist.USGCB.win7firewall:var:20928"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20928"/>
+				</check>
+			</Rule>
+			<Rule id="public_profile_size_limit" selected="false" weight="10.0">
+				<title>Size Limit</title>
+				<description>The log file size limit for the Windows Firewall should be configured correctly for the Public Profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Public Profile Tab\Logging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-10373-9</ident>
+				<ident system="cce.mitre.org/version/4">CCE-1313</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export value-id="public_profile_size_limit_var" export-name="oval:gov.nist.USGCB.win7firewall:var:20929"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20929"/>
+				</check>
+			</Rule>
+			<Rule id="public_profile_display_notification" selected="false" weight="10.0">
+				<title>Display a Notification</title>
+				<description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Public Profile Tab\Settings\Firewall settings</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9742-8</ident>
+				<ident system="cce.mitre.org/version/4">CCE-390</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20930" value-id="public_profile_display_notification_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20930"/>
+				</check>
+			</Rule>
+			<Rule id="public_profile_apply_local_connection_security_rules" selected="false" weight="10.0">
+				<title>Apply Local Connection Security Rules</title>
+				<description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Public Profile Tab\Settings\Rule merging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9817-8</ident>
+				<ident system="cce.mitre.org/version/4">CCE-437</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20931" value-id="public_profile_apply_local_connection_security_rules_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20931"/>
+				</check>
+			</Rule>
+			<Rule id="public_profile_apply_local_firewall-rules" selected="false" weight="10.0">
+				<title>Apply Local Firewall Rules</title>
+				<description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Public Profile Tab\Settings\Rule merging</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9786-5</ident>
+				<ident system="cce.mitre.org/version/4">CCE-421</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20932" value-id="public_profile_apply_local_firewall-rules_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20932"/>
+				</check>
+			</Rule>
+			<Rule id="public_profile_allow_unicast_response" selected="false" weight="10.0">
+				<title>Allow Unicast Response</title>
+				<description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Public Profile Tab\Settings\Unicast response</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9773-3</ident>
+				<ident system="cce.mitre.org/version/4">CCE-414</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20933" value-id="public_profile_allow_unicast_response_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20933"/>
+				</check>
+			</Rule>
+			<Rule id="public_profile_firewall-state" selected="false" weight="10.0">
+				<title>Firewall state</title>
+				<description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Public Profile Tab\State</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9593-5</ident>
+				<ident system="cce.mitre.org/version/4">CCE-295</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20934" value-id="public_profile_firewall-state_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20934"/>
+				</check>
+			</Rule>
+			<Rule id="public_profile_inbound_connections" selected="false" weight="10.0">
+				<title>Inbound Connections</title>
+				<description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Public Profile Tab\State</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9007-6</ident>
+				<ident system="cce.mitre.org/version/4">CCE-338</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20935" value-id="public_profile_inbound_connections_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20935"/>
+				</check>
+			</Rule>
+			<Rule id="public_profile_outbound_connections" selected="false" weight="10.0">
+				<title>Outbound Connections</title>
+				<description>The Public Profile is the default profile for a computer connected to a public network but not connected to a domain controller. This should be the most restricted profile.</description>
+				<reference>
+					<dc:type>GPO</dc:type>
+					<dc:source>Computer Configuration\Windows Settings\Security Settings\Windows Firewall with Advanced Security\Windows Firewall with Advanced Security\Windows Firewall Properties\Public Profile Tab\State</dc:source>
+				</reference>
+				<ident system="http://cce.mitre.org">CCE-9588-5</ident>
+				<ident system="cce.mitre.org/version/4">CCE-342</ident>
+				<check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+					<check-export export-name="oval:gov.nist.USGCB.win7firewall:var:20936" value-id="public_profile_outbound_connections_var"/>
+					<check-content-ref href="USGCB-Windows-7-firewall-oval.xml" name="oval:gov.nist.USGCB.win7firewall:def:20936"/>
+				</check>
+			</Rule>
+		</Group>
+	</Group>
+	<!-- **************************************************************************************************** -->
+	<!-- ***  4 - Security Patches                                                                    *** -->
+	<!-- **************************************************************************************************** -->
+	<!--                                                                                                      -->
+	<!-- see operating system benchmark                                                                       -->
+	<!--                                                                                                      -->
+	<!-- ==================================================================================================== -->
+	<!-- ==================================================================================================== -->
+	<!-- ==================================================================================================== -->
+</Benchmark>

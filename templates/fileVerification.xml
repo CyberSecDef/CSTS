@@ -1,0 +1,36 @@
+<form name="form1" text="Cyber Security Tool Suite - FileVerification Settings" clientSizeX="400" clientSizeY="180" FormBorderStyle="fixedDialog">
+	<controls>
+		<control type="textBox" id="txtCheckFolder" name="txtCheckFolder" locationX="5" locationY="5" sizeX="245" sizeY="25"/>
+		<control type="button" id="btnOpenCheckFolderBrowser" name="btnOpenCheckFolderBrowser" text="Browse for Check Folder" locationX="255" locationY="5" sizeX="140" sizeY="20" />
+
+		<control type="textBox" id="txtKnownGood" name="txtKnownGood" locationX="5" locationY="30" sizeX="245" sizeY="25"/>
+		<control type="button" id="btnOpenKnownFolderBrowser" name="btnOpenKnownFolderBrowser" text="Browse for Known Folder" locationX="255" locationY="30" sizeX="140" sizeY="20" />
+
+		<control type="label" id="lblIgnore" name="lblIgnore" text="Files To Ignore" locationX="255" locationY="60" sizeX="125" sizeY="20" />
+		<control type="textBox" id="txtIgnore" name="txtIgnore" locationX="5" locationY="55" sizeX="245" sizeY="25"/>
+		
+		<control type="CheckBox" id="chkRecurse" name="chkRecurse" locationX="250" locationY="80" text="Recurse into sub folders?" sizeX="380" sizeY="25"/>
+		<control type="CheckBox" id="chkUpdate" name="chkUpdate" locationX="250" locationY="105" text="Update Files?" sizeX="380" sizeY="25"/>
+		<control type="CheckBox" id="chkRemove" name="chkRemove" locationX="250" locationY="130" text="Remove Extra Files?" sizeX="380" sizeY="25"/>
+		<control type="CheckBox" id="chkCopyBack" name="chkCopyBack" locationX="250" locationY="155" text="Copy Back Extra Files?" sizeX="380" sizeY="25"/>
+		
+		<control type="CheckBox" id="chkExec" name="chkExec" locationX="125" locationY="80" text="Only Scan Execs?" sizeX="380" sizeY="25"/>
+		
+		
+		<control type="comboBox" id="cboHash" name="cboHash" locationX="5" locationY="80" sizeX="50" sizeY="25">
+			<item>MTD</item>
+			<item>HMAC</item>
+			<item selected="selected">SHA1</item>
+			<item>SHA256</item>
+			<item>SHA385</item>
+			<item>SHA512</item>
+		</control>
+		<control type="label" id="lblHash" name="lblHash" text="Algorithm" locationX="60" locationY="85" sizeX="65" sizeY="20" />
+		
+		<control type="numericUpDown" id="txtReportScans" name="txtReportScans" locationX="5" locationY="105" text="10" sizeX="50" sizeY="25"/>
+		<control type="label" id="lblReportScans" name="lblReportScans" text="Prev Scans" locationX="60" locationY="110" sizeX="150" sizeY="20" />
+		
+		
+		<control type="button" id="btnExecute" name="btnExecute" text="Execute" locationX="5" locationY="130" sizeX="240" sizeY="45" backColor="#FFCCCCCC"/>
+	</controls>
+</form>

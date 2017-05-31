@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" id="Android_2.2_(Dell)" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2014-08-26">accepted</status><title>Android 2.2 (Dell) Security Technical Implementation Guide</title><description>This STIG contains technical security controls required for the use of the Android 2.2 (Dell version) mobile operating system in the DoD environment when managed by the Good Mobility Suite.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA, Field Security Operations</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 2 Benchmark Date: 24 Oct 2014</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-18627" selected="true" /><select idref="V-18856" selected="true" /><select idref="V-19897" selected="true" /><select idref="V-19898" selected="true" /><select idref="V-19899" selected="true" /><select idref="V-24981" selected="true" /><select idref="V-24982" selected="true" /><select idref="V-24983" selected="true" /><select idref="V-24984" selected="true" /><select idref="V-24985" selected="true" /><select idref="V-24986" selected="true" /><select idref="V-25003" selected="true" /><select idref="V-25007" selected="true" /><select idref="V-25009" selected="true" /><select idref="V-25010" selected="true" /><select idref="V-25011" selected="true" /><select idref="V-25012" selected="true" /><select idref="V-25013" selected="true" /><select idref="V-25014" selected="true" /><select idref="V-25016" selected="true" /><select idref="V-25017" selected="true" /><select idref="V-25018" selected="true" /><select idref="V-25019" selected="true" /><select idref="V-25020" selected="true" /><select idref="V-25022" selected="true" /><select idref="V-25051" selected="true" /><select idref="V-25842" selected="true" /><select idref="V-26559" selected="true" /><select idref="V-27629" selected="true" /><select idref="V-27630" selected="true" /><select idref="V-27631" selected="true" /><select idref="V-27632" selected="true" /><select idref="V-27633" selected="true" /><select idref="V-27634" selected="true" /><select idref="V-27635" selected="true" /><select idref="V-28295" selected="true" /><select idref="V-28297" selected="true" /><select idref="V-29524" selected="true" /><select idref="V-29525" selected="true" /><select idref="V-29529" selected="true" /><select idref="V-29894" selected="true" /><select idref="V-29949" selected="true" /><select idref="V-30193" selected="true" /><select idref="V-30248" selected="true" /><select idref="V-30249" selected="true" /><select idref="V-30250" selected="true" /><select idref="V-30566" selected="true" /><select idref="V-30567" selected="true" /><select idref="V-30568" selected="true" /><select idref="V-53957" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-18627" selected="true" /><select idref="V-18856" selected="true" /><select idref="V-19897" selected="true" /><select idref="V-19898" selected="true" /><select idref="V-19899" selected="true" /><select idref="V-24981" selected="true" /><select idref="V-24982" selected="true" /><select idref="V-24983" selected="true" /><select idref="V-24984" selected="true" /><select idref="V-24985" selected="true" /><select idref="V-24986" selected="true" /><select idref="V-25003" selected="true" /><select idref="V-25007" selected="true" /><select idref="V-25009" selected="true" /><select idref="V-25010" selected="true" /><select idref="V-25011" selected="true" /><select idref="V-25012" selected="true" /><select idref="V-25013" selected="true" /><select idref="V-25014" selected="true" /><select idref="V-25016" selected="true" /><select idref="V-25017" selected="true" /><select idref="V-25018" selected="true" /><select idref="V-25019" selected="true" /><select idref="V-25020" selected="true" /><select idref="V-25022" selected="true" /><select idref="V-25051" selected="true" /><select idref="V-25842" selected="true" /><select idref="V-26559" selected="true" /><select idref="V-27629" selected="true" /><select idref="V-27630" selected="true" /><select idref="V-27631" selected="true" /><select idref="V-27632" selected="true" /><select idref="V-27633" selected="true" /><select idref="V-27634" selected="true" /><select idref="V-27635" selected="true" /><select idref="V-28295" selected="true" /><select idref="V-28297" selected="true" /><select idref="V-29524" selected="true" /><select idref="V-29525" selected="true" /><select idref="V-29529" selected="true" /><select idref="V-29894" selected="true" /><select idref="V-29949" selected="true" /><select idref="V-30193" selected="true" /><select idref="V-30248" selected="true" /><select idref="V-30249" selected="true" /><select idref="V-30250" selected="true" /><select idref="V-30566" selected="true" /><select idref="V-30567" selected="true" /><select idref="V-30568" selected="true" /><select idref="V-53957" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-18627" selected="true" /><select idref="V-18856" selected="true" /><select idref="V-19897" selected="true" /><select idref="V-19898" selected="true" /><select idref="V-19899" selected="true" /><select idref="V-24981" selected="true" /><select idref="V-24982" selected="true" /><select idref="V-24983" selected="true" /><select idref="V-24984" selected="true" /><select idref="V-24985" selected="true" /><select idref="V-24986" selected="true" /><select idref="V-25003" selected="true" /><select idref="V-25007" selected="true" /><select idref="V-25009" selected="true" /><select idref="V-25010" selected="true" /><select idref="V-25011" selected="true" /><select idref="V-25012" selected="true" /><select idref="V-25013" selected="true" /><select idref="V-25014" selected="true" /><select idref="V-25016" selected="true" /><select idref="V-25017" selected="true" /><select idref="V-25018" selected="true" /><select idref="V-25019" selected="true" /><select idref="V-25020" selected="true" /><select idref="V-25022" selected="true" /><select idref="V-25051" selected="true" /><select idref="V-25842" selected="true" /><select idref="V-26559" selected="true" /><select idref="V-27629" selected="true" /><select idref="V-27630" selected="true" /><select idref="V-27631" selected="true" /><select idref="V-27632" selected="true" /><select idref="V-27633" selected="true" /><select idref="V-27634" selected="true" /><select idref="V-27635" selected="true" /><select idref="V-28295" selected="true" /><select idref="V-28297" selected="true" /><select idref="V-29524" selected="true" /><select idref="V-29525" selected="true" /><select idref="V-29529" selected="true" /><select idref="V-29894" selected="true" /><select idref="V-29949" selected="true" /><select idref="V-30193" selected="true" /><select idref="V-30248" selected="true" /><select idref="V-30249" selected="true" /><select idref="V-30250" selected="true" /><select idref="V-30566" selected="true" /><select idref="V-30567" selected="true" /><select idref="V-30568" selected="true" /><select idref="V-53957" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-18627" selected="true" /><select idref="V-18856" selected="true" /><select idref="V-19897" selected="true" /><select idref="V-19898" selected="true" /><select idref="V-19899" selected="true" /><select idref="V-24981" selected="true" /><select idref="V-24982" selected="true" /><select idref="V-24983" selected="true" /><select idref="V-24984" selected="true" /><select idref="V-24985" selected="true" /><select idref="V-24986" selected="true" /><select idref="V-25003" selected="true" /><select idref="V-25007" selected="true" /><select idref="V-25009" selected="true" /><select idref="V-25010" selected="true" /><select idref="V-25011" selected="true" /><select idref="V-25012" selected="true" /><select idref="V-25013" selected="true" /><select idref="V-25014" selected="true" /><select idref="V-25016" selected="true" /><select idref="V-25017" selected="true" /><select idref="V-25018" selected="true" /><select idref="V-25019" selected="true" /><select idref="V-25020" selected="true" /><select idref="V-25022" selected="true" /><select idref="V-25051" selected="true" /><select idref="V-25842" selected="true" /><select idref="V-26559" selected="true" /><select idref="V-27629" selected="true" /><select idref="V-27630" selected="true" /><select idref="V-27631" selected="true" /><select idref="V-27632" selected="true" /><select idref="V-27633" selected="true" /><select idref="V-27634" selected="true" /><select idref="V-27635" selected="true" /><select idref="V-28295" selected="true" /><select idref="V-28297" selected="true" /><select idref="V-29524" selected="true" /><select idref="V-29525" selected="true" /><select idref="V-29529" selected="true" /><select idref="V-29894" selected="true" /><select idref="V-29949" selected="true" /><select idref="V-30193" selected="true" /><select idref="V-30248" selected="true" /><select idref="V-30249" selected="true" /><select idref="V-30250" selected="true" /><select idref="V-30566" selected="true" /><select idref="V-30567" selected="true" /><select idref="V-30568" selected="true" /><select idref="V-53957" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-18627" selected="true" /><select idref="V-18856" selected="true" /><select idref="V-19897" selected="true" /><select idref="V-19898" selected="true" /><select idref="V-19899" selected="true" /><select idref="V-24981" selected="true" /><select idref="V-24982" selected="true" /><select idref="V-24983" selected="true" /><select idref="V-24984" selected="true" /><select idref="V-24985" selected="true" /><select idref="V-24986" selected="true" /><select idref="V-25003" selected="true" /><select idref="V-25007" selected="true" /><select idref="V-25009" selected="true" /><select idref="V-25010" selected="true" /><select idref="V-25011" selected="true" /><select idref="V-25012" selected="true" /><select idref="V-25013" selected="true" /><select idref="V-25014" selected="true" /><select idref="V-25016" selected="true" /><select idref="V-25017" selected="true" /><select idref="V-25018" selected="true" /><select idref="V-25019" selected="true" /><select idref="V-25020" selected="true" /><select idref="V-25022" selected="true" /><select idref="V-25051" selected="true" /><select idref="V-25842" selected="true" /><select idref="V-26559" selected="true" /><select idref="V-27629" selected="true" /><select idref="V-27630" selected="true" /><select idref="V-27631" selected="true" /><select idref="V-27632" selected="true" /><select idref="V-27633" selected="true" /><select idref="V-27634" selected="true" /><select idref="V-27635" selected="true" /><select idref="V-28295" selected="true" /><select idref="V-28297" selected="true" /><select idref="V-29524" selected="true" /><select idref="V-29525" selected="true" /><select idref="V-29529" selected="true" /><select idref="V-29894" selected="true" /><select idref="V-29949" selected="true" /><select idref="V-30193" selected="true" /><select idref="V-30248" selected="true" /><select idref="V-30249" selected="true" /><select idref="V-30250" selected="true" /><select idref="V-30566" selected="true" /><select idref="V-30567" selected="true" /><select idref="V-30568" selected="true" /><select idref="V-53957" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-18627" selected="true" /><select idref="V-18856" selected="true" /><select idref="V-19897" selected="true" /><select idref="V-19898" selected="true" /><select idref="V-19899" selected="true" /><select idref="V-24981" selected="true" /><select idref="V-24982" selected="true" /><select idref="V-24983" selected="true" /><select idref="V-24984" selected="true" /><select idref="V-24985" selected="true" /><select idref="V-24986" selected="true" /><select idref="V-25003" selected="true" /><select idref="V-25007" selected="true" /><select idref="V-25009" selected="true" /><select idref="V-25010" selected="true" /><select idref="V-25011" selected="true" /><select idref="V-25012" selected="true" /><select idref="V-25013" selected="true" /><select idref="V-25014" selected="true" /><select idref="V-25016" selected="true" /><select idref="V-25017" selected="true" /><select idref="V-25018" selected="true" /><select idref="V-25019" selected="true" /><select idref="V-25020" selected="true" /><select idref="V-25022" selected="true" /><select idref="V-25051" selected="true" /><select idref="V-25842" selected="true" /><select idref="V-26559" selected="true" /><select idref="V-27629" selected="true" /><select idref="V-27630" selected="true" /><select idref="V-27631" selected="true" /><select idref="V-27632" selected="true" /><select idref="V-27633" selected="true" /><select idref="V-27634" selected="true" /><select idref="V-27635" selected="true" /><select idref="V-28295" selected="true" /><select idref="V-28297" selected="true" /><select idref="V-29524" selected="true" /><select idref="V-29525" selected="true" /><select idref="V-29529" selected="true" /><select idref="V-29894" selected="true" /><select idref="V-29949" selected="true" /><select idref="V-30193" selected="true" /><select idref="V-30248" selected="true" /><select idref="V-30249" selected="true" /><select idref="V-30250" selected="true" /><select idref="V-30566" selected="true" /><select idref="V-30567" selected="true" /><select idref="V-30568" selected="true" /><select idref="V-53957" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-18627" selected="true" /><select idref="V-18856" selected="true" /><select idref="V-19897" selected="true" /><select idref="V-19898" selected="true" /><select idref="V-19899" selected="true" /><select idref="V-24981" selected="true" /><select idref="V-24982" selected="true" /><select idref="V-24983" selected="true" /><select idref="V-24984" selected="true" /><select idref="V-24985" selected="true" /><select idref="V-24986" selected="true" /><select idref="V-25003" selected="true" /><select idref="V-25007" selected="true" /><select idref="V-25009" selected="true" /><select idref="V-25010" selected="true" /><select idref="V-25011" selected="true" /><select idref="V-25012" selected="true" /><select idref="V-25013" selected="true" /><select idref="V-25014" selected="true" /><select idref="V-25016" selected="true" /><select idref="V-25017" selected="true" /><select idref="V-25018" selected="true" /><select idref="V-25019" selected="true" /><select idref="V-25020" selected="true" /><select idref="V-25022" selected="true" /><select idref="V-25051" selected="true" /><select idref="V-25842" selected="true" /><select idref="V-26559" selected="true" /><select idref="V-27629" selected="true" /><select idref="V-27630" selected="true" /><select idref="V-27631" selected="true" /><select idref="V-27632" selected="true" /><select idref="V-27633" selected="true" /><select idref="V-27634" selected="true" /><select idref="V-27635" selected="true" /><select idref="V-28295" selected="true" /><select idref="V-28297" selected="true" /><select idref="V-29524" selected="true" /><select idref="V-29525" selected="true" /><select idref="V-29529" selected="true" /><select idref="V-29894" selected="true" /><select idref="V-29949" selected="true" /><select idref="V-30193" selected="true" /><select idref="V-30248" selected="true" /><select idref="V-30249" selected="true" /><select idref="V-30250" selected="true" /><select idref="V-30566" selected="true" /><select idref="V-30567" selected="true" /><select idref="V-30568" selected="true" /><select idref="V-53957" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-18627" selected="true" /><select idref="V-18856" selected="true" /><select idref="V-19897" selected="true" /><select idref="V-19898" selected="true" /><select idref="V-19899" selected="true" /><select idref="V-24981" selected="true" /><select idref="V-24982" selected="true" /><select idref="V-24983" selected="true" /><select idref="V-24984" selected="true" /><select idref="V-24985" selected="true" /><select idref="V-24986" selected="true" /><select idref="V-25003" selected="true" /><select idref="V-25007" selected="true" /><select idref="V-25009" selected="true" /><select idref="V-25010" selected="true" /><select idref="V-25011" selected="true" /><select idref="V-25012" selected="true" /><select idref="V-25013" selected="true" /><select idref="V-25014" selected="true" /><select idref="V-25016" selected="true" /><select idref="V-25017" selected="true" /><select idref="V-25018" selected="true" /><select idref="V-25019" selected="true" /><select idref="V-25020" selected="true" /><select idref="V-25022" selected="true" /><select idref="V-25051" selected="true" /><select idref="V-25842" selected="true" /><select idref="V-26559" selected="true" /><select idref="V-27629" selected="true" /><select idref="V-27630" selected="true" /><select idref="V-27631" selected="true" /><select idref="V-27632" selected="true" /><select idref="V-27633" selected="true" /><select idref="V-27634" selected="true" /><select idref="V-27635" selected="true" /><select idref="V-28295" selected="true" /><select idref="V-28297" selected="true" /><select idref="V-29524" selected="true" /><select idref="V-29525" selected="true" /><select idref="V-29529" selected="true" /><select idref="V-29894" selected="true" /><select idref="V-29949" selected="true" /><select idref="V-30193" selected="true" /><select idref="V-30248" selected="true" /><select idref="V-30249" selected="true" /><select idref="V-30250" selected="true" /><select idref="V-30566" selected="true" /><select idref="V-30567" selected="true" /><select idref="V-30568" selected="true" /><select idref="V-53957" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-18627" selected="true" /><select idref="V-18856" selected="true" /><select idref="V-19897" selected="true" /><select idref="V-19898" selected="true" /><select idref="V-19899" selected="true" /><select idref="V-24981" selected="true" /><select idref="V-24982" selected="true" /><select idref="V-24983" selected="true" /><select idref="V-24984" selected="true" /><select idref="V-24985" selected="true" /><select idref="V-24986" selected="true" /><select idref="V-25003" selected="true" /><select idref="V-25007" selected="true" /><select idref="V-25009" selected="true" /><select idref="V-25010" selected="true" /><select idref="V-25011" selected="true" /><select idref="V-25012" selected="true" /><select idref="V-25013" selected="true" /><select idref="V-25014" selected="true" /><select idref="V-25016" selected="true" /><select idref="V-25017" selected="true" /><select idref="V-25018" selected="true" /><select idref="V-25019" selected="true" /><select idref="V-25020" selected="true" /><select idref="V-25022" selected="true" /><select idref="V-25051" selected="true" /><select idref="V-25842" selected="true" /><select idref="V-26559" selected="true" /><select idref="V-27629" selected="true" /><select idref="V-27630" selected="true" /><select idref="V-27631" selected="true" /><select idref="V-27632" selected="true" /><select idref="V-27633" selected="true" /><select idref="V-27634" selected="true" /><select idref="V-27635" selected="true" /><select idref="V-28295" selected="true" /><select idref="V-28297" selected="true" /><select idref="V-29524" selected="true" /><select idref="V-29525" selected="true" /><select idref="V-29529" selected="true" /><select idref="V-29894" selected="true" /><select idref="V-29949" selected="true" /><select idref="V-30193" selected="true" /><select idref="V-30248" selected="true" /><select idref="V-30249" selected="true" /><select idref="V-30250" selected="true" /><select idref="V-30566" selected="true" /><select idref="V-30567" selected="true" /><select idref="V-30568" selected="true" /><select idref="V-53957" selected="true" /></Profile><Group id="V-18627"><title>Remote access VPN - FIPS 140-2</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-38990r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-034-01</version><title>The VPN client on wireless clients (PDAs, smartphones) used for remote access to DoD networks will be FIPS 140-2 validated.  This check is not applicable if the installed VPN client is not used for remote access to DoD networks.  </title><description>&lt;VulnDiscussion&gt;DoD data could be compromised if transmitted data is not secured with a compliant VPN.  FIPS validation provides a level of assurance that the encryption of the device has been securely implemented.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-20573r6_fix">Comply with requirement. </fixtext><fix id="F-20573r6_fix" /><check system="C-37949r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This check is not applicable if the installed VPN client is not used for remote access to DoD networks. 
+Interview the IAO and/or site wireless device administrator and inspect a sample (3-4) of site devices. Review VPN client specification sheets and FIPS 140-2 certificate. Verify the devices have a VPN client installed and is FIPS 140-2 validated. Check the NIST certificate for the mobile OS or VPN client. 
+
+Mark as a finding if the VPN is not FIPS 140-2 validated. 
+</check-content></check></Rule></Group><Group id="V-18856"><title>Removable flash media and FIPS 140-2 encryption</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35045r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-033-01</version><title>Removable memory cards (e.g., MicroSD) must have data stored on the card encrypted with a FIPS 140-2 validated cryptographic module.   </title><description>&lt;VulnDiscussion&gt;Memory card used to transfer files between PCs and PDAs is a migration path for the spread of malware on DoD computers and handheld devices.  These risks are mitigated by the requirements listed in this check.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-30395r1_fix">Either do not use removable storage media in the smartphone or enable FIPS validated encryption on the smartphone for removable memory cards.  </fixtext><fix id="F-30395r1_fix" /><check system="C-34919r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+
+-Click the Restrictions tab. 
+-Verify under Hardware Functionality “Allow SD card encryption” is checked. 
+
+Note: Removable flash media is defined as media that is readily accessible by the user and does not require additional tools to disassemble the device or remove screws to gain access.
+
+Mark as a finding if configuration not as required.
+
+</check-content></check></Rule></Group><Group id="V-19897"><title>Remote access VPN - AES encryption</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35005r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-034-02</version><title>All wireless PDA clients used for remote access to DoD networks must enable AES encryption for the VPN. 
+</title><description>&lt;VulnDiscussion&gt;DoD data could be compromised if transmitted data is not secured with a compliant VPN.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-30398r1_fix">Use only AES encryption with VPN client. </fixtext><fix id="F-30398r1_fix" /><check system="C-34881r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This check is not applicable if the installed VPN client is not used for remote access to DoD networks. 
+Interview the IAO and/or site wireless device administrator and inspect a sample (3-4) of site devices. Review VPN client specification sheets. Verify AES encryption is enabled for the VPN client. Mark as a finding if AES is not supported or is not enabled. 
+
+</check-content></check></Rule></Group><Group id="V-19898"><title>Remote access VPN - CAC authentication</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35006r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-034-03</version><title>All wireless PDA clients used for remote access to DoD networks must have a VPN supporting CAC authentication. </title><description>&lt;VulnDiscussion&gt;DoD data could be compromised if transmitted data is not secured with a compliant VPN.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-30399r1_fix">Do not use the smartphone VPN client if it does not support CAC authentication.   </fixtext><fix id="F-30399r1_fix" /><check system="C-34882r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This check is not applicable if the installed VPN client is not used for remote access to DoD networks. 
+Interview the IAO and/or site wireless device administrator and inspect a sample (3-4) of site devices. Verify the VPN client supports CAC authentication to the DoD network (recommend asking the site wireless device administrator to demo this capability). Mark as a finding if CAC authentication is not supported. 
+
+</check-content></check></Rule></Group><Group id="V-19899"><title>Remote access VPN - split tunneling</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35007r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-034-04</version><title>All wireless PDA and smartphone client VPNs must have split tunneling disabled. 
+
+</title><description>&lt;VulnDiscussion&gt;DoD data could be compromised if transmitted data is not secured with a compliant VPN.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-30400r1_fix">Use only VPN clients supporting the capability to disable split-tunneling.</fixtext><fix id="F-30400r1_fix" /><check system="C-34883r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This check is not applicable if the installed VPN client is not used for remote access to DoD networks. 
+
+Interview the IAO and/or site wireless device administrator and inspect a sample (3-4) of site devices. Check to see if the VPN has a setting to disable split tunneling. Verify split tunneling has been disabled. 
+
+Mark not applicable if the VPN is not used for remote access to a DoD network.
+</check-content></check></Rule></Group><Group id="V-24981"><title>Use approved smartphone software versions</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35011r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-001</version><title>Smartphone devices must have required operating system software versions installed.</title><description>&lt;VulnDiscussion&gt;Required security features are not available in earlier OS versions. In addition, there are known vulnerabilities in earlier versions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1, ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27622r1_fix">Install required OS version.</fixtext><fix id="F-27622r1_fix" /><check system="C-34887r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>-Verify the Android version is 2.2.2,  kernel version 2.6.32.9-perf or later. 
+
+--Log into the Android device.
+--Go to Settings &gt; About phone.
+
+-Verify the Good App version is 1.8 or later.
+
+--Log into the Android device.
+--Launch the Good app and enter login info.
+--Go to Preferences &gt; About.
+
+Mark as a finding if either version is not as required.
+</check-content></check></Rule></Group><Group id="V-24982"><title>Use approved SCR software version</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35012r1_rule" severity="low" weight="10.0"><version>WIR-MOS-AND-002</version><title>Smart Card Readers (SCRs) used with smartphone must have required software version installed.</title><description>&lt;VulnDiscussion&gt;Required security features are not available in earlier software versions. In addition, there may be known vulnerabilities in earlier versions.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27623r1_fix">Install required SCR software version. </fixtext><fix id="F-27623r1_fix" /><check system="C-34888r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>Detailed Policy Requirements:
+
+SCR: Biometric Associates, LP (BAL) baiMobile BAL-3000MP Bluetooth Smart Card Reader. Firmware version v2.01.00 or later should be used (version v2.02.00 is recommended).
+
+Check Procedures:
+Check a sample of site readers (3-4).  The version of the reader firmware is displayed when the user presses and holds the Action button for a couple of seconds.
+
+Mark as a finding if the firmware version on the SCR is not the approved version.
+
+
+</check-content></check></Rule></Group><Group id="V-24983"><title>S/MIME installed on CMD</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35013r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-003</version><title>S/MIME must be installed on smartphones so users can sign/encrypt email.</title><description>&lt;VulnDiscussion&gt;S/MIME provides the capability for users to send and receive S/MIME email messages from wireless email devices. S/MIME and digital signatures provide assurance the message is authentic and is required by DoD policy.  Without S/MIME users will not be able to read encrypted email and will not be able to encrypt email with sensitive information.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27624r5_fix">Provision the mobile email client with S/MIME so users can digitally sign and encrypt email.</fixtext><fix id="F-27624r5_fix" /><check system="C-34889r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>Verify an S/MIME profile is installed on the Android device:
+
+-Log into the Android device
+-Open the Good application.
+Go to Preferences.
+-Verify Smartcard and S/MIME specific settings are listed.
+
+If not listed, mark as a finding.
+</check-content></check></Rule></Group><Group id="V-24984"><title>User auto-signature on email</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35014r1_rule" severity="low" weight="10.0"><version>WIR-MOS-AND-004</version><title>If smartphone email auto signatures are used, the signature message must not disclose the email originated from a smartphone (e.g., “Sent From My Wireless Handheld”). </title><description>&lt;VulnDiscussion&gt;The disclaimer message may give information which may key an attacker in on the device. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27625r4_fix">Configure the iOS email auto-signature message, so it does not disclose the email originated from the iOS device (e.g., Sent From My Wireless Handheld).
+  </fixtext><fix id="F-27625r4_fix" /><check system="C-34890r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>Verify the auto-signature, if used, meets requirements.
+
+-Check a random sample of 3-4 devices.
+-On the handheld, launch the Good client and go to Preferences &gt; Signature.
+
+Mark as a finding if the device has been configured with an auto-signature and signature states the email originated from a smartphone.
+</check-content></check></Rule></Group><Group id="V-24985"><title>Use DoD Internet proxy</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-38760r1_rule" severity="low" weight="10.0"><version>WIR-MOS-AND-005</version><title>All Internet browsing on a DoD mobile operating system (OS) device will go through a DoD Internet proxy.  </title><description>&lt;VulnDiscussion&gt;A DoD Internet proxy provides additional security over the carrier's browser.  When using the DoD Internet proxy for a mobile device Internet connections, enclave Internet security controls will filter and monitor mobile device Internet connections.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27626r3_fix">Use a compliant browser implementation on the iOS device.
+  </fixtext><fix id="F-27626r3_fix" /><check system="C-37826r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>Verify the URL of a DoD external facing Internet proxy has been configured in the Good server console.
+
+This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+-Click the Restrictions tab. 
+-Verify “Enable HTTP Proxy is set and a Host URL is listed and the Port is set to 8080.
+
+Mark as a finding if configuration is not set as required.
+
+Mark as a finding if a DoD Internet proxy URL has not been setup on the Good server.</check-content></check></Rule></Group><Group id="V-24986"><title>Mobile operating system apps approved</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35015r1_rule" severity="high" weight="10.0"><version>WIR-MOS-AND-006-01</version><title>All non-core applications on the mobile OS device must be approved by the DAA or Command IT Configuration Control Board.  </title><description>&lt;VulnDiscussion&gt;Non-approved applications can contain malware.  Approved applications should be reviewed and tested by the approving authority to ensure they do not contain malware, spyware, or have unexpected features (e.g., send private information to a web site, track user actions, connect to a non-DoD management server).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;Designated Approving Authority&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Manager&lt;/Responsibility&gt;&lt;IAControls&gt;DCCB-1, ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27627r1_fix">Have DAA or Command IT CCB review and approve all non-core applications on mobile OS devices.  </fixtext><fix id="F-27627r1_fix" /><check system="C-34891r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>Detailed Requirements:
+Core applications are applications included in the mobile Operating system. Applications added by the wireless carrier are not considered core applications. All non-core applications on the mobile OS device must be approved by the DAA or the Command IT Configuration Control Board. Approval must be documented in some type of approval (memo, letter, etc.).
+
+Check Procedures:
+
+Review the procedures the site or command uses to review and approve third-party applications used on managed Android devices. Have the IAO or DAA representative provide a copy of the application review.   
+Second, select 3-4 random devices managed by the site to review.
+
+-Make a list of non-core applications on each device. Look in the smartphone memory and on the SD card.
+
+--Have the user log into the device. Go to Settings &gt; Applications &gt; Manage applications. To view the list of applications on the smartphone select “All.”. To view a list of applications on the SD media card select “On SD card.”. 
+--If an App is not in the list of core Apps (see below), then note the name of the App.
+--Verify the site has written approval to use the App from the DAA or site IT CCB.
+
+-Mark as a finding if any App has not been approved.   
+
+A list of standard core Android Apps can be found in the STIG Configuration Tables document. 
+
+Note: The DAA or IT CCB should also indicate if location services are approved for any approved applications, including core applications (e.g., can the user enable location services in Android for the application).</check-content></check></Rule></Group><Group id="V-25003"><title>Allow only approved mobile OS versions</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-34965r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-030-01</version><title>A compliance rule must be set up in the server defining required mobile OS software versions.</title><description>&lt;VulnDiscussion&gt;Unapproved OS versions do not support required security features. The security baseline of the Android system could be compromised if required security features are not available.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27651r3_fix">Install the required OS version.</fixtext><fix id="F-27651r3_fix" /><check system="C-34843r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy sets on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title. Examples are as follows: STIG_iOS_Policy_Set, STIG_WM6-5_Policy_Set, or STIG_Android_Policy_Set. It is recommended that all non-STIG policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab.
+-Select a policy set to review and click on the policy.
+-On the left tab, select Compliance Manager.
+-Verify “OS Version Verification” rule is listed. (Note: The rule title does not have to be exact.)
+-Open the rule by checking the box next to the rule, and then click on Edit.
+
+-Verify the following are set:
+Platform: Android
+Check to Run: OS Version Verification
+
+-Verify the following are checked:
+Android 2.2
+
+-Verify “Failure Action” is set to “Quit Good for Enterprise”.
+
+-Verify “Check Every” is set to “1 hour”.
+
+Mark as a finding if the “OS Version Verification” rule has not been set up or is not configured as required.
+</check-content></check></Rule></Group><Group id="V-25007"><title>Require device unlock password/passcode</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35018r1_rule" severity="high" weight="10.0"><version>WIR-MOS-AND-G-010</version><title>Smartphones must be configured to require a password/passcode for device unlock.</title><description>&lt;VulnDiscussion&gt;Sensitive DoD data could be compromised if a device unlock password/passcode is not set up on a DoD smartphones.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1, IAIA-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27657r3_fix">Configure the MDM server to require a passcode for device unlock.</fixtext><fix id="F-27657r3_fix" /><check system="C-34893r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+--Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy sets on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+-Click the Passcode tab. 
+-Verify “Require passcode” is checked. 
+
+Mark as a finding if configuration is not set as required.
+</check-content></check></Rule></Group><Group id="V-25009"><title>Maximum password/passcode age</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35021r1_rule" severity="low" weight="10.0"><version>WIR-MOS-AND-G-013</version><title>Maximum password/passcode age must be set.</title><description>&lt;VulnDiscussion&gt;Sensitive DoD data could be compromised if a strong device unlock passcode is not set up on a DoD smartphone and the passcode is not changed periodically.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1, IAIA-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27659r4_fix">Set maximum passcode age to 120 days or less if the DAA requires this setting. </fixtext><fix id="F-27659r4_fix" /><check system="C-34897r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS / Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+
+-Click the Passcode tab. 
+-Verify “Maximum passcode age” is checked and set to 90 days or less. 
+
+Mark as a finding if configuration is not set as required.
+</check-content></check></Rule></Group><Group id="V-25010"><title>Mobile device inactivity timeout</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35023r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-G-016</version><title> The smartphone inactivity timeout must be set.</title><description>&lt;VulnDiscussion&gt;Sensitive DoD data could be compromised if the smartphone does not automatically lock after 15 minutes of inactivity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;PESL-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27661r4_fix">Enforce the CMD inactivity timeout requirement of 15 minutes or less through a combination of "Auto-Lock" and "Grace period" values that do not sum to greater than 15 minutes. </fixtext><fix id="F-27661r4_fix" /><check system="C-34898r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+--Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+
+-Click the Passcode tab. 
+-Verify “Grace period” is checked and set to 15 minutes or less.
+
+Mark as a finding if configuration is not set as required.
+</check-content></check></Rule></Group><Group id="V-25011"><title>Password/passcode maximum failed attempts</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35024r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-G-017</version><title>Password/passcode maximum failed attempts must be set to required value.</title><description>&lt;VulnDiscussion&gt;A hacker with unlimited attempts can determine the password of a smartphone within a few minutes using password hacking tools, which could lead to unauthorized access to the smartphone and exposure to sensitive DoD data.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;IAIA-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27662r2_fix">Set password/passcode maximum failed attempts to 10 or less.</fixtext><fix id="F-27662r2_fix" /><check system="C-34900r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+--Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+-Click the Passcode tab. 
+-Verify “Maximum failed attempts” is checked and set to 10 or less. 
+
+Mark as a finding if configuration is not set as required.
+</check-content></check></Rule></Group><Group id="V-25012"><title>Public application store</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35030r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-G-019</version><title>Access to public application stores must be disabled.</title><description>&lt;VulnDiscussion&gt;Strong configuration management of all applications installed on DoD device is required to ensure the security baseline of the system is maintained.  Otherwise, sensitive DoD data could be compromised.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1, ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27663r2_fix">Disable access to public media stores. </fixtext><fix id="F-27663r2_fix" /><check system="C-34903r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+When reviewing the STIG Policy Set, check the following:
+-Click the Restrictions tab. 
+-Verify “Allow installing apps from online store” is unchecked. 
+
+Mark as a finding if configuration is not set as required.
+</check-content></check></Rule></Group><Group id="V-25013"><title>Mobile device application installation</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35034r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-G-020</version><title>Users must not be allowed to download applications on smartphones without SA control.</title><description>&lt;VulnDiscussion&gt;Strong configuration management of all applications installed on DoD device is required to ensure the security baseline of the system is maintained.  Otherwise, sensitive DoD data could be compromised.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECLP-1, ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27664r4_fix">On the MDM server, set “Allow installing apps” to disabled (unchecked).  </fixtext><fix id="F-27664r4_fix" /><check system="C-34904r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+When reviewing the STIG Policy Set, check the following:
+-Click the Restrictions tab. 
+-Verify “Allow installing apps” is unchecked. 
+
+Mark as a finding if configuration is not set as required.
+</check-content></check></Rule></Group><Group id="V-25014"><title>Mobile device camera</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35035r1_rule" severity="low" weight="10.0"><version>WIR-MOS-AND-G-021</version><title>Use of the smartphone camera must be approved and documented in site physical security policy.</title><description>&lt;VulnDiscussion&gt;This is an operational security issue.   Sensitive DoD data could be compromised if cameras are allowed in areas not authorized by the site physical security plan.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;Designated Approving Authority&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Manager&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27665r3_fix">Disable (uncheck) "Allow use of camera" in the iOS policy on the MDM server unless documented approval exists in the site physical security policy.</fixtext><fix id="F-27665r3_fix" /><check system="C-34906r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>Review the site physical security plan. Determine if digital cameras are allowed in site facilities. Note: Some sites have a policy not allowing digital cameras in the facility but allow smartphones with cameras, when used outside the facility, for mission support functions.
+
+-If digital cameras are allowed, “Allow use of camera” can be checked. 
+-If digital cameras are not allowed but smartphones with cameras, when used outside the facility, for mission support functions are allowed, “Allow use of camera” can be checked.
+
+-If the site physical security policy does not specifically state use of digital cameras is allowed, “Allow use of camera” must be unchecked.
+
+This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+Note: The site has the ability to disable the camera by using the Android profile if camera use is not approved, or allow the use of the camera and if use is approved and documented in the site physical security policy. Also, the site can state in the site physical security policy that camera use outside the facility is approved, but the camera must be disabled on the phone when brought into the facility. In this case, “Allow use of camera” would not be checked. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+--Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+-Click the Restrictions tab. 
+-Determine if “Allow use of camera” is unchecked or checked.
+If checked, verify the site physical security policy allows the use of smartphone cameras.
+
+Mark as a finding if “Allow use of camera” is checked and the site physical security policy does not allow the use of smartphone cameras.
+</check-content></check></Rule></Group><Group id="V-25016"><title>Minimum password/passcode length</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35037r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-G-011</version><title>Device minimum password/passcode length must be set. </title><description>&lt;VulnDiscussion&gt;Sensitive DoD data could be compromised if a device unlock password/passcode is not set to required length on a DoD smartphones.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1, IAIA-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27687r5_fix">Configure the mobile operating system to enforce a minimum length for the device unlock password.  Where a security container application is used in lieu of mobile operating system protections, configure the security container application to enforce a minimum length password for entry into the application. </fixtext><fix id="F-27687r5_fix" /><check system="C-34907r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+-Click the Passcode tab. 
+-Verify “Minimum length of" is set to 8 or more for the STIG Policy Set. 
+
+Mark as a finding if configuration is not set as required.
+
+</check-content></check></Rule></Group><Group id="V-25017"><title>CMD Auto-Lock</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35040r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-G-014</version><title>The smartphone Auto-Lock must be set.</title><description>&lt;VulnDiscussion&gt;Sensitive DoD data could be compromised if the smartphone does not automatically lock after a set period of inactivity.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;PESL-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27688r4_fix">Set the CMD Auto-Lock to a value other than "Never". Five minutes or less is recommended.</fixtext><fix id="F-27688r4_fix" /><check system="C-34910r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+-Click the Passcode tab. 
+-Verify “Auto-lock" is set to 5 minutes or less. 
+
+Mark as a finding if configuration is not set as required.</check-content></check></Rule></Group><Group id="V-25018"><title>Passcode/password history</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35041r1_rule" severity="low" weight="10.0"><version>WIR-MOS-AND-G-015</version><title>The smartphone passcode history setting must be set.</title><description>&lt;VulnDiscussion&gt;The password/passcode would be more susceptible to compromise if the user can select frequently used passwords/passcodes.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;IAIA-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27689r4_fix">Set the mobile device passcode history setting to 3 or more if the DAA requires this setting. </fixtext><fix id="F-27689r4_fix" /><check system="C-34912r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+----------------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+-Click the Passcode tab. 
+-Verify Passcode history is set to 3 or more. 
+
+Mark as a finding if configuration is not set as required.</check-content></check></Rule></Group><Group id="V-25019"><title>Bluetooth Control</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-34994r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-040-01</version><title>The smartphone Bluetooth radio must be disabled if not authorized for use.</title><description>&lt;VulnDiscussion&gt;The Bluetooth radio can be used by a hacker to connect to the smartphone without the knowledge of the user. Sensitive DoD data could be exposed and the hacker could use the device to attack the enclave.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27690r3_fix">Train the user to not connect the iOS device to unauthorized Bluetooth peripherals.  </fixtext><fix id="F-27690r3_fix" /><check system="C-34874r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>The Bluetooth radio should be turned off by the user (User Based Enforcement (UBE)) if not being used to connect the approved Bluetooth smart card reader or handsfree headset to the smartphone.
+
+On a sample of site-managed Android devices (pick 3-4 random devices), verify the Bluetooth radio is turned off if the Bluetooth smart card reader is not being used by the user.
+
+-Have the user log into the device.
+-Go to Settings &gt; Wireless &amp; networks &gt; Bluetooth.
+-Verify the Bluetooth radio is off.
+
+Mark as a finding if configuration is not set as required.
+</check-content></check></Rule></Group><Group id="V-25020"><title>Mobile device Wi-Fi control</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-34999r1_rule" severity="low" weight="10.0"><version>WIR-MOS-AND-041</version><title>The smartphone device Wi-Fi radio must be disabled as the default setting and is enabled only when Wi-Fi connectivity is required. 
+</title><description>&lt;VulnDiscussion&gt;The Wi-Fi radio can be used by a hacker to connect to the smartphone without the knowledge of the user. Sensitive DoD data could be exposed and the hacker could use the device to attack the enclave.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27691r4_fix">Train user to disable the CMD Wi-Fi radio unless Wi-Fi connectivity is desired for a known authorized Wi-Fi connection. </fixtext><fix id="F-27691r4_fix" /><check system="C-34875r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>The user will never enable the Wi-Fi radio unless authorized to use Wi-Fi (User Based Enforcement (UBE)).   If Wi-Fi use is authorized, the user should turn-off  the smartphone Wi-Fi radio whenever Wi-Fi service is not needed.
+
+On a sample of site-managed Android devices (pick 3-4 random devices), verify the Wi-Fi radio is turned off.
+
+-Have the user turn on and log into the device.
+-Go to Settings &gt; Wireless &amp; networks &gt; Wi-Fi. Wi-Fi should be turned off.
+
+Mark as a finding if configuration is not set as required.
+</check-content></check></Rule></Group><Group id="V-25022"><title>Required logon banner</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35042r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-G-007</version><title>All smartphones must display the required banner during device unlock/ logon.  </title><description>&lt;VulnDiscussion&gt;DoD CIO memo requires all PDAs, BlackBerrys, and smartphones to have a consent banner displayed during logon/device unlock to ensure users understand their responsibilities to safeguard DoD data. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWM-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27693r1_fix">Display the required banner during device unlock/logon.  </fixtext><fix id="F-27693r1_fix" /><check system="C-34914r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+-On the left tab, select Compliance Manager. 
+-Verify a "Custom" or "DoD Login Banner" rule is listed. (Note the rule title does not have to be exact.) 
+-Open the rule by checking the box next to the rule, and then click on Edit. 
+
+-Verify "Failure Action" is set to "Quit Good for Enterprise".
+
+-Verify "Check Every" is set to "1 hour".
+
+-Verify Rule File = disclaimer.xml
+
+Mark as a finding if configuration is not set as required.</check-content></check></Rule></Group><Group id="V-25051"><title>Location services</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35000r1_rule" severity="low" weight="10.0"><version>WIR-MOS-AND-042</version><title>Location services must be turned off on the smartphone during device provisioning.</title><description>&lt;VulnDiscussion&gt;Smartphone location services allow applications to gather information about the location of the handheld device and possibly forward it to servers located on the Internet. This is an operational security issue for DoD smartphones devices.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-27774r2_fix">Turn off location services during device provisioning and users will not enable the service unless approved for use.   </fixtext><fix id="F-27774r2_fix" /><check system="C-34876r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>Location based services is a User Based Enforcement (UBE) service.
+On a sample of 3-4 devices managed by the site, verify Android Location Services is disabled for all applications unless the site has a letter/memo stating the DAA or the Command Application Configuration Control Board (CCB) has approved location-based services..
+
+Go to 
+
+Settings &gt; Location &amp; security settings &gt; Use GPS satellites
+
+And 
+
+Settings &gt; Location &amp; security settings &gt; Use assisted GPS
+
+Verify both services are off, unless GPS services have been approved for use.
+
+Mark as a finding if configuration is not set as required.
+</check-content></check></Rule></Group><Group id="V-25842"><title>Smartphone provisioned by System Administrator</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35001r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-043</version><title>The site must set up local operating procedures for initial provisioning and subsequent software and application updates using the  procedures published in the STIG Overview document. </title><description>&lt;VulnDiscussion&gt;Strong configuration management of applications on a smartphone is a key malware control. Most smartphones must have individual commercial web portal (e.g., iTunes, Android Market, etc.) accounts and be connected to the commercial App Store to provision the smartphone. A DoD user can jailbreak a smartphone and bypass smartphone application and malware controls. To ensure strong configuration management of the security baseline of the smartphone, all software loading should be done by the SA.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;DCPR-1, PESP-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-28707r1_fix">Set up local operating procedures for initial provisioning and subsequent software and application updates according to procedures published in the STIG/ISCG Overview document. </fixtext><fix id="F-28707r1_fix" /><check system="C-34877r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>All smartphone provisioning and updates are under the control of the site Android device System Administrator (SA).
+Interview the site IAO and Android device SA.
+
+Verify the site has a procedure for initial provisioning and subsequent updates of site managed Android devices.
+
+Review the site procedure and verify they follow the procedures found in the STIG Overview document.
+
+Mark as a finding if these procedures are not followed.
+</check-content></check></Rule></Group><Group id="V-26559"><title>Personal Hotspot</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35002r1_rule" severity="low" weight="10.0"><version>WIR-MOS-AND-044</version><title>The Personal Hotspot feature of the mobile OS must be disabled if it does not meet DoD WLAN or Bluetooth security requirements and is not approved by the IAO. </title><description>&lt;VulnDiscussion&gt;The Wi-Fi radio and Bluetooth radio can be used by a hacker to connect to the smartphone without the knowledge of the user. Sensitive DoD data could be exposed and the hacker could use the device to attack the enclave. This setting would allow the device Wi-Fi radio to automatically connect to a Wi-Fi network.  The Bluetooth and Wi-Fi connections do not support DoD wireless encryption and authentication requirements.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-29705r1_fix">Set the mobile OS device Personal Hotspot feature as required.   </fixtext><fix id="F-29705r1_fix" /><check system="C-34878r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>USB connections for Personal Hotspot service will only be used if authorized.  Bluetooth and Wi-Fi connections will not be used.  
+
+Currently, the setup.apk configuration script is used to disable the “Enable Wi-Fi tethering” configuration setting in Android.  (In late 2011, this configuration setting will be available in the Good server console.)
+
+Verify the Dell Setup.apk file has been installed on the mobile OS device.
+
+-Have the system administrator show that Setup.apk is in the list of installed applications on the device (Settings&gt;Applications&gt;Manage applications&gt;All).  If the file is not listed, confirm with the SA that the file was installed on the device during setup, run, and then removed.
+
+Note: “Tethered Modem” service must be added to the Android wireless account by the carrier for the Personal Hotspot service to work.</check-content></check></Rule></Group><Group id="V-27629"><title>Full Device Administration</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35082r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-G-026</version><title>Full Device Administration must be implemented on the smartphone.</title><description>&lt;VulnDiscussion&gt;If this configuration is not set as required, the security policy from the server will not be implemented on the smartphone.  Sensitive DoD data could be compromised.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-30250r1_fix">Implement Full Device Administration on the smartphone.</fixtext><fix id="F-30250r1_fix" /><check system="C-34945r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+-Click the General tab. 
+-Verify “Full Device Administration” is checked.
+
+Mark as a finding if configuration is not set as required.
+</check-content></check></Rule></Group><Group id="V-27630"><title>Device lock</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35087r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-G-027</version><title>Enable Full Device Lock must be set.</title><description>&lt;VulnDiscussion&gt;Sensitive DoD data could be exposed if this configuration is not set as required.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-30252r1_fix">Check Enable Full Device Lock on the smartphone.</fixtext><fix id="F-30252r1_fix" /><check system="C-34947r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+-Click the General tab. 
+-Verify “Enable Full Device Lock” is checked.
+
+Mark as a finding if configuration is not set as required.</check-content></check></Rule></Group><Group id="V-27631"><title>Device password reset</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35090r1_rule" severity="low" weight="10.0"><version>WIR-MOS-AND-G-028</version><title>Enable remote device password reset must be set.</title><description>&lt;VulnDiscussion&gt;Without this capability a user could be locked out of their smartphone for significant time periods, affecting the mission of the organization.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1, IAIA-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-30254r1_fix">Set Enable remote device password reset as required.</fixtext><fix id="F-30254r1_fix" /><check system="C-34949r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+-Click the General tab. 
+-Verify “Enable remote device password reset” is checked.
+
+Mark as a finding if configuration is not set as required.</check-content></check></Rule></Group><Group id="V-27632"><title>SD media card wipe</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35092r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-G-029-01</version><title>Enable remote SD card wipe must be configured.</title><description>&lt;VulnDiscussion&gt;Sensitive DoD data could be compromised if mobile OS device data could not be wiped when directed by the system administrator.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECCR-1, ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-30255r1_fix">Configure Enable remote SD card wipe  as required.</fixtext><fix id="F-30255r1_fix" /><check system="C-34950r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+-Click the General tab. 
+-Verify “Enable remote SD card wipe” is checked.
+
+Mark as a finding if configuration is not set as required.</check-content></check></Rule></Group><Group id="V-27633"><title>SD media card encryption</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35095r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-G-029-02</version><title>Allow SD card encryption must be configured.</title><description>&lt;VulnDiscussion&gt;Sensitive DoD data could be compromised if a mobile OS device data is not encrypted.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECCR-1, ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-30256r1_fix">Configure Allow SD card encryption as required.</fixtext><fix id="F-30256r1_fix" /><check system="C-34951r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+-Click the Restrictions tab. 
+-Verify “Allow SD card encryption” is checked.
+
+Mark as a finding if configuration is not set as required.</check-content></check></Rule></Group><Group id="V-27634"><title>VPN controls</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35097r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-G-035</version><title>VPN must be configured as required.</title><description>&lt;VulnDiscussion&gt;Sensitive DoD data could be compromised if the Android VPN client is used.  The VPN client is not currently FIPS 140-2 validated and does not support CAC authentication. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-30257r1_fix">Configure VPN client as required.</fixtext><fix id="F-30257r1_fix" /><check system="C-34952r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+-Click the Restrictions tab. 
+-Verify “Allow use of VPN” is not checked.
+
+Mark as a finding if configuration is not set as required.</check-content></check></Rule></Group><Group id="V-27635"><title>Enable remote full device wipe</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-35227r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-G-008</version><title>Remote full device wipe must be enabled.</title><description>&lt;VulnDiscussion&gt;Sensitive DoD data could be compromised if mobile OS device data could not be wiped when directed by the system administrator.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECCR-1, ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-30358r2_fix">Enable remote full device wipe on iOS devices.
+</fixtext><fix id="F-30358r2_fix" /><check system="C-35071r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+-Click on the General tab. 
+-Verify "Enable remote full device wipe" is checked. 
+(Note: “Device Wipe” will wipe all data and non-core applications off the Android device.)
+
+Mark as a finding if configuration is not set as required.
+</check-content></check></Rule></Group><Group id="V-28295"><title>Removable flash media bound to smartphone</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-36013r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-033-02</version><title>The smartphone removable memory card (e.g., MicroSD) must be bound to the PDA or smartphone so it may not be read by any other PED or computer. </title><description>&lt;VulnDiscussion&gt;Memory cards used to transfer files between PCs and PDAs is a migration path for the spread of malware on DoD computers and handheld devices. These risks are mitigated by the requirements listed in this check.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-30396r1_fix">Implement required procedures to bind the media card to the smartphone. </fixtext><fix id="F-30396r1_fix" /><check system="C-35150r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This check is currently Not Applicable.  The SD memory card  is automatically bound to the Android smartphone by the Good server when "Allow SD card encryption" is checked in the Android policy on the Good server.</check-content></check></Rule></Group><Group id="V-28297"><title>Password/passcode complexity – Alphanumeric</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-36019r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-G-012-02</version><title>The smartphone password/passcode complexity (alphanumeric) must be set.</title><description>&lt;VulnDiscussion&gt;Sensitive DoD data could be compromised if a strong device unlock password/passcode is not set up on a DoD smartphone.  The complexity of the password is a key factor in the strength of the password.  Complex passwords are harder to guess or obtain via a brute force attack.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1, IAIA-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-30401r1_fix">Set the smartphone password complexity to the required value.   </fixtext><fix id="F-30401r1_fix" /><check system="C-35152r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+
+-Click the Passcode tab. 
+-Verify “Alphanumeric” is checked. 
+
+Mark as a finding if configuration is not set as required.
+</check-content></check></Rule></Group><Group id="V-29524"><title>Mobile OS Bluetooth Profiles</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-38756r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-040-02</version><title>All mobile operating system (OS) device Bluetooth radio profiles must be disabled except for the serial port, handset and headset profiles.</title><description>&lt;VulnDiscussion&gt;The Bluetooth radio can be used by a hacker to connect to the smartphone without the knowledge of the user. Sensitive DoD data could be exposed and the hacker could use the device to attack the enclave.  The serial port profile is used by the DoD approved Bluetooth smart card reader and the headset and handset profiles are used by the DoD approved Bluetooth headset.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-33963r1_fix">Install the required Bluetooth configuration application.</fixtext><fix id="F-33963r1_fix" /><check system="C-37824r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>The Bluetooth Security Monitor application is used to only allow the three approved Bluetooth profiles:  serial port, handset, headset.  (In late 2011, this configuration setting will be available in the Good server console.)
+Verify the Bluetooth Security Monitor application has been installed on the mobile OS device.
+
+-Have the system administrator show that Setup.apk is in the list of installed applications on the device (Settings&gt;Applications&gt;Manage applications&gt;All).  
+
+Mark as a finding if the required file is not installed.
+</check-content></check></Rule></Group><Group id="V-29525"><title>Approved Bluetooth devices</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-38758r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-040-03</version><title>The pairing of Bluetooth devices to DoD mobile OS devices must be controlled so only approved devices can pair to the smartphone.  </title><description>&lt;VulnDiscussion&gt;The Bluetooth radio can be used by a hacker to connect to the smartphone without the knowledge of the user. Sensitive DoD data could be exposed and the hacker could use the device to attack the enclave.
+
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-33963r1_fix">Install the required Bluetooth configuration application.</fixtext><fix id="F-33963r1_fix" /><check system="C-37825r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>The Bluetooth Security Monitor application is used to only allow approved Bluetooth smart card readers (CAC readers) and Bluetooth headsets.  (In late 2011, this configuration setting will be available in the Good server console.)
+Verify the Bluetooth Security Monitor application has been installed on the mobile OS device.
+
+-Have the system administrator show that Bluetooth Security Monitor application is in the list of installed applications on the device (Settings&gt;Applications&gt;Manage applications&gt;All). 
+
+Mark as a finding if Bluetooth Security Monitor application is not installed.</check-content></check></Rule></Group><Group id="V-29529"><title>Smartphone USB port</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-38765r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-036</version><title>The smartphone USB port must be configured as required.</title><description>&lt;VulnDiscussion&gt;A smartphone can be jailbroken or rooted when connected to a PC with a jailbreak or rooting application installed on it.  When a smartphone is jailbroken/rooted, the user or malware has root access and can bypass all device security controls.  DoD sensitive data could be compromised.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-33082r1_fix">Configure the smartphone USB port as required.</fixtext><fix id="F-33082r1_fix" /><check system="C-37827r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>There are two methods that can used to meet this requirement.   The site should choose which method to use.
+Method #1:  Disable all function of the device USB port
+This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy set on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title, for example, STIG_Android_Policy_Set. It is recommended all non STIG-compliant policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------
+
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+-Click the Restrictions tab. 
+-Verify under Hardware Functionality “Allow use of USB port” is not checked. 
+
+Method #2:  Enable the device USB port but disable the mass storage function of the USB port
+Procedure:  If the USAB port is enabled (see method #1 procedure, “Allow use of USB port” is checked), then “Mass Storage” must be set to “Disable.”
+First, verify the Dell Setup.apk file has been installed on the mobile OS device.
+
+-Have the system administrator show that the Dell Setup.apk is in the list of installed applications on the device (Settings&gt;Applications&gt;Manage applications&gt;All). If the file is not listed, confirm with the SA that the file was installed on the device during setup, run, and then removed.
+ (Note, a future release of the Good server will include the “Mass Storage” configuration setting in the Android security policy set and setup.apk will no longer be required.)
+
+Mark as a finding if either method #1 or Method #2 has not been implemented.</check-content></check></Rule></Group><Group id="V-29894"><title>Mobile OS application security review</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-39452r1_rule" severity="high" weight="10.0"><version>WIR-MOS-AND-006-03</version><title>A security risk analysis must be performed on a mobile operating (OS) system application by the DAA or DAA authorized approval authority prior to the application being approved for use.</title><description>&lt;VulnDiscussion&gt;Non-approved applications can contain malware. Approved applications should be reviewed and tested by the approving authority to ensure they do not contain malware, spyware, or have unexpected features (e.g., send private information to a web site, track user actions, connect to a non-DoD management server).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;Designated Approving Authority&lt;/Responsibility&gt;&lt;IAControls&gt;DCCB-1, ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-33666r1_fix">Have DAA or Command IT CCB use the required procedures to review mobile OS applications prior to approving them.</fixtext><fix id="F-33666r1_fix" /><check system="C-38371r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>One of the primary security issues with the Android Operating System (OS) is the lack of strong application controls. Key issues include:
+
+•The list of OS resource permissions that must be selected during application install is vague and confusing and leads to applications being assigned OS permissions that are not needed. Successful exploits related to any of these issues could allow an attacker to obtain DoD sensitive information and potentially obtained elevated system or even root privileges on the device.
+
+•Applications operate in their own protected area (sandbox) but Android allows applications to share data which breaks the sandbox model.
+
+•Android allows applications to share memory space.
+
+•The Android signing key mechanism is weak. Applications can share signing keys. It is easy for an attacker to break an application’s signing key, add malware, and then resign the modified app with the original key, thereby allowing the modified application to appear as the original application.
+
+•The Android event handling mechanism is poorly implemented.  Any application can listen for an event (Intent) and intercept the event, even if it is not intended for the application.  An app can send an Intent to another app, which could cause unsecure conditions
+
+Detailed Requirements:
+Core applications are applications included in the smartphone operating system. Applications added by the wireless carrier are not considered core applications. A security risk analysis must be performed by the DAA or DAA approved approval authority prior to a mobile OS application being approved for use.
+
+-Since native encryption module included in the Android OS is not FIPS 140-2 validated, Android non-core applications can only be approved if they meet the following conditions:
+-- The application does not store any data locally on the device; or
+-- The application stores data locally on the device and the data is encrypted using a FIPS 140-2 validated cryptographic module; or
+--The application and application data are stored on the device micro SD card where FIPS 140-2 validated encryption is used.
+
+The DAA, DAA designated Application Configuration Control Board, or other DAA designated process has the responsibility to approve all third-party applications installed on Android devices under the purview of the DAA. The application review and approval process must include an evaluation of what OS level permissions are required by the application and how the application shares data and memory space with other applications. The review process must also ensure:
+- Approved applications do not contain malware or share data stored on the mobile OS device with non-DoD servers.
+-  All approved applications are validated to ensure appropriate event handling features and proper permissions are applied on all Intents for approved applications. 
+
+Check Procedures:
+
+Review this check after reviewing check WIR-MOS-AND-06-01 (V-24986).  Determine if any non-core mobile OS applications have been approved by the DAA.  
+-If no, this check is not applicable.
+
+-If yes, complete the following procedures:
+
+Ask the site for documentation that shows what security risk analysis procedures are used by the DAA prior to approving non-core applications for use.
+
+Determine if the procedures include an evaluation of the following:
+- What OS level permissions are required by the application?
+-How the application shares data and memory space with other applications. 
+-The application does not contain malware.
+-The application does not share data stored on the smartphones with non-DoD servers.
+-Proper permissions are applied on all Intents in the application.
+-If the application stores data, the application data storage container is FIPS 140-2 validated.
+
+-Mark as a finding if the application security risk review procedures do not contain the required risk assessment evaluation tasks.
+</check-content></check></Rule></Group><Group id="V-29949"><title>Mobile OS build</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-39515r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-030-02</version><title>A compliance rule must be set up in the server defining required mobile OS software build version.</title><description>&lt;VulnDiscussion&gt;Unapproved OS build versions do not support required security features. The security baseline of the Android system could be compromised if required security features are not available.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-33736r1_fix">Install an approved mobile OS build.</fixtext><fix id="F-33736r1_fix" /><check system="C-38486r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>This is a Good security policy set check. Recommend all checks related to Good security policy set rules be reviewed using the following procedure. 
+
+1. Make a list of all Good security policy sets assigned to smartphone user accounts on the Good server using the following procedure: 
+
+-Have the SA identify any non STIG-compliant policy sets and STIG-compliant policy sets on the server. 
+--Log into the Good Mobile Control console. 
+--Click on the Policies tab. 
+--View all policy sets on the server. 
+
+-Note: STIG-compliant policy sets should be identified as such in the policy title. Examples are as follows: STIG_iOS_Policy_Set, STIG_WM6-5_Policy_Set, or STIG_Android_Policy_Set. It is recommended that all non-STIG policy sets be deleted.
+
+2. Select each policy set users are assigned to, and in turn, verify the required settings are in the policy set. 
+
+Note: If there is a finding, note the name of the non STIG-compliant policy set in the Findings Details section in VMS/Component Provided Tracking Database.
+---------------------------
+Step 1:	
+-Launch the Good Mobile Control Web console and click on the Policies tab. 
+-Select the policy set for the Android devices and click on Android Configuration on the left side.
+
+-On the left tab, select Compliance Manager. 
+-Verify a "Custom" or "Dell Android Build Number" rule is listed. (Note the rule title does not have to be exact.) 
+-Open the rule by checking the box next to the rule, and then click on Edit. 
+
+-Verify "Failure Action" is set to "Quit Good for Enterprise".
+
+-Verify "Check Every" is set to "1 hour".
+
+-Verify Rule File = build_number_check.xml
+
+Step 2:
+Verify the latest release of the Dell Android build is specified in the build_number_check.xml file.
+
+-Have the system administrator (SA) provide the build number of the latest Dell Android release.  The release is expected to be available on the Dell DoD web site.  
+
+-Have the system administrator open the build_number_check.xml file in a browser or in Word.  The build number will be listed between &lt;fingerprint&gt; and &lt;/fingerprint&gt; in the script.
+
+Mark as a finding if the required rule has not been set up and includes the latest Dell Android release build number.</check-content></check></Rule></Group><Group id="V-30193"><title>Bluetooth configuration application</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-39764r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-006-04</version><title>The Bluetooth configuration application must be installed on the Android device.</title><description>&lt;VulnDiscussion&gt;The Bluetooth monitor application ensures the Bluetooth configuration of the Android device is in compliance with the DoD Bluetooth security standard.  If not installed, it may be possible for a hacker to spoof the Bluetooth pairing process with the Android device, connect to the Android device via a Bluetooth connection, and steal sensitive DoD information.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-33925r1_fix">Install the Bluetooth configuration application on the Android device.</fixtext><fix id="F-33925r1_fix" /><check system="C-38659r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>Verify the Biometric Associates (BAL) Bluetooth configuration applications are installed on a sample of devices (2-4) (Application name:  baiMobile Security Service (version 1.0 or later) and baiMobile WatchDog application (version 1.0 or later).
+
+-Have the system administrator show that the baiMobile applications are in the list of installed applications on the device (Settings&gt;Applications&gt;Manage applications&gt;All).
+
+
+Mark as a finding if the required applications are not installed.</check-content></check></Rule></Group><Group id="V-30248"><title>Mobile OS device integrity scanning application</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-39856r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-045-01</version><title>Mobile OS devices (smartphones/tablets) must have a system integrity validation application installed or have validation scanning, using a PC based tool, completed on the required schedule.</title><description>&lt;VulnDiscussion&gt;The purpose of this scan is to determine if there has been an unexplained change in the mobile OS file system that may indicate the device has been compromised by malware or by rooting the device.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-33999r1_fix">Install Fixmo Sentinel on all site managed mobile devices.   </fixtext><fix id="F-33999r1_fix" /><check system="C-38854r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>Detailed Policy Requirements:
+All site managed Android devices must be have the Fixmo Sentinel application integrity validation tool installed.
+
+Check Procedures:
+Interview the IAO and Android device Administrator. Verify the Fixmo Sentinel application is installed on site Android mobile devices.
+Select 4-5 Android site managed Android devices to review. 
+For each device, have the user log into the device. Go to Settings &gt; Applications &gt; Manage applications. To view the list of applications on the smartphone select “All”. To view a list of applications on the SD media card select “On SD card”. Verify Sentinel is listed as an installed application.
+
+Mark as a finding if Sentinel is not installed.
+</check-content></check></Rule></Group><Group id="V-30249"><title>Maintain results of integrity scans</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-39869r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-045-05</version><title>The results and mitigation actions from Mobile OS device integrity validation tool scans on site managed Mobile OS devices must be maintained by the site for at least 6 months (1 year recommended).</title><description>&lt;VulnDiscussion&gt;Scan results must be maintained so that auditors can verify mitigation actions have been completed, so that a scan can be compared to a previous scan, and to determine if there is any security vulnerability trends for site managed mobile OS devices.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-34016r1_fix">Maintain the results and mitigation actions from Mobile OS device integrity validation tool scans on site managed Mobile OS devices for at least 6 months (1 year recommended).</fixtext><fix id="F-34016r1_fix" /><check system="C-38872r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>Detailed Policy Requirements:
+
+Each site must maintain the results of scans on site managed Android devices as follows:
+
+- The results of all Android device integrity validation tool scans will be maintained by either the site Android Administrator or IAO.
+
+- The site IAM should designate the length of time a site maintains the results of individual scans (6 months required, at least 1 year is recommended). The most recent control or baseline scan should be maintained until an Android device is decommissioned.
+
+Check Procedures:
+
+Interview the IAO and Android Administrator. Verify the IAO or Android Administrator is saving records of scan results and mitigation actions for the length of time designated by the site IAM.
+
+Select 4-5 Android site managed Android devices to review. 
+-For each device, have the Android device Administrator show scan logs for each device for the period of time designated by the IAM (at least 6 months).
+
+Mark as a finding if the scan interval is not set as required.
+</check-content></check></Rule></Group><Group id="V-30250"><title>Implement integrity scanning mitigation actions</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-39870r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-045-06</version><title>Mitigation actions identified by Mobile OS device integrity tool scans on site managed Mobile OS devices must be implemented.</title><description>&lt;VulnDiscussion&gt;If mitigation actions identified by the Mobile OS device integrity tool are not implemented, DoD data and the enclave could be at risk of being compromised.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-34017r1_fix">Implement required mitigation actions.   </fixtext><fix id="F-34017r1_fix" /><check system="C-38873r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>Determine if mitigation actions recommended by the Android device integrity validation tool, based on scanning results, have been implemented by the site. Interview the IAO and Android Administrator. Review the tool scanning results of the tool that were conducted over the previous 6 months that the site has on file.
+Select 4-5 site managed Android devices to review.  
+-For each device, have the Android device Administrator show scan logs for each device for the past several months.  Find several scans that have identified compromising events, if available.  Determine if the site completed recommended mitigation actions.
+
+Mark as a finding if mitigation actions were not completed.
+
+Note:  It is recommended that the site establish a procedure for recording mitigation actions competed for each site managed device.
+</check-content></check></Rule></Group><Group id="V-30566"><title>Device integrity validation baseline scans</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-40283r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-045-02</version><title>Mobile OS devices (smartphones / tablets) must have a device integrity validation tool baseline scan on file. </title><description>&lt;VulnDiscussion&gt;The purpose of this scan is to determine if there has been an unexplained change in the mobile OS file system indicating the device has been compromised by malware or by rooting the device. A baseline scan provides a known good condition to compare with subsequent scans. A new baseline scan should be completed after the installation or removal of an application.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-34279r1_fix">Create baseline scans for each site managed mobile device.   </fixtext><fix id="F-34279r1_fix" /><check system="C-39129r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>Interview the IAO and Android device Administrator. Verify Fixmo Sentinel baseline scans are on file for all site managed Android devices.
+Select 4-5 site managed Android devices to review.  Have the IAO show the reviewer the baseline scan for each device using Sentinel Desktop or Sentinel server.
+
+Mark as a finding if a baseline scan is not available.
+</check-content></check></Rule></Group><Group id="V-30567"><title>Device integrity scan interval</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-40286r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-045-03</version><title>Mobile OS devices (smartphones/tablets) device integrity validation scan interval must be 6 hours or less.</title><description>&lt;VulnDiscussion&gt;The purpose of this scan is to determine if there has been an unexplained change in the mobile OS file system that may indicate the device has been compromised by malware or by rooting the device.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-34281r1_fix">Configure the Fixmo Sentinel application to scan site managed Android devices every 6 hours or less.  </fixtext><fix id="F-34281r1_fix" /><check system="C-39132r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>The scan interval is setup on the device but cannot be verified on the device.
+
+Check Procedures:
+Interview the IAO and Android device Administrator. 
+
+Select 4-5 Android site managed Android devices to review.  
+
+-For each device, have the Android device Administrator show scan logs for each device for the previous week.  
+
+Verify the scans are about 6 hours or less apart.  If the scans are not approximately 6 hours apart, mark as a finding.
+
+Note:  There are several factors that could influence how often the scans are conducted and emailed from the mobile device, including if the device is powered on and if the device has wireless connectivity with the SMTP server.  The reviewer should use their best judgment to verify that the majority of the scans received in the previous week for each device being reviewed are about 6 hours or less apart.
+</check-content></check></Rule></Group><Group id="V-30568"><title>Mobile device integrity scan review</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-40290r1_rule" severity="medium" weight="10.0"><version>WIR-MOS-AND-045-04</version><title>Mobile OS device integrity tool scans must be reviewed daily by the system administrator or IAO (or continuously by a server).</title><description>&lt;VulnDiscussion&gt;If mitigation actions identified by the Mobile OS device integrity tool are not implemented, DoD data and the enclave could be at risk of being compromised.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECWN-1&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><fixtext fixref="F-34283r1_fix">Implement required mitigation actions.  </fixtext><fix id="F-34283r1_fix" /><check system="C-39136r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>Interview the system administrator and IOA.  Determine if the Fixmo Sentinel tool scan results are being reviewed daily by the system administrator or IAO.  Determine how the site documents this action.
+
+Note:  At this time, the Sentinel server cannot automatically review scan results from the device application and alert the administrator if there are events.
+
+Mark as a finding if Fixmo Sentinel tool scan results are not reviewed daily by the system administrator or IAO.   
+</check-content></check></Rule></Group><Group id="V-53957"><title>Unsupported Android 2.2 Dell OS</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-68195r1_rule" severity="high" weight="10.0"><version>WIR-MOS-AND-999</version><title>Android 2.2 Dell mobile operating systems that are no longer supported by the vendor for security updates must not be installed on a system.</title><description>&lt;VulnDiscussion&gt;Android 2.2 Dell mobile operating systems that are no longer supported by the vendor for security updates are not evaluated or updated for vulnerabilities, leaving them open to potential attack.  Organizations must transition to a supported mobile operating system to ensure continued support.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target Android OS 2.2</dc:title><dc:publisher>DISA FSO</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>Android OS 2.2</dc:subject><dc:identifier>1950</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-58795r1_fix">Upgrade Android 2.2 Dell systems to a supported mobile operating system.</fixtext><fix id="F-58795r1_fix" /><check system="C-54745r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Android 2.2 (Dell).xml" /><check-content>Dell support for Android 2.2 ended August 15, 2011.  If Android 2.2 Dell is installed on a system, this is a finding.</check-content></check></Rule></Group></Benchmark>

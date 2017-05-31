@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+  <cpe-item name="cpe:/a:microsoft:.net_framework:4.0">
+    <title>Microsoft .NET Framework 4.0</title>
+    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_Microsoft_DotNet_Framework4_V1R1_Benchmark-cpe-oval.xml">oval:mil.disa.fso.dotnet:def:1</check>
+  </cpe-item>
+</cpe-list>
+

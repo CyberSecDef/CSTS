@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/independent-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd       http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd">
+  <generator>
+    <oval:product_name>DISA</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2015-03-27T10:50:33.472-05:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.stig.word2013:def:15560" version="1" class="inventory">
+      <metadata>
+        <title>Microsoft Word 2013 is installed</title>
+        <affected family="windows">
+           <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Word 2013</platform>
+          <product>Microsoft Word 2013</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:word:2013"/>
+        <description>The application Microsoft Word 2013 is installed.</description>
+       </metadata>
+      <criteria>
+        <criterion comment="Microsoft Word 2013 is installed" test_ref="oval:mil.disa.stig.word2013:tst:79619"/>
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <registry_test id="oval:mil.disa.stig.word2013:tst:79619" version="1" comment="Microsoft Word 2013 is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:mil.disa.stig.word2013:obj:23844"/>
+    </registry_test>
+  </tests>
+  <objects>
+    <registry_object id="oval:mil.disa.stig.word2013:obj:23844" version="1" comment="Word 2013 install path" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <object_reference>oval:mil.disa.stig.word2013:obj:23979</object_reference>
+        <object_reference>oval:mil.disa.stig.word2013:obj:24010</object_reference>
+      </set>
+    </registry_object>
+    <registry_object id="oval:mil.disa.stig.word2013:obj:23979" version="1" comment="32 bit Word 2013 install path" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\WOW6432Node\Microsoft\Office\15.0\Word\InstallRoot</key>
+      <name datatype="string">Path</name>
+    </registry_object>
+    <registry_object id="oval:mil.disa.stig.word2013:obj:24010" version="1" comment="Native Word 2013 install path" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Microsoft\Office\15.0\Word\InstallRoot</key>
+      <name datatype="string">Path</name>
+    </registry_object>
+  </objects>
+</oval_definitions>

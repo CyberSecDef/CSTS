@@ -1,0 +1,1261 @@
+﻿<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" id="Symantec_AntiVirus_Locally_Configured_Client" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status>accepted</status><title>Symantec AntiVirus Locally Configured Client </title><notice id="Developed by DISA for the DoD" xml:lang="en"></notice><reference><dc:publisher>DISA, Field Security Operations</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 1 Benchmark Date: 03 Dec 2009</plain-text><version>4</version><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-6359" selected="true" /><select idref="V-6360" selected="true" /><select idref="V-6361" selected="true" /><select idref="V-6362" selected="true" /><select idref="V-6363" selected="true" /><select idref="V-6368" selected="true" /><select idref="V-6369" selected="true" /><select idref="V-6370" selected="true" /><select idref="V-6371" selected="true" /><select idref="V-6372" selected="true" /><select idref="V-6374" selected="true" /><select idref="V-6375" selected="true" /><select idref="V-6376" selected="true" /><select idref="V-6383" selected="true" /><select idref="V-6384" selected="true" /><select idref="V-6385" selected="true" /><select idref="V-6386" selected="true" /><select idref="V-6387" selected="true" /><select idref="V-6388" selected="true" /><select idref="V-6389" selected="true" /><select idref="V-6390" selected="true" /><select idref="V-6395" selected="true" /><select idref="V-6396" selected="true" /><select idref="V-6397" selected="true" /><select idref="V-14477" selected="true" /><select idref="V-14481" selected="true" /><select idref="V-14482" selected="true" /><select idref="V-14591" selected="true" /><select idref="V-14592" selected="true" /><select idref="V-14593" selected="true" /><select idref="V-14594" selected="true" /><select idref="V-14595" selected="true" /><select idref="V-14596" selected="true" /><select idref="V-14597" selected="true" /><select idref="V-14598" selected="true" /><select idref="V-14600" selected="true" /><select idref="V-14601" selected="true" /><select idref="V-14602" selected="true" /><select idref="V-14603" selected="true" /><select idref="V-14604" selected="true" /><select idref="V-14605" selected="true" /><select idref="V-14606" selected="true" /><select idref="V-14607" selected="true" /><select idref="V-14609" selected="true" /><select idref="V-14610" selected="true" /><select idref="V-14611" selected="true" /><select idref="V-14612" selected="true" /><select idref="V-14613" selected="true" /><select idref="V-14615" selected="true" /><select idref="V-14616" selected="true" /><select idref="V-14617" selected="true" /><select idref="V-19910" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-6359" selected="true" /><select idref="V-6360" selected="true" /><select idref="V-6361" selected="true" /><select idref="V-6362" selected="true" /><select idref="V-6363" selected="true" /><select idref="V-6368" selected="true" /><select idref="V-6369" selected="true" /><select idref="V-6370" selected="true" /><select idref="V-6371" selected="true" /><select idref="V-6372" selected="true" /><select idref="V-6374" selected="true" /><select idref="V-6375" selected="true" /><select idref="V-6376" selected="true" /><select idref="V-6383" selected="true" /><select idref="V-6384" selected="true" /><select idref="V-6385" selected="true" /><select idref="V-6386" selected="true" /><select idref="V-6387" selected="true" /><select idref="V-6388" selected="true" /><select idref="V-6389" selected="true" /><select idref="V-6390" selected="true" /><select idref="V-6395" selected="true" /><select idref="V-6396" selected="true" /><select idref="V-6397" selected="true" /><select idref="V-14477" selected="true" /><select idref="V-14481" selected="true" /><select idref="V-14482" selected="true" /><select idref="V-14591" selected="true" /><select idref="V-14592" selected="true" /><select idref="V-14593" selected="true" /><select idref="V-14594" selected="true" /><select idref="V-14595" selected="true" /><select idref="V-14596" selected="true" /><select idref="V-14597" selected="true" /><select idref="V-14598" selected="true" /><select idref="V-14600" selected="true" /><select idref="V-14601" selected="true" /><select idref="V-14602" selected="true" /><select idref="V-14603" selected="true" /><select idref="V-14604" selected="true" /><select idref="V-14605" selected="true" /><select idref="V-14606" selected="true" /><select idref="V-14607" selected="true" /><select idref="V-14609" selected="true" /><select idref="V-14610" selected="true" /><select idref="V-14611" selected="true" /><select idref="V-14612" selected="true" /><select idref="V-14613" selected="true" /><select idref="V-14615" selected="true" /><select idref="V-14616" selected="true" /><select idref="V-14617" selected="true" /><select idref="V-19910" selected="true" /></Profile><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-6359" selected="true" /><select idref="V-6360" selected="true" /><select idref="V-6361" selected="true" /><select idref="V-6362" selected="true" /><select idref="V-6363" selected="true" /><select idref="V-6368" selected="true" /><select idref="V-6369" selected="true" /><select idref="V-6370" selected="true" /><select idref="V-6371" selected="true" /><select idref="V-6372" selected="true" /><select idref="V-6374" selected="true" /><select idref="V-6375" selected="true" /><select idref="V-6376" selected="true" /><select idref="V-6383" selected="true" /><select idref="V-6384" selected="true" /><select idref="V-6385" selected="true" /><select idref="V-6386" selected="true" /><select idref="V-6387" selected="true" /><select idref="V-6388" selected="true" /><select idref="V-6389" selected="true" /><select idref="V-6390" selected="true" /><select idref="V-6395" selected="true" /><select idref="V-6396" selected="true" /><select idref="V-6397" selected="true" /><select idref="V-14477" selected="true" /><select idref="V-14481" selected="true" /><select idref="V-14482" selected="true" /><select idref="V-14591" selected="true" /><select idref="V-14592" selected="true" /><select idref="V-14593" selected="true" /><select idref="V-14594" selected="true" /><select idref="V-14595" selected="true" /><select idref="V-14596" selected="true" /><select idref="V-14597" selected="true" /><select idref="V-14598" selected="true" /><select idref="V-14600" selected="true" /><select idref="V-14601" selected="true" /><select idref="V-14602" selected="true" /><select idref="V-14603" selected="true" /><select idref="V-14604" selected="true" /><select idref="V-14605" selected="true" /><select idref="V-14606" selected="true" /><select idref="V-14607" selected="true" /><select idref="V-14609" selected="true" /><select idref="V-14610" selected="true" /><select idref="V-14611" selected="true" /><select idref="V-14612" selected="true" /><select idref="V-14613" selected="true" /><select idref="V-14615" selected="true" /><select idref="V-14616" selected="true" /><select idref="V-14617" selected="true" /><select idref="V-19910" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-6359" selected="true" /><select idref="V-6360" selected="true" /><select idref="V-6361" selected="true" /><select idref="V-6362" selected="true" /><select idref="V-6363" selected="true" /><select idref="V-6368" selected="true" /><select idref="V-6369" selected="true" /><select idref="V-6370" selected="true" /><select idref="V-6371" selected="true" /><select idref="V-6372" selected="true" /><select idref="V-6374" selected="true" /><select idref="V-6375" selected="true" /><select idref="V-6376" selected="true" /><select idref="V-6383" selected="true" /><select idref="V-6384" selected="true" /><select idref="V-6385" selected="true" /><select idref="V-6386" selected="true" /><select idref="V-6387" selected="true" /><select idref="V-6388" selected="true" /><select idref="V-6389" selected="true" /><select idref="V-6390" selected="true" /><select idref="V-6395" selected="true" /><select idref="V-6396" selected="true" /><select idref="V-6397" selected="true" /><select idref="V-14477" selected="true" /><select idref="V-14481" selected="true" /><select idref="V-14482" selected="true" /><select idref="V-14591" selected="true" /><select idref="V-14592" selected="true" /><select idref="V-14593" selected="true" /><select idref="V-14594" selected="true" /><select idref="V-14595" selected="true" /><select idref="V-14596" selected="true" /><select idref="V-14597" selected="true" /><select idref="V-14598" selected="true" /><select idref="V-14600" selected="true" /><select idref="V-14601" selected="true" /><select idref="V-14602" selected="true" /><select idref="V-14603" selected="true" /><select idref="V-14604" selected="true" /><select idref="V-14605" selected="true" /><select idref="V-14606" selected="true" /><select idref="V-14607" selected="true" /><select idref="V-14609" selected="true" /><select idref="V-14610" selected="true" /><select idref="V-14611" selected="true" /><select idref="V-14612" selected="true" /><select idref="V-14613" selected="true" /><select idref="V-14615" selected="true" /><select idref="V-14616" selected="true" /><select idref="V-14617" selected="true" /><select idref="V-19910" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-6359" selected="true" /><select idref="V-6360" selected="true" /><select idref="V-6361" selected="true" /><select idref="V-6362" selected="true" /><select idref="V-6363" selected="true" /><select idref="V-6368" selected="true" /><select idref="V-6369" selected="true" /><select idref="V-6370" selected="true" /><select idref="V-6371" selected="true" /><select idref="V-6372" selected="true" /><select idref="V-6374" selected="true" /><select idref="V-6375" selected="true" /><select idref="V-6376" selected="true" /><select idref="V-6383" selected="true" /><select idref="V-6384" selected="true" /><select idref="V-6385" selected="true" /><select idref="V-6386" selected="true" /><select idref="V-6387" selected="true" /><select idref="V-6388" selected="true" /><select idref="V-6389" selected="true" /><select idref="V-6390" selected="true" /><select idref="V-6395" selected="true" /><select idref="V-6396" selected="true" /><select idref="V-6397" selected="true" /><select idref="V-14477" selected="true" /><select idref="V-14481" selected="true" /><select idref="V-14482" selected="true" /><select idref="V-14591" selected="true" /><select idref="V-14592" selected="true" /><select idref="V-14593" selected="true" /><select idref="V-14594" selected="true" /><select idref="V-14595" selected="true" /><select idref="V-14596" selected="true" /><select idref="V-14597" selected="true" /><select idref="V-14598" selected="true" /><select idref="V-14600" selected="true" /><select idref="V-14601" selected="true" /><select idref="V-14602" selected="true" /><select idref="V-14603" selected="true" /><select idref="V-14604" selected="true" /><select idref="V-14605" selected="true" /><select idref="V-14606" selected="true" /><select idref="V-14607" selected="true" /><select idref="V-14609" selected="true" /><select idref="V-14610" selected="true" /><select idref="V-14611" selected="true" /><select idref="V-14612" selected="true" /><select idref="V-14613" selected="true" /><select idref="V-14615" selected="true" /><select idref="V-14616" selected="true" /><select idref="V-14617" selected="true" /><select idref="V-19910" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-6359" selected="true" /><select idref="V-6360" selected="true" /><select idref="V-6361" selected="true" /><select idref="V-6362" selected="true" /><select idref="V-6363" selected="true" /><select idref="V-6368" selected="true" /><select idref="V-6369" selected="true" /><select idref="V-6370" selected="true" /><select idref="V-6371" selected="true" /><select idref="V-6372" selected="true" /><select idref="V-6374" selected="true" /><select idref="V-6375" selected="true" /><select idref="V-6376" selected="true" /><select idref="V-6383" selected="true" /><select idref="V-6384" selected="true" /><select idref="V-6385" selected="true" /><select idref="V-6386" selected="true" /><select idref="V-6387" selected="true" /><select idref="V-6388" selected="true" /><select idref="V-6389" selected="true" /><select idref="V-6390" selected="true" /><select idref="V-6395" selected="true" /><select idref="V-6396" selected="true" /><select idref="V-6397" selected="true" /><select idref="V-14477" selected="true" /><select idref="V-14481" selected="true" /><select idref="V-14482" selected="true" /><select idref="V-14591" selected="true" /><select idref="V-14592" selected="true" /><select idref="V-14593" selected="true" /><select idref="V-14594" selected="true" /><select idref="V-14595" selected="true" /><select idref="V-14596" selected="true" /><select idref="V-14597" selected="true" /><select idref="V-14598" selected="true" /><select idref="V-14600" selected="true" /><select idref="V-14601" selected="true" /><select idref="V-14602" selected="true" /><select idref="V-14603" selected="true" /><select idref="V-14604" selected="true" /><select idref="V-14605" selected="true" /><select idref="V-14606" selected="true" /><select idref="V-14607" selected="true" /><select idref="V-14609" selected="true" /><select idref="V-14610" selected="true" /><select idref="V-14611" selected="true" /><select idref="V-14612" selected="true" /><select idref="V-14613" selected="true" /><select idref="V-14615" selected="true" /><select idref="V-14616" selected="true" /><select idref="V-14617" selected="true" /><select idref="V-19910" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-6359" selected="true" /><select idref="V-6360" selected="true" /><select idref="V-6361" selected="true" /><select idref="V-6362" selected="true" /><select idref="V-6363" selected="true" /><select idref="V-6368" selected="true" /><select idref="V-6369" selected="true" /><select idref="V-6370" selected="true" /><select idref="V-6371" selected="true" /><select idref="V-6372" selected="true" /><select idref="V-6374" selected="true" /><select idref="V-6375" selected="true" /><select idref="V-6376" selected="true" /><select idref="V-6383" selected="true" /><select idref="V-6384" selected="true" /><select idref="V-6385" selected="true" /><select idref="V-6386" selected="true" /><select idref="V-6387" selected="true" /><select idref="V-6388" selected="true" /><select idref="V-6389" selected="true" /><select idref="V-6390" selected="true" /><select idref="V-6395" selected="true" /><select idref="V-6396" selected="true" /><select idref="V-6397" selected="true" /><select idref="V-14477" selected="true" /><select idref="V-14481" selected="true" /><select idref="V-14482" selected="true" /><select idref="V-14591" selected="true" /><select idref="V-14592" selected="true" /><select idref="V-14593" selected="true" /><select idref="V-14594" selected="true" /><select idref="V-14595" selected="true" /><select idref="V-14596" selected="true" /><select idref="V-14597" selected="true" /><select idref="V-14598" selected="true" /><select idref="V-14600" selected="true" /><select idref="V-14601" selected="true" /><select idref="V-14602" selected="true" /><select idref="V-14603" selected="true" /><select idref="V-14604" selected="true" /><select idref="V-14605" selected="true" /><select idref="V-14606" selected="true" /><select idref="V-14607" selected="true" /><select idref="V-14609" selected="true" /><select idref="V-14610" selected="true" /><select idref="V-14611" selected="true" /><select idref="V-14612" selected="true" /><select idref="V-14613" selected="true" /><select idref="V-14615" selected="true" /><select idref="V-14616" selected="true" /><select idref="V-14617" selected="true" /><select idref="V-19910" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-6359" selected="true" /><select idref="V-6360" selected="true" /><select idref="V-6361" selected="true" /><select idref="V-6362" selected="true" /><select idref="V-6363" selected="true" /><select idref="V-6368" selected="true" /><select idref="V-6369" selected="true" /><select idref="V-6370" selected="true" /><select idref="V-6371" selected="true" /><select idref="V-6372" selected="true" /><select idref="V-6374" selected="true" /><select idref="V-6375" selected="true" /><select idref="V-6376" selected="true" /><select idref="V-6383" selected="true" /><select idref="V-6384" selected="true" /><select idref="V-6385" selected="true" /><select idref="V-6386" selected="true" /><select idref="V-6387" selected="true" /><select idref="V-6388" selected="true" /><select idref="V-6389" selected="true" /><select idref="V-6390" selected="true" /><select idref="V-6395" selected="true" /><select idref="V-6396" selected="true" /><select idref="V-6397" selected="true" /><select idref="V-14477" selected="true" /><select idref="V-14481" selected="true" /><select idref="V-14482" selected="true" /><select idref="V-14591" selected="true" /><select idref="V-14592" selected="true" /><select idref="V-14593" selected="true" /><select idref="V-14594" selected="true" /><select idref="V-14595" selected="true" /><select idref="V-14596" selected="true" /><select idref="V-14597" selected="true" /><select idref="V-14598" selected="true" /><select idref="V-14600" selected="true" /><select idref="V-14601" selected="true" /><select idref="V-14602" selected="true" /><select idref="V-14603" selected="true" /><select idref="V-14604" selected="true" /><select idref="V-14605" selected="true" /><select idref="V-14606" selected="true" /><select idref="V-14607" selected="true" /><select idref="V-14609" selected="true" /><select idref="V-14610" selected="true" /><select idref="V-14611" selected="true" /><select idref="V-14612" selected="true" /><select idref="V-14613" selected="true" /><select idref="V-14615" selected="true" /><select idref="V-14616" selected="true" /><select idref="V-14617" selected="true" /><select idref="V-19910" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-6359" selected="true" /><select idref="V-6360" selected="true" /><select idref="V-6361" selected="true" /><select idref="V-6362" selected="true" /><select idref="V-6363" selected="true" /><select idref="V-6368" selected="true" /><select idref="V-6369" selected="true" /><select idref="V-6370" selected="true" /><select idref="V-6371" selected="true" /><select idref="V-6372" selected="true" /><select idref="V-6374" selected="true" /><select idref="V-6375" selected="true" /><select idref="V-6376" selected="true" /><select idref="V-6383" selected="true" /><select idref="V-6384" selected="true" /><select idref="V-6385" selected="true" /><select idref="V-6386" selected="true" /><select idref="V-6387" selected="true" /><select idref="V-6388" selected="true" /><select idref="V-6389" selected="true" /><select idref="V-6390" selected="true" /><select idref="V-6395" selected="true" /><select idref="V-6396" selected="true" /><select idref="V-6397" selected="true" /><select idref="V-14477" selected="true" /><select idref="V-14481" selected="true" /><select idref="V-14482" selected="true" /><select idref="V-14591" selected="true" /><select idref="V-14592" selected="true" /><select idref="V-14593" selected="true" /><select idref="V-14594" selected="true" /><select idref="V-14595" selected="true" /><select idref="V-14596" selected="true" /><select idref="V-14597" selected="true" /><select idref="V-14598" selected="true" /><select idref="V-14600" selected="true" /><select idref="V-14601" selected="true" /><select idref="V-14602" selected="true" /><select idref="V-14603" selected="true" /><select idref="V-14604" selected="true" /><select idref="V-14605" selected="true" /><select idref="V-14606" selected="true" /><select idref="V-14607" selected="true" /><select idref="V-14609" selected="true" /><select idref="V-14610" selected="true" /><select idref="V-14611" selected="true" /><select idref="V-14612" selected="true" /><select idref="V-14613" selected="true" /><select idref="V-14615" selected="true" /><select idref="V-14616" selected="true" /><select idref="V-14617" selected="true" /><select idref="V-19910" selected="true" /></Profile><Group id="V-6359"><title>DTAS002-Symantec Antivirus not configured to resta</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6432r4_rule" severity="medium"><version>DTAS002</version><title>The Symantec Antivirus is not configured to restart for configuration changes.</title><description>&lt;VulnDiscussion&gt;Without an automatic restart, changes to the virus protection will not be in effect until a reboot of the machine.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5885r2_fix">Change the registry key HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan so that the value of ConfigRestart is 1.</fixtext><fix id="F-5885r2_fix" /><check system="C-1058r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of ConfigRestart is 1, this is not a finding.</check-content></check></Rule></Group><Group id="V-6360"><title>DTAS003-Symantec Antivirus autoprotect </title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6433r5_rule" severity="high"><version>DTAS003</version><title>The Symantec Antivirus autoprotect parameter is incorrect.</title><description>&lt;VulnDiscussion&gt;Without autoprotect, the virus scan is not scanning files as they are being accessed.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5886r2_fix">Change the registry key HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan so that the value of OnOff is 1.</fixtext><fix id="F-5886r2_fix" /><check system="C-1059r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of OnOff is 1, this is not a finding.</check-content></check></Rule></Group><Group id="V-6361"><title>DTAS004-Symantec Antivirus auto protect-All Files</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6434r5_rule" severity="medium"><version>DTAS004</version><title>The Symantec Antivirus auto protect-All Files configuration is incorrect.</title><description>&lt;VulnDiscussion&gt;All files must be included in virus scans for the scans to be effective.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5887r3_fix">Change the registry key HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan so that the value of FileType is 0.</fixtext><fix id="F-5887r3_fix" /><check system="C-1061r3_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of FileType is 0, this is not a finding.</check-content></check></Rule></Group><Group id="V-6362"><title>DTAS006-Symantec Antivirus display message</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6435r4_rule" severity="medium"><version>DTAS006</version><title>The Symantec Antivirus display message parameter is incorrect.</title><description>&lt;VulnDiscussion&gt;Without an appropriate message when an infection is found, the user will not know there is a virus.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5888r2_fix">Change the registry key HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan so that the value of MessageBox is 1.</fixtext><fix id="F-5888r2_fix" /><check system="C-1087r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of MessageBox is 1, this is not a finding.</check-content></check></Rule></Group><Group id="V-6363"><title>DTAS007-Symantec Antivirus exclude files configura</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6436r3_rule" severity="medium"><version>DTAS007</version><title>The Symantec Antivirus exclude files configuration is incorrect.</title><description>&lt;VulnDiscussion&gt;This ensures no files are excluded from the scan.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5889r2_fix">Change the registry key HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan so that the value of ExcludedByExtensions is 0.</fixtext><fix id="F-5889r2_fix" /><check system="C-1090r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of ExcludedByExtensions is 0, this is not a finding.</check-content></check></Rule></Group><Group id="V-6368"><title>DTAS012-Symantec Antivirus autoprotect read</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6441r4_rule" severity="medium"><version>DTAS012</version><title>The Symantec Antivirus autoprotect read parameter is incorrect.</title><description>&lt;VulnDiscussion&gt;Without this parameter files that are accessed by the user will not be checked for viruses.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5894r2_fix">Change the registry key HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan so that the value of Reads is 1.</fixtext><fix id="F-5894r2_fix" /><check system="C-1168r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of Reads is 1, this is not a finding.</check-content></check></Rule></Group><Group id="V-6369"><title>DTAS013-Symantec Antivirus AutoProtect backup opti</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6442r4_rule" severity="medium"><version>DTAS013</version><title>The Symantec Antivirus AutoProtect parameter for backup options is incorrect.</title><description>&lt;VulnDiscussion&gt;Without setting this parameter, a copy of the file will not be saved before trying to remove the virus.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5895r2_fix">Change the registry key HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan so that the value of BackupToQuarantine is 1.</fixtext><fix id="F-5895r2_fix" /><check system="C-1170r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of BackupToQuarantine is 1, this is not a finding.</check-content></check></Rule></Group><Group id="V-6370"><title>DTAS014-Symantec Antivirus AutoProtect autoenabler</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6443r4_rule" severity="medium"><version>DTAS014</version><title>The Symantec Antivirus AutoProtect parameter for autoenabler is incorrect.</title><description>&lt;VulnDiscussion&gt;If virus checking is turned off, this parameter will turn it back on after 5 minutes.  This will ensure the virus checking program will remain on even if the user turns it off.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5896r3_fix">Change the registry key HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan so that the value of APEOn is 1 and the value of APESleep
+is&lt;=5.</fixtext><fix id="F-5896r3_fix" /><check system="C-1174r4_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+
+Criteria: If the value of APEOn is 1 and the value of APESleep is &lt;=5 , this is not a finding. If
+APESleep is &gt; 5 or APEOn is not 1, this is a finding.</check-content></check></Rule></Group><Group id="V-6371"><title>DTAS015-Symantec Antivirus AutoProtect floppies</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6444r5_rule" severity="medium"><version>DTAS015</version><title>The Symantec Antivirus AutoProtect parameter for floppies is incorrect.</title><description>&lt;VulnDiscussion&gt;This parameter determines whether floppy disk are checked for viruses.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5897r2_fix">Change the registry key HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan so that the value of ScanFloppyBRonAccess is 1</fixtext><fix id="F-5897r2_fix" /><check system="C-1177r3_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\Filesystem\RealTimeScan
+Criteria: If the value of ScanFloppyBRonAccess is 1, this is not a finding.</check-content></check></Rule></Group><Group id="V-6372"><title>DTAS016-Symantec Antivirus AutoProtect Boot virus</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6445r4_rule" severity="medium"><version>DTAS016</version><title>The Symantec Antivirus AutoProtect parameter for Boot virus is incorrect.</title><description>&lt;VulnDiscussion&gt;This parameter tell the antivirus program what to do when a boot virus is found.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5898r2_fix">Change the registry key HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan so that the value of FloppyBRAction is 5.</fixtext><fix id="F-5898r2_fix" /><check system="C-1182r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of FloppyBRAction is 5, this is not a finding.</check-content></check></Rule></Group><Group id="V-6374"><title>DTAS017-Symantec Antivirus AutoProtect floppy shut</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6447r4_rule" severity="medium"><version>DTAS017</version><title>The Symantec Antivirus AutoProtect  parameter for check floppy at shutdown is incorrect.</title><description>&lt;VulnDiscussion&gt;This checks floppy drives at shutdown time.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5900r3_fix">Change the registry key HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Version 9.x : The value of SkipFloppyBRonAccess is 0.
+Version 10.x : The value of SkipShutDownFloppyCheck is 0x0.</fixtext><fix id="F-5900r3_fix" /><check system="C-1240r3_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria:
+For Version 9.x If the value of SkipFloppyBRonAccess is 0, this is not a finding.
+For Version 10.x If the value of SkipShutDownFloppyCheck is 0x0, this is not a finding.</check-content></check></Rule></Group><Group id="V-6375"><title>DTAS020-Symantec Antivirus email for Boot sectors</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6448r5_rule" severity="medium"><version>DTAS020</version><title>The Symantec Antivirus email parameter for Boot sectors is incorrect.</title><description>&lt;VulnDiscussion&gt;This parameter controls if email is scanned.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5901r3_fix">Change the registry key HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName\RealTimeScan so that the value of OnOff is 1.
+
+Note: This check is for Email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.</fixtext><fix id="F-5901r3_fix" /><check system="C-1243r4_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName\RealTimeScan
+Criteria: If the value of OnOff is 1, this is not a finding.
+Note: This check is for email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.
+If email client is not installed, this check is NA.</check-content></check></Rule></Group><Group id="V-6376"><title>DTAS021-Symantec Antivirus email client for files</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6449r5_rule" severity="medium"><version>DTAS021</version><title>The Symantec Antivirus email client parameter for all files is incorrect.</title><description>&lt;VulnDiscussion&gt;This controls if all files are checked for viruses.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5902r3_fix">Change the registry key HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName\RealTimeScan so that the value of FileType is 0.
+Note: This check is for Email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.
+
+
+
+
+</fixtext><fix id="F-5902r3_fix" /><check system="C-1248r4_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName\RealTimeScan
+Criteria: If the value of FileType is 0, this is not a finding.
+Note: This check is for email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.
+If email client is not installed, this check is NA.</check-content></check></Rule></Group><Group id="V-6383"><title>DTAS029-Symantec Antivirus email client compressed</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6456r5_rule" severity="medium"><version>DTAS029</version><title>The Symantec Antivirus email client parameter for compressed files is incorrect.</title><description>&lt;VulnDiscussion&gt;This controls what happens when the program encounters compressed files.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5932r3_fix">Change the registry key HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName\RealTimeScan so that the value of ZipFile is 1.
+
+</fixtext><fix id="F-5932r3_fix" /><check system="C-1922r4_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName\RealTimeScan
+Criteria: If the value of ZipFile is 1, this is not a finding.
+Note: This check is for email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.
+If email client is not installed, this check is NA.
+
+</check-content></check></Rule></Group><Group id="V-6384"><title>DTAS030-Symantec AntiVirus CE History Options</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6457r5_rule" severity="medium"><version>DTAS030</version><title>The Symantec AntiVirus CE History Options parameters are not configured as required.</title><description>&lt;VulnDiscussion&gt;This parameter determines the log history of the antivirus program.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5934r3_fix">Change the registry key HKLM\Software\INTEL\LANDesk\VirusProtect6\CurrentVersion so that
+the values of LogFileRollOverDays is greather than or equal to 1e (the hex value for 30) and so
+that LogFrequency is 0. If these values are absent, add them.</fixtext><fix id="F-5934r3_fix" /><check system="C-1924r4_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\INTEL\LANDesk\VirusProtect6\CurrentVersion
+and determine the value data for the LogFileRollOverDays and LogFrequency values.
+Criteria: If the value data for the LogFileRollOverDays values is not 1e (the hex value for 30) or
+higher, this is a Finding.
+If the value data for the LogFrequency value is not 0 (the number zero), this is a Finding.
+Note: The LogFileRollOverDays and LogFrequency values are not created through a default
+product installation. The absence of these values is considered a Finding, because it allows the
+vendor default to be used and that value could be changed through vendor maintenance.</check-content></check></Rule></Group><Group id="V-6385"><title>DTAS031-Symantec Antivirus not scheduled to autoup</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6458r7_rule" severity="medium"><version>DTAS031</version><title>The Symantec Antivirus is not scheduled to autoupdate.</title><description>&lt;VulnDiscussion&gt;This parameter controls the automation of updates to the signature files&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5935r3_fix">Open the Symantec Antivirus program. Use the File - Schedule Updates dialog to set the
+autoupdates to run on at least a weekly schedule.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console this is a two part check.  
+The primary server must be check to ensure that it is being updated as required.
+
+From the Symantec Enterprise Server- Symantec System Center Console - System Center Console on the Enterprise Server: System Hierarchy -&gt; select (right click) Primary Server -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Virus Definition Manager -&gt; Configure -&gt; select "Schedule for automatic updates"  -&gt; select Schedule: select the update to be scheduled on at least a weekly basis. 
+
+SECOND, the client configuration must be checked. 
+
+From the System Center Console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select [applicable "Client Group"] (right click) -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Virus Definition Manager -&gt; If "Update virus definitions from parent server" is checked checking the Schedule is not necessary. If “Schedule for automated updates using LiveUpdate" is checked -&gt; select Schedule: ensure the update is scheduled on at least a weekly basis
+
+
+</fixtext><fix id="F-5935r3_fix" /><check system="C-1928r3_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the File pull down menu – Schedule Updates dialog to see the frequency of the autoupdates.
+
+Criteria: If it is scheduled to run autoupdates on at least a weekly schedule, this is not a finding.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console this is a two part check. 
+
+From the Symantec Enterprise Server- Symantec System Center Console - System Center Console on the Enterprise Server: System Hierarchy -&gt; select (right click) Primary Server -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Virus Definition Manager -&gt; Configure -&gt; "Schedule for automatic updates" is checked -&gt; Select Schedule: Ensure the update is scheduled on at least a weekly basis. 
+
+SECOND, the client configuration must be checked. 
+
+From the System Center Console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select [applicable "Client Group"] (right click) -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Virus Definition Manager -&gt; If "Update virus definitions from parent server" is checked the Schedule is not necessary. If “Schedule for automated updates using LiveUpdate" is checked -&gt; select Schedule: Ensure the update is scheduled on at least a weekly basis.
+
+Criteria: If the Schedule for Automatic Updates is defined for at least a weekly update this is not a finding.
+</check-content></check></Rule></Group><Group id="V-6386"><title>DTAS032-no Symantec Antivirus Scheduled Scans </title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6459r5_rule" severity="medium"><version>DTAS032</version><title>There is no Symantec Antivirus Scheduled Scans or Startup Scans task configured to scan local drive(s) at least weekly.</title><description>&lt;VulnDiscussion&gt;This controls the automatic scan of all local drives.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-6768r2_fix">Create a weekly or startup task to scan for viruses.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: A determination of the existence of a weekly scan must be made. From the System Center Console select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click) -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; In the Client Scans area if there are no scans (at least weekly) defined one must be created. Select New -&gt; in the Name: “provide scan name” -&gt; select Enable scan -&gt; select Frequency of at least weekly.</fixtext><fix id="F-6768r2_fix" /><check system="C-1932r3_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks.
+Review the TaskPadScheduled and TaskPadStartup keys to determine if a task has been defined
+in subkey Scan Local HDD.
+The Scan Local HDD subkey defines a hexadecimal task ID that is the Registry subkey that holds
+the task settings.
+Make note of the task ID for the following checks.
+If there is no Scan Local HDD subkey, it is necessary to review all the defined subkeys in
+TaskPadScheduled and TaskPadStartup to determine if one identifies a hexadecimal task ID
+defining a task that conforms to the required settings.
+
+Criteria: If a task to scan the local hard drives is not configured to run or if an alternate procedure
+does not specify the required settings, this is a Finding.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: A determination of the existence of a weekly scan must be made. On the client machine navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans. Review the 
+ClientServerScheduledScan_1\Schedule key. This key contains a value for Type that determines the frequency of the scan. If the value for this key is a 1 or a 2 this is a daily or weekly scan. 
+
+note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check as each ClientServerScheduledScan_X may have a different frequency. Make note of the ClientServerScheduledScan_X weekly scan key as this will be the key used in following weekly scan checks. 
+
+Criteria: if the value of Type is 1 or 2 and the value of Enabled is 1, this is not a finding. 
+</check-content></check></Rule></Group><Group id="V-6387"><title>DTAS037-Symantec Antivirus weekly scan for files</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6460r7_rule" severity="medium"><version>DTAS037</version><title>The Symantec Antivirus weekly scan parameter for all files is incorrect.</title><description>&lt;VulnDiscussion&gt;This parameter ensures all files are scanned during the weekly scan.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5937r3_fix">Change the registry key HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom
+Tasks\{TaskID} so that the value of FileType is 0.
+
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: A determination of the existence of a weekly scan must be made. One option is to obtain this information from the System Administrator another option is to review each Scheduled Scan from the console on the Enterprise Server. From the Enterprise Console  select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click) -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server “weekly scan” -&gt; select Edit -&gt; select Scan Settings -&gt; select “All Types”.</fixtext><fix id="F-5937r3_fix" /><check system="C-1933r4_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: If the value of FileType is 0, this is not a finding.
+
+Criteria: If the option “All Types” is selected, this is not a finding. 
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans. Review the 
+ClientServerScheduledScan_1 key: note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check. 
+
+Criteria: if the value of FileType is 1, this is not a finding. 
+</check-content></check></Rule></Group><Group id="V-6388"><title>DTAS040-Symantec Antivirus weekly scan memory</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6461r7_rule" severity="medium"><version>DTAS040</version><title>The Symantec Antivirus weekly scan parameter for memory enabled is incorrect.</title><description>&lt;VulnDiscussion&gt;This parameter ensures memory is scanned during the weekly scan.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5939r4_fix">For Version 9: Change the registry key HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID} so that the value of ScanMemory is 1.
+
+For Version 10: Change the registry key HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID} so that the value of ScanProcesses is 1.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: From the console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click)   -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server weekly scan -&gt; select Edit -&gt; select Scan Settings -&gt; select “Memory”.
+</fixtext><fix id="F-5939r4_fix" /><check system="C-1935r5_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure:  Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+
+
+Criteria: For Version 9.x, if the value of ScanMemory is 1, this is not a finding.  
+For Version 10.x the value of ScanProcesses is 1, this is not a finding.  
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1: 
+
+note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check. 
+
+ 
+</check-content></check></Rule></Group><Group id="V-6389"><title>DTAS041-Symantec Antivirus weekly scan messages</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6462r5_rule" severity="medium"><version>DTAS041</version><title>The Symantec Antivirus weekly scan parameter for messages is incorrect.</title><description>&lt;VulnDiscussion&gt;This parameter ensures that appropriate messages are displayed if a virus is found.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5940r2_fix">Change the registry key HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom
+Tasks\{TaskID} so that the value of MessageBox is 1.
+
+ ** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: From the console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click) -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server weekly scan -&gt; select Edit -&gt; select Scan Settings -&gt; select Notifications -&gt; select “Display notification message on infected computer”.</fixtext><fix id="F-5940r2_fix" /><check system="C-1938r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: If the value of MessageBox is 1, this is not a finding.
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1: note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check. Criteria: if the value of MessageBox is 1, this is not a finding. 
+
+Criteria: If “Display notification message on infected computer” is selected this is not a finding.
+</check-content></check></Rule></Group><Group id="V-6390"><title>DTAS042-Symantec Antivirus weekly scan exclude fil</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6463r5_rule" severity="medium"><version>DTAS042</version><title>The Symantec Antivirus weekly scan parameter for exclude files is incorrect.</title><description>&lt;VulnDiscussion&gt;This parameter controls which files are excluded from the weekly scan.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5941r2_fix">Change the registry key HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom
+Tasks\{TaskID} so that the value of ExcludedByExtensions is 0.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: From the console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click) -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server weekly scan -&gt; select Edit -&gt; select Scan Settings -&gt; check that “Exclude files and folders” is unchecked. Note: if “Exclude files and folders” is checked select the Exclusions tab File/Folders button and validate that no local drives are being excluded from the scan.</fixtext><fix id="F-5941r2_fix" /><check system="C-1941r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: If the value of ExcludedByExtensions is 0, this is not a finding.
+
+Criteria – If the “Exclude files and folders” is not selected this is not a finding
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1: note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check. Criteria: if the value of ExcludeByExtensions, HaveExceptionDirs, and HaveExceptionFiles is 0, this is not a finding. </check-content></check></Rule></Group><Group id="V-6395"><title>DTAS047-Symantec Antivirus weekly scan compressed</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6468r5_rule" severity="medium"><version>DTAS047</version><title>The Symantec Antivirus weekly scan parameter for compressed files is incorrect.</title><description>&lt;VulnDiscussion&gt;This parameter ensures that compressed files are scanned for viruses during the weekly scan.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5947r2_fix">Change the registry key HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\CustomTasks\{TaskID} so that the value of ZipFile is 1.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: From the console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click) -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server weekly scan -&gt; select Edit -&gt; select Scan Settings -&gt; Advanced -&gt; select “Scan files inside compressed files”.</fixtext><fix id="F-5947r2_fix" /><check system="C-1954r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: If the value of ZipFile is 1, this is not a finding.
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1: note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check. Criteria: if the value of ZipFiles is 1, this is not a finding.</check-content></check></Rule></Group><Group id="V-6396"><title>DTAS048-Symantec Antivirus weekly scan backup file</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6469r5_rule" severity="medium"><version>DTAS048</version><title>The Symantec Antivirus weekly scan parameter for backup files is incorrect.</title><description>&lt;VulnDiscussion&gt;This parameter controls the action of backing up files to a quarantine area during the weekly scan.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5948r2_fix">Change the registry key HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom
+Tasks\{TaskID} so that the value of BackupToQuarantine is 1.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: From the console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click)  -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server weekly scan -&gt; select Edit -&gt; select Scan Settings -&gt; Advanced -&gt; Remote Options area, Backup options, select  “Backup file before attempting repair.”</fixtext><fix id="F-5948r2_fix" /><check system="C-1956r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: If the value of BackupToQuarantine is 1, this is not a finding.
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1: note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check. Criteria: if the value of BackupToQuarantine is 1.</check-content></check></Rule></Group><Group id="V-6397"><title>DTAS050-Symantec Antivirus weekly scan "scan lock"</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-6470r6_rule" severity="medium"><version>DTAS050</version><title>The Symantec Antivirus weekly scan parameter for scan lock is incorrect.</title><description>&lt;VulnDiscussion&gt;This parameter ensures that users cannot stop the weekly scan.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-5949r2_fix">Change the registry key HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom
+Tasks\{TaskID} so that the value of  ScanLocked is 1.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: From the console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click)  -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server weekly scan -&gt; select Edit -&gt; select Scan Settings -&gt; Advanced -&gt; Remote Options area select “Allow user to stop scan” must be unchecked.</fixtext><fix id="F-5949r2_fix" /><check system="C-1958r3_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Use the Windows Registry Editor to navigate to the following key: HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\CustomTasks\{TaskID}
+
+Criteria: If the value ScanLocked is 1, this is not a finding
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1: note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check. Criteria: if the value of ScanLocked is 1, this is not a finding.</check-content></check></Rule></Group><Group id="V-14477"><title>DTAS060-Symantec Antivirus autoprotect Block Risks</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15095r2_rule" severity="medium"><version>DTAS060</version><title>The Symantec Antivirus autoprotect parameter for Block Security Risks  is incorrect.</title><description>&lt;VulnDiscussion&gt;The checks and blocks various types of spyware.  Without the correct setting the program will not block the various types of spyware.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-13920r2_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: Set the value of APBlockingSecurityRisks to 1.
+This check applies to version 10.x only.</fixtext><fix id="F-13920r2_fix" /><check system="C-12398r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of APBlockingSecurityRisks is 1, this is not a finding.
+This check applies to version 10.x only.
+
+</check-content></check></Rule></Group><Group id="V-14481"><title>DTAS061-Symantec Antivirus autoprotect Scan Risks</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15099r2_rule" severity="medium"><version>DTAS061</version><title>The Symantec Antivirus autoprotect parameter for scan for security risks is incorrect.</title><description>&lt;VulnDiscussion&gt;The AntiVirus has a security risk policy that can be modified/customized for each site.  Without Auto-Protect running, these risk polices cannot be scanned and the risk detected.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-13927r2_fix">Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: Set the value of RespondToThreats to 3.
+This check applies to version 10.x only.</fixtext><fix id="F-13927r2_fix" /><check system="C-12405r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of RespondToThreats is 3, this is not a finding.
+This check applies to version 10.x only.</check-content></check></Rule></Group><Group id="V-14482"><title>DTAS062-Symantec Antivirus autoprotect Delete Infe</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15100r2_rule" severity="medium"><version>DTAS062</version><title>The Symantec Antivirus autoprotect parameter for Delete Infected Files on Creation is incorrect.</title><description>&lt;VulnDiscussion&gt;The Symantec Antivirus autoprotect parameter for Delete Infected Files on Creation is incorrect.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-13928r2_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\Filesystem\RealTimeScan
+
+Criteria: Set the value of DeleteInfectedOnCreate to 1.
+
+This check applies to version 10.x only.</fixtext><fix id="F-13928r2_fix" /><check system="C-12406r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of DeleteInfectedOnCreate is 1, this is not a finding.
+This check applies to version 10.x only.</check-content></check></Rule></Group><Group id="V-14591"><title>DTAS063-Symantec Antivirus autoprotect Threattrace</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15209r2_rule" severity="medium"><version>DTAS063</version><title>The Symantec Antivirus autoprotect parameter for Threat tracer is incorrect.</title><description>&lt;VulnDiscussion&gt;Threat Tracer, provides insight into threat source.   &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14048r2_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: Set the value of ThreatTracerOnOff to 1.
+This check applies to version 10.x only.</fixtext><fix id="F-14048r2_fix" /><check system="C-12540r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of ThreatTracerOnOff is 1, this is not a finding.
+This check applies to version 10.x only.</check-content></check></Rule></Group><Group id="V-14592"><title>DTAS064-Symantec Antivirus autoprotect Bloodhound </title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15210r2_rule" severity="medium"><version>DTAS064</version><title>The Symantec Antivirus autoprotect parameter for Bloodhound technology is incorrect.</title><description>&lt;VulnDiscussion&gt;Bloodhound Virus detection scans outgoing email messages helps to prevent the spread of threats such as worms that can use email clients to replicate and distribute themselves across a network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14049r2_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: Set the value of Heuristics to 1.
+This check applies to version 10.x only.</fixtext><fix id="F-14049r2_fix" /><check system="C-12541r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of Heuristics is 1, this is not a finding.
+This check applies to version 10.x only.</check-content></check></Rule></Group><Group id="V-14593"><title>DTAS065-Symantec Antivirus autoprotect Heuristic</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15211r2_rule" severity="medium"><version>DTAS065</version><title>The Symantec Antivirus autoprotect parameter for Heuristics Level is incorrect.</title><description>&lt;VulnDiscussion&gt;Heuristics analyzes a program's structure, its behavior, and other attributes for virus-like characteristics. In many cases it can protect against threats such as mass-mailing worms and macro viruses, if you encounter them before updating your virus definitions. Advanced heuristics looks for script-based threats in HTML, VBScript, and JavaScript files.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14050r2_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: Set the value of HeuristicsLevel to 2 or 3.
+This check applies to version 10.x only.</fixtext><fix id="F-14050r2_fix" /><check system="C-12542r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of HeuristicsLevel is 2 or 3, this is not a finding.
+This check applies to version 10.x only.</check-content></check></Rule></Group><Group id="V-14594"><title>DTAS066-Symantec Antivirus autoprotect MacroFirst</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15212r5_rule" severity="medium"><version>DTAS066</version><title>The Symantec Antivirus autoprotect parameter for macro virus first action is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the Auto-Protect Macro virus First action policy. When a Macro virus is detected, the first action to be performed must be the option to delete risk, clean risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14051r2_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: Set the value of FirstMacroAction to 1, 3 or 5.</fixtext><fix id="F-14051r2_fix" /><check system="C-12543r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of FirstMacroAction is 1, 3 or 5, this is not a finding.
+</check-content></check></Rule></Group><Group id="V-14595"><title>DTAS067-Symantec Antivirus autoprotect MacroSecond</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15213r3_rule" severity="medium"><version>DTAS067</version><title>The Symantec Antivirus autoprotect parameter for macro virus second action is incorrect.</title><description>&lt;VulnDiscussion&gt;A program or code segment written in the internal macro language of an application. Some macros replicate, while others infect documents.  
+After the first iteration, the file Book1 is inserted in the Excel Start directory to make sure that any newly opened files become infected. 
+
+The virus then starts a second iteration through all workbooks and macros. During this second iteration any uninfected files are infected. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14052r2_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: Set the value of SecondMacroAction to 1,3 or 5.</fixtext><fix id="F-14052r2_fix" /><check system="C-12544r3_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of SecondMacroAction is 1,3 or 5, this is not a finding.
+
+</check-content></check></Rule></Group><Group id="V-14596"><title>DTAS068-Symantec Antivirus autoprotect Nonmacro fi</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15214r3_rule" severity="medium"><version>DTAS068</version><title>The Symantec Antivirus autoprotect parameter for non-macro first action virus is incorrect.</title><description>&lt;VulnDiscussion&gt;A program or code segment written in the internal macro language of an application. Some macros replicate, while others infect documents.  
+After the first iteration, the file Book1 is inserted in the Excel Start directory to make sure that any newly opened files become infected. 
+
+The virus then starts a second iteration through all workbooks and macros. During this second iteration any uninfected files are infected. 
+
+
+
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-19870r1_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: Set the value of FirstAction to 1,3, or 5.</fixtext><fix id="F-19870r1_fix" /><check system="C-12545r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+
+Criteria: If the value of FirstAction is 1,3, or 5, this is not a finding</check-content></check></Rule></Group><Group id="V-14597"><title>DTAS069-Symantec Antivirus autoprotect Nonmacro se</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15215r3_rule" severity="medium"><version>DTAS069</version><title>The Symantec Antivirus autoprotect parameter for check non-macro second action is incorrect.</title><description>&lt;VulnDiscussion&gt;A program or code segment written in the internal macro language of an application. Some macros replicate, while others infect documents.  
+After the first iteration, the file Book1 is inserted in the Excel Start directory to make sure that any newly opened files become infected. 
+
+The virus then starts a second iteration through all workbooks and macros. During this second iteration any uninfected files are infected. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14054r2_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: Set the value of SecondAction to 1,3, or 5.
+
+</fixtext><fix id="F-14054r2_fix" /><check system="C-12546r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan
+Criteria: If the value of SecondAction is 1,3, or 5, this is not a finding.</check-content></check></Rule></Group><Group id="V-14598"><title>DTAS070-Symantec Antivirus autoprotect risks first</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15216r3_rule" severity="medium"><version>DTAS070</version><title>The Symantec Antivirus autoprotect parameter for Security Risks first action is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the Auto-Protect Security Risks First action policy. When a Security Risk is detected, the first action to be performed must be the option to delete risk, clean risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14055r2_fix">Procedure: This is a multiple step process to ensure compliance. Non-Compliance points are
+identified throughout the procedures.
+Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan\Expanded
+Criteria: If the value of FirstAction is not 1 or 3, this is a finding.
+VL04 Page 31 of 59
+https://vms.disa.mil/VL04.aspx 3/26/2009
+If the value FirstAction is 1 or 3 then check each of the following steps. Each of the 8 parts (A-H)
+must be in compliance for the vulnerability to be considered not a finding.
+A - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-10
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-10
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+B - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-11
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-11
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+C - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-4
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-4
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+D - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-5
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-5
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+E - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-6
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-6
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+F - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-7
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-7
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+G - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-8
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-8
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+H - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-9
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-9
+If the value is 1 or 3, this is compliant, otherwise this is a finding.</fixtext><fix id="F-14055r2_fix" /><check system="C-12547r3_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: This is a multiple step process to ensure compliance. Non-compliance points are
+identified throughout the procedures.
+Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan\Expanded
+Criteria: If the value of FirstAction is not 1 or 3, this is a finding.
+If the value FirstAction is 1 or 3, then check each of the following steps. Each of the 8 parts (A-H)
+must be in compliance for the vulnerability to be considered not a finding.
+A - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-10
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction value within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-10
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+B - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-11
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-11
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+C - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-4
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-4
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+D - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-5
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-5
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+E - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-6
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-6
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+F - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-7
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-7
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+G - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-8
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-8
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+H - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-9
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-9
+If the value is 1 or 3, this is compliant, otherwise this is a finding.</check-content></check></Rule></Group><Group id="V-14600"><title>DTAS071-Symantec Antivirus autoprotect Risk Second</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15222r3_rule" severity="medium"><version>DTAS071</version><title>The Symantec Antivirus autoprotect parameter for Security Risks Second Action is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the Auto-Protect Security Risks second  ("If first action fails") action policy. When a Security Risk such as Adware or Dialers is detected the second action to be performed must be the option to delete risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14061r2_fix">Procedure: This is a multiple step process to ensure compliance. Non-Compliance points are
+identified throughout the procedures.
+Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan\Expanded
+Criteria: If the value of SecondAction is not 1 or 3, this is a finding.
+If the value SecondAction is 1 or 3 then check each of the following steps. Each of the 8 parts
+(A-H) must be in compliance for the vulnerability to be considered not a finding.
+A - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-10
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-10
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+B - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-11
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-11
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+C - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-4
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-4
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+D - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-5
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-5
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+E - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-6
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-6
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+F - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-7
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-7
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+G - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-8
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-8
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+H - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-9
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-9
+If the value is 1 or 3, this is compliant, otherwise this is a finding.</fixtext><fix id="F-14061r2_fix" /><check system="C-12615r3_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: This is a multiple step process to ensure compliance. Non-compliance points are
+identified throughout the procedures.
+Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\Filesystem\RealTimeScan\Expanded
+Criteria: If the value of SecondAction is not 1 or 3, this is a finding.
+If the value SecondAction is 1 or 3 then check each of the following steps. Each of the 8 parts
+(A-H) must be in compliance for the vulnerability to be considered not a finding.
+A - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-10
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-10
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+B - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-11
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-11
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+C - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-4
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-4
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+D - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-5
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-5
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+E - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-6
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-6
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+F - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-7
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-7
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+G - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-8
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-8
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+H - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-9
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\Filesystem\RealTimeScan\Expanded\TCID-9
+If the value is 1 or 3, this is compliant, otherwise this is a finding.</check-content></check></Rule></Group><Group id="V-14601"><title>DTAS080-Symantec Antivirus email client Notificati</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15223r6_rule" severity="medium"><version>DTAS080</version><title>The Symantec Antivirus email client for notification into the email is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required in order for the Symantec Antivirus email client to send an email warning notification of a security risk. The “Insert warning into e-mail message” attribute must be selected.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14062r3_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName\RealTimeScan
+Criteria: Set the value of InsertWarning to 1.
+Note: This check is for Email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.
+
+
+</fixtext><fix id="F-14062r3_fix" /><check system="C-12616r4_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName\RealTimeScan
+Criteria: If the value of InsertWarning is 1, this is not a finding.
+Note: This check is for Email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.
+If email client is not installed this check is NA.</check-content></check></Rule></Group><Group id="V-14602"><title>DTAS081- Symantec Antivirus autoprotect macro firs</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15224r5_rule" severity="medium"><version>DTAS081</version><title>The Symantec Antivirus autoprotect email parameter for macro virus first action is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the Auto-Protect email parameter Macro virus First action policy. When an email Macro virus is detected, the first action to be performed must be the option to delete risk, clean risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14063r4_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName\RealTimeScan
+Criteria: Set the value of FirstMacroAction to 1, 3 or 5.
+Note: This check is for Email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.</fixtext><fix id="F-14063r4_fix" /><check system="C-12617r4_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName\RealTimeScan
+Criteria: If the value of FirstMacroAction is 1, 3 or 5, this is not a finding.
+Note: This check is for email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.
+If email client is not installed, this check is NA.</check-content></check></Rule></Group><Group id="V-14603"><title>DTAS082-Symantec Antivirus autoprotect email secon</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15225r5_rule" severity="medium"><version>DTAS082</version><title>The Symantec Antivirus autoprotect email parameter for macro virus second action is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the Auto-Protect email parameter Macro virus second action policy. When an email Macro virus is detected, the second action ("If first action fails:") to be performed must be the option to delete risk, clean risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14064r3_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName\RealTimeScan
+Criteria: Set the value of SecondMacroAction to 1,3 or 5.
+Note: This check is for Email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.</fixtext><fix id="F-14064r3_fix" /><check system="C-12618r4_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName\RealTimeScan
+Criteria: If the value of SecondMacroAction is 1,3 or 5, this is not a finding.
+Note: This check is for email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.
+If email client is not installed, this check is NA.
+.
+</check-content></check></Rule></Group><Group id="V-14604"><title>DTAS083-Symantec Antivirus autoprotect email nonma</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15226r5_rule" severity="medium"><version>DTAS083</version><title>The Symantec Antivirus autoprotect email parameter for non-macro first action virus is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the Auto-Protect email parameter non-Macro virus First action policy. When a non-Macro virus is detected the first action to be performed must be the option to delete risk, clean risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14065r3_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName\RealTimeScan
+Criteria: Set the value of FirstAction to 1,3, or 5.
+Note: This check is for Email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.</fixtext><fix id="F-14065r3_fix" /><check system="C-12619r4_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName\RealTimeScan
+Criteria: If the value of FirstAction is 1,3, or 5, this is not a finding.
+Note: This check is for email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.
+If email client is not installed, this check is NA.</check-content></check></Rule></Group><Group id="V-14605"><title>DTAS084-Symantec Antivirus autoprotect email nonma</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15227r6_rule" severity="medium"><version>DTAS084</version><title>The Symantec Antivirus autoprotect email parameter for check non-macro second action is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the Auto-Protect email parameter non-Macro virus Second action policy. When a non-Macro virus is detected the Second action ("If first action fails")  to be performed must be the option to delete risk, clean risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14066r4_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName \RealTimeScan
+Criteria: Set the value of SecondAction to 1,3, or 5.
+Note: This check is for Email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.</fixtext><fix id="F-14066r4_fix" /><check system="C-12620r5_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName \RealTimeScan
+Criteria: If the value of SecondAction is 1,3, or 5, this is not a finding.
+Note: This check is for email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.
+If email client is not installed, this check is NA.
+</check-content></check></Rule></Group><Group id="V-14606"><title>DTAS085-Symantec Antivirus autoprotect email first</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15228r4_rule" severity="medium"><version>DTAS085</version><title>The Symantec Antivirus Auto-Protect email parameter for Security Risks first action is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the Auto-Protect email Security Risks First action policy. When a Security Risk is detected the first action to be performed must be the option to delete risk, clean risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14067r3_fix">Procedure: This is a multiple step process to ensure compliance. Non-Compliance points are
+identified throughout the procedures.
+Note: This check is for Email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.
+Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName \RealTimeScan\Expanded
+Criteria: If the value of FirstAction is not 1 or 3, this is a finding.
+If the value FirstAction is 1 or 3 then check each of the following steps. Each of the 8 parts (A-H)
+must be in compliance for the vulnerability to be considered not a finding.
+A - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-10
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-10
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+B - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-11
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-11
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+C - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-4
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-4
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+D - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-5
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-5
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+E - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-6
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-6
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+F - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-7
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-7
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+G - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-8
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-8
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+H - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-9
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-9
+If the value is 1 or 3, this is compliant, otherwise this is a finding.</fixtext><fix id="F-14067r3_fix" /><check system="C-12621r4_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: This is a multiple step process to ensure compliance. Non-compliance points are
+identified throughout the procedures.
+Note: This check is for email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.
+If email client is not installed, this check is NA.
+Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName \RealTimeScan\Expanded
+Criteria: If the value of FirstAction is not 1 or 3, this is a finding.
+If the value FirstAction is 1 or 3 then check each of the following steps. Each of the 8 parts (A-H)
+must be in compliance for the vulnerability to be considered not a finding.
+A - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-10
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-10
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+B - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-11
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-11
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+C - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-4
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-4
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+D - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-5
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-5
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+E - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-6
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-6
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+F - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-7
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-7
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+G - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-8
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-8
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+H - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-9
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-9
+If the value is 1 or 3, this is compliant, otherwise this is a finding.</check-content></check></Rule></Group><Group id="V-14607"><title>DTAS086-Symantec Antivirus autoprotect email secon</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15229r4_rule" severity="medium"><version>DTAS086</version><title>The Symantec Antivirus autoprotect parameter for Email Security Risks Second Action is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the Auto-Protect email Security Risks second ("If first action fails") action policy. When a Security Risk such as Adware or Dialers is detected, the second action to be performed must be the option to delete risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14068r3_fix">Procedure: This is a multiple step process to ensure compliance. Non-Compliance points are
+identified throughout the procedures.
+Note: This check is for Email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.
+Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName \RealTimeScan\Expanded
+Criteria: If the value of SecondAction is not 1 or 3, this is a finding.
+If the value SecondAction is 1 or 3 then check each of the following steps. Each of the 8 parts
+(A-H) must be in compliance for the vulnerability to be considered not a finding.
+A - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-10
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-10
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+B - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-11
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-11
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+C - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-4
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-4
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+D - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-5
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-5
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+E - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-6
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-6
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+F - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-7
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-7
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+G - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-8
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-8
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+H - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-9
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-9
+If the value is 1 or 3, this is compliant, otherwise this is a finding.</fixtext><fix id="F-14068r3_fix" /><check system="C-12622r4_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: This is a multiple step process to ensure compliance. Non-compliance points are
+identified throughout the procedures.
+Note: This check is for email clients. Substitute your email application name (InternetMail,
+LotusNotes, or MicrosoftExchangeClient) into the registry string indicated by EmailName.
+If email client is not installed, this check is NA.
+Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\ INTEL\LANDesk\VirusProtect6\CurrentVersion\
+Storages\EmailName \RealTimeScan\Expanded
+Criteria: If the value of SecondAction is not 1 or 3, this is a finding.
+If the value SecondAction is 1 or 3 then check each of the following steps. Each of the 8 parts
+(A-H) must be in compliance for the vulnerability to be considered not a finding.
+A - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-10
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-10
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+B - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-11
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-11
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+C - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-4
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-4
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+D - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-5
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-5
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+E - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-6
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-6
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+F - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-7
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-7
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+G - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-8
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-8
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+H - If the value of OverrideDefaultActions within HKLM\Software\ INTEL\LANDesk\VirusProtect6
+\CurrentVersion\Storages\EmailName \RealTimeScan\Expanded\TCID-9
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\
+INTEL\LANDesk\VirusProtect6\CurrentVersion\Storages\EmailName
+\RealTimeScan\Expanded\TCID-9
+If the value is 1 or 3, this is compliant, otherwise this is a finding.</check-content></check></Rule></Group><Group id="V-14609"><title>DTAS091-Symantec Antivirus weekly scan load points</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15231r4_rule" severity="medium"><version>DTAS091</version><title>The Symantec Antivirus weekly scan parameter for scanning load points is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required to configure the scanning of load points. "Load points" are defined by Symantec AV as "Common Infection locations".&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14070r2_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: Set the value of ScanLoadpoints to 1.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: From the console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click)  -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server weekly scan -&gt; select Edit -&gt; select Scan Settings -&gt; select “Common infection locations (load points)”.</fixtext><fix id="F-14070r2_fix" /><check system="C-12624r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: If the value of ScanLoadpoints is 1, this is not a finding.
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1: note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check. Criteria: if the value of ScanLoadPoints is 1, this not a finding.</check-content></check></Rule></Group><Group id="V-14610"><title>DTAS092-Symantec Antivirus weekly scan well knowns</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15232r4_rule" severity="medium"><version>DTAS092</version><title>The Symantec Antivirus weekly scan parameter for well knowns before others is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required to configure scanning locations of well-known vuruses and security risks. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14071r2_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: Set the value of ScanERASERDEFS to 1.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: From the console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click)  -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server weekly scan -&gt; select Edit -&gt; select Scan Settings -&gt; select “Locations of well known viruses and security risks”.</fixtext><fix id="F-14071r2_fix" /><check system="C-12625r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: If the value of ScanERASERDEFS is 1, this is not a finding.
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1: note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check. Criteria: if the value of ScanERASERDEFS is 1, this is not a finding.</check-content></check></Rule></Group><Group id="V-14611"><title>DTAS093-Symantec Antivirus weekly scan macro first</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15233r2_rule" severity="medium"><version>DTAS093</version><title>The Symantec Antivirus weekly scan parameter for macro virus first action is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the weekly scan Macro virus First action policy. When a Macro virus is detected, the first action to be performed must be the option to delete risk, clean risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14072r2_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: Set the value of FirstMacroAction to 1, 3 or 5.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: From the console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click) -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server weekly scan -&gt; select Edit -&gt; select Scan Setings -&gt; Actions -&gt; Highlight Macro virus: First action: Clean risk, Quarantine risk, or Delete risk.</fixtext><fix id="F-14072r2_fix" /><check system="C-12626r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: If the value of FirstMacroAction is 1, 3 or 5, this is not a finding.
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1: note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check. Criteria: if the value of FirstMacroAction is 1, 3, or 5, this is not a finding.
+
+</check-content></check></Rule></Group><Group id="V-14612"><title>DTAS094-Symantec Antivirus weekly scan macro secon</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15234r4_rule" severity="medium"><version>DTAS094</version><title>The Symantec Antivirus weekly scan parameter for macro virus second action is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the weekly scan parameter Macro virus Second action policy. When a non-Macro virus is detected, the Second action ("If first action fails") to be performed must be the option to delete risk, clean risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14073r2_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: Set the value of SecondMacroAction to 1,3 or 5.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center
+Console: From the console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click) -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server weekly scan -&gt; select Edit -&gt; select Scan Settings -&gt; Actions -&gt; Highlight Macro virus: If first action fails: Clean risk, Quarantine risk, or Delete risk.
+</fixtext><fix id="F-14073r2_fix" /><check system="C-12627r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: If the value of SecondMacroAction is 1,3 or 5, this is not a finding.
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1: note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check. Criteria: if the value of SeconMacroAction is 1, 3, or 5, this is not a finding..
+</check-content></check></Rule></Group><Group id="V-14613"><title>DTAS095-Symantec Antivirus weekly scan nonmacro fi</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15235r4_rule" severity="medium"><version>DTAS095</version><title>The Symantec Antivirus weekly scan parameter for non-macro first action virus is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the weekly scan parameter non-Macro virus First action policy. When a non-Macro virus is detected, the first action to be performed must be the option to delete risk, clean risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14074r2_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: Set the value of FirstAction to 1,3, or 5.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: From the console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click) -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server weekly scan -&gt; select Edit -&gt; select Scan Settings -&gt; Actions -&gt; Highlight Non-Macro Virus: First Action: Clean risk, Quarantine risk, or Delete risk</fixtext><fix id="F-14074r2_fix" /><check system="C-12628r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}
+Criteria: If the value of FirstAction is 1,3, or 5, this is not a finding.
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1: note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check. Criteria: if the value of FirstAction is 1, 3, or 5, this is not a finding.</check-content></check></Rule></Group><Group id="V-14615"><title>DTAS096-Symantec Antivirus autoprotect nonmacro se</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15240r4_rule" severity="medium"><version>DTAS096</version><title>The Symantec Antivirus autoprotect parameter for check non-macro second action is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the Auto-Protect parameter non-Macro virus second action policy. When an email Macro virus is detected, the second action ("If first action fails:") to be performed must be the option to delete risk, clean risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14077r2_fix">Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{T
+askID}
+Criteria: Set the value of SecondAction to 1,3, or 5.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: From the console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click)  -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server weekly scan -&gt; select Edit -&gt; select Scan Settings -&gt; Actions -&gt; Highlight Non-macro virus: If first action fails: Clean risk, Quarantine risk, or Delete risk</fixtext><fix id="F-14077r2_fix" /><check system="C-13712r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{T
+askID}
+Criteria: If the value of SecondAction is 1,3, or 5, this is not a finding.
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1: note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check. 
+Criteria: if the value of SecondAction is 1, 3, or 5,  this is not a finding.</check-content></check></Rule></Group><Group id="V-14616"><title>DTAS097-Symantec Antivirus weekly scan risk first</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15241r3_rule" severity="medium"><version>DTAS097</version><title>The Symantec Antivirus weekly scan parameter for Security Risks first action is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the weekly scan parameter Security Risks First action policy. When a Security Risk is detected, the first action to be performed must be the option to delete risk, clean risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14078r2_fix">Procedure: This is a multiple step process to ensure compliance. Non-Compliance points are
+identified throughout the procedures.
+Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}\Expanded
+Criteria: If the value of FirstAction is not 1 or 3, this is a finding.
+If the value FirstAction is 1 or 3 then check each of the following steps. Each of the 8 parts (A-H)
+must be in compliance for the vulnerability to be considered not a finding.
+A - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-10
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-10
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+B - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-11
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-11
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+C - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-4
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-4
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+D - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-5
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-5
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+E - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-6
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-6
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+F - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-7
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-7
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+G - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-8
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-8
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+H - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-9
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-9
+If the value is 1 or 3, this is compliant.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: From the console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click)  -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server weekly scan -&gt; select Edit -&gt; select Scan Settings -&gt; Actions -&gt; Highlight Security Risks: under the Actions tab First action: select one of the following “Quarantine risk” or “Delete risk”. 
+
+If the selection for First action is “Quarantine risk” or “Delete risk”, continue with each of the following steps. Each of the 8 parts (A – H) must be in compliance for the vulnerability to be considered not a finding.
+
+A. Highlight Adware - if Override actions configured for Security Risks is checked, for First action: select Quarantine risk or Delete risk. 
+
+B. Highlight Dialers - if Override actions configured for Security Risks is checked, for First action: select Quarantine risk or Delete risk. 
+
+C. Highlight Hack Tools – if Override actions configured for Security Risks is checked, for First action: select Quarantine risk or Delete risk. 
+
+D. Highlight Joke Programs – if Override actions configured for Security Risks is checked, for First action:  select Quarantine risk or Delete risk.
+
+E. Highlight Other – if Override actions configured for Security Risks is checked, for First action: select Quarantine risk or Delete risk. 
+
+F. Highlight Remote Access – if Override actions configured for Security Risks is checked, for First action: select Quarantine risk or Delete risk. 
+
+G. Highlight Spyware – if Override actions configured for Security Risks is checked, for First action: select Quarantine risk or Delete risk. 
+
+H. Highlight Trackware - if Override actions configured for Security Risks is checked, for First action: select Quarantine risk or Delete risk. 
+</fixtext><fix id="F-14078r2_fix" /><check system="C-12632r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: This is a multiple step process to ensure compliance. Non-Compliance points are
+identified throughout the procedures.
+Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}\Expanded
+Criteria: If the value of FirstAction is not 1 or 3, this is a finding.
+If the value FirstAction is 1 or 3 then check each of the following steps. Each of the 8 parts (A-H)
+must be in compliance for the vulnerability to be considered not a finding.
+A - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-10
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-10
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+B - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-11
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-11
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+C - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-4
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-4
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+D - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-5
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-5
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+E - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-6
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-6
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+F - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-7
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-7
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+G - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-8
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-8
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+H - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-9
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-9
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1: note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. This key will indicate the weekly scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check.
+
+Procedure: This is a multiple step process to ensure compliance. Non-Compliance points are
+identified throughout the procedures.
+Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded
+Criteria: If the value of FirstAction is not 1 or 3, this is a finding.
+If the value FirstAction is 1 or 3 then check each of the following steps. Each of the 8 parts (A-H)
+must be in compliance for the vulnerability to be considered not a finding.
+A - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-10
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-10
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+B - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-11
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-11
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+C - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-4
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-4
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+D - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-5
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-5
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+E - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-6
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-6
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+F - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-7
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-7
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+G - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-8
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-8
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+H - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-9
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the FirstAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-9
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+</check-content></check></Rule></Group><Group id="V-14617"><title>DTAS098-The Symantec Antivirus weekly scan paramet</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-15242r4_rule" severity="medium"><version>DTAS098</version><title>The Symantec Antivirus weekly scan parameter for Security Risks second action is incorrect.</title><description>&lt;VulnDiscussion&gt;This setting is required for the weekly scan parameter Security Risks second ("If first action fails") action policy. When a Security Risk, such as Adware or Dialers, is detected, the second action to be performed must be the option to delete risk, or quarantine the risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-14079r2_fix">Procedure: This is a multiple step process to ensure compliance. Non-Compliance points are
+identified throughout the procedures.
+Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}\Expanded
+Criteria: If the value of SecondAction is not 1 or 3, this is a finding.
+If the value SecondAction is 1 or 3 then check each of the following steps. Each of the 8 parts
+(A-H) must be in compliance for the vulnerability to be considered not a finding.
+A - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-10
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-10
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+B - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-11
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-11
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+C - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-4
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-4
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+D - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-5
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-5
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+E - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-6
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-6
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+F - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-7
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-7
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+G - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-8
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-8
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+H - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-9
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-9
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+
+** For clients managed by a Symantec Enterprise Server, Symantec System Center Console: From the console on the Enterprise Server select System Hierarchy -&gt; select [applicable "Server Group"] -&gt; select  [applicable "Client Group"] (right click)  -&gt; All Tasks -&gt; Symantec Antivirus -&gt; Scheduled Scans -&gt; Highlight the client server weekly scan -&gt; select Edit -&gt; select Scan Settings -&gt; Actions -&gt; Highlight Security Risks: under the Actions tab If first action fails: select one of the following “Quarantine risk” or “Delete risk”. 
+
+If the selection for If first action fails is “Quarantine risk” or “Delete risk”, continue with each of the following steps. Each of the 8 parts (A – H) must be in compliance for the vulnerability to be considered not a finding.
+
+A. Highlight Adware - if Override actions configured for Security Risks is checked, for First action: select Quarantine risk or Delete risk. 
+
+B. Highlight Dialers - if Override actions configured for Security Risks is checked, for First action: select Quarantine risk or Delete risk. 
+
+C. Highlight Hack Tools – if Override actions configured for Security Risks is checked, for First action: select Quarantine risk or Delete risk. 
+
+D. Highlight Joke Programs – if Override actions configured for Security Risks is checked, for First action:  select Quarantine risk or Delete risk.
+
+E. Highlight Other – if Override actions configured for Security Risks is checked, for First action: select Quarantine risk or Delete risk. 
+
+F. Highlight Remote Access – if Override actions configured for Security Risks is checked, for First action: select Quarantine risk or Delete risk. 
+
+G. Highlight Spyware – if Override actions configured for Security Risks is checked, for First action: select Quarantine risk or Delete risk. 
+
+H. Highlight Trackware - if Override actions configured for Security Risks is checked, for First action: select Quarantine risk or Delete risk. 
+</fixtext><fix id="F-14079r2_fix" /><check system="C-12633r2_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Procedure: This is a multiple step process to ensure compliance. Non-Compliance points are
+identified throughout the procedures.
+Use the Windows Registry Editor to navigate to the following key:
+HKCU\Software\Intel\Landesk\VirusProtect6\CurrentVersion\Custom Tasks\{TaskID}\Expanded
+Criteria: If the value of SecondAction is not 1 or 3, this is a finding.
+If the value SecondAction is 1 or 3 then check each of the following steps. Each of the 8 parts
+(A-H) must be in compliance for the vulnerability to be considered not a finding.
+A - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-10
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-10
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+B - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-11
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-11
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+C - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-4
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-4
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+D - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-5
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-5
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+E - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-6
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-6
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+F - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-7
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-7
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+G - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-8
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-8
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+H - If the value of OverrideDefaultActions within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-9
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKCU\Software\Intel\Landesk\VirusProtect6
+\CurrentVersion\Custom Tasks\{TaskID}\Expanded\TCID-9
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+
+
+** For clients managed by a Symantec Enterprise Server: navigate to the following key: HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1: note: in the key ClientServerScheduledScan_1 the 1 indicates the entry number for the scan. This key will indicate the weekly scan. It may be necessary to review all ClientServerScheduledScan_X keys in the LocalScans branch to evaluate this check.
+
+Procedure: This is a multiple step process to ensure compliance. Non-Compliance points are
+identified throughout the procedures.
+Use the Windows Registry Editor to navigate to the following key:
+HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded
+Criteria: If the value of SecondAction is not 1 or 3, this is a finding.
+If the value SecondAction is 1 or 3 then check each of the following steps. Each of the 8 parts (A-H)
+must be in compliance for the vulnerability to be considered not a finding.
+A - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-10
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-10
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+B - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-11
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-11
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+C - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-4
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-4
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+D - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-5
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-5
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+E - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-6
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-6
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+F - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-7
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-7
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+G - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-8
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-8
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+H - If the value of OverrideDefaultActions within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-9
+If the value is 0 or the value is not there, this part is compliant.
+If the value is 1, then check the SecondAction within HKLM\Software\Intel\Landesk\VirusProtect6\CurrentVersion\LocalScans\ClientServerScheduledScan_1\Expanded\TCID-9
+If the value is 1 or 3, this is compliant, otherwise this is a finding.
+</check-content></check></Rule></Group><Group id="V-19910"><title>Virus Signature Files older that 7 days.</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-22086r1_rule" severity="high"><version>DTAG008</version><title>The antivirus signature file age exceeds 7 days.</title><description>&lt;VulnDiscussion&gt;Antivirus signature files are updated almost daily by antivirus software vendors. These files are made available to antivirus clients as they are published. Keeping virus signature files as current as possible is vital to the security of any system.
+
+Note: If the vendor or trusted site’s files match the date of the signature files on the machine, this is not a finding. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SecurityOverrideGuidance&gt;&lt;/SecurityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt; &lt;/MitigationControl&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;</description><fixtext fixref="F-20638r1_fix">Update antivirus signature file as your local process describes e.g autoupdate or LiveUpdate.</fixtext><fix id="F-20638r1_fix" /><check system="C-25626r1_chk"><check-content-ref name="M" href="VMS_XCCDF_Benchmark_Symantec AntiVirus Locally Configured Client.xml" /><check-content>Locate Symantec AntiVirus icon in system tray. Click icon to open Symantec AntiVirus configuration screen. Observe "Virus Definitions File" area.
+
+Criteria: If the "Version:" date is older than 7 calendar
+
+Note: If the vendor or trusted site’s files are also older than 7 days and match the date of the signature files on the machine, this is not a finding. </check-content></check></Rule></Group></Benchmark>

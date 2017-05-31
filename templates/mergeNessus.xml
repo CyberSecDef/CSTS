@@ -1,0 +1,15 @@
+<form name="form1" text="Cyber Security Tool Suite - Update Hosts Settings" clientSizeX="400" clientSizeY="140" FormBorderStyle="fixedDialog">
+	<controls>
+		<control type="label" id="lblScanPath" name="lblScanPath" text="Location of Scan Results:" locationX="5" locationY="5" sizeX="250" sizeY="20" />
+		<control type="textBox" id="txtScanPath" name="txtScanPath" locationX="5" locationY="25" sizeX="245" sizeY="25"/>
+		<control type="button" id="btnOpenFolderBrowser" name="btnOpenFolderBrowser" text="Browse for Scan Results" locationX="255" locationY="25" sizeX="140" sizeY="20" />
+		
+		<control type="CheckBox" id="chkRecurse" name="chkRecurse" locationX="5" locationY="45" text="Recurse into sub folders?" sizeX="380" sizeY="25"/>
+		
+		
+		<control type="numericUpDown" id="txtTargetSize" name="txtTargetSize" locationX="5" locationY="70" text="100" sizeX="50" sizeY="25"/>
+		<control type="label" id="lblTargetSize" name="lblTargetSize" text="Target Archive Size (MB):" locationX="55" locationY="75" sizeX="135" sizeY="20" />
+		
+		<control type="button" id="btnExecute" name="btnExecute" text="Execute" locationX="5" locationY="95" sizeX="390" sizeY="40" backColor="#FFCCCCCC"/>
+	</controls>
+</form>

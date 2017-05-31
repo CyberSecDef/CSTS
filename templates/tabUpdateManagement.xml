@@ -1,0 +1,16 @@
+<form>
+	<controls>
+		<control type="label" id="tab2lblInstalledUpdates" name="tab2lblInstalledUpdates" locationX="10" locationY="10" sizeX="200" sizeY="20" text="Installed Updates:" />
+		<control type="button" id="tab2btnRefreshUpdates" name="tab2btnRefreshUpdates" locationX="199" locationY="4" sizeX="60" sizeY="25" text="Refresh" backcolor="#ffffff" />
+		<control type="treeview" id="tab2treeUpdates" name="tab2treeUpdates" locationX="10" locationY="30" sizeX="250" sizeY="345" sorted="true" checkboxes="true" text="Updates" />
+
+		<control type="label" id="tab2lblAddUpdates" name="tab2lblAddUpdates" locationX="275" locationY="10" sizeX="200" sizeY="20" text="Select Updates Folder:" />
+		<control type="textBox" id="tab2TxtUpdatesPath" name="tab2TxtUpdatesPath" locationX="275" locationY="30" sizeX="295" sizeY="25"/>
+		<control type="button" id="tab2btnOpenFolderBrowser" name="tab2btnOpenFolderBrowser" text="Browse" locationX="450" locationY="55" sizeX="120" sizeY="20" />
+		
+		<control type="button" id="tab2btnAddUpdate" name="tab2btnAddUpdate" text="Install Updates" locationX="450" locationY="320" sizeX="120" sizeY="50" />
+		<control type="button" id="tab2btnRemoveUpdate" name="tab2btnRemoveUpdate" text="Uninstall Update(s)" locationX="275" locationY="320" sizeX="120" sizeY="50" />
+		
+		<control type="pictureBox" id="tab2Picture" name="tab2Picture" locationX="300" locationY="80" sizeX="256" sizeY="230" imagePath="Updates.png" />
+	</controls>
+</form>

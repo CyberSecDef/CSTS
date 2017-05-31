@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?>
+<Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" id="Sun_Ray_4_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1">
+	<status date="2015-04-02">accepted</status>
+	<title>Sun Ray 4 STIG</title>
+	<description>The Sun Ray 4 Security Technical Implementation Guide (STIG) is published as a tool to improve the security of Department of Defense (DoD) information systems. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</description>
+	<notice id="terms-of-use" xml:lang="en"/>
+	<reference href="http://iase.disa.mil">
+		<dc:publisher>DISA, Field Security Operations</dc:publisher>
+		<dc:source>STIG.DOD.MIL</dc:source>
+	</reference>
+	<plain-text id="release-info">Release: 2 Benchmark Date: 24 Apr 2015</plain-text>
+	<version>1</version>
+	<Profile id="MAC-1_Classified">
+		<title>I - Mission Critical Classified</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16061" selected="true"/>
+		<select idref="V-16062" selected="true"/>
+		<select idref="V-16063" selected="true"/>
+		<select idref="V-16064" selected="true"/>
+		<select idref="V-16071" selected="true"/>
+		<select idref="V-16072" selected="true"/>
+		<select idref="V-16075" selected="true"/>
+		<select idref="V-16083" selected="true"/>
+		<select idref="V-16100" selected="true"/>
+		<select idref="V-16103" selected="true"/>
+		<select idref="V-16143" selected="true"/>
+		<select idref="V-16145" selected="true"/>
+		<select idref="V-16146" selected="true"/>
+		<select idref="V-16148" selected="true"/>
+		<select idref="V-16151" selected="true"/>
+		<select idref="V-16153" selected="true"/>
+		<select idref="V-16155" selected="true"/>
+		<select idref="V-16157" selected="true"/>
+		<select idref="V-16158" selected="true"/>
+		<select idref="V-16159" selected="true"/>
+		<select idref="V-16349" selected="true"/>
+		<select idref="V-16351" selected="true"/>
+		<select idref="V-16354" selected="true"/>
+		<select idref="V-16379" selected="true"/>
+		<select idref="V-16393" selected="true"/>
+		<select idref="V-16394" selected="true"/>
+		<select idref="V-16395" selected="true"/>
+		<select idref="V-16396" selected="true"/>
+		<select idref="V-17455" selected="true"/>
+	</Profile>
+	<Profile id="MAC-1_Public">
+		<title>I - Mission Critical Public</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16061" selected="true"/>
+		<select idref="V-16062" selected="true"/>
+		<select idref="V-16063" selected="true"/>
+		<select idref="V-16064" selected="true"/>
+		<select idref="V-16071" selected="true"/>
+		<select idref="V-16072" selected="true"/>
+		<select idref="V-16075" selected="true"/>
+		<select idref="V-16083" selected="true"/>
+		<select idref="V-16100" selected="true"/>
+		<select idref="V-16103" selected="true"/>
+		<select idref="V-16143" selected="true"/>
+		<select idref="V-16145" selected="true"/>
+		<select idref="V-16146" selected="true"/>
+		<select idref="V-16148" selected="true"/>
+		<select idref="V-16151" selected="true"/>
+		<select idref="V-16153" selected="true"/>
+		<select idref="V-16155" selected="true"/>
+		<select idref="V-16157" selected="true"/>
+		<select idref="V-16158" selected="true"/>
+		<select idref="V-16159" selected="true"/>
+		<select idref="V-16349" selected="true"/>
+		<select idref="V-16351" selected="true"/>
+		<select idref="V-16354" selected="true"/>
+		<select idref="V-16379" selected="true"/>
+		<select idref="V-16393" selected="true"/>
+		<select idref="V-16394" selected="true"/>
+		<select idref="V-16395" selected="true"/>
+		<select idref="V-16396" selected="true"/>
+		<select idref="V-17455" selected="true"/>
+	</Profile>
+	<Profile id="MAC-1_Sensitive">
+		<title>I - Mission Critical Sensitive</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16061" selected="true"/>
+		<select idref="V-16062" selected="true"/>
+		<select idref="V-16063" selected="true"/>
+		<select idref="V-16064" selected="true"/>
+		<select idref="V-16071" selected="true"/>
+		<select idref="V-16072" selected="true"/>
+		<select idref="V-16075" selected="true"/>
+		<select idref="V-16083" selected="true"/>
+		<select idref="V-16100" selected="true"/>
+		<select idref="V-16103" selected="true"/>
+		<select idref="V-16143" selected="true"/>
+		<select idref="V-16145" selected="true"/>
+		<select idref="V-16146" selected="true"/>
+		<select idref="V-16148" selected="true"/>
+		<select idref="V-16151" selected="true"/>
+		<select idref="V-16153" selected="true"/>
+		<select idref="V-16155" selected="true"/>
+		<select idref="V-16157" selected="true"/>
+		<select idref="V-16158" selected="true"/>
+		<select idref="V-16159" selected="true"/>
+		<select idref="V-16349" selected="true"/>
+		<select idref="V-16351" selected="true"/>
+		<select idref="V-16354" selected="true"/>
+		<select idref="V-16379" selected="true"/>
+		<select idref="V-16393" selected="true"/>
+		<select idref="V-16394" selected="true"/>
+		<select idref="V-16395" selected="true"/>
+		<select idref="V-16396" selected="true"/>
+		<select idref="V-17455" selected="true"/>
+	</Profile>
+	<Profile id="MAC-2_Classified">
+		<title>II - Mission Support Classified</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16061" selected="true"/>
+		<select idref="V-16062" selected="true"/>
+		<select idref="V-16063" selected="true"/>
+		<select idref="V-16064" selected="true"/>
+		<select idref="V-16071" selected="true"/>
+		<select idref="V-16072" selected="true"/>
+		<select idref="V-16075" selected="true"/>
+		<select idref="V-16083" selected="true"/>
+		<select idref="V-16100" selected="true"/>
+		<select idref="V-16103" selected="true"/>
+		<select idref="V-16143" selected="true"/>
+		<select idref="V-16145" selected="true"/>
+		<select idref="V-16146" selected="true"/>
+		<select idref="V-16148" selected="true"/>
+		<select idref="V-16151" selected="true"/>
+		<select idref="V-16153" selected="true"/>
+		<select idref="V-16155" selected="true"/>
+		<select idref="V-16157" selected="true"/>
+		<select idref="V-16158" selected="true"/>
+		<select idref="V-16159" selected="true"/>
+		<select idref="V-16349" selected="true"/>
+		<select idref="V-16351" selected="true"/>
+		<select idref="V-16354" selected="true"/>
+		<select idref="V-16379" selected="true"/>
+		<select idref="V-16393" selected="true"/>
+		<select idref="V-16394" selected="true"/>
+		<select idref="V-16395" selected="true"/>
+		<select idref="V-16396" selected="true"/>
+		<select idref="V-17455" selected="true"/>
+	</Profile>
+	<Profile id="MAC-2_Public">
+		<title>II - Mission Support Public</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16061" selected="true"/>
+		<select idref="V-16062" selected="true"/>
+		<select idref="V-16063" selected="true"/>
+		<select idref="V-16064" selected="true"/>
+		<select idref="V-16071" selected="true"/>
+		<select idref="V-16072" selected="true"/>
+		<select idref="V-16075" selected="true"/>
+		<select idref="V-16083" selected="true"/>
+		<select idref="V-16100" selected="true"/>
+		<select idref="V-16103" selected="true"/>
+		<select idref="V-16143" selected="true"/>
+		<select idref="V-16145" selected="true"/>
+		<select idref="V-16146" selected="true"/>
+		<select idref="V-16148" selected="true"/>
+		<select idref="V-16151" selected="true"/>
+		<select idref="V-16153" selected="true"/>
+		<select idref="V-16155" selected="true"/>
+		<select idref="V-16157" selected="true"/>
+		<select idref="V-16158" selected="true"/>
+		<select idref="V-16159" selected="true"/>
+		<select idref="V-16349" selected="true"/>
+		<select idref="V-16351" selected="true"/>
+		<select idref="V-16354" selected="true"/>
+		<select idref="V-16379" selected="true"/>
+		<select idref="V-16393" selected="true"/>
+		<select idref="V-16394" selected="true"/>
+		<select idref="V-16395" selected="true"/>
+		<select idref="V-16396" selected="true"/>
+		<select idref="V-17455" selected="true"/>
+	</Profile>
+	<Profile id="MAC-2_Sensitive">
+		<title>II - Mission Support Sensitive</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16061" selected="true"/>
+		<select idref="V-16062" selected="true"/>
+		<select idref="V-16063" selected="true"/>
+		<select idref="V-16064" selected="true"/>
+		<select idref="V-16071" selected="true"/>
+		<select idref="V-16072" selected="true"/>
+		<select idref="V-16075" selected="true"/>
+		<select idref="V-16083" selected="true"/>
+		<select idref="V-16100" selected="true"/>
+		<select idref="V-16103" selected="true"/>
+		<select idref="V-16143" selected="true"/>
+		<select idref="V-16145" selected="true"/>
+		<select idref="V-16146" selected="true"/>
+		<select idref="V-16148" selected="true"/>
+		<select idref="V-16151" selected="true"/>
+		<select idref="V-16153" selected="true"/>
+		<select idref="V-16155" selected="true"/>
+		<select idref="V-16157" selected="true"/>
+		<select idref="V-16158" selected="true"/>
+		<select idref="V-16159" selected="true"/>
+		<select idref="V-16349" selected="true"/>
+		<select idref="V-16351" selected="true"/>
+		<select idref="V-16354" selected="true"/>
+		<select idref="V-16379" selected="true"/>
+		<select idref="V-16393" selected="true"/>
+		<select idref="V-16394" selected="true"/>
+		<select idref="V-16395" selected="true"/>
+		<select idref="V-16396" selected="true"/>
+		<select idref="V-17455" selected="true"/>
+	</Profile>
+	<Profile id="MAC-3_Classified">
+		<title>III - Administrative Classified</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16061" selected="true"/>
+		<select idref="V-16062" selected="true"/>
+		<select idref="V-16063" selected="true"/>
+		<select idref="V-16064" selected="true"/>
+		<select idref="V-16071" selected="true"/>
+		<select idref="V-16072" selected="true"/>
+		<select idref="V-16075" selected="true"/>
+		<select idref="V-16083" selected="true"/>
+		<select idref="V-16100" selected="true"/>
+		<select idref="V-16103" selected="true"/>
+		<select idref="V-16143" selected="true"/>
+		<select idref="V-16145" selected="true"/>
+		<select idref="V-16146" selected="true"/>
+		<select idref="V-16148" selected="true"/>
+		<select idref="V-16151" selected="true"/>
+		<select idref="V-16153" selected="true"/>
+		<select idref="V-16155" selected="true"/>
+		<select idref="V-16157" selected="true"/>
+		<select idref="V-16158" selected="true"/>
+		<select idref="V-16159" selected="true"/>
+		<select idref="V-16349" selected="true"/>
+		<select idref="V-16351" selected="true"/>
+		<select idref="V-16354" selected="true"/>
+		<select idref="V-16379" selected="true"/>
+		<select idref="V-16393" selected="true"/>
+		<select idref="V-16394" selected="true"/>
+		<select idref="V-16395" selected="true"/>
+		<select idref="V-16396" selected="true"/>
+		<select idref="V-17455" selected="true"/>
+	</Profile>
+	<Profile id="MAC-3_Public">
+		<title>III - Administrative Public</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16061" selected="true"/>
+		<select idref="V-16062" selected="true"/>
+		<select idref="V-16063" selected="true"/>
+		<select idref="V-16064" selected="true"/>
+		<select idref="V-16071" selected="true"/>
+		<select idref="V-16072" selected="true"/>
+		<select idref="V-16075" selected="true"/>
+		<select idref="V-16083" selected="true"/>
+		<select idref="V-16100" selected="true"/>
+		<select idref="V-16103" selected="true"/>
+		<select idref="V-16143" selected="true"/>
+		<select idref="V-16145" selected="true"/>
+		<select idref="V-16146" selected="true"/>
+		<select idref="V-16148" selected="true"/>
+		<select idref="V-16151" selected="true"/>
+		<select idref="V-16153" selected="true"/>
+		<select idref="V-16155" selected="true"/>
+		<select idref="V-16157" selected="true"/>
+		<select idref="V-16158" selected="true"/>
+		<select idref="V-16159" selected="true"/>
+		<select idref="V-16349" selected="true"/>
+		<select idref="V-16351" selected="true"/>
+		<select idref="V-16354" selected="true"/>
+		<select idref="V-16379" selected="true"/>
+		<select idref="V-16393" selected="true"/>
+		<select idref="V-16394" selected="true"/>
+		<select idref="V-16395" selected="true"/>
+		<select idref="V-16396" selected="true"/>
+		<select idref="V-17455" selected="true"/>
+	</Profile>
+	<Profile id="MAC-3_Sensitive">
+		<title>III - Administrative Sensitive</title>
+		<description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+		<select idref="V-16061" selected="true"/>
+		<select idref="V-16062" selected="true"/>
+		<select idref="V-16063" selected="true"/>
+		<select idref="V-16064" selected="true"/>
+		<select idref="V-16071" selected="true"/>
+		<select idref="V-16072" selected="true"/>
+		<select idref="V-16075" selected="true"/>
+		<select idref="V-16083" selected="true"/>
+		<select idref="V-16100" selected="true"/>
+		<select idref="V-16103" selected="true"/>
+		<select idref="V-16143" selected="true"/>
+		<select idref="V-16145" selected="true"/>
+		<select idref="V-16146" selected="true"/>
+		<select idref="V-16148" selected="true"/>
+		<select idref="V-16151" selected="true"/>
+		<select idref="V-16153" selected="true"/>
+		<select idref="V-16155" selected="true"/>
+		<select idref="V-16157" selected="true"/>
+		<select idref="V-16158" selected="true"/>
+		<select idref="V-16159" selected="true"/>
+		<select idref="V-16349" selected="true"/>
+		<select idref="V-16351" selected="true"/>
+		<select idref="V-16354" selected="true"/>
+		<select idref="V-16379" selected="true"/>
+		<select idref="V-16393" selected="true"/>
+		<select idref="V-16394" selected="true"/>
+		<select idref="V-16395" selected="true"/>
+		<select idref="V-16396" selected="true"/>
+		<select idref="V-17455" selected="true"/>
+	</Profile>
+	<Group id="V-16061">
+		<title>Sun Ray Desktop Unit traffic is not isolated </title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17048r1_rule" severity="medium" weight="10.0">
+			<version>SUN0020</version>
+			<title>Sun Ray Desktop Unit traffic is not isolated logically through the use of a dedicated VLAN or network segment.</title>
+			<description>&lt;VulnDiscussion&gt;Isolated LANs provide a greater degree of security than traditional LANs since only authorized users and devices are allowed to connect.  Authorized users and devices are configured through the use of access control lists. This logical separation provides better performance through broadcast reduction, and reduced configuration management for Sun Ray Desktop Unit device moves, additions, and changes. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16166r1_fix">Isolate Sun Ray Desktop Unit traffic from other traffic.</fixtext>
+			<fix id="F-16166r1_fix"/>
+			<check system="C-17104r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Work with the network reviewer and system administrator to determine compliance. Request a copy of switch configuration to verify the ports that the Sun Ray server plugs into are configured to a dedicated VLAN. Below is an example of a VLAN that may be used for Sun Ray server traffic.
+
+Cisco IOS Example:
+
+Interface VLAN5
+description “Network A”
+ip address 192.168.1.25 255.255.255.0
+no shutdown
+
+interface VLAN 12
+description “Network Sun Ray”
+ip address 10.0.0.25 255.255.255.0
+no shutdown
+
+set interface sc0 10.0.0.25 255.255.255.0
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16062">
+		<title>Users are not forced to authenticate to SRSS.</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17049r2_rule" severity="low" weight="10.0">
+			<version>SUN0030</version>
+			<title>User tokens are not forced to authenticate to the Sun Ray Server.</title>
+			<description>&lt;VulnDiscussion&gt;The Sun Ray Server must be configured to permit access only to smart cards that are registered in the Sun Ray Datastore.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;IAIA-1, IAIA-2&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16167r2_fix">Within the Sun Ray Administration console, perform the following: 
+1. Select the Advanced Tab. 
+2. Select the System Policy Tab. 
+3. Check the Card Users Access for “Users with Registered Tokens" </fixtext>
+			<fix id="F-16167r2_fix"/>
+			<check system="C-59757r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Within the Sun Ray Administration console, perform the following:
+1. Select the Advanced Tab.
+2. Select the System Policy Tab.
+3. Verify the Card Users Access has "Users with Registered Tokens" selected.
+4. If Access is set to "None" or "All Users", this is a finding</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16063">
+		<title>Users kiosk mode timeout has no value.</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17050r1_rule" severity="low" weight="10.0">
+			<version>SUN0040</version>
+			<title>Users kiosk mode timeout is configured with no value.</title>
+			<description>&lt;VulnDiscussion&gt;If no value is specified for the number of seconds for a disconnected kiosk session, the termination of disconnected sessions will be disabled.  This could potentially leave open sessions and may cause the kiosk sessions to start incorrectly or to crash due to lack of resources from many sessions being open.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16168r1_fix">Configure the Sun Ray Kiosk mode timeout value with a value of 10 minutes or less.</fixtext>
+			<fix id="F-16168r1_fix"/>
+			<check system="C-17106r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Within the Sun Ray Administration console, perform the following:
+1. Select the Advanced Tab.
+2. Select the Kiosk Mode Tab.
+3. Click on the Edit button.
+4. Select the preferred Kiosk Session from the Session drop-down list and verify the Timeout box has a value of 10 minutes or less, but not zero. The default is 12000 seconds.  If it is greater than 600 seconds (10 minutues) or zero/blank, this is a finding.  Should be configured to 600 seconds or less.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16064">
+		<title>Self-registration is permitted for users.</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17051r1_rule" severity="high" weight="10.0">
+			<version>SUN0050</version>
+			<title>Self-registration is permitted for users.</title>
+			<description>&lt;VulnDiscussion&gt;Sun Ray Desktop Unit users are not registered centrally for users by the system administrator.  With self-registration, the system administrator does not assign registered tokens to the authorized users. This poses a security risk since users may be able to register themselves in the Sun Ray administration database.  If an unauthorized user obtains access to a Sun Ray Desktop unit, then that user may be able to start a session without any intervention from the system administrator.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16169r1_fix">Disable Self-Registration for all users.
+NIPRNET  - Within the Sun Ray Administration console, perform the following: 1. Select the Advanced Tab. 2. Select the System Policy Tab. 3. Uncheck the Card Users Access for “Self Registration Allowed”. 
+SIPRNET  - Within the Sun Ray Administration console, perform the following: 1. Select the Advanced Tab. 2. Select the System Policy Tab. 3. Uncheck the Non-Card Users Access for “Self Registration Allowed”.  
+</fixtext>
+			<fix id="F-16169r1_fix"/>
+			<check system="C-17107r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Within the Sun Ray Administration console, perform the following:
+1. Select the Advanced Tab.
+2. Select the System Policy Tab.
+3. Verify the Non-Card Users Access has “Self Registration Allowed” not checked.
+4. If Access is set to "Self-Registration Allowed", this is a finding.
+</check-content>
+			</check>
+			<check system="C-22507r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Within the Sun Ray Administration console, perform the following:
+1. Select the Advanced Tab.
+2. Select the System Policy Tab.
+3. Verify the Card Users Access has “Self Registration Allowed” not checked.
+4. If Access is set to "Self-Registration Allowed", this is a finding.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16071">
+		<title>Default administrator account is used.</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17058r1_rule" severity="high" weight="10.0">
+			<version>SUN0070</version>
+			<title>Default administrator account is used to access the administration tool.</title>
+			<description>&lt;VulnDiscussion&gt;The default administrator account, “admin”, does not provide an audit trail of who logged in and the default password may be easily guessed or be publicly known.  If system administrators use the “admin” account, this could potentially allow modifications to the Sun Ray system with no user accountability.  Also, unauthorized users may gain access to the administration tool and make modifications that disable the Sun Ray system. Therefore, system administrators will have individual user accounts to administer the Sun Ray Server, and the “admin” account will be removed to ensure that audit trails are present.   &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECCD-1, ECCD-2&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16176r1_fix">Configure individual usernames to access the Sun Ray administration console.</fixtext>
+			<fix id="F-16176r1_fix"/>
+			<check system="C-17114r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>1. Open a terminal command line on the Sun Ray server.  Perform the following:
+#  /opt/SUNWut/sbin/utadminuser
+admin
+
+If the admin user is returned, this is a finding.
+
+2. Then verify that the following /etc/pam.conf file has the following entries:
+Use the following command to locate them.
+# cat /etc/pam.conf | grep utadmingui
+
+# added to utadmingui by Sun Ray Server Software -- utadmingui
+utadmingui auth requisite pam_authtok_get.so.1
+utadmingui auth required pam_dhkeys.so.1
+utadmingui auth required pam_unix_cred.so.1
+utadmingui auth required pam_unix_auth.so.1
+
+If the above entries are not in the /etc/pam.conf file, then the alternate username specified to administer the Sun Ray administration tool will not work. 
+
+If above entries are not in the pam.conf file, this is a finding.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16072">
+		<title>Unauthorized users have access to admin tool</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17059r1_rule" severity="high" weight="10.0">
+			<version>SUN0080</version>
+			<title>Unauthorized users have access to the Sun Ray administration tool.  </title>
+			<description>&lt;VulnDiscussion&gt;Unauthorized users accessing the Sun Ray administration tool could modify or disable the entire Sun Ray server or network.  Unrestricted access may also give access to other operating system daemons and applications.  Restricting access to only authorized users will ensure only approved users are able to access the Sun Ray administration tool.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECCD-1, ECCD-2&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16178r1_fix">Ensure only authorized users have access to the Sun Ray administration console.</fixtext>
+			<fix id="F-16178r1_fix"/>
+			<check system="C-17116r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Request the documentation authorizing users to administer the Sun Ray Server.  Compare this list with the list below.  If there is a discrepancy, this is a finding.
+Open a terminal command line on the Solaris 10 server.  Perform the following:
+#  /opt/SUNWut/sbin/utadminuser
+
+If users listed here are not authorized to access the Sun Ray administration console, this is a finding.  
+
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16075">
+		<title>Sun Ray Server admin session default timeout used</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17062r1_rule" severity="medium" weight="10.0">
+			<version>SUN0090</version>
+			<title>Sun Ray Server administrator session default timeout is used.</title>
+			<description>&lt;VulnDiscussion&gt;Administrator sessions to the Sun Ray Server are critical to the availability and integrity of the system.  The default timeout for these sessions is 30 minutes of inactivity.  This session timeout is longer than the 10 minutes required by the Operating System and Network STIGs.  Therefore, all administrator sessions will be configured to 10 minutes of inactivity to ensure unauthorized users do not gain access to the system configuration.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16181r1_fix">Configure the administrator session timeout value to 10 minutes or less.</fixtext>
+			<fix id="F-16181r1_fix"/>
+			<check system="C-17119r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>On the Sun Ray server perform the following:
+# cat /etc/opt/SUNWut/webamin/webadmin.conf | grep session.timeout
+
+# The session timeout (specified in minutes)
+Session.timeout=10
+
+If the “session.timeout” value does not equal 10 minutes or less, this is a finding.
+
+
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16083">
+		<title>Sun Ray DTUs firmware not at minimum version</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17071r1_rule" severity="medium" weight="10.0">
+			<version>SUN0110</version>
+			<title>Sun Ray Desktop Units firmware is not at the minimum version.</title>
+			<description>&lt;VulnDiscussion&gt;All Sun Ray firmware is supported by the Sun Ray Desktop Units PROM. Therefore, older versions of the Sun Ray firmware may not be as secure as newer versions.  In order to support encryption between the Sun Ray Desktop Unit and the Sun Ray server, the minimum firmware required is version 2.0. All previous Sun Ray Desktop Unit firmware sends traffic in plain text to the server&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16189r1_fix">Upgrade the firmware to 2.0 or higher, preferably to the most current firmware released from Sun Microsystems.</fixtext>
+			<fix id="F-16189r1_fix"/>
+			<check system="C-17126r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>The server may have newer patch version of the firmware installed, but the clients may not have downloaded the new firmware due to policy restrictions.  Therefore, it is important to check the firmware on the client, not the server.  To check the firmware, go to the Sun Ray Desktop Unit, and perform the following:
+
+On the Sun Ray 2fs unit press the (Stop-V) on Sun Keyboard and on the PC keyboards press the (Ctrl-Pause-V).
+If the version is lower than 2.0, this is a finding.  Most likely the version will be 4.0.-127553-02.2008-03.06.15.04 or higher.
+
+Note: For other Sun Ray Desktop Units, consult the system administrator or documentation for the key mode combinations.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16100">
+		<title>Sun Ray Server software patches not tested</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17088r1_rule" severity="medium" weight="10.0">
+			<version>SUN0120</version>
+			<title>Sun Ray Server software patches are not tested in a development environment first before deploying to production.</title>
+			<description>&lt;VulnDiscussion&gt;Organizations need to stay current with all applicable Sun Ray Server software updates that are released from Sun Microsystems. New Sun Ray Server patches and updates should be reviewed for the Sun Ray Server before moving them into a production environment. Sun Ray Server patches will be tested first in a development environment and any issues or special precautions will be documented, as a patch could technically disable all Sun Ray Desktop Units, cause unexpected performance or availability issues.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;DCCT-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16207r1_fix">Implement the latest patches for the Sun Ray system.  Check Sun Microsystems’s website for updated patches that may have been released after this checklist.  Create patch procedures for testing before deploying patches to the production system.</fixtext>
+			<fix id="F-16207r1_fix"/>
+			<check system="C-17146r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>1. Ask the IAO/SA where the test and development Sun Ray Servers are located. Access those servers and perform the following commands:
+
+#  /opt/SUNWut/lib/utspatches
+
+Should return the following:
+127554-02
+127557-01
+OR
+# patchadd –p | grep &lt;patch&gt;
+
+SRSS Patches need to be at one of the following:
+Solaris/SPARC 127553
+Solaris/x86   127554
+Linux/x86     127555
+
+SRWC 2.0 Patches need to be at one of the following:
+Solaris/SPARC 127556
+Solaris/x86   127557
+Linux/x86     127558
+
+If the preceding patches are not returned, this is a finding.  Check Sun Microsystems’s website for updated patches that may have been released after this checklist.  
+
+2. Request from the IAO/SA for a documented procedure on how their patches are tested on a development system before using on production systems. If no procedure is provided, this is a finding.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16103">
+		<title>Sun Ray Server not current with latest patches</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17091r1_rule" severity="medium" weight="10.0">
+			<version>SUN0130</version>
+			<title>The Sun Ray server software is not current with the latest available patches.</title>
+			<description>&lt;VulnDiscussion&gt;Sun Ray software patches mitigate many known vulnerabilities.  To ensure that attackers cannot take advantage of known Sun Ray vulnerabilities, applicable software patches must be applied as they are released.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16209r1_fix">Implement the latest patches for the Sun Ray system.  Check Sun Microsystem's website for updated patches that may have been released after this checklist.  </fixtext>
+			<fix id="F-16209r1_fix"/>
+			<check system="C-17147r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>On the Sun Ray server perform the following:
+
+#  /opt/SUNWut/lib/utspatches
+
+Should return the following:
+127554-02
+127557-01
+
+OR
+
+# patchadd –p | grep &lt;patch&gt;
+
+SRSS Patches need to be at one of the following:
+Solaris/SPARC 127553
+Solaris/x86   127554
+Linux/x86     127555
+
+SRWC 2.0 Patches need to be at one of the following:
+Solaris/SPARC 127556
+Solaris/x86   127557
+Linux/x86     127558
+
+
+If the preceding patches are not returned, this is a finding.  Check Sun Microsystems’s website for updated patches that may have been released after this checklist.  
+
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16143">
+		<title>USB ports not disabled for all Sun Ray DTU</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17132r1_rule" severity="medium" weight="10.0">
+			<version>SUN0140</version>
+			<title>USB ports are not disabled for all Sun Ray Desktop Units. This requirement excludes the keyboard and mouse.</title>
+			<description>&lt;VulnDiscussion&gt;Enabled USB ports may be used by users to store files, scripts, and executables.  USB thumb drives, USB hard drives, and USB appliances may be inserted into these ports.  If unapproved executables, scripts, or malware reside on the USB device, executing these or moving these onto the network may cause a virus infection or unapproved applications running on the network.  Classified data may be copied inadvertently to the unclassified network if ports have been enabled. Limiting the use of these ports will prevent these USB programs and files from accessing the network.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16249r1_fix">Disable all USB ports on Sun Ray Desktop Units.</fixtext>
+			<fix id="F-16249r1_fix"/>
+			<check system="C-17187r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Within the Sun Ray Administration console, perform the following:
+1. Select the Advanced Tab.
+2. Select the Security Tab.
+3. Verify the USB Port under Devices is not checked.  If it is, this is a finding. 
+
+Caveat: This is not applicable for keyboard and mouse USB ports, however, these ports must be documented and approved by the IAO. This check may be Not a Finding for USB ports enabled for operational purposes that are approved by the DAA.   
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16145">
+		<title>Sun Ray server console admin session not encrypted</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17134r1_rule" severity="medium" weight="10.0">
+			<version>SUN0160</version>
+			<title>The Sun Ray server console administration sessions are not encrypted.</title>
+			<description>&lt;VulnDiscussion&gt;Unencrypted Sun Ray server console sessions do not protect the information transmitted from being read or viewed by anyone. Unencrypted sessions are vulnerable to a number of attacks to include man-in-the-middle attacks, TCP Hijacking, and replay.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECCT-1, ECCT-2&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16250r1_fix">Encrypt all Sun Ray server console sessions. </fixtext>
+			<fix id="F-16250r1_fix"/>
+			<check system="C-17188r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Have the administrator log into the Sun Ray administrator console by typing the following: http://localhost:1660.  If the session does not switch to https://localhost:1661 in the browser, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16146">
+		<title>Sun Ray DTU to server communication not encrypted</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17135r1_rule" severity="medium" weight="10.0">
+			<version>SUN0170</version>
+			<title>Sun Ray Desktop Unit to server communication is not encrypted.</title>
+			<description>&lt;VulnDiscussion&gt;In earlier versions of Sun Ray Server Software, data packets on the Sun Ray interconnect were sent in the clear or in plaintext. This made it easy to “snoop” the traffic and recover vital and private user information, which malicious users might misuse. To avoid this type of attack, Sun Ray Server Software allows administrators to enable traffic encryption.  The encryption algorithm used is the ARCFOUR or RC4.  
+
+NOTE: Terminal Services for Windows 2000 uses the same RC4 encryption algorithm.  RDP traffic is encrypted using 128 bit encryption.  The algorithm used for encryption depends on the encryption mode.  Windows 2003 is FIPS compliant.  In FIPS mode, 3DES and SHA1 are used. In non-FIPS mode, RC4 (encryption) and MD5 (keyed hashing) are used. 
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;DCSR-1, DCSR-2, DCSR-3&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16251r1_fix">Encrypt Sun Ray traffic to all Desktop Units.</fixtext>
+			<fix id="F-16251r1_fix"/>
+			<check system="C-17189r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Within the Sun Ray Administration console, perform the following:
+1. Select the Advanced Tab.
+2. Select the Security Tab.
+3. Verify that “Upstream Encryption” and “Downstream Encryption” are checked.
+4. If these are not checked, this is a finding.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16148">
+		<title>Server Authentication is not configured</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17137r1_rule" severity="medium" weight="10.0">
+			<version>SUN0180</version>
+			<title>Server Authentication is not configured on the Sun Ray server.  </title>
+			<description>&lt;VulnDiscussion&gt;It is possible to spoof a Sun Ray server or a Sun Ray client and pose as either. This leads to the man-in-the-middle attack, in which an impostor claims to be the Sun Ray server for the clients and pretends to be a client for the server. It then goes about intercepting all the messages and having access to all the secure data. Client and server authentication can resolve this type of attack. Server-side authentication is only supported, through the pre-configured public-private key pairs in Sun Ray Server Software and firmware. The Digital Signature Algorithm (DSA) is used to verify that clients are communicating with a valid Sun Ray server. This authentication scheme is not completely foolproof, but it mitigates man-in-the-middle attacks and makes it harder for attackers to spoof Sun Ray Server Software.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16252r1_fix">Enable Server Authentication for the Sun Ray server.</fixtext>
+			<fix id="F-16252r1_fix"/>
+			<check system="C-17190r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Within the Sun Ray Administration console, perform the following:
+1. Select the Advanced Tab.
+2. Select the Security Tab.
+3. Verify that “Server Authentication” is checked.  If it is not checked, this is a finding.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16151">
+		<title>Security Mode is not configured to "Hard"</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17140r1_rule" severity="high" weight="10.0">
+			<version>SUN0190</version>
+			<title>The Security Mode is not configured to “Hard” on the Sun Ray server.</title>
+			<description>&lt;VulnDiscussion&gt;Soft security mode ensures that every client requesting a session gets one, even if security requirements cannot be met.  As a result, the soft security mode grants insecure sessions. Hard security mode ensures that every session is secure. If security requirements cannot be met, the session is refused. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16254r1_fix">Configure Security Mode to Hard. </fixtext>
+			<fix id="F-16254r1_fix"/>
+			<check system="C-17191r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Within the Sun Ray Administration console, perform the following:
+1. Select the Advanced Tab.
+2. Select the Security Tab.
+3. Verify that “Security Mode” is configured to Hard. If it is not configured or set to soft, this is a finding.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16153">
+		<title>No high availability for Sun Ray system configured</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17142r1_rule" severity="medium" weight="10.0">
+			<version>SUN0200</version>
+			<title>The Sun Ray system is not configured for high availability.  </title>
+			<description>&lt;VulnDiscussion&gt;High availability is important when implementing the Sun Ray system since users authenticate and establish sessions with the Sun Ray servers.  User data may also be stored on the Sun Ray server, and if this server should fail the entire user community will not be able to access the network.  Providing a secondary server ensures the session and data availability for the user community.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16256r1_fix">Configure the Sun Ray system with primary and secondary servers for failover.</fixtext>
+			<fix id="F-16256r1_fix"/>
+			<check system="C-17192r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>On the Sun Ray server perform the following:
+#  /opt/SUNWut/sbin/utreplica -l
+
+If no secondary failover servers are configured, this is a finding. 
+
+ 
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16155">
+		<title>Failover group signature not configured </title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17144r1_rule" severity="medium" weight="10.0">
+			<version>SUN0210</version>
+			<title>A failover group signature is not configured on all Sun Ray servers in the failover group. </title>
+			<description>&lt;VulnDiscussion&gt;Without the use of a failover group signature, an unauthorized Sun Ray server may become a member of the group, thereby receiving replication traffic. Servers in a group authenticate one another using a common group signature.  The group signature is a key used to sign messages sent between servers in a group, and it must be configured to be identical on each server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16258r1_fix">Configure a failover group signature to ensure only authorized servers are members of the group.</fixtext>
+			<fix id="F-16258r1_fix"/>
+			<check system="C-17193r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>On the Sun Ray server, perform the following:
+# find  /etc/opt/SUNWut/  -name gmSignature
+
+If no results are returned, this is a finding.
+
+
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16157">
+		<title>Sun Ray Server does not record log files.</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17146r1_rule" severity="medium" weight="10.0">
+			<version>SUN0230</version>
+			<title>The Sun Ray server does not record log files.</title>
+			<description>&lt;VulnDiscussion&gt;Logs form a recorded history or audit trail of the Sun Ray server system events, making it easier for system administrators to track down intermittent problems, review past events, and piece together information if an investigation is required.  Without this recorded history, potential attacks and suspicious activity will go unnoticed.  
+
+Logging must be comprehensive to be useful for both intrusion monitoring and security investigations. Setting logging at the severity notice should capture most relevant events without requiring unacceptable levels of data storage. The severity levels notice and debug are also available to organizations that require additional logging for certain events or applications.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECAR-1, ECAR-2, ECAR-3&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16262r1_fix">Record Sun Ray server activity to log files.</fixtext>
+			<fix id="F-16262r1_fix"/>
+			<check system="C-17194r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>1. Verify that syslogd is running on the system.  Perform the following:
+# ps –ef | grep syslogd
+
+If nothing is returned, this is a finding.
+
+2. Verify /etc/syslog.conf is configured with the following entries:
+# cat /etc/syslog.conf
+User.info                          /var/opt/SUNWut/log/messages
+Local1.info                        /var/opt/SUNWut/log/admin_log
+
+If these two entries are missing, this is a finding.
+
+3. Critical Sun Ray log files are the administration, authentication, automatic mounting, mass storage devices, messages, and web administration.  Significant activity is recorded in the following log files.  Verify that these files are being written to by performing the following:
+
+# ls -Ll /var/opt/SUNWut/log | awk ‘{if ($5 ~ /^0$/ print}’
+
+If any of the following log files are returned this is a finding.
+admin_log
+auth_log
+utmountd.log
+utstoraged.log
+messages
+utwebadmin.log
+
+Example of log file with zero byte (0) size.
+(i.e. –rw-r----- 1 root utadmin 0 Jun 29 utmountd.log)
+
+If these logs are being written to an external syslog server, review that server to ensure the logs are being recorded.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16158">
+		<title>Sun Ray server log permissions</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17147r1_rule" severity="medium" weight="10.0">
+			<version>SUN0250</version>
+			<title>The Sun Ray server logs are more permissive than 640.</title>
+			<description>&lt;VulnDiscussion&gt;The Sun Ray server logs should be appropriately secured, having file permissions that restrict unauthorized changes or viewing.  Unauthorized users accessing the audit logs may delete, modify, or change data within the logs for malicious purposes.  Any alternation in the audit logs will not give the system administrator an accurate history of the events that occurred.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECAN-1, ECCD-1, ECCD-2&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16263r1_fix">Configure the Sun Ray server logs permissions to 640.</fixtext>
+			<fix id="F-16263r1_fix"/>
+			<check system="C-17195r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>On the Sun Ray server perform the following:
+
+# ls -al /var/opt/SUNWut/log | less
+
+Log files that should be 640:
+admin_log
+auth_log
+utmountd.log
+utstoraged.log
+messages
+utwebadmin.log
+
+If any of the audit log file permissions are greater than 640,  this is a finding.  If the audit logs are on an external syslog server, ensure permissions are 640.  If they are not, this is a finding.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16159">
+		<title>Sun Ray audit logs are not retained</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17148r1_rule" severity="medium" weight="10.0">
+			<version>SUN0260</version>
+			<title>The Sun Ray audit logs are not retained for a minimum of one year.</title>
+			<description>&lt;VulnDiscussion&gt;Storing log files for at least a year provides a way to recover these files in case an investigation is necessary. Typically these files are stored offline on tape media or external networks. Log files enable the enforcement of individual accountability by creating a reconstruction of events.  They also assist in problem identification that may lead to problem resolution.  If these log files are not retained, there is no way to trace or reconstruct the events, and if it was discovered the network was hacked, there would be no way to trace the full extent of the compromise. 
+The Sun Ray audit logs should be appropriately backed-up and stored in order for them to be examined at a future time.  If audit logs are unavailable to be viewed at a later time, system compromises and/or attacks will not be traceable.  Therefore, Sun Ray audit logs will retained for a minimum of 1 year. 
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECAR-1, ECAR-2, ECAR-3&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16264r1_fix">Retain all audit data for a minimum of one year.</fixtext>
+			<fix id="F-16264r1_fix"/>
+			<check system="C-17196r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Ask the IAO/SA where the Sun Ray system audit logs are stored.  If they are offsite, review the process to move them to the alternative site.  Verify that the audit data is retained for a minimum of one year by reviewing the dates of the oldest backup files or media.  Audit data that should be retained include the following files on the Sun Ray server:  (These files maybe at a different location for a remote syslog server.)
+
+/var/opt/SUNWut/log/admin_log
+/var/opt/SUNWut/log/auth_log
+/var/opt/SUNWut/log/utmountd.log
+/var/opt/SUNWut/log/utstoraged.log
+/var/opt/SUNWut/log/messages
+/var/opt/SUNWut/log/utwebadmin.log
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16349">
+		<title>Sun Ray system backups are not performed</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17342r1_rule" severity="medium" weight="10.0">
+			<version>SUN0270</version>
+			<title>The Sun Ray system backups are not performed in accordance with the assigned MAC level.  </title>
+			<description>&lt;VulnDiscussion&gt;The three MAC level has different requirements for backing up data. For MAC III systems it is necessary to ensure that backups are performed weekly. For MAC II systems backups are performed daily and the recovery media is stored off-site in a protected facility in accordance with its mission assurance category and confidentiality level. In MAC I systems backups are maintained through a redundant secondary system, not colocated, and can be activated without loss of data or disruption to the operation. 
+
+NOTE:  The MAC level indicates the criticality of an asset to the DoD mission based on its purpose and user community. The Sensitivity level of an asset must also be determined and is based on whether the data or resource is restricted or releasable to the public. There are three MAC and three Sensitivity levels. The MAC and Sensitivity level of the asset are an important factor in determining the security strength the access control solution must provide. MAC and Sensitivity Levels are further defined in Appendix C and DoDI 8500.2.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;CODB-1, CODB-2, CODB-3&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16401r1_fix">Backup the Sun Ray system in accordance to the MAC level. </fixtext>
+			<fix id="F-16401r1_fix"/>
+			<check system="C-17263r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>1. Determine the MAC level of the Sun Ray system by asking the IAO/SA. 
+2. Once the MAC level is determined, locate the backup media or storage location. 
+For MAC I servers, a redundant secondary system is required that is not colocated. 
+For MAC II servers, daily backups are required with recovery media stored offline. 
+For MAC III servers, backups must be performed weekly. 
+3. Depending on the MAC level, verify the servers are backed up to media or storage within the guidelines of the MAC level. If they are not, this is a finding.
+
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16351">
+		<title>Admin password is not configured for Desktops</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17344r1_rule" severity="medium" weight="10.0">
+			<version>SUN0310</version>
+			<title>Administrative password is not configured for Desktop Units.</title>
+			<description>&lt;VulnDiscussion&gt;From a physical security perspective, the DTU pop-menu is accessible, therefore a username/password or administrative only password is recommended to protect the device from unauthorized changes made locally.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;IAIA-1, IAIA-2&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16402r1_fix">Configure a username / password for the DTU pop-up menu.</fixtext>
+			<fix id="F-16402r1_fix"/>
+			<check system="C-17264r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>On the Sun Ray 2fs unit press the (Stop-M) on Sun Keyboard and on the PC keyboards press the (Ctrl-Pause-M or S).
+If you are not prompted for a password to enter the firmware configuration, this is a finding.  To configure the password, select Security, Password, and type in the password.  Make sure it is compliant with DoD password policies.
+
+Caveat: If the (Stop-M) on the Sun keyboard or the (Ctrl-Pause-M or S) on the PC keyboards does not bring up the pop-up firmware-gui, then the pop-up function is disabled for this firmware and this is not applicable.
+
+Note: For other Sun Ray Desktop Units, consult the system administrator or documentation for the key mode combinations.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16354">
+		<title>Sun Ray Desktop Units not assigned IP address</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17347r1_rule" severity="low" weight="10.0">
+			<version>SUN0320</version>
+			<title>Sun Ray Desktop Units are not assigned with DHCP reserved IP addresses.</title>
+			<description>&lt;VulnDiscussion&gt;Sun Ray servers will not distribute DHCP addresses to non-Sun Ray Desktop Units.  Configuring Sun Ray Desktop Units with reserved IP addresses will ensure no rogue desktop units are attached to the network and able to connect to the Sun Ray network.  This will prevent unauthorized devices from receiving DHCP addresses from Sun Ray servers or external DHCP servers, and prevent access to the Sun Ray network.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16403r1_fix">Configure Sun Ray session servers to reserve IP addresses for Desktop Units.</fixtext>
+			<fix id="F-16403r1_fix"/>
+			<check system="C-17265r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Open the Solaris DHCP Manager or the DCHP server that is handing out IP addresses. The Solaris DHCP manager is located in /usr/sadm/admin/bin/dhcpmgr. Verify that the dynamic IP addresses are set to permanent or static based on the MAC.  </check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16379">
+		<title>There is no documented baseline of setuid/setgid</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17372r1_rule" severity="medium" weight="10.0">
+			<version>SUN0330</version>
+			<title>There is no documented baseline of the default setuid and setgid files. </title>
+			<description>&lt;VulnDiscussion&gt;There are programs that have setuid and setgid flags set within the Sun Ray server. Setuid is a flag that allows an application to temporarily change the permissions of the user running the application by setting the effective user ID to the program owner’s user ID. Setgid is a flag that allows an application to temporarily change the permissions of the group running the application by setting the effective group ID to the program owner’s group ID. aseline of these applications will ensure that any unauthorized modifications to these files will detected.
+
+Several programs on the Sun Ray server have setuid and setgid flags installed by default. Disabling any of the setgid or setuid applications will result in problems with the Sun Ray system. Furthermore, having a documented baseline of these applications will ensure that any unauthorized modifications to these files will be detected.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;Responsibility&gt;System Administrator&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16415r1_fix">Document the setuid and setgid files on the Sun Ray system.</fixtext>
+			<fix id="F-16415r1_fix"/>
+			<check system="C-17267r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>On the Sun Ray server perform the following:
+# find /opt –perm -4000
+
+If the result does not return the following output only, this is a finding.
+
+/opt/SUNWut/lib/utrcmd
+/opt/SUNWut/lib/utguiauth
+/opt/SUNWut/lib/utprefs-helper
+/opt/SUNWut/lib/utdomount
+/opt/SUNWut/bin/utaudio
+/opt/SUNWut/bin/utxconfig
+
+# find /opt –perm -2000
+
+If the result does not return the following output only, this is a finding.
+
+/opt/SUNuttsc/lib/uttsc-bin
+
+Ensure the documented setuid and setgid match the output above. If not, this is a finding.
+
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16393">
+		<title>Sun Ray server does not send logs to syslog server</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17386r1_rule" severity="low" weight="10.0">
+			<version>SUN0340</version>
+			<title>Sun Ray server does not send logs to syslog server.  </title>
+			<description>&lt;VulnDiscussion&gt;Remote logging is essential in monitoring servers and detecting intrusion. If an intruder is able to obtain root on a host, they may be able to edit the system logs to remove all traces of the attack. If the logs are stored off the machine, they can be analyzed for suspicious activity and used for prosecuting the attacker. Centralized log monitoring and storage is a critical component of incident response and assuring the integrity of system logs. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECAR-1, ECAR-2, ECAR-3&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16423r1_fix">Configure the Sun Ray server to send its logs to a remote syslog server.</fixtext>
+			<fix id="F-16423r1_fix"/>
+			<check system="C-17271r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>On the Sun Ray server, examine the /etc/syslog.conf file.  
+To send all syslog data from the Sun Ray server to a remote syslog host, search for the following line(s) in the /etc/syslog.conf file:
+*.*&lt;Tab&gt;&lt;Tab&gt; @loghost (name of remote host)
+
+OR
+
+*.debug, info, …@loghost
+
+At a minimum, the following two log files must be configured to send their logs to a remote syslog server:
+
+Log Name                               Facility Level                              Default Location
+messages           user.info          /var/opt/SUNWut/log/messages
+admin_log          local1.info        /var/opt/SUNWut/log/admin_log
+
+Verify the loghost referred to in the syslog.conf file is not resolving to the localhost. Check /etc/hosts file to review what the remote host is referring to. If it is not in this file, check the DNS server to determine what it is resolving to. If it is resolving to localhost, this is a finding.
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16394">
+		<title>Sun Management Center does not monitor daemons</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17387r1_rule" severity="medium" weight="10.0">
+			<version>SUN0370</version>
+			<title>The Sun Management Center does not monitor daemons, failover groups, and interconnects.</title>
+			<description>&lt;VulnDiscussion&gt;Without an on-line monitoring system in place, unusual or inappropriate activity will could go unnoticed or without detection.  Activity could include system services stopping, starting, file changes, and so on. These changes may happen before the system administrator has time to review any logs.  &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16424r1_fix">Configure Sun Ray system in the Sun Management Center to monitor daemons, failover groups, and interconnects. </fixtext>
+			<fix id="F-16424r1_fix"/>
+			<check system="C-17272r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Select the server that has the Sun Management Center software installed.  Perform the following at the console:
+#  /opt/SUNWsymon/sbin/es-start –c &amp;
+Enter the username/password and login
+1. Select the Alarms tab.
+
+2. Verify alarms are configured for the daemons, failover groups, and interconnects by performing the following:
+
+a) Double-click on the Sun Ray Services icon on the left.
+Daemons:
+Dtlogin – Desktop login daemon
+In.dhcpd – Dhcp daemon
+Utauthd – Auth manager
+Utdsd – Datastore daemon
+Utsessiond – Session daemon
+Utdevmgrd – Device manager
+ 
+b) Double-click on the Sun Ray Failover Groups icon on the left.
+failover Groups
+primary and secondary servers
+
+c) Double-click on the Sun Ray Interconnects icon on the left.
+Interconnects (Network Interfaces Used by Sun Ray server):
+
+If these are system objects are not configured with alarms, this is a finding.  
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16395">
+		<title>Sun Ray server is not registered in VMS/database</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17388r1_rule" severity="medium" weight="10.0">
+			<version>SUN0380</version>
+			<title>Sun Ray Server is not properly registered in VMS or database.</title>
+			<description>&lt;VulnDiscussion&gt;The Vulnerability Management System (VMS) was developed to interface with the DOD Enterprise tools to assist all DOD CC/S/As in the identification of security vulnerabilities and track the issues through the lifecycle of the vulnerabilities existence. To ensure both the emerging and known vulnerabilities are addressed on a system, VMS tracks the existence of all potential vulnerabilities based on the posture of an asset. As a result, all vulnerabilities are tracked through their lifecycle.
+
+Vulnerability Management is the process of ensuring that all network assets that are affected by an IAVM notice are addressed and corrected within a time period specified in the IAVM notice. VMS will notify commands, services, and agencies of new and potential security vulnerabilities. VMS meets the DoD mandate to ensure information system vulnerability alert notifications are received and acted on by all SAs. Keeping the inventory of assets current allows for tracking of virtualization servers and resources, and supports a successful IAVM process. The ability to track assets improves the effective use of virtualization assets, information assurance auditing efforts, as well as optimizing incident response times.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;VIVM-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16425r1_fix">Register Sun Ray Servers in VMS or database.</fixtext>
+			<fix id="F-16425r1_fix"/>
+			<check system="C-17273r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>Access VMS or appropriate database and navigate to the site’s assets.  Ensure the Sun Ray Server(s) are registered within the database or VMS.  If they are not registered, this is a finding.</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-16396">
+		<title>Sun Ray servers incorrectly configured in VMS</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-17389r1_rule" severity="medium" weight="10.0">
+			<version>SUN0390</version>
+			<title>Sun Ray servers are not configured with the correct posture in VMS.</title>
+			<description>&lt;VulnDiscussion&gt;Correctly configuring the Sun Ray asset in VMS will ensure that the appropriate vulnerabilities are assigned to the asset. If the asset is not configured with the correct posture, vulnerabilities may be open on the asset.  These open vulnerabilities may allow an attacker to access the system. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;VIVM-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-16426r1_fix">Register Sun Ray Servers in VMS with the correct posture.</fixtext>
+			<fix id="F-16426r1_fix"/>
+			<check system="C-17274r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content> If VMS is used and check SUN0380 is a finding, this should be automatically marked as a finding.
+
+If VMS is not being used, this is Not Applicable.
+
+If the assets are registered in VMS, verify that the following postures are registered.  If any of the postures are not registered this is a finding.   
+
+Solaris 10 or Red Hat Linux Advanced Server 4 or SuSE Linux Enterprise Server 9
+Sun Ray 4
+Tomcat 5.x
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+	<Group id="V-17455">
+		<title>Sun Ray Server not in DMZ</title>
+		<description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+		<Rule id="SV-18511r1_rule" severity="medium" weight="10.0">
+			<version>SUN0400</version>
+			<title>The Sun Ray Session Server (SRSS) is not located in a DMZ or screened subnet.</title>
+			<description>&lt;VulnDiscussion&gt;If the SSRS is configured to service external clients from the internal enclave, there is a potential that an external adversary can obtain information about internal hosts that could assist the adversary in an attack.  Firewalls, ACLs, and DMZs are used to enforce these types of restrictions and are components in the defense-in-depth architecture. The SRSS must be located in a protected DMZ if the server is servicing clients outside the local enclave.  If the SRSS is only servicing clients inside the local enclave, then it must be behind the enclave and not part of the DMZ that houses public servers.
+Note: A DMZ is a physical or logical subnetwork that usually contains an organization's external services to a larger, untrusted network, typically the Internet. The purpose of a DMZ is to add an additional layer of security to an organization's local area network (LAN). DoD Instruction 8500.2 requires a DMZ for confidentiality levels of High and Medium identified as classified and sensitive domains respectively. A DMZ provides boundary protection for architectures that interconnect enclaves.
+&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;Information Assurance Officer&lt;/Responsibility&gt;&lt;IAControls&gt;ECSC-1&lt;/IAControls&gt;</description>
+			<reference>
+				<dc:title>DPMS Target Sun Ray 4</dc:title>
+				<dc:publisher>DISA FSO</dc:publisher>
+				<dc:type>DPMS Target</dc:type>
+				<dc:subject>Sun Ray 4</dc:subject>
+				<dc:identifier>1426</dc:identifier>
+			</reference>
+			<fixtext fixref="F-17374r1_fix">Place the SRSS behind a screened subnet or DMZ.</fixtext>
+			<fix id="F-17374r1_fix"/>
+			<check system="C-18273r1_chk">
+				<check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sun_Ray_4_STIG.xml"/>
+				<check-content>1. Validate the scope of clients that the Sun Ray Session Server (SRSS) is servicing. If the SRSS is servicing clients outside the local enclave, proceed to step 2.  If the SRSS is servicing clients inside the local enclave, proceed to step 3. 
+
+2. The requirement is that the SRSS must be in a protected DMZ. Review the network topology diagram and obtain the SRSS IP address and subnet mask to validate that it is in the documented subnet for the DMZ. If no network topology diagram exists, work with the network reviewer/system administrator to determine if the SRSS is located in a DMZ.  If it is not in a DMZ, this is a finding.  
+
+3. If the SRSS server is only serving clients inside the local enclave, the requirement is to be behind the enclave not part of the DMZ that houses the public servers. Review the network topology diagram and obtain the SRSS IP address and subnet mask to validate that it is in an enclave subnet for servers. If no network topology exists, work with the network reviewer/system administrator to determine where the SRSS server is located. If it is in the DMZ, this is a finding. 
+</check-content>
+			</check>
+		</Rule>
+	</Group>
+</Benchmark>

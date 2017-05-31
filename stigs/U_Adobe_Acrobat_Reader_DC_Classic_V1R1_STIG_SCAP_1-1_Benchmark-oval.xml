@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.8/ovaldefinition/complete/windows-definitions-schema.xsd">
+  <generator>
+    <oval:product_name>repotool</oval:product_name>
+    <oval:schema_version>5.8</oval:schema_version>
+    <oval:timestamp>2016-03-08T15:58:38</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:40" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must enable Enhanced Security in a Standalone Application.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must enable Enhanced Security in a Standalone Application.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:4000" comment="bEnhancedSecurityStandalone == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:41" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must enable Enhanced Security in a Browser.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must enable Enhanced Security in a Browser.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:4100" comment="bEnhancedSecurityInBrowser == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:42" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must enable Protected Mode.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must enable Protected Mode.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:4200" comment="bProtectedMode == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:43" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must enable Protected View.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must enable Protected View.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:4300" comment="iProtectedView == 2" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:44" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must Block Websites.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must Block Websites.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:4400" comment="iURLPerms == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:45" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must block access to Unknown Websites.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must block access to Unknown Websites.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:4500" comment="iUnknownURLPerms == 3" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:46" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must prevent opening files other than PDF or FDF.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must prevent opening files other than PDF or FDF.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:4600" comment="iFileAttachmentPerms == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:47" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must block Flash Content.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must block Flash Content.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:4700" comment="bEnableFlash == 0" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:48" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable the ability to change the Default Handler.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable the ability to change the Default Handler.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:4800" comment="bDisablePDFHandlerSwitching == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:49" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable the Adobe Send and Track plugin for Outlook.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable the Adobe Send and Track plugin for Outlook.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:4900" comment="bAdobeSendPluginToggle == 0" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:50" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable all service access to Document Cloud Services.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable all service access to Document Cloud Services.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:5000" comment="bToggleAdobeDocumentServices == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:51" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable Cloud Synchronization.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable Cloud Synchronization.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:5100" comment="bTogglePrefsSync == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:52" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable the Adobe Repair Installation.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable the Adobe Repair Installation.</description>
+      </metadata>
+      <criteria operator="OR">
+        <criteria operator="AND">
+          <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:5202" comment="Adobe Acrobat DC ENU_GUID key, 32-bit exists" />
+          <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:5200" comment="DisableMaintenance == 1, 32-bit" />
+        </criteria>
+        <criteria operator="AND">
+          <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:5203" comment="Adobe Acrobat DC ENU_GUID key, 64-bit exists" />
+          <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:5201" comment="DisableMaintenance == 1, 64-bit" />
+        </criteria>
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:53" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable 3rd Party Web Connectors.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable 3rd Party Web Connectors.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:5300" comment="bToggleWebConnectors == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:54" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable Acrobat Upsell.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable Acrobat Upsell.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:5400" comment="bAcroSuppressUpsell == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:55" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable Adobe Send for Signature.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable Adobe Send for Signature.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:5500" comment="bToggleAdobeSign == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:56" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable access to Webmail.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable access to Webmail.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:5600" comment="bDisableWebmail == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:57" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable Online SharePoint Access.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable Online SharePoint Access.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:5700" comment="bDisableSharePointFeatures == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:58" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable the Adobe Welcome Screen.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable the Adobe Welcome Screen.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:5800" comment="bShowWelcomeScreen == 0" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:59" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable Service Upgrades.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable Service Upgrades.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:5900" comment="bUpdater == 0" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:60" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable the ability to specify Host-Based Privileged Locations.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable the ability to specify Host-Based Privileged Locations.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:6000" comment="bDisableOSTrustedSites == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:61" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable the ability to add Trusted Files and Folders.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable the ability to add Trusted Files and Folders.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:6100" comment="bDisableTrustedFolders == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:62" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable the ability to elevate IE Trusts to Privileged Locations.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable the ability to elevate IE Trusts to Privileged Locations.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:6200" comment="bDisableTrustedSites == 1" />
+      </criteria>
+    </definition>
+    <definition id="oval:mil.disa.stig.adobe.reader:def:63" version="2" class="compliance">
+      <metadata>
+        <title>Adobe Reader DC must disable the ability to elevate (trusts) certified documents as a Privileged Location.</title>
+        <affected family="windows">
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows 10</platform>
+          <product>Adobe Acrobat Reader DC</product>
+        </affected>
+        <description>Adobe Reader DC must disable the ability to elevate (trusts) certified documents as a Privileged Location.</description>
+      </metadata>
+      <criteria operator="AND">
+        <criterion test_ref="oval:mil.disa.stig.adobe.reader:tst:6300" comment="bEnableCertificateBasedTrust == 0" />
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:4000" version="1" comment="bEnhancedSecurityStandalone == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:4000" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:4000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:4100" version="1" comment="bEnhancedSecurityInBrowser == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:4100" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:4100" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:4200" version="1" comment="bProtectedMode == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:4200" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:4200" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:4300" version="1" comment="iProtectedView == 2" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:4300" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:4300" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:4400" version="1" comment="iURLPerms == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:4400" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:4400" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:4500" version="1" comment="iUnknownURLPerms == 3" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:4500" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:4500" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:4600" version="1" comment="iFileAttachmentPerms == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:4600" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:4600" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:4700" version="1" comment="bEnableFlash == 0" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:4700" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:4700" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:4800" version="1" comment="bDisablePDFHandlerSwitching == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:4800" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:4800" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:4900" version="1" comment="bAdobeSendPluginToggle == 0" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:4900" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:4900" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:5000" version="1" comment="bToggleAdobeDocumentServices == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:5000" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:5000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:5100" version="1" comment="bTogglePrefsSync == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:5100" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:5100" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:5200" version="1" comment="DisableMaintenance == 1, 32-bit" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:5200" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:5200" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:5201" version="1" comment="DisableMaintenance == 1, 64-bit" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:5201" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:5200" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:5202" version="2" comment="Adobe Acrobat 2015 ENU_GUID key, 32-bit exists" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:201" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:5203" version="2" comment="Adobe Acrobat 2015 ENU_GUID key, 64-bit exists" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:202" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:5300" version="1" comment="bToggleWebConnectors == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:5300" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:5300" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:5400" version="1" comment="bAcroSuppressUpsell == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:5400" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:5400" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:5500" version="1" comment="bToggleAdobeSign == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:5500" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:5500" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:5600" version="1" comment="bDisableWebmail == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:5600" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:5600" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:5700" version="1" comment="bDisableSharePointFeatures == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:5700" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:5700" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:5800" version="1" comment="bShowWelcomeScreen == 0" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:5800" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:5800" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:5900" version="1" comment="bUpdater == 0" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:5900" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:5900" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:6000" version="1" comment="bDisableOSTrustedSites == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:6000" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:6000" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:6100" version="1" comment="bDisableTrustedFolders == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:6100" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:6100" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:6200" version="1" comment="bDisableTrustedSites == 1" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:6200" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:6200" />
+    </registry_test>
+    <registry_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:tst:6300" version="1" comment="bEnableCertificateBasedTrust == 0" check_existence="at_least_one_exists" check="all">
+      <object object_ref="oval:mil.disa.stig.adobe.reader:obj:6300" />
+      <state state_ref="oval:mil.disa.stig.adobe.reader:ste:6300" />
+    </registry_test>
+  </tests>
+  <objects>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Adobe Acrobat DC Classic 2015 ENU_GUID key, 32-bit system" id="oval:mil.disa.stig.adobe.reader:obj:201" version="1">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Adobe\Acrobat Reader\2015\Installer</key>
+      <name>ENU_GUID</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" comment="Adobe Acrobat DC Classic 2015 ENU_GUID key, 64-bit system" id="oval:mil.disa.stig.adobe.reader:obj:202" version="1">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\WOW6432Node\Adobe\Acrobat Reader\2015\Installer</key>
+      <name>ENU_GUID</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:4000" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown</key>
+      <name datatype="string">bEnhancedSecurityStandalone</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:4100" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown</key>
+      <name datatype="string">bEnhancedSecurityInBrowser</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:4200" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown</key>
+      <name datatype="string">bProtectedMode</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:4300" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown</key>
+      <name datatype="string">iProtectedView</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:4400" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown\cDefaultLaunchURLPerms</key>
+      <name datatype="string">iURLPerms</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:4500" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown\cDefaultLaunchURLPerms</key>
+      <name datatype="string">iUnknownURLPerms</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:4600" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown</key>
+      <name datatype="string">iFileAttachmentPerms</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:4700" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown</key>
+      <name datatype="string">bEnableFlash</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:4800" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown</key>
+      <name datatype="string">bDisablePDFHandlerSwitching</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:4900" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown\cCloud</key>
+      <name datatype="string">bAdobeSendPluginToggle</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:5000" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown\cServices</key>
+      <name datatype="string">bToggleAdobeDocumentServices</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:5100" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown\cServices</key>
+      <name datatype="string">bTogglePrefsSync</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:5200" version="1" comment="DisableMaintenance, 32-bit">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Adobe\Acrobat Reader\2015\Installer</key>
+      <name datatype="string">DisableMaintenance</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:5201" version="1" comment="DisableMaintenance, 64-bit">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">SOFTWARE\Wow6432Node\Adobe\Acrobat Reader\2015\Installer</key>
+      <name datatype="string">DisableMaintenance</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:5300" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown\cServices</key>
+      <name datatype="string">bToggleWebConnectors</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:5400" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown</key>
+      <name datatype="string">bAcroSuppressUpsell</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:5500" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown\cServices</key>
+      <name datatype="string">bToggleAdobeSign</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:5600" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown\cWebmailProfiles</key>
+      <name datatype="string">bDisableWebmail</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:5700" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown\cSharePoint</key>
+      <name datatype="string">bDisableSharePointFeatures</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:5800" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown\cWelcomeScreen</key>
+      <name datatype="string">bShowWelcomeScreen</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:5900" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown\cServices</key>
+      <name datatype="string">bUpdater</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:6000" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown</key>
+      <name datatype="string">bDisableOSTrustedSites</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:6100" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown</key>
+      <name datatype="string">bDisableTrustedFolders</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:6200" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown</key>
+      <name datatype="string">bDisableTrustedSites</name>
+    </registry_object>
+    <registry_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:obj:6300" version="1">
+      <hive datatype="string">HKEY_LOCAL_MACHINE</hive>
+      <key datatype="string">Software\Policies\Adobe\Acrobat Reader\2015\FeatureLockDown</key>
+      <name datatype="string">bEnableCertificateBasedTrust</name>
+    </registry_object>
+  </objects>
+  <states>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:4000" version="1" comment="bEnhancedSecurityStandalone == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:4100" version="1" comment="bEnhancedSecurityInBrowser == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:4200" version="1" comment="bProtectedMode == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:4300" version="1" comment="iProtectedView == 2 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">2</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:4400" version="1" comment="iURLPerms == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:4500" version="1" comment="iUnknownURLPerms == 3 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">3</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:4600" version="1" comment="iFileAttachmentPerms == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:4700" version="1" comment="bEnableFlash == 0 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:4800" version="1" comment="bDisablePDFHandlerSwitching == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:4900" version="1" comment="bAdobeSendPluginToggle == 0 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:5000" version="1" comment="bToggleAdobeDocumentServices == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:5100" version="1" comment="bTogglePrefsSync == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:5200" version="1" comment="DisableMaintenance == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:5300" version="1" comment="bToggleWebConnectors == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:5400" version="1" comment="bAcroSuppressUpsell == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:5500" version="1" comment="bToggleAdobeSign == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:5600" version="1" comment="bDisableWebmail == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:5700" version="1" comment="bDisableSharePointFeatures == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:5800" version="1" comment="bShowWelcomeScreen == 0 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:5900" version="1" comment="bUpdater == 0 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">0</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:6000" version="1" comment="bDisableOSTrustedSites == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:6100" version="1" comment="bDisableTrustedFolders == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:6200" version="1" comment="bDisableTrustedSites == 1 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">1</value>
+    </registry_state>
+    <registry_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" id="oval:mil.disa.stig.adobe.reader:ste:6300" version="1" comment="bEnableCertificateBasedTrust == 0 (reg_dword)">
+      <type>reg_dword</type>
+      <value datatype="int">0</value>
+    </registry_state>
+  </states>
+</oval_definitions>
+

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" id="McAfee_MOVE2_6_MultiPlatform_OSS" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2015-10-05">accepted</status><title>McAfee MOVE 2.6 Multi-Platform OSS STIG</title><description>The McAfee MOVE 2.6 Multi-Platform OSS STIG is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the NIST 800-53 and related documents. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 3 Benchmark Date: 23 Oct 2015</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42964" selected="true" /><select idref="V-42965" selected="true" /><select idref="V-42966" selected="true" /><select idref="V-42968" selected="true" /><select idref="V-42971" selected="true" /><select idref="V-42973" selected="true" /><select idref="V-42974" selected="true" /><select idref="V-42976" selected="true" /><select idref="V-42977" selected="true" /><select idref="V-42978" selected="true" /><select idref="V-42979" selected="true" /><select idref="V-42981" selected="true" /><select idref="V-42982" selected="true" /><select idref="V-42983" selected="true" /><select idref="V-42986" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42964" selected="true" /><select idref="V-42965" selected="true" /><select idref="V-42966" selected="true" /><select idref="V-42968" selected="true" /><select idref="V-42971" selected="true" /><select idref="V-42973" selected="true" /><select idref="V-42974" selected="true" /><select idref="V-42976" selected="true" /><select idref="V-42977" selected="true" /><select idref="V-42978" selected="true" /><select idref="V-42979" selected="true" /><select idref="V-42981" selected="true" /><select idref="V-42982" selected="true" /><select idref="V-42983" selected="true" /><select idref="V-42986" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42964" selected="true" /><select idref="V-42965" selected="true" /><select idref="V-42966" selected="true" /><select idref="V-42968" selected="true" /><select idref="V-42971" selected="true" /><select idref="V-42973" selected="true" /><select idref="V-42974" selected="true" /><select idref="V-42976" selected="true" /><select idref="V-42977" selected="true" /><select idref="V-42978" selected="true" /><select idref="V-42979" selected="true" /><select idref="V-42981" selected="true" /><select idref="V-42982" selected="true" /><select idref="V-42983" selected="true" /><select idref="V-42986" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42964" selected="true" /><select idref="V-42965" selected="true" /><select idref="V-42966" selected="true" /><select idref="V-42968" selected="true" /><select idref="V-42971" selected="true" /><select idref="V-42973" selected="true" /><select idref="V-42974" selected="true" /><select idref="V-42976" selected="true" /><select idref="V-42977" selected="true" /><select idref="V-42978" selected="true" /><select idref="V-42979" selected="true" /><select idref="V-42981" selected="true" /><select idref="V-42982" selected="true" /><select idref="V-42983" selected="true" /><select idref="V-42986" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42964" selected="true" /><select idref="V-42965" selected="true" /><select idref="V-42966" selected="true" /><select idref="V-42968" selected="true" /><select idref="V-42971" selected="true" /><select idref="V-42973" selected="true" /><select idref="V-42974" selected="true" /><select idref="V-42976" selected="true" /><select idref="V-42977" selected="true" /><select idref="V-42978" selected="true" /><select idref="V-42979" selected="true" /><select idref="V-42981" selected="true" /><select idref="V-42982" selected="true" /><select idref="V-42983" selected="true" /><select idref="V-42986" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42964" selected="true" /><select idref="V-42965" selected="true" /><select idref="V-42966" selected="true" /><select idref="V-42968" selected="true" /><select idref="V-42971" selected="true" /><select idref="V-42973" selected="true" /><select idref="V-42974" selected="true" /><select idref="V-42976" selected="true" /><select idref="V-42977" selected="true" /><select idref="V-42978" selected="true" /><select idref="V-42979" selected="true" /><select idref="V-42981" selected="true" /><select idref="V-42982" selected="true" /><select idref="V-42983" selected="true" /><select idref="V-42986" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42964" selected="true" /><select idref="V-42965" selected="true" /><select idref="V-42966" selected="true" /><select idref="V-42968" selected="true" /><select idref="V-42971" selected="true" /><select idref="V-42973" selected="true" /><select idref="V-42974" selected="true" /><select idref="V-42976" selected="true" /><select idref="V-42977" selected="true" /><select idref="V-42978" selected="true" /><select idref="V-42979" selected="true" /><select idref="V-42981" selected="true" /><select idref="V-42982" selected="true" /><select idref="V-42983" selected="true" /><select idref="V-42986" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42964" selected="true" /><select idref="V-42965" selected="true" /><select idref="V-42966" selected="true" /><select idref="V-42968" selected="true" /><select idref="V-42971" selected="true" /><select idref="V-42973" selected="true" /><select idref="V-42974" selected="true" /><select idref="V-42976" selected="true" /><select idref="V-42977" selected="true" /><select idref="V-42978" selected="true" /><select idref="V-42979" selected="true" /><select idref="V-42981" selected="true" /><select idref="V-42982" selected="true" /><select idref="V-42983" selected="true" /><select idref="V-42986" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-42964" selected="true" /><select idref="V-42965" selected="true" /><select idref="V-42966" selected="true" /><select idref="V-42968" selected="true" /><select idref="V-42971" selected="true" /><select idref="V-42973" selected="true" /><select idref="V-42974" selected="true" /><select idref="V-42976" selected="true" /><select idref="V-42977" selected="true" /><select idref="V-42978" selected="true" /><select idref="V-42979" selected="true" /><select idref="V-42981" selected="true" /><select idref="V-42982" selected="true" /><select idref="V-42983" selected="true" /><select idref="V-42986" selected="true" /></Profile><Group id="V-42964"><title>AV-MOVE-OSS-001</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55693r1_rule" severity="high" weight="10.0"><version>AV-MOVE-OSS-001</version><title>The McAfee MOVE AV [Multi-Platform] Offload Scan Server must have McAfee VirusScan Enterprise 8.8 (or most current version) installed.</title><description>&lt;VulnDiscussion&gt;Organizations should deploy anti-virus software on all hosts for which satisfactory anti-virus software is available. Anti-virus software should be installed as soon after OS installation as possible and then updated with the latest signatures and anti-virus software patches (to eliminate any known vulnerabilities in the anti-virus software itself). To support the security of the host, the anti-virus software should be configured and maintained properly so it continues to be effective at detecting and stopping malware. Anti-virus software is most effective when its signatures are fully up-to-date. Accordingly, anti-virus software should be kept current with the latest signature and software updates to improve malware detection.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48543r3_fix">Access the ePO server. From the System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties. Click on Actions, Agent, Modify Tasks on a Single System.
+
+Click on Actions, then click New Task.
+
+Name the new task "Deploy McAfee VSE 8.8 to MOVE server".
+
+For the "Type:", select "Product Deployment" from the drop-down list and click Next.
+
+For the "Products and components:", select "VirusScan Enterprise 8.8.x" and ensure the "Action:" is "Install" and click Next.
+
+For the "Schedule status:", select "Enabled".
+
+Configure the schedule variable in accordance with local Change Control policy and click Next.
+
+On "Summary" tab, click "Save", and then "Close".
+
+Back at the "System Details" screen, click on the "Wake Up Agents" button.
+
+In the "Wake Up McAfee Agent" screen, for the "Force policy update:" settings, place a check in the "Force complete policy and task update" check box.
+
+Click on OK.</fixtext><fix id="F-48543r3_fix" /><check system="C-49145r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>Access the server designated as the McAfee MOVE Offload Scan Server. In the taskbar, right-click the red McAfee Agent shield and select "About".  
+
+Under "McAfee Agent", ensure the "Last agent-to-server communication:" is within the time period designated by the "Agent to Server Communication Interval".
+
+Ensure the "McAfee VirusScan Enterprise + AntiSpyware Enterprise" is listed as an installed product. 
+
+Ensure the version number is 8.8.0 or higher.
+
+An alternative method for validating--From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties. 
+
+Under "System Information" section, ensure the "Last communication" is within the time period designated by the "Agent-to-Server Communication Interval:" under the "McAfee Agent" section.
+
+Under "System information" section, ensure "VirusScan Enterprise" is listed as an installed product.
+
+Ensure the "Product Version" for VirusScan Enterprise is listed as 8.8.0 or higher.
+
+If VirusScan Enterprise 8.8.0 or higher is not installed and/or the Last communication to the ePO server is not within the specified Agent-to-Server Communication interval, this is a finding.</check-content></check></Rule></Group><Group id="V-42965"><title>AV-MOVE-OSS-002</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55694r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-OSS-002</version><title>The McAfee MOVE AV [Multi-Platform] Offload Scan Server packages policies must be configured with and managed by the HBSS ePO server.</title><description>&lt;VulnDiscussion&gt;Organizations should use centrally managed anti-virus software that is controlled and monitored regularly by anti-virus administrators, who are also typically responsible for acquiring, testing, approving, and delivering anti-virus signature and software updates throughout the organization. Users should not be able to disable or delete anti-virus software from their hosts, nor should they be able to alter critical settings. Anti-virus administrators should perform continuous monitoring to confirm that hosts are using current anti-virus software and that the software is configured properly. Implementing all of these recommendations should strongly support an organization in having a strong and consistent anti-virus deployment across the organization.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48546r1_fix">Access the ePO server. From the System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties.  
+
+If the asset representing the McAfee MOVE Offload Scan Server is not in the ePO server system tree, configure a task to deploy the McAfee Agent to the system designated as the McAfee MOVE Offload Scan Server.
+
+Once the system is communicating with the ePO server and is in the ePO server system tree, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties.  
+
+Click on Actions, Agent, Modify Tasks on a Single System.
+
+Click on the "New Task" button.
+
+Name the new task "Deploy McAfee MOVE to McAfee MOVE Offload Scan Server".
+
+For the "Type:", select "Product Deployment" from the drop down and click Next.
+
+For the "Products and components:", select "MOVE AVE [Multi-Platform] Offload Scan Server" and ensure the "Action:" is "Install" and click Next.
+
+For the "Schedule status:", select "Enabled".
+
+Configure the schedule variable in accordance with local Change Control policy and click Next.
+
+On "Summary" tab, click "Save", then "Close".
+Back at the "System Details" screen, click on the "Wake Up Agents" button.
+
+In the "Wake Up McAfee Agent" screen, for the "Force policy update:" settings, place a check in the "Force complete policy and task update" check box.
+
+Click on OK.</fixtext><fix id="F-48546r1_fix" /><check system="C-49146r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>Access the server designated as the McAfee MOVE Offload Scan Server. In the taskbar, right-click the red McAfee Agent shield and select "McAfee Agent Status Monitor".
+
+Click the "Check New Policies" button. In the McAfee Agent Monitor, review the Agent Subsystem status lines and ensure there is a status for "Agent started performing ASCI", followed by a sequence of status lines showing the "Agent is sending PROPS VERSION package to ePO server" and "Agent communication session closed". These status lines will confirm the system is making a successful connection to the ePO server.
+
+Click the "Enforce Policies" button. In the McAfee Agent Monitor, review the Management status lines and ensure one shows a status of "Enforcing Policies for MOVEOSS_2xxx" (where 2xxx represents the version level). This status line will confirm the system is enforcing policies for the McAfee MOVE AV Offload Scan Server.
+
+If either the system does not show "Agent started performing ASCI", followed by a sequence of status lines showing the "Agent is sending PROPS VERSION package to ePO server" and "Agent communication session closed", or does not show a Management status line of "Enforcing Policies for MOVEOSS_2xxx", this is a finding.</check-content></check></Rule></Group><Group id="V-42966"><title>AV-MOVE-OSS-003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55695r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-OSS-003</version><title>The McAfee MOVE AV [Multi-Platform] Offload Scan Server must be configured with a static IP address.</title><description>&lt;VulnDiscussion&gt;Security management devices must be configured to ensure consistent and uninterrupted connectivity to/from the systems it manages/controls. Otherwise, the security management device will be less than effective.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48547r1_fix">In accordance with local operational procedures, assign a static IP address to the server designated as the McAfee MOVE AV [Multi-Platform] Offload Scan Server.</fixtext><fix id="F-48547r1_fix" /><check system="C-49147r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>Access the server designated as the McAfee MOVE Offload Scan Server. 
+
+Access Network properties. 
+
+From listed Network adapters, right-click on the active adapter, select Properties.
+
+Highlight the "Internet Protocol Version 4 (TCP/IPv4)", click on the Properties button.
+
+On the General tab, ensure the "Use the following IP address:" is selected, the IP address:, Subnet mask:, and Default gateway: are all populated.
+
+If the IPv4 protocol has not been configured to use a static IP address, Subnet mask, and Default Gateway, this is a finding.</check-content></check></Rule></Group><Group id="V-42968"><title>AV-MOVE-OSS-005</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55697r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-OSS-005</version><title>The McAfee MOVE AV [Multi-Platform] Offload Scan Server General policy must be configured to maintain a minimum of 7 log files before removing oldest log file.</title><description>&lt;VulnDiscussion&gt;Forensic identification is the practice of identifying infected hosts by looking for evidence of recent infections. The evidence may be very recent (only a few minutes old) or not so recent (hours or days old); the older the information is, the less accurate it is likely to be. The most obvious sources of evidence are those that are designed to identify malware activity, such as anti-virus software, content filtering (e.g., anti-spam measures), IPS, and SIEM technologies. The logs of security applications might contain detailed records of suspicious activity, and might also indicate whether a security compromise occurred or was prevented. While logging is imperative to forensic analysis, logs could grow to the point of impacting disk space on the system. In order to avoid the risk of logs growing to the size of impacting the operating system, the log size and number of log files will be restricted, but must also be large enough to retain forensic value.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48549r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the General tab, enter a value of "7" or more for the "Number of Log Files:". 
+
+Click Save.</fixtext><fix id="F-48549r1_fix" /><check system="C-49148r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the General tab, ensure the "Number of Log Files:" is set to 7 or more.
+
+If the "Number of Log Files:" is set to less than 7, this is a finding.
+
+On the system designated as the McAfee MOVE Offload Scan Server, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee MOVE AV Server software has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+From the displayed configuration, ensure the "LogFileNum" value is set to 7 or more.
+If the "LogFileNum" is set to less than 7, this is a finding.</check-content></check></Rule></Group><Group id="V-42971"><title>AV-MOVE-OSS-006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55700r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-OSS-006</version><title>The McAfee MOVE AV [Multi-Platform] Offload Scan Server General policy must be configured to rotate log files when they reach at least 10MB in size.</title><description>&lt;VulnDiscussion&gt;Forensic identification is the practice of identifying infected hosts by looking for evidence of recent infections. The evidence may be very recent (only a few minutes old) or not so recent (hours or days old); the older the information is, the less accurate it is likely to be. The most obvious sources of evidence are those that are designed to identify malware activity, such as anti-virus software, content filtering (e.g., anti-spam measures), IPS, and SIEM technologies. The logs of security applications might contain detailed records of suspicious activity, and might also indicate whether a security compromise occurred or was prevented. While logging is imperative to forensic analysis, logs could grow to the point of impacting disk space on the system. In order to avoid the risk of logs growing to the size of impacting the operating system, the log size and number of log files will be restricted, but must also be large enough to retain forensic value.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48551r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the General tab, set the "Log File Size:" to "10" or more.
+
+Click Save.</fixtext><fix id="F-48551r1_fix" /><check system="C-49149r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the General tab, ensure the "Log File Size:" is set to 10 or more.
+
+If the "Log file Size:" is not set to 10 or more, this is a finding.
+
+On the system designated as the McAfee MOVE Offload Scan Server, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee MOVE AV Server software has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+From the displayed configuration, ensure the "LogFileSize" value is set to 10 or more.
+If the "LogFileSize" is set to less than 10, this is a finding.</check-content></check></Rule></Group><Group id="V-42973"><title>AV-MOVE-OSS-007</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55702r2_rule" severity="medium" weight="10.0"><version>AV-MOVE-OSS-007</version><title>The McAfee MOVE AV [Multi-Platform] Offload Scan Server General policy Scan Settings must be configured to scan inside archive files.</title><description>&lt;VulnDiscussion&gt;Malware is often packaged within an archive. In addition, archives might have other archives within. Not scanning archive files introduces the risk of infected files being introduced into the environment.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48553r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the Scan Settings tab, place a check in the "Scan Archive Files: Enable scanning inside of archive files." check box.
+
+Click Save.</fixtext><fix id="F-48553r1_fix" /><check system="C-49150r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>NOTE: If the regularly scheduled scan includes the scanning of archive files, this requirement can alternatively be not configured and marked as Not Applicable.
+
+From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the Scan Settings tab, ensure the "Scan Archive Files:" has a check in the "Enable scanning inside of archive files." check box.
+
+If the "Enable scanning inside of archive files." check box is not selected, this is a finding.
+
+On the system designated as the McAfee MOVE Offload Scan Server, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee MOVE AV Server software has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+From the displayed configuration, ensure the "ScanArchiveFiles" value is set to 1.
+If the "ScanArchiveFiles" is set to 0, this is a finding.</check-content></check></Rule></Group><Group id="V-42974"><title>AV-MOVE-OSS-008</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55703r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-OSS-008</version><title>The McAfee MOVE AV [Multi-Platform] Offload Scan Server General policy Scan Settings must be configured to scan for potentially unwanted programs.</title><description>&lt;VulnDiscussion&gt;Due to the ability of malware to mutate after infection, standard anti-virus signatures may not be able to catch new strains or variants of the malware. Typically, these strains and variants will share unique characteristics with others in their virus family. By using a generic signature to detect the shared characteristics, using wildcards where differences lie, the generic signature can detect viruses even if they are padded with extra, meaningless code. This method of detection is Heuristic detection.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48554r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the Scan Settings tab, place a check in the "Scan for Unwanted Programs: Enable scanning for potentially unwanted programs." check box.
+
+Click Save.</fixtext><fix id="F-48554r1_fix" /><check system="C-49151r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the Scan Settings tab, ensure the "Scan for Unwanted Programs:" "Enable scanning for potentially unwanted programs" check box is selected.
+
+If the "Enable scanning for potentially unwanted programs." check box is not selected, this is a finding.
+
+On the system designated as the McAfee MOVE Offload Scan Server, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee MOVE AV Server software has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+From the displayed configuration, ensure the "ScanPUPS" value is set to 1.
+If the "ScanPUPS" is set to 0, this is a finding.</check-content></check></Rule></Group><Group id="V-42976"><title>AV-MOVE-OSS-009</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55705r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-OSS-009</version><title>The McAfee MOVE AV [Multi-Platform] Offload Scan Server General policy Scan Settings must be configured to scan for MIME-encoded files.</title><description>&lt;VulnDiscussion&gt;Multipurpose Internet Mail Extensions (MIME) encoded files can be crafted to hide a malicious payload. When the MIME encoded file is presented to software that decodes the MIME encoded files, such as an email client, the malware is released. Scanning these files as part of the regularly scheduled scans tasks will mitigate this risk.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48556r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the Scan Settings tab, place a check in the "Scan MIME files: Enable scanning for MIME-encoded files." check box.
+
+Click Save.</fixtext><fix id="F-48556r1_fix" /><check system="C-49152r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the Scan Settings tab, ensure the "Scan MIME files:" "Enable scanning for MIME-encoded files." check box is selected.
+
+If the "Enable scanning for MIME-encoded files." check box is not selected, this is a finding.
+
+On the system designated as the McAfee MOVE Offload Scan Server, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee MOVE AV Server software has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+From the displayed configuration, ensure the "ScanMIMEFiles" value is set to 1.
+If the "ScanMIMEFiles" is set to 0, this is a finding.</check-content></check></Rule></Group><Group id="V-42977"><title>AV-MOVE-OSS-010</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55706r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-OSS-010</version><title>The McAfee MOVE AV [Multi-Platform] Offload Scan Server General policy Scan Settings must be configured to use McAfee Global Threat Intelligence file reputation, with a sensitivity level of Medium or higher.</title><description>&lt;VulnDiscussion&gt;Anti-virus software vendors use collective intelligence from sensors and cross-vector intelligence from web, email, and network threats to compile scores that reflect the likelihood of whether a file in question is malware. The collective intelligence is constantly being updated, more frequently than the typical daily anti-virus signature files. With File Reputation lookup, a more real-time response to potential malicious code is realized than with the local-running anti-virus software, since by querying the cloud-based database when a file appears to be suspicious, up-to-the-minute intelligence is provided. This type of protection reduces the threat protection time period from days to milliseconds, increases malware detection rates, and reduces downtime and remediation costs associated with malware attacks. Using File Reputation lookup is mandated by US CYBERCOM on DoD systems.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48558r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the Scan Settings Tab, click on the dropdown selection for the "McAfee Global Threat Intelligence file reputation:" setting and set the Sensitivity Level to Medium, or higher.
+
+Click Save.</fixtext><fix id="F-48558r1_fix" /><check system="C-49153r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>NOTE: For systems on the SIPRnet, this check is Not Applicable.
+
+From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the Scan Settings Tab, ensure the "McAfee Global Threat Intelligence file reputation:" setting is set to a Sensitivity Level of Medium, or higher.
+
+If the "McAfee Global Threat Intelligence file reputation:" setting is not set to a Sensitivity Level of Medium, or higher, this is a finding.
+
+On the system designated as the McAfee MOVE Offload Scan Server, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee MOVE AV Server software has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+From the displayed configuration, ensure the "GTILevel" value is set to 3 or more.
+If the "GTILevel" is set to less than 3, this is a finding.</check-content></check></Rule></Group><Group id="V-42978"><title>AV-MOVE-OSS-011</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55707r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-OSS-011</version><title>The McAfee MOVE AV [Multi-Platform] Offload Scan Server General policy alerts must be configured to report all events to the Windows Event Log.</title><description>&lt;VulnDiscussion&gt;Forensic identification is the practice of identifying infected hosts by looking for evidence of recent infections. The evidence may be very recent (only a few minutes old) or not so recent (hours or days old); the older the information is, the less accurate it is likely to be. The most obvious sources of evidence are those that are designed to identify malware activity, such as anti-virus software, content filtering (e.g., anti-spam measures), IPS, and SIEM technologies. The logs of security applications might contain detailed records of suspicious activity, and might also indicate whether a security compromise occurred or was prevented.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001489</ident><fixtext fixref="F-48559r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the Alerts tab, place a check in the "Offload Scan Server events reported to the Windows Event Log." check box.
+
+Click Save.</fixtext><fix id="F-48559r1_fix" /><check system="C-49154r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the Alerts tab, ensure the "Alerts:"  "Offload Scan Server events reported to the Windows Event Log." check box is selected.
+
+If the "Offload Scan Server events reported to the Windows Event Log." check box is not selected, this is a finding.
+
+On the system designated as the McAfee MOVE Offload Scan Server, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee MOVE AV Server software has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+From the displayed configuration, ensure the "EventSink" value is set to 2 (Events reported to the Windows Event Log) or 6 (Events reported to both the Windows Event Log and the ePO Server).
+If the "EventSink" is set to 0 or 4, this is a finding.</check-content></check></Rule></Group><Group id="V-42979"><title>AV-MOVE-OSS-012</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55708r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-OSS-012</version><title>The McAfee MOVE AV [Multi-Platform] Offload Scan Server General policy alerts must be configured to send all events to the HBSS ePO server.</title><description>&lt;VulnDiscussion&gt;Organizations should strive to detect and validate malware incidents rapidly to minimize the number of infected hosts and the amount of damage the organization sustains. Recommended actions include analyzing any suspected malware incident and validating that malware is the cause. This includes identifying characteristics of the malware activity by examining detection sources, such as anti-virus software, intrusion prevention systems, and security information and event management (SIEM) technologies and identifying which hosts are infected by the malware, so the hosts can undergo the appropriate containment, eradication, and recovery actions. By sending all events to a central location, the events can be correlated to determine extent of infection.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001489</ident><fixtext fixref="F-48560r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the Alerts tab, place a check in the "Alerts: Offload Scan Server events are sent to ePolicy Orchestrator." check box.
+
+Click Save.</fixtext><fix id="F-48560r1_fix" /><check system="C-49155r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the Alerts tab, ensure the "Alerts:" "Offload Scan Server events are sent to ePolicy Orchestrator." check box is selected.
+
+If the "Offload Scan Server events are sent to ePolicy Orchestrator." check box is not selected, this is a finding
+
+On the system designated as the McAfee MOVE Offload Scan Server, access a cmd window, running as administrator.
+Navigate to the path to which the McAfee MOVE AV Server software has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server).
+
+Execute the following command:
+mvadm config show &lt;enter&gt;
+
+From the displayed configuration, ensure the "EventSink" value is set to 4 (Events reported to the ePO Server) or 6 (Events reported to both the Windows Event Log and the ePO Server).
+If the "EventSink" is set to 0 or 2, this is a finding.</check-content></check></Rule></Group><Group id="V-42981"><title>AV-MOVE-OSS-013</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55710r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-OSS-013</version><title>The McAfee MOVE AV [Multi-Platform] Offload Scan Server General policy On-Demand Scan must be configured with On-Demand scanning enabled.</title><description>&lt;VulnDiscussion&gt;Anti-virus software is the most commonly used technical control for malware threat mitigation. Anti-virus software on hosts should be configured to scan all hard drives and folders regularly to identify any file system infections and to scan any removable media, if applicable, before media is inserted into the system. Not scheduling a regular scan of the hard drives of a system and/or not configuring the scan to scan all files and running processes introduces a higher risk of threats going undetected.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001241</ident><fixtext fixref="F-48561r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the On-Demand Scan tab, place a check in the "On-Demand Scanning: Enabled" check box.
+
+Click Save.</fixtext><fix id="F-48561r1_fix" /><check system="C-49156r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the On-Demand Scan tab, ensure the "On-Demand Scanning:" setting has a check in the "Enabled" check box.
+
+If the "On-Demand Scanning:" setting does not have a check in the "Enabled" check box, this is a finding.</check-content></check></Rule></Group><Group id="V-42982"><title>AV-MOVE-OSS-014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55711r1_rule" severity="medium" weight="10.0"><version>AV-MOVE-OSS-014</version><title>The McAfee MOVE AV [Multi-Platform] Offload Scan Server General policy On-Demand Scan Client Scan interval must be set to no more than every seven days.</title><description>&lt;VulnDiscussion&gt;Anti-virus software is the mostly commonly used technical control for malware threat mitigation. Anti-virus software on hosts should be configured to scan all hard drives and folders regularly to identify any file system infections and to scan any removable media, if applicable, before media is inserted into the system. Not scheduling a regular scan of the hard drives of a system and/or not configuring the scan to scan all files and running processes introduces a higher risk of threats going undetected.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001241</ident><fixtext fixref="F-48562r1_fix">From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties.
+
+On the On-Demand Scan tab, enter a value in the "On-Demand Client Scan interval (days):" setting representing a frequency of every seven days, or less.
+
+Click on Save.</fixtext><fix id="F-48562r1_fix" /><check system="C-49157r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select MOVE AV [Multi-Platform] Offload Scan Server 2.x.x. Click on the MOVE AV [Multi-Platform] Offload Scan Server policy to open the properties. 
+
+On the On-Demand Scan tab, ensure the "On-Demand Client Scan interval (days):" setting is configured for 7 or less.
+
+If the "On-Demand Client Scan interval (days):" setting is not configured to 7 or less, this is a finding.</check-content></check></Rule></Group><Group id="V-42983"><title>AV-MOVE-OSS-015</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55712r1_rule" severity="high" weight="10.0"><version>AV-MOVE-OSS-015</version><title>The McAfee VirusScan Enterprise Access Protection rules must be used for self-protection of the files and folder of Offload Scan Server configuration.</title><description>&lt;VulnDiscussion&gt;The VirusScan Enterprise Access Protection rules will defend files, services, and registry keys on the Offload Scan Server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48563r1_fix">The McAfee MOVE AV [Multi-Platform] Offload Scan Server does not have a built-in protection mechanism. In order to protect the McAfee MOVE AV [Multi-Platform] Offload Scan Server's files, services, and registry keys, the McAfee VirusScan Enterprise Access Protection features are used.
+
+From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select VirusScan Enterprise 8.8.x. Click on the Access Protection Policies policy to open the properties. 
+
+In the "Access protection rules:" settings, under "Categories", click to select the "User-defined Rules" and click on "New".
+
+Choose "File/Folder Blocking Rule" to create the rule identified as the File protection rule. Specify an appropriate Rule name: (i.e., McAfee MOVE OSS File and Folder Protection).
+
+Enter "mvserver.exe" under the "Processes to exclude:" section. 
+
+Enter the path to which the McAfee MOVE OSS has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server\**) in the "File or folder name to block:" section.
+
+Select the "Write access to files", "New files being created", and "Files being deleted" under the "File actions to prevent:" section. Click OK.
+
+After rule is created, select the "Block" and "Report" check boxes.
+
+Click Save.</fixtext><fix id="F-48563r1_fix" /><check system="C-49158r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>The McAfee MOVE AV [Multi-Platform] Offload Scan Server does not have a built-in protection mechanism. In order to protect the McAfee MOVE AV [Multi-Platform] Offload Scan Server's files, services, and registry keys, the McAfee VirusScan Enterprise Access Protection features are used.
+
+From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select VirusScan Enterprise 8.8.x. Click on the Access Protection Policies policy to open the properties. 
+
+In the "Access protection rules:" settings, under "Categories", click to select the "User-defined Rules". 
+Under "Block/Report/Rules", ensure rules are configured for McAfee MOVE OSS protection. 
+If multiple User-defined rules are created, consult with the System Administration to determine the rules for the purpose of this requirement.
+
+For the File/Folder Access Protection Rule created to protect the MOVE AV Server folder, ensure both the Block and Report check boxes are selected.
+Select the rule, and click on Edit.
+
+Ensure "mvserver.exe" is reflected under the "Processes to exclude:" section. 
+Ensure the path to which the McAfee MOVE Offload Scan Server has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server\**) is reflected in the "File or folder name to block:" section.
+Ensure "Write access to files", "New files being created", and "Files being deleted" are selected under the "File actions to prevent:" section.
+
+If a File/Folder Blocking Rule does not exist to protect the path to which the McAfee MOVE OSS Server has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server), this is a finding. 
+
+On the system designated as the McAfee MOVE OSS Server, access the local McAfee VirusScan Enterprise Console.
+Under the Task column, select "Access Protection", right click and select "Properties".
+
+In the "Access protection rules:" settings, under "Categories", click to select the "User-defined Rules". 
+
+Under "Block/Report/Rules", ensure rules are configured for McAfee MOVE OSS protection. 
+If multiple User-defined rules are created, consult with the System Administration to determine the rules for the purpose of this requirement.
+
+For the File/Folder Access Protection Rule created to protect the MOVE AV Server folder, ensure both the Block and Report check boxes are selected.
+Select the rule, and click Edit.
+
+Ensure "mvserver.exe" is reflected under the "Processes to exclude:" section. 
+Ensure the path to which the McAfee MOVE Offload Scan Server has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server\**) is reflected in the "File or folder name to block:" section.
+Ensure "Write access to files", "New files being created", and "Files being deleted" are selected under the "File actions to prevent:" section.
+
+If a File/Folder Blocking Rule does not exist to protect the path to which the McAfee MOVE OSS Server has been installed (default is C:\Program Files (x86)\McAfee\MOVE AV Server), this is a finding.</check-content></check></Rule></Group><Group id="V-42986"><title>AV-MOVE-OSS-016</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-55715r1_rule" severity="high" weight="10.0"><version>AV-MOVE-OSS-016</version><title>The McAfee VirusScan Enterprise Access Protection rules must be used for self-protection of the registry keys of Offload Scan Server configuration.</title><description>&lt;VulnDiscussion&gt;The VirusScan Enterprise Access Protection rules will defend files, services, and registry keys on the Offload Scan Server.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>McAfee MOVE MultiPlatform Offload Scan Server 2.6</dc:subject><dc:identifier>2572</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001242</ident><fixtext fixref="F-48565r1_fix">The McAfee MOVE AV [Multi-Platform] Offload Scan Server does not have a built-in protection mechanism. In order to protect the McAfee MOVE AV ]Multi-Platform] Offload Scan Server's files, services, and registry keys, the McAfee VirusScan Enterprise Access Protection features are used.
+
+From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select VirusScan Enterprise 8.8.x. Click on the Access Protection Policies policy to open the properties. 
+
+In the "Access protection rules:" settings, under "Categories", click to select the "User-defined Rules" and click on "New".
+
+Click New to create each of the following three "Registry Blocking Rules:", naming each rule according to the protection they afford.
+
+"HKCCS/services/mvserver" identified as the "Registry Key or value to protect:", with "Write to key or value", "Create key or value", and "Delete key or value" selected under the "Registry actions to block:" section. Under the "Processes to exclude:", "mvserver.exe" should be reflected.
+
+"HKCCS/services/mvserver/Parameters" identified as the "Registry Key or value to protect:", with "Write to key or value", "Create key or value", and "Delete key or value" selected under the "Registry actions to block:" section. Under the "Processes to exclude:", "mvserver.exe" should be reflected.
+
+"HKCCS/services/mvserver/Parameters/ODS" identified as the "Registry Key or value to protect:", with "Write to key or value", "Create key or value", and "Delete key or value" selected under the "Registry actions to block:" section. Under the "Processes to exclude:", "mvserver.exe" should be reflected.
+
+After each of the above rules are created, select both the "Block" and "Report" check boxes.
+
+Click Save.</fixtext><fix id="F-48565r1_fix" /><check system="C-49159r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_McAfee_MOVE2_6_MultiPlatform_OSS.xml" /><check-content>The McAfee MOVE AV [Multi-Platform] Offload Scan Server does not have a built-in protection mechanism. In order to protect the McAfee MOVE AV ]Multi-Platform] Offload Scan Server's files, services, and registry keys, the McAfee VirusScan Enterprise Access Protection features are used.
+
+From the ePO server console System Tree, select the Systems tab, find and click on the asset representing the McAfee MOVE Offload Scan Server to open its properties, select Actions, select Agent, and select Modify Policies on a Single System. 
+
+From the product drop-down list, select VirusScan Enterprise 8.8.x. Click on the Access Protection Policies policy to open the properties. 
+
+In the "Access protection rules:" settings, under "Categories", click to select the "User-defined Rules". 
+
+Under "Block/Report/Rules", ensure three rules are configured for McAfee MOVE OSS registry key protection. 
+If multiple User-defined rules are created, consult with the System Administration to determine the rules for the purpose of this requirement.
+
+For each of the Access Protection Rules created to protect the McAfee MOVE OSS registry keys, ensure both the "Block" and "Report" check boxes are selected.
+
+There should be three individual Registry Blocking Rules, one for each of the following criteria:
+
+Ensure a Registry Access Protection Rule exists that has "HKCCS\services\mvserver" identified as the "Registry Key or value to protect:", with "Write to key or value", "Create key or value", and "Delete key or value" selected under the "Registry actions to block:" section. Under the "Processes to exclude:", "mvserver.exe" should be reflected.
+
+Ensure a Registry Access Protection Rule exists that has "HKCCS\services\mvserver\Parameters" identified as the "Registry Key or value to protect:", with "Write to key or value", "Create key or value", and "Delete key or value" selected under the "Registry actions to block:" section. Under the "Processes to exclude:", "mvserver.exe" should be reflected.
+
+Ensure a Registry Access Protection Rule exists that has "HKCCS\services\mvserver\Parameters\ODS" identified as the "Registry Key or value to protect:", with "Write to key or value", "Create key or value", and "Delete key or value" selected under the "Registry actions to block:" section. Under the "Processes to exclude:", "mvserver.exe" should be reflected.
+
+If three Registry Blocking Rules do not exist to protect each of the "HKCCS\services\mvserver", "HKCCS\services\mvserver\Parameters", and "HKCCS\services\mvserver\Parameters\ODS" registry keys and values, this is a finding. 
+
+On the system designated as the McAfee MOVE OSS Server, access the local McAfee VirusScan Enterprise Console.
+Under the Task column, select "Access Protection", right click and select "Properties".
+In the "Access protection rules:" settings, under "Categories", click to select the "User-defined Rules". 
+
+Under "Block/Report/Rules", ensure three rules are configured for McAfee MOVE OSS registry key protection. 
+If multiple User-defined rules are created, consult with the System Administration to determine the rules for the purpose of this requirement.
+
+For each of the Access Protection Rules created to protect the McAfee MOVE OSS registry keys, ensure both the "Block" and "Report" check boxes are selected.
+
+There should be three individual Registry Blocking Rules, one for each of the following criteria:
+
+Ensure a Registry Access Protection Rule exists that has "HKCCS\services\mvserver" identified as the "Registry Key or value to protect:", with "Write to key or value", "Create key or value", and "Delete key or value" selected under the "Registry actions to block:" section. Under the "Processes to exclude:", "mvserver.exe" should be reflected.
+
+Ensure a Registry Access Protection Rule exists that has "HKCCS\services\mvserver\Parameters" identified as the "Registry Key or value to protect:", with "Write to key or value", "Create key or value", and "Delete key or value" selected under the "Registry actions to block:" section. Under the "Processes to exclude:", "mvserver.exe" should be reflected.
+
+Ensure a Registry Access Protection Rule exists that has "HKCCS\services\mvserver\Parameters\ODS" identified as the "Registry Key or value to protect:", with "Write to key or value", "Create key or value", and "Delete key or value" selected under the "Registry actions to block:" section. Under the "Processes to exclude:", "mvserver.exe" should be reflected.
+
+If three Registry Blocking Rules do not exist to protect each of the "HKCCS\services\mvserver", "HKCCS\services\mvserver\Parameters", and "HKCCS\services\mvserver\Parameters\ODS" registry keys and values, this is a finding.</check-content></check></Rule></Group></Benchmark>

@@ -1,0 +1,38 @@
+<form name="form1" text="Cyber Security Tool Suite - applyPolicies Settings" clientSizeX="1024" clientSizeY="235" FormBorderStyle="fixedDialog">
+	<controls>
+		<control type="label" id="lblXccdf" name="lblXccdf" text="Path to XCCDF:" locationX="5" locationY="10" sizeX="100" sizeY="20" />
+		<control type="textBox" id="txtXccdf" name="txtXccdf" locationX="110" locationY="5" sizeX="280" sizeY="25"/>
+		<control type="button" id="btnXccdf" name="btnXccdf" locationX="395" locationY="5" sizeX="100" sizeY="20" text="Browse..." backColor="#dddddd"/>
+		
+		<control type="label" id="lblOval" name="lblOval" text="Path to OVAL:" locationX="5" locationY="35" sizeX="100" sizeY="20" />
+		<control type="textBox" id="txtOval" name="txtOval" locationX="110" locationY="30" sizeX="280" sizeY="25"/>
+		<control type="button" id="btnOval" name="btnOval" locationX="395" locationY="30" sizeX="100" sizeY="20" text="Browse..." backColor="#dddddd"/>
+		
+		<control type="label" id="lblProfile" name="lblProfile" text="Select a Profile:" locationX="5" locationY="60" sizeX="100" sizeY="20" />
+		<control type="comboBox" id="cboProfile" name="cboProfile" locationX="110" locationY="55" sizeX="385" sizeY="25" />
+		
+		<control type="label" id="lblDomainGpoUser" name="lblDomainGpoUser" text="User GPO:" locationX="5" locationY="85" sizeX="100" sizeY="20" />
+		<control type="comboBox" id="cboDomainGpoUser" name="cboDomainGpoUser" locationX="110" locationY="80" sizeX="385" sizeY="25" />
+		
+		<control type="label" id="lblDomainGpoMachine" name="lblDomainGpoMachine" text="Machine GPO:" locationX="5" locationY="110" sizeX="100" sizeY="20" />
+		<control type="comboBox" id="cboDomainGpoMachine" name="cboDomainGpoMachine" locationX="110" locationY="105" sizeX="385" sizeY="25" />
+
+		<control type="label" id="lblUserGpo" name="lblUserGpo" text="User GPO File:" locationX="5" locationY="135" sizeX="100" sizeY="20" />
+		<control type="textBox" id="txtUserGpo" name="txtUserGpo" locationX="110" locationY="130" sizeX="280" sizeY="25"/>
+		<control type="button" id="btnUserGpo" name="btnUserGpo" locationX="395" locationY="130" sizeX="100" sizeY="20" text="Browse..." backColor="#dddddd"/>
+		
+		<control type="label" id="lblMachineGpo" name="lblMachineGpo" text="Machine GPO File:" locationX="5" locationY="160" sizeX="100" sizeY="20" />
+		<control type="textBox" id="txtMachineGpo" name="txtMachineGpo" locationX="110" locationY="155" sizeX="280" sizeY="25"/>
+		<control type="button" id="btnMachineGpo" name="btnMachineGpo" locationX="395" locationY="155" sizeX="100" sizeY="20" text="Browse..." backColor="#dddddd"/>
+		
+		<control type="button" id="btnAddPol" name="btnAddPol"  locationX="500" locationY="75" sizeX="25" sizeY="25" text="->" backColor="#dddddd"/>
+		<control type="button" id="btnDelPol" name="btnDelPol"  locationX="500" locationY="125" sizeX="25" sizeY="25" text="X" backColor="#dddddd"/>
+		<control type="listView" id="lstSelPol" name="lstSelPol" locationX="530" locationY="5" sizeX="490" sizeY="225" view="details">
+			<column>#</column>
+			<column>Type</column>
+			<column>Path</column>
+		</control>
+
+		<control type="button" id="btnExecute" name="btnExecute" text="Execute" locationX="5" locationY="180" sizeX="490" sizeY="50" backColor="#FFCCCCCC"/>
+	</controls>
+</form>

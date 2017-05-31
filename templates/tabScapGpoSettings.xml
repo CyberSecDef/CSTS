@@ -1,0 +1,40 @@
+<form>
+	<controls>
+				
+		<control type="label" id="tab4lblXccdf" name="tab4lblXccdf" text="Path to XCCDF:" locationX="5" locationY="10" sizeX="100" sizeY="20" />
+		<control type="textBox" id="tab4txtXccdf" name="tab4txtXccdf" locationX="110" locationY="5" sizeX="280" sizeY="25"/>
+		<control type="button" id="tab4btnXccdf" name="tab4btnXccdf" locationX="395" locationY="5" sizeX="100" sizeY="20" text="Browse..." backColor="#dddddd"/>
+		
+		<control type="label" id="tab4lblOval" name="tab4lblOval" text="Path to OVAL:" locationX="5" locationY="35" sizeX="100" sizeY="20" />
+		<control type="textBox" id="tab4txtOval" name="tab4txtOval" locationX="110" locationY="30" sizeX="280" sizeY="25"/>
+		<control type="button" id="tab4btnOval" name="tab4btnOval" locationX="395" locationY="30" sizeX="100" sizeY="20" text="Browse..." backColor="#dddddd"/>
+		
+		<control type="label" id="tab4lblProfile" name="tab4lblProfile" text="Select a Profile:" locationX="5" locationY="60" sizeX="100" sizeY="20" />
+		<control type="comboBox" id="tab4cboProfile" name="tab4cboProfile" locationX="110" locationY="55" sizeX="385" sizeY="25" />
+		
+		<control type="label" id="tab4lblDomainGpoUser" name="tab4lblDomainGpoUser" text="User GPO:" locationX="5" locationY="85" sizeX="100" sizeY="20" />
+		<control type="comboBox" id="tab4cboDomainGpoUser" name="tab4cboDomainGpoUser" locationX="110" locationY="80" sizeX="385" sizeY="25" />
+		
+		<control type="label" id="tab4lblDomainGpoMachine" name="tab4lblDomainGpoMachine" text="Machine GPO:" locationX="5" locationY="110" sizeX="100" sizeY="20" />
+		<control type="comboBox" id="tab4cboDomainGpoMachine" name="tab4cboDomainGpoMachine" locationX="110" locationY="105" sizeX="385" sizeY="25" />
+
+		<control type="label" id="tab4lblUserGpo" name="tab4lblUserGpo" text="User GPO File:" locationX="5" locationY="135" sizeX="100" sizeY="20" />
+		<control type="textBox" id="tab4txtUserGpo" name="tab4txtUserGpo" locationX="110" locationY="130" sizeX="280" sizeY="25"/>
+		<control type="button" id="tab4btnUserGpo" name="tab4btnUserGpo" locationX="395" locationY="130" sizeX="100" sizeY="20" text="Browse..." backColor="#dddddd"/>
+		
+		<control type="label" id="tab4lblMachineGpo" name="tab4lblMachineGpo" text="Machine GPO File:" locationX="5" locationY="160" sizeX="100" sizeY="20" />
+		<control type="textBox" id="tab4txtMachineGpo" name="tab4txtMachineGpo" locationX="110" locationY="155" sizeX="280" sizeY="25"/>
+		<control type="button" id="tab4btnMachineGpo" name="tab4btnMachineGpo" locationX="395" locationY="155" sizeX="100" sizeY="20" text="Browse..." backColor="#dddddd"/>
+		
+		<control type="button" id="tab4btnAddPol" name="tab4btnAddPol"  locationX="500" locationY="5" sizeX="75" sizeY="80" text="ADD" backColor="#dddddd"/>
+		<control type="button" id="tab4btnExec" name="tab4btnExec"  locationX="500" locationY="95" sizeX="75" sizeY="80" text="Execute" backColor="#dddddd"/>
+		<control type="listView" id="tab4lstSelPol" name="tab4lstSelPol" locationX="5" locationY="185" sizeX="570" sizeY="225" view="details">
+			<column>#</column>
+			<column>Type</column>
+			<column>Path</column>
+		</control>
+
+		
+		
+	</controls>
+</form>

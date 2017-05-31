@@ -1,0 +1,11 @@
+<form name="form1" text="Pixel Color Data" clientSizeX="185" clientSizeY="80" FormBorderStyle="FixedToolWindow" backColor="#ffffff">
+	<controls>
+		<control type="button" id="btnShowColor" name="btnShowColor" text=" " locationX="5" locationY="5" sizeX="40" sizeY="70" />
+		
+		<control type="label" id="lblHex" name="lblHex" text="heX:" locationX="50" locationY="5" sizeX="150" sizeY="15" />
+		<control type="label" id="lblHtml" name="lblHtml" text="Html:" locationX="50" locationY="20" sizeX="150" sizeY="15" />
+		<control type="label" id="lblRGB" name="lblRGB" text="Rgb:" locationX="50" locationY="35" sizeX="150" sizeY="15" />
+		<control type="label" id="lblCMYK" name="lblCMYK" text="Cymk:" locationX="50" locationY="50" sizeX="150" sizeY="15" />
+		<control type="label" id="lblHSV" name="lblHSV" text="hSv:" locationX="50" locationY="65" sizeX="150" sizeY="15" />
+	</controls>
+</form>

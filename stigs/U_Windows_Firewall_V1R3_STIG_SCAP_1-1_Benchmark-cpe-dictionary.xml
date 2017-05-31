@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cpe-list xmlns="http://cpe.mitre.org/dictionary/2.0" xmlns:meta="http://scap.nist.gov/schema/cpe-dictionary-metadata/0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd">
+  <cpe-item name="cpe:/o:microsoft:windows_server_2008">
+    <title xml:lang="en-US">Microsoft Windows Server 2008</title>
+    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-cpe-oval.xml">oval:mil.disa.fso.windows:def:1061</check>
+  </cpe-item>
+  <cpe-item name="cpe:/o:microsoft:windows_server_2008:r2">
+    <title xml:lang="en-US">Microsoft Windows Server 2008 R2</title>
+    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-cpe-oval.xml">oval:mil.disa.fso.windows:def:3174</check>
+  </cpe-item>
+  <cpe-item name="cpe:/o:microsoft:windows_7">
+    <title xml:lang="en-US">Microsoft Windows 7</title>
+    <notes xml:lang="en-US">
+      <note>This CPE Name represents version 6.1.7600 of the Windows OS</note>
+    </notes>
+    <!--**CORRECTION** Added check for Windows 7.-->
+    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-cpe-oval.xml">oval:mil.disa.fso.windows:def:3892</check>
+    <meta:item-metadata modification-date="2010-03-09T12:05:27.740-05:00" status="DRAFT" nvd-id="100461" />
+  </cpe-item>
+  <cpe-item name="cpe:/o:microsoft:windows_vista">
+    <title>Microsoft Windows Vista</title>
+    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-cpe-oval.xml">oval:org.mitre.oval:def:228</check>
+  </cpe-item>
+  <cpe-item name="cpe:/o:microsoft:windows_server_2012:-">
+    <title>Microsoft Windows Server 2012</title>
+    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-cpe-oval.xml">oval:mil.disa.fso.windows:def:4398</check>
+  </cpe-item>
+  <cpe-item name="cpe:/o:microsoft:windows_server_2012:r2">
+    <title>Microsoft Windows Server 2012</title>
+    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-cpe-oval.xml">oval:mil.disa.fso.windows:def:4968</check>
+  </cpe-item>
+  <cpe-item name="cpe:/o:microsoft:windows_8">
+    <title>Microsoft Windows 8</title>
+    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-cpe-oval.xml">oval:mil.disa.fso.windows:def:3930</check>
+  </cpe-item>
+  <cpe-item name="cpe:/o:microsoft:windows_8.1">
+    <title>Microsoft Windows 8</title>
+    <check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="U_Windows_Firewall_V1R3_STIG_SCAP_1-1_Benchmark-cpe-oval.xml">oval:mil.disa.fso.windows:def:4969</check>
+  </cpe-item>
+</cpe-list>
+
