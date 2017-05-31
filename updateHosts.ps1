@@ -1,4 +1,4 @@
-<#
+<# 
 .SYNOPSIS
 	This is a script that will execute updates on a list of hosts
 .DESCRIPTION

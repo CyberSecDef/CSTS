@@ -16,7 +16,7 @@
 .EXAMPLE    
 	C:\PS>.\restratSystem.ps1 -computers "hostname1,hostname2" -type ForcedReboot
 	This example will attempt to restart the computers entered into the command line
-.INPUTS
+.INPUTS 
 	There are no inputs that can be directed to this script
 .OUTPUTS  
 	All outputs are sent to the console and logged in the log folder

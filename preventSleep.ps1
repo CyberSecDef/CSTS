@@ -9,7 +9,7 @@
 	A comma separated list of hostnames
 .PARAMETER OU
 	An Organizational Unit in Active Directory to pull host names from
-.EXAMPLE
+.EXAMPLE 
 	C:\PS>.\preventSleep.ps1 -computers "hostname1,hostname2" 
 	This example will attempt to prevent sleep on the computers entered into the command line
 .INPUTS

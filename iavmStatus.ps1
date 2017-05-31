@@ -11,7 +11,7 @@
 	An Organizational Unit in Active Directory to pull host names from
 .PARAMETER IAVM
 	The KB###### to be scanned for
-.EXAMPLE   
+.EXAMPLE    
 	C:\PS>.\iavmStatus.ps1 -computers "ws184894-q03,ws179702-q20" -IAVM "KB982018,KB2979570"
 	This example will attempt to scan the computers entered into the command line for the two hotfixes
 .INPUTS

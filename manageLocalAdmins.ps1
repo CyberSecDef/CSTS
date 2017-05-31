@@ -15,7 +15,7 @@
 	Create a new administrator with the specified username
 .PARAMETER newPass
 	Create a new administrator with the specified password
-INPUTS
+INPUTS 
 	There are no inputs that can be directed to this script
 .OUTPUTS  
 	All outputs are sent to the console and logged in the log folder

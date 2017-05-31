@@ -1,4 +1,4 @@
-<# 
+<#  
 .SYNOPSIS
 	This is a script will attempt to fix issues with dot net and certificate issues which prevent windows udpate from installing updates.  
 .DESCRIPTION

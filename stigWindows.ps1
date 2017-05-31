@@ -1,4 +1,4 @@
-<#
+<# 
 .SYNOPSIS
 	This is a script that will apply the Non-GPO settings to STIG the asset.
 .DESCRIPTION

@@ -1,4 +1,4 @@
-<# 
+<#  
 .SYNOPSIS
 	This script will clean up the history of usb devices connected to a selected machine
 .DESCRIPTION
