@@ -66,11 +66,14 @@ $vram2AcasScanPolicyClass = new-PSClass vram2AcasScanPolicy{
 				
 				$doc = $private.ie.Document
 				if($doc -ne $null -and $doc -ne ''){
+				
 					$d++
 					
-					$pluginName = $doc.documentElement.getElementsByClassName('giga') | ? { $_.tagName -eq 'H1' } | select -expand innerText
-					$pluginFamily = (($doc.documentElement.getElementsByTagName('p') | ?  { $_.innerHtml -like '*strong*' } | ? { $_.innerHtml -like '*Family*' } | select -expand innerText ) -replace 'family:','' ).trim()
-					$pluginId = ((($doc.documentElement.getElementsByTagName('p') | ?  { $_.innerHtml -like '*strong*' } | ? { $_.innerHtml -like '*Nessus Plugin ID:*' } | select -expand innerText ) -replace 'Nessus Plugin ID:','' ) -replace '\(\)','' ).trim()
+					# $pluginName = ($doc.documentElement.getElementsByClassName('plugin-single') | select -first 1 ).children | ? { $_.tagName -eq 'H1' } | select -first 1 | select -expand innerText
+					$pluginName = $($audit.'Title')
+					$pluginFamily = (($doc.documentElement.getElementsByTagName('p') | ?  { $_.innerHtml -like '*strong*' } | ? { $_.innerHtml -like '*Family*' } | select -expand innerText ) -replace 'family:','') 
+					
+					$pluginId = $($audit.'Nessus ID')
 					
 					$pluginItem = $private.scanPolicy.createElement('PluginItem')
 
@@ -99,7 +102,7 @@ $vram2AcasScanPolicyClass = new-PSClass vram2AcasScanPolicy{
 						$p.innerText = 'mixed'
 					}
 					
-					$uiClass.writeColor( "$($uiClass.STAT_WAIT) Analysing Plugin #yellow#$($audit.'Nessus ID')# : #green#$($pluginName)#")
+					$uiClass.writeColor( "$($uiClass.STAT_WAIT) Analysing Plugin #yellow#$($pluginId)# : $($pluginFamily) - #green#$($pluginName)#")
 					
 					if ( ($d % 50) -eq 0){
 						$uiClass.writeColor("$($uiClass.STAT_WAIT) Saving Current Policy for in case of error...")

@@ -29,6 +29,9 @@ OU - a string specifying an Active Directory OU container for the hosts that nee
  
 You can also execute
 PS c:\> get-help .\scriptname.ps1 to view the internal documentation.
+-------------------------------------------------------------------------------
+.\acheievement.ps1
+
 
 -------------------------------------------------------------------------------
 .\applyPolicies.ps1
@@ -54,7 +57,7 @@ Example:
 
 -------------------------------------------------------------------------------
 .\archiveEventlogs.ps1
-Archives event logs into a  common folder
+
 
 -------------------------------------------------------------------------------
 .\cleanScapFolder.ps1
@@ -79,6 +82,20 @@ Parameters:
 	OU - An Organizational Unit in Active Directory to pull host names from
 	test - If present, the script will only display what it would have deleted
 	reboot - If present, the system will be rebooted after the updates are made.
+
+-------------------------------------------------------------------------------
+.\console.ps1
+[Incomplete script!] This is a template for new scripts
+
+Parameters:
+	computerName - 
+	port - 
+	username - 
+	password - 
+
+Example:
+	.\template.ps1
+	This will bring up the new script
 
 -------------------------------------------------------------------------------
 .\fileVerification.ps1
@@ -155,6 +172,10 @@ Example:
 	This example will attempt to scan the computers entered into the command line for the two hotfixes
 
 -------------------------------------------------------------------------------
+.\imagePatcher.ps1
+
+
+-------------------------------------------------------------------------------
 .\manageLocalAdmins.ps1
 This is a script that will manage the local admins on a machine
 
@@ -180,6 +201,25 @@ Parameters:
 Example:
 	.\mergeNessus.ps1 -scanPath ".\scans\"
 	This example will merge all the nessus files in the scans directory
+
+-------------------------------------------------------------------------------
+.\mineSweeper.ps1
+This is a mine sweeper app
+
+Parameters:
+	side - The number of cells per side, defaults to 16
+	mines - The number of mines to find, defaults to 40
+	easy - Sets the game to be an 8x8 grid, with 10 mines to find
+	medium - 
+	hard - Sets the game to be an 24x24 grid, with 99 mines to find
+	expert - Sets the game to be an 32x32 grid, with 150 mines to find
+
+Examples:
+	.\minesweeper.ps1
+	This example will load the game
+
+	.\minesweeper.ps1 -hard
+	This example will load the hard game
 
 -------------------------------------------------------------------------------
 .\missingScans.ps1
@@ -209,7 +249,7 @@ Example:
 
 -------------------------------------------------------------------------------
 .\parseEventlogs.ps1
-Parses the event logs for the event id's NSA says are most important
+
 
 -------------------------------------------------------------------------------
 .\pixelData.ps1
@@ -337,6 +377,10 @@ Example:
 	This will wipe the c: drive with random data
 
 -------------------------------------------------------------------------------
+.\server.ps1
+
+
+-------------------------------------------------------------------------------
 .\serviceQuotes.ps1
 This is a script that will analyze a list of hosts and ensure all services with spaces are properly quoted
 
@@ -349,6 +393,17 @@ Parameters:
 Example:
 	.\serviceQuotes.ps1 -computers "host1,host2,host3"
 	This example will udpate the hosts found in the hosts parameter
+
+-------------------------------------------------------------------------------
+.\setup.ps1
+[Incomplete script!] This is a template for new scripts
+
+Parameter:
+	reload - 
+
+Example:
+	.\template.ps1
+	This will bring up the new script
 
 -------------------------------------------------------------------------------
 .\setWallpaper.ps1
@@ -416,6 +471,15 @@ Example:
 	This will bring up the new script
 
 -------------------------------------------------------------------------------
+.\template.ps1
+[Incomplete script!] This is a template for new scripts
+
+
+Example:
+	.\template.ps1
+	This will bring up the new script
+
+-------------------------------------------------------------------------------
 .\updateHosts.ps1
 This is a script that will execute updates on a list of hosts
 
@@ -455,7 +519,7 @@ Parameters:
 	newFile - The new, empty Stig file (.ckl) which is to receive the comments, etc.
 
 Example:
-	.\CopyToNewSTIG.ps1 -oldFile C:\Users\john.doe\Desktop\uRDTE_Application_Security_and_Development_STIG_V3R9.ckl -newFile C:\Users\john.doe\Desktop\uRDTE_Application_Security_and_Development_STIG_V3R10.ckl
+	.\CopyToNewSTIG.ps1 -oldFile C:\Users\john.laska\Desktop\uRDTE_Application_Security_and_Development_STIG_V3R9.ckl -newFile C:\Users\john.laska\Desktop\uRDTE_Application_Security_and_Development_STIG_V3R10.ckl
 	This would copy all of the data from the file for V3R9 to the file for V3R10
 
 -------------------------------------------------------------------------------

@@ -260,6 +260,11 @@ $SW2StigClass = new-PSClass Software2Stig{
 								$this.addStig($remoteHost,"Application Security and Development")
 							}
 							
+							if($keyValue -like '*Java 8*' ){
+								$uiClass.writeColor( "$($uiClass.STAT_OK) #yellow#$($remoteHost)# is running #green#$keyValue#" )
+								$this.addStig($remoteHost,"JRE 8")
+							}
+							
 							if($keyValue -like '*Java 7*' ){
 								$uiClass.writeColor( "$($uiClass.STAT_OK) #yellow#$($remoteHost)# is running #green#$keyValue#" )
 								$this.addStig($remoteHost,"JRE 7")
@@ -299,6 +304,9 @@ $SW2StigClass = new-PSClass Software2Stig{
 								if($keyValue -like '*2013*'){
 									$this.addStig($remoteHost,"Ms Office 2013")
 								}
+								if($keyValue -like '*2016*'){
+									$this.addStig($remoteHost,"Ms Office 2016")
+								}
 							}
 							
 							if($keyValue -like 'Microsoft Sharepoint*'){
@@ -316,8 +324,6 @@ $SW2StigClass = new-PSClass Software2Stig{
 								$this.addStig($remoteHost, "Virtual Machine")
 							}
 							
-							
-
 							if($keyValue -like '*SQL Server*'){
 								$uiClass.writeColor( "$($uiClass.STAT_OK) #yellow#$($remoteHost)# is running #green#$($keyValue)#" )
 								if($keyValue -like '*SQL Server 2012*'){
@@ -431,10 +437,12 @@ $SW2StigClass = new-PSClass Software2Stig{
 			switch($true){
 				($winVer -like 'Microsoft Windows 7*') { $this.addStig($remoteHost, "Windows 7");  }
 				($winVer -like 'Microsoft Windows 8*') { $this.addStig($remoteHost, "Windows 8"); }
+				($winVer -like 'Microsoft Windows 10*') { $this.addStig($remoteHost, "Windows 10"); }
 				($winVer -like '*2003*' -and $winVer -notlike '*R2*') { $this.addStig($remoteHost, "Windows 2003 MS");}
 				($winVer -like '*2008*' -and $winVer -notlike '*R2*') { $this.addStig($remoteHost, "Windows 2008");}
 				($winVer -like '*2008 R2*') { $this.addStig($remoteHost, "Windows 2008R2"); }
-				($winVer -like '2012*') { $this.addStig($remoteHost, "Windows Server 2012"); }
+				($winVer -like '2012*' -and $winVer -notlike '*R2*') { $this.addStig($remoteHost, "Windows Server 2012"); }
+				($winVer -like '2012 R2*' ) { $this.addStig($remoteHost, "Windows Server 2012"); }
 				($winVer -like 'XP*') { $this.addStig($remoteHost, "Windows XP"); }
 				($winVer -like 'Vista*') { $this.addStig($remoteHost, "Windows Vista"); }
 				

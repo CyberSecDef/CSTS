@@ -16,7 +16,7 @@
 #>
 clear;
 #generate naturaldocs
-& "$pwd\bin\NaturalDocs\NaturalDocs.exe" -i "$pwd" -p "$pwd\docs\"  -o html "$pwd\docs\" -xi "$pwd\results" -xi "$pwd\stigs" -xi "$pwd\wim" -xi "$pwd\wsus"
+#& "$pwd\bin\NaturalDocs\NaturalDocs.exe" -i "$pwd" -p "$pwd\docs\"  -o html "$pwd\docs\" -xi "$pwd\results" -xi "$pwd\stigs" -xi "$pwd\wim" -xi "$pwd\wsus"
 
 #generate readme file in docs directory
 $(@"
@@ -84,4 +84,4 @@ ls "*.ps1*" | sort Name | % {
 		""
 	}
 }
-) | set-content "$pwd\docs\README.txt"
+) | set-content "$pwd\README.md"

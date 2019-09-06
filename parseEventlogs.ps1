@@ -106,43 +106,43 @@ $ParseEventLogClass = new-PSClass ParseEventLog{
 	method -private parseExternalMediaDetection{
 		$uiClass.writeColor("$($uiClass.STAT_WAIT) Parsing #green#$($private.archiveLocation)# for #yellow#External Media Detection#")
 		$private.processLog("External Media Detection", @{Id=43;Level=4;Logname='Microsoft-Windows-USBUSBHUB3-Analytic';ProviderName="Microsoft-Windows-USBUSBHUB3";} )
-		$private.processLog("External Media Detection", @{Id=400,410;Level=4;Logname='Microsoft-Windows-Kernel-PnP/Device Configuration';ProviderName="Microsoft-Windows-Kernel-PnP";} )
+		$private.processLog("External Media Detection", @{Id=@(400,410);Level=4;Logname='Microsoft-Windows-Kernel-PnP/Device Configuration';ProviderName="Microsoft-Windows-Kernel-PnP";} )
 	}
 	
 	method -private parseMobileDeviceActivities{
 		
 		$uiClass.writeColor("$($uiClass.STAT_WAIT) Parsing #green#$($private.archiveLocation)# for #yellow#Mobile Device Activities#")
-		$private.processLog("Mobile Device Activities", @{Id=10000,10001;Level=4;Logname='Microsoft-Windows-NetworkProfile/Operational';ProviderName="Microsoft-Windows-NetworkProfile";} )
-		$private.processLog("Mobile Device Activities",  @{Id=8000,8011,8001,8003,11000,11001,11002,11004,11005,11010,11006,8002,12011,12012,12013;Level=2,4;Logname='Microsoft-Windows-WLANAutoConfig/Operational';ProviderName="Microsoft-Windows-WLANAutoConfig";} )
+		$private.processLog("Mobile Device Activities", @{Id=@(10000,10001);Level=4;Logname='Microsoft-Windows-NetworkProfile/Operational';ProviderName="Microsoft-Windows-NetworkProfile";} )
+		$private.processLog("Mobile Device Activities",  @{Id=@(8000,8011,8001,8003,11000,11001,11002,11004,11005,11010,11006,8002,12011,12012,12013);Level=@(2,4);Logname='Microsoft-Windows-WLANAutoConfig/Operational';ProviderName="Microsoft-Windows-WLANAutoConfig";} )
 		
 	}
 	
 	method -private parseGPOErrors{
 		$uiClass.writeColor("$($uiClass.STAT_WAIT) Parsing #green#$($private.archiveLocation)# for #yellow#Group Policy Errors#")
-		$private.processLog("GPO Errors", @{Id=1125,1127,1129;Level=2;Logname='System';ProviderName="Microsoft-Windows-GroupPolicy";} )
+		$private.processLog("GPO Errors", @{Id=@(1125,1127,1129);Level=2;Logname='System';ProviderName="Microsoft-Windows-GroupPolicy";} )
 	}
 	
 	method -private parseKernelDrivers{
 		$uiClass.writeColor("$($uiClass.STAT_WAIT) Parsing #green#$($private.archiveLocation)# for #yellow#Kernel Driver Signing#")
-		$private.processLog("Kernel Drivers",  @{Id=5038,6281;Level=4;Logname='Security';ProviderName="Microsoft-Windows-Security-Auditing";} )
-		$private.processLog("Kernel Drivers", @{Id=3001,3002,3003,3004,3010,3023;Logname='Microsoft-Windows-CodeIntegrity/Operational';ProviderName="Microsoft-Windows-CodeIntegrity";} )
-		$private.processLog("Kernel Drivers", @{Id=219;Level=3;Logname='System';ProviderName="Microsoft-Windows-Kernel-PnP";} )
+		$private.processLog("Kernel Drivers",  @{Id=@(5038,6281);Level=4;Logname='Security';ProviderName="Microsoft-Windows-Security-Auditing";} )
+		$private.processLog("Kernel Drivers", @{Id=@(3001,3002,3003,3004,3010,3023);Logname='Microsoft-Windows-CodeIntegrity/Operational';ProviderName="Microsoft-Windows-CodeIntegrity";} )
+		$private.processLog("Kernel Drivers", @{Id=@(219);Level=3;Logname='System';ProviderName="Microsoft-Windows-Kernel-PnP";} )
 	}
 	
 	method -private parseAccountUsage{
 		
 		$uiClass.writeColor("$($uiClass.STAT_WAIT) Parsing #green#$($private.archiveLocation)# for #yellow#Account Usage#")
-		$private.processLog("Account Usage", @{Id=4740,4728,4732,4756,4735,4624,4625,4648;Level=4;Logname='Security';ProviderName="Microsoft-Windows-Security-Auditing";} )
+		$private.processLog("Account Usage", @{Id=@(4740,4728,4732,4756,4735,4624,4625,4648);Level=4;Logname='Security';ProviderName="Microsoft-Windows-Security-Auditing";} )
 	}
 	
 	method -private parseSoftwareInstallation{
 		$uiClass.writeColor("$($uiClass.STAT_WAIT) Parsing #green#$($private.archiveLocation)# for #yellow#Software and Service Installation#")
 		$private.processLog("Software Installation", @{Id=6;Level=4;Logname='System';ProviderName="Microsoft-Windows-FilterManager";} )
 		$private.processLog("Software Installation", @{Id=7045;Level=4;Logname='System';ProviderName="Service Control Manager";} )
-		$private.processLog("Software Installation", @{Id=1022,1033;Level=4;Logname='Application';ProviderName="MsiInstaller";} )
-		$private.processLog("Software Installation", @{Id=903,904;Level=4;Logname='Microsoft-Windows-Application-Experience/Program-Inventory';ProviderName="Microsoft-Windows-Application-Experience";} )
-		$private.processLog("Software Installation", @{Id=905,906;Level=4;Logname='Microsoft-Windows-Application-Experience/Program-Inventory';ProviderName="Microsoft-Windows-Application-Experience";} )
-		$private.processLog("Software Installation", @{Id=907,908;Level=4;Logname='Microsoft-Windows-Application-Experience/Program-Inventory';ProviderName="Microsoft-Windows-Application-Experience";} )
+		$private.processLog("Software Installation", @{Id=@(1022,1033);Level=4;Logname='Application';ProviderName="MsiInstaller";} )
+		$private.processLog("Software Installation", @{Id=@(903,904);Level=4;Logname='Microsoft-Windows-Application-Experience/Program-Inventory';ProviderName="Microsoft-Windows-Application-Experience";} )
+		$private.processLog("Software Installation", @{Id=@(905,906);Level=4;Logname='Microsoft-Windows-Application-Experience/Program-Inventory';ProviderName="Microsoft-Windows-Application-Experience";} )
+		$private.processLog("Software Installation", @{Id=@(907,908);Level=4;Logname='Microsoft-Windows-Application-Experience/Program-Inventory';ProviderName="Microsoft-Windows-Application-Experience";} )
 		$private.processLog("Software Installation", @{Id=800;Level=4;Logname='Microsoft-Windows-Application-Experience/Program-Inventory';ProviderName="Microsoft-Windows-Application-Experience";} )
 		$private.processLog("Software Installation", @{Id=2;Level=4;Logname='Setup';ProviderName="Microsoft-Windows-Servicing";} )
 		$private.processLog("Software Installation", @{Id=19;Level=4;Logname='System';ProviderName="Microsoft-Windows-WindowsUpdateClient";} )
@@ -161,29 +161,29 @@ $ParseEventLogClass = new-PSClass ParseEventLog{
 		$private.processLog("Application Crashes", @{Id=1002;Level=2;Logname='Application';ProviderName="Application Hang";} )
 		$private.processLog("Application Crashes", @{Id=1001;Level=2;Logname='System';ProviderName="Microsoft-Windows-WERSystemErrorReporting";} )
 		$private.processLog("Application Crashes", @{Id=1001;Level=4;Logname='Application';ProviderName="Windows Error Reporting";} )
-		$private.processLog("Application Crashes", @{Id=1,2;Level=2,4;Logname='Application';ProviderName="EMET";} )
+		$private.processLog("Application Crashes", @{Id=@(1,2);Level=@(2,4);Logname='Application';ProviderName="EMET";} )
 	}
 	
 	method -private parseSystemServiceFailure{
 		$uiClass.writeColor("$($uiClass.STAT_WAIT) Parsing #green#$($private.archiveLocation)# for #yellow#System or Service Failures#")
-		$private.processLog("System or Service Failures", @{Id=7022,7023,7024,7026,7031,7032,7034;Level=2;Logname='System';ProviderName="Service Control Manager";} )
+		$private.processLog("System or Service Failures", @{Id=@(7022,7023,7024,7026,7031,7032,7034);Level=2;Logname='System';ProviderName="Service Control Manager";} )
 	}
 	
 	method -private parseWindowsUpdateErors{
 		$uiClass.writeColor("$($uiClass.STAT_WAIT) Parsing #green#$($private.archiveLocation)# for #yellow#Windows Update Errors#")
-		$private.processLog("Windows Update Errors", @{Id=20,24,25,31,34,35;Level=2;Logname='Microsoft-Windows-WindowsUpdateClient/Operational';ProviderName="Microsoft-Windows-WindowsUpdateClient";} )
+		$private.processLog("Windows Update Errors", @{Id=@(20,24,25,31,34,35);Level=2;Logname='Microsoft-Windows-WindowsUpdateClient/Operational';ProviderName="Microsoft-Windows-WindowsUpdateClient";} )
 		$private.processLog("Windows Update Errors", @{Id=1009;Level=4;Logname='Setup';ProviderName="Microsoft-Windows-Servicing";} )
 	}
 	
 	method -private parseFirewallEvents{
 		$uiClass.writeColor("$($uiClass.STAT_WAIT) Parsing #green#$($private.archiveLocation)# for #yellow#Windows Firewall#")
-		$private.processLog("Windows Firewall Events", @{Id=2004,2005,2006,2033;Level=4;Logname='Microsoft-Windows-Windows Firewall With Advanced Security/Firewall';ProviderName="Microsoft-Windows-Windows Firewall With Advanced Security";} )
+		$private.processLog("Windows Firewall Events", @{Id=@(2004,2005,2006,2033);Level=4;Logname='Microsoft-Windows-Windows Firewall With Advanced Security/Firewall';ProviderName="Microsoft-Windows-Windows Firewall With Advanced Security";} )
 		$private.processLog("Windows Firewall Events", @{Id=2009;Level=2;Logname='Microsoft-Windows-Windows Firewall With Advanced Security/Firewall';ProviderName="Microsoft-Windows-Windows Firewall With Advanced Security";} )
 	}
 	
 	method -private parsePowerEvents{
 		$uiClass.writeColor("$($uiClass.STAT_WAIT) Parsing #green#$($private.archiveLocation)# for #yellow#Power Events#")
-		$private.processLog("Windows Power Events", @{Id=1074,6008;Logname='System';} )
+		$private.processLog("Windows Power Events", @{Id=@(1074,6008);Logname='System';} )
 	}
 	
 	method Execute{

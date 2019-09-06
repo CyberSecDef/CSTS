@@ -121,12 +121,13 @@ $mergeNessusClass = new-PSClass MergeNessus{
 		
 		$fileGuid = ([guid]::NewGuid()).Guid
 		new-item "$($pwd.ProviderPath)\temp\$($fileGuid)\" -type directory | out-null
-		$private.xmlDoc.Save("$($pwd.ProviderPath)\temp\$($fileGuid)\scans_$($private.count).xml")
+		$private.xmlDoc.Save("$($pwd.ProviderPath)\temp\$($fileGuid)\$($private.count).xml")
 		$utilities.zipFolder("$($pwd.ProviderPath)\temp\$($fileGuid)")
 		remove-item "$($pwd.ProviderPath)\temp\$($fileGuid)" -recurse
-		move-item "$($pwd.ProviderPath)\temp\$($fileGuid).zip" "$($pwd.ProviderPath)\results\"
+		$ts = (get-date -format "yyyyMMddHHmmss")
+		move-item "$($pwd.ProviderPath)\temp\$($fileGuid).zip" "$($pwd.ProviderPath)\results\mergeNessus_$($ts).zip"
 		
-		$uiclass.writeColor("$($uiclass.STAT_OK) Bundled scan archive #green#$($fileGuid).zip# is in the #yellow#results# folder")
+		$uiclass.writeColor("$($uiclass.STAT_OK) Bundled scan archive #green#mergeNessus_$($ts).zip# is in the #yellow#results# folder")
 	}
 	
 	method Execute{

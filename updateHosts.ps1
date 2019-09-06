@@ -159,7 +159,9 @@ $updateHostsClass = new-PSClass updateHosts{
 
 				#restart services to get admin share out there again		
 				$uiclass.writeColor("$($uiclass.STAT_WAIT) Attempting to delete ADMIN`$ Share" )
-				$adminShare = ( gwmi win32_share -filter "Name='ADMIN$'" -computerName $computerName).Delete() 
+				if( $( gwmi win32_share -filter "Name='ADMIN$'" -computerName $computerName) -ne $null){
+					$adminShare = ( gwmi win32_share -filter "Name='ADMIN$'" -computerName $computerName).Delete() 
+				}
 				if($adminShare.ReturnValue -eq 0){
 					$uiclass.writeColor( "$($uiClass.STAT_OK) ADMIN`$ share deleted")
 				}else{
@@ -167,7 +169,9 @@ $updateHostsClass = new-PSClass updateHosts{
 				}
 				
 				$uiclass.writeColor("$($uiclass.STAT_WAIT) Attempting to delete IPC`$ Share" )
-				$adminShare = ( gwmi win32_share -filter "Name='IPC`$'" -computerName $computerName).Delete() 
+				if( $( gwmi win32_share -filter "Name='IPC`$'" -computerName $computerName) -ne $null){
+					$adminShare = ( gwmi win32_share -filter "Name='IPC`$'" -computerName $computerName).Delete() 
+				}
 				if($adminShare.ReturnValue -eq 0){
 					$uiclass.writeColor( "$($uiClass.STAT_OK) IPC`$ share deleted")
 				}else{
@@ -176,26 +180,48 @@ $updateHostsClass = new-PSClass updateHosts{
 				
 				$uiclass.writeColor( "$($uiClass.STAT_OK) Stopping #yellow#Computer Browser and Server# Services on #green#$computerName#")
 				
-				stop-service -inputobject $(get-service -ComputerName $computerName -Name "Computer Browser") -force
-				stop-service -inputobject $(get-service -ComputerName $computerName -Name "Server") -force
+				if( $(get-service -ComputerName $computerName -Name "Computer Browser") -ne $null){
+					stop-service -inputobject $(get-service -ComputerName $computerName -Name "Computer Browser") -force -errorAction SilentlyContinue
+				}
+				if( $(get-service -ComputerName $computerName -Name "Server") -ne $null){
+					stop-service -inputobject $(get-service -ComputerName $computerName -Name "Server") -force -errorAction SilentlyContinue
+				}
 				sleep -seconds 10
 				
 				$uiclass.writeColor( "$($uiClass.STAT_OK) Starting #yellow#Computer Browser and Server# Services on #green#$computerName#")
-				start-service -inputobject $(get-service -ComputerName $computerName -Name "Server")
-				start-service -inputobject $(get-service -ComputerName $computerName -Name "Computer Browser")
+				if( $(get-service -ComputerName $computerName -Name "Server") -ne $null){
+					start-service -inputobject $(get-service -ComputerName $computerName -Name "Server")
+				}
+				if( $(get-service -ComputerName $computerName -Name "Computer Browser") -ne $null){
+					start-service -inputobject $(get-service -ComputerName $computerName -Name "Computer Browser")
+				}
 				sleep -seconds 10
 
 				$uiclass.writeColor( "$($uiClass.STAT_OK) Updating #yellow#Firewall Configurations# on #green#$computerName#")
-				stop-service -inputobject $(get-service -ComputerName $computerName -Name "Windows Firewall") -force
-				sleep -seconds 10
+				if( $(get-service -ComputerName $computerName -Name "Windows Firewall") -ne $null){
+					stop-service -inputobject $(get-service -ComputerName $computerName -Name "Windows Firewall") -force
+					sleep -seconds 10
 				
-				#enable get firewall service, set to manual start
-				set-service -inputobject $(get-service -ComputerName $computerName -Name "Windows Firewall") -StartupType manual
-				start-service -inputobject $(get-service -ComputerName $computerName -Name "Windows Firewall")
-				sleep -seconds 10
-
+					#enable get firewall service, set to manual start
+					set-service -inputobject $(get-service -ComputerName $computerName -Name "Windows Firewall") -StartupType manual
+					start-service -inputobject $(get-service -ComputerName $computerName -Name "Windows Firewall")
+					sleep -seconds 10
+				}
+				
+				if( $(get-service -ComputerName $computerName -Name "Windows Defender Firewall") -ne $null){
+					stop-service -inputobject $(get-service -ComputerName $computerName -Name "Windows Defender Firewall") -force
+					sleep -seconds 10
+				
+					#enable get firewall service, set to manual start
+					set-service -inputobject $(get-service -ComputerName $computerName -Name "Windows Defender Firewall") -StartupType manual
+					
+					start-service -inputobject $(get-service -ComputerName $computerName -Name "Windows Defender Firewall")
+					sleep -seconds 10
+				}
+				
 				#send command to remote system to turn off the firewall, even though the service must be running
-				invoke-command -computername $computerName -scriptBlock {NetSh Advfirewall set allprofiles state off}
+				#invoke-command -computername $computerName -scriptBlock {NetSh Advfirewall set allprofiles state off}
+				.\bin\PsExec.exe "\\$computerName" cmd /c NetSh Advfirewall set allprofiles state off
 			}else{
 				$uiClass.writeColor( "$($uiClass.STAT_ERROR) No Administrative Privileges on  #green#$($computerName) #" )
 			}
@@ -368,7 +394,6 @@ Next
 		
 		$reg = [Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey('LocalMachine', $computerName ) 
 		
-		
 		$regKey = $reg.OpenSubKey("SYSTEM\\CurrentControlSet\\Control\\LSA",$true) 
 		$regKey.SetValue("fullprivilegeauditing", ([byte[]]("0x00")),[Microsoft.Win32.RegistryValueKind]::Binary)
 		
@@ -423,7 +448,7 @@ Next
 						$uiClass.writeColor( "$($uiClass.STAT_ERROR) #green#$($_)# is offline." )
 					}
 				} catch { 
-					$uiClass.writeColor( "$($uiClass.STAT_ERROR) Skipping $_ .. not accessible" )
+					$uiClass.writeColor( "$($uiClass.STAT_ERROR) Skipping $_ ... not accessible" )
 				}
 			} 
 			$private.mainProgressBar.Completed($true).Render() 
